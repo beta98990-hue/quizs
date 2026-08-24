@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevQuiz — Programming Skills Test Platform</title>
+  <meta name="description" content="Dasturlash texnologiyalari bo'yicha bilimingizni sinab ko'ring. Frontend va Backend yo'nalishlari, 31 ta texnologiya, 50 ta savol." />
+  <meta name="keywords" content="dasturlash, test, quiz, frontend, backend, javascript, python, java, react" />
+  <meta property="og:title" content="DevQuiz — Programming Skills Test" />
+  <meta property="og:description" content="Professional dasturlash bilim testi platformasi" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><rect width='28' height='28' rx='6' fill='%236366f1'/><path d='M7 9l6 5-6 5M15 19h6' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Asosiy menyu">
+  <div class="nav-container">
+    <a href="#" class="nav-logo" onclick="showPage('home'); return false;" aria-label="DevQuiz Bosh sahifa">
+      <div class="logo-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+          <path d="M4 8L10 14L4 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 18H24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="logo-text">DevQuiz</span>
+    </a>
+    <div class="nav-actions">
+      <!-- Rank Badge & Dashboard Trigger -->
+      <button class="nav-rank-btn" id="navRankBtn" onclick="openProfileModal()" aria-label="Foydalanuvchi profili va darajasi" title="Profil va statistika">
+        <span class="rank-icon" id="nav-rank-icon">🌱</span>
+        <span class="rank-title" id="nav-rank-title">Beginner</span>
+        <span class="rank-count" id="nav-rank-count">0/31</span>
+      </button>
+
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Mavzuni o'zgartirish" title="Dark/Light rejim">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Mobil menyu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <button class="mobile-nav-link" onclick="openProfileModal(); toggleMenu();">
+    📊 Mening Profilim & Progress
+  </button>
+  <button class="mobile-nav-link" onclick="showPage('home'); toggleMenu();">
+    🏠 Bosh sahifa
+  </button>
+  <button class="mobile-nav-link" onclick="selectCategory('frontend'); toggleMenu();">
+    💻 Frontend Testlari (11 ta)
+  </button>
+  <button class="mobile-nav-link" onclick="selectCategory('backend'); toggleMenu();">
+    ⚙️ Backend Testlari (20 ta)
+  </button>
+</div>
+
+<!-- ========== HOME PAGE ========== -->
+<main id="page-home" class="page active">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Professional Programming Assessment</span>
+      </div>
+      <h1 class="hero-title">
+        Dasturlash bilimingizni <span class="gradient-text">sinab ko'ring</span>
+      </h1>
+      <p class="hero-desc">
+        31 ta texnologiya, har birida aniq 30 ta professional savol (10 Easy, 10 Medium, 10 Hard). 
+        Frontend yoki Backend yo'nalishini tanlang va bilimingizni baholang.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">31</span>
+          <span class="stat-label">Texnologiya</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">930</span>
+          <span class="stat-label">Savollar</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Rank Bosqichlari</span>
+        </div>
+      </div>
+
+      <!-- Global Progression Card -->
+      <div class="hero-progress-card" onclick="openProfileModal()" role="button" tabindex="0" aria-label="Umumiy dasturchilik progressini ko'rish">
+        <div class="hero-progress-header">
+          <div class="hero-rank-badge" id="hero-rank-badge">
+            <span class="hero-rank-icon" id="hero-rank-icon">🌱</span>
+            <div>
+              <span class="hero-rank-level" id="hero-rank-level">Boshlang'ich daraja</span>
+              <h3 class="hero-rank-name" id="hero-rank-name">Beginner Developer</h3>
+            </div>
+          </div>
+          <div class="hero-progress-count">
+            <span class="hero-count-val" id="hero-completed-count">0</span>
+            <span class="hero-count-max">/ 31 tugatildi</span>
+          </div>
+        </div>
+        <div class="hero-progress-bar-outer">
+          <div class="hero-progress-bar-inner" id="hero-progress-bar" style="width: 0%;"></div>
+        </div>
+        <div class="hero-progress-footer">
+          <span class="hero-next-target" id="hero-next-target">Keyingi bosqich: <strong>Junior (10 ta)</strong></span>
+          <span class="hero-view-details">Batafsil tahlil & progress →</span>
+        </div>
+      </div>
+      <div class="category-cards">
+        <button class="category-card frontend-card" onclick="selectCategory('frontend')" id="btn-frontend">
+          <div class="card-glow"></div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M14 22L20 28L14 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 34H34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="9" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="14" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="19" cy="14" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Frontend</h2>
+            <p class="card-subtitle">11 texnologiya · UI/UX, Web</p>
+            <div class="card-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">React</span>
+              <span class="tag">+8</span>
+            </div>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </button>
+
+        <button class="category-card backend-card" onclick="selectCategory('backend')" id="btn-backend">
+          <div class="card-glow"></div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="6" width="40" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="4" y="24" width="40" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="11" cy="12" r="2" fill="currentColor"/>
+              <circle cx="11" cy="30" r="2" fill="currentColor"/>
+              <path d="M18 12H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 30H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Backend</h2>
+            <p class="card-subtitle">20 texnologiya · Server, DB</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">Go</span>
+              <span class="tag">+17</span>
+            </div>
+          </div>
+          <div class="card-arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER HOME -->
+  <footer class="home-footer">
+    <p>© 2024 DevQuiz · Professional Programming Assessment Platform</p>
+  </footer>
+</main>
+
+<!-- ========== TECHNOLOGY SELECTION PAGE ========== -->
+<div id="page-technologies" class="page" role="region" aria-label="Texnologiya tanlash">
+  <div class="page-container">
+    <div class="page-header">
+      <button class="back-btn" onclick="showPage('home')" aria-label="Bosh sahifaga qaytish">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Orqaga
+      </button>
+      <div class="page-title-group">
+        <div class="page-badge" id="category-badge">Frontend</div>
+        <h2 class="page-title">Texnologiyani tanlang</h2>
+        <p class="page-subtitle">Qaysi texnologiyadan test topshirmoqchisiz?</p>
+      </div>
+    </div>
+
+    <div class="tech-grid" id="tech-grid">
+      <!-- JS bilan to'ldiriladi -->
+    </div>
+  </div>
+</div>
+
+<!-- ========== QUIZ PAGE ========== -->
+<div id="page-quiz" class="page" role="region" aria-label="Test sahifasi">
+  <div class="quiz-wrapper">
+    <!-- Quiz Header -->
+    <div class="quiz-header">
+      <div class="quiz-header-left">
+        <button class="back-btn" onclick="confirmExit()" aria-label="Testdan chiqish">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          Chiqish
+        </button>
+        <div class="quiz-tech-info">
+          <span class="quiz-tech-name" id="quiz-tech-name">HTML</span>
+          <span class="quiz-question-count" id="quiz-q-count">Savol 1 / 30</span>
+        </div>
+      </div>
+      <div class="quiz-header-right">
+        <div class="quiz-timer" id="quiz-timer" title="Sarflangan vaqt">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span id="timer-display">00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+      <div class="progress-info">
+        <span class="progress-text">Progress</span>
+        <span class="progress-percent" id="progress-percent">0%</span>
+      </div>
+      <div class="progress-bar-outer" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar-inner" id="progress-bar"></div>
+      </div>
+      <div class="question-dots" id="question-dots" aria-label="Savollar navigatsiyasi"></div>
+    </div>
+
+    <!-- Question Card -->
+    <div class="question-section">
+      <div class="question-card" id="question-card">
+        <!-- Dinamik render qilinadi -->
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="quiz-nav">
+      <button class="nav-btn prev-btn" id="prev-btn" onclick="navigateQuestion(-1)" disabled aria-label="Oldingi savol">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Oldingi
+      </button>
+      <div class="nav-center">
+        <button class="skip-btn" onclick="skipQuestion()" aria-label="Savolni o'tkazib yuborish">O'tkazib yuborish</button>
+      </div>
+      <button class="nav-btn next-btn" id="next-btn" onclick="navigateQuestion(1)" aria-label="Keyingi savol">
+        Keyingi
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+    <div class="finish-section">
+      <button class="finish-btn" id="finish-btn" onclick="confirmFinish()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Testni yakunlash
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== RESULT PAGE ========== -->
+<div id="page-result" class="page" role="region" aria-label="Natijalar sahifasi">
+  <div class="result-wrapper">
+    <!-- Celebration effect -->
+    <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+
+    <div class="result-card">
+      <div class="result-header">
+        <div class="result-tech-badge" id="result-tech-badge">HTML</div>
+        <h2 class="result-title">Test yakunlandi!</h2>
+      </div>
+
+      <!-- Score Circle -->
+      <div class="score-circle-container">
+        <div class="score-circle" id="score-circle">
+          <svg class="score-svg" viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="score-bg-circle" cx="100" cy="100" r="85"/>
+            <circle class="score-progress-circle" id="score-progress" cx="100" cy="100" r="85"
+              stroke-dasharray="534" stroke-dashoffset="534"/>
+          </svg>
+          <div class="score-inner">
+            <span class="score-num" id="result-score">0</span>
+            <span class="score-total">/ 30</span>
+            <span class="score-percent" id="result-percent">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grade Badge -->
+      <div class="grade-badge-container">
+        <div class="grade-badge" id="grade-badge">
+          <span class="grade-icon" id="grade-icon">🏆</span>
+          <span class="grade-text" id="grade-text">A'lo</span>
+        </div>
+        <p class="grade-message" id="grade-message">Mukammal natija!</p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="result-stats">
+        <div class="result-stat correct">
+          <div class="stat-icon">✓</div>
+          <div class="stat-value" id="res-correct">0</div>
+          <div class="stat-label">To'g'ri</div>
+        </div>
+        <div class="result-stat wrong">
+          <div class="stat-icon">✗</div>
+          <div class="stat-value" id="res-wrong">0</div>
+          <div class="stat-label">Noto'g'ri</div>
+        </div>
+        <div class="result-stat skipped">
+          <div class="stat-icon">—</div>
+          <div class="stat-value" id="res-skipped">0</div>
+          <div class="stat-label">O'tkazilgan</div>
+        </div>
+        <div class="result-stat time">
+          <div class="stat-icon">⏱</div>
+          <div class="stat-value" id="res-time">0:00</div>
+          <div class="stat-label">Vaqt</div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="result-actions">
+        <button class="action-btn review-btn" onclick="openReviewModal('all')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>
+          </svg>
+          Javoblarni tahlil qilish (Review)
+        </button>
+        <button class="action-btn primary-btn" onclick="retryQuiz()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.44"/>
+          </svg>
+          Qayta urinish
+        </button>
+        <button class="action-btn secondary-btn" onclick="showPage('technologies')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          Boshqa texnologiya
+        </button>
+        <button class="action-btn outline-btn" onclick="showPage('home')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Bosh sahifa
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODALS ========== -->
+
+<!-- Review Answers Modal -->
+<div class="modal-overlay modal-large" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+  <div class="modal review-modal-content">
+    <div class="review-modal-header">
+      <div class="review-header-title">
+        <h3 class="modal-title" id="review-modal-title">🔍 Javoblarni Tahlil Qilish</h3>
+        <p class="modal-subtitle" id="review-tech-subtitle">30 ta savolning batafsil natijalari</p>
+      </div>
+      <button class="close-icon-btn" onclick="closeModal('review-modal')" aria-label="Yopish">✕</button>
+    </div>
+
+    <!-- Review Filter Tabs -->
+    <div class="review-filters">
+      <button class="review-filter-btn active" data-filter="all" onclick="filterReviewQuestions('all')">
+        Barchasi (<span id="rev-filter-all">30</span>)
+      </button>
+      <button class="review-filter-btn correct" data-filter="correct" onclick="filterReviewQuestions('correct')">
+        ✓ To'g'ri (<span id="rev-filter-correct">0</span>)
+      </button>
+      <button class="review-filter-btn wrong" data-filter="wrong" onclick="filterReviewQuestions('wrong')">
+        ✗ Noto'g'ri (<span id="rev-filter-wrong">0</span>)
+      </button>
+      <button class="review-filter-btn skipped" data-filter="skipped" onclick="filterReviewQuestions('skipped')">
+        — O'tkazilgan (<span id="rev-filter-skipped">0</span>)
+      </button>
+    </div>
+
+    <!-- Questions Container -->
+    <div class="review-questions-list" id="review-questions-list">
+      <!-- Dinamik yuklanadi -->
+    </div>
+
+    <div class="review-modal-footer">
+      <button class="action-btn secondary-btn" onclick="closeModal('review-modal')">Yopish</button>
+    </div>
+  </div>
+</div>
+
+<!-- Rank Up Celebration Modal -->
+<div class="modal-overlay" id="rankup-modal" role="dialog" aria-modal="true" aria-labelledby="rankup-modal-title">
+  <div class="modal rankup-modal-card">
+    <div class="rankup-badge-anim" id="rankup-icon">🥉</div>
+    <span class="rankup-tag">YANGI DARAJA OCHILDI!</span>
+    <h2 class="rankup-title" id="rankup-title">Tabriklaymiz! Siz Junior Developersiz!</h2>
+    <p class="rankup-desc" id="rankup-desc">
+      Siz 10 ta texnologiyani muvaffaqiyatli topshirdingiz va Junior unvoniga erishdingiz!
+    </p>
+    <div class="rankup-perks" id="rankup-perks">
+      <div class="rankup-perk-item">
+        <span>✅</span> <span id="rankup-perk-1">10+ texnologiya bazasi egallandi</span>
+      </div>
+      <div class="rankup-perk-item">
+        <span>🎯</span> <span id="rankup-perk-2">Keyingi maqsad: Middle Developer (20 ta)</span>
+      </div>
+    </div>
+    <div class="modal-actions" style="width: 100%;">
+      <button class="action-btn primary-btn" style="width:100%; justify-content:center;" onclick="closeModal('rankup-modal')">
+        Ajoyib! Davom etish 🚀
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- User Profile / Progression Dashboard Modal -->
+<div class="modal-overlay modal-large" id="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+  <div class="modal profile-modal-content">
+    <div class="profile-modal-header">
+      <div class="profile-header-user">
+        <div class="profile-avatar" id="profile-avatar">👨‍💻</div>
+        <div>
+          <div class="profile-rank-chip" id="profile-rank-chip">🌱 Beginner Developer</div>
+          <h3 class="modal-title" id="profile-modal-title">Dasturchi Profili & Progress</h3>
+        </div>
+      </div>
+      <button class="close-icon-btn" onclick="closeModal('profile-modal')" aria-label="Yopish">✕</button>
+    </div>
+
+    <!-- Summary Stats Grid -->
+    <div class="profile-stats-grid">
+      <div class="p-stat-card">
+        <span class="p-stat-icon">🏆</span>
+        <span class="p-stat-val" id="prof-completed-techs">0/31</span>
+        <span class="p-stat-lbl">Tugatilgan Texnologiyalar</span>
+      </div>
+      <div class="p-stat-card">
+        <span class="p-stat-icon">🎯</span>
+        <span class="p-stat-val" id="prof-avg-score">0%</span>
+        <span class="p-stat-lbl">O'rtacha Natija</span>
+      </div>
+      <div class="p-stat-card">
+        <span class="p-stat-icon">⭐</span>
+        <span class="p-stat-val" id="prof-perfect-count">0</span>
+        <span class="p-stat-lbl">A'lo (100%) Testlar</span>
+      </div>
+      <div class="p-stat-card">
+        <span class="p-stat-icon">🚀</span>
+        <span class="p-stat-val" id="prof-next-rank-val">10 ta</span>
+        <span class="p-stat-lbl">Keyingi Darajagacha</span>
+      </div>
+    </div>
+
+    <!-- Level Milestones Bar -->
+    <div class="milestones-container">
+      <h4 class="milestone-title">Dasturchilik Bosqichlari (Roadmap):</h4>
+      <div class="milestones-steps">
+        <div class="step-item" id="step-beginner">
+          <div class="step-dot active">🌱</div>
+          <span class="step-label">Beginner<br><small>0+ texnologiya</small></span>
+        </div>
+        <div class="step-line" id="line-1"></div>
+        <div class="step-item" id="step-junior">
+          <div class="step-dot">🥉</div>
+          <span class="step-label">Junior<br><small>10 ta</small></span>
+        </div>
+        <div class="step-line" id="line-2"></div>
+        <div class="step-item" id="step-middle">
+          <div class="step-dot">🥈</div>
+          <span class="step-label">Middle<br><small>20 ta</small></span>
+        </div>
+        <div class="step-line" id="line-3"></div>
+        <div class="step-item" id="step-senior">
+          <div class="step-dot">🥇</div>
+          <span class="step-label">Senior<br><small>31 ta to'liq</small></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies Progress Table / List -->
+    <div class="profile-techs-section">
+      <div class="techs-sec-header">
+        <h4>Barcha 31 ta Texnologiya Holati</h4>
+        <span class="techs-sec-count" id="prof-list-summary">0 ta yakunlangan</span>
+      </div>
+      <div class="profile-techs-list" id="profile-techs-list">
+        <!-- JS orqali barcha 31 texnologiya kartalari generatsiya qilinadi -->
+      </div>
+    </div>
+
+    <div class="profile-modal-footer">
+      <button class="reset-progress-btn" onclick="openModal('reset-modal')" title="Barcha natijalarni tozalash">
+        🗑️ Progressni qayta o'rnatish
+      </button>
+      <button class="action-btn primary-btn" onclick="closeModal('profile-modal')">Yopish</button>
+    </div>
+  </div>
+</div>
+
+<!-- Confirm Reset Progress Modal -->
+<div class="modal-overlay" id="reset-modal" role="dialog" aria-modal="true" aria-labelledby="reset-modal-title">
+  <div class="modal">
+    <div class="modal-icon warning" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h3 class="modal-title" id="reset-modal-title">Progressni o'chirib tashlamoqchimisiz?</h3>
+    <p class="modal-text">Barcha topshirilgan testlar, to'plangan ballar va darajangiz butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.</p>
+    <div class="modal-actions">
+      <button class="modal-btn cancel" onclick="closeModal('reset-modal')">Bekor qilish</button>
+      <button class="modal-btn confirm" onclick="resetUserProgress()">Ha, barchasini tozalash</button>
+    </div>
+  </div>
+</div>
+
+<!-- Confirm Exit Modal -->
+<div class="modal-overlay" id="exit-modal" role="dialog" aria-modal="true" aria-labelledby="exit-modal-title">
+  <div class="modal">
+    <div class="modal-icon warning" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h3 class="modal-title" id="exit-modal-title">Testdan chiqmoqchimisiz?</h3>
+    <p class="modal-text">Testni tark etsangiz, joriy natijalaringiz saqlanmaydi. Davom etmoqchimisiz?</p>
+    <div class="modal-actions">
+      <button class="modal-btn cancel" onclick="closeModal('exit-modal')">Davom etish</button>
+      <button class="modal-btn confirm" onclick="exitQuiz()">Ha, chiqish</button>
+    </div>
+  </div>
+</div>
+
+<!-- Confirm Finish Modal -->
+<div class="modal-overlay" id="finish-modal" role="dialog" aria-modal="true" aria-labelledby="finish-modal-title">
+  <div class="modal">
+    <div class="modal-icon info" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+    </div>
+    <h3 class="modal-title" id="finish-modal-title">Testni yakunlash</h3>
+    <p class="modal-text" id="finish-modal-text">Hali javob berilmagan savollar bor. Testni yakunlashni xohlaysizmi?</p>
+    <div class="modal-actions">
+      <button class="modal-btn cancel" onclick="closeModal('finish-modal')">Orqaga</button>
+      <button class="modal-btn confirm-success" onclick="finishQuiz()">Yakunlash</button>
+    </div>
+  </div>
+</div>
+
+<!-- Error/Info Toast -->
+<div class="toast" id="toast" role="alert" aria-live="assertive">
+  <div class="toast-icon">💡</div>
+  <span class="toast-text" id="toast-text">Xabar</span>
+</div>
+
+<script src="questions-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
