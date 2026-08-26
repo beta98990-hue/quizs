@@ -2,55 +2,1305 @@
   "technology": "Bootstrap",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"Bootstrap nima?","options":["JavaScript framework","Eng mashhur CSS framework — responsive, mobile-first","CSS preprocessor","Backend tool"],"answer":1},
-    {"id":2,"level":"easy","question":"Bootstrap da konteyner yaratish uchun qaysi klass?","options":["wrapper","box","container","layout"],"answer":2},
-    {"id":3,"level":"easy","question":"Bootstrap grid tizimi nechta ustundan iborat?","options":["10","16","24","12"],"answer":3},
-    {"id":4,"level":"easy","question":"Bootstrap da tugma yaratish uchun qaysi klass?","options":["btn","button","click","action"],"answer":0},
-    {"id":5,"level":"easy","question":"Bootstrap da asosiy (primary) tugma qanday?","options":["btn-primary","btn btn-main","button-primary","primary-btn"],"answer":0},
-    {"id":6,"level":"easy","question":"Bootstrap da alert (ogohlantirish) komponenti qaysi klass?","options":["warning","message","alert","notification"],"answer":2},
-    {"id":7,"level":"easy","question":"Bootstrap da navbar yaratish uchun qaysi klass?","options":["nav","navbar","menu","topbar"],"answer":1},
-    {"id":8,"level":"easy","question":"Bootstrap da modal dialog qaysi klass?","options":["dialog","popup","overlay","modal"],"answer":3},
-    {"id":9,"level":"easy","question":"Bootstrap da tasvir responsivligini ta'minlovchi klass?","options":["img-full","img-fluid","responsive-img","img-responsive"],"answer":1},
-    {"id":10,"level":"easy","question":"Bootstrap da matnni markazga joylashtirish?","options":["text-center","align-center","center-text","txt-center"],"answer":0},
-    {"id":11,"level":"easy","question":"Bootstrap da yashirish uchun qaysi klass?","options":["hide","invisible","d-none","hidden"],"answer":2},
-    {"id":12,"level":"easy","question":"Bootstrap da card komponenti qaysi klass?","options":["panel","box","card","block"],"answer":2},
-    {"id":13,"level":"easy","question":"Bootstrap da form-control nima uchun?","options":["Form yaratish","Input elementlariga Bootstrap stilini berish","Form boshqarish","Form layout"],"answer":1},
-    {"id":14,"level":"easy","question":"Bootstrap da grid qatorini yaratish uchun qaysi klass?","options":["row","line","grid-row","g-row"],"answer":0},
-    {"id":15,"level":"easy","question":"Bootstrap versiyalari orasida eng so'nggi asosiy versiya qaysi?","options":["Bootstrap 3","Bootstrap 4","Bootstrap 5","Bootstrap 2"],"answer":2},
-    {"id":16,"level":"medium","question":"Bootstrap 5 da jQuery ga bog'liqlik qolganmi?","options":["Ha, hali ham kerak","Yo'q, Bootstrap 5 vanilla JS ga o'tdi — jQuery kerak emas","Ixtiyoriy","Faqat modullar uchun"],"answer":1},
-    {"id":17,"level":"medium","question":"Bootstrap da breakpointlar qaysilar (Bootstrap 5)?","options":["xs, sm, md, lg, xl","xs, sm, md, lg, xl, xxl","sm, md, lg, xl, xxl","xs, sm, md, lg"],"answer":1},
-    {"id":18,"level":"medium","question":"Bootstrap da col-md-6 nima anglatadi?","options":["Medium ekranda 6 piksel","Medium va undan katta ekranlarda 12 dan 6 ustun oladi","6 ta element","6 piksel kenglik"],"answer":1},
-    {"id":19,"level":"medium","question":"Bootstrap da Flexbox utility klasslari qanday?","options":["flex-*","d-flex bilan birgalikda justify-content-*, align-items-* va boshqalar","flex: display","flexbox-*"],"answer":1},
-    {"id":20,"level":"medium","question":"Bootstrap da collapse komponenti nima uchun?","options":["Element o'chirish","Accordion va collapsible content — kengaytirish/yig'ish","Hide element","Toggle"],"answer":1},
-    {"id":21,"level":"medium","question":"Bootstrap da offcanvas nima?","options":["Sidebarni chop etish","Ekran chetidan slayd bilan chiqadigan panel — side navigation uchun","Canvas element","Off-screen"],"answer":1},
-    {"id":22,"level":"medium","question":"Bootstrap da data-bs-* atributlari nima uchun?","options":["Bootstrap data","JavaScript interaktivlikni HTML atributlari orqali boshqarish — data-bs-toggle, data-bs-target","CSS atribut","Form data"],"answer":1},
-    {"id":23,"level":"medium","question":"Bootstrap da Sass variables qanday o'zgartiriladi?","options":["CSS da","Bootstrap Sass fayllarni import qilishdan oldin o'zgaruvchilarni override qilish","tailwind.config kabi","Bevosita CSS"],"answer":1},
-    {"id":24,"level":"medium","question":"Bootstrap da spinner komponenti nima uchun?","options":["Loading animatsiyasi","Yuklanish indikatori — spinner-border, spinner-grow","Error indicator","Progress"],"answer":1},
-    {"id":25,"level":"medium","question":"Bootstrap da toast komponenti nima?","options":["Tost non","Qisqa vaqtli bildirishnoma — snackbar kabi","Alert turi","Notification"],"answer":1},
-    {"id":26,"level":"medium","question":"Bootstrap da accordion nima?","options":["Musiqa asbobi","Yig'iluvchi/kengayadigan kontent panellari — collapse asosida","Collapse turi","Expand panel"],"answer":1},
-    {"id":27,"level":"medium","question":"Bootstrap da tooltip va popover farqi?","options":["Hech qanday farq yo'q","Tooltip — kichik matn yordami; popover — sarlavha va kontent bilan kattaroq popup","Popover kichikroq","Tooltip sarlavhali"],"answer":1},
-    {"id":28,"level":"medium","question":"Bootstrap da progress bar qanday?","options":["progress","<div class='progress'> ichida progress-bar klass va width style","progressbar","bar"],"answer":1},
-    {"id":29,"level":"medium","question":"Bootstrap da list-group nima uchun?","options":["HTML ro'yxat","Flexible komponent — ro'yxat, navigatsiya yoki kontentlar guruhi uchun","Ordered list","Navigation list"],"answer":1},
-    {"id":30,"level":"medium","question":"Bootstrap da breadcrumb nima uchun?","options":["Non bo'lagi","Navigatsiya yo'lini ko'rsatish — sahifa ierarxiyasi","Navigation menu","Sitemap"],"answer":1},
-    {"id":31,"level":"medium","question":"Bootstrap da pagination nima uchun?","options":["Sahifa raqamlash","Sahifalar o'rtasida navigatsiya — oldingi/keyingi/raqamlar","Page control","Navigator"],"answer":1},
-    {"id":32,"level":"medium","question":"Bootstrap da table-responsive nima qiladi?","options":["Responsiv jadval","Jadvalga horizontal scroll qo'shib, kichik ekranlarda ham to'g'ri ko'rsatadi","Mobile table","Scroll table"],"answer":1},
-    {"id":33,"level":"medium","question":"Bootstrap da badge nima?","options":["Medal","Kichik ma'lumot belgisi — son, status yoki label uchun","Label","Tag"],"answer":1},
-    {"id":34,"level":"medium","question":"Bootstrap da g-4 nima qiladi?","options":["Grid gap","Row/Grid elementlar orasida gap qo'shadi (gutter)","Grid columns 4","Group 4"],"answer":1},
-    {"id":35,"level":"medium","question":"Bootstrap da d-grid nima?","options":["Display grid","CSS Grid display ni qo'llaydi — gap, kolonnalar uchun","Grid layout","Bootstrap grid"],"answer":1},
-    {"id":36,"level":"hard","question":"Bootstrap da CSS custom properties (variables) qanday?","options":["Yo'q","Bootstrap 5 — :root da CSS custom properties ishlatadi — runtime theming uchun overrideable","Sass only","JS only"],"answer":1},
-    {"id":37,"level":"hard","question":"Bootstrap da RTL (Right-to-Left) support qanday?","options":["Yo'q","Bootstrap 5.1+ — bootstrap.rtl.css bilan yoki rtl: true Sass config — arabcha, fors uchun","Faqat CSS","Plugin bilan"],"answer":1},
-    {"id":38,"level":"hard","question":"Bootstrap da component JavaScript API qanday ishlaydi?","options":["jQuery plugin","Bootstrap.Modal.getOrCreateInstance(el) — vanilla JS API","data attribute only","Event driven"],"answer":1},
-    {"id":39,"level":"hard","question":"Bootstrap da custom theme yaratish uchun minimal Sass setup?","options":["Faqat CSS copy","functions, variables override, bootstrap import, utilities — yoki partial import","Theme plugin","Config file"],"answer":1},
-    {"id":40,"level":"hard","question":"Bootstrap da utility API nima?","options":["Utility yaratish","tailwind.config kabi — custom utility klasslarini Sass orqali generatsiya qilish","Custom class","Build API"],"answer":1},
-    {"id":41,"level":"hard","question":"Bootstrap da $enable-* Sass flags nima uchun?","options":["Feature flag","Muayyan feature larni kompilyatsiyadan olib tashlash — bundle kichraytirish uchun","Config flag","Build flag"],"answer":1},
-    {"id":42,"level":"hard","question":"Bootstrap da z-index scale nima?","options":["CSS z-index","Dropdown, sticky, fixed, modal, popover, tooltip uchun belgilangan z-index ierarxiyasi","Layer system","Stacking"],"answer":1},
-    {"id":43,"level":"hard","question":"Bootstrap da Reboot CSS nima?","options":["CSS restart","Normalize.css asosida yaxshilangan — consistent base styles brauzerlar orasida","Reset CSS","Base CSS"],"answer":1},
-    {"id":44,"level":"hard","question":"Bootstrap da container-fluid va container farqi?","options":["Hech qanday farq yo'q","container — max-width breakpointlarda chekli; container-fluid — har doim 100% kenglik","container-fluid kichik","container responsive emas"],"answer":1},
-    {"id":45,"level":"hard","question":"Bootstrap da scrollspy nima uchun?","options":["Scroll kuzatish","Sahifada scroll holatiga qarab navigatsiya elementlarini faol qilish","Scroll animation","Parallax"],"answer":1},
-    {"id":46,"level":"hard","question":"Bootstrap da $spacers Sass map nima?","options":["Spacing config","Bootstrap spacing utility larini (p, m, gap) belgilaydigan kalit-qiymat xarita — extend uchun","Margin map","Padding map"],"answer":1},
-    {"id":47,"level":"hard","question":"Bootstrap da Icons kutubxonasi qanday qo'shiladi?","options":["Bootstrap da mavjud","Bootstrap Icons — alohida paketi (CDN yoki npm) yoki SVG spritelar orqali","Font Awesome","Material Icons"],"answer":1},
-    {"id":48,"level":"hard","question":"Bootstrap da $theme-colors Sass map nima?","options":["Rang palitri","Bootstrap rang utility larini (btn-primary, alert-danger) boshqaradigan asosiy ranglar xaritasi","Color scheme","Theme file"],"answer":1},
-    {"id":49,"level":"hard","question":"Bootstrap da custom breakpoint qanday qo'shiladi?","options":["Iloji yo'q","$grid-breakpoints Sass map ga yangi kalit qo'shing va rebuild qiling","Config file","CSS media query"],"answer":1},
-    {"id":50,"level":"hard","question":"Bootstrap da focus-ring utility nima?","options":["Focus element","Elementga focus ring qo'shish — accessibility uchun — focus-ring, focus-ring-*","Ring focus","CSS focus"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Bootstrap nima?",
+      "options": [
+        "JavaScript framework",
+        "Eng mashhur CSS framework — responsive, mobile-first",
+        "CSS preprocessor",
+        "Backend tool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Бутстрап?",
+      "question_en": "Bootstrap nima?",
+      "options_ru": [
+        "Фреймворк JavaScript",
+        "Самый популярный CSS-фреймворк адаптивный и ориентирован на мобильные устройства.",
+        "CSS-препроцессор",
+        "Серверный инструмент"
+      ],
+      "options_en": [
+        "JavaScript framework",
+        "Eng mashhur CSS framework — responsive, mobile-first",
+        "CSS preprocessor",
+        "Backend tool"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Bootstrap da konteyner yaratish uchun qaysi klass?",
+      "options": [
+        "wrapper",
+        "box",
+        "container",
+        "layout"
+      ],
+      "answer": 2,
+      "question_ru": "Какой класс создать контейнер в Bootstrap?",
+      "question_en": "Which class to create a container in Bootstrap?",
+      "options_ru": [
+        "обертка",
+        "box",
+        "контейнер",
+        "макет"
+      ],
+      "options_en": [
+        "wrapper",
+        "box",
+        "container",
+        "layout"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Bootstrap grid tizimi nechta ustundan iborat?",
+      "options": [
+        "10",
+        "16",
+        "24",
+        "12"
+      ],
+      "answer": 3,
+      "question_ru": "Сколько столбцов имеет система начальной загрузки?",
+      "question_en": "Bootstrap grid tizimi nechta ustundan iborat?",
+      "options_ru": [
+        "10",
+        "16",
+        "24",
+        "12"
+      ],
+      "options_en": [
+        "10",
+        "16",
+        "24",
+        "12"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Bootstrap da tugma yaratish uchun qaysi klass?",
+      "options": [
+        "btn",
+        "button",
+        "click",
+        "action"
+      ],
+      "answer": 0,
+      "question_ru": "Какой класс создать кнопку в Bootstrap?",
+      "question_en": "Which class to create a button in Bootstrap?",
+      "options_ru": [
+        "кнопка",
+        "кнопка",
+        "щелкнуть",
+        "действие"
+      ],
+      "options_en": [
+        "btn",
+        "button",
+        "click",
+        "action"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Bootstrap da asosiy (primary) tugma qanday?",
+      "options": [
+        "btn-primary",
+        "btn btn-main",
+        "button-primary",
+        "primary-btn"
+      ],
+      "answer": 0,
+      "question_ru": "Какая основная кнопка в Bootstrap?",
+      "question_en": "What is the primary button in Bootstrap?",
+      "options_ru": [
+        "btn-первичный",
+        "кнопка btn-main",
+        "кнопка-первичная",
+        "первичный-BTN"
+      ],
+      "options_en": [
+        "btn-primary",
+        "btn btn-main",
+        "button-primary",
+        "primary-btn"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Bootstrap da alert (ogohlantirish) komponenti qaysi klass?",
+      "options": [
+        "warning",
+        "message",
+        "alert",
+        "notification"
+      ],
+      "answer": 2,
+      "question_ru": "Какой класс представляет собой компонент оповещения (предупреждения) в Bootstrap?",
+      "question_en": "What class is the alert (warning) component in Bootstrap?",
+      "options_ru": [
+        "предупреждение",
+        "сообщение",
+        "тревога",
+        "уведомление"
+      ],
+      "options_en": [
+        "warning",
+        "message",
+        "alert",
+        "notification"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Bootstrap da navbar yaratish uchun qaysi klass?",
+      "options": [
+        "nav",
+        "navbar",
+        "menu",
+        "topbar"
+      ],
+      "answer": 1,
+      "question_ru": "Какой класс создать панель навигации в Bootstrap?",
+      "question_en": "Bootstrap da navbar yaratish uchun qaysi klass?",
+      "options_ru": [
+        "разнообразие",
+        "панель навигации",
+        "меню",
+        "доступный для поиска"
+      ],
+      "options_en": [
+        "variety",
+        "navbar",
+        "menu",
+        "findable"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Bootstrap da modal dialog qaysi klass?",
+      "options": [
+        "dialog",
+        "popup",
+        "overlay",
+        "modal"
+      ],
+      "answer": 3,
+      "question_ru": "Какой класс является модальным диалогом в Bootstrap?",
+      "question_en": "What class is a modal dialog in Bootstrap?",
+      "options_ru": [
+        "диалог",
+        "неожиданно возникнуть",
+        "наложение",
+        "модальный"
+      ],
+      "options_en": [
+        "dialogue",
+        "popup",
+        "overlay",
+        "modal"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Bootstrap da tasvir responsivligini ta'minlovchi klass?",
+      "options": [
+        "img-full",
+        "img-fluid",
+        "responsive-img",
+        "img-responsive"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da tasvir responsivligini ta'minlovchi klass?",
+      "question_en": "A class that provides image responsiveness in bootstrap?",
+      "options_ru": [
+        "img-full",
+        "img-fluid",
+        "responsive-img",
+        "img-responsive"
+      ],
+      "options_en": [
+        "img-full",
+        "img-fluid",
+        "responsive-img",
+        "img-responsive"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Bootstrap da matnni markazga joylashtirish?",
+      "options": [
+        "text-center",
+        "align-center",
+        "center-text",
+        "txt-center"
+      ],
+      "answer": 0,
+      "question_ru": "Bootstrap da matnni markazga joylashtirish?",
+      "question_en": "Centering text in Bootstrap?",
+      "options_ru": [
+        "text-center",
+        "align-center",
+        "center-text",
+        "txt-center"
+      ],
+      "options_en": [
+        "text-center",
+        "align-center",
+        "center-text",
+        "txt-center"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Bootstrap da yashirish uchun qaysi klass?",
+      "options": [
+        "hide",
+        "invisible",
+        "d-none",
+        "hidden"
+      ],
+      "answer": 2,
+      "question_ru": "Bootstrap da yashirish uchun qaysi klass?",
+      "question_en": "Which class to hide in Bootstrap?",
+      "options_ru": [
+        "hide",
+        "invisible",
+        "d-none",
+        "hidden"
+      ],
+      "options_en": [
+        "hide",
+        "invisible",
+        "d-none",
+        "hidden"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Bootstrap da card komponenti qaysi klass?",
+      "options": [
+        "panel",
+        "box",
+        "card",
+        "block"
+      ],
+      "answer": 2,
+      "question_ru": "Bootstrap da card komponenti qaysi klass?",
+      "question_en": "What class is the card component in Bootstrap?",
+      "options_ru": [
+        "panel",
+        "box",
+        "card",
+        "block"
+      ],
+      "options_en": [
+        "panel",
+        "box",
+        "card",
+        "block"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Bootstrap da form-control nima uchun?",
+      "options": [
+        "Form yaratish",
+        "Input elementlariga Bootstrap stilini berish",
+        "Form boshqarish",
+        "Form layout"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da form-control nima uchun?",
+      "question_en": "Why form-control in Bootstrap?",
+      "options_ru": [
+        "Form yaratish",
+        "Input elementlariga Bootstrap stilini berish",
+        "Form boshqarish",
+        "Form layout"
+      ],
+      "options_en": [
+        "Form creation",
+        "Give Bootstrap styling to input elements",
+        "Form management",
+        "Form layout"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Bootstrap da grid qatorini yaratish uchun qaysi klass?",
+      "options": [
+        "row",
+        "line",
+        "grid-row",
+        "g-row"
+      ],
+      "answer": 0,
+      "question_ru": "Bootstrap da grid qatorini yaratish uchun qaysi klass?",
+      "question_en": "Which class to create a grid row in Bootstrap?",
+      "options_ru": [
+        "row",
+        "line",
+        "grid-row",
+        "g-row"
+      ],
+      "options_en": [
+        "row",
+        "line",
+        "grid-row",
+        "g-row"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Bootstrap versiyalari orasida eng so'nggi asosiy versiya qaysi?",
+      "options": [
+        "Bootstrap 3",
+        "Bootstrap 4",
+        "Bootstrap 5",
+        "Bootstrap 2"
+      ],
+      "answer": 2,
+      "question_ru": "Bootstrap versiyalari orasida eng so'nggi asosiy versiya qaysi?",
+      "question_en": "Bootstrap versiyalari orasida eng so'nggi asosiy versiya qaysi?",
+      "options_ru": [
+        "Bootstrap 3",
+        "Bootstrap 4",
+        "Bootstrap 5",
+        "Bootstrap 2"
+      ],
+      "options_en": [
+        "Bootstrap 3",
+        "Bootstrap 4",
+        "Bootstrap 5",
+        "Bootstrap 2"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Bootstrap 5 da jQuery ga bog'liqlik qolganmi?",
+      "options": [
+        "Ha, hali ham kerak",
+        "Yo'q, Bootstrap 5 vanilla JS ga o'tdi — jQuery kerak emas",
+        "Ixtiyoriy",
+        "Faqat modullar uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap 5 da jQuery ga bog'liqlik qolganmi?",
+      "question_en": "Is there a dependency on jQuery left in Bootstrap 5?",
+      "options_ru": [
+        "Ha, hali ham kerak",
+        "Yo'q, Bootstrap 5 vanilla JS ga o'tdi — jQuery kerak emas",
+        "Ixtiyoriy",
+        "Faqat modullar uchun"
+      ],
+      "options_en": [
+        "Yes, still needed",
+        "No, Bootstrap 5 has switched to vanilla JS — no jQuery needed",
+        "Optional",
+        "Only for modules"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Bootstrap da breakpointlar qaysilar (Bootstrap 5)?",
+      "options": [
+        "xs, sm, md, lg, xl",
+        "xs, sm, md, lg, xl, xxl",
+        "sm, md, lg, xl, xxl",
+        "xs, sm, md, lg"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da breakpointlar qaysilar (Bootstrap 5)?",
+      "question_en": "What are breakpoints in Bootstrap (Bootstrap 5)?",
+      "options_ru": [
+        "xs, sm, md, lg, xl",
+        "xs, sm, md, lg, xl, xxl",
+        "sm, md, lg, xl, xxl",
+        "xs, sm, md, lg"
+      ],
+      "options_en": [
+        "xs, cm, md, lg, xl",
+        "xs, cm, md, lg, xl, xxl",
+        "cm, md, lg, xl, xxl",
+        "xs, cm, md, lg"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Bootstrap da col-md-6 nima anglatadi?",
+      "options": [
+        "Medium ekranda 6 piksel",
+        "Medium va undan katta ekranlarda 12 dan 6 ustun oladi",
+        "6 ta element",
+        "6 piksel kenglik"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da col-md-6 nima anglatadi?",
+      "question_en": "What does col-md-6 mean in Bootstrap?",
+      "options_ru": [
+        "Medium ekranda 6 piksel",
+        "Medium va undan katta ekranlarda 12 dan 6 ustun oladi",
+        "6 ta element",
+        "6 piksel kenglik"
+      ],
+      "options_en": [
+        "Medium ekranda 6 piksel",
+        "Scores 6 out of 12 on medium and larger screens",
+        "6 ta element",
+        "6 pixels wide"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Bootstrap da Flexbox utility klasslari qanday?",
+      "options": [
+        "flex-*",
+        "d-flex bilan birgalikda justify-content-*, align-items-* va boshqalar",
+        "flex: display",
+        "flexbox-*"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da Flexbox utility klasslari qanday?",
+      "question_en": "What are the Flexbox utility classes in Bootstrap?",
+      "options_ru": [
+        "flex-*",
+        "d-flex bilan birgalikda justify-content-*, align-items-* va boshqalar",
+        "flex: display",
+        "flexbox-*"
+      ],
+      "options_en": [
+        "flex-*",
+        "Along with d-flex, justify-content-*, align-items-*, etc",
+        "flex: display",
+        "flexbox-*"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Bootstrap da collapse komponenti nima uchun?",
+      "options": [
+        "Element o'chirish",
+        "Accordion va collapsible content — kengaytirish/yig'ish",
+        "Hide element",
+        "Toggle"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da collapse komponenti nima uchun?",
+      "question_en": "Why the collapse component in Bootstrap?",
+      "options_ru": [
+        "Element o'chirish",
+        "Accordion va collapsible content — kengaytirish/yig'ish",
+        "Hide element",
+        "Toggle"
+      ],
+      "options_en": [
+        "Delete item",
+        "Accordion and collapsible content — expand/collapse",
+        "Hide element",
+        "Toggle"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Bootstrap da offcanvas nima?",
+      "options": [
+        "Sidebarni chop etish",
+        "Ekran chetidan slayd bilan chiqadigan panel — side navigation uchun",
+        "Canvas element",
+        "Off-screen"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da offcanvas nima?",
+      "question_en": "What is offcanvas in Bootstrap?",
+      "options_ru": [
+        "Sidebarni chop etish",
+        "Ekran chetidan slayd bilan chiqadigan panel — side navigation uchun",
+        "Canvas element",
+        "Off-screen"
+      ],
+      "options_en": [
+        "Print sidebar",
+        "A panel that slides out from the edge of the screen is for side navigation",
+        "Canvas element",
+        "Off-screen"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Bootstrap da data-bs-* atributlari nima uchun?",
+      "options": [
+        "Bootstrap data",
+        "JavaScript interaktivlikni HTML atributlari orqali boshqarish — data-bs-toggle, data-bs-target",
+        "CSS atribut",
+        "Form data"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da data-bs-* atributlari nima uchun?",
+      "question_en": "Bootstrap da data-bs-* atributlari nima uchun?",
+      "options_ru": [
+        "Bootstrap data",
+        "JavaScript interaktivlikni HTML atributlari orqali boshqarish — data-bs-toggle, data-bs-target",
+        "CSS atribut",
+        "Form data"
+      ],
+      "options_en": [
+        "Bootstrap data",
+        "Control JavaScript interactivity via HTML attributes — data-bs-toggle, data-bs-target",
+        "CSS attribute",
+        "Form data"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Bootstrap da Sass variables qanday o'zgartiriladi?",
+      "options": [
+        "CSS da",
+        "Bootstrap Sass fayllarni import qilishdan oldin o'zgaruvchilarni override qilish",
+        "tailwind.config kabi",
+        "Bevosita CSS"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da Sass variables qanday o'zgartiriladi?",
+      "question_en": "How to change Sass variables in Bootstrap?",
+      "options_ru": [
+        "CSS da",
+        "Bootstrap Sass fayllarni import qilishdan oldin o'zgaruvchilarni override qilish",
+        "tailwind.config kabi",
+        "Bevosita CSS"
+      ],
+      "options_en": [
+        "In CSS",
+        "Overriding variables before importing Bootstrap Sass files",
+        "like tailwind.config",
+        "Direct CSS"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Bootstrap da spinner komponenti nima uchun?",
+      "options": [
+        "Loading animatsiyasi",
+        "Yuklanish indikatori — spinner-border, spinner-grow",
+        "Error indicator",
+        "Progress"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da spinner komponenti nima uchun?",
+      "question_en": "Why spinner component in Bootstrap?",
+      "options_ru": [
+        "Loading animatsiyasi",
+        "Yuklanish indikatori — spinner-border, spinner-grow",
+        "Error indicator",
+        "Progress"
+      ],
+      "options_en": [
+        "Loading animation",
+        "Loading indicator — spinner-border, spinner-grow",
+        "Error indicator",
+        "Progress"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Bootstrap da toast komponenti nima?",
+      "options": [
+        "Tost non",
+        "Qisqa vaqtli bildirishnoma — snackbar kabi",
+        "Alert turi",
+        "Notification"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da toast komponenti nima?",
+      "question_en": "What is the toast component in Bootstrap?",
+      "options_ru": [
+        "Tost non",
+        "Qisqa vaqtli bildirishnoma — snackbar kabi",
+        "Alert turi",
+        "Notification"
+      ],
+      "options_en": [
+        "Toast bread",
+        "A short notice — like a snackbar",
+        "Alert type",
+        "Notification"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Bootstrap da accordion nima?",
+      "options": [
+        "Musiqa asbobi",
+        "Yig'iluvchi/kengayadigan kontent panellari — collapse asosida",
+        "Collapse turi",
+        "Expand panel"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da accordion nima?",
+      "question_en": "What is accordion in Bootstrap?",
+      "options_ru": [
+        "Musiqa asbobi",
+        "Yig'iluvchi/kengayadigan kontent panellari — collapse asosida",
+        "Collapse turi",
+        "Expand panel"
+      ],
+      "options_en": [
+        "Musical instrument",
+        "Collapsible/expanding content panels — based on collapse",
+        "Collapse type",
+        "Expand panel"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Bootstrap da tooltip va popover farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Tooltip — kichik matn yordami; popover — sarlavha va kontent bilan kattaroq popup",
+        "Popover kichikroq",
+        "Tooltip sarlavhali"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da tooltip va popover farqi?",
+      "question_en": "Difference between tooltip and popover in Bootstrap?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Tooltip — kichik matn yordami; popover — sarlavha va kontent bilan kattaroq popup",
+        "Popover kichikroq",
+        "Tooltip sarlavhali"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Tooltip — small text help; popover — larger popup with title and content",
+        "Popover is smaller",
+        "Tooltip with title"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Bootstrap da progress bar qanday?",
+      "options": [
+        "progress",
+        "<div class='progress'> ichida progress-bar klass va width style",
+        "progressbar",
+        "bar"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da progress bar qanday?",
+      "question_en": "What is progress bar in Bootstrap?",
+      "options_ru": [
+        "progress",
+        "<div class='progress'> ichida progress-bar klass va width style",
+        "progressbar",
+        "bar"
+      ],
+      "options_en": [
+        "progress",
+        "<div class='progress'> inside progress-bar class and width style",
+        "progress bar",
+        "bar"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Bootstrap da list-group nima uchun?",
+      "options": [
+        "HTML ro'yxat",
+        "Flexible komponent — ro'yxat, navigatsiya yoki kontentlar guruhi uchun",
+        "Ordered list",
+        "Navigation list"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da list-group nima uchun?",
+      "question_en": "Why list-group in Bootstrap?",
+      "options_ru": [
+        "HTML ro'yxat",
+        "Flexible komponent — ro'yxat, navigatsiya yoki kontentlar guruhi uchun",
+        "Ordered list",
+        "Navigation list"
+      ],
+      "options_en": [
+        "HTML ro'yxat",
+        "Flexible component — for a list, navigation, or content group",
+        "Ordered list",
+        "Navigation list"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Bootstrap da breadcrumb nima uchun?",
+      "options": [
+        "Non bo'lagi",
+        "Navigatsiya yo'lini ko'rsatish — sahifa ierarxiyasi",
+        "Navigation menu",
+        "Sitemap"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da breadcrumb nima uchun?",
+      "question_en": "Why breadcrumb in Bootstrap?",
+      "options_ru": [
+        "Non bo'lagi",
+        "Navigatsiya yo'lini ko'rsatish — sahifa ierarxiyasi",
+        "Navigation menu",
+        "Sitemap"
+      ],
+      "options_en": [
+        "A piece of bread",
+        "Show navigation path - page hierarchy",
+        "Navigation menu",
+        "Sitemap"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Bootstrap da pagination nima uchun?",
+      "options": [
+        "Sahifa raqamlash",
+        "Sahifalar o'rtasida navigatsiya — oldingi/keyingi/raqamlar",
+        "Page control",
+        "Navigator"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da pagination nima uchun?",
+      "question_en": "Why pagination in Bootstrap?",
+      "options_ru": [
+        "Sahifa raqamlash",
+        "Sahifalar o'rtasida navigatsiya — oldingi/keyingi/raqamlar",
+        "Page control",
+        "Navigator"
+      ],
+      "options_en": [
+        "Page numbering",
+        "Navigation between pages — previous/next/numbers",
+        "Page control",
+        "Navigator"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Bootstrap da table-responsive nima qiladi?",
+      "options": [
+        "Responsiv jadval",
+        "Jadvalga horizontal scroll qo'shib, kichik ekranlarda ham to'g'ri ko'rsatadi",
+        "Mobile table",
+        "Scroll table"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da table-responsive nima qiladi?",
+      "question_en": "What does table-responsive do in Bootstrap?",
+      "options_ru": [
+        "Responsiv jadval",
+        "Jadvalga horizontal scroll qo'shib, kichik ekranlarda ham to'g'ri ko'rsatadi",
+        "Mobile table",
+        "Scroll table"
+      ],
+      "options_en": [
+        "Responsive table",
+        "Adds horizontal scroll to the table and displays it correctly even on small screens",
+        "Mobile table",
+        "Scroll table"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Bootstrap da badge nima?",
+      "options": [
+        "Medal",
+        "Kichik ma'lumot belgisi — son, status yoki label uchun",
+        "Label",
+        "Tag"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da badge nima?",
+      "question_en": "Bootstrap da badge nima?",
+      "options_ru": [
+        "Medal",
+        "Kichik ma'lumot belgisi — son, status yoki label uchun",
+        "Label",
+        "Tag"
+      ],
+      "options_en": [
+        "Medal",
+        "A small information icon — for a number, status, or label",
+        "Label",
+        "Tag"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Bootstrap da g-4 nima qiladi?",
+      "options": [
+        "Grid gap",
+        "Row/Grid elementlar orasida gap qo'shadi (gutter)",
+        "Grid columns 4",
+        "Group 4"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da g-4 nima qiladi?",
+      "question_en": "What does g-4 do in Bootstrap?",
+      "options_ru": [
+        "Grid gap",
+        "Row/Grid elementlar orasida gap qo'shadi (gutter)",
+        "Grid columns 4",
+        "Group 4"
+      ],
+      "options_en": [
+        "Grid talk",
+        "Add gutter between Row/Grid elements",
+        "Grid columns 4",
+        "Group 4"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Bootstrap da d-grid nima?",
+      "options": [
+        "Display grid",
+        "CSS Grid display ni qo'llaydi — gap, kolonnalar uchun",
+        "Grid layout",
+        "Bootstrap grid"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da d-grid nima?",
+      "question_en": "What is d-grid in Bootstrap?",
+      "options_ru": [
+        "Display grid",
+        "CSS Grid display ni qo'llaydi — gap, kolonnalar uchun",
+        "Grid layout",
+        "Bootstrap grid"
+      ],
+      "options_en": [
+        "Display grid",
+        "CSS uses Grid display — that is, for columns",
+        "Grid layout",
+        "Bootstrap grid"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Bootstrap da CSS custom properties (variables) qanday?",
+      "options": [
+        "Yo'q",
+        "Bootstrap 5 — :root da CSS custom properties ishlatadi — runtime theming uchun overrideable",
+        "Sass only",
+        "JS only"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da CSS custom properties (variables) qanday?",
+      "question_en": "What are CSS custom properties (variables) in Bootstrap?",
+      "options_ru": [
+        "Yo'q",
+        "Bootstrap 5 — :root da CSS custom properties ishlatadi — runtime theming uchun overrideable",
+        "Sass only",
+        "JS only"
+      ],
+      "options_en": [
+        "No",
+        "Bootstrap 5 — uses CSS custom properties in :root — overrideable for runtime theming",
+        "Sass only",
+        "JS only"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Bootstrap da RTL (Right-to-Left) support qanday?",
+      "options": [
+        "Yo'q",
+        "Bootstrap 5.1+ — bootstrap.rtl.css bilan yoki rtl: true Sass config — arabcha, fors uchun",
+        "Faqat CSS",
+        "Plugin bilan"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da RTL (Right-to-Left) support qanday?",
+      "question_en": "What is RTL (Right-to-Left) support in Bootstrap?",
+      "options_ru": [
+        "Yo'q",
+        "Bootstrap 5.1+ — bootstrap.rtl.css bilan yoki rtl: true Sass config — arabcha, fors uchun",
+        "Faqat CSS",
+        "Plugin bilan"
+      ],
+      "options_en": [
+        "No",
+        "Bootstrap 5.1+ — with bootstrap.rtl.css or rtl:true Sass config — for Arabic, Persian",
+        "CSS only",
+        "With the plugin"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Bootstrap da component JavaScript API qanday ishlaydi?",
+      "options": [
+        "jQuery plugin",
+        "Bootstrap.Modal.getOrCreateInstance(el) — vanilla JS API",
+        "data attribute only",
+        "Event driven"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da component JavaScript API qanday ishlaydi?",
+      "question_en": "How does the component JavaScript API work in Bootstrap?",
+      "options_ru": [
+        "jQuery plugin",
+        "Bootstrap.Modal.getOrCreateInstance(el) — vanilla JS API",
+        "data attribute only",
+        "Event driven"
+      ],
+      "options_en": [
+        "jQuery plugin",
+        "Bootstrap.Modal.getOrCreateInstance(el) is a vanilla JS API",
+        "data attribute only",
+        "Event driven"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Bootstrap da custom theme yaratish uchun minimal Sass setup?",
+      "options": [
+        "Faqat CSS copy",
+        "functions, variables override, bootstrap import, utilities — yoki partial import",
+        "Theme plugin",
+        "Config file"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da custom theme yaratish uchun minimal Sass setup?",
+      "question_en": "Bootstrap da custom theme yaratish uchun minimal Sass setup?",
+      "options_ru": [
+        "Faqat CSS copy",
+        "functions, variables override, bootstrap import, utilities — yoki partial import",
+        "Theme plugin",
+        "Config file"
+      ],
+      "options_en": [
+        "CSS copy only",
+        "functions, variables override, bootstrap import, utilities — or partial import",
+        "Theme plugin",
+        "Config file"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Bootstrap da utility API nima?",
+      "options": [
+        "Utility yaratish",
+        "tailwind.config kabi — custom utility klasslarini Sass orqali generatsiya qilish",
+        "Custom class",
+        "Build API"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da utility API nima?",
+      "question_en": "What is the utility API in Bootstrap?",
+      "options_ru": [
+        "Utility yaratish",
+        "tailwind.config kabi — custom utility klasslarini Sass orqali generatsiya qilish",
+        "Custom class",
+        "Build API"
+      ],
+      "options_en": [
+        "Create a utility",
+        "Like tailwind.config — generating custom utility classes via Sass",
+        "Custom class",
+        "Build API"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Bootstrap da $enable-* Sass flags nima uchun?",
+      "options": [
+        "Feature flag",
+        "Muayyan feature larni kompilyatsiyadan olib tashlash — bundle kichraytirish uchun",
+        "Config flag",
+        "Build flag"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da $enable-* Sass flags nima uchun?",
+      "question_en": "Why $enable-* Sass flags in Bootstrap?",
+      "options_ru": [
+        "Feature flag",
+        "Muayyan feature larni kompilyatsiyadan olib tashlash — bundle kichraytirish uchun",
+        "Config flag",
+        "Build flag"
+      ],
+      "options_en": [
+        "Feature flag",
+        "Removing certain features from the compilation — to make the bundle smaller",
+        "Config flag",
+        "Build flag"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Bootstrap da z-index scale nima?",
+      "options": [
+        "CSS z-index",
+        "Dropdown, sticky, fixed, modal, popover, tooltip uchun belgilangan z-index ierarxiyasi",
+        "Layer system",
+        "Stacking"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da z-index scale nima?",
+      "question_en": "Bootstrap da z-index scale nima?",
+      "options_ru": [
+        "CSS z-index",
+        "Dropdown, sticky, fixed, modal, popover, tooltip uchun belgilangan z-index ierarxiyasi",
+        "Layer system",
+        "Stacking"
+      ],
+      "options_en": [
+        "CSS z-index",
+        "Defined z-index hierarchy for dropdown, sticky, fixed, modal, popover, tooltip",
+        "Layer system",
+        "Stacking"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Bootstrap da Reboot CSS nima?",
+      "options": [
+        "CSS restart",
+        "Normalize.css asosida yaxshilangan — consistent base styles brauzerlar orasida",
+        "Reset CSS",
+        "Base CSS"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da Reboot CSS nima?",
+      "question_en": "What is Reboot CSS in Bootstrap?",
+      "options_ru": [
+        "CSS restart",
+        "Normalize.css asosida yaxshilangan — consistent base styles brauzerlar orasida",
+        "Reset CSS",
+        "Base CSS"
+      ],
+      "options_en": [
+        "CSS restart",
+        "Improved base on Normalize.css — consistent base styles across browsers",
+        "Reset CSS",
+        "Base CSS"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Bootstrap da container-fluid va container farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "container — max-width breakpointlarda chekli; container-fluid — har doim 100% kenglik",
+        "container-fluid kichik",
+        "container responsive emas"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da container-fluid va container farqi?",
+      "question_en": "Difference between container-fluid and container in Bootstrap?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "container — max-width breakpointlarda chekli; container-fluid — har doim 100% kenglik",
+        "container-fluid kichik",
+        "container responsive emas"
+      ],
+      "options_en": [
+        "There is no difference",
+        "container — max-width limited in breakpoints; container-fluid — always 100% width",
+        "container-fluid is small",
+        "container is not responsive"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Bootstrap da scrollspy nima uchun?",
+      "options": [
+        "Scroll kuzatish",
+        "Sahifada scroll holatiga qarab navigatsiya elementlarini faol qilish",
+        "Scroll animation",
+        "Parallax"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da scrollspy nima uchun?",
+      "question_en": "Why scrollspy in Bootstrap?",
+      "options_ru": [
+        "Scroll kuzatish",
+        "Sahifada scroll holatiga qarab navigatsiya elementlarini faol qilish",
+        "Scroll animation",
+        "Parallax"
+      ],
+      "options_en": [
+        "Scroll tracking",
+        "Activation of navigation elements depending on the scroll position on the page",
+        "Scroll animation",
+        "Parallax"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Bootstrap da $spacers Sass map nima?",
+      "options": [
+        "Spacing config",
+        "Bootstrap spacing utility larini (p, m, gap) belgilaydigan kalit-qiymat xarita — extend uchun",
+        "Margin map",
+        "Padding map"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da $spacers Sass map nima?",
+      "question_en": "What is $spacers Sass map in Bootstrap?",
+      "options_ru": [
+        "Spacing config",
+        "Bootstrap spacing utility larini (p, m, gap) belgilaydigan kalit-qiymat xarita — extend uchun",
+        "Margin map",
+        "Padding map"
+      ],
+      "options_en": [
+        "Spacing config",
+        "Key-value map defining bootstrap spacing utilities (p, m, gap) — for extend",
+        "Margin map",
+        "Padding map"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Bootstrap da Icons kutubxonasi qanday qo'shiladi?",
+      "options": [
+        "Bootstrap da mavjud",
+        "Bootstrap Icons — alohida paketi (CDN yoki npm) yoki SVG spritelar orqali",
+        "Font Awesome",
+        "Material Icons"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da Icons kutubxonasi qanday qo'shiladi?",
+      "question_en": "How to add Icons library in Bootstrap?",
+      "options_ru": [
+        "Bootstrap da mavjud",
+        "Bootstrap Icons — alohida paketi (CDN yoki npm) yoki SVG spritelar orqali",
+        "Font Awesome",
+        "Material Icons"
+      ],
+      "options_en": [
+        "Available in Bootstrap",
+        "Bootstrap Icons — via separate package (CDN or npm) or SVG sprites",
+        "Font Awesome",
+        "Material Icons"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Bootstrap da $theme-colors Sass map nima?",
+      "options": [
+        "Rang palitri",
+        "Bootstrap rang utility larini (btn-primary, alert-danger) boshqaradigan asosiy ranglar xaritasi",
+        "Color scheme",
+        "Theme file"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da $theme-colors Sass map nima?",
+      "question_en": "What is $theme-colors Sass map in Bootstrap?",
+      "options_ru": [
+        "Rang palitri",
+        "Bootstrap rang utility larini (btn-primary, alert-danger) boshqaradigan asosiy ranglar xaritasi",
+        "Color scheme",
+        "Theme file"
+      ],
+      "options_en": [
+        "Color palette",
+        "The primary colormap that controls the Bootstrap color utilities (btn-primary, alert-danger).",
+        "Color scheme",
+        "Theme file"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Bootstrap da custom breakpoint qanday qo'shiladi?",
+      "options": [
+        "Iloji yo'q",
+        "$grid-breakpoints Sass map ga yangi kalit qo'shing va rebuild qiling",
+        "Config file",
+        "CSS media query"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da custom breakpoint qanday qo'shiladi?",
+      "question_en": "How to add custom breakpoint in Bootstrap?",
+      "options_ru": [
+        "Iloji yo'q",
+        "$grid-breakpoints Sass map ga yangi kalit qo'shing va rebuild qiling",
+        "Config file",
+        "CSS media query"
+      ],
+      "options_en": [
+        "There is no way",
+        "Add a new key to the $grid-breakpoints Sass map and rebuild",
+        "Config file",
+        "CSS media query"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Bootstrap da focus-ring utility nima?",
+      "options": [
+        "Focus element",
+        "Elementga focus ring qo'shish — accessibility uchun — focus-ring, focus-ring-*",
+        "Ring focus",
+        "CSS focus"
+      ],
+      "answer": 1,
+      "question_ru": "Bootstrap da focus-ring utility nima?",
+      "question_en": "What is the focus-ring utility in Bootstrap?",
+      "options_ru": [
+        "Focus element",
+        "Elementga focus ring qo'shish — accessibility uchun — focus-ring, focus-ring-*",
+        "Ring focus",
+        "CSS focus"
+      ],
+      "options_en": [
+        "Focus item",
+        "Add a focus ring to an element — for accessibility — focus-ring, focus-ring-*",
+        "Ring focus",
+        "CSS focus"
+      ]
+    }
   ]
 }

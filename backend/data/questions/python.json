@@ -2,55 +2,1305 @@
   "technology": "Python",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Python da o'zgaruvchiga qiymat berish uchun qaysi operator ishlatiladi?","options":["==","=>","=",":="],"answer":2},
-    {"id":2,"level":"easy","question":"Python da print funksiyasi nima qiladi?","options":["Matnni faylga yozadi","Konsolga ma'lumot chiqaradi","O'zgaruvchi yaratadi","Dasturni to'xtatadi"],"answer":1},
-    {"id":3,"level":"easy","question":"Python da list yaratish uchun qaysi belgi ishlatiladi?","options":["{}","()","<>","[]"],"answer":3},
-    {"id":4,"level":"easy","question":"Python da dictionary (dict) yaratish uchun qaysi belgi ishlatiladi?","options":["[]","()","{}","<>"],"answer":2},
-    {"id":5,"level":"easy","question":"Python da funksiya e'lon qilish uchun qaysi kalit so'z ishlatiladi?","options":["function","def","fun","method"],"answer":1},
-    {"id":6,"level":"easy","question":"Python da comment qanday yoziladi?","options":["// comment","/* comment */","# comment","-- comment"],"answer":2},
-    {"id":7,"level":"easy","question":"Python da len() funksiyasi nima qaytaradi?","options":["Ob'ekt tipini","Ob'ekt uzunligini (elementlar soni)","Ob'ekt qiymatini","Ob'ekt manzilini"],"answer":1},
-    {"id":8,"level":"easy","question":"Python da if bloki qanday tugatiladi?","options":["end if","endif","} yoki )","Qaviqs yoki end kerak emas, indentation ishlatiladi"],"answer":3},
-    {"id":9,"level":"easy","question":"Python da range(5) nima qaytaradi?","options":["[1, 2, 3, 4, 5]","[0, 1, 2, 3, 4]","(0, 5)","0 dan 5 gacha raqamlar generatori"],"answer":3},
-    {"id":10,"level":"easy","question":"Python da string bo'lish (split) uchun qaysi metod ishlatiladi?","options":["divide()","break()","split()","separate()"],"answer":2},
-    {"id":11,"level":"easy","question":"Python da tuple va list farqi nima?","options":["Hech qanday farq yo'q","tuple o'zgarmas (immutable), list o'zgaruvchan (mutable)","list o'zgarmas, tuple o'zgaruvchan","Ikkalasi bir xil ishlaydi"],"answer":1},
-    {"id":12,"level":"easy","question":"Python da import bayonoti nima uchun ishlatiladi?","options":["Fayl yaratish uchun","Modullarni loyihaga kiritish uchun","Ma'lumotlarni import qilish uchun","Funksiyalarni eksport qilish uchun"],"answer":1},
-    {"id":13,"level":"easy","question":"Python da None nima anglatadi?","options":["0 qiymati","Noto'g'ri qiymat","Qiymat yo'qligi (null ekvivalenti)","Bo'sh string"],"answer":2},
-    {"id":14,"level":"easy","question":"Python da for tsikli qanday yoziladi?","options":["for i = 0; i < 10; i++:","for i in range(10):","foreach i in range(10):","loop i in range(10):"],"answer":1},
-    {"id":15,"level":"easy","question":"Python da type() funksiyasi nima qaytaradi?","options":["Ob'ekt qiymatini","Ob'ekt tipini (klassini)","Ob'ekt hajmini","Ob'ekt manzilini"],"answer":1},
-    {"id":16,"level":"medium","question":"Python da list comprehension nima?","options":["List ichida loop","Ixcham sintaksis bilan yangi ro'yxat yaratish: [x*2 for x in items]","List filterlash","List nusxalash"],"answer":1},
-    {"id":17,"level":"medium","question":"Python da *args va **kwargs nima?","options":["Maxsus o'zgaruvchilar","*args — ixtiyoriy sonli positional argumentlar; **kwargs — ixtiyoriy sonli kalit so'z argumentlari","Faqat keyword argumentlar","Majburiy argumentlar"],"answer":1},
-    {"id":18,"level":"medium","question":"Python da lambda funksiyasi nima?","options":["Yuqori darajali funksiya","Bir satrli anonim funksiya: lambda x: x*2","Rekursiv funksiya","Dekorator funksiyasi"],"answer":1},
-    {"id":19,"level":"medium","question":"Python da decorator nima?","options":["CSS dekoratsiyasi","Funksiyani o'rab, uning xatti-harakatini o'zgartiruvchi funksiya (@syntax)","Ob'ekt bezash","Klass metodi"],"answer":1},
-    {"id":20,"level":"medium","question":"Python da __init__ metodi nima uchun ishlatiladi?","options":["Klassni o'chirish","Klass ob'ekti yaratilganda avtomatik chaqiriladigan konstruktor metod","Klassni import qilish","Klass nusxalash"],"answer":1},
-    {"id":21,"level":"medium","question":"Python da exception handling qanday amalga oshiriladi?","options":["try-catch","try-except-finally","error-catch","handle-error"],"answer":1},
-    {"id":22,"level":"medium","question":"Python da generator nima?","options":["Tasodifiy raqam generatori","yield kalit so'zi bilan natija chiqaruvchi — xotirani tejovchi iterator yaratuvchi funksiya","List generator","Ko'p thread li funksiya"],"answer":1},
-    {"id":23,"level":"medium","question":"Python da with statement nima uchun ishlatiladi?","options":["If-else qisqartmasi","Context manager — resurs boshqarish (fayl, ulanish) va avtomatik yopish uchun","Tsikl yaratish","Ob'ekt yaratish"],"answer":1},
-    {"id":24,"level":"medium","question":"Python da set (to'plam) nima?","options":["Takrorlanadigan elementlar to'plami","Noyob, tartiblashmagan elementlar to'plami","Dict ning turi","Tuple ning turi"],"answer":1},
-    {"id":25,"level":"medium","question":"Python da map() funksiyasi nima qiladi?","options":["Dict yaratadi","Funksiyani iterable ning har bir elementiga qo'llaydi","Elementlarni filterlaydi","Elementlarni saralaydi"],"answer":1},
-    {"id":26,"level":"medium","question":"Python da filter() funksiyasi nima qiladi?","options":["Barcha elementlarni o'zgartiradi","Shartga mos elementlarni filterlaydi","Elementlarni saralaydi","Elementlarni birlashtiradi"],"answer":1},
-    {"id":27,"level":"medium","question":"Python da zip() funksiyasi nima qiladi?","options":["Fayllarni zip qiladi","Bir nechta iterableni parallel juftlashtiradi","Ro'yxatni siqadi","Elementlarni birlashtiradi"],"answer":1},
-    {"id":28,"level":"medium","question":"Python da isinstance() funksiyasi nima qiladi?","options":["Ob'ekt id sini tekshiradi","Ob'ektning berilgan klass yoki tipga tegishliligini tekshiradi","Ob'ekt mavjudligini tekshiradi","Ob'ekt qiymatini tekshiradi"],"answer":1},
-    {"id":29,"level":"medium","question":"Python da string formatting uchun f-string qanday ishlatiladi?","options":["'Hello ' + name","f'Hello {name}'","format('Hello', name)","'Hello %s' % name"],"answer":1},
-    {"id":30,"level":"medium","question":"Python da __str__ va __repr__ metodlari farqi?","options":["Hech qanday farq yo'q","__str__ insonlar uchun o'qiladigan ko'rinish; __repr__ debug uchun aniqroq ko'rinish","__repr__ insonlar uchun","Ikkalasi bir xil ishlaydi"],"answer":1},
-    {"id":31,"level":"medium","question":"Python da @staticmethod va @classmethod farqi?","options":["Hech qanday farq yo'q","staticmethod — na self na cls qabul qilmaydi; classmethod — cls (klass) ni qabul qiladi","classmethod — self qabul qiladi","staticmethod — cls qabul qiladi"],"answer":1},
-    {"id":32,"level":"medium","question":"Python da shallow copy va deep copy farqi?","options":["Hech qanday farq yo'q","shallow copy — ob'ektni nusxalaydi, ichki ob'ektlarga havola qoladi; deep copy — to'liq nusxa","deep copy — tezroq","shallow copy — xotirani ko'p ishlatadi"],"answer":1},
-    {"id":33,"level":"medium","question":"Python da GIL (Global Interpreter Lock) nima?","options":["Global boshlang'ich zichlash","Bir vaqtda faqat bitta thread Python bytecode ini ishlata olishiga yo'l qo'yadigan mutex","Global import kutubxonasi","Xotira bloklash mexanizmi"],"answer":1},
-    {"id":34,"level":"medium","question":"Python da enumerate() funksiyasi nima qiladi?","options":["Elementlarni sanaydi","Iterable elementlarini indeks bilan juft qaytaradi","Elementlarni sanab o'chiradi","Ro'yxatni raqamlaydi"],"answer":1},
-    {"id":35,"level":"medium","question":"Python da dict.get() va dict[] farqi?","options":["Hech qanday farq yo'q","get() kalit topilmasa None (yoki default) qaytaradi; [] KeyError chiqaradi","[] xavfsizroq","get() tezroq"],"answer":1},
-    {"id":36,"level":"hard","question":"Python da metaclass nima?","options":["Klass ning klassning klassi","Klasslarni yaratuvchi klass — sinf ta'rifining xatti-harakatini boshqaradi","Abstract klass","Singleton klass"],"answer":0},
-    {"id":37,"level":"hard","question":"Python da __slots__ nima uchun ishlatiladi?","options":["Klass methodlarini bloklash","Instance o'zgaruvchilarini aniq belgilab, __dict__ ni o'chirib xotirani tejash","Klass atributlarini yashirish","Meros olishni cheklash"],"answer":1},
-    {"id":38,"level":"hard","question":"Python da asyncio nima?","options":["Thread kutubxonasi","Asinxron I/O, event loop va coroutine lar uchun Python standart kutubxonasi","Async/await sintaksisi","Multiprocessing kutubxonasi"],"answer":1},
-    {"id":39,"level":"hard","question":"Python da coroutine nima?","options":["Oddiy funksiya","async def bilan e'lon qilingan, await bilan to'xtab-davom etadigan funksiya","Generator funksiyasi","Lambda funksiyasi"],"answer":1},
-    {"id":40,"level":"hard","question":"Python da descriptor protocol nima?","options":["Ma'lumot tavsifi protokoli","__get__, __set__, __delete__ metodlarini implementatsiya qilgan ob'ekt","Klass dizayn namunasi","Meros protokoli"],"answer":1},
-    {"id":41,"level":"hard","question":"Python da weakref nima uchun ishlatiladi?","options":["Zaif o'zgaruvchilar","Ob'ektga zaif havola yaratish — garbage collection uchun to'siq bo'lmaydi","Memory leak oldini olish","Circular reference oldini olish"],"answer":1},
-    {"id":42,"level":"hard","question":"Python da __new__ va __init__ farqi nima?","options":["Hech qanday farq yo'q","__new__ ob'ektni xotirada yaratadi; __init__ yaratilgan ob'ektni boshlang'ich holatga keltiradi","__init__ ob'ektni yaratadi","Ikkalasi bir xil ishlaydi"],"answer":1},
-    {"id":43,"level":"hard","question":"Python da MRO (Method Resolution Order) nima?","options":["Metodlar tartib ro'yxati","Meros ierarxiyasida metod qidiruv tartibi (C3 linearization algoritmi)","Metod prioriteti","Metod ro'yxati"],"answer":1},
-    {"id":44,"level":"hard","question":"Python da __call__ metodi nima uchun?","options":["Funksiya chaqirish","Ob'ektni funksiya kabi chaqirish imkonini beradi: obj()","Klass yaratish","Metod chaqirish"],"answer":1},
-    {"id":45,"level":"hard","question":"Python da contextlib.contextmanager nima uchun ishlatiladi?","options":["Context yaratish","Generator bilan oddiy funksiyadan context manager yaratish","Fayl boshqarish","Thread boshqarish"],"answer":1},
-    {"id":46,"level":"hard","question":"Python da Abstract Base Class (ABC) nima uchun?","options":["Faqat meros uchun","Interfeys ta'riflash — subklasslar implementatsiya qilishi kerak bo'lgan metodlarni belgilash","Klass izolatsiyasi","Klass yaratish"],"answer":1},
-    {"id":47,"level":"hard","question":"Python da __enter__ va __exit__ metodlari nima uchun?","options":["Dasturga kirish va chiqish","with statement uchun Context Manager protokolini implementatsiya qilish","Funksiyaga kirish","Klass metodlari"],"answer":1},
-    {"id":48,"level":"hard","question":"Python da CPython, PyPy, Jython farqlari nima?","options":["Python versiyalari","CPython — C da implementatsiya, standart; PyPy — JIT kompilyator, tez; Jython — Java da implementatsiya","Turli platformalar","Turli IDE lar"],"answer":1},
-    {"id":49,"level":"hard","question":"Python da memory management qanday ishlaydi?","options":["Qo'lda boshqariladi","Reference counting + cyclic garbage collector — ob'ektlar mos havola yo'qolganda o'chiriladi","Stack va heap","Faqat garbage collector"],"answer":1},
-    {"id":50,"level":"hard","question":"Python da __getattr__ va __getattribute__ farqi nima?","options":["Hech qanday farq yo'q","__getattr__ faqat atribut topilmasa chaqiriladi; __getattribute__ har doim chaqiriladi","__getattribute__ faqat topilmasa chaqiriladi","Ikkalasi bir xil ishlaydi"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Python da o'zgaruvchiga qiymat berish uchun qaysi operator ishlatiladi?",
+      "options": [
+        "==",
+        "=>",
+        "=",
+        ":="
+      ],
+      "answer": 2,
+      "question_ru": "Какой оператор используется для присвоения значения переменной в Python?",
+      "question_en": "Which operator is used to assign a value to a variable in Python?",
+      "options_ru": [
+        "==",
+        "=>",
+        "=",
+        ":="
+      ],
+      "options_en": [
+        "==",
+        "=>",
+        "=",
+        ":="
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Python da print funksiyasi nima qiladi?",
+      "options": [
+        "Matnni faylga yozadi",
+        "Konsolga ma'lumot chiqaradi",
+        "O'zgaruvchi yaratadi",
+        "Dasturni to'xtatadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция печати в Python?",
+      "question_en": "What does the print function do in Python?",
+      "options_ru": [
+        "Записывает текст в файл",
+        "Выводит информацию на консоль",
+        "Создает переменную",
+        "Останавливает программу"
+      ],
+      "options_en": [
+        "Writes text to a file",
+        "Outputs information to the console",
+        "Creates a variable",
+        "Dasturni to'xtatadi"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Python da list yaratish uchun qaysi belgi ishlatiladi?",
+      "options": [
+        "{}",
+        "()",
+        "<>",
+        "[]"
+      ],
+      "answer": 3,
+      "question_ru": "Какой символ используется для создания списка в Python?",
+      "question_en": "Which symbol is used to create a list in Python?",
+      "options_ru": [
+        "{}",
+        "()",
+        "<>",
+        "[]"
+      ],
+      "options_en": [
+        "{}",
+        "()",
+        "<>",
+        "[]"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Python da dictionary (dict) yaratish uchun qaysi belgi ishlatiladi?",
+      "options": [
+        "[]",
+        "()",
+        "{}",
+        "<>"
+      ],
+      "answer": 2,
+      "question_ru": "Какой символ используется для создания словаря (dict) в Python?",
+      "question_en": "Which symbol is used to create a dictionary (dict) in Python?",
+      "options_ru": [
+        "[]",
+        "()",
+        "{}",
+        "<>"
+      ],
+      "options_en": [
+        "[]",
+        "()",
+        "{}",
+        "<>"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Python da funksiya e'lon qilish uchun qaysi kalit so'z ishlatiladi?",
+      "options": [
+        "function",
+        "def",
+        "fun",
+        "method"
+      ],
+      "answer": 1,
+      "question_ru": "Какое ключевое слово используется для объявления функции в Python?",
+      "question_en": "Which keyword is used to declare a function in Python?",
+      "options_ru": [
+        "функция",
+        "защита",
+        "веселье",
+        "метод"
+      ],
+      "options_en": [
+        "function",
+        "def",
+        "fun",
+        "method"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Python da comment qanday yoziladi?",
+      "options": [
+        "// comment",
+        "/* comment */",
+        "# comment",
+        "-- comment"
+      ],
+      "answer": 2,
+      "question_ru": "Как написать комментарий на Python?",
+      "question_en": "How to write a comment in Python?",
+      "options_ru": [
+        "// comment",
+        "/* комментарий */",
+        "# comment",
+        "-- комментарий"
+      ],
+      "options_en": [
+        "// comment",
+        "/* comment */",
+        "# comment",
+        "-- comment"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Python da len() funksiyasi nima qaytaradi?",
+      "options": [
+        "Ob'ekt tipini",
+        "Ob'ekt uzunligini (elementlar soni)",
+        "Ob'ekt qiymatini",
+        "Ob'ekt manzilini"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает функция len() в Python?",
+      "question_en": "What does the len() function return in Python?",
+      "options_ru": [
+        "Тип объекта",
+        "Длина объекта (количество элементов)",
+        "Стоимость объекта",
+        "Адрес объекта"
+      ],
+      "options_en": [
+        "Object type",
+        "Object length (number of elements)",
+        "The value of the object",
+        "Object address"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Python da if bloki qanday tugatiladi?",
+      "options": [
+        "end if",
+        "endif",
+        "} yoki )",
+        "Qaviqs yoki end kerak emas, indentation ishlatiladi"
+      ],
+      "answer": 3,
+      "question_ru": "Как завершить блок if в Python?",
+      "question_en": "How to terminate an if block in Python?",
+      "options_ru": [
+        "конец, если",
+        "конец",
+        "} yoki )",
+        "Используется углубление, а не сильфон или конец."
+      ],
+      "options_en": [
+        "end if",
+        "endif",
+        "} or )",
+        "An indentation is used, not a bellows or an end"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Python da range(5) nima qaytaradi?",
+      "options": [
+        "[1, 2, 3, 4, 5]",
+        "[0, 1, 2, 3, 4]",
+        "(0, 5)",
+        "0 dan 5 gacha raqamlar generatori"
+      ],
+      "answer": 3,
+      "question_ru": "Что возвращает range(5) в Python?",
+      "question_en": "What does range(5) return in Python?",
+      "options_ru": [
+        "[1, 2, 3, 4, 5]",
+        "[0, 1, 2, 3, 4]",
+        "(0,5)",
+        "Генератор чисел от 0 до 5"
+      ],
+      "options_en": [
+        "[1, 2, 3, 4, 5]",
+        "[0, 1, 2, 3, 4]",
+        "(0.5)",
+        "Number generator from 0 to 5"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Python da string bo'lish (split) uchun qaysi metod ishlatiladi?",
+      "options": [
+        "divide()",
+        "break()",
+        "split()",
+        "separate()"
+      ],
+      "answer": 2,
+      "question_ru": "Какой метод используется для разделения строки в Python?",
+      "question_en": "Python da string bo'lish (split) uchun qaysi metod ishlatiladi?",
+      "options_ru": [
+        "разделить()",
+        "перерыв()",
+        "split()",
+        "отдельный()"
+      ],
+      "options_en": [
+        "divide()",
+        "break()",
+        "split()",
+        "separate()"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Python da tuple va list farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "tuple o'zgarmas (immutable), list o'zgaruvchan (mutable)",
+        "list o'zgarmas, tuple o'zgaruvchan",
+        "Ikkalasi bir xil ishlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между кортежем и списком в Python?",
+      "question_en": "What is the difference between tuple and list in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "кортеж неизменен, список изменчив",
+        "список неизменен, кортеж изменчив",
+        "Оба работают одинаково"
+      ],
+      "options_en": [
+        "There is no difference",
+        "tuple is immutable, list is mutable",
+        "list is immutable, tuple is mutable",
+        "Both work the same"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Python da import bayonoti nima uchun ishlatiladi?",
+      "options": [
+        "Fayl yaratish uchun",
+        "Modullarni loyihaga kiritish uchun",
+        "Ma'lumotlarni import qilish uchun",
+        "Funksiyalarni eksport qilish uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Почему оператор импорта используется в Python?",
+      "question_en": "Why import statement is used in Python?",
+      "options_ru": [
+        "Чтобы создать файл",
+        "Включение модулей в проект",
+        "Импорт данных",
+        "Экспорт функций"
+      ],
+      "options_en": [
+        "To create a file",
+        "To include modules in a project",
+        "To import data",
+        "To export functions"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Python da None nima anglatadi?",
+      "options": [
+        "0 qiymati",
+        "Noto'g'ri qiymat",
+        "Qiymat yo'qligi (null ekvivalenti)",
+        "Bo'sh string"
+      ],
+      "answer": 2,
+      "question_ru": "Что означает «Нет» в Python?",
+      "question_en": "What does None mean in Python?",
+      "options_ru": [
+        "Значение 0",
+        "Недопустимое значение",
+        "Отсутствие значения (эквивалентного нулю)",
+        "Пустая строка"
+      ],
+      "options_en": [
+        "A value of 0",
+        "Invalid value",
+        "The absence of a value (equivalent to null)",
+        "An empty string"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Python da for tsikli qanday yoziladi?",
+      "options": [
+        "for i = 0; i < 10; i++:",
+        "for i in range(10):",
+        "foreach i in range(10):",
+        "loop i in range(10):"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать цикл for на Python?",
+      "question_en": "How to write a for loop in Python?",
+      "options_ru": [
+        "для я = 0; я < 10; я++:",
+        "для меня в диапазоне (10):",
+        "foreach i в диапазоне (10):",
+        "цикл i в диапазоне (10):"
+      ],
+      "options_en": [
+        "for i = 0; i < 10; i++:",
+        "for i in range(10):",
+        "foreach i in range(10):",
+        "loop i in range(10):"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Python da type() funksiyasi nima qaytaradi?",
+      "options": [
+        "Ob'ekt qiymatini",
+        "Ob'ekt tipini (klassini)",
+        "Ob'ekt hajmini",
+        "Ob'ekt manzilini"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает функция type() в Python?",
+      "question_en": "What does the type() function return in Python?",
+      "options_ru": [
+        "Стоимость объекта",
+        "Тип объекта (класс)",
+        "Размер объекта",
+        "Адрес объекта"
+      ],
+      "options_en": [
+        "The value of the object",
+        "Object type (class)",
+        "Object size",
+        "Object address"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Python da list comprehension nima?",
+      "options": [
+        "List ichida loop",
+        "Ixcham sintaksis bilan yangi ro'yxat yaratish: [x*2 for x in items]",
+        "List filterlash",
+        "List nusxalash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое понимание списка в Python?",
+      "question_en": "What is list comprehension in Python?",
+      "options_ru": [
+        "Цикл внутри списка",
+        "Создайте новый список с компактным синтаксисом: [x*2 для x в элементах]",
+        "Фильтрация списка",
+        "Копировать список"
+      ],
+      "options_en": [
+        "A loop inside a list",
+        "Ixcham sintaksis bilan yangi ro'yxat yaratish: [x*2 for x in items]",
+        "List filtering",
+        "Copy list"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Python da *args va **kwargs nima?",
+      "options": [
+        "Maxsus o'zgaruvchilar",
+        "*args — ixtiyoriy sonli positional argumentlar; **kwargs — ixtiyoriy sonli kalit so'z argumentlari",
+        "Faqat keyword argumentlar",
+        "Majburiy argumentlar"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое *args и **kwargs в Python?",
+      "question_en": "What are *args and **kwargs in Python?",
+      "options_ru": [
+        "Специальные переменные",
+        "*args — произвольное количество позиционных аргументов; **kwargs — произвольное количество аргументов ключевого слова",
+        "Только аргументы ключевых слов",
+        "Обязательные аргументы"
+      ],
+      "options_en": [
+        "Maxsus o'zgaruvchilar",
+        "*args — arbitrary number of positional arguments; **kwargs — an arbitrary number of keyword arguments",
+        "Only keyword arguments",
+        "Mandatory arguments"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Python da lambda funksiyasi nima?",
+      "options": [
+        "Yuqori darajali funksiya",
+        "Bir satrli anonim funksiya: lambda x: x*2",
+        "Rekursiv funksiya",
+        "Dekorator funksiyasi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое лямбда-функция в Python?",
+      "question_en": "What is a lambda function in Python?",
+      "options_ru": [
+        "Расширенная функциональность",
+        "Однострочная анонимная функция: лямбда x: x*2",
+        "Рекурсивная функция",
+        "Функция декоратора"
+      ],
+      "options_en": [
+        "Advanced functionality",
+        "One-line anonymous function: lambda x: x*2",
+        "Recursive function",
+        "Decorator function"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Python da decorator nima?",
+      "options": [
+        "CSS dekoratsiyasi",
+        "Funksiyani o'rab, uning xatti-harakatini o'zgartiruvchi funksiya (@syntax)",
+        "Ob'ekt bezash",
+        "Klass metodi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое декоратор в Python?",
+      "question_en": "What is a decorator in Python?",
+      "options_ru": [
+        "CSS-оформление",
+        "Функция, которая оборачивает функцию и изменяет ее поведение (@syntax)",
+        "Оформление объекта",
+        "Метод класса"
+      ],
+      "options_en": [
+        "CSS decoration",
+        "A function that wraps a function and changes its behavior (@syntax)",
+        "Object decoration",
+        "Class method"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Python da __init__ metodi nima uchun ishlatiladi?",
+      "options": [
+        "Klassni o'chirish",
+        "Klass ob'ekti yaratilganda avtomatik chaqiriladigan konstruktor metod",
+        "Klassni import qilish",
+        "Klass nusxalash"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Python используется метод __init__?",
+      "question_en": "Why is the __init__ method used in Python?",
+      "options_ru": [
+        "Удалить курс",
+        "Метод конструктора, который автоматически вызывается при создании объекта класса.",
+        "Импортируйте класс",
+        "Копия класса"
+      ],
+      "options_en": [
+        "Delete the class",
+        "A constructor method that is automatically called when an object of the class is created",
+        "Import the class",
+        "Klass nusxalash"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Python da exception handling qanday amalga oshiriladi?",
+      "options": [
+        "try-catch",
+        "try-except-finally",
+        "error-catch",
+        "handle-error"
+      ],
+      "answer": 1,
+      "question_ru": "Как выполнить обработку исключений в Python?",
+      "question_en": "How to do exception handling in Python?",
+      "options_ru": [
+        "попробовать поймать",
+        "попробовать-кроме-наконец",
+        "отлов ошибок",
+        "обработка ошибки"
+      ],
+      "options_en": [
+        "try-catch",
+        "try-except-finally",
+        "error-catch",
+        "handle-error"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Python da generator nima?",
+      "options": [
+        "Tasodifiy raqam generatori",
+        "yield kalit so'zi bilan natija chiqaruvchi — xotirani tejovchi iterator yaratuvchi funksiya",
+        "List generator",
+        "Ko'p thread li funksiya"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое генератор в Python?",
+      "question_en": "What is a generator in Python?",
+      "options_ru": [
+        "Генератор случайных чисел",
+        "Функция, которая создает итератор с эффективным использованием памяти с помощью ключевого слова доходности.",
+        "Генератор списков",
+        "Многопоточная функциональность"
+      ],
+      "options_en": [
+        "Random number generator",
+        "A function that creates a memory-efficient iterator with the yield keyword",
+        "List generator",
+        "Ko'p thread li funksiya"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Python da with statement nima uchun ishlatiladi?",
+      "options": [
+        "If-else qisqartmasi",
+        "Context manager — resurs boshqarish (fayl, ulanish) va avtomatik yopish uchun",
+        "Tsikl yaratish",
+        "Ob'ekt yaratish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Python используется оператор with?",
+      "question_en": "Why is the with statement used in Python?",
+      "options_ru": [
+        "Сокращение от if-else",
+        "Контекстный менеджер — для управления ресурсами (файлом, соединением) и автоматического закрытия.",
+        "Создать цикл",
+        "Создать объект"
+      ],
+      "options_en": [
+        "Abbreviation for if-else",
+        "Context manager — resurs boshqarish (fayl, ulanish) va avtomatik yopish uchun",
+        "Create a cycle",
+        "Create an object"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Python da set (to'plam) nima?",
+      "options": [
+        "Takrorlanadigan elementlar to'plami",
+        "Noyob, tartiblashmagan elementlar to'plami",
+        "Dict ning turi",
+        "Tuple ning turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое набор в Python?",
+      "question_en": "What is a set in Python?",
+      "options_ru": [
+        "Коллекция повторяющихся элементов",
+        "Коллекция уникальных неупорядоченных элементов.",
+        "Тип диктата",
+        "Тип кортежа"
+      ],
+      "options_en": [
+        "A collection of repeating elements",
+        "A collection of unique, unordered elements",
+        "Type of Dict",
+        "Tuple ning turi"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Python da map() funksiyasi nima qiladi?",
+      "options": [
+        "Dict yaratadi",
+        "Funksiyani iterable ning har bir elementiga qo'llaydi",
+        "Elementlarni filterlaydi",
+        "Elementlarni saralaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция map() в Python?",
+      "question_en": "What does the map() function do in Python?",
+      "options_ru": [
+        "Создает словарь",
+        "Применяет функцию к каждому элементу итерируемого объекта.",
+        "Фильтрует элементы",
+        "Сортирует элементы"
+      ],
+      "options_en": [
+        "Creates a dict",
+        "Funksiyani iterable ning har bir elementiga qo'llaydi",
+        "Filters items",
+        "Sorts the elements"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Python da filter() funksiyasi nima qiladi?",
+      "options": [
+        "Barcha elementlarni o'zgartiradi",
+        "Shartga mos elementlarni filterlaydi",
+        "Elementlarni saralaydi",
+        "Elementlarni birlashtiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция filter() в Python?",
+      "question_en": "What does the filter() function do in Python?",
+      "options_ru": [
+        "Заменяет все элементы",
+        "Фильтрует элементы, соответствующие условию",
+        "Сортирует элементы",
+        "Объединяет элементы"
+      ],
+      "options_en": [
+        "Replaces all elements",
+        "Filters items that match the condition",
+        "Sorts the elements",
+        "Combines elements"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Python da zip() funksiyasi nima qiladi?",
+      "options": [
+        "Fayllarni zip qiladi",
+        "Bir nechta iterableni parallel juftlashtiradi",
+        "Ro'yxatni siqadi",
+        "Elementlarni birlashtiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция zip() в Python?",
+      "question_en": "What does the zip() function do in Python?",
+      "options_ru": [
+        "ZIP-файлы",
+        "Параллельно объединяет несколько итераций",
+        "Сжимает список",
+        "Объединяет элементы"
+      ],
+      "options_en": [
+        "Zip files",
+        "Pairs multiple iterables in parallel",
+        "Compresses the list",
+        "Combines elements"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Python da isinstance() funksiyasi nima qiladi?",
+      "options": [
+        "Ob'ekt id sini tekshiradi",
+        "Ob'ektning berilgan klass yoki tipga tegishliligini tekshiradi",
+        "Ob'ekt mavjudligini tekshiradi",
+        "Ob'ekt qiymatini tekshiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция isinstance() в Python?",
+      "question_en": "What does the isinstance() function do in Python?",
+      "options_ru": [
+        "Проверяет идентификатор объекта",
+        "Проверяет, принадлежит ли объект данному классу или типу.",
+        "Проверяет существование объекта",
+        "Checks the value of an object"
+      ],
+      "options_en": [
+        "Checks the object id",
+        "Checks whether an object belongs to the given class or type",
+        "Checks for the existence of an object",
+        "Checks the value of an object"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Python da string formatting uchun f-string qanday ishlatiladi?",
+      "options": [
+        "'Hello ' + name",
+        "f'Hello {name}'",
+        "format('Hello', name)",
+        "'Hello %s' % name"
+      ],
+      "answer": 1,
+      "question_ru": "Как использовать f-строку для форматирования строк в Python?",
+      "question_en": "How to use f-string for string formatting in Python?",
+      "options_ru": [
+        "«Привет» + имя",
+        "f'Привет, {имя}'",
+        "формат('Привет', имя)",
+        "'Привет, %s' % имя"
+      ],
+      "options_en": [
+        "'Hello ' + name",
+        "f'Hello {name}'",
+        "format('Hello', name)",
+        "'Hello %s' % name"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Python da __str__ va __repr__ metodlari farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "__str__ insonlar uchun o'qiladigan ko'rinish; __repr__ debug uchun aniqroq ko'rinish",
+        "__repr__ insonlar uchun",
+        "Ikkalasi bir xil ishlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между методами __str__ и __repr__ в Python?",
+      "question_en": "Difference between __str__ and __repr__ methods in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "__str__ человекочитаемый вид; __repr__ — более наглядное представление для отладки",
+        "__repr__ для людей",
+        "Оба работают одинаково"
+      ],
+      "options_en": [
+        "There is no difference",
+        "__str__ human-readable view; __repr__ is a clearer view for debug",
+        "__repr__ for humans",
+        "Both work the same"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Python da @staticmethod va @classmethod farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "staticmethod — na self na cls qabul qilmaydi; classmethod — cls (klass) ni qabul qiladi",
+        "classmethod — self qabul qiladi",
+        "staticmethod — cls qabul qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между @staticmethod и @classmethod в Python?",
+      "question_en": "Difference between @staticmethod and @classmethod in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "статический метод — не принимает ни self, ни cls; classmethod — принимает cls (класс).",
+        "classmethod — принимает себя",
+        "статический метод — принимает cls"
+      ],
+      "options_en": [
+        "There is no difference",
+        "staticmethod — accepts neither self nor cls; classmethod — accepts cls (class).",
+        "classmethod — self qabul qiladi",
+        "staticmethod — accepts cls"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Python da shallow copy va deep copy farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "shallow copy — ob'ektni nusxalaydi, ichki ob'ektlarga havola qoladi; deep copy — to'liq nusxa",
+        "deep copy — tezroq",
+        "shallow copy — xotirani ko'p ishlatadi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между мелкой копией и глубокой копией в Python?",
+      "question_en": "Difference between shallow copy and deep copy in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "неглубокая копия — копирует объект, ссылка на внутренние объекты сохраняется; глубокая копия — полная копия",
+        "глубокое копирование быстрее",
+        "мелкая копия — использует много памяти"
+      ],
+      "options_en": [
+        "There is no difference",
+        "shallow copy — copies the object, the reference to internal objects remains; deep copy — full copy",
+        "deep copy is faster",
+        "shallow copy — uses a lot of memory"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Python da GIL (Global Interpreter Lock) nima?",
+      "options": [
+        "Global boshlang'ich zichlash",
+        "Bir vaqtda faqat bitta thread Python bytecode ini ishlata olishiga yo'l qo'yadigan mutex",
+        "Global import kutubxonasi",
+        "Xotira bloklash mexanizmi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GIL (глобальная блокировка интерпретатора) в Python?",
+      "question_en": "What is GIL (Global Interpreter Lock) in Python?",
+      "options_ru": [
+        "Глобальная начальная плотность",
+        "Мьютекс, который позволяет только одному потоку использовать байт-код Python одновременно.",
+        "Глобальная библиотека импорта",
+        "Механизм блокировки памяти"
+      ],
+      "options_en": [
+        "Global initial density",
+        "A mutex that allows only one thread to use Python bytecode at a time",
+        "Global import kutubxonasi",
+        "Memory blocking mechanism"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Python da enumerate() funksiyasi nima qiladi?",
+      "options": [
+        "Elementlarni sanaydi",
+        "Iterable elementlarini indeks bilan juft qaytaradi",
+        "Elementlarni sanab o'chiradi",
+        "Ro'yxatni raqamlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция enumerate() в Python?",
+      "question_en": "What does the enumerate() function do in Python?",
+      "options_ru": [
+        "Считает элементы",
+        "Возвращает элементы Iterable в парах с индексом",
+        "Перечисляет и удаляет элементы",
+        "Нумерация списка"
+      ],
+      "options_en": [
+        "Counts elements",
+        "Returns the elements of the Iterable in pairs with index",
+        "Lists and deletes items",
+        "Numbers the list"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Python da dict.get() va dict[] farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "get() kalit topilmasa None (yoki default) qaytaradi; [] KeyError chiqaradi",
+        "[] xavfsizroq",
+        "get() tezroq"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между dict.get() и dict[] в Python?",
+      "question_en": "Difference between dict.get() and dict[] in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "get() kalit topilmasa None (yoki default) qaytaradi; [] KeyError chiqaradi",
+        "[] безопаснее",
+        "get() работает быстрее"
+      ],
+      "options_en": [
+        "There is no difference",
+        "get() returns None (or default) if the key is not found; [] throws a KeyError",
+        "[] is safer",
+        "get() is faster"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Python da metaclass nima?",
+      "options": [
+        "Klass ning klassning klassi",
+        "Klasslarni yaratuvchi klass — sinf ta'rifining xatti-harakatini boshqaradi",
+        "Abstract klass",
+        "Singleton klass"
+      ],
+      "answer": 0,
+      "question_ru": "Что такое метакласс в Python?",
+      "question_en": "What is a metaclass in Python?",
+      "options_ru": [
+        "Класс класса класса",
+        "Класс, который создает классы, управляет поведением определения класса.",
+        "Абстрактный класс",
+        "Класс синглтона"
+      ],
+      "options_en": [
+        "Class of class of class",
+        "A class that creates classes controls the behavior of a class definition",
+        "Abstract class",
+        "Singleton class"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Python da __slots__ nima uchun ishlatiladi?",
+      "options": [
+        "Klass methodlarini bloklash",
+        "Instance o'zgaruvchilarini aniq belgilab, __dict__ ni o'chirib xotirani tejash",
+        "Klass atributlarini yashirish",
+        "Meros olishni cheklash"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется __slots__ в Python?",
+      "question_en": "What is __slots__ used for in Python?",
+      "options_ru": [
+        "Блокирующие методы класса",
+        "Экономьте память, явно определяя переменные экземпляра и удаляя __dict__.",
+        "Скрыть атрибуты класса",
+        "Ограничение наследования"
+      ],
+      "options_en": [
+        "Blocking class methods",
+        "Save memory by explicitly defining instance variables and removing __dict__",
+        "Klass atributlarini yashirish",
+        "Meros olishni cheklash"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Python da asyncio nima?",
+      "options": [
+        "Thread kutubxonasi",
+        "Asinxron I/O, event loop va coroutine lar uchun Python standart kutubxonasi",
+        "Async/await sintaksisi",
+        "Multiprocessing kutubxonasi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое асинхронность в Python?",
+      "question_en": "What is asyncio in Python?",
+      "options_ru": [
+        "Библиотека потоков",
+        "Стандартная библиотека Python для асинхронного ввода-вывода, циклов событий и сопрограмм.",
+        "Async/await sintaksisi",
+        "Многопроцессорная библиотека"
+      ],
+      "options_en": [
+        "Thread library",
+        "A Python standard library for asynchronous I/O, event loops, and coroutines",
+        "Async/await syntax",
+        "Multiprocessing kutubxonasi"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Python da coroutine nima?",
+      "options": [
+        "Oddiy funksiya",
+        "async def bilan e'lon qilingan, await bilan to'xtab-davom etadigan funksiya",
+        "Generator funksiyasi",
+        "Lambda funksiyasi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопрограмма в Python?",
+      "question_en": "What is a coroutine in Python?",
+      "options_ru": [
+        "Простая функция",
+        "async def bilan e'lon qilingan, await bilan to'xtab-davom etadigan funksiya",
+        "Функция генератора",
+        "Лямбда-функция"
+      ],
+      "options_en": [
+        "Simple function",
+        "Async is a function declared with def , suspended with await",
+        "Generator function",
+        "Lambda function"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Python da descriptor protocol nima?",
+      "options": [
+        "Ma'lumot tavsifi protokoli",
+        "__get__, __set__, __delete__ metodlarini implementatsiya qilgan ob'ekt",
+        "Klass dizayn namunasi",
+        "Meros protokoli"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое протокол дескриптора в Python?",
+      "question_en": "What is the descriptor protocol in Python?",
+      "options_ru": [
+        "Протокол описания данных",
+        "Объект, реализующий методы __get__, __set__, __delete__.",
+        "Пример классного дизайна",
+        "Устаревший протокол"
+      ],
+      "options_en": [
+        "Data description protocol",
+        "An object that implements __get__, __set__, __delete__ methods",
+        "Classy design example",
+        "Legacy protocol"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Python da weakref nima uchun ishlatiladi?",
+      "options": [
+        "Zaif o'zgaruvchilar",
+        "Ob'ektga zaif havola yaratish — garbage collection uchun to'siq bo'lmaydi",
+        "Memory leak oldini olish",
+        "Circular reference oldini olish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Python используется слабая ссылка?",
+      "question_en": "Why is weakref used in Python?",
+      "options_ru": [
+        "Слабые переменные",
+        "Создание слабой ссылки на объект не предотвращает сборку мусора.",
+        "Предотвращение утечки памяти",
+        "Предотвращение циклических ссылок"
+      ],
+      "options_en": [
+        "Weak variables",
+        "Creating a weak reference to an object does not prevent garbage collection",
+        "Memory leak prevention",
+        "Circular reference prevention"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Python da __new__ va __init__ farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "__new__ ob'ektni xotirada yaratadi; __init__ yaratilgan ob'ektni boshlang'ich holatga keltiradi",
+        "__init__ ob'ektni yaratadi",
+        "Ikkalasi bir xil ishlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между __new__ и __init__ в Python?",
+      "question_en": "What is the difference between __new__ and __init__ in Python?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "__new__ создает объект в памяти; __init__ инициализирует созданный объект",
+        "__init__ создает объект",
+        "Оба работают одинаково"
+      ],
+      "options_en": [
+        "There is no difference",
+        "__new__ ob'ektni xotirada yaratadi; __init__ yaratilgan ob'ektni boshlang'ich holatga keltiradi",
+        "__init__ creates an object",
+        "Both work the same"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Python da MRO (Method Resolution Order) nima?",
+      "options": [
+        "Metodlar tartib ro'yxati",
+        "Meros ierarxiyasida metod qidiruv tartibi (C3 linearization algoritmi)",
+        "Metod prioriteti",
+        "Metod ro'yxati"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое MRO (порядок разрешения метода) в Python?",
+      "question_en": "What is MRO (Method Resolution Order) in Python?",
+      "options_ru": [
+        "Порядок списка методов",
+        "Процедура поиска метода в иерархии наследования (алгоритм линеаризации C3)",
+        "Приоритет метода",
+        "Список методов"
+      ],
+      "options_en": [
+        "List of methods order",
+        "Method search procedure in the inheritance hierarchy (C3 linearization algorithm)",
+        "Method priority",
+        "Method list"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Python da __call__ metodi nima uchun?",
+      "options": [
+        "Funksiya chaqirish",
+        "Ob'ektni funksiya kabi chaqirish imkonini beradi: obj()",
+        "Klass yaratish",
+        "Metod chaqirish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужен метод __call__ в Python?",
+      "question_en": "What is the __call__ method in Python for?",
+      "options_ru": [
+        "Вызов функции",
+        "Позволяет вызывать объект как функцию: obj()",
+        "Создать класс",
+        "Вызов метода"
+      ],
+      "options_en": [
+        "Function call",
+        "Ob'ektni funksiya kabi chaqirish imkonini beradi: obj()",
+        "Klass yaratish",
+        "Method invocation"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Python da contextlib.contextmanager nima uchun ishlatiladi?",
+      "options": [
+        "Context yaratish",
+        "Generator bilan oddiy funksiyadan context manager yaratish",
+        "Fayl boshqarish",
+        "Thread boshqarish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему contextlib.contextmanager используется в Python?",
+      "question_en": "Why is contextlib.contextmanager used in Python?",
+      "options_ru": [
+        "Создайте контекст",
+        "Создание контекстного менеджера из простой функции с генератором",
+        "Управление файлами",
+        "Управление потоками"
+      ],
+      "options_en": [
+        "Create a context",
+        "Creating a context manager from a simple function with a generator",
+        "File management",
+        "Thread management"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Python da Abstract Base Class (ABC) nima uchun?",
+      "options": [
+        "Faqat meros uchun",
+        "Interfeys ta'riflash — subklasslar implementatsiya qilishi kerak bo'lgan metodlarni belgilash",
+        "Klass izolatsiyasi",
+        "Klass yaratish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему абстрактный базовый класс (ABC) в Python?",
+      "question_en": "Why Abstract Base Class (ABC) in Python?",
+      "options_ru": [
+        "Только для наследства",
+        "Определение интерфейса — это определение методов, которые должны реализовывать подклассы.",
+        "Изоляция классов",
+        "Создать класс"
+      ],
+      "options_en": [
+        "Only for inheritance",
+        "Defining an interface is defining the methods that subclasses must implement",
+        "Class isolation",
+        "Klass yaratish"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Python da __enter__ va __exit__ metodlari nima uchun?",
+      "options": [
+        "Dasturga kirish va chiqish",
+        "with statement uchun Context Manager protokolini implementatsiya qilish",
+        "Funksiyaga kirish",
+        "Klass metodlari"
+      ],
+      "answer": 1,
+      "question_ru": "Почему методы __enter__ и __exit__ в Python?",
+      "question_en": "Python da __enter__ va __exit__ metodlari nima uchun?",
+      "options_ru": [
+        "Вход и выход из программы",
+        "Реализация протокола диспетчера контекста для оператора with",
+        "Введите функцию",
+        "Методы класса"
+      ],
+      "options_en": [
+        "Entering and exiting the program",
+        "Implementing the Context Manager protocol for the with statement",
+        "Enter the function",
+        "Klass metodlari"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Python da CPython, PyPy, Jython farqlari nima?",
+      "options": [
+        "Python versiyalari",
+        "CPython — C da implementatsiya, standart; PyPy — JIT kompilyator, tez; Jython — Java da implementatsiya",
+        "Turli platformalar",
+        "Turli IDE lar"
+      ],
+      "answer": 1,
+      "question_ru": "Каковы различия между CPython, PyPy и Jython в Python?",
+      "question_en": "What are the differences between CPython, PyPy, Jython in Python?",
+      "options_ru": [
+        "Версии Python",
+        "CPython — это стандартная реализация на C; PyPy — быстрый JIT-компилятор; Jython — это реализация на Java.",
+        "Различные платформы",
+        "Различные IDE"
+      ],
+      "options_en": [
+        "Python versions",
+        "CPython is an implementation in C, standard; PyPy is a JIT compiler, fast; Jython is an implementation in Java",
+        "Different platforms",
+        "Different IDEs"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Python da memory management qanday ishlaydi?",
+      "options": [
+        "Qo'lda boshqariladi",
+        "Reference counting + cyclic garbage collector — ob'ektlar mos havola yo'qolganda o'chiriladi",
+        "Stack va heap",
+        "Faqat garbage collector"
+      ],
+      "answer": 1,
+      "question_ru": "Как работает управление памятью в Python?",
+      "question_en": "How does memory management work in Python?",
+      "options_ru": [
+        "Ручное управление",
+        "Подсчет ссылок + циклический сборщик мусора — объекты удаляются при потере подходящей ссылки.",
+        "Стек и куча",
+        "Только сборщик мусора"
+      ],
+      "options_en": [
+        "Manually operated",
+        "Reference counting + cyclic garbage collector — objects are deleted when a suitable reference is lost",
+        "Stack and heap",
+        "Garbage collector only"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Python da __getattr__ va __getattribute__ farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "__getattr__ faqat atribut topilmasa chaqiriladi; __getattribute__ har doim chaqiriladi",
+        "__getattribute__ faqat topilmasa chaqiriladi",
+        "Ikkalasi bir xil ishlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между __getattr__ и __getattribute__ в Python?",
+      "question_en": "Python da __getattr__ va __getattribute__ farqi nima?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "__getattr__ вызывается только в том случае, если атрибут не найден; __getattribute__ всегда вызывается",
+        "__getattribute__ вызывается только в том случае, если не найден",
+        "Оба работают одинаково"
+      ],
+      "options_en": [
+        "There is no difference",
+        "__getattr__ is only called if the attribute is not found; __getattribute__ is always called",
+        "__getattribute__ is only called if not found",
+        "Both work the same"
+      ]
+    }
   ]
 }

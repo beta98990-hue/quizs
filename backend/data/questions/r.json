@@ -2,55 +2,1305 @@
   "technology": "R",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"R nima uchun ishlatiladi?","options":["Web dasturlash","Statistik hisoblash, ma'lumot tahlili va grafika","Mobile ilovalar","Server dasturlash"],"answer":1},
-    {"id":2,"level":"easy","question":"R da o'zgaruvchi qanday e'lon qilinadi?","options":["var x = 5","x = 5 yoki x <- 5","let x = 5","$x = 5"],"answer":1},
-    {"id":3,"level":"easy","question":"R da print() nima qiladi?","options":["Printer","Konsolga qiymat chiqaradi","Fayl yozadi","Plot yaratadi"],"answer":1},
-    {"id":4,"level":"easy","question":"R da vector qanday yaratiladi?","options":["array(1,2,3)","[1,2,3]","c(1, 2, 3)","vector(1,2,3)"],"answer":2},
-    {"id":5,"level":"easy","question":"R da list nima?","options":["Vector turi","Har xil tipli elementlarni saqlash imkonini beruvchi ma'lumotlar tuzilmasi","Array turi","Tuple"],"answer":1},
-    {"id":6,"level":"easy","question":"R da data.frame nima?","options":["Ma'lumot ramkasi","Ustun asosidagi jadval — har ustun bir xil tipda bo'lishi shart","Table","Matrix"],"answer":1},
-    {"id":7,"level":"easy","question":"R da funksiya qanday e'lon qilinadi?","options":["function greet() {}","def greet():","greet <- function() { }","func greet() {}"],"answer":2},
-    {"id":8,"level":"easy","question":"R da # nima?","options":["ID","Izoh belgi — bir qatorli comment","Function","Variable"],"answer":1},
-    {"id":9,"level":"easy","question":"R da length() nima qaytaradi?","options":["String uzunligi","Vector yoki list elementlar sonini qaytaradi","Ob'ekt o'lchami","NULL"],"answer":1},
-    {"id":10,"level":"easy","question":"R da for tsikl qanday yoziladi?","options":["for i in 1:10","for (i in 1:10) { }","foreach i (1:10)","loop i 1:10"],"answer":1},
-    {"id":11,"level":"easy","question":"R da NA nima?","options":["Not Applicable","Not Available — yo'q yoki mavjud bo'lmagan qiymat","NULL turi","NaN turi"],"answer":1},
-    {"id":12,"level":"easy","question":"R da NULL nima?","options":["Nol qiymat","Bo'sh ob'ekt yoki qiymat yo'qligi","NA turi","Zero"],"answer":1},
-    {"id":13,"level":"easy","question":"R da mean() nima qaytaradi?","options":["Maksimal qiymat","Arifmetik o'rtacha qiymatni qaytaradi","Mediana","Sum"],"answer":1},
-    {"id":14,"level":"easy","question":"R da sqrt() nima qiladi?","options":["Kvadrat","Kvadrat ildiz hisoblaydi","Logarifm","Power"],"answer":1},
-    {"id":15,"level":"easy","question":"R da library() nima uchun?","options":["Kutubxona","Paket import qilish — library(ggplot2)","Install package","Load module"],"answer":1},
-    {"id":16,"level":"medium","question":"R da ggplot2 nima?","options":["Plot kutubxona","Grammar of Graphics asosidagi ma'lumot vizualizatsiyasi kutubxonasi","Chart library","Base plot"],"answer":1},
-    {"id":17,"level":"medium","question":"R da dplyr nima uchun?","options":["Data player","Data manipulation — filter, select, mutate, group_by, summarize","Data frame","SQL R"],"answer":1},
-    {"id":18,"level":"medium","question":"R da pipe operator (%>%) nima qiladi?","options":["Quvur operatori","Chap qiymatni o'ng funksiyaning birinchi argumentiga uzatadi — zanjir hosil qilish","Redirect","Arrow"],"answer":1},
-    {"id":19,"level":"medium","question":"R da apply() funksiyalar oilasi nima uchun?","options":["Funksiya qo'llash","Matrix, list, array ga funksiya qo'llash — apply, lapply, sapply, tapply","Loop alternativa","Vector funksiya"],"answer":1},
-    {"id":20,"level":"medium","question":"R da tidyverse nima?","options":["Tidy universe","Ma'lumot tahlili uchun paketlar to'plami — ggplot2, dplyr, tidyr, readr","R framework","Data science"],"answer":1},
-    {"id":21,"level":"medium","question":"R da factor nima?","options":["Ko'paytirish","Kategorik o'zgaruvchi — belgilangan levels bilan, statistik tahlil uchun","Category type","Enum"],"answer":1},
-    {"id":22,"level":"medium","question":"R da matrix nima?","options":["Matematika matrisa","2D, bir tip elementli ma'lumotlar tuzilmasi — matrix(data, nrow, ncol)","2D array","Grid"],"answer":1},
-    {"id":23,"level":"medium","question":"R da environment nima?","options":["Muhit","O'zgaruvchilar va qiymatlar saqlanadigan konteyner — lexical scoping uchun","Scope","Namespace"],"answer":1},
-    {"id":24,"level":"medium","question":"R da S3 va S4 OOP farqi nima?","options":["Hech qanday farq yo'q","S3 — informal, generic funksiyalar bilan; S4 — formal, type checking, slot","S4 informal","S3 formal"],"answer":1},
-    {"id":25,"level":"medium","question":"R da R6 package nima beradi?","options":["R versiya 6","Reference semantics — R5/Reference classes alternativa, mutable ob'ektlar","OOP package","Class package"],"answer":1},
-    {"id":26,"level":"medium","question":"R da tryCatch nima uchun?","options":["Try catch","Xatolarni va ogohlantirishlarni ushlab boshqarish","Error handling","Exception"],"answer":1},
-    {"id":27,"level":"medium","question":"R da Reduce() nima qiladi?","options":["Kamaytirish","Funksiyani akkumulyator bilan ro'yxatga qo'llab bitta qiymat qaytaradi","Fold","Aggregate"],"answer":1},
-    {"id":28,"level":"medium","question":"R da environment scoping qanday ishlaydi?","options":["Global scope","Lexical scoping — funksiya e'lon qilingan muhitdan qidiradi (dynamic emas)","Dynamic scope","Local scope"],"answer":1},
-    {"id":29,"level":"medium","question":"R da Rcpp nima uchun?","options":["R C++ package","C++ kod ni R dan chaqirish — performance uchun","C++ wrapper","Native code"],"answer":1},
-    {"id":30,"level":"medium","question":"R da data.table nima?","options":["HTML jadval","Katta ma'lumotlar uchun tez, xotirani tejovchi data.frame kengaytmasi","Fast table","Data frame 2"],"answer":1},
-    {"id":31,"level":"medium","question":"R da shiny nima?","options":["Yaltiroq","Interaktiv web ilovalar yaratish uchun R paketi","Web framework","UI library"],"answer":1},
-    {"id":32,"level":"medium","question":"R da which() nima qiladi?","options":["Which element","Shartga mos elementlarning indekslarini qaytaradi","Find index","Filter index"],"answer":1},
-    {"id":33,"level":"medium","question":"R da merge() nima uchun?","options":["Birlashtirish","Ikki data.frame ni umumiy ustun bo'yicha birlashtirish — SQL JOIN","Join","Combine"],"answer":1},
-    {"id":34,"level":"medium","question":"R da reshape2 yoki tidyr nima uchun?","options":["Ma'lumot shakli","Wide va long format o'rtasida ma'lumotlarni qayta shakllantirish — pivot","Data reshape","Transform"],"answer":1},
-    {"id":35,"level":"medium","question":"R da lm() nima qiladi?","options":["Log model","Chiziqli regression model quradi — linear model","Statistical model","Regression"],"answer":1},
-    {"id":36,"level":"hard","question":"R da non-standard evaluation (NSE) nima?","options":["Non-standard","Ifodani baholamasdan quote qilish — dplyr filter(data, col > 5) kabi DSL","Lazy eval","Quote eval"],"answer":1},
-    {"id":37,"level":"hard","question":"R da rlang::enquo() nima uchun?","options":["Enquo","NSE uchun — funksiya argumentni quote qilish, tidy evaluation","Quote function","Capture expression"],"answer":1},
-    {"id":38,"level":"hard","question":"R da memory profiling qanday amalga oshiriladi?","options":["Memory watch","profvis, Rprof, lineprof — CPU va xotira foydalanishini kuzatish","Profile tool","Debug memory"],"answer":1},
-    {"id":39,"level":"hard","question":"R da parallel computing qanday?","options":["Parallel package","parallel, future, furrr paketlari — multi-core, cluster computing","Thread R","Multi core"],"answer":1},
-    {"id":40,"level":"hard","question":"R da promise va lazy evaluation nima?","options":["Promise","R da argument birinchi foydalanishda baholanadi — thunk kabi","Lazy load","Deferred eval"],"answer":1},
-    {"id":41,"level":"hard","question":"R da active binding nima?","options":["Aktiv bog'lash","O'zgaruvchiga kirishda funksiya chaqiriladi — makeActiveBinding","Dynamic variable","Property"],"answer":1},
-    {"id":42,"level":"hard","question":"R da Bioconductor nima?","options":["Bio conductor","Bioinformatika uchun paketlar repositorysi — genomic data analysis","Bio package","Science R"],"answer":1},
-    {"id":43,"level":"hard","question":"R da S4 formal class va methods qanday ishlaydi?","options":["Formal OOP","setClass, setGeneric, setMethod — formal type checking, multiple dispatch","S3 improved","OOP formal"],"answer":1},
-    {"id":44,"level":"hard","question":"R da environment as first class object nima?","options":["Ob'ekt muhit","Muhitni o'zgaruvchida saqlash, manipulyatsiya qilish, funksiyaga uzatish","Scope object","Frame object"],"answer":1},
-    {"id":45,"level":"hard","question":"R da rapply() nima uchun?","options":["Recursive apply","Nested list ga rekursiv ravishda funksiya qo'llash","Deep apply","Tree apply"],"answer":1},
-    {"id":46,"level":"hard","question":"R da Sys.time() va proc.time() farqi?","options":["Hech qanday farq yo'q","Sys.time() — wall clock time; proc.time() — CPU time (user, system, elapsed)","Proc tezroq","Sys CPU"],"answer":1},
-    {"id":47,"level":"hard","question":"R da CRAN va Bioconductor farqi?","options":["Hech qanday farq yo'q","CRAN — umumiy R paketlari; Bioconductor — bioinformatika ixtisoslashgan paketlari","CRAN bio","Bioconductor general"],"answer":1},
-    {"id":48,"level":"hard","question":"R da future package nima beradi?","options":["Kelajak","Asinxron va parallel evaluation — future(), value(), %<-% assignment","Async R","Parallel eval"],"answer":1},
-    {"id":49,"level":"hard","question":"R da igraph nima uchun?","options":["Image graph","Graf (network) yaratish va tahlil qilish kutubxonasi","Network analysis","Graph theory"],"answer":1},
-    {"id":50,"level":"hard","question":"R da testthat nima uchun?","options":["Test qilish","Unit testing framework — expect_equal, expect_error, describe/it","Testing package","R test"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "R nima uchun ishlatiladi?",
+      "options": [
+        "Web dasturlash",
+        "Statistik hisoblash, ma'lumot tahlili va grafika",
+        "Mobile ilovalar",
+        "Server dasturlash"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется R?",
+      "question_en": "What is R used for?",
+      "options_ru": [
+        "Веб-программирование",
+        "Статистические вычисления, анализ данных и графика",
+        "Мобильные приложения",
+        "Серверное программирование"
+      ],
+      "options_en": [
+        "Web programming",
+        "Statistical computing, data analysis and graphics",
+        "Mobile ilovalar",
+        "Server programming"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "R da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "var x = 5",
+        "x = 5 yoki x <- 5",
+        "let x = 5",
+        "$x = 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в R?",
+      "question_en": "How to declare a variable in R?",
+      "options_ru": [
+        "вар х = 5",
+        "х = 5 или х <- 5",
+        "пусть х = 5",
+        "$х = 5"
+      ],
+      "options_en": [
+        "var x = 5",
+        "x = 5 or x <- 5",
+        "let x = 5",
+        "$x = 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "R da print() nima qiladi?",
+      "options": [
+        "Printer",
+        "Konsolga qiymat chiqaradi",
+        "Fayl yozadi",
+        "Plot yaratadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает print() в R?",
+      "question_en": "What does print() do in R?",
+      "options_ru": [
+        "Принтер",
+        "Выводит значение на консоль",
+        "Записывает файл",
+        "Создает сюжет"
+      ],
+      "options_en": [
+        "Printer",
+        "Outputs a value to the console",
+        "Writes a file",
+        "Creates a plot"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "R da vector qanday yaratiladi?",
+      "options": [
+        "array(1,2,3)",
+        "[1,2,3]",
+        "c(1, 2, 3)",
+        "vector(1,2,3)"
+      ],
+      "answer": 2,
+      "question_ru": "Как создать вектор в R?",
+      "question_en": "How to create a vector in R?",
+      "options_ru": [
+        "массив (1,2,3)",
+        "[1,2,3]",
+        "в(1, 2, 3)",
+        "вектор(1,2,3)"
+      ],
+      "options_en": [
+        "array(1,2,3)",
+        "[1,2,3]",
+        "c(1, 2, 3)",
+        "vector(1,2,3)"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "R da list nima?",
+      "options": [
+        "Vector turi",
+        "Har xil tipli elementlarni saqlash imkonini beruvchi ma'lumotlar tuzilmasi",
+        "Array turi",
+        "Tuple"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в R?",
+      "question_en": "What is a list in R?",
+      "options_ru": [
+        "Векторный тип",
+        "Структура данных, позволяющая хранить различные типы элементов.",
+        "Тип массива",
+        "Кортеж"
+      ],
+      "options_en": [
+        "Vector type",
+        "A data structure that allows you to store different types of elements",
+        "Array type",
+        "A tuple"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "R da data.frame nima?",
+      "options": [
+        "Ma'lumot ramkasi",
+        "Ustun asosidagi jadval — har ustun bir xil tipda bo'lishi shart",
+        "Table",
+        "Matrix"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое data.frame в R?",
+      "question_en": "R da data.frame nima?",
+      "options_ru": [
+        "Кадр данных",
+        "Таблица на основе столбцов — каждый столбец должен быть одного типа.",
+        "Таблица",
+        "Матрица"
+      ],
+      "options_en": [
+        "Data frame",
+        "A column-based table — each column must be of the same type",
+        "Table",
+        "Matrix"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "R da funksiya qanday e'lon qilinadi?",
+      "options": [
+        "function greet() {}",
+        "def greet():",
+        "greet <- function() { }",
+        "func greet() {}"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить функцию в R?",
+      "question_en": "How to declare a function in R?",
+      "options_ru": [
+        "функция приветствия() {}",
+        "защита приветствия():",
+        "приветствие <- функция() { }",
+        "функция приветствия() {}"
+      ],
+      "options_en": [
+        "function greet() {}",
+        "def greet():",
+        "greet <- function() { }",
+        "func greet() {}"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "R da # nima?",
+      "options": [
+        "ID",
+        "Izoh belgi — bir qatorli comment",
+        "Function",
+        "Variable"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое # в R?",
+      "question_en": "What is # in R?",
+      "options_ru": [
+        "идентификатор",
+        "Комментарий — это однострочный комментарий.",
+        "Функция",
+        "Переменная"
+      ],
+      "options_en": [
+        "id",
+        "A comment is a one-line comment",
+        "Function",
+        "Variable"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "R da length() nima qaytaradi?",
+      "options": [
+        "String uzunligi",
+        "Vector yoki list elementlar sonini qaytaradi",
+        "Ob'ekt o'lchami",
+        "NULL"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает length() в R?",
+      "question_en": "What does length() return in R?",
+      "options_ru": [
+        "Длина строки",
+        "Возвращает количество элементов в векторе или списке",
+        "Размер объекта",
+        "НОЛЬ"
+      ],
+      "options_en": [
+        "The length of the string",
+        "Returns the number of elements in a vector or list",
+        "Object size",
+        "NULL"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "R da for tsikl qanday yoziladi?",
+      "options": [
+        "for i in 1:10",
+        "for (i in 1:10) { }",
+        "foreach i (1:10)",
+        "loop i 1:10"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать цикл for в R?",
+      "question_en": "How to write a for loop in R?",
+      "options_ru": [
+        "для меня в 1:10",
+        "для (я в 1:10) { }",
+        "foreach я (1:10)",
+        "цикл я 1:10"
+      ],
+      "options_en": [
+        "for i in 1:10",
+        "for (i in 1:10) { }",
+        "foreach i (1:10)",
+        "loop i 1:10"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "R da NA nima?",
+      "options": [
+        "Not Applicable",
+        "Not Available — yo'q yoki mavjud bo'lmagan qiymat",
+        "NULL turi",
+        "NaN turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое NA в R?",
+      "question_en": "What is NA in R?",
+      "options_ru": [
+        "Не применимо",
+        "Недоступно — отсутствующее или недоступное значение.",
+        "НУЛЕВОЙ тип",
+        "Тип NaN"
+      ],
+      "options_en": [
+        "Not applicable",
+        "Not Available is a missing or unavailable value",
+        "NULL type",
+        "NaN type"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "R da NULL nima?",
+      "options": [
+        "Nol qiymat",
+        "Bo'sh ob'ekt yoki qiymat yo'qligi",
+        "NA turi",
+        "Zero"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое NULL в R?",
+      "question_en": "What is NULL in R?",
+      "options_ru": [
+        "Нулевое значение",
+        "Пустой объект или отсутствие значения",
+        "Тип NA",
+        "Потому что"
+      ],
+      "options_en": [
+        "Nol qiymat",
+        "An empty object or no value",
+        "Type NA",
+        "Because"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "R da mean() nima qaytaradi?",
+      "options": [
+        "Maksimal qiymat",
+        "Arifmetik o'rtacha qiymatni qaytaradi",
+        "Mediana",
+        "Sum"
+      ],
+      "answer": 1,
+      "question_ru": "Что означает возврат в R?",
+      "question_en": "What does mean() return in R?",
+      "options_ru": [
+        "Максимальное значение",
+        "Возвращает среднее арифметическое",
+        "медиана",
+        "Сумма"
+      ],
+      "options_en": [
+        "Maximum value",
+        "Returns the arithmetic mean",
+        "Median",
+        "Sum"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "R da sqrt() nima qiladi?",
+      "options": [
+        "Kvadrat",
+        "Kvadrat ildiz hisoblaydi",
+        "Logarifm",
+        "Power"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает sqrt() в R?",
+      "question_en": "What does sqrt() do in R?",
+      "options_ru": [
+        "Площадь",
+        "Вычисляет квадратный корень",
+        "Логарифм",
+        "Мощность"
+      ],
+      "options_en": [
+        "Square",
+        "Calculates the square root",
+        "Logarithm",
+        "Power"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "R da library() nima uchun?",
+      "options": [
+        "Kutubxona",
+        "Paket import qilish — library(ggplot2)",
+        "Install package",
+        "Load module"
+      ],
+      "answer": 1,
+      "question_ru": "Почему библиотека() в R?",
+      "question_en": "R da library() nima uchun?",
+      "options_ru": [
+        "Библиотека",
+        "Импортировать пакет — библиотека (ggplot2)",
+        "Установить пакет",
+        "Загрузочный модуль"
+      ],
+      "options_en": [
+        "Library",
+        "Import package — library(ggplot2)",
+        "Install package",
+        "Load module"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "R da ggplot2 nima?",
+      "options": [
+        "Plot kutubxona",
+        "Grammar of Graphics asosidagi ma'lumot vizualizatsiyasi kutubxonasi",
+        "Chart library",
+        "Base plot"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ggplot2 в R?",
+      "question_en": "What is ggplot2 in R?",
+      "options_ru": [
+        "Библиотека графиков",
+        "Библиотека визуализации данных, основанная на Grammar of Graphics.",
+        "Библиотека диаграмм",
+        "Базовый сюжет"
+      ],
+      "options_en": [
+        "Plot library",
+        "A data visualization library based on Grammar of Graphics",
+        "Chart library",
+        "Base plot"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "R da dplyr nima uchun?",
+      "options": [
+        "Data player",
+        "Data manipulation — filter, select, mutate, group_by, summarize",
+        "Data frame",
+        "SQL R"
+      ],
+      "answer": 1,
+      "question_ru": "R da dplyr nima uchun?",
+      "question_en": "R da dplyr nima uchun?",
+      "options_ru": [
+        "Проигрыватель данных",
+        "Манипулирование данными — фильтрация, выбор, изменение, группировка, суммирование",
+        "Кадр данных",
+        "SQL Р"
+      ],
+      "options_en": [
+        "Data player",
+        "Data manipulation — filter, select, mutate, group_by, summarize",
+        "Data frame",
+        "SQL R"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "R da pipe operator (%>%) nima qiladi?",
+      "options": [
+        "Quvur operatori",
+        "Chap qiymatni o'ng funksiyaning birinchi argumentiga uzatadi — zanjir hosil qilish",
+        "Redirect",
+        "Arrow"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает оператор канала (%>%) в R?",
+      "question_en": "What does the pipe operator (%>%) do in R?",
+      "options_ru": [
+        "Оператор трубопровода",
+        "Передает левое значение в первый аргумент правой функции — создавая цепочку",
+        "Перенаправление",
+        "Стрелка"
+      ],
+      "options_en": [
+        "Pipeline operator",
+        "Passes the left value to the first argument of the right function — creating a chain",
+        "Redirect",
+        "Arrow"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "R da apply() funksiyalar oilasi nima uchun?",
+      "options": [
+        "Funksiya qo'llash",
+        "Matrix, list, array ga funksiya qo'llash — apply, lapply, sapply, tapply",
+        "Loop alternativa",
+        "Vector funksiya"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать семейство функций apply() в R?",
+      "question_en": "Why apply() family of functions in R?",
+      "options_ru": [
+        "Применить функцию",
+        "Применение функций к матрице, списку, массиву — apply, lapply, sapply, Tapply",
+        "Альтернатива циклу",
+        "Векторная функция"
+      ],
+      "options_en": [
+        "Apply function",
+        "Applying functions to matrix, list, array — apply, lapply, sapply, tapply",
+        "Loop alternative",
+        "Vector function"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "R da tidyverse nima?",
+      "options": [
+        "Tidy universe",
+        "Ma'lumot tahlili uchun paketlar to'plami — ggplot2, dplyr, tidyr, readr",
+        "R framework",
+        "Data science"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое tidyverse в R?",
+      "question_en": "What is tidyverse in R?",
+      "options_ru": [
+        "Аккуратная вселенная",
+        "Набор пакетов для анализа данных — ggplot2, dplyr, tidyr, readr",
+        "R-фреймворк",
+        "Наука о данных"
+      ],
+      "options_en": [
+        "Tidy universe",
+        "A set of packages for data analysis — ggplot2, dplyr, tidyr, readr",
+        "R framework",
+        "Data science"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "R da factor nima?",
+      "options": [
+        "Ko'paytirish",
+        "Kategorik o'zgaruvchi — belgilangan levels bilan, statistik tahlil uchun",
+        "Category type",
+        "Enum"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое коэффициент R?",
+      "question_en": "What is factor in R?",
+      "options_ru": [
+        "Увеличение",
+        "Категориальная переменная — с определенными уровнями для статистического анализа.",
+        "Тип категории",
+        "Перечисление"
+      ],
+      "options_en": [
+        "Ko'paytirish",
+        "Categorical variable — with defined levels, for statistical analysis",
+        "Category type",
+        "Enum"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "R da matrix nima?",
+      "options": [
+        "Matematika matrisa",
+        "2D, bir tip elementli ma'lumotlar tuzilmasi — matrix(data, nrow, ncol)",
+        "2D array",
+        "Grid"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое матрица в R?",
+      "question_en": "What is a matrix in R?",
+      "options_ru": [
+        "Математическая матрица",
+        "Двумерная одноэлементная структура данных — матрица (данные, nrow, ncol).",
+        "2D-массив",
+        "Сетка"
+      ],
+      "options_en": [
+        "Math matrix",
+        "A 2D, one-element data structure — matrix(data, nrow, ncol)",
+        "2D array",
+        "Grid"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "R da environment nima?",
+      "options": [
+        "Muhit",
+        "O'zgaruvchilar va qiymatlar saqlanadigan konteyner — lexical scoping uchun",
+        "Scope",
+        "Namespace"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое окружающая среда в R?",
+      "question_en": "What is environment in R?",
+      "options_ru": [
+        "Окружающая среда",
+        "Контейнер для хранения переменных и значений — для лексической области видимости.",
+        "Область применения",
+        "Пространство имен"
+      ],
+      "options_en": [
+        "Muhit",
+        "A container for storing variables and values ​​— for lexical scoping",
+        "Scope",
+        "Namespace"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "R da S3 va S4 OOP farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "S3 — informal, generic funksiyalar bilan; S4 — formal, type checking, slot",
+        "S4 informal",
+        "S3 formal"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между S3 и S4 ООП в R?",
+      "question_en": "What is the difference between S3 and S4 OOP in R?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "S3 — неформальный, с общими функциями; S4 — формальный, проверка типа, слот",
+        "S4 неофициальный",
+        "S3 формальный"
+      ],
+      "options_en": [
+        "There is no difference",
+        "S3 — informal, with generic functions; S4 — formal, type checking, slot",
+        "S4 is informal",
+        "S3 formal"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "R da R6 package nima beradi?",
+      "options": [
+        "R versiya 6",
+        "Reference semantics — R5/Reference classes alternativa, mutable ob'ektlar",
+        "OOP package",
+        "Class package"
+      ],
+      "answer": 1,
+      "question_ru": "Что пакет R6 предоставляет в R?",
+      "question_en": "What does the R6 package provide in R?",
+      "options_ru": [
+        "Р версия 6",
+        "Справочная семантика — альтернативные классы R5/Reference, изменяемые объекты",
+        "пакет ООП",
+        "Классный пакет"
+      ],
+      "options_en": [
+        "R version 6",
+        "Reference semantics — R5/Reference classes alternative, mutable objects",
+        "OOP package",
+        "Class package"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "R da tryCatch nima uchun?",
+      "options": [
+        "Try catch",
+        "Xatolarni va ogohlantirishlarni ushlab boshqarish",
+        "Error handling",
+        "Exception"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем пытаться Catch в R?",
+      "question_en": "Why tryCatch in R?",
+      "options_ru": [
+        "Попробуйте поймать",
+        "Обработка ошибок и предупреждений",
+        "Обработка ошибок",
+        "Исключение"
+      ],
+      "options_en": [
+        "Try catch",
+        "Handle errors and warnings",
+        "Error handling",
+        "Exception"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "R da Reduce() nima qiladi?",
+      "options": [
+        "Kamaytirish",
+        "Funksiyani akkumulyator bilan ro'yxatga qo'llab bitta qiymat qaytaradi",
+        "Fold",
+        "Aggregate"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает уменьшает() в R?",
+      "question_en": "What does Reduce() do in R?",
+      "options_ru": [
+        "Уменьшить",
+        "Возвращает одно значение, применяя функцию к списку с аккумулятором.",
+        "Сложить",
+        "Совокупный"
+      ],
+      "options_en": [
+        "Reduce",
+        "Returns a single value by applying the function to the list with the accumulator",
+        "Fold",
+        "Aggregate"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "R da environment scoping qanday ishlaydi?",
+      "options": [
+        "Global scope",
+        "Lexical scoping — funksiya e'lon qilingan muhitdan qidiradi (dynamic emas)",
+        "Dynamic scope",
+        "Local scope"
+      ],
+      "answer": 1,
+      "question_ru": "Как в R работает область видимости среды?",
+      "question_en": "How does environment scoping work in R?",
+      "options_ru": [
+        "Глобальная область действия",
+        "Лексическая область видимости — поиск в среде, в которой объявлена функция (не динамическая).",
+        "Динамическая область видимости",
+        "Локальная область действия"
+      ],
+      "options_en": [
+        "Global scope",
+        "Lexical scoping — searches the environment in which the function is declared (not dynamic)",
+        "Dynamic scope",
+        "Local scope"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "R da Rcpp nima uchun?",
+      "options": [
+        "R C++ package",
+        "C++ kod ni R dan chaqirish — performance uchun",
+        "C++ wrapper",
+        "Native code"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Rcpp в R?",
+      "question_en": "Why Rcpp in R?",
+      "options_ru": [
+        "пакет R C++",
+        "Вызов кода C++ из R предназначен для повышения производительности.",
+        "оболочка C++",
+        "Собственный код"
+      ],
+      "options_en": [
+        "R C++ package",
+        "C++ kod ni R dan chaqirish — performance uchun",
+        "C++ wrapper",
+        "Native code"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "R da data.table nima?",
+      "options": [
+        "HTML jadval",
+        "Katta ma'lumotlar uchun tez, xotirani tejovchi data.frame kengaytmasi",
+        "Fast table",
+        "Data frame 2"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое data.table в R?",
+      "question_en": "What is data.table in R?",
+      "options_ru": [
+        "HTML-таблица",
+        "Быстрое расширение data.frame с эффективным использованием памяти для больших данных.",
+        "Быстрый стол",
+        "Кадр данных 2"
+      ],
+      "options_en": [
+        "HTML table",
+        "Katta ma'lumotlar uchun tez, xotirani tejovchi data.frame kengaytmasi",
+        "Fast table",
+        "Data frame 2"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "R da shiny nima?",
+      "options": [
+        "Yaltiroq",
+        "Interaktiv web ilovalar yaratish uchun R paketi",
+        "Web framework",
+        "UI library"
+      ],
+      "answer": 1,
+      "question_ru": "Что блестящего в R?",
+      "question_en": "What is shiny in R?",
+      "options_ru": [
+        "блестящий",
+        "Пакет R для создания интерактивных веб-приложений.",
+        "Веб-фреймворк",
+        "библиотека пользовательского интерфейса"
+      ],
+      "options_en": [
+        "Shiny",
+        "An R package for creating interactive web applications",
+        "Web framework",
+        "UI library"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "R da which() nima qiladi?",
+      "options": [
+        "Which element",
+        "Shartga mos elementlarning indekslarini qaytaradi",
+        "Find index",
+        "Filter index"
+      ],
+      "answer": 1,
+      "question_ru": "R da which() nima qiladi?",
+      "question_en": "What does which() do in R?",
+      "options_ru": [
+        "Какой элемент",
+        "Возвращает индексы элементов, соответствующих условию",
+        "Найти индекс",
+        "Индекс фильтра"
+      ],
+      "options_en": [
+        "Which element",
+        "Returns the indices of the elements matching the condition",
+        "Find index",
+        "Filter index"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "R da merge() nima uchun?",
+      "options": [
+        "Birlashtirish",
+        "Ikki data.frame ni umumiy ustun bo'yicha birlashtirish — SQL JOIN",
+        "Join",
+        "Combine"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем слияние() в R?",
+      "question_en": "Why merge() in R?",
+      "options_ru": [
+        "Консолидация",
+        "Объединение двух data.frames по общему столбцу — SQL JOIN",
+        "Присоединяйтесь",
+        "Объединить"
+      ],
+      "options_en": [
+        "Consolidation",
+        "Joining two data.frames by a common column — SQL JOIN",
+        "Join",
+        "Combine"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "R da reshape2 yoki tidyr nima uchun?",
+      "options": [
+        "Ma'lumot shakli",
+        "Wide va long format o'rtasida ma'lumotlarni qayta shakllantirish — pivot",
+        "Data reshape",
+        "Transform"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем reshape2 или тидыр в R?",
+      "question_en": "Why reshape2 or tidyr in R?",
+      "options_ru": [
+        "Информационная форма",
+        "Преобразование данных между широким и длинным форматом — сводка",
+        "Изменение формы данных",
+        "Трансформировать"
+      ],
+      "options_en": [
+        "Information form",
+        "Transform data between wide and long format — pivot",
+        "Data reshape",
+        "Transform"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "R da lm() nima qiladi?",
+      "options": [
+        "Log model",
+        "Chiziqli regression model quradi — linear model",
+        "Statistical model",
+        "Regression"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает lm() в R?",
+      "question_en": "What does lm() do in R?",
+      "options_ru": [
+        "Модель журнала",
+        "Строит модель линейной регрессии — линейная модель",
+        "Статистическая модель",
+        "Регрессия"
+      ],
+      "options_en": [
+        "Log model",
+        "Builds a linear regression model — a linear model",
+        "Statistical model",
+        "Regression"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "R da non-standard evaluation (NSE) nima?",
+      "options": [
+        "Non-standard",
+        "Ifodani baholamasdan quote qilish — dplyr filter(data, col > 5) kabi DSL",
+        "Lazy eval",
+        "Quote eval"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое нестандартная оценка (NSE) в R?",
+      "question_en": "What is non-standard evaluation (NSE) in R?",
+      "options_ru": [
+        "Нестандартный",
+        "Цитирование выражения без его оценки — это DSL-подобный фильтр dplyr(data, col > 5).",
+        "Ленивая оценка",
+        "Оценка цитаты"
+      ],
+      "options_en": [
+        "Non-standard",
+        "Quoting an expression without evaluating it is a DSL like dplyr filter(data, col > 5).",
+        "Lazy eval",
+        "Quote eval"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "R da rlang::enquo() nima uchun?",
+      "options": [
+        "Enquo",
+        "NSE uchun — funksiya argumentni quote qilish, tidy evaluation",
+        "Quote function",
+        "Capture expression"
+      ],
+      "answer": 1,
+      "question_ru": "Почему rlang::enquo() в R?",
+      "question_en": "Why rlang::enquo() in R?",
+      "options_ru": [
+        "Энво",
+        "Для NSE функция заключается в цитировании аргумента, аккуратной оценке.",
+        "Функция цитаты",
+        "Захват выражения"
+      ],
+      "options_en": [
+        "Enquo",
+        "For NSE, the function is to quote the argument, tidy evaluation",
+        "Quote function",
+        "Capture expression"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "R da memory profiling qanday amalga oshiriladi?",
+      "options": [
+        "Memory watch",
+        "profvis, Rprof, lineprof — CPU va xotira foydalanishini kuzatish",
+        "Profile tool",
+        "Debug memory"
+      ],
+      "answer": 1,
+      "question_ru": "Как выполнить профилирование памяти в R?",
+      "question_en": "How to do memory profiling in R?",
+      "options_ru": [
+        "Часы с памятью",
+        "profvis, Rprof, lineprof — мониторинг использования процессора и памяти",
+        "Инструмент профиля",
+        "Отладочная память"
+      ],
+      "options_en": [
+        "Memory watch",
+        "profvis, Rprof, lineprof — monitor CPU and memory usage",
+        "Profile tool",
+        "Debug memory"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "R da parallel computing qanday?",
+      "options": [
+        "Parallel package",
+        "parallel, future, furrr paketlari — multi-core, cluster computing",
+        "Thread R",
+        "Multi core"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое параллельные вычисления в R?",
+      "question_en": "What is parallel computing in R?",
+      "options_ru": [
+        "Параллельный пакет",
+        "пакеты Parallel, Future, Furrr — многоядерные, кластерные вычисления",
+        "Резьба R",
+        "Многоядерный"
+      ],
+      "options_en": [
+        "Parallel package",
+        "parallel, future, furrr packages — multi-core, cluster computing",
+        "Thread R",
+        "Multi-core"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "R da promise va lazy evaluation nima?",
+      "options": [
+        "Promise",
+        "R da argument birinchi foydalanishda baholanadi — thunk kabi",
+        "Lazy load",
+        "Deferred eval"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое обещание и ленивая оценка в R?",
+      "question_en": "What is promise and lazy evaluation in R?",
+      "options_ru": [
+        "Обещание",
+        "В R аргумент оценивается при первом использовании — как thunk",
+        "Ленивая загрузка",
+        "Отложенная оценка"
+      ],
+      "options_en": [
+        "Promise",
+        "R da argument birinchi foydalanishda baholanadi — thunk kabi",
+        "Lazy load",
+        "Deferred eval"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "R da active binding nima?",
+      "options": [
+        "Aktiv bog'lash",
+        "O'zgaruvchiga kirishda funksiya chaqiriladi — makeActiveBinding",
+        "Dynamic variable",
+        "Property"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое активное связывание в R?",
+      "question_en": "What is active binding in R?",
+      "options_ru": [
+        "Активная привязка",
+        "При обращении к переменной вызывается функция — makeActiveBinding",
+        "Динамическая переменная",
+        "Недвижимость"
+      ],
+      "options_en": [
+        "Active binding",
+        "When accessing the variable, the function is called — makeActiveBinding",
+        "Dynamic variable",
+        "Property"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "R da Bioconductor nima?",
+      "options": [
+        "Bio conductor",
+        "Bioinformatika uchun paketlar repositorysi — genomic data analysis",
+        "Bio package",
+        "Science R"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое биокондуктор в R?",
+      "question_en": "R da Bioconductor nima?",
+      "options_ru": [
+        "Биопроводник",
+        "Репозиторий пакетов для биоинформатики — анализа геномных данных",
+        "Био пакет",
+        "Наука Р"
+      ],
+      "options_en": [
+        "Bioconductor",
+        "Repository of packages for bioinformatics — genomic data analysis",
+        "Bio package",
+        "Science R"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "R da S4 formal class va methods qanday ishlaydi?",
+      "options": [
+        "Formal OOP",
+        "setClass, setGeneric, setMethod — formal type checking, multiple dispatch",
+        "S3 improved",
+        "OOP formal"
+      ],
+      "answer": 1,
+      "question_ru": "Как формальные классы и методы S4 работают в R?",
+      "question_en": "How do S4 formal classes and methods work in R?",
+      "options_ru": [
+        "Формальный ООП",
+        "setClass, setGeneric, setMethod — проверка формального типа, множественная диспетчеризация",
+        "S3 улучшенный",
+        "ООП формальное"
+      ],
+      "options_en": [
+        "Formal OOP",
+        "setClass, setGeneric, setMethod — formal type checking, multiple dispatch",
+        "S3 improved",
+        "OOP is formal"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "R da environment as first class object nima?",
+      "options": [
+        "Ob'ekt muhit",
+        "Muhitni o'zgaruvchida saqlash, manipulyatsiya qilish, funksiyaga uzatish",
+        "Scope object",
+        "Frame object"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое среда как объект первого класса в R?",
+      "question_en": "What is environment as first class object in R?",
+      "options_ru": [
+        "Объектная среда",
+        "Сохранение окружения в переменной, манипулирование им, передача в функцию",
+        "Объект области",
+        "Объект кадра"
+      ],
+      "options_en": [
+        "Object environment",
+        "Storing the environment in a variable, manipulating it, passing it to a function",
+        "Scope object",
+        "Frame object"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "R da rapply() nima uchun?",
+      "options": [
+        "Recursive apply",
+        "Nested list ga rekursiv ravishda funksiya qo'llash",
+        "Deep apply",
+        "Tree apply"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Rapply() в R?",
+      "question_en": "Why rapply() in R?",
+      "options_ru": [
+        "Рекурсивное приложение",
+        "Рекурсивное применение функции к вложенному списку",
+        "Глубокое применение",
+        "Приложение «Дерево»"
+      ],
+      "options_en": [
+        "Recursive application",
+        "Applying a function recursively to a nested list",
+        "Deep apply",
+        "Tree application"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "R da Sys.time() va proc.time() farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Sys.time() — wall clock time; proc.time() — CPU time (user, system, elapsed)",
+        "Proc tezroq",
+        "Sys CPU"
+      ],
+      "answer": 1,
+      "question_ru": "R da Sys.time() va proc.time() farqi?",
+      "question_en": "Difference between Sys.time() and proc.time() in R?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Sys.time() — wall clock time; proc.time() — CPU time (user, system, elapsed)",
+        "Процесс происходит быстрее",
+        "Системный процессор"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Sys.time() — wall clock time; proc.time() — CPU time (user, system, elapsed)",
+        "Proc is faster",
+        "Sys CPU"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "R da CRAN va Bioconductor farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "CRAN — umumiy R paketlari; Bioconductor — bioinformatika ixtisoslashgan paketlari",
+        "CRAN bio",
+        "Bioconductor general"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между CRAN и биопроводником в R?",
+      "question_en": "Difference between CRAN and Bioconductor in R?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "CRAN — общие пакеты R; Биокондуктор — специализированные пакеты биоинформатики",
+        "КРАН био",
+        "Биокондуктор общий"
+      ],
+      "options_en": [
+        "There is no difference",
+        "CRAN — common R packages; Bioconductor — specialized bioinformatics packages",
+        "CRAN bio",
+        "Bioconductor general"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "R da future package nima beradi?",
+      "options": [
+        "Kelajak",
+        "Asinxron va parallel evaluation — future(), value(), %<-% assignment",
+        "Async R",
+        "Parallel eval"
+      ],
+      "answer": 1,
+      "question_ru": "Что предоставляет будущий пакет в R?",
+      "question_en": "What does the future package provide in R?",
+      "options_ru": [
+        "Будущее",
+        "Асинхронное и параллельное вычисление — будущее(), значение(), присвоение %<-%",
+        "Асинхронный Р",
+        "Параллельная оценка"
+      ],
+      "options_en": [
+        "Kelajak",
+        "Asynchronous and parallel evaluation — future(), value(), %<-% assignment",
+        "Async R",
+        "Parallel eval"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "R da igraph nima uchun?",
+      "options": [
+        "Image graph",
+        "Graf (network) yaratish va tahlil qilish kutubxonasi",
+        "Network analysis",
+        "Graph theory"
+      ],
+      "answer": 1,
+      "question_ru": "Почему igraph в R?",
+      "question_en": "Why igraph in R?",
+      "options_ru": [
+        "График изображения",
+        "Библиотека создания и анализа графиков (сетей)",
+        "Сетевой анализ",
+        "Теория графов"
+      ],
+      "options_en": [
+        "Image graph",
+        "Graph (network) creation and analysis library",
+        "Network analysis",
+        "Graph theory"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "R da testthat nima uchun?",
+      "options": [
+        "Test qilish",
+        "Unit testing framework — expect_equal, expect_error, describe/it",
+        "Testing package",
+        "R test"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем проверять это в R?",
+      "question_en": "Why testthat in R?",
+      "options_ru": [
+        "Тестирование",
+        "Фреймворк модульного тестирования — ожидаемый_равный, ожидаемый_ошибка, описание/ит",
+        "Тестовый пакет",
+        "R test"
+      ],
+      "options_en": [
+        "Test qilish",
+        "Unit testing framework — expect_equal, expect_error, describe/it",
+        "Testing package",
+        "R test"
+      ]
+    }
   ]
 }

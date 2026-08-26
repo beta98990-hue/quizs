@@ -2,55 +2,1305 @@
   "technology": "C",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"C tili nima uchun ishlatiladi?","options":["Web dasturlash","Tizim dasturlash — OS, driver, embedded tizimlar","Mobile ilovalar","Database"],"answer":1},
-    {"id":2,"level":"easy","question":"C da printf nima qiladi?","options":["Print format","Konsolga formatlangan matn chiqaradi","Fayl yozadi","Input oladi"],"answer":1},
-    {"id":3,"level":"easy","question":"C da scanf nima uchun?","options":["Saralash","Formatlangan ma'lumot o'qish — klaviaturadan input","String aniqlash","Scan file"],"answer":1},
-    {"id":4,"level":"easy","question":"C da main funksiyaning qaytarish tipi nima?","options":["void","int","string","bool"],"answer":1},
-    {"id":5,"level":"easy","question":"C da int nima?","options":["Yaxlit son tipi","Float tipi","Character tipi","Pointer tipi"],"answer":0},
-    {"id":6,"level":"easy","question":"C da pointer qanday e'lon qilinadi?","options":["int *ptr;","ptr int;","&ptr int;","pointer int ptr;"],"answer":0},
-    {"id":7,"level":"easy","question":"C da & operatori nima qiladi?","options":["Bitwise AND","O'zgaruvchining xotira manzilini qaytaradi","Pointer dereference","VA operatori"],"answer":1},
-    {"id":8,"level":"easy","question":"C da * operatori pointer bilan nima qiladi?","options":["Ko'paytirish","Pointer dereference — manzil bo'yicha qiymatga kirish","Pointer e'lon","Wildcard"],"answer":1},
-    {"id":9,"level":"easy","question":"C da malloc() nima qiladi?","options":["Memory alokatsiya","Heap da belgilangan bayt xotira ajratadi va pointer qaytaradi","Static allocation","Stack alloc"],"answer":1},
-    {"id":10,"level":"easy","question":"C da free() nima uchun?","options":["Bepul resurs","malloc/calloc bilan ajratilgan heap xotirani bo'shatish","Pointer o'chirish","Variable free"],"answer":1},
-    {"id":11,"level":"easy","question":"C da struct nima?","options":["Tuzilma","Turli tipli ma'lumotlarni guruhlash uchun foydalanuvchi ta'riflagan tip","Class turi","Object"],"answer":1},
-    {"id":12,"level":"easy","question":"C da #define nima uchun?","options":["Funksiya ta'riflash","Preprocessor makro — konstant yoki makro funksiya ta'riflash","Variable define","Constant"],"answer":1},
-    {"id":13,"level":"easy","question":"C da array qanday e'lon qilinadi?","options":["array[5] int;","int array[5];","int[] array = 5;","array = new int[5];"],"answer":1},
-    {"id":14,"level":"easy","question":"C da char nima?","options":["Belgi tipi — bitta belgi saqlaydi","String tipi","Raqam tipi","Pointer tipi"],"answer":0},
-    {"id":15,"level":"easy","question":"C da sizeof() nima qaytaradi?","options":["Array o'lchami","Tip yoki o'zgaruvchining baytdagi hajmi","Pointer o'lchami","Null"],"answer":1},
-    {"id":16,"level":"medium","question":"C da stack va heap farqi nima?","options":["Hech qanday farq yo'q","Stack — avtomatik, mahalliy o'zgaruvchilar; Heap — dinamik, malloc bilan, manual boshqarish","Heap avtomatik","Stack manual"],"answer":1},
-    {"id":17,"level":"medium","question":"C da NULL pointer nima?","options":["0 manzil","Hech narsaga ko'rsatmaydigan pointer — (void*)0 yoki 0","Empty pointer","Invalid pointer"],"answer":1},
-    {"id":18,"level":"medium","question":"C da pointer arithmetic nima?","options":["Pointer matematik","Pointer ga int qo'shib tip o'lchamiga mos manzil oshirish — arr+1 keyingi element","Address math","Memory math"],"answer":1},
-    {"id":19,"level":"medium","question":"C da function pointer nima?","options":["Funksiya ko'rsatgichi","Funksiyaning manzilini saqlaydigan pointer — callback uchun","Method pointer","Lambda"],"answer":1},
-    {"id":20,"level":"medium","question":"C da typedef nima uchun?","options":["Tip ta'riflash","Mavjud tipga yangi nom berish — typedef unsigned int uint;","Type alias","New type"],"answer":1},
-    {"id":21,"level":"medium","question":"C da enum nima?","options":["Raqamlar to'plami","Nomlangan tamsayı konstantalar to'plami","Type group","Constant array"],"answer":1},
-    {"id":22,"level":"medium","question":"C da union nima?","options":["Birlashtirish","Bir xil xotirada turli tiplarni saqlash — bir vaqtda faqat bittasi faol","Struct turi","Memory share"],"answer":1},
-    {"id":23,"level":"medium","question":"C da calloc() va malloc() farqi nima?","options":["Hech qanday farq yo'q","calloc — son va o'lchamni oladi, nolga initsializatsiya; malloc — faqat o'lcham, initializatsiya yo'q","malloc nullga init","calloc tezroq"],"answer":1},
-    {"id":24,"level":"medium","question":"C da realloc() nima qiladi?","options":["Qayta allokatsiya","Mavjud xotira blokini kengaytiradi/qisqartiradi — yangi o'lcham bilan","Memory resize","Pointer resize"],"answer":1},
-    {"id":25,"level":"medium","question":"C da segmentation fault nima?","options":["Segment xatosi","Dasturga tegishli bo'lmagan xotiraga murojaat — NULL dereference, out-of-bounds","Memory leak","Stack overflow"],"answer":1},
-    {"id":26,"level":"medium","question":"C da string nima?","options":["String tipi","null-terminated char array — 'Hello' = {'H','e','l','l','o','\\0'}","char tipi","Char pointer"],"answer":1},
-    {"id":27,"level":"medium","question":"C da strcpy() va strncpy() farqi?","options":["Hech qanday farq yo'q","strcpy — to'liq nusxa (overflow xavfi); strncpy — N bayt nusxa (xavfsizroq)","strncpy tezroq","strcpy xavfsizroq"],"answer":1},
-    {"id":28,"level":"medium","question":"C da volatile kalit so'zi nima uchun?","options":["Sekin o'zgaruvchi","O'zgaruvchi kompillyator bilmagan tashqi ta'sir bilan o'zgarishi mumkin — hardware register","Constant volatile","Sync variable"],"answer":1},
-    {"id":29,"level":"medium","question":"C da bitwise operatorlar qaysilar?","options":["+ - * /","& | ^ ~ << >>","&& || ! ==","+ - << >>"],"answer":1},
-    {"id":30,"level":"medium","question":"C da recursive funksiya stack overflow qachon beradi?","options":["Har doim","Bazis holat yo'q yoki juda chuqur rekursiya — stack to'lganda","Ko'p parametr","Katta xotira"],"answer":1},
-    {"id":31,"level":"medium","question":"C da extern kalit so'zi nima uchun?","options":["External lib","Boshqa kompilatsiya birligida e'lon qilingan global o'zgaruvchi yoki funksiyaga murojaat","Export","Import"],"answer":1},
-    {"id":32,"level":"medium","question":"C da static kalit so'zi funksiya ichida nima qiladi?","options":["Tezlashtiradi","O'zgaruvchi faqat bir marta yaratiladi — funksiya qayta chaqirilsa qiymati saqlanadi","Private o'zgaruvchi","Const o'zgaruvchi"],"answer":1},
-    {"id":33,"level":"medium","question":"C da assert() nima uchun?","options":["Test assert","Shart yolg'on bo'lsa dasturni to'xtatuvchi debug vositasi","Error check","Runtime check"],"answer":1},
-    {"id":34,"level":"medium","question":"C da header guard nima?","options":["Himoya fayl","#ifndef, #define, #endif — header faylni bir marta include qilishni ta'minlash","Include guard","Macro guard"],"answer":1},
-    {"id":35,"level":"medium","question":"C da FILE* va fopen() nima uchun?","options":["Fayl stream","Fayl bilan ishlash — fopen orqali ochish, fclose bilan yopish","Fayl pointer","IO stream"],"answer":1},
-    {"id":36,"level":"hard","question":"C da undefined behavior nima?","options":["Noaniq natija","Standart tomonidan ta'riflanmagan xatti-harakat — NULL dereference, integer overflow","Runtime error","Compile error"],"answer":1},
-    {"id":37,"level":"hard","question":"C da memory alignment nima?","options":["Xotira tartibi","Tip o'zining o'lchamiga mos manzilda bo'lishi — sizeof va offsetof bilan tekshirish","Address alignment","Cache alignment"],"answer":1},
-    {"id":38,"level":"hard","question":"C da longjmp va setjmp nima uchun?","options":["Jump instruction","Non-local goto — stack orqali sakrash, exception-like handling (xavfli)","Exception handling","Error jump"],"answer":1},
-    {"id":39,"level":"hard","question":"C da flexible array member nima?","options":["Moslashuvchan massiv","Struct oxiridagi belgilangan o'lchavsiz massiv — struct { int n; char data[]; }","Dynamic array","Variable array"],"answer":1},
-    {"id":40,"level":"hard","question":"C da restrict kalit so'zi nima?","options":["Cheklash","Pointer ning yagona kirish yo'li — kompilyator alias taxminini kamaytiradi, optimizatsiya","Unique pointer","Const pointer"],"answer":1},
-    {"id":41,"level":"hard","question":"C da _Atomic va <stdatomic.h> nima uchun?","options":["Atom operatsiya","Ko'p thread muhitida race condition holda atomik o'qish/yozish","Thread safety","Lock-free"],"answer":1},
-    {"id":42,"level":"hard","question":"C da designated initializer nima?","options":["Belgilangan init","struct yoki array ni {.field = value} ko'rinishda initsializatsiya — tartib muhim emas","Named init","Field init"],"answer":1},
-    {"id":43,"level":"hard","question":"C da compound literal nima?","options":["Murakkab literal","(Type){value} — anonim ob'ekt yaratish, funksiya argumenti sifatida","Temp object","Inline struct"],"answer":1},
-    {"id":44,"level":"hard","question":"C da VLA (Variable Length Array) nima?","options":["Variable length","Stack da runtime o'lchamli massiv — C99, C11 da optional","Dynamic array","Heap array"],"answer":1},
-    {"id":45,"level":"hard","question":"C da void* pointer nima uchun?","options":["Bo'sh pointer","Ixtiyoriy tipga ko'rsatuvchi — malloc qaytaradi, cast kerak","Generic pointer","Null pointer"],"answer":1},
-    {"id":46,"level":"hard","question":"C da double pointer nima uchun?","options":["Ikki pointer","Pointer ning pointeriga — 2D array, pointer ni funksiyada o'zgartirish","Array pointer","Ref ref"],"answer":1},
-    {"id":47,"level":"hard","question":"C da __attribute__((packed)) nima qiladi?","options":["Paketlash","Struct padding ni olib tashlash — xotira tejalinadi, lekin alignment yo'qoladi","Memory pack","Struct pack"],"answer":1},
-    {"id":48,"level":"hard","question":"C da endianness nima?","options":["Son tartibi","Ko'p baytli qiymatni xotirada saqlash tartibi — little-endian va big-endian","Byte order","Memory order"],"answer":1},
-    {"id":49,"level":"hard","question":"C da function inlining nima?","options":["Funksiya inline","Kompilyator funksiya chaqiruvini funksiya tanasi bilan almashtirish — call overhead yo'q","Inline function","Macro function"],"answer":1},
-    {"id":50,"level":"hard","question":"C da ABI (Application Binary Interface) nima?","options":["API turi","Ikkilik darajada: calling convention, struct layout, name mangling — kutubxona muvofiqligi","Binary interface","Linker interface"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "C tili nima uchun ishlatiladi?",
+      "options": [
+        "Web dasturlash",
+        "Tizim dasturlash — OS, driver, embedded tizimlar",
+        "Mobile ilovalar",
+        "Database"
+      ],
+      "answer": 1,
+      "question_ru": "C tili nima uchun ishlatiladi?",
+      "question_en": "C tili nima uchun ishlatiladi?",
+      "options_ru": [
+        "Web dasturlash",
+        "Tizim dasturlash — OS, driver, embedded tizimlar",
+        "Mobile ilovalar",
+        "Database"
+      ],
+      "options_en": [
+        "Web dasturlash",
+        "Tizim dasturlash — OS, driver, embedded tizimlar",
+        "Mobile ilovalar",
+        "Database"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "C da printf nima qiladi?",
+      "options": [
+        "Print format",
+        "Konsolga formatlangan matn chiqaradi",
+        "Fayl yozadi",
+        "Input oladi"
+      ],
+      "answer": 1,
+      "question_ru": "C da printf nima qiladi?",
+      "question_en": "C da printf nima qiladi?",
+      "options_ru": [
+        "Print format",
+        "Konsolga formatlangan matn chiqaradi",
+        "Fayl yozadi",
+        "Input oladi"
+      ],
+      "options_en": [
+        "Print format",
+        "Konsolga formatlangan matn chiqaradi",
+        "Fayl yozadi",
+        "Input oladi"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "C da scanf nima uchun?",
+      "options": [
+        "Saralash",
+        "Formatlangan ma'lumot o'qish — klaviaturadan input",
+        "String aniqlash",
+        "Scan file"
+      ],
+      "answer": 1,
+      "question_ru": "C da scanf nima uchun?",
+      "question_en": "C da scanf nima uchun?",
+      "options_ru": [
+        "Saralash",
+        "Formatlangan ma'lumot o'qish — klaviaturadan input",
+        "String aniqlash",
+        "Scan file"
+      ],
+      "options_en": [
+        "Saralash",
+        "Formatlangan ma'lumot o'qish — klaviaturadan input",
+        "String aniqlash",
+        "Scan file"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "C da main funksiyaning qaytarish tipi nima?",
+      "options": [
+        "void",
+        "int",
+        "string",
+        "bool"
+      ],
+      "answer": 1,
+      "question_ru": "C da main funksiyaning qaytarish tipi nima?",
+      "question_en": "C da main funksiyaning qaytarish tipi nima?",
+      "options_ru": [
+        "void",
+        "int",
+        "string",
+        "bool"
+      ],
+      "options_en": [
+        "void",
+        "int",
+        "string",
+        "bool"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "C da int nima?",
+      "options": [
+        "Yaxlit son tipi",
+        "Float tipi",
+        "Character tipi",
+        "Pointer tipi"
+      ],
+      "answer": 0,
+      "question_ru": "C da int nima?",
+      "question_en": "C da int nima?",
+      "options_ru": [
+        "Yaxlit son tipi",
+        "Float tipi",
+        "Character tipi",
+        "Pointer tipi"
+      ],
+      "options_en": [
+        "Yaxlit son tipi",
+        "Float tipi",
+        "Character tipi",
+        "Pointer tipi"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "C da pointer qanday e'lon qilinadi?",
+      "options": [
+        "int *ptr;",
+        "ptr int;",
+        "&ptr int;",
+        "pointer int ptr;"
+      ],
+      "answer": 0,
+      "question_ru": "C da pointer qanday e'lon qilinadi?",
+      "question_en": "C da pointer qanday e'lon qilinadi?",
+      "options_ru": [
+        "int *ptr;",
+        "ptr int;",
+        "&ptr int;",
+        "pointer int ptr;"
+      ],
+      "options_en": [
+        "int *ptr;",
+        "ptr int;",
+        "&ptr int;",
+        "pointer int ptr;"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "C da & operatori nima qiladi?",
+      "options": [
+        "Bitwise AND",
+        "O'zgaruvchining xotira manzilini qaytaradi",
+        "Pointer dereference",
+        "VA operatori"
+      ],
+      "answer": 1,
+      "question_ru": "C da & operatori nima qiladi?",
+      "question_en": "C da & operatori nima qiladi?",
+      "options_ru": [
+        "Bitwise AND",
+        "O'zgaruvchining xotira manzilini qaytaradi",
+        "Pointer dereference",
+        "VA operatori"
+      ],
+      "options_en": [
+        "Bitwise AND",
+        "O'zgaruvchining xotira manzilini qaytaradi",
+        "Pointer dereference",
+        "VA operatori"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "C da * operatori pointer bilan nima qiladi?",
+      "options": [
+        "Ko'paytirish",
+        "Pointer dereference — manzil bo'yicha qiymatga kirish",
+        "Pointer e'lon",
+        "Wildcard"
+      ],
+      "answer": 1,
+      "question_ru": "C da * operatori pointer bilan nima qiladi?",
+      "question_en": "C da * operatori pointer bilan nima qiladi?",
+      "options_ru": [
+        "Ko'paytirish",
+        "Pointer dereference — manzil bo'yicha qiymatga kirish",
+        "Pointer e'lon",
+        "Wildcard"
+      ],
+      "options_en": [
+        "Ko'paytirish",
+        "Pointer dereference — manzil bo'yicha qiymatga kirish",
+        "Pointer e'lon",
+        "Wildcard"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "C da malloc() nima qiladi?",
+      "options": [
+        "Memory alokatsiya",
+        "Heap da belgilangan bayt xotira ajratadi va pointer qaytaradi",
+        "Static allocation",
+        "Stack alloc"
+      ],
+      "answer": 1,
+      "question_ru": "C da malloc() nima qiladi?",
+      "question_en": "C da malloc() nima qiladi?",
+      "options_ru": [
+        "Memory alokatsiya",
+        "Heap da belgilangan bayt xotira ajratadi va pointer qaytaradi",
+        "Static allocation",
+        "Stack alloc"
+      ],
+      "options_en": [
+        "Memory alokatsiya",
+        "Heap da belgilangan bayt xotira ajratadi va pointer qaytaradi",
+        "Static allocation",
+        "Stack alloc"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "C da free() nima uchun?",
+      "options": [
+        "Bepul resurs",
+        "malloc/calloc bilan ajratilgan heap xotirani bo'shatish",
+        "Pointer o'chirish",
+        "Variable free"
+      ],
+      "answer": 1,
+      "question_ru": "C da free() nima uchun?",
+      "question_en": "C da free() nima uchun?",
+      "options_ru": [
+        "Bepul resurs",
+        "malloc/calloc bilan ajratilgan heap xotirani bo'shatish",
+        "Pointer o'chirish",
+        "Variable free"
+      ],
+      "options_en": [
+        "Bepul resurs",
+        "malloc/calloc bilan ajratilgan heap xotirani bo'shatish",
+        "Pointer o'chirish",
+        "Variable free"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "C da struct nima?",
+      "options": [
+        "Tuzilma",
+        "Turli tipli ma'lumotlarni guruhlash uchun foydalanuvchi ta'riflagan tip",
+        "Class turi",
+        "Object"
+      ],
+      "answer": 1,
+      "question_ru": "C da struct nima?",
+      "question_en": "C da struct nima?",
+      "options_ru": [
+        "Tuzilma",
+        "Turli tipli ma'lumotlarni guruhlash uchun foydalanuvchi ta'riflagan tip",
+        "Class turi",
+        "Object"
+      ],
+      "options_en": [
+        "Tuzilma",
+        "Turli tipli ma'lumotlarni guruhlash uchun foydalanuvchi ta'riflagan tip",
+        "Class turi",
+        "Object"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "C da #define nima uchun?",
+      "options": [
+        "Funksiya ta'riflash",
+        "Preprocessor makro — konstant yoki makro funksiya ta'riflash",
+        "Variable define",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "C da #define nima uchun?",
+      "question_en": "C da #define nima uchun?",
+      "options_ru": [
+        "Funksiya ta'riflash",
+        "Preprocessor makro — konstant yoki makro funksiya ta'riflash",
+        "Variable define",
+        "Constant"
+      ],
+      "options_en": [
+        "Funksiya ta'riflash",
+        "Preprocessor makro — konstant yoki makro funksiya ta'riflash",
+        "Variable define",
+        "Constant"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "C da array qanday e'lon qilinadi?",
+      "options": [
+        "array[5] int;",
+        "int array[5];",
+        "int[] array = 5;",
+        "array = new int[5];"
+      ],
+      "answer": 1,
+      "question_ru": "C da array qanday e'lon qilinadi?",
+      "question_en": "C da array qanday e'lon qilinadi?",
+      "options_ru": [
+        "array[5] int;",
+        "int array[5];",
+        "int[] array = 5;",
+        "array = new int[5];"
+      ],
+      "options_en": [
+        "array[5] int;",
+        "int array[5];",
+        "int[] array = 5;",
+        "array = new int[5];"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "C da char nima?",
+      "options": [
+        "Belgi tipi — bitta belgi saqlaydi",
+        "String tipi",
+        "Raqam tipi",
+        "Pointer tipi"
+      ],
+      "answer": 0,
+      "question_ru": "C da char nima?",
+      "question_en": "C da char nima?",
+      "options_ru": [
+        "Belgi tipi — bitta belgi saqlaydi",
+        "String tipi",
+        "Raqam tipi",
+        "Pointer tipi"
+      ],
+      "options_en": [
+        "Belgi tipi — bitta belgi saqlaydi",
+        "String tipi",
+        "Raqam tipi",
+        "Pointer tipi"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "C da sizeof() nima qaytaradi?",
+      "options": [
+        "Array o'lchami",
+        "Tip yoki o'zgaruvchining baytdagi hajmi",
+        "Pointer o'lchami",
+        "Null"
+      ],
+      "answer": 1,
+      "question_ru": "C da sizeof() nima qaytaradi?",
+      "question_en": "C da sizeof() nima qaytaradi?",
+      "options_ru": [
+        "Array o'lchami",
+        "Tip yoki o'zgaruvchining baytdagi hajmi",
+        "Pointer o'lchami",
+        "Null"
+      ],
+      "options_en": [
+        "Array o'lchami",
+        "Tip yoki o'zgaruvchining baytdagi hajmi",
+        "Pointer o'lchami",
+        "Null"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "C da stack va heap farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Stack — avtomatik, mahalliy o'zgaruvchilar; Heap — dinamik, malloc bilan, manual boshqarish",
+        "Heap avtomatik",
+        "Stack manual"
+      ],
+      "answer": 1,
+      "question_ru": "C da stack va heap farqi nima?",
+      "question_en": "C da stack va heap farqi nima?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Stack — avtomatik, mahalliy o'zgaruvchilar; Heap — dinamik, malloc bilan, manual boshqarish",
+        "Heap avtomatik",
+        "Stack manual"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Stack — avtomatik, mahalliy o'zgaruvchilar; Heap — dinamik, malloc bilan, manual boshqarish",
+        "Heap avtomatik",
+        "Stack manual"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "C da NULL pointer nima?",
+      "options": [
+        "0 manzil",
+        "Hech narsaga ko'rsatmaydigan pointer — (void*)0 yoki 0",
+        "Empty pointer",
+        "Invalid pointer"
+      ],
+      "answer": 1,
+      "question_ru": "C da NULL pointer nima?",
+      "question_en": "C da NULL pointer nima?",
+      "options_ru": [
+        "0 manzil",
+        "Hech narsaga ko'rsatmaydigan pointer — (void*)0 yoki 0",
+        "Empty pointer",
+        "Invalid pointer"
+      ],
+      "options_en": [
+        "0 manzil",
+        "Hech narsaga ko'rsatmaydigan pointer — (void*)0 yoki 0",
+        "Empty pointer",
+        "Invalid pointer"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "C da pointer arithmetic nima?",
+      "options": [
+        "Pointer matematik",
+        "Pointer ga int qo'shib tip o'lchamiga mos manzil oshirish — arr+1 keyingi element",
+        "Address math",
+        "Memory math"
+      ],
+      "answer": 1,
+      "question_ru": "C da pointer arithmetic nima?",
+      "question_en": "C da pointer arithmetic nima?",
+      "options_ru": [
+        "Pointer matematik",
+        "Pointer ga int qo'shib tip o'lchamiga mos manzil oshirish — arr+1 keyingi element",
+        "Address math",
+        "Memory math"
+      ],
+      "options_en": [
+        "Pointer matematik",
+        "Pointer ga int qo'shib tip o'lchamiga mos manzil oshirish — arr+1 keyingi element",
+        "Address math",
+        "Memory math"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "C da function pointer nima?",
+      "options": [
+        "Funksiya ko'rsatgichi",
+        "Funksiyaning manzilini saqlaydigan pointer — callback uchun",
+        "Method pointer",
+        "Lambda"
+      ],
+      "answer": 1,
+      "question_ru": "C da function pointer nima?",
+      "question_en": "C da function pointer nima?",
+      "options_ru": [
+        "Funksiya ko'rsatgichi",
+        "Funksiyaning manzilini saqlaydigan pointer — callback uchun",
+        "Method pointer",
+        "Lambda"
+      ],
+      "options_en": [
+        "Funksiya ko'rsatgichi",
+        "Funksiyaning manzilini saqlaydigan pointer — callback uchun",
+        "Method pointer",
+        "Lambda"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "C da typedef nima uchun?",
+      "options": [
+        "Tip ta'riflash",
+        "Mavjud tipga yangi nom berish — typedef unsigned int uint;",
+        "Type alias",
+        "New type"
+      ],
+      "answer": 1,
+      "question_ru": "C da typedef nima uchun?",
+      "question_en": "C da typedef nima uchun?",
+      "options_ru": [
+        "Tip ta'riflash",
+        "Mavjud tipga yangi nom berish — typedef unsigned int uint;",
+        "Type alias",
+        "New type"
+      ],
+      "options_en": [
+        "Tip ta'riflash",
+        "Mavjud tipga yangi nom berish — typedef unsigned int uint;",
+        "Type alias",
+        "New type"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "C da enum nima?",
+      "options": [
+        "Raqamlar to'plami",
+        "Nomlangan tamsayı konstantalar to'plami",
+        "Type group",
+        "Constant array"
+      ],
+      "answer": 1,
+      "question_ru": "C da enum nima?",
+      "question_en": "C da enum nima?",
+      "options_ru": [
+        "Raqamlar to'plami",
+        "Nomlangan tamsayı konstantalar to'plami",
+        "Type group",
+        "Constant array"
+      ],
+      "options_en": [
+        "Raqamlar to'plami",
+        "Nomlangan tamsayı konstantalar to'plami",
+        "Type group",
+        "Constant array"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "C da union nima?",
+      "options": [
+        "Birlashtirish",
+        "Bir xil xotirada turli tiplarni saqlash — bir vaqtda faqat bittasi faol",
+        "Struct turi",
+        "Memory share"
+      ],
+      "answer": 1,
+      "question_ru": "C da union nima?",
+      "question_en": "C da union nima?",
+      "options_ru": [
+        "Birlashtirish",
+        "Bir xil xotirada turli tiplarni saqlash — bir vaqtda faqat bittasi faol",
+        "Struct turi",
+        "Memory share"
+      ],
+      "options_en": [
+        "Birlashtirish",
+        "Bir xil xotirada turli tiplarni saqlash — bir vaqtda faqat bittasi faol",
+        "Struct turi",
+        "Memory share"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "C da calloc() va malloc() farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "calloc — son va o'lchamni oladi, nolga initsializatsiya; malloc — faqat o'lcham, initializatsiya yo'q",
+        "malloc nullga init",
+        "calloc tezroq"
+      ],
+      "answer": 1,
+      "question_ru": "C da calloc() va malloc() farqi nima?",
+      "question_en": "C da calloc() va malloc() farqi nima?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "calloc — son va o'lchamni oladi, nolga initsializatsiya; malloc — faqat o'lcham, initializatsiya yo'q",
+        "malloc nullga init",
+        "calloc tezroq"
+      ],
+      "options_en": [
+        "There is no difference",
+        "calloc — son va o'lchamni oladi, nolga initsializatsiya; malloc — faqat o'lcham, initializatsiya yo'q",
+        "malloc nullga init",
+        "calloc tezroq"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "C da realloc() nima qiladi?",
+      "options": [
+        "Qayta allokatsiya",
+        "Mavjud xotira blokini kengaytiradi/qisqartiradi — yangi o'lcham bilan",
+        "Memory resize",
+        "Pointer resize"
+      ],
+      "answer": 1,
+      "question_ru": "C da realloc() nima qiladi?",
+      "question_en": "C da realloc() nima qiladi?",
+      "options_ru": [
+        "Qayta allokatsiya",
+        "Mavjud xotira blokini kengaytiradi/qisqartiradi — yangi o'lcham bilan",
+        "Memory resize",
+        "Pointer resize"
+      ],
+      "options_en": [
+        "Qayta allokatsiya",
+        "Mavjud xotira blokini kengaytiradi/qisqartiradi — yangi o'lcham bilan",
+        "Memory resize",
+        "Pointer resize"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "C da segmentation fault nima?",
+      "options": [
+        "Segment xatosi",
+        "Dasturga tegishli bo'lmagan xotiraga murojaat — NULL dereference, out-of-bounds",
+        "Memory leak",
+        "Stack overflow"
+      ],
+      "answer": 1,
+      "question_ru": "C da segmentation fault nima?",
+      "question_en": "C da segmentation fault nima?",
+      "options_ru": [
+        "Segment xatosi",
+        "Dasturga tegishli bo'lmagan xotiraga murojaat — NULL dereference, out-of-bounds",
+        "Memory leak",
+        "Stack overflow"
+      ],
+      "options_en": [
+        "Segment xatosi",
+        "Dasturga tegishli bo'lmagan xotiraga murojaat — NULL dereference, out-of-bounds",
+        "Memory leak",
+        "Stack overflow"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "C da string nima?",
+      "options": [
+        "String tipi",
+        "null-terminated char array — 'Hello' = {'H','e','l','l','o','\\0'}",
+        "char tipi",
+        "Char pointer"
+      ],
+      "answer": 1,
+      "question_ru": "C da string nima?",
+      "question_en": "C da string nima?",
+      "options_ru": [
+        "String tipi",
+        "null-terminated char array — 'Hello' = {'H','e','l','l','o','\\0'}",
+        "char tipi",
+        "Char pointer"
+      ],
+      "options_en": [
+        "String tipi",
+        "null-terminated char array — 'Hello' = {'H','e','l','l','o','\\0'}",
+        "char tipi",
+        "Char pointer"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "C da strcpy() va strncpy() farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "strcpy — to'liq nusxa (overflow xavfi); strncpy — N bayt nusxa (xavfsizroq)",
+        "strncpy tezroq",
+        "strcpy xavfsizroq"
+      ],
+      "answer": 1,
+      "question_ru": "C da strcpy() va strncpy() farqi?",
+      "question_en": "C da strcpy() va strncpy() farqi?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "strcpy — to'liq nusxa (overflow xavfi); strncpy — N bayt nusxa (xavfsizroq)",
+        "strncpy tezroq",
+        "strcpy xavfsizroq"
+      ],
+      "options_en": [
+        "There is no difference",
+        "strcpy — to'liq nusxa (overflow xavfi); strncpy — N bayt nusxa (xavfsizroq)",
+        "strncpy tezroq",
+        "strcpy xavfsizroq"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "C da volatile kalit so'zi nima uchun?",
+      "options": [
+        "Sekin o'zgaruvchi",
+        "O'zgaruvchi kompillyator bilmagan tashqi ta'sir bilan o'zgarishi mumkin — hardware register",
+        "Constant volatile",
+        "Sync variable"
+      ],
+      "answer": 1,
+      "question_ru": "C da volatile kalit so'zi nima uchun?",
+      "question_en": "C da volatile kalit so'zi nima uchun?",
+      "options_ru": [
+        "Sekin o'zgaruvchi",
+        "O'zgaruvchi kompillyator bilmagan tashqi ta'sir bilan o'zgarishi mumkin — hardware register",
+        "Constant volatile",
+        "Sync variable"
+      ],
+      "options_en": [
+        "Sekin o'zgaruvchi",
+        "O'zgaruvchi kompillyator bilmagan tashqi ta'sir bilan o'zgarishi mumkin — hardware register",
+        "Constant volatile",
+        "Sync variable"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "C da bitwise operatorlar qaysilar?",
+      "options": [
+        "+ - * /",
+        "& | ^ ~ << >>",
+        "&& || ! ==",
+        "+ - << >>"
+      ],
+      "answer": 1,
+      "question_ru": "C da bitwise operatorlar qaysilar?",
+      "question_en": "C da bitwise operatorlar qaysilar?",
+      "options_ru": [
+        "+ - * /",
+        "& | ^ ~ << >>",
+        "&& || ! ==",
+        "+ - << >>"
+      ],
+      "options_en": [
+        "+ - * /",
+        "& | ^ ~ << >>",
+        "&& || ! ==",
+        "+ - << >>"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "C da recursive funksiya stack overflow qachon beradi?",
+      "options": [
+        "Har doim",
+        "Bazis holat yo'q yoki juda chuqur rekursiya — stack to'lganda",
+        "Ko'p parametr",
+        "Katta xotira"
+      ],
+      "answer": 1,
+      "question_ru": "C da recursive funksiya stack overflow qachon beradi?",
+      "question_en": "C da recursive funksiya stack overflow qachon beradi?",
+      "options_ru": [
+        "Har doim",
+        "Bazis holat yo'q yoki juda chuqur rekursiya — stack to'lganda",
+        "Ko'p parametr",
+        "Katta xotira"
+      ],
+      "options_en": [
+        "Har doim",
+        "Bazis holat yo'q yoki juda chuqur rekursiya — stack to'lganda",
+        "Ko'p parametr",
+        "Katta xotira"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "C da extern kalit so'zi nima uchun?",
+      "options": [
+        "External lib",
+        "Boshqa kompilatsiya birligida e'lon qilingan global o'zgaruvchi yoki funksiyaga murojaat",
+        "Export",
+        "Import"
+      ],
+      "answer": 1,
+      "question_ru": "C da extern kalit so'zi nima uchun?",
+      "question_en": "C da extern kalit so'zi nima uchun?",
+      "options_ru": [
+        "External lib",
+        "Boshqa kompilatsiya birligida e'lon qilingan global o'zgaruvchi yoki funksiyaga murojaat",
+        "Export",
+        "Import"
+      ],
+      "options_en": [
+        "External lib",
+        "Boshqa kompilatsiya birligida e'lon qilingan global o'zgaruvchi yoki funksiyaga murojaat",
+        "Export",
+        "Import"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "C da static kalit so'zi funksiya ichida nima qiladi?",
+      "options": [
+        "Tezlashtiradi",
+        "O'zgaruvchi faqat bir marta yaratiladi — funksiya qayta chaqirilsa qiymati saqlanadi",
+        "Private o'zgaruvchi",
+        "Const o'zgaruvchi"
+      ],
+      "answer": 1,
+      "question_ru": "C da static kalit so'zi funksiya ichida nima qiladi?",
+      "question_en": "C da static kalit so'zi funksiya ichida nima qiladi?",
+      "options_ru": [
+        "Tezlashtiradi",
+        "O'zgaruvchi faqat bir marta yaratiladi — funksiya qayta chaqirilsa qiymati saqlanadi",
+        "Private o'zgaruvchi",
+        "Const o'zgaruvchi"
+      ],
+      "options_en": [
+        "Tezlashtiradi",
+        "O'zgaruvchi faqat bir marta yaratiladi — funksiya qayta chaqirilsa qiymati saqlanadi",
+        "Private o'zgaruvchi",
+        "Const o'zgaruvchi"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "C da assert() nima uchun?",
+      "options": [
+        "Test assert",
+        "Shart yolg'on bo'lsa dasturni to'xtatuvchi debug vositasi",
+        "Error check",
+        "Runtime check"
+      ],
+      "answer": 1,
+      "question_ru": "C da assert() nima uchun?",
+      "question_en": "C da assert() nima uchun?",
+      "options_ru": [
+        "Test assert",
+        "Shart yolg'on bo'lsa dasturni to'xtatuvchi debug vositasi",
+        "Error check",
+        "Runtime check"
+      ],
+      "options_en": [
+        "Test assert",
+        "Shart yolg'on bo'lsa dasturni to'xtatuvchi debug vositasi",
+        "Error check",
+        "Runtime check"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "C da header guard nima?",
+      "options": [
+        "Himoya fayl",
+        "#ifndef, #define, #endif — header faylni bir marta include qilishni ta'minlash",
+        "Include guard",
+        "Macro guard"
+      ],
+      "answer": 1,
+      "question_ru": "C da header guard nima?",
+      "question_en": "C da header guard nima?",
+      "options_ru": [
+        "Himoya fayl",
+        "#ifndef, #define, #endif — header faylni bir marta include qilishni ta'minlash",
+        "Include guard",
+        "Macro guard"
+      ],
+      "options_en": [
+        "Himoya fayl",
+        "#ifndef, #define, #endif — header faylni bir marta include qilishni ta'minlash",
+        "Include guard",
+        "Macro guard"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "C da FILE* va fopen() nima uchun?",
+      "options": [
+        "Fayl stream",
+        "Fayl bilan ishlash — fopen orqali ochish, fclose bilan yopish",
+        "Fayl pointer",
+        "IO stream"
+      ],
+      "answer": 1,
+      "question_ru": "C da FILE* va fopen() nima uchun?",
+      "question_en": "C da FILE* va fopen() nima uchun?",
+      "options_ru": [
+        "Fayl stream",
+        "Fayl bilan ishlash — fopen orqali ochish, fclose bilan yopish",
+        "Fayl pointer",
+        "IO stream"
+      ],
+      "options_en": [
+        "Fayl stream",
+        "Fayl bilan ishlash — fopen orqali ochish, fclose bilan yopish",
+        "Fayl pointer",
+        "IO stream"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "C da undefined behavior nima?",
+      "options": [
+        "Noaniq natija",
+        "Standart tomonidan ta'riflanmagan xatti-harakat — NULL dereference, integer overflow",
+        "Runtime error",
+        "Compile error"
+      ],
+      "answer": 1,
+      "question_ru": "C da undefined behavior nima?",
+      "question_en": "C da undefined behavior nima?",
+      "options_ru": [
+        "Noaniq natija",
+        "Standart tomonidan ta'riflanmagan xatti-harakat — NULL dereference, integer overflow",
+        "Runtime error",
+        "Compile error"
+      ],
+      "options_en": [
+        "Noaniq natija",
+        "Standart tomonidan ta'riflanmagan xatti-harakat — NULL dereference, integer overflow",
+        "Runtime error",
+        "Compile error"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "C da memory alignment nima?",
+      "options": [
+        "Xotira tartibi",
+        "Tip o'zining o'lchamiga mos manzilda bo'lishi — sizeof va offsetof bilan tekshirish",
+        "Address alignment",
+        "Cache alignment"
+      ],
+      "answer": 1,
+      "question_ru": "C da memory alignment nima?",
+      "question_en": "C da memory alignment nima?",
+      "options_ru": [
+        "Xotira tartibi",
+        "Tip o'zining o'lchamiga mos manzilda bo'lishi — sizeof va offsetof bilan tekshirish",
+        "Address alignment",
+        "Cache alignment"
+      ],
+      "options_en": [
+        "Xotira tartibi",
+        "Tip o'zining o'lchamiga mos manzilda bo'lishi — sizeof va offsetof bilan tekshirish",
+        "Address alignment",
+        "Cache alignment"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "C da longjmp va setjmp nima uchun?",
+      "options": [
+        "Jump instruction",
+        "Non-local goto — stack orqali sakrash, exception-like handling (xavfli)",
+        "Exception handling",
+        "Error jump"
+      ],
+      "answer": 1,
+      "question_ru": "C da longjmp va setjmp nima uchun?",
+      "question_en": "C da longjmp va setjmp nima uchun?",
+      "options_ru": [
+        "Jump instruction",
+        "Non-local goto — stack orqali sakrash, exception-like handling (xavfli)",
+        "Exception handling",
+        "Error jump"
+      ],
+      "options_en": [
+        "Jump instruction",
+        "Non-local goto — stack orqali sakrash, exception-like handling (xavfli)",
+        "Exception handling",
+        "Error jump"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "C da flexible array member nima?",
+      "options": [
+        "Moslashuvchan massiv",
+        "Struct oxiridagi belgilangan o'lchavsiz massiv — struct { int n; char data[]; }",
+        "Dynamic array",
+        "Variable array"
+      ],
+      "answer": 1,
+      "question_ru": "C da flexible array member nima?",
+      "question_en": "C da flexible array member nima?",
+      "options_ru": [
+        "Moslashuvchan massiv",
+        "Struct oxiridagi belgilangan o'lchavsiz massiv — struct { int n; char data[]; }",
+        "Dynamic array",
+        "Variable array"
+      ],
+      "options_en": [
+        "Moslashuvchan massiv",
+        "Struct oxiridagi belgilangan o'lchavsiz massiv — struct { int n; char data[]; }",
+        "Dynamic array",
+        "Variable array"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "C da restrict kalit so'zi nima?",
+      "options": [
+        "Cheklash",
+        "Pointer ning yagona kirish yo'li — kompilyator alias taxminini kamaytiradi, optimizatsiya",
+        "Unique pointer",
+        "Const pointer"
+      ],
+      "answer": 1,
+      "question_ru": "C da restrict kalit so'zi nima?",
+      "question_en": "C da restrict kalit so'zi nima?",
+      "options_ru": [
+        "Cheklash",
+        "Pointer ning yagona kirish yo'li — kompilyator alias taxminini kamaytiradi, optimizatsiya",
+        "Unique pointer",
+        "Const pointer"
+      ],
+      "options_en": [
+        "Cheklash",
+        "Pointer ning yagona kirish yo'li — kompilyator alias taxminini kamaytiradi, optimizatsiya",
+        "Unique pointer",
+        "Const pointer"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "C da _Atomic va <stdatomic.h> nima uchun?",
+      "options": [
+        "Atom operatsiya",
+        "Ko'p thread muhitida race condition holda atomik o'qish/yozish",
+        "Thread safety",
+        "Lock-free"
+      ],
+      "answer": 1,
+      "question_ru": "C da _Atomic va <stdatomic.h> nima uchun?",
+      "question_en": "C da _Atomic va <stdatomic.h> nima uchun?",
+      "options_ru": [
+        "Atom operatsiya",
+        "Ko'p thread muhitida race condition holda atomik o'qish/yozish",
+        "Thread safety",
+        "Lock-free"
+      ],
+      "options_en": [
+        "Atom operatsiya",
+        "Ko'p thread muhitida race condition holda atomik o'qish/yozish",
+        "Thread safety",
+        "Lock-free"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "C da designated initializer nima?",
+      "options": [
+        "Belgilangan init",
+        "struct yoki array ni {.field = value} ko'rinishda initsializatsiya — tartib muhim emas",
+        "Named init",
+        "Field init"
+      ],
+      "answer": 1,
+      "question_ru": "C da designated initializer nima?",
+      "question_en": "C da designated initializer nima?",
+      "options_ru": [
+        "Belgilangan init",
+        "struct yoki array ni {.field = value} ko'rinishda initsializatsiya — tartib muhim emas",
+        "Named init",
+        "Field init"
+      ],
+      "options_en": [
+        "Belgilangan init",
+        "struct yoki array ni {.field = value} ko'rinishda initsializatsiya — tartib muhim emas",
+        "Named init",
+        "Field init"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "C da compound literal nima?",
+      "options": [
+        "Murakkab literal",
+        "(Type){value} — anonim ob'ekt yaratish, funksiya argumenti sifatida",
+        "Temp object",
+        "Inline struct"
+      ],
+      "answer": 1,
+      "question_ru": "C da compound literal nima?",
+      "question_en": "C da compound literal nima?",
+      "options_ru": [
+        "Murakkab literal",
+        "(Type){value} — anonim ob'ekt yaratish, funksiya argumenti sifatida",
+        "Temp object",
+        "Inline struct"
+      ],
+      "options_en": [
+        "Murakkab literal",
+        "(Type){value} — anonim ob'ekt yaratish, funksiya argumenti sifatida",
+        "Temp object",
+        "Inline struct"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "C da VLA (Variable Length Array) nima?",
+      "options": [
+        "Variable length",
+        "Stack da runtime o'lchamli massiv — C99, C11 da optional",
+        "Dynamic array",
+        "Heap array"
+      ],
+      "answer": 1,
+      "question_ru": "C da VLA (Variable Length Array) nima?",
+      "question_en": "C da VLA (Variable Length Array) nima?",
+      "options_ru": [
+        "Variable length",
+        "Stack da runtime o'lchamli massiv — C99, C11 da optional",
+        "Dynamic array",
+        "Heap array"
+      ],
+      "options_en": [
+        "Variable length",
+        "Stack da runtime o'lchamli massiv — C99, C11 da optional",
+        "Dynamic array",
+        "Heap array"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "C da void* pointer nima uchun?",
+      "options": [
+        "Bo'sh pointer",
+        "Ixtiyoriy tipga ko'rsatuvchi — malloc qaytaradi, cast kerak",
+        "Generic pointer",
+        "Null pointer"
+      ],
+      "answer": 1,
+      "question_ru": "C da void* pointer nima uchun?",
+      "question_en": "C da void* pointer nima uchun?",
+      "options_ru": [
+        "Bo'sh pointer",
+        "Ixtiyoriy tipga ko'rsatuvchi — malloc qaytaradi, cast kerak",
+        "Generic pointer",
+        "Null pointer"
+      ],
+      "options_en": [
+        "Bo'sh pointer",
+        "Ixtiyoriy tipga ko'rsatuvchi — malloc qaytaradi, cast kerak",
+        "Generic pointer",
+        "Null pointer"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "C da double pointer nima uchun?",
+      "options": [
+        "Ikki pointer",
+        "Pointer ning pointeriga — 2D array, pointer ni funksiyada o'zgartirish",
+        "Array pointer",
+        "Ref ref"
+      ],
+      "answer": 1,
+      "question_ru": "C da double pointer nima uchun?",
+      "question_en": "C da double pointer nima uchun?",
+      "options_ru": [
+        "Ikki pointer",
+        "Pointer ning pointeriga — 2D array, pointer ni funksiyada o'zgartirish",
+        "Array pointer",
+        "Ref ref"
+      ],
+      "options_en": [
+        "Ikki pointer",
+        "Pointer ning pointeriga — 2D array, pointer ni funksiyada o'zgartirish",
+        "Array pointer",
+        "Ref ref"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "C da __attribute__((packed)) nima qiladi?",
+      "options": [
+        "Paketlash",
+        "Struct padding ni olib tashlash — xotira tejalinadi, lekin alignment yo'qoladi",
+        "Memory pack",
+        "Struct pack"
+      ],
+      "answer": 1,
+      "question_ru": "C da __attribute__((packed)) nima qiladi?",
+      "question_en": "C da __attribute__((packed)) nima qiladi?",
+      "options_ru": [
+        "Paketlash",
+        "Struct padding ni olib tashlash — xotira tejalinadi, lekin alignment yo'qoladi",
+        "Memory pack",
+        "Struct pack"
+      ],
+      "options_en": [
+        "Paketlash",
+        "Struct padding ni olib tashlash — xotira tejalinadi, lekin alignment yo'qoladi",
+        "Memory pack",
+        "Struct pack"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "C da endianness nima?",
+      "options": [
+        "Son tartibi",
+        "Ko'p baytli qiymatni xotirada saqlash tartibi — little-endian va big-endian",
+        "Byte order",
+        "Memory order"
+      ],
+      "answer": 1,
+      "question_ru": "C da endianness nima?",
+      "question_en": "C da endianness nima?",
+      "options_ru": [
+        "Son tartibi",
+        "Ko'p baytli qiymatni xotirada saqlash tartibi — little-endian va big-endian",
+        "Byte order",
+        "Memory order"
+      ],
+      "options_en": [
+        "Son tartibi",
+        "Ko'p baytli qiymatni xotirada saqlash tartibi — little-endian va big-endian",
+        "Byte order",
+        "Memory order"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "C da function inlining nima?",
+      "options": [
+        "Funksiya inline",
+        "Kompilyator funksiya chaqiruvini funksiya tanasi bilan almashtirish — call overhead yo'q",
+        "Inline function",
+        "Macro function"
+      ],
+      "answer": 1,
+      "question_ru": "C da function inlining nima?",
+      "question_en": "C da function inlining nima?",
+      "options_ru": [
+        "Funksiya inline",
+        "Kompilyator funksiya chaqiruvini funksiya tanasi bilan almashtirish — call overhead yo'q",
+        "Inline function",
+        "Macro function"
+      ],
+      "options_en": [
+        "Funksiya inline",
+        "Kompilyator funksiya chaqiruvini funksiya tanasi bilan almashtirish — call overhead yo'q",
+        "Inline function",
+        "Macro function"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "C da ABI (Application Binary Interface) nima?",
+      "options": [
+        "API turi",
+        "Ikkilik darajada: calling convention, struct layout, name mangling — kutubxona muvofiqligi",
+        "Binary interface",
+        "Linker interface"
+      ],
+      "answer": 1,
+      "question_ru": "C da ABI (Application Binary Interface) nima?",
+      "question_en": "C da ABI (Application Binary Interface) nima?",
+      "options_ru": [
+        "API turi",
+        "Ikkilik darajada: calling convention, struct layout, name mangling — kutubxona muvofiqligi",
+        "Binary interface",
+        "Linker interface"
+      ],
+      "options_en": [
+        "API turi",
+        "Ikkilik darajada: calling convention, struct layout, name mangling — kutubxona muvofiqligi",
+        "Binary interface",
+        "Linker interface"
+      ]
+    }
   ]
 }

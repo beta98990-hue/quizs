@@ -2,55 +2,1305 @@
   "technology": "Swift",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Swift nima uchun yaratilgan?","options":["Web dasturlash","Apple platformalari — iOS, macOS, watchOS, tvOS uchun","Android ilovalar","Server only"],"answer":1},
-    {"id":2,"level":"easy","question":"Swift da o'zgaruvchi qanday e'lon qilinadi?","options":["int x = 5","let x = 5 yoki var x = 5","val x = 5","x := 5"],"answer":1},
-    {"id":3,"level":"easy","question":"Swift da let va var farqi nima?","options":["Hech qanday farq yo'q","let — immutable (o'zgarmas), var — mutable (o'zgaruvchan)","var immutable","let mutable"],"answer":1},
-    {"id":4,"level":"easy","question":"Swift da Optional nima?","options":["Ixtiyoriy parametr","Qiymat bo'lishi (?T) yoki yo'q bo'lishi (nil) mumkin — null safety","Nullable type","Maybe type"],"answer":1},
-    {"id":5,"level":"easy","question":"Swift da optional unwrapping qanday amalga oshiriladi?","options":["! bilan faqat","if let, guard let, ??, ! forced unwrap — bir nechta usul","Faqat ?? bilan","Optional.get()"],"answer":1},
-    {"id":6,"level":"easy","question":"Swift da print() nima qiladi?","options":["Printer","Konsolga matn chiqaradi","Fayl yozadi","Debug log"],"answer":1},
-    {"id":7,"level":"easy","question":"Swift da struct va class farqi?","options":["Hech qanday farq yo'q","struct — value type (copy), class — reference type; struct meros olmaydi","struct reference type","class value type"],"answer":1},
-    {"id":8,"level":"easy","question":"Swift da func qanday yoziladi?","options":["function greet() {}","fun greet() {}","def greet():","func greet() -> Void {}"],"answer":3},
-    {"id":9,"level":"easy","question":"Swift da guard let nima uchun?","options":["Himoya","Early exit — shart bajarilmasa scope dan chiqish, ko'p nesting dan qochish","Optional check","Error handling"],"answer":1},
-    {"id":10,"level":"easy","question":"Swift da enum nima?","options":["Raqamlar to'plami","Ko'p xususiyatli variantlar tipi — associated values, raw values","Constant group","Type group"],"answer":1},
-    {"id":11,"level":"easy","question":"Swift da protocol nima?","options":["Network protocol","Metodlar, xususiyatlar ro'yxatini belgilovchi interfeys","Interface","Abstract class"],"answer":1},
-    {"id":12,"level":"easy","question":"Swift da closure nima?","options":["Funksiya bloki","Muhit o'zgaruvchilarini yutadigan anonim funksiya bloki — { params in body }","Lambda","Block"],"answer":1},
-    {"id":13,"level":"easy","question":"Swift da Array da append() nima qiladi?","options":["Massiv element olib tashlaydi","Massiv oxiriga element qo'shadi","Massiv boshiga qo'shadi","Massiv saralaydi"],"answer":1},
-    {"id":14,"level":"easy","question":"Swift da Dictionary nima?","options":["Lug'at","Kalit-qiymat juftliklari uchun ma'lumotlar tuzilmasi","Map","Hash"],"answer":1},
-    {"id":15,"level":"easy","question":"Swift da string interpolation qanday?","options":["\"Hello \" + name","\"Hello \\(name)!\"","f\"Hello {name}\"","\"Hello #{name}\""],"answer":1},
-    {"id":16,"level":"medium","question":"Swift da Codable nima?","options":["Kod qilish","Encodable va Decodable — JSON bilan encode/decode avtomatik","JSON protocol","Serialization"],"answer":1},
-    {"id":17,"level":"medium","question":"Swift da generics nima?","options":["Umumiy funksiya","Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — func swap<T>(_ a: inout T, _ b: inout T)","Template","Abstract type"],"answer":1},
-    {"id":18,"level":"medium","question":"Swift da extension nima?","options":["Fayl kengaytmasi","Mavjud tipga yangi funksionallik qo'shish — retroactive modeling","Mixin","Trait"],"answer":1},
-    {"id":19,"level":"medium","question":"Swift da ARC (Automatic Reference Counting) nima?","options":["Architecture","Xotira boshqarish — reference soni 0 ga tushganda ob'ekt o'chiriladi","Garbage collection","Manual memory"],"answer":1},
-    {"id":20,"level":"medium","question":"Swift da weak va unowned reference farqi?","options":["Hech qanday farq yo'q","weak — optional, nil bo'lishi mumkin; unowned — non-optional, ob'ekt mavjud deb taxmin","weak unowned emas","unowned optional"],"answer":1},
-    {"id":21,"level":"medium","question":"Swift da computed property nima?","options":["Hisoblangan xususiyat","Saqlanmagan, har kirishda hisoblanadigan xususiyat — get va set bloki bilan","Lazy property","Stored property"],"answer":1},
-    {"id":22,"level":"medium","question":"Swift da didSet va willSet nima uchun?","options":["Set qilish","Property o'zgarishidan oldin/keyin chaqiriladigan observer — side effect uchun","Setter method","Property watch"],"answer":1},
-    {"id":23,"level":"medium","question":"Swift da associated types nima?","options":["Bog'liq tiplar","Protocol da placeholder tip — conform qiluvchi tip konkret tipni belgilaydi","Generic protocol","Type alias"],"answer":1},
-    {"id":24,"level":"medium","question":"Swift da @discardableResult nima uchun?","options":["Natija o'chirish","Funksiya qaytarish qiymati ishlatilmasa ham warning bermasligi uchun","Return ignore","Void annotation"],"answer":1},
-    {"id":25,"level":"medium","question":"Swift da mutating nima uchun?","options":["O'zgartirish","struct/enum metodida self ni o'zgartirish — mutating func","Mutable method","Self modify"],"answer":1},
-    {"id":26,"level":"medium","question":"Swift da defer nima uchun?","options":["Kechiktirish","Scope tugashida bajarilishi kerak bo'lgan kod — cleanup uchun","Finally block","Cleanup code"],"answer":1},
-    {"id":27,"level":"medium","question":"Swift da Result<Success, Failure> nima?","options":["Natija tipi","success(T) yoki failure(Error) — xato boshqarish uchun","Either type","Optional error"],"answer":1},
-    {"id":28,"level":"medium","question":"Swift da @escaping closure nima?","options":["Qochish closure","Funksiya qaytgandan keyin ham ishlatilishi mumkin bo'lgan closure — async uchun","Captured closure","Long closure"],"answer":1},
-    {"id":29,"level":"medium","question":"Swift da any va some farqi (Swift 5.7)?","options":["Hech qanday farq yo'q","any — existential (runtime dispatch); some — opaque type (compile-time konkret tip)","some runtime","any compile-time"],"answer":1},
-    {"id":30,"level":"medium","question":"Swift da lazy var nima uchun?","options":["Sekin o'zgaruvchi","Birinchi kirishda initsializatsiya — dastlabki yuklanishni kamaytiradi","Deferred init","Optional init"],"answer":1},
-    {"id":31,"level":"medium","question":"Swift da map, filter, reduce nima?","options":["Funksional metodlar","Kolleksiyalar uchun funksional transformatsiya metodlari","Loop alternativi","Array funksiyalar"],"answer":1},
-    {"id":32,"level":"medium","question":"Swift da switch da pattern matching nima?","options":["Switch case","Qiymat, range, tuple, enum associated value tekshirish — kuchli switch","Match expression","Case matching"],"answer":1},
-    {"id":33,"level":"medium","question":"Swift da inout parametr nima?","options":["Kirish parametri","Funksiyada parametrni pass-by-reference — funksiya tashqarisiga ta'sir qiladi","Ref parametr","Mutable param"],"answer":1},
-    {"id":34,"level":"medium","question":"Swift da @propertyWrapper nima?","options":["Property wrapper","Custom property semantik — @State, @Binding, @Published kabi SwiftUI da ishlatiladi","Annotation","Decorator"],"answer":1},
-    {"id":35,"level":"medium","question":"Swift da async/await nima (Swift 5.5)?","options":["Asinxron kod","Structured concurrency — asinxron kodni sinxron ko'rinishda yozish","Thread async","Callback async"],"answer":1},
-    {"id":36,"level":"hard","question":"Swift da actor nima?","options":["Aktyor","Thread-safe reference type — bir vaqtda faqat bitta task kirishi mumkin","Class turi","Concurrent struct"],"answer":1},
-    {"id":37,"level":"hard","question":"Swift da @MainActor nima?","options":["Asosiy aktyor","Main thread da ishlashni kafolatlash — UI kodi uchun","Main thread","UI actor"],"answer":1},
-    {"id":38,"level":"hard","question":"Swift da Sendable protocol nima uchun?","options":["Yuborish protokoli","Concurrency da xavfsiz uzatiladigan tip — data race oldini olish","Thread safe","Concurrent type"],"answer":1},
-    {"id":39,"level":"hard","question":"Swift da existential container nima?","options":["Konteyner mavjudligi","any Type ishlatilganda runtime da tip va qiymat metama'lumot bilan saqlanishi","Protocol witness","Type erasure"],"answer":1},
-    {"id":40,"level":"hard","question":"Swift da primary associated types (Swift 5.7) nima?","options":["Asosiy bog'liq tip","some Collection<Int> kabi existential da associated type belgilash","Generic protocol","Type constraint"],"answer":1},
-    {"id":41,"level":"hard","question":"Swift da @resultBuilder nima?","options":["Natija builder","DSL yaratish uchun — SwiftUI ViewBuilder, funksional sintaksis konstruksiya","Builder pattern","DSL builder"],"answer":1},
-    {"id":42,"level":"hard","question":"Swift da opaque return type (some Protocol) nima?","options":["Noaniq tip","Funksiya qaytarish tipi konkret lekin tashqariga yashirilgan — protocol tip sifatida","Return type","Hidden type"],"answer":1},
-    {"id":43,"level":"hard","question":"Swift da @_specialize nima?","options":["Maxsuslashtirish","Generic funksiyaning ma'lum tip uchun ixtisoslashtirilgan versiyasini yaratish — performance","Specialization","Generic optimize"],"answer":1},
-    {"id":44,"level":"hard","question":"Swift da COW (Copy-on-Write) nima?","options":["Sigir nusxa","Value type lar ko'p egalik bo'lsa xotira ulashadi, o'zgarishda nusxa yaratadi — Array, String","Lazy copy","Smart copy"],"answer":1},
-    {"id":45,"level":"hard","question":"Swift da Witness table nima?","options":["Guvoh jadvali","Protocol conformance uchun dispatch jadvali — existential dispatch","VTable","Protocol table"],"answer":1},
-    {"id":46,"level":"hard","question":"Swift da whole module optimization nima?","options":["Modul optimallashtirish","Butun modul kodi birgalikda kompilyatsiya qilinadi — cross-function inline, better optimize","Build optimize","LTO"],"answer":1},
-    {"id":47,"level":"hard","question":"Swift da Task nima?","options":["Vazifa","Structured concurrency birlik — async kontekstda parallel ish bajarish","Async unit","Job"],"answer":1},
-    {"id":48,"level":"hard","question":"Swift da continuations nima?","options":["Davom ettirish","Callback asosidagi kodni async/await ga moslashtirish — withCheckedContinuation","Bridge async","Callback wrap"],"answer":1},
-    {"id":49,"level":"hard","question":"Swift da memory layout nima?","options":["Xotira joylashuvi","Tip bayt o'lchami, hizalanishi, stride — MemoryLayout<T>.size/alignment/stride","Struct layout","Type size"],"answer":1},
-    {"id":50,"level":"hard","question":"Swift da Observation framework (Swift 5.9) nima?","options":["Kuzatish","@Observable macro — KVO alternativa, minimal, Swift native reaktivlik","Property observe","State observe"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Swift nima uchun yaratilgan?",
+      "options": [
+        "Web dasturlash",
+        "Apple platformalari — iOS, macOS, watchOS, tvOS uchun",
+        "Android ilovalar",
+        "Server only"
+      ],
+      "answer": 1,
+      "question_ru": "Почему был создан Swift?",
+      "question_en": "Why was Swift created?",
+      "options_ru": [
+        "Веб-программирование",
+        "Для платформ Apple — iOS, macOS, watchOS, tvOS",
+        "Android-приложения",
+        "Только сервер"
+      ],
+      "options_en": [
+        "Web programming",
+        "For Apple platforms — iOS, macOS, watchOS, tvOS",
+        "Android applications",
+        "Server only"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Swift da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "int x = 5",
+        "let x = 5 yoki var x = 5",
+        "val x = 5",
+        "x := 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в Swift?",
+      "question_en": "How to declare a variable in Swift?",
+      "options_ru": [
+        "интервал х = 5",
+        "пусть x = 5 или var x = 5",
+        "вал х = 5",
+        "х := 5"
+      ],
+      "options_en": [
+        "int x = 5",
+        "let x = 5 or var x = 5",
+        "shaft x = 5",
+        "x := 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Swift da let va var farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "let — immutable (o'zgarmas), var — mutable (o'zgaruvchan)",
+        "var immutable",
+        "let mutable"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между let и var в Swift?",
+      "question_en": "What is the difference between let and var in Swift?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "let — неизменяемый, var — изменяемый",
+        "var неизменяема",
+        "пусть изменчивый"
+      ],
+      "options_en": [
+        "There is no difference",
+        "let — immutable (o'zgarmas), var — mutable (o'zgaruvchan)",
+        "var is immutable",
+        "let mutable"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Swift da Optional nima?",
+      "options": [
+        "Ixtiyoriy parametr",
+        "Qiymat bo'lishi (?T) yoki yo'q bo'lishi (nil) mumkin — null safety",
+        "Nullable type",
+        "Maybe type"
+      ],
+      "answer": 1,
+      "question_ru": "Что является необязательным в Swift?",
+      "question_en": "What is Optional in Swift?",
+      "options_ru": [
+        "Необязательный параметр",
+        "Значение может быть (?T) или нет (ноль) — нулевая безопасность.",
+        "Обнуляемый тип",
+        "Может быть, введите"
+      ],
+      "options_en": [
+        "Optional parameter",
+        "Qiymat bo'lishi (?T) yoki yo'q bo'lishi (nil) mumkin — null safety",
+        "Nullable type",
+        "Maybe type"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Swift da optional unwrapping qanday amalga oshiriladi?",
+      "options": [
+        "! bilan faqat",
+        "if let, guard let, ??, ! forced unwrap — bir nechta usul",
+        "Faqat ?? bilan",
+        "Optional.get()"
+      ],
+      "answer": 1,
+      "question_ru": "Как сделать необязательную развертку в Swift?",
+      "question_en": "How to do optional unwrapping in Swift?",
+      "options_ru": [
+        "! только с",
+        "если пусть, охрана пусть, ??, ! принудительное развертывание — несколько методов",
+        "Только?? с",
+        "необязательный.get()"
+      ],
+      "options_en": [
+        "! with only",
+        "if let, guard let, ??, ! forced unwrap — multiple methods",
+        "Only ?? with",
+        "optional.get()"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Swift da print() nima qiladi?",
+      "options": [
+        "Printer",
+        "Konsolga matn chiqaradi",
+        "Fayl yozadi",
+        "Debug log"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает print() в Swift?",
+      "question_en": "What does print() do in Swift?",
+      "options_ru": [
+        "Принтер",
+        "Выводит текст на консоль",
+        "Записывает файл",
+        "Журнал отладки"
+      ],
+      "options_en": [
+        "Printer",
+        "Outputs text to the console",
+        "Writes a file",
+        "Debug log"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Swift da struct va class farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "struct — value type (copy), class — reference type; struct meros olmaydi",
+        "struct reference type",
+        "class value type"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между структурой и классом в Swift?",
+      "question_en": "Difference between struct and class in Swift?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "struct — тип значения (копия), class — ссылочный тип; структура не наследует",
+        "ссылочный тип структуры",
+        "тип значения класса"
+      ],
+      "options_en": [
+        "There is no difference",
+        "struct — value type (copy), class — reference type; struct does not inherit",
+        "struct reference type",
+        "class value type"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Swift da func qanday yoziladi?",
+      "options": [
+        "function greet() {}",
+        "fun greet() {}",
+        "def greet():",
+        "func greet() -> Void {}"
+      ],
+      "answer": 3,
+      "question_ru": "Как написать func в Swift?",
+      "question_en": "How to write func in Swift?",
+      "options_ru": [
+        "функция приветствия() {}",
+        "веселое приветствие() {}",
+        "защита приветствия():",
+        "функция приветствия() -> void {}"
+      ],
+      "options_en": [
+        "function greet() {}",
+        "fun greet() {}",
+        "def greet():",
+        "func greet() -> void {}"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Swift da guard let nima uchun?",
+      "options": [
+        "Himoya",
+        "Early exit — shart bajarilmasa scope dan chiqish, ko'p nesting dan qochish",
+        "Optional check",
+        "Error handling"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем охранник впустил Свифта?",
+      "question_en": "Swift da guard let nima uchun?",
+      "options_ru": [
+        "Защита",
+        "Ранний выход — выход из области действия, если условие не выполнено, избегая множественной вложенности",
+        "Дополнительная проверка",
+        "Обработка ошибок"
+      ],
+      "options_en": [
+        "Protection",
+        "Early exit — leaving the scope if the condition is not met, avoiding multiple nesting",
+        "Optional check",
+        "Error handling"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Swift da enum nima?",
+      "options": [
+        "Raqamlar to'plami",
+        "Ko'p xususiyatli variantlar tipi — associated values, raw values",
+        "Constant group",
+        "Type group"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перечисление в Swift?",
+      "question_en": "What is an enum in Swift?",
+      "options_ru": [
+        "Набор цифр",
+        "Тип многохарактеристических параметров — связанные значения, необработанные значения.",
+        "Постоянная группа",
+        "Тип группы"
+      ],
+      "options_en": [
+        "A set of numbers",
+        "Type of multi-characteristic options — associated values, raw values",
+        "Constant group",
+        "Type group"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Swift da protocol nima?",
+      "options": [
+        "Network protocol",
+        "Metodlar, xususiyatlar ro'yxatini belgilovchi interfeys",
+        "Interface",
+        "Abstract class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое протокол в Swift?",
+      "question_en": "What is a protocol in Swift?",
+      "options_ru": [
+        "Сетевой протокол",
+        "Интерфейс, определяющий список методов, свойств",
+        "Интерфейс",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "Network protocol",
+        "An interface defining a list of methods, properties",
+        "Interface",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Swift da closure nima?",
+      "options": [
+        "Funksiya bloki",
+        "Muhit o'zgaruvchilarini yutadigan anonim funksiya bloki — { params in body }",
+        "Lambda",
+        "Block"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое замыкание в Swift?",
+      "question_en": "What is a closure in Swift?",
+      "options_ru": [
+        "Функциональный блок",
+        "Анонимный функциональный блок, который поглощает переменные среды — {параметры в теле}",
+        "Лямбда",
+        "Блокировать"
+      ],
+      "options_en": [
+        "Function block",
+        "An anonymous function block that swallows environment variables — { params in body }",
+        "Lambda",
+        "Block"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Swift da Array da append() nima qiladi?",
+      "options": [
+        "Massiv element olib tashlaydi",
+        "Massiv oxiriga element qo'shadi",
+        "Massiv boshiga qo'shadi",
+        "Massiv saralaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает add() с массивом в Swift?",
+      "question_en": "What does append() do on an Array in Swift?",
+      "options_ru": [
+        "Удаляет элемент массива",
+        "Добавляет элемент в конец массива",
+        "Добавляет в начало массива",
+        "Massiv saralaydi"
+      ],
+      "options_en": [
+        "Removes an array element",
+        "Adds an element to the end of an array",
+        "Adds to the beginning of the array",
+        "Sorts the array"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Swift da Dictionary nima?",
+      "options": [
+        "Lug'at",
+        "Kalit-qiymat juftliklari uchun ma'lumotlar tuzilmasi",
+        "Map",
+        "Hash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое словарь в Swift?",
+      "question_en": "What is a Dictionary in Swift?",
+      "options_ru": [
+        "Словарь",
+        "Структура данных для пар ключ-значение",
+        "Карта",
+        "Хэш"
+      ],
+      "options_en": [
+        "Dictionary",
+        "A data structure for key-value pairs",
+        "Map",
+        "Hash"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Swift da string interpolation qanday?",
+      "options": [
+        "\"Hello \" + name",
+        "\"Hello \\(name)!\"",
+        "f\"Hello {name}\"",
+        "\"Hello #{name}\""
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интерполяция строк в Swift?",
+      "question_en": "Swift da string interpolation qanday?",
+      "options_ru": [
+        "«Привет» + имя",
+        "«Здравствуйте \\(имя)!»",
+        "f\"Привет, {имя}\"",
+        "«Привет, #{имя}»"
+      ],
+      "options_en": [
+        "\"Hello \" + name",
+        "\"Hello \\(name)!\"",
+        "f\"Hello {name}\"",
+        "\"Hello #{name}\""
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Swift da Codable nima?",
+      "options": [
+        "Kod qilish",
+        "Encodable va Decodable — JSON bilan encode/decode avtomatik",
+        "JSON protocol",
+        "Serialization"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое кодирование в Swift?",
+      "question_en": "What is Codable in Swift?",
+      "options_ru": [
+        "Кодировать",
+        "Кодируемый и декодируемый — автоматическое кодирование/декодирование с помощью JSON.",
+        "Протокол JSON",
+        "Сериализация"
+      ],
+      "options_en": [
+        "To code",
+        "Encodable and Decodable — Encode/decode with JSON automatically",
+        "JSON protocol",
+        "Serialization"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Swift da generics nima?",
+      "options": [
+        "Umumiy funksiya",
+        "Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — func swap<T>(_ a: inout T, _ b: inout T)",
+        "Template",
+        "Abstract type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое дженерики в Swift?",
+      "question_en": "What are generics in Swift?",
+      "options_ru": [
+        "Общая функция",
+        "Многоразовая функция/тип с параметрами типа — это func swap<T>(_ a: inout T, _ b: inout T)",
+        "Шаблон",
+        "Абстрактный тип"
+      ],
+      "options_en": [
+        "General function",
+        "A reusable function/type with type parameters is func swap<T>(_ a: inout T, _ b: inout T)",
+        "Template",
+        "Abstract type"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Swift da extension nima?",
+      "options": [
+        "Fayl kengaytmasi",
+        "Mavjud tipga yangi funksionallik qo'shish — retroactive modeling",
+        "Mixin",
+        "Trait"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое расширение в Swift?",
+      "question_en": "What is an extension in Swift?",
+      "options_ru": [
+        "Расширение файла",
+        "Добавление новой функциональности к существующему типу — ретроактивное моделирование.",
+        "Миксин",
+        "Черта"
+      ],
+      "options_en": [
+        "File extension",
+        "Adding new functionality to an existing type — retroactive modeling",
+        "Mixin",
+        "Trait"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Swift da ARC (Automatic Reference Counting) nima?",
+      "options": [
+        "Architecture",
+        "Xotira boshqarish — reference soni 0 ga tushganda ob'ekt o'chiriladi",
+        "Garbage collection",
+        "Manual memory"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ARC (автоматический подсчет ссылок) в Swift?",
+      "question_en": "What is ARC (Automatic Reference Counting) in Swift?",
+      "options_ru": [
+        "Архитектура",
+        "Управление памятью — объект удаляется, когда счетчик ссылок падает до 0.",
+        "Сбор мусора",
+        "Manual memory"
+      ],
+      "options_en": [
+        "Architecture",
+        "Xotira boshqarish — reference soni 0 ga tushganda ob'ekt o'chiriladi",
+        "Garbage collection",
+        "Manual memory"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Swift da weak va unowned reference farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "weak — optional, nil bo'lishi mumkin; unowned — non-optional, ob'ekt mavjud deb taxmin",
+        "weak unowned emas",
+        "unowned optional"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между слабой и бесхозной ссылкой в Swift?",
+      "question_en": "Swift da weak va unowned reference farqi?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "слабый — необязательно, может быть нулевым; unowned — необязательный, предполагает, что объект существует",
+        "не слабый",
+        "бесхозный опционально"
+      ],
+      "options_en": [
+        "There is no difference",
+        "weak — optional, can be nil; unowned — non-optional, assumes the object exists",
+        "weak unowned emas",
+        "unowned optional"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Swift da computed property nima?",
+      "options": [
+        "Hisoblangan xususiyat",
+        "Saqlanmagan, har kirishda hisoblanadigan xususiyat — get va set bloki bilan",
+        "Lazy property",
+        "Stored property"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое вычисляемое свойство в Swift?",
+      "question_en": "What is a computed property in Swift?",
+      "options_ru": [
+        "Расчетное свойство",
+        "Несохраняемое свойство, которое вычисляется при каждом доступе — с помощью блока get и set.",
+        "Ленивое свойство",
+        "Хранимое имущество"
+      ],
+      "options_en": [
+        "Calculated property",
+        "A non-preserved property that is computed on each access — with a get and set block",
+        "Lazy property",
+        "Stored property"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Swift da didSet va willSet nima uchun?",
+      "options": [
+        "Set qilish",
+        "Property o'zgarishidan oldin/keyin chaqiriladigan observer — side effect uchun",
+        "Setter method",
+        "Property watch"
+      ],
+      "answer": 1,
+      "question_ru": "Почему DidSet и WillSet в Swift?",
+      "question_en": "Why didSet and willSet in Swift?",
+      "options_ru": [
+        "Сделать набор",
+        "Наблюдатель будет вызываться до/после изменения свойства — для побочного эффекта",
+        "Метод установки",
+        "Наблюдение за недвижимостью"
+      ],
+      "options_en": [
+        "Make a set",
+        "Property o'zgarishidan oldin/keyin chaqiriladigan observer — side effect uchun",
+        "Setter method",
+        "Property watch"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Swift da associated types nima?",
+      "options": [
+        "Bog'liq tiplar",
+        "Protocol da placeholder tip — conform qiluvchi tip konkret tipni belgilaydi",
+        "Generic protocol",
+        "Type alias"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое связанные типы в Swift?",
+      "question_en": "Swift da associated types nima?",
+      "options_ru": [
+        "Зависимые типы",
+        "Тип заполнителя в протоколе определяет конкретный тип.",
+        "Общий протокол",
+        "Введите псевдоним"
+      ],
+      "options_en": [
+        "Bog'liq tiplar",
+        "A placeholder type in a protocol defines a concrete type",
+        "Generic protocol",
+        "Type alias"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Swift da @discardableResult nima uchun?",
+      "options": [
+        "Natija o'chirish",
+        "Funksiya qaytarish qiymati ishlatilmasa ham warning bermasligi uchun",
+        "Return ignore",
+        "Void annotation"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @discardableResult в Swift?",
+      "question_en": "Why @discardableResult in Swift?",
+      "options_ru": [
+        "Удалить результат",
+        "Чтобы функция не выдавала предупреждение, даже если возвращаемое значение не используется.",
+        "Возврат игнорировать",
+        "Пустая аннотация"
+      ],
+      "options_en": [
+        "Delete the result",
+        "So that the function does not issue a warning even if the return value is not used",
+        "Return ignore",
+        "Void annotation"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Swift da mutating nima uchun?",
+      "options": [
+        "O'zgartirish",
+        "struct/enum metodida self ni o'zgartirish — mutating func",
+        "Mutable method",
+        "Self modify"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем мутировать в Swift?",
+      "question_en": "Why mutating in Swift?",
+      "options_ru": [
+        "Изменять",
+        "Мутация self в методе struct/enum — мутирующая функция",
+        "Изменяемый метод",
+        "Самостоятельное изменение"
+      ],
+      "options_en": [
+        "Change",
+        "Mutating self in struct/enum method — mutating func",
+        "Mutable method",
+        "Self modify"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Swift da defer nima uchun?",
+      "options": [
+        "Kechiktirish",
+        "Scope tugashida bajarilishi kerak bo'lgan kod — cleanup uchun",
+        "Finally block",
+        "Cleanup code"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем откладывать в Swift?",
+      "question_en": "Why defer in Swift?",
+      "options_ru": [
+        "Задерживать",
+        "Код, который будет выполнен в конце области, предназначен для очистки.",
+        "Наконец заблокируйте",
+        "Код очистки"
+      ],
+      "options_en": [
+        "Delay",
+        "The code to be executed at the end of scope is for cleanup",
+        "Finally block",
+        "Cleanup code"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Swift da Result<Success, Failure> nima?",
+      "options": [
+        "Natija tipi",
+        "success(T) yoki failure(Error) — xato boshqarish uchun",
+        "Either type",
+        "Optional error"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое результат <успех, неудача> в Swift?",
+      "question_en": "What is Result<Success, Failure> in Swift?",
+      "options_ru": [
+        "Тип результата",
+        "успех(T) или отказ(Ошибка) — для обработки ошибок",
+        "Любой тип",
+        "Необязательная ошибка"
+      ],
+      "options_en": [
+        "The result type",
+        "success(T) or failure(Error) — for error handling",
+        "Either type",
+        "Optional error"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Swift da @escaping closure nima?",
+      "options": [
+        "Qochish closure",
+        "Funksiya qaytgandan keyin ham ishlatilishi mumkin bo'lgan closure — async uchun",
+        "Captured closure",
+        "Long closure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое закрытие @escaping в Swift?",
+      "question_en": "What is @escaping closure in Swift?",
+      "options_ru": [
+        "Закрытие побега",
+        "Замыкание, которое можно использовать после возврата функции, предназначено для асинхронного выполнения.",
+        "Захваченное закрытие",
+        "Долгое закрытие"
+      ],
+      "options_en": [
+        "Escape closure",
+        "A closure that can be used after the function returns is for async",
+        "Captured closure",
+        "Long closing"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Swift da any va some farqi (Swift 5.7)?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "any — existential (runtime dispatch); some — opaque type (compile-time konkret tip)",
+        "some runtime",
+        "any compile-time"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между любым и некоторыми в Swift (Swift 5.7)?",
+      "question_en": "Difference between any and some in Swift (Swift 5.7)?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "any — existential (runtime dispatch); some — opaque type (compile-time konkret tip)",
+        "некоторое время выполнения",
+        "любое время компиляции"
+      ],
+      "options_en": [
+        "There is no difference",
+        "any — existential (runtime dispatch); some — opaque type (compile-time concrete type)",
+        "some runtime",
+        "any compile-time"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Swift da lazy var nima uchun?",
+      "options": [
+        "Sekin o'zgaruvchi",
+        "Birinchi kirishda initsializatsiya — dastlabki yuklanishni kamaytiradi",
+        "Deferred init",
+        "Optional init"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Свифт ленив?",
+      "question_en": "Why is Swift lazy?",
+      "options_ru": [
+        "Медленная переменная",
+        "Инициализация при первом доступе — снижает начальную нагрузку.",
+        "Отложенная инициализация",
+        "Необязательная инициализация"
+      ],
+      "options_en": [
+        "Slow variable",
+        "Birinchi kirishda initsializatsiya — dastlabki yuklanishni kamaytiradi",
+        "Deferred init",
+        "Optional init"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Swift da map, filter, reduce nima?",
+      "options": [
+        "Funksional metodlar",
+        "Kolleksiyalar uchun funksional transformatsiya metodlari",
+        "Loop alternativi",
+        "Array funksiyalar"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое карта, фильтр, сокращение в Swift?",
+      "question_en": "What is map, filter, reduce in Swift?",
+      "options_ru": [
+        "Функциональные методы",
+        "Методы функционального преобразования коллекций",
+        "Альтернатива циклу",
+        "Функции массива"
+      ],
+      "options_en": [
+        "Functional methods",
+        "Functional transformation methods for collections",
+        "Loop alternative",
+        "Array functions"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Swift da switch da pattern matching nima?",
+      "options": [
+        "Switch case",
+        "Qiymat, range, tuple, enum associated value tekshirish — kuchli switch",
+        "Match expression",
+        "Case matching"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопоставление шаблонов при переключении в Swift?",
+      "question_en": "What is pattern matching on switch in Swift?",
+      "options_ru": [
+        "Корпус переключателя",
+        "Проверка связанных значений значения, диапазона, кортежа, перечисления — мощный переключатель",
+        "Выражение совпадения",
+        "Соответствие регистру"
+      ],
+      "options_en": [
+        "Switch case",
+        "Value, range, tuple, enum associated value check — powerful switch",
+        "Match expression",
+        "Case matching"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Swift da inout parametr nima?",
+      "options": [
+        "Kirish parametri",
+        "Funksiyada parametrni pass-by-reference — funksiya tashqarisiga ta'sir qiladi",
+        "Ref parametr",
+        "Mutable param"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое параметр inout в Swift?",
+      "question_en": "What is an inout parameter in Swift?",
+      "options_ru": [
+        "Входной параметр",
+        "Передача по ссылке — передача параметра функции вне функции.",
+        "Ссылочный параметр",
+        "Изменяемый параметр"
+      ],
+      "options_en": [
+        "Input parameter",
+        "Pass-by-reference — passing a parameter to a function outside the function",
+        "Ref parameter",
+        "Mutable param"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Swift da @propertyWrapper nima?",
+      "options": [
+        "Property wrapper",
+        "Custom property semantik — @State, @Binding, @Published kabi SwiftUI da ishlatiladi",
+        "Annotation",
+        "Decorator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое @propertyWrapper в Swift?",
+      "question_en": "What is @propertyWrapper in Swift?",
+      "options_ru": [
+        "Обертка свойств",
+        "Семантика пользовательских свойств используется в SwiftUI, например @State, @Binding, @Published.",
+        "Аннотация",
+        "Декоратор"
+      ],
+      "options_en": [
+        "Property wrapper",
+        "Custom property semantics are used in SwiftUI like @State, @Binding, @Published",
+        "Annotation",
+        "Decorator"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Swift da async/await nima (Swift 5.5)?",
+      "options": [
+        "Asinxron kod",
+        "Structured concurrency — asinxron kodni sinxron ko'rinishda yozish",
+        "Thread async",
+        "Callback async"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое async/await в Swift (Swift 5.5)?",
+      "question_en": "What is async/await in Swift (Swift 5.5)?",
+      "options_ru": [
+        "Асинхронный код",
+        "Структурированный параллелизм — написание асинхронного кода синхронно.",
+        "Асинхронный поток",
+        "Асинхронный обратный вызов"
+      ],
+      "options_en": [
+        "Asynchronous code",
+        "Structured concurrency — writing asynchronous code in a synchronous manner",
+        "Thread async",
+        "Callback async"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Swift da actor nima?",
+      "options": [
+        "Aktyor",
+        "Thread-safe reference type — bir vaqtda faqat bitta task kirishi mumkin",
+        "Class turi",
+        "Concurrent struct"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое актер в Swift?",
+      "question_en": "What is an actor in Swift?",
+      "options_ru": [
+        "Актер",
+        "Потокобезопасный тип ссылки — доступ одновременно может иметь только одна задача.",
+        "Тип класса",
+        "Параллельная структура"
+      ],
+      "options_en": [
+        "Actor",
+        "Thread-safe reference type — only one task can access at a time",
+        "Class type",
+        "Concurrent struct"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Swift da @MainActor nima?",
+      "options": [
+        "Asosiy aktyor",
+        "Main thread da ishlashni kafolatlash — UI kodi uchun",
+        "Main thread",
+        "UI actor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое @MainActor в Swift?",
+      "question_en": "What is @MainActor in Swift?",
+      "options_ru": [
+        "Asosiy aktyor",
+        "Гарантирование выполнения в основном потоке — для кода пользовательского интерфейса.",
+        "Основная тема",
+        "актер пользовательского интерфейса"
+      ],
+      "options_en": [
+        "The main actor",
+        "Guaranteeing execution on the main thread — for UI code",
+        "Main thread",
+        "UI actor"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Swift da Sendable protocol nima uchun?",
+      "options": [
+        "Yuborish protokoli",
+        "Concurrency da xavfsiz uzatiladigan tip — data race oldini olish",
+        "Thread safe",
+        "Concurrent type"
+      ],
+      "answer": 1,
+      "question_ru": "Почему протокол Sendable в Swift?",
+      "question_en": "Why Sendable protocol in Swift?",
+      "options_ru": [
+        "Протокол отправки",
+        "Типобезопасная передача в параллельном режиме — предотвращение гонки данных",
+        "Потокобезопасный",
+        "Параллельный тип"
+      ],
+      "options_en": [
+        "Sending protocol",
+        "Type-safe transmission in concurrency — data race prevention",
+        "Thread safe",
+        "Concurrent type"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Swift da existential container nima?",
+      "options": [
+        "Konteyner mavjudligi",
+        "any Type ishlatilganda runtime da tip va qiymat metama'lumot bilan saqlanishi",
+        "Protocol witness",
+        "Type erasure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое экзистенциальный контейнер в Swift?",
+      "question_en": "Swift da existential container nima?",
+      "options_ru": [
+        "Наличие контейнера",
+        "При использовании любого типа тип и значение сохраняются с метаданными во время выполнения.",
+        "Протокольный свидетель",
+        "Type erasure"
+      ],
+      "options_en": [
+        "Container availability",
+        "When any Type is used, the type and value are saved with metadata at runtime",
+        "Protocol witness",
+        "Type erasure"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Swift da primary associated types (Swift 5.7) nima?",
+      "options": [
+        "Asosiy bog'liq tip",
+        "some Collection<Int> kabi existential da associated type belgilash",
+        "Generic protocol",
+        "Type constraint"
+      ],
+      "answer": 1,
+      "question_ru": "Каковы основные связанные типы в Swift (Swift 5.7)?",
+      "question_en": "What are primary associated types in Swift (Swift 5.7)?",
+      "options_ru": [
+        "Основной зависимый тип",
+        "определение связанного типа в экзистенциальном объекте, таком как некоторый Collection<Int>",
+        "Общий протокол",
+        "Тип ограничения"
+      ],
+      "options_en": [
+        "Main dependent type",
+        "defining an associated type in an existential such as some Collection<Int>",
+        "Generic protocol",
+        "Type constraint"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Swift da @resultBuilder nima?",
+      "options": [
+        "Natija builder",
+        "DSL yaratish uchun — SwiftUI ViewBuilder, funksional sintaksis konstruksiya",
+        "Builder pattern",
+        "DSL builder"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое @resultBuilder в Swift?",
+      "question_en": "What is @resultBuilder in Swift?",
+      "options_ru": [
+        "Конструктор результатов",
+        "Чтобы создать DSL — SwiftUI ViewBuilder, конструкция функционального синтаксиса.",
+        "Шаблон строителя",
+        "DSL-строитель"
+      ],
+      "options_en": [
+        "Result builder",
+        "To create a DSL — SwiftUI ViewBuilder, a functional syntax construct",
+        "Builder pattern",
+        "DSL builder"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Swift da opaque return type (some Protocol) nima?",
+      "options": [
+        "Noaniq tip",
+        "Funksiya qaytarish tipi konkret lekin tashqariga yashirilgan — protocol tip sifatida",
+        "Return type",
+        "Hidden type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое непрозрачный тип возврата (некоторый протокол) в Swift?",
+      "question_en": "What is opaque return type (some Protocol) in Swift?",
+      "options_ru": [
+        "Неопределенный тип",
+        "Тип возвращаемого значения функции конкретен, но скрыт снаружи — как тип протокола.",
+        "Тип возврата",
+        "Скрытый тип"
+      ],
+      "options_en": [
+        "Unspecified type",
+        "The function's return type is concrete but hidden from the outside—as a protocol type",
+        "Return type",
+        "Hidden type"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Swift da @_specialize nima?",
+      "options": [
+        "Maxsuslashtirish",
+        "Generic funksiyaning ma'lum tip uchun ixtisoslashtirilgan versiyasini yaratish — performance",
+        "Specialization",
+        "Generic optimize"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое @_specialize в Swift?",
+      "question_en": "What is @_specialize in Swift?",
+      "options_ru": [
+        "Кастомизация",
+        "Создание специализированной версии универсальной функции для конкретного типа — производительность",
+        "Специализация",
+        "Общая оптимизация"
+      ],
+      "options_en": [
+        "Customization",
+        "Creating a specialized version of a generic function for a specific type — performance",
+        "Specialization",
+        "Generic optimization"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Swift da COW (Copy-on-Write) nima?",
+      "options": [
+        "Sigir nusxa",
+        "Value type lar ko'p egalik bo'lsa xotira ulashadi, o'zgarishda nusxa yaratadi — Array, String",
+        "Lazy copy",
+        "Smart copy"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое COW (копирование при записи) в Swift?",
+      "question_en": "What is COW (Copy-on-Write) in Swift?",
+      "options_ru": [
+        "Копия коровы",
+        "Типы значений разделяют память в случае многократного владения, создают копию при изменении — Array, String.",
+        "Ленивое копирование",
+        "Умная копия"
+      ],
+      "options_en": [
+        "Cow copy",
+        "Value types share memory in case of multiple ownership, create a copy when changing — Array, String",
+        "Lazy copy",
+        "Smart copy"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Swift da Witness table nima?",
+      "options": [
+        "Guvoh jadvali",
+        "Protocol conformance uchun dispatch jadvali — existential dispatch",
+        "VTable",
+        "Protocol table"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое таблица-свидетель в Swift?",
+      "question_en": "What is Witness table in Swift?",
+      "options_ru": [
+        "Свидетельский стол",
+        "Таблица диспетчеризации для соответствия протоколу — экзистенциальная диспетчеризация",
+        "VTable",
+        "Таблица протоколов"
+      ],
+      "options_en": [
+        "Witness table",
+        "Dispatch table for protocol conformance — existential dispatch",
+        "VTable",
+        "Protocol table"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Swift da whole module optimization nima?",
+      "options": [
+        "Modul optimallashtirish",
+        "Butun modul kodi birgalikda kompilyatsiya qilinadi — cross-function inline, better optimize",
+        "Build optimize",
+        "LTO"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое оптимизация всего модуля в Swift?",
+      "question_en": "What is whole module optimization in Swift?",
+      "options_ru": [
+        "Оптимизация модуля",
+        "Весь код модуля компилируется вместе — встроенная кросс-функциональность, лучшая оптимизация",
+        "Оптимизация сборки",
+        "ДН"
+      ],
+      "options_en": [
+        "Module optimization",
+        "All module code is compiled together — cross-function inline, better optimize",
+        "Build optimization",
+        "LTO"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Swift da Task nima?",
+      "options": [
+        "Vazifa",
+        "Structured concurrency birlik — async kontekstda parallel ish bajarish",
+        "Async unit",
+        "Job"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое задача в Swift?",
+      "question_en": "What is a Task in Swift?",
+      "options_ru": [
+        "Задача",
+        "Блок структурированного параллелизма — параллельное выполнение работы в асинхронном контексте.",
+        "Асинхронный блок",
+        "Работа"
+      ],
+      "options_en": [
+        "Vazifa",
+        "Structured concurrency unit — parallel work execution in async context",
+        "Async unit",
+        "Job"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Swift da continuations nima?",
+      "options": [
+        "Davom ettirish",
+        "Callback asosidagi kodni async/await ga moslashtirish — withCheckedContinuation",
+        "Bridge async",
+        "Callback wrap"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое продолжения в Swift?",
+      "question_en": "What are continuations in Swift?",
+      "options_ru": [
+        "Продолжить",
+        "Адаптируйте код обратного вызова к async/await — withCheckedContinuation",
+        "Асинхронный мост",
+        "Обертка обратного вызова"
+      ],
+      "options_en": [
+        "Continue",
+        "Adapt callback-based code to async/await — withCheckedContinuation",
+        "Bridge async",
+        "Callback wrap"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Swift da memory layout nima?",
+      "options": [
+        "Xotira joylashuvi",
+        "Tip bayt o'lchami, hizalanishi, stride — MemoryLayout<T>.size/alignment/stride",
+        "Struct layout",
+        "Type size"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое расположение памяти в Swift?",
+      "question_en": "Swift da memory layout nima?",
+      "options_ru": [
+        "Местоположение памяти",
+        "Введите размер в байтах, выравнивание, шаг — MemoryLayout<T>.size/alignment/stride",
+        "Схема структуры",
+        "Тип размера"
+      ],
+      "options_en": [
+        "Xotira joylashuvi",
+        "Type byte size, alignment, stride — MemoryLayout<T>.size/alignment/stride",
+        "Structure layout",
+        "Type size"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Swift da Observation framework (Swift 5.9) nima?",
+      "options": [
+        "Kuzatish",
+        "@Observable macro — KVO alternativa, minimal, Swift native reaktivlik",
+        "Property observe",
+        "State observe"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое платформа наблюдения в Swift (Swift 5.9)?",
+      "question_en": "What is Observation framework in Swift (Swift 5.9)?",
+      "options_ru": [
+        "Последующие действия",
+        "Макрос @Observable — альтернатива KVO, минимальная, собственная реактивность Swift",
+        "Наблюдение за недвижимостью",
+        "Государственное наблюдение"
+      ],
+      "options_en": [
+        "Follow up",
+        "@Observable macro — KVO alternative, minimal, Swift native reactivity",
+        "Property observe",
+        "State observation"
+      ]
+    }
   ]
 }

@@ -2,55 +2,1305 @@
   "technology": "React",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"React nima?","options":["CSS framework","JavaScript kutubxonasi — UI komponentlarini yaratish uchun","Backend framework","Database tool"],"answer":1},
-    {"id":2,"level":"easy","question":"React da JSX nima?","options":["JavaScript eXtreme","JavaScript XML — HTML o'xshash sintaksis bilan UI yozish","Java Syntax eXtension","JSON eXtension"],"answer":1},
-    {"id":3,"level":"easy","question":"React da useState hook nima qaytaradi?","options":["Bitta qiymat","Joriy holat qiymati va uni yangilash funksiyasi","Faqat o'zgartirish funksiyasi","Holat ob'ekti"],"answer":1},
-    {"id":4,"level":"easy","question":"React komponentda props nima?","options":["Ichki holat","Ota komponentdan bola komponentga uzatiladigan ma'lumotlar","Global o'zgaruvchilar","CSS xususiyatlari"],"answer":1},
-    {"id":5,"level":"easy","question":"React da ro'yxatni render qilganda nima uchun key xususiyati kerak?","options":["Ko'rinish uchun","React ga elementlarni samarali yangilash uchun noyob identifikator","CSS class uchun","Event uchun"],"answer":1},
-    {"id":6,"level":"easy","question":"React da virtual DOM nima?","options":["Server-side DOM","Haqiqiy DOM ning xotira ichidagi nusxasi — samarali yangilash uchun","Browser DOM","CSS ob'ekt modeli"],"answer":1},
-    {"id":7,"level":"easy","question":"React da useEffect hook nima uchun ishlatiladi?","options":["Holat o'zgartirish uchun","Side effectlar (API so'rovlar, DOM o'zgarishlar, subscriptions) uchun","Komponent yaratish uchun","Props olish uchun"],"answer":1},
-    {"id":8,"level":"easy","question":"React da komponent qanday function sifatida e'lon qilinadi?","options":["function MyComponent() { return <div>; }","def MyComponent(): return div","class MyComponent extends Component {}","component MyComponent() {}"],"answer":0},
-    {"id":9,"level":"easy","question":"React da onClick event handler qanday yoziladi?","options":["onclick='handleClick()'","onClick={handleClick}","on-click={handleClick}","click={handleClick}"],"answer":1},
-    {"id":10,"level":"easy","question":"React da conditional rendering uchun qaysi usul ishlatiladi?","options":["Faqat if-else","Ternary operator, &&, if-else — barchasi","Faqat switch-case","Faqat && operator"],"answer":1},
-    {"id":11,"level":"easy","question":"React da Fragment nima uchun ishlatiladi?","options":["Animatsiya uchun","Qo'shimcha DOM element qo'shmasdan bir nechta element qaytarish uchun","Styling uchun","State boshqarish uchun"],"answer":1},
-    {"id":12,"level":"easy","question":"React da props.children nima?","options":["Bola komponentlar","Komponent tag lari orasidagi kontent","Holat ob'ekti","Ref ob'ekti"],"answer":1},
-    {"id":13,"level":"easy","question":"React da defaultProps nima uchun ishlatiladi?","options":["Props ni majburiy qilish","Props uchun standart qiymatlar belgilash","Props tipini tekshirish","Props ni o'chirish"],"answer":1},
-    {"id":14,"level":"easy","question":"React da useRef hook nima qaytaradi?","options":["State ob'ekti","DOM elementga yoki qiymatga o'zgarmaydigan murojaat (ref ob'ekti)","Funksiya","Boolean"],"answer":1},
-    {"id":15,"level":"easy","question":"React da event.preventDefault() nima qiladi?","options":["Eventni to'xtatadi","Brauzerning standart xatti-harakatini (form submit, link navigate) to'xtatadi","Eventni ota elementga o'tkazadi","Eventni qayta ishga tushiradi"],"answer":1},
-    {"id":16,"level":"medium","question":"React da useCallback hook nima uchun ishlatiladi?","options":["State memoize qilish","Funksiyani memoize qilib, har render da yangi funksiya yaratamaslik uchun","Ref yaratish","Context ishlatish"],"answer":1},
-    {"id":17,"level":"medium","question":"React da useMemo hook nima qiladi?","options":["Funksiyani memoize qiladi","Hisoblash natijasini memoize qilib, qayta hisoblashning oldini oladi","State qaytaradi","Ref qaytaradi"],"answer":1},
-    {"id":18,"level":"medium","question":"React da Context API nima uchun ishlatiladi?","options":["API so'rovlar uchun","Props drilling ni oldini olib, global ma'lumotlarni komponentlar daraxtida ulashish uchun","Router boshqarish uchun","DOM manipulyatsiyasi uchun"],"answer":1},
-    {"id":19,"level":"medium","question":"React da useReducer hook qachon afzalroq?","options":["Har doim useState o'rniga","Murakkab holat logikasi yoki ko'p o'zgaruvchili holat uchun","Faqat backend bilan ishlashda","Performance uchun har doim"],"answer":1},
-    {"id":20,"level":"medium","question":"React da React.memo() nima qiladi?","options":["State memoize qiladi","Komponentni memoize qilib, props o'zgarmasa re-render ni oldini oladi","Ref memoize qiladi","Reducer memoize qiladi"],"answer":1},
-    {"id":21,"level":"medium","question":"React da Controlled va Uncontrolled komponentlar farqi nima?","options":["Hech qanday farq yo'q","Controlled — React state boshqaradi; Uncontrolled — DOM o'zi boshqaradi (ref orqali)","Uncontrolled afzalroq","Controlled faqat class komponentlar uchun"],"answer":1},
-    {"id":22,"level":"medium","question":"React Router da useNavigate hook nima qiladi?","options":["Sahifani yangilaydi","Dasturiy ravishda boshqa route ga o'tish imkonini beradi","URL parametrlarini oladi","Location ma'lumotlarini qaytaradi"],"answer":1},
-    {"id":23,"level":"medium","question":"React da Error Boundary nima?","options":["Try-catch bloki","Bola komponentlardagi JavaScript xatolarini tutib, fallback UI ko'rsatadigan class komponent","Error message","Event handler"],"answer":1},
-    {"id":24,"level":"medium","question":"React da lazy loading va Suspense qanday birgalikda ishlatiladi?","options":["Har doim birgalikda","React.lazy() bilan import qilingan komponent yuklanganda Suspense fallback ko'rsatadi","Faqat rasm yuklash uchun","Router bilan ishlashda"],"answer":1},
-    {"id":25,"level":"medium","question":"React da reconciliation nima?","options":["Komponentlarni birlashtirish","React virtual DOM va haqiqiy DOM ni solishtirb, kerakli o'zgarishlarni aniqlash jarayoni","Props tekshirish","State boshqarish"],"answer":1},
-    {"id":26,"level":"medium","question":"React da useLayoutEffect va useEffect farqi nima?","options":["Hech qanday farq yo'q","useLayoutEffect DOM yangilanishidan keyin sinxron ishlaydi; useEffect asinxron ishlaydi","useEffect sinxron","useLayoutEffect faqat server uchun"],"answer":1},
-    {"id":27,"level":"medium","question":"React da PropTypes nima uchun ishlatiladi?","options":["Props qaytarish","Props tipini runtime da tekshirish va xatolik haqida ogohlantirish","Props memoize qilish","Props filterlash"],"answer":1},
-    {"id":28,"level":"medium","question":"React da Portals nima?","options":["API ulanish nuqtasi","Komponentni DOM daraxtining boshqa joyida (modal, tooltip uchun) render qilish imkoni","Router portali","State portali"],"answer":1},
-    {"id":29,"level":"medium","question":"React da forwardRef nima uchun ishlatiladi?","options":["Props uzatish","Ota komponentdan bola komponentning DOM elementiga ref uzatish imkonini beradi","Event uzatish","State uzatish"],"answer":1},
-    {"id":30,"level":"medium","question":"React 18 da automatic batching nima?","options":["Komponentlarni guruhlash","Bir nechta state yangilanishlarini bitta re-render ga birlashtirish — event handlerlarda va async larda ham","Batch import qilish","Komponentlarni parallel render qilish"],"answer":1},
-    {"id":31,"level":"medium","question":"React da custom hook qanday nomlash kerak?","options":["hook_ prefiksi bilan","use prefiksi bilan (masalan: useMyHook)","my_ prefiksi bilan","Istalgan nom bilan"],"answer":1},
-    {"id":32,"level":"medium","question":"React da state immutability nima uchun muhim?","options":["Kodni qisqartirish","React state o'zgarishini aniqlash uchun referens taqqoslash ishlatadi; mutatsiya qilinsa o'zgarish aniqlanmaydi","Performance uchun emas","Faqat array lar uchun"],"answer":1},
-    {"id":33,"level":"medium","question":"React da getDerivedStateFromProps nima?","options":["Class komponentda props dan state hosil qilish uchun statik lifecycle metod","Hooks metodi","Router metodi","Event handler"],"answer":0},
-    {"id":34,"level":"medium","question":"React da componentDidMount equivalenti hooks da nima?","options":["useEffect(() => {})","useEffect(() => {}, [])","useMemo(() => {}, [])","useCallback(() => {}, [])"],"answer":1},
-    {"id":35,"level":"medium","question":"React da Strict Mode nima qiladi?","options":["Kodni qattiq qiladi","Development da qo'shimcha tekshiruvlar o'tkazib, potensial muammolarni aniqlaydi","Production'ni qattiq qiladi","Har doim double render qiladi"],"answer":1},
-    {"id":36,"level":"hard","question":"React Fiber arxitekturasi nima?","options":["React ning fizik arxitekturasi","React ning incremental rendering mexanizmi — ishni bo'laklarga bo'lib, prioritetlash va to'xtatib-davom ettirish imkoni beradi","React Native uchun arxitektura","Server-side rendering"],"answer":1},
-    {"id":37,"level":"hard","question":"React da Concurrent Mode nima imkoniyatlarini beradi?","options":["Ko'p thread da ishlash","UI ni responsive saqlagan holda uzun renderlarni to'xtatib, muhimroq yangilanishlarga ustuvorlik berish","Parallel komponentlar","Ko'p sahifali rendering"],"answer":1},
-    {"id":38,"level":"hard","question":"React da useTransition hook nima qiladi?","options":["CSS transition boshqarish","State yangilanishini non-urgent deb belgilab, UI ni bloklamasdan background da yangilash","Animatsiya yaratish","Route transition"],"answer":1},
-    {"id":39,"level":"hard","question":"React da Server Components nima?","options":["Backend komponentlari","Server da render bo'ladigan komponentlar — bundle hajmini kamaytiradi, client-side JS kerak emas","Node.js komponentlari","API komponentlari"],"answer":1},
-    {"id":40,"level":"hard","question":"React da Hydration nima?","options":["CSS yuklash","Server-rendered HTML ga event listener lar qo'shib, interaktiv qilish jarayoni","State yuklash","Bundle yuklash"],"answer":1},
-    {"id":41,"level":"hard","question":"React da tree shaking qanday qo'llab-quvvatlanadi?","options":["Daraxt tuzilmasini optimizatsiya qilish","ES modules import/export sintaksisi orqali bundler ishlatilmagan kodni chiqarib tashlaydi","React o'zi qiladi","Webpack avtomatik qiladi"],"answer":1},
-    {"id":42,"level":"hard","question":"React da Render Props pattern nima?","options":["Props render qilish","Funksiyani prop sifatida uzatib, komponent ichida render logikasini ulashish dizayn namunasi","Komponentni qayta render qilish","Props optimallashtirish"],"answer":1},
-    {"id":43,"level":"hard","question":"React da Higher Order Component (HOC) nima?","options":["Yuqori darajali komponent","Komponentni argument sifatida qabul qilib, yangi kengaytirilgan komponent qaytaradigan funksiya","Parent komponent","Class komponent"],"answer":1},
-    {"id":44,"level":"hard","question":"React da useImperativeHandle hook nima qiladi?","options":["Imperativ animatsiya","forwardRef bilan birgalikda, ota komponentga ref orqali ko'rsatiladigan qiymatni moslashtirish","Event boshqarish","State boshqarish"],"answer":1},
-    {"id":45,"level":"hard","question":"React 18 da useDeferredValue hook nima qiladi?","options":["Qiymatni kechiktirish","Qiymat yangilanishini kechiktirib, UI ni responsive saqlash — masalan search input uchun","State kechiktirish","API so'rovlarni kechiktirish"],"answer":1},
-    {"id":46,"level":"hard","question":"React da code splitting qanday amalga oshiriladi?","options":["Kodni bo'lish","React.lazy() va dynamic import() orqali komponentlarni alohida bundle larga bo'lish","Webpack konfiguratsiyasi orqali faqat","Komponentlarni bo'lish"],"answer":1},
-    {"id":47,"level":"hard","question":"React da Suspense for Data Fetching nima?","options":["Ma'lumot yuklash UI","Komponent ma'lumot kutayotganda Suspense fallback ko'rsatish — Relay, React Query kabi kutubxonalar qo'llab-quvvatlaydi","Loading state","API holati"],"answer":1},
-    {"id":48,"level":"hard","question":"React da startTransition nima qiladi?","options":["Animatsiya boshlaydi","Holat yangilanishini past prioritetli deb belgilaydi — UI ko'rsatishni bloklashdan oldini oladi","Route transition","State transition"],"answer":1},
-    {"id":49,"level":"hard","question":"React da Compound Components pattern nima?","options":["Murakkab komponentlar","Bir-biri bilan ichki state ulashgan komponentlar guruhi (masalan Select + Option)","HOC pattern","Context pattern"],"answer":1},
-    {"id":50,"level":"hard","question":"React da Reconciliation jarayonida Diffing algorithm qanday ishlaydi?","options":["To'liq DOM ni solishtiradi","Tip o'zgarganda to'liq qayta render; bir tip bo'lganda rekursiv solishtirish; ro'yxatlar uchun key ishlatadi","Faqat o'zgargan elementni topadi","Parallel solishtirish"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "React nima?",
+      "options": [
+        "CSS framework",
+        "JavaScript kutubxonasi — UI komponentlarini yaratish uchun",
+        "Backend framework",
+        "Database tool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Реакт?",
+      "question_en": "What is React?",
+      "options_ru": [
+        "CSS-фреймворк",
+        "Библиотека JavaScript — для создания компонентов пользовательского интерфейса.",
+        "Бэкэнд-фреймворк",
+        "Инструмент базы данных"
+      ],
+      "options_en": [
+        "CSS framework",
+        "JavaScript library — for creating UI components",
+        "Backend framework",
+        "Database tool"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "React da JSX nima?",
+      "options": [
+        "JavaScript eXtreme",
+        "JavaScript XML — HTML o'xshash sintaksis bilan UI yozish",
+        "Java Syntax eXtension",
+        "JSON eXtension"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое JSX в React?",
+      "question_en": "What is JSX in React?",
+      "options_ru": [
+        "JavaScript экстремальный",
+        "JavaScript XML — написание пользовательского интерфейса с синтаксисом, подобным HTML.",
+        "Расширение синтаксиса Java",
+        "Расширение JSON"
+      ],
+      "options_en": [
+        "JavaScript eXtreme",
+        "JavaScript XML — Writing UI with HTML-like syntax",
+        "Java Syntax extension",
+        "JSON eExtension"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "React da useState hook nima qaytaradi?",
+      "options": [
+        "Bitta qiymat",
+        "Joriy holat qiymati va uni yangilash funksiyasi",
+        "Faqat o'zgartirish funksiyasi",
+        "Holat ob'ekti"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает хук useState в React?",
+      "question_en": "What does the useState hook return in React?",
+      "options_ru": [
+        "Одно значение",
+        "Текущее значение состояния и его функция обновления",
+        "Изменить только функцию",
+        "Государственный объект"
+      ],
+      "options_en": [
+        "A single value",
+        "The current state value and its update function",
+        "Change function only",
+        "Holat ob'ekti"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "React komponentda props nima?",
+      "options": [
+        "Ichki holat",
+        "Ota komponentdan bola komponentga uzatiladigan ma'lumotlar",
+        "Global o'zgaruvchilar",
+        "CSS xususiyatlari"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое реквизиты в компоненте React?",
+      "question_en": "React komponentda props nima?",
+      "options_ru": [
+        "Ichki holat",
+        "Данные передаются из родительского компонента в дочерний компонент",
+        "Глобальные переменные",
+        "CSS-свойства"
+      ],
+      "options_en": [
+        "Internal state",
+        "Data passed from a parent component to a child component",
+        "Global variables",
+        "CSS xususiyatlari"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "React da ro'yxatni render qilganda nima uchun key xususiyati kerak?",
+      "options": [
+        "Ko'rinish uchun",
+        "React ga elementlarni samarali yangilash uchun noyob identifikator",
+        "CSS class uchun",
+        "Event uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем мне свойство key при рендеринге списка в React?",
+      "question_en": "Why do I need the key property when rendering a list in React?",
+      "options_ru": [
+        "Для внешнего вида",
+        "Уникальный идентификатор для эффективного обновления элементов до React.",
+        "Для класса CSS",
+        "Для мероприятия"
+      ],
+      "options_en": [
+        "For appearance",
+        "A unique identifier to efficiently update elements to React",
+        "For CSS class",
+        "For the event"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "React da virtual DOM nima?",
+      "options": [
+        "Server-side DOM",
+        "Haqiqiy DOM ning xotira ichidagi nusxasi — samarali yangilash uchun",
+        "Browser DOM",
+        "CSS ob'ekt modeli"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое виртуальный DOM в React?",
+      "question_en": "What is virtual DOM in React?",
+      "options_ru": [
+        "Серверный DOM",
+        "Копия фактического DOM в памяти — для эффективного обновления.",
+        "DOM браузера",
+        "Объектная модель CSS"
+      ],
+      "options_en": [
+        "Server-side DOM",
+        "An in-memory copy of the actual DOM—for efficient updates",
+        "Browser DOM",
+        "CSS object model"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "React da useEffect hook nima uchun ishlatiladi?",
+      "options": [
+        "Holat o'zgartirish uchun",
+        "Side effectlar (API so'rovlar, DOM o'zgarishlar, subscriptions) uchun",
+        "Komponent yaratish uchun",
+        "Props olish uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Почему крючок useEffect используется в React?",
+      "question_en": "Why useEffect hook is used in React?",
+      "options_ru": [
+        "Чтобы изменить статус",
+        "Побочные эффекты (запросы API, изменения DOM, подписки).",
+        "Чтобы создать компонент",
+        "Чтобы получить реквизит"
+      ],
+      "options_en": [
+        "To change the status",
+        "For side effects (API requests, DOM changes, subscriptions).",
+        "Komponent yaratish uchun",
+        "To get props"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "React da komponent qanday function sifatida e'lon qilinadi?",
+      "options": [
+        "function MyComponent() { return <div>; }",
+        "def MyComponent(): return div",
+        "class MyComponent extends Component {}",
+        "component MyComponent() {}"
+      ],
+      "answer": 0,
+      "question_ru": "Как компонент объявляется как функция в React?",
+      "question_en": "How is a component declared as a function in React?",
+      "options_ru": [
+        "функция MyComponent() { return <div>; }",
+        "def MyComponent(): вернуть div",
+        "класс MyComponent расширяет компонент {}",
+        "компонент MyComponent() {}"
+      ],
+      "options_en": [
+        "function MyComponent() { return <div>; }",
+        "def MyComponent(): return div",
+        "class MyComponent extends Component {}",
+        "component MyComponent() {}"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "React da onClick event handler qanday yoziladi?",
+      "options": [
+        "onclick='handleClick()'",
+        "onClick={handleClick}",
+        "on-click={handleClick}",
+        "click={handleClick}"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать обработчик события onClick в React?",
+      "question_en": "How to write an onClick event handler in React?",
+      "options_ru": [
+        "onclick='handleClick()'",
+        "onClick={handleClick}",
+        "on-click={handleClick}",
+        "клик={handleClick}"
+      ],
+      "options_en": [
+        "onclick='handleClick()'",
+        "onClick={handleClick}",
+        "on-click={handleClick}",
+        "click={handleClick}"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "React da conditional rendering uchun qaysi usul ishlatiladi?",
+      "options": [
+        "Faqat if-else",
+        "Ternary operator, &&, if-else — barchasi",
+        "Faqat switch-case",
+        "Faqat && operator"
+      ],
+      "answer": 1,
+      "question_ru": "Какой метод используется для условного рендеринга в React?",
+      "question_en": "Which method is used for conditional rendering in React?",
+      "options_ru": [
+        "Только если-иначе",
+        "Тернарный оператор, &&, if-else — все",
+        "Только корпус переключателя",
+        "Только оператор &&"
+      ],
+      "options_en": [
+        "Only if-else",
+        "Ternary operator, &&, if-else — all",
+        "Switch-case only",
+        "Only the && operator"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "React da Fragment nima uchun ishlatiladi?",
+      "options": [
+        "Animatsiya uchun",
+        "Qo'shimcha DOM element qo'shmasdan bir nechta element qaytarish uchun",
+        "Styling uchun",
+        "State boshqarish uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется фрагмент в React?",
+      "question_en": "What is Fragment used for in React?",
+      "options_ru": [
+        "Для анимации",
+        "Чтобы вернуть несколько элементов без добавления дополнительного элемента DOM",
+        "Для укладки",
+        "Чтобы управлять государством"
+      ],
+      "options_en": [
+        "For animation",
+        "To return multiple elements without adding an extra DOM element",
+        "For styling",
+        "To manage the State"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "React da props.children nima?",
+      "options": [
+        "Bola komponentlar",
+        "Komponent tag lari orasidagi kontent",
+        "Holat ob'ekti",
+        "Ref ob'ekti"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое props.children в React?",
+      "question_en": "What is props.children in React?",
+      "options_ru": [
+        "Дочерние компоненты",
+        "Содержимое между тегами компонентов",
+        "Государственный объект",
+        "Ссылка на объект"
+      ],
+      "options_en": [
+        "Child components",
+        "Content between component tags",
+        "Holat ob'ekti",
+        "Object Ref"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "React da defaultProps nima uchun ishlatiladi?",
+      "options": [
+        "Props ni majburiy qilish",
+        "Props uchun standart qiymatlar belgilash",
+        "Props tipini tekshirish",
+        "Props ni o'chirish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используются defaultProps в React?",
+      "question_en": "What is defaultProps used for in React?",
+      "options_ru": [
+        "Сделайте реквизит обязательным",
+        "Установка значений по умолчанию для реквизита",
+        "Проверка типа реквизита",
+        "Удалить реквизит"
+      ],
+      "options_en": [
+        "Make props mandatory",
+        "Setting default values ​​for props",
+        "Checking the type of props",
+        "Delete props"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "React da useRef hook nima qaytaradi?",
+      "options": [
+        "State ob'ekti",
+        "DOM elementga yoki qiymatga o'zgarmaydigan murojaat (ref ob'ekti)",
+        "Funksiya",
+        "Boolean"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает хук useRef в React?",
+      "question_en": "What does the useRef hook return in React?",
+      "options_ru": [
+        "Государственный объект",
+        "Статическая ссылка на элемент или значение DOM (объект ref).",
+        "Функция",
+        "логическое значение"
+      ],
+      "options_en": [
+        "State object",
+        "A static reference to a DOM element or value (a ref object)",
+        "Function",
+        "Boolean"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "React da event.preventDefault() nima qiladi?",
+      "options": [
+        "Eventni to'xtatadi",
+        "Brauzerning standart xatti-harakatini (form submit, link navigate) to'xtatadi",
+        "Eventni ota elementga o'tkazadi",
+        "Eventni qayta ishga tushiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает event.preventDefault() в React?",
+      "question_en": "What does event.preventDefault() do in React?",
+      "options_ru": [
+        "Останавливает событие",
+        "Останавливает поведение браузера по умолчанию (отправка формы, переход по ссылке).",
+        "Передает событие родительскому элементу",
+        "Перезапускает событие"
+      ],
+      "options_en": [
+        "Stops the event",
+        "Stops default browser behavior (form submit, link navigate).",
+        "Passes the event to the parent element",
+        "Retriggers the event"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "React da useCallback hook nima uchun ishlatiladi?",
+      "options": [
+        "State memoize qilish",
+        "Funksiyani memoize qilib, har render da yangi funksiya yaratamaslik uchun",
+        "Ref yaratish",
+        "Context ishlatish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в React используется хук useCallback?",
+      "question_en": "Why is the useCallback hook used in React?",
+      "options_ru": [
+        "Запомните состояние",
+        "Чтобы избежать создания новой функции при каждом рендеринге, запомнив функцию",
+        "Создать ссылку",
+        "Использование контекста"
+      ],
+      "options_en": [
+        "Memoize the state",
+        "Funksiyani memoize qilib, har render da yangi funksiya yaratamaslik uchun",
+        "Create a ref",
+        "Using context"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "React da useMemo hook nima qiladi?",
+      "options": [
+        "Funksiyani memoize qiladi",
+        "Hisoblash natijasini memoize qilib, qayta hisoblashning oldini oladi",
+        "State qaytaradi",
+        "Ref qaytaradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает хук useMemo в React?",
+      "question_en": "What does the useMemo hook do in React?",
+      "options_ru": [
+        "Запоминает функцию",
+        "Предотвращает пересчет путем запоминания результата расчета.",
+        "Возвращает состояние",
+        "Возвращает ссылку"
+      ],
+      "options_en": [
+        "Funksiyani memoize qiladi",
+        "Prevents recalculation by memoizing the calculation result",
+        "Returns state",
+        "Returns the ref"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "React da Context API nima uchun ishlatiladi?",
+      "options": [
+        "API so'rovlar uchun",
+        "Props drilling ni oldini olib, global ma'lumotlarni komponentlar daraxtida ulashish uchun",
+        "Router boshqarish uchun",
+        "DOM manipulyatsiyasi uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется Context API в React?",
+      "question_en": "What is the Context API used for in React?",
+      "options_ru": [
+        "API для запросов",
+        "Чтобы поделиться глобальными данными в дереве компонентов, избегая детализации реквизита.",
+        "Для управления роутером",
+        "Для манипуляций с DOM"
+      ],
+      "options_en": [
+        "API for requests",
+        "To share global data in the component tree, avoiding props drilling",
+        "To control the router",
+        "For DOM manipulation"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "React da useReducer hook qachon afzalroq?",
+      "options": [
+        "Har doim useState o'rniga",
+        "Murakkab holat logikasi yoki ko'p o'zgaruvchili holat uchun",
+        "Faqat backend bilan ishlashda",
+        "Performance uchun har doim"
+      ],
+      "answer": 1,
+      "question_ru": "Когда хук useReducer предпочтительнее в React?",
+      "question_en": "When is useReducer hook preferable in React?",
+      "options_ru": [
+        "Всегда вместо useState",
+        "Для сложной логики состояния или состояния с несколькими переменными",
+        "Только при работе с бэкендом",
+        "Всегда за производительность"
+      ],
+      "options_en": [
+        "Always instead of useState",
+        "For complex state logic or multi-variable state",
+        "Only when working with the backend",
+        "Always for performance"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "React da React.memo() nima qiladi?",
+      "options": [
+        "State memoize qiladi",
+        "Komponentni memoize qilib, props o'zgarmasa re-render ni oldini oladi",
+        "Ref memoize qiladi",
+        "Reducer memoize qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает React.memo() в React?",
+      "question_en": "What does React.memo() do in React?",
+      "options_ru": [
+        "Государство запоминает",
+        "Запоминая компонент, он предотвращает повторный рендеринг, если реквизиты не меняются.",
+        "Реф запомнит",
+        "Редуктор запоминает"
+      ],
+      "options_en": [
+        "State memoizes",
+        "By memoizing the component, it prevents re-rendering if the props don't change",
+        "Ref will memoize",
+        "Reducer memoizes"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "React da Controlled va Uncontrolled komponentlar farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Controlled — React state boshqaradi; Uncontrolled — DOM o'zi boshqaradi (ref orqali)",
+        "Uncontrolled afzalroq",
+        "Controlled faqat class komponentlar uchun"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между контролируемыми и неконтролируемыми компонентами в React?",
+      "question_en": "What is the difference between Controlled and Uncontrolled components in React?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Controlled — контролирует состояние React; Неконтролируемый — DOM контролирует себя (через ссылку)",
+        "Неконтролируемое предпочтительнее.",
+        "Контролируется только для компонентов класса"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Controlled — controls React state; Uncontrolled — DOM controls itself (via ref)",
+        "Uncontrolled is preferable",
+        "Controlled is only for class components"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "React Router da useNavigate hook nima qiladi?",
+      "options": [
+        "Sahifani yangilaydi",
+        "Dasturiy ravishda boshqa route ga o'tish imkonini beradi",
+        "URL parametrlarini oladi",
+        "Location ma'lumotlarini qaytaradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает хук useNavigate в React Router?",
+      "question_en": "What does the useNavigate hook do in React Router?",
+      "options_ru": [
+        "Обновляет страницу",
+        "Позволяет программно переключиться на другой маршрут",
+        "Получает параметры URL",
+        "Возвращает данные о местоположении"
+      ],
+      "options_en": [
+        "Refreshes the page",
+        "Allows programmatically switching to another route",
+        "Gets URL parameters",
+        "Location ma'lumotlarini qaytaradi"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "React da Error Boundary nima?",
+      "options": [
+        "Try-catch bloki",
+        "Bola komponentlardagi JavaScript xatolarini tutib, fallback UI ko'rsatadigan class komponent",
+        "Error message",
+        "Event handler"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое граница ошибки в React?",
+      "question_en": "React da Error Boundary nima?",
+      "options_ru": [
+        "Блок Try-Catch",
+        "Компонент класса, который улавливает ошибки JavaScript в дочерних компонентах и отображает резервный пользовательский интерфейс.",
+        "Сообщение об ошибке",
+        "Обработчик событий"
+      ],
+      "options_en": [
+        "Try-catch block",
+        "A class component that catches JavaScript errors in child components and displays a fallback UI",
+        "Error message",
+        "Event handler"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "React da lazy loading va Suspense qanday birgalikda ishlatiladi?",
+      "options": [
+        "Har doim birgalikda",
+        "React.lazy() bilan import qilingan komponent yuklanganda Suspense fallback ko'rsatadi",
+        "Faqat rasm yuklash uchun",
+        "Router bilan ishlashda"
+      ],
+      "answer": 1,
+      "question_ru": "Как использовать отложенную загрузку и приостановку вместе в React?",
+      "question_en": "How to use lazy loading and Suspense together in React?",
+      "options_ru": [
+        "Всегда вместе",
+        "Приостановка показывает резервный вариант при загрузке компонента, импортированного с помощью React.lazy().",
+        "Faqat rasm yuklash uchun",
+        "При работе с роутером"
+      ],
+      "options_en": [
+        "Always together",
+        "Suspense shows a fallback when a component imported with React.lazy() is loaded",
+        "Just to upload a picture",
+        "When working with a router"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "React da reconciliation nima?",
+      "options": [
+        "Komponentlarni birlashtirish",
+        "React virtual DOM va haqiqiy DOM ni solishtirb, kerakli o'zgarishlarni aniqlash jarayoni",
+        "Props tekshirish",
+        "State boshqarish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое согласование в React?",
+      "question_en": "What is reconciliation in React?",
+      "options_ru": [
+        "Объедините компоненты",
+        "React — это процесс сравнения виртуального DOM и реального DOM для определения необходимых изменений.",
+        "Проверьте реквизит",
+        "Государственное управление"
+      ],
+      "options_en": [
+        "Combine components",
+        "React is the process of comparing the virtual DOM and the real DOM to determine the necessary changes",
+        "Check props",
+        "State management"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "React da useLayoutEffect va useEffect farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "useLayoutEffect DOM yangilanishidan keyin sinxron ishlaydi; useEffect asinxron ishlaydi",
+        "useEffect sinxron",
+        "useLayoutEffect faqat server uchun"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между useLayoutEffect и useEffect в React?",
+      "question_en": "What is the difference between useLayoutEffect and useEffect in React?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "useLayoutEffect работает синхронно после обновления DOM; useEffect работает асинхронно",
+        "useEffect синхронен",
+        "useLayoutEffect предназначен только для сервера."
+      ],
+      "options_en": [
+        "There is no difference",
+        "useLayoutEffect works synchronously after DOM update; useEffect works asynchronously",
+        "useEffect is synchronous",
+        "useLayoutEffect is server-only"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "React da PropTypes nima uchun ishlatiladi?",
+      "options": [
+        "Props qaytarish",
+        "Props tipini runtime da tekshirish va xatolik haqida ogohlantirish",
+        "Props memoize qilish",
+        "Props filterlash"
+      ],
+      "answer": 1,
+      "question_ru": "Почему PropTypes используются в React?",
+      "question_en": "Why are PropTypes used in React?",
+      "options_ru": [
+        "Возврат реквизита",
+        "Проверка типа реквизита во время выполнения и предупреждение об ошибках",
+        "Запомнить реквизит",
+        "Фильтрация реквизита"
+      ],
+      "options_en": [
+        "Props return",
+        "Props type checking at runtime and error warning",
+        "Memoize props",
+        "Props filtering"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "React da Portals nima?",
+      "options": [
+        "API ulanish nuqtasi",
+        "Komponentni DOM daraxtining boshqa joyida (modal, tooltip uchun) render qilish imkoni",
+        "Router portali",
+        "State portali"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое порталы в React?",
+      "question_en": "React da Portals nima?",
+      "options_ru": [
+        "Точка подключения API",
+        "Возможность отрисовки компонента в другом месте дерева DOM (для модального окна, всплывающей подсказки).",
+        "Портал маршрутизатора",
+        "Государственный портал"
+      ],
+      "options_en": [
+        "API connection point",
+        "Ability to render the component elsewhere in the DOM tree (for modal, tooltip).",
+        "Router portal",
+        "State portali"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "React da forwardRef nima uchun ishlatiladi?",
+      "options": [
+        "Props uzatish",
+        "Ota komponentdan bola komponentning DOM elementiga ref uzatish imkonini beradi",
+        "Event uzatish",
+        "State uzatish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в React используется frontRef?",
+      "question_en": "Why is forwardRef used in React?",
+      "options_ru": [
+        "Передача реквизита",
+        "Позволяет передавать ссылку из родительского компонента в элемент DOM дочернего компонента.",
+        "Передача событий",
+        "Государственная передача"
+      ],
+      "options_en": [
+        "Props transfer",
+        "Allows passing a ref from a parent component to a child component's DOM element",
+        "Event transmission",
+        "State transfer"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "React 18 da automatic batching nima?",
+      "options": [
+        "Komponentlarni guruhlash",
+        "Bir nechta state yangilanishlarini bitta re-render ga birlashtirish — event handlerlarda va async larda ham",
+        "Batch import qilish",
+        "Komponentlarni parallel render qilish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое автоматическое пакетирование в React 18?",
+      "question_en": "React 18 da automatic batching nima?",
+      "options_ru": [
+        "Группировка компонентов",
+        "Объединение нескольких обновлений состояния в один повторный рендеринг — как в обработчиках событий, так и в асинхронных программах.",
+        "Пакетный импорт",
+        "Параллельный рендеринг компонентов"
+      ],
+      "options_en": [
+        "Grouping of components",
+        "Combine multiple state updates into a single re-render — both in event handlers and asyncs",
+        "Batch import",
+        "Parallel rendering of components"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "React da custom hook qanday nomlash kerak?",
+      "options": [
+        "hook_ prefiksi bilan",
+        "use prefiksi bilan (masalan: useMyHook)",
+        "my_ prefiksi bilan",
+        "Istalgan nom bilan"
+      ],
+      "answer": 1,
+      "question_ru": "Как назвать пользовательский хук в React?",
+      "question_en": "How to name a custom hook in React?",
+      "options_ru": [
+        "с префиксом «hook_»",
+        "с префиксом использования (например: useMyHook)",
+        "с префиксом my_",
+        "С любым именем"
+      ],
+      "options_en": [
+        "with hook_ prefix",
+        "with use prefix (eg: useMyHook)",
+        "with the my_ prefix",
+        "With any name"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "React da state immutability nima uchun muhim?",
+      "options": [
+        "Kodni qisqartirish",
+        "React state o'zgarishini aniqlash uchun referens taqqoslash ishlatadi; mutatsiya qilinsa o'zgarish aniqlanmaydi",
+        "Performance uchun emas",
+        "Faqat array lar uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Почему неизменность состояния важна в React?",
+      "question_en": "Why is state immutability important in React?",
+      "options_ru": [
+        "Минимизация кода",
+        "React использует сравнение ссылок для обнаружения изменений состояния; если мутировать, изменение невозможно обнаружить",
+        "Не для производительности",
+        "Только для массивов"
+      ],
+      "options_en": [
+        "Code minification",
+        "React uses reference comparison to detect state changes; if mutated, the change is undetectable",
+        "Not for performance",
+        "Only for arrays"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "React da getDerivedStateFromProps nima?",
+      "options": [
+        "Class komponentda props dan state hosil qilish uchun statik lifecycle metod",
+        "Hooks metodi",
+        "Router metodi",
+        "Event handler"
+      ],
+      "answer": 0,
+      "question_ru": "Что такое getDerivedStateFromProps в React?",
+      "question_en": "What is getDerivedStateFromProps in React?",
+      "options_ru": [
+        "Класс — это статический метод жизненного цикла для создания состояния из реквизитов в компоненте.",
+        "Метод крючков",
+        "Метод маршрутизатора",
+        "Обработчик событий"
+      ],
+      "options_en": [
+        "Class is a static lifecycle method for creating state from props in a component",
+        "Hooks method",
+        "Router metodi",
+        "Event handler"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "React da componentDidMount equivalenti hooks da nima?",
+      "options": [
+        "useEffect(() => {})",
+        "useEffect(() => {}, [])",
+        "useMemo(() => {}, [])",
+        "useCallback(() => {}, [])"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое компонентDidMount, эквивалентный хукам в React?",
+      "question_en": "React da componentDidMount equivalenti hooks da nima?",
+      "options_ru": [
+        "useEffect(() => {})",
+        "useEffect(() => {}, [])",
+        "useMemo(() => {}, [])",
+        "useCallback(() => {}, [])"
+      ],
+      "options_en": [
+        "useEffect(() => {})",
+        "useEffect(() => {}, [])",
+        "useMemo(() => {}, [])",
+        "useCallback(() => {}, [])"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "React da Strict Mode nima qiladi?",
+      "options": [
+        "Kodni qattiq qiladi",
+        "Development da qo'shimcha tekshiruvlar o'tkazib, potensial muammolarni aniqlaydi",
+        "Production'ni qattiq qiladi",
+        "Har doim double render qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает строгий режим в React?",
+      "question_en": "What does Strict Mode do in React?",
+      "options_ru": [
+        "Делает код жестким",
+        "Разработчики проведут дополнительные проверки и выявят потенциальные проблемы",
+        "Делает производство плотным",
+        "Har doim double render qiladi"
+      ],
+      "options_en": [
+        "Makes the code rigid",
+        "Development will perform additional checks and identify potential problems",
+        "Makes Production tight",
+        "Har doim double render qiladi"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "React Fiber arxitekturasi nima?",
+      "options": [
+        "React ning fizik arxitekturasi",
+        "React ning incremental rendering mexanizmi — ishni bo'laklarga bo'lib, prioritetlash va to'xtatib-davom ettirish imkoni beradi",
+        "React Native uchun arxitektura",
+        "Server-side rendering"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое архитектура React Fiber?",
+      "question_en": "What is the React Fiber architecture?",
+      "options_ru": [
+        "Физическая архитектура React",
+        "Механизм инкрементного рендеринга React — позволяет разбивать работу на части, расставлять приоритеты и приостанавливать работу.",
+        "Архитектура для React Native",
+        "Серверный рендеринг"
+      ],
+      "options_en": [
+        "React's physical architecture",
+        "React's incremental rendering engine — allows you to break work into chunks, prioritize and pause",
+        "Architecture for React Native",
+        "Server-side rendering"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "React da Concurrent Mode nima imkoniyatlarini beradi?",
+      "options": [
+        "Ko'p thread da ishlash",
+        "UI ni responsive saqlagan holda uzun renderlarni to'xtatib, muhimroq yangilanishlarga ustuvorlik berish",
+        "Parallel komponentlar",
+        "Ko'p sahifali rendering"
+      ],
+      "answer": 1,
+      "question_ru": "Что включает параллельный режим в React?",
+      "question_en": "What does Concurrent Mode enable in React?",
+      "options_ru": [
+        "Многопоточность",
+        "Остановка длительных рендерингов и расстановка приоритетов для более важных обновлений, сохраняя при этом отзывчивость пользовательского интерфейса.",
+        "Параллельные компоненты",
+        "Многостраничный рендеринг"
+      ],
+      "options_en": [
+        "Multithreading",
+        "Stopping long renders and prioritizing more important updates while keeping the UI responsive",
+        "Parallel components",
+        "Multi-page rendering"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "React da useTransition hook nima qiladi?",
+      "options": [
+        "CSS transition boshqarish",
+        "State yangilanishini non-urgent deb belgilab, UI ni bloklamasdan background da yangilash",
+        "Animatsiya yaratish",
+        "Route transition"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает хук useTransition в React?",
+      "question_en": "What does the useTransition hook do in React?",
+      "options_ru": [
+        "Управление переходами CSS",
+        "Обновите состояние в фоновом режиме, не блокируя пользовательский интерфейс, установив для обновления состояния несрочное значение.",
+        "Создать анимацию",
+        "Переход маршрута"
+      ],
+      "options_en": [
+        "CSS transition management",
+        "Update the state in the background without blocking the UI by setting the state update to non-urgent",
+        "Create an animation",
+        "Route transition"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "React da Server Components nima?",
+      "options": [
+        "Backend komponentlari",
+        "Server da render bo'ladigan komponentlar — bundle hajmini kamaytiradi, client-side JS kerak emas",
+        "Node.js komponentlari",
+        "API komponentlari"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое серверные компоненты в React?",
+      "question_en": "What are Server Components in React?",
+      "options_ru": [
+        "Серверные компоненты",
+        "Компоненты, отображаемые на сервере — уменьшают размер пакета, не требуется JS на стороне клиента.",
+        "Компоненты Node.js",
+        "Компоненты API"
+      ],
+      "options_en": [
+        "Backend components",
+        "Server-rendered components — reduces bundle size, no client-side JS needed",
+        "Node.js components",
+        "API components"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "React da Hydration nima?",
+      "options": [
+        "CSS yuklash",
+        "Server-rendered HTML ga event listener lar qo'shib, interaktiv qilish jarayoni",
+        "State yuklash",
+        "Bundle yuklash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое гидратация в React?",
+      "question_en": "React da Hydration nima?",
+      "options_ru": [
+        "Загрузка CSS",
+        "Процесс создания интерактивного HTML-кода, отображаемого на сервере, путем добавления прослушивателей событий.",
+        "Скачать состояние",
+        "Загрузка пакета"
+      ],
+      "options_en": [
+        "Loading CSS",
+        "Server-rendered HTML ga event listener lar qo'shib, interaktiv qilish jarayoni",
+        "Download state",
+        "Bundle loading"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "React da tree shaking qanday qo'llab-quvvatlanadi?",
+      "options": [
+        "Daraxt tuzilmasini optimizatsiya qilish",
+        "ES modules import/export sintaksisi orqali bundler ishlatilmagan kodni chiqarib tashlaydi",
+        "React o'zi qiladi",
+        "Webpack avtomatik qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Как в React поддерживается встряхивание деревьев?",
+      "question_en": "How is tree shaking supported in React?",
+      "options_ru": [
+        "Daraxt tuzilmasini optimizatsiya qilish",
+        "Бандлер исключает неиспользуемый код через синтаксис импорта/экспорта модулей ES.",
+        "React делает это сам",
+        "Webpack делает это автоматически"
+      ],
+      "options_en": [
+        "Tree structure optimization",
+        "Bundler excludes unused code via ES modules import/export syntax",
+        "React does it itself",
+        "Webpack does it automatically"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "React da Render Props pattern nima?",
+      "options": [
+        "Props render qilish",
+        "Funksiyani prop sifatida uzatib, komponent ichida render logikasini ulashish dizayn namunasi",
+        "Komponentni qayta render qilish",
+        "Props optimallashtirish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон Render Props в React?",
+      "question_en": "What is the Render Props pattern in React?",
+      "options_ru": [
+        "Рендеринг реквизита",
+        "Шаблон проектирования для совместного использования логики рендеринга внутри компонента путем передачи функции в качестве реквизита.",
+        "Перерисовать компонент",
+        "Оптимизация реквизита"
+      ],
+      "options_en": [
+        "Render props",
+        "A design pattern for sharing render logic within a component by passing a function as a prop",
+        "Re-render the component",
+        "Prop optimization"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "React da Higher Order Component (HOC) nima?",
+      "options": [
+        "Yuqori darajali komponent",
+        "Komponentni argument sifatida qabul qilib, yangi kengaytirilgan komponent qaytaradigan funksiya",
+        "Parent komponent",
+        "Class komponent"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое компонент высшего порядка (HOC) в React?",
+      "question_en": "What is Higher Order Component (HOC) in React?",
+      "options_ru": [
+        "Компонент высокого уровня",
+        "Функция, которая принимает компонент в качестве аргумента и возвращает новый расширенный компонент.",
+        "Родительский компонент",
+        "Компонент класса"
+      ],
+      "options_en": [
+        "A high-level component",
+        "Komponentni argument sifatida qabul qilib, yangi kengaytirilgan komponent qaytaradigan funksiya",
+        "Parent component",
+        "Class component"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "React da useImperativeHandle hook nima qiladi?",
+      "options": [
+        "Imperativ animatsiya",
+        "forwardRef bilan birgalikda, ota komponentga ref orqali ko'rsatiladigan qiymatni moslashtirish",
+        "Event boshqarish",
+        "State boshqarish"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает хук useImperativeHandle в React?",
+      "question_en": "What does the useImperativeHandle hook do in React?",
+      "options_ru": [
+        "Императивная анимация",
+        "В сочетании с frontRef сопоставьте значение, отображаемое по ссылке, с родительским компонентом.",
+        "Управление событиями",
+        "Государственное управление"
+      ],
+      "options_en": [
+        "Imperative animation",
+        "In combination with forwardRef, match the value displayed by ref to the parent component",
+        "Event management",
+        "State management"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "React 18 da useDeferredValue hook nima qiladi?",
+      "options": [
+        "Qiymatni kechiktirish",
+        "Qiymat yangilanishini kechiktirib, UI ni responsive saqlash — masalan search input uchun",
+        "State kechiktirish",
+        "API so'rovlarni kechiktirish"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает хук useDeferredValue в React 18?",
+      "question_en": "What does the useDeferredValue hook do in React 18?",
+      "options_ru": [
+        "Отсрочка стоимости",
+        "Обеспечение оперативности пользовательского интерфейса за счет задержки обновления значений — например, для ввода при поиске.",
+        "Государственная задержка",
+        "API so'rovlarni kechiktirish"
+      ],
+      "options_en": [
+        "Qiymatni kechiktirish",
+        "Keeping the UI responsive by delaying the value update — for example, for search input",
+        "State delay",
+        "Deferring API requests"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "React da code splitting qanday amalga oshiriladi?",
+      "options": [
+        "Kodni bo'lish",
+        "React.lazy() va dynamic import() orqali komponentlarni alohida bundle larga bo'lish",
+        "Webpack konfiguratsiyasi orqali faqat",
+        "Komponentlarni bo'lish"
+      ],
+      "answer": 1,
+      "question_ru": "Как сделать разделение кода в React?",
+      "question_en": "How to do code splitting in React?",
+      "options_ru": [
+        "Разделить код",
+        "Разделите компоненты на отдельные пакеты, используя React.lazy() и динамический импорт().",
+        "Только через конфигурацию веб-пакета",
+        "Разделите компоненты"
+      ],
+      "options_en": [
+        "Split the code",
+        "Split components into separate bundles using React.lazy() and dynamic import()",
+        "Only through webpack configuration",
+        "Divide the components"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "React da Suspense for Data Fetching nima?",
+      "options": [
+        "Ma'lumot yuklash UI",
+        "Komponent ma'lumot kutayotganda Suspense fallback ko'rsatish — Relay, React Query kabi kutubxonalar qo'llab-quvvatlaydi",
+        "Loading state",
+        "API holati"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое приостановка выборки данных в React?",
+      "question_en": "React da Suspense for Data Fetching nima?",
+      "options_ru": [
+        "Ma'lumot yuklash UI",
+        "Отображение резервного режима приостановки, когда компонент ожидает данных — поддерживается такими библиотеками, как Relay, React Query.",
+        "Состояние загрузки",
+        "Статус API"
+      ],
+      "options_en": [
+        "Data upload UI",
+        "Display Suspense fallback when component is waiting for data — supported by libraries like Relay, React Query",
+        "Loading state",
+        "API status"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "React da startTransition nima qiladi?",
+      "options": [
+        "Animatsiya boshlaydi",
+        "Holat yangilanishini past prioritetli deb belgilaydi — UI ko'rsatishni bloklashdan oldini oladi",
+        "Route transition",
+        "State transition"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает startTransition в React?",
+      "question_en": "What does startTransition do in React?",
+      "options_ru": [
+        "Анимация начинается",
+        "Устанавливает обновлению статуса низкий приоритет — предотвращает блокировку рендеринга пользовательского интерфейса.",
+        "Переход маршрута",
+        "Государственный переход"
+      ],
+      "options_en": [
+        "The animation starts",
+        "Sets status update to low priority — prevents blocking UI rendering",
+        "Route transition",
+        "State transition"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "React da Compound Components pattern nima?",
+      "options": [
+        "Murakkab komponentlar",
+        "Bir-biri bilan ichki state ulashgan komponentlar guruhi (masalan Select + Option)",
+        "HOC pattern",
+        "Context pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон составных компонентов в React?",
+      "question_en": "What is the Compound Components pattern in React?",
+      "options_ru": [
+        "Сложные компоненты",
+        "Группа компонентов, которые имеют общее внутреннее состояние друг с другом (например, Select + Option).",
+        "шаблон HOC",
+        "Шаблон контекста"
+      ],
+      "options_en": [
+        "Complex components",
+        "A group of components that share internal state with each other (eg Select + Option)",
+        "HOC pattern",
+        "Context pattern"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "React da Reconciliation jarayonida Diffing algorithm qanday ishlaydi?",
+      "options": [
+        "To'liq DOM ni solishtiradi",
+        "Tip o'zgarganda to'liq qayta render; bir tip bo'lganda rekursiv solishtirish; ro'yxatlar uchun key ishlatadi",
+        "Faqat o'zgargan elementni topadi",
+        "Parallel solishtirish"
+      ],
+      "answer": 1,
+      "question_ru": "Как работает алгоритм различия во время согласования в React?",
+      "question_en": "How does the Diffing algorithm work during Reconciliation in React?",
+      "options_ru": [
+        "Сравнивает весь DOM",
+        "Полный ререндер при изменении типа; рекурсивное сравнение одного и того же типа; использует ключ для списков",
+        "Находит только измененный элемент",
+        "Параллельное сравнение"
+      ],
+      "options_en": [
+        "Compares the entire DOM",
+        "Full re-render when type changes; recursive comparison when same type; uses key for lists",
+        "Faqat o'zgargan elementni topadi",
+        "Parallel comparison"
+      ]
+    }
   ]
 }

@@ -2,55 +2,1305 @@
   "technology": "Rust",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Rust nima uchun mashhur?","options":["Web dizayn","Xotira xavfsizligi va tezlik — garbage collector holda","Database","AI/ML"],"answer":1},
-    {"id":2,"level":"easy","question":"Rust da o'zgaruvchi qanday e'lon qilinadi?","options":["int x = 5;","var x = 5;","let x = 5;","x := 5"],"answer":2},
-    {"id":3,"level":"easy","question":"Rust da o'zgaruvchi o'zgartirilishi uchun nima kerak?","options":["var kalit so'zi","let mut kalit so'zi","const o'rniga","let bilan oddiy"],"answer":1},
-    {"id":4,"level":"easy","question":"Rust da ownership nima?","options":["Meros","Har bir qiymatning bitta egasi bor — scope tugaganda xotira bo'shatiladi","Reference","Memory"],"answer":1},
-    {"id":5,"level":"easy","question":"Rust da borrowing nima?","options":["Qarz olish","Qiymatni egalik qilmasdan reference orqali ishlatish — & bilan","Pointer","Copy"],"answer":1},
-    {"id":6,"level":"easy","question":"Rust da fn nima uchun?","options":["Finish","Funksiya e'lon qilish: fn my_func() { }","Final","Function namespace"],"answer":1},
-    {"id":7,"level":"easy","question":"Rust da println! makro nima qiladi?","options":["Print line","Konsolga formatlangan matn chiqaradi va yangi qator qo'shadi","Log yozadi","File yozadi"],"answer":1},
-    {"id":8,"level":"easy","question":"Rust da String va &str farqi nima?","options":["Hech qanday farq yo'q","String — owned, heap da; &str — reference, ko'pincha literal — slice","&str owned","String slice"],"answer":1},
-    {"id":9,"level":"easy","question":"Rust da Vec<T> nima?","options":["Vector math","Dinamik o'lchamli, heap da turadigan tipli ro'yxat","Static array","Stack array"],"answer":1},
-    {"id":10,"level":"easy","question":"Rust da match nima uchun?","options":["String match","Pattern matching — exhaustive switch kabi, barcha case lar qoplanishi kerak","Regex match","Compare"],"answer":1},
-    {"id":11,"level":"easy","question":"Rust da Option<T> nima?","options":["Ixtiyoriy tip","Qiymat bo'lishi (Some(T)) yoki bo'lmasligi (None) mumkin — null ga xavfsiz alternativa","Optional value","Maybe type"],"answer":1},
-    {"id":12,"level":"easy","question":"Rust da Result<T, E> nima?","options":["Test natijasi","Ok(T) yoki Err(E) — xato boshqarish uchun xavfsiz qaytarish tipi","Function result","Return type"],"answer":1},
-    {"id":13,"level":"easy","question":"Rust da struct qanday e'lon qilinadi?","options":["struct MyStruct { field: Type }","class MyStruct { }","object MyStruct { }","type MyStruct = { }"],"answer":0},
-    {"id":14,"level":"easy","question":"Rust da enum nima?","options":["Raqamlar to'plami","Bir nechta variant bo'lishi mumkin bo'lgan tip — ma'lumot ham saqlashi mumkin","Constant group","Type alias"],"answer":1},
-    {"id":15,"level":"easy","question":"Rust da cargo nima?","options":["Yuk","Rust paket menejeri va build tool — yangi loyiha, test, build, run","Package manager","Compiler"],"answer":1},
-    {"id":16,"level":"medium","question":"Rust da lifetime nima?","options":["Dastur umri","Reference validligini ta'minlovchi kompilyator tekshiruvi — 'a, 'b kabi belgilar","Memory lifetime","Scope"],"answer":1},
-    {"id":17,"level":"medium","question":"Rust da trait nima?","options":["Xususiyat","Interfeys kabi — metodlar to'plamini belgilaydi, tiplar implement qiladi","Mixin","Abstract class"],"answer":1},
-    {"id":18,"level":"medium","question":"Rust da impl nima uchun?","options":["Implementation","Tip uchun metodlar va trait larni implementatsiya qilish bloki","Import","Interface"],"answer":1},
-    {"id":19,"level":"medium","question":"Rust da generics nima?","options":["Umumiy kod","Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — fn foo<T>(x: T)","Template","Abstract type"],"answer":1},
-    {"id":20,"level":"medium","question":"Rust da ? operatori nima qiladi?","options":["Null tekshirish","Result yoki Option ning Err/None bo'lsa darhol qaytarish — error propagation","Optional chain","Ternary"],"answer":1},
-    {"id":21,"level":"medium","question":"Rust da Box<T> nima uchun?","options":["Box ma'lumot","Heap da saqlash uchun smart pointer — recursive type, trait ob'ektlar uchun","Heap allocation","Container"],"answer":1},
-    {"id":22,"level":"medium","question":"Rust da Rc<T> nima?","options":["Remote connection","Single-thread reference counting — ko'p egalik uchun, shared ownership","Reference count","Smart pointer"],"answer":1},
-    {"id":23,"level":"medium","question":"Rust da Arc<T> nima?","options":["Architecture","Ko'p thread li reference counting — Rc ning thread-safe versiyasi","Atomic reference","Async reference"],"answer":1},
-    {"id":24,"level":"medium","question":"Rust da Mutex<T> nima uchun?","options":["Mutatsiya","Ko'p thread da shared mutable ma'lumot — lock() bilan kirish","Thread safety","Lock type"],"answer":1},
-    {"id":25,"level":"medium","question":"Rust da closure nima?","options":["Funksiyani yopish","Muhitdan o'zgaruvchilarni yutadigan anonim funksiya — |x| x * 2","Lambda","Block"],"answer":1},
-    {"id":26,"level":"medium","question":"Rust da Iterator trait nima beradi?","options":["Loop","next() metodi va map, filter, fold kabi ko'plab metodlar zanjiri","Iterable","Sequence"],"answer":1},
-    {"id":27,"level":"medium","question":"Rust da move closure nima?","options":["Harakat closure","Muhit o'zgaruvchilarini borrow emas, ownership bilan oladi — thread uchun kerak","Move semantic","Owned closure"],"answer":1},
-    {"id":28,"level":"medium","question":"Rust da derive macro nima qiladi?","options":["Derive qilish","#[derive(Debug, Clone, PartialEq)] — trait larni avtomatik implement qilish","Macro derive","Auto implement"],"answer":1},
-    {"id":29,"level":"medium","question":"Rust da pattern destructuring nima?","options":["Destruksiya","let (x, y) = point; match, function args da ham — qiymatlarni ajratish","Unpack","Spread"],"answer":1},
-    {"id":30,"level":"medium","question":"Rust da where clause nima uchun?","options":["Where statement","Generic constraint larni alohida, o'qilishi oson joyda yozish — where T: Display","Constraint clause","Type bound"],"answer":1},
-    {"id":31,"level":"medium","question":"Rust da unsafe nima?","options":["Xavfli kod","Raw pointer, FFI, unsafe trait impl kabi — kompilyator kafolatini chetlab o'tish bloki","Memory unsafe","Low level"],"answer":1},
-    {"id":32,"level":"medium","question":"Rust da type alias nima uchun?","options":["Tip nomi","type Km = u32 — murakkab tipga qisqa nom berish","New type","Typedef"],"answer":1},
-    {"id":33,"level":"medium","question":"Rust da if let nima uchun?","options":["If statement","Bitta pattern uchun match — if let Some(x) = option { ... }","Pattern match","Optional if"],"answer":1},
-    {"id":34,"level":"medium","question":"Rust da while let nima?","options":["While loop","Loop ichida pattern matching — while let Some(x) = iter.next()","Pattern loop","Match loop"],"answer":1},
-    {"id":35,"level":"medium","question":"Rust da from/into trait nima uchun?","options":["Konvertatsiya","Tiplar o'rtasida konvertatsiya — From<T> implement qilsang Into<T> bepul keladi","Type cast","Conversion trait"],"answer":1},
-    {"id":36,"level":"hard","question":"Rust da borrow checker nima qiladi?","options":["Qarz tekshiradi","Compile time da: bir vaqtda faqat bitta mutable yoki ko'p immutable reference — memory safety","Memory check","Pointer check"],"answer":1},
-    {"id":37,"level":"hard","question":"Rust da async/await qanday ishlaydi?","options":["Oddiy async","Future trait asosida — tokio kabi runtime kerak, zero-cost abstraction","Thread async","Coroutine"],"answer":1},
-    {"id":38,"level":"hard","question":"Rust da Pin<T> nima uchun?","options":["Pin element","Future uchun — ob'ektning xotira manzili o'zgarmasligini kafolatlash (self-referential struct)","Memory pin","Pointer pin"],"answer":1},
-    {"id":39,"level":"hard","question":"Rust da zero-cost abstraction nima?","options":["Bepul abstraktsiya","Yuqori darajali konstruksiyalar (iterator, closure) kompilyatsiyada oddiy kod kabi — overhead yo'q","No overhead","Compile optimization"],"answer":1},
-    {"id":40,"level":"hard","question":"Rust da proc macro nima?","options":["Process macro","Kompilyatsiya vaqtida token stream qabul qilib, kod yaratadigan maxsus makro turlari","Procedural macro","Code gen macro"],"answer":1},
-    {"id":41,"level":"hard","question":"Rust da RAII (Resource Acquisition Is Initialization) nima?","options":["Resurs olish","Resurs yutilishi va bo'shatilishi scope bilan bog'liq — Drop trait avtomatik chaqiriladi","Memory management","Destructor"],"answer":1},
-    {"id":42,"level":"hard","question":"Rust da variance nima?","options":["Farq","Generic parametrlar va lifetimeler boshqa tiplarga qanday munosabatda bo'lishi — covariant, invariant, contravariant","Type relation","Generic relation"],"answer":1},
-    {"id":43,"level":"hard","question":"Rust da Send va Sync trait nima?","options":["Yuborish va sinx","Send — tip boshqa thread ga yuborilishi mumkin; Sync — reference ko'p thread da bo'lishi mumkin","Thread trait","Async trait"],"answer":1},
-    {"id":44,"level":"hard","question":"Rust da PhantomData nima uchun?","options":["Xayoliy ma'lumot","Generic parametrni 'ishlatgan' kabi ko'rsatish — type erasure, variance belgilash","Phantom type","Type marker"],"answer":1},
-    {"id":45,"level":"hard","question":"Rust da const generics nima?","options":["Const tip","Generic parametr sifatida compile-time konstantalar — [T; N] kabi","Value generic","Static generic"],"answer":1},
-    {"id":46,"level":"hard","question":"Rust da monomorphization nima?","options":["Bitta morfizm","Generic kod har tip uchun alohida compiled versiyaga aylanadi — zero-cost ammo katta binary","Code gen","Template instantiation"],"answer":1},
-    {"id":47,"level":"hard","question":"Rust da trait object (dyn Trait) nima?","options":["Dinamik dispatch","Vtable orqali runtime dispatch — dynamic polymorphism, Box<dyn Error> kabi","Dynamic type","Abstract trait"],"answer":1},
-    {"id":48,"level":"hard","question":"Rust da Cow<'a, B> nima uchun?","options":["Sigir","Clone-on-Write — kerak bo'lganda clone qiladi, read-only bo'lsa reference saqlaydi","Smart pointer","Lazy clone"],"answer":1},
-    {"id":49,"level":"hard","question":"Rust da no_std nima?","options":["No standard","Standard kutubxonasiz ishlash — embedded, OS kernel kabi resurs cheklangan muhitlar","Minimal Rust","Core only"],"answer":1},
-    {"id":50,"level":"hard","question":"Rust da MIR (Mid-level Intermediate Representation) nima?","options":["Oʻrta daraja","Rustning optimizatsiya va borrow checking uchun ichki oʻrta daraja reprezentatsiyasi","AST turi","Bytecode"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Rust nima uchun mashhur?",
+      "options": [
+        "Web dizayn",
+        "Xotira xavfsizligi va tezlik — garbage collector holda",
+        "Database",
+        "AI/ML"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Rust популярен?",
+      "question_en": "Rust nima uchun mashhur?",
+      "options_ru": [
+        "Веб-дизайн",
+        "Безопасность и скорость памяти — без сборщика мусора",
+        "База данных",
+        "ИИ/МО"
+      ],
+      "options_en": [
+        "Web dizayn",
+        "Memory safety and speed — without a garbage collector",
+        "Database",
+        "AI/ML"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Rust da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "int x = 5;",
+        "var x = 5;",
+        "let x = 5;",
+        "x := 5"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить переменную в Rust?",
+      "question_en": "How to declare a variable in Rust?",
+      "options_ru": [
+        "интервал х = 5;",
+        "вар х = 5;",
+        "пусть х = 5;",
+        "х := 5"
+      ],
+      "options_en": [
+        "int x = 5;",
+        "var x = 5;",
+        "let x = 5;",
+        "x := 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Rust da o'zgaruvchi o'zgartirilishi uchun nima kerak?",
+      "options": [
+        "var kalit so'zi",
+        "let mut kalit so'zi",
+        "const o'rniga",
+        "let bilan oddiy"
+      ],
+      "answer": 1,
+      "question_ru": "Что нужно, чтобы изменить переменную в Rust?",
+      "question_en": "What does it take to change a variable in Rust?",
+      "options_ru": [
+        "ключевое слово var",
+        "пусть ключевое слово mut",
+        "вместо константы",
+        "просто с пусть"
+      ],
+      "options_en": [
+        "var keyword",
+        "let mut keyword",
+        "const o'rniga",
+        "simple with let"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Rust da ownership nima?",
+      "options": [
+        "Meros",
+        "Har bir qiymatning bitta egasi bor — scope tugaganda xotira bo'shatiladi",
+        "Reference",
+        "Memory"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое право собственности в Rust?",
+      "question_en": "What is ownership in Rust?",
+      "options_ru": [
+        "Наследие",
+        "У каждого значения есть один владелец — память освобождается по истечении срока действия области действия.",
+        "Ссылка",
+        "Память"
+      ],
+      "options_en": [
+        "Heritage",
+        "Each value has a single owner — memory is freed when the scope expires",
+        "Reference",
+        "Memory"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Rust da borrowing nima?",
+      "options": [
+        "Qarz olish",
+        "Qiymatni egalik qilmasdan reference orqali ishlatish — & bilan",
+        "Pointer",
+        "Copy"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое заимствование в Rust?",
+      "question_en": "Rust da borrowing nima?",
+      "options_ru": [
+        "Заимствование",
+        "Использование значения по ссылке без его владения — с помощью &",
+        "Указатель",
+        "Копировать"
+      ],
+      "options_en": [
+        "Qarz olish",
+        "Using a value by reference without owning it — with &",
+        "Pointer",
+        "Copy"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Rust da fn nima uchun?",
+      "options": [
+        "Finish",
+        "Funksiya e'lon qilish: fn my_func() { }",
+        "Final",
+        "Function namespace"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужна fn в Rust?",
+      "question_en": "What is fn in Rust for?",
+      "options_ru": [
+        "Готово",
+        "Объявление функции: fn my_func() { }",
+        "Финал",
+        "Пространство имен функций"
+      ],
+      "options_en": [
+        "Finish",
+        "Funksiya e'lon qilish: fn my_func() { }",
+        "Final",
+        "Function namespace"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Rust da println! makro nima qiladi?",
+      "options": [
+        "Print line",
+        "Konsolga formatlangan matn chiqaradi va yangi qator qo'shadi",
+        "Log yozadi",
+        "File yozadi"
+      ],
+      "answer": 1,
+      "question_ru": "println в Rust! что делает макрос?",
+      "question_en": "println in Rust! what does a macro do?",
+      "options_ru": [
+        "Печать строки",
+        "Выводит форматированный текст на консоль и добавляет новую строку",
+        "Записывает журнал",
+        "Записывает файл"
+      ],
+      "options_en": [
+        "Print line",
+        "Outputs formatted text to the console and adds a new line",
+        "Writes a log",
+        "Writes a file"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Rust da String va &str farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "String — owned, heap da; &str — reference, ko'pincha literal — slice",
+        "&str owned",
+        "String slice"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между String и &str в Rust?",
+      "question_en": "What is the difference between String and &str in Rust?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "String — принадлежит, находится в куче; &str — ссылка, часто буквальная — фрагмент",
+        "&str принадлежит",
+        "Срез струны"
+      ],
+      "options_en": [
+        "There is no difference",
+        "String — owned, on heap; &str — reference, often literal — slice",
+        "&str owned",
+        "String slice"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Rust da Vec<T> nima?",
+      "options": [
+        "Vector math",
+        "Dinamik o'lchamli, heap da turadigan tipli ro'yxat",
+        "Static array",
+        "Stack array"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Vec<T> в Rust?",
+      "question_en": "What is Vec<T> in Rust?",
+      "options_ru": [
+        "Векторная математика",
+        "Список динамически изменяемых типов с кучей",
+        "Статический массив",
+        "Массив стека"
+      ],
+      "options_en": [
+        "Vector math",
+        "A list of dynamically sized, heaped types",
+        "Static array",
+        "Stack array"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Rust da match nima uchun?",
+      "options": [
+        "String match",
+        "Pattern matching — exhaustive switch kabi, barcha case lar qoplanishi kerak",
+        "Regex match",
+        "Compare"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем выполнять сопоставление в Rust?",
+      "question_en": "Why match in Rust?",
+      "options_ru": [
+        "Строковое совпадение",
+        "Сопоставление шаблонов — как и при исчерпывающем переключении, необходимо охватить все случаи.",
+        "Соответствие регулярному выражению",
+        "Сравнить"
+      ],
+      "options_en": [
+        "String match",
+        "Pattern matching — like exhaustive switch, all cases must be covered",
+        "Regex match",
+        "Compare"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Rust da Option<T> nima?",
+      "options": [
+        "Ixtiyoriy tip",
+        "Qiymat bo'lishi (Some(T)) yoki bo'lmasligi (None) mumkin — null ga xavfsiz alternativa",
+        "Optional value",
+        "Maybe type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Option<T> в Rust?",
+      "question_en": "What is Option<T> in Rust?",
+      "options_ru": [
+        "Дополнительный тип",
+        "Значение может быть (Some(T)) или нет (None) — безопасная альтернатива нулю.",
+        "Необязательное значение",
+        "Может быть, введите"
+      ],
+      "options_en": [
+        "Optional type",
+        "The value can be (Some(T)) or not (None) — a safe alternative to null",
+        "Optional value",
+        "Maybe type"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Rust da Result<T, E> nima?",
+      "options": [
+        "Test natijasi",
+        "Ok(T) yoki Err(E) — xato boshqarish uchun xavfsiz qaytarish tipi",
+        "Function result",
+        "Return type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Result<T, E> в Rust?",
+      "question_en": "What is Result<T, E> in Rust?",
+      "options_ru": [
+        "Результат теста",
+        "Ok(T) или Err(E) — безопасный тип возврата для обработки ошибок.",
+        "Результат функции",
+        "Тип возврата"
+      ],
+      "options_en": [
+        "Test result",
+        "Ok(T) or Err(E) is a safe return type for error handling",
+        "Function result",
+        "Return type"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Rust da struct qanday e'lon qilinadi?",
+      "options": [
+        "struct MyStruct { field: Type }",
+        "class MyStruct { }",
+        "object MyStruct { }",
+        "type MyStruct = { }"
+      ],
+      "answer": 0,
+      "question_ru": "Как объявить структуру в Rust?",
+      "question_en": "How to declare a struct in Rust?",
+      "options_ru": [
+        "struct MyStruct {поле: Тип}",
+        "класс MyStruct { }",
+        "объект MyStruct { }",
+        "введите MyStruct = { }"
+      ],
+      "options_en": [
+        "struct MyStruct { field: Type }",
+        "class MyStruct { }",
+        "object MyStruct { }",
+        "type MyStruct = { }"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Rust da enum nima?",
+      "options": [
+        "Raqamlar to'plami",
+        "Bir nechta variant bo'lishi mumkin bo'lgan tip — ma'lumot ham saqlashi mumkin",
+        "Constant group",
+        "Type alias"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перечисление в Rust?",
+      "question_en": "What is an enum in Rust?",
+      "options_ru": [
+        "Набор цифр",
+        "Тип, который может иметь несколько вариантов, также может хранить данные.",
+        "Постоянная группа",
+        "Введите псевдоним"
+      ],
+      "options_en": [
+        "A set of numbers",
+        "A type that can have multiple variants — can also store data",
+        "Constant group",
+        "Type alias"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Rust da cargo nima?",
+      "options": [
+        "Yuk",
+        "Rust paket menejeri va build tool — yangi loyiha, test, build, run",
+        "Package manager",
+        "Compiler"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое груз в Rust?",
+      "question_en": "What is cargo in Rust?",
+      "options_ru": [
+        "Загрузить",
+        "Менеджер пакетов и инструмент сборки Rust — новый проект, тестирование, сборка, запуск",
+        "Менеджер пакетов",
+        "Компилятор"
+      ],
+      "options_en": [
+        "Load",
+        "Rust package manager and build tool — new project, test, build, run",
+        "Package manager",
+        "Compiler"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Rust da lifetime nima?",
+      "options": [
+        "Dastur umri",
+        "Reference validligini ta'minlovchi kompilyator tekshiruvi — 'a, 'b kabi belgilar",
+        "Memory lifetime",
+        "Scope"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое время жизни в Rust?",
+      "question_en": "Rust da lifetime nima?",
+      "options_ru": [
+        "Срок действия программы",
+        "Компилятор проверяет правильность ссылки — такие символы, как «a», «b».",
+        "Срок службы памяти",
+        "Область применения"
+      ],
+      "options_en": [
+        "Program lifetime",
+        "Compiler check for reference validity — symbols like 'a, 'b'",
+        "Memory lifetime",
+        "Scope"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Rust da trait nima?",
+      "options": [
+        "Xususiyat",
+        "Interfeys kabi — metodlar to'plamini belgilaydi, tiplar implement qiladi",
+        "Mixin",
+        "Abstract class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое черта в Rust?",
+      "question_en": "What is a trait in Rust?",
+      "options_ru": [
+        "Особенность",
+        "Как интерфейс — определяет набор методов, типы реализуют",
+        "Миксин",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "Feature",
+        "Like an interface — defines a set of methods, types implement",
+        "Mixin",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Rust da impl nima uchun?",
+      "options": [
+        "Implementation",
+        "Tip uchun metodlar va trait larni implementatsiya qilish bloki",
+        "Import",
+        "Interface"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать Rust?",
+      "question_en": "Why impl in Rust?",
+      "options_ru": [
+        "Выполнение",
+        "Блок, реализующий методы и свойства типа.",
+        "Импорт",
+        "Интерфейс"
+      ],
+      "options_en": [
+        "Implementation",
+        "A block that implements methods and traits for a type",
+        "Import",
+        "Interface"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Rust da generics nima?",
+      "options": [
+        "Umumiy kod",
+        "Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — fn foo<T>(x: T)",
+        "Template",
+        "Abstract type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое дженерики в Rust?",
+      "question_en": "What are generics in Rust?",
+      "options_ru": [
+        "Общий код",
+        "Многоразовая функция/тип с параметрами типа — fn foo<T>(x: T).",
+        "Шаблон",
+        "Абстрактный тип"
+      ],
+      "options_en": [
+        "General code",
+        "Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — fn foo<T>(x: T)",
+        "Template",
+        "Abstract type"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Rust da ? operatori nima qiladi?",
+      "options": [
+        "Null tekshirish",
+        "Result yoki Option ning Err/None bo'lsa darhol qaytarish — error propagation",
+        "Optional chain",
+        "Ternary"
+      ],
+      "answer": 1,
+      "question_ru": "В Русте? Что делает оператор?",
+      "question_en": "In Rust ? What does the operator do?",
+      "options_ru": [
+        "Нулевая проверка",
+        "Немедленный возврат, если результат или опция — Err/None — распространение ошибки.",
+        "Дополнительная цепочка",
+        "тройной"
+      ],
+      "options_en": [
+        "Null check",
+        "Immediate return if Result or Option is Err/None — error propagation",
+        "Optional chain",
+        "Ternary"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Rust da Box<T> nima uchun?",
+      "options": [
+        "Box ma'lumot",
+        "Heap da saqlash uchun smart pointer — recursive type, trait ob'ektlar uchun",
+        "Heap allocation",
+        "Container"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем Box<T> в Rust?",
+      "question_en": "Why Box<T> in Rust?",
+      "options_ru": [
+        "Информация о коробке",
+        "Интеллектуальный указатель для хранения в куче — для объектов рекурсивного типа, свойств.",
+        "Распределение кучи",
+        "Контейнер"
+      ],
+      "options_en": [
+        "Box information",
+        "Smart pointer to store in Heap — for recursive type, trait objects",
+        "Heap allocation",
+        "Container"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Rust da Rc<T> nima?",
+      "options": [
+        "Remote connection",
+        "Single-thread reference counting — ko'p egalik uchun, shared ownership",
+        "Reference count",
+        "Smart pointer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Rc<T> в Rust?",
+      "question_en": "What is Rc<T> in Rust?",
+      "options_ru": [
+        "Удаленное подключение",
+        "Однопоточный подсчет ссылок — для множественного владения, совместного владения",
+        "Количество ссылок",
+        "Умный указатель"
+      ],
+      "options_en": [
+        "Remote connection",
+        "Single-thread reference counting — for multiple ownership, shared ownership",
+        "Reference count",
+        "Smart pointer"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Rust da Arc<T> nima?",
+      "options": [
+        "Architecture",
+        "Ko'p thread li reference counting — Rc ning thread-safe versiyasi",
+        "Atomic reference",
+        "Async reference"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Arc<T> в Rust?",
+      "question_en": "What is Arc<T> in Rust?",
+      "options_ru": [
+        "Архитектура",
+        "Многопоточный подсчет ссылок — это потокобезопасная версия Rc.",
+        "Атомная ссылка",
+        "Асинхронная ссылка"
+      ],
+      "options_en": [
+        "Architecture",
+        "Multi-threaded reference counting is a thread-safe version of Rc",
+        "Atomic reference",
+        "Async reference"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Rust da Mutex<T> nima uchun?",
+      "options": [
+        "Mutatsiya",
+        "Ko'p thread da shared mutable ma'lumot — lock() bilan kirish",
+        "Thread safety",
+        "Lock type"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Mutex<T> в Rust?",
+      "question_en": "Why Mutex<T> in Rust?",
+      "options_ru": [
+        "Мутация",
+        "Общие изменяемые данные в нескольких потоках – доступ с помощью lock()",
+        "Безопасность резьбы",
+        "Тип замка"
+      ],
+      "options_en": [
+        "Mutation",
+        "Shared mutable data in multiple threads - access with lock()",
+        "Thread safety",
+        "Lock type"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Rust da closure nima?",
+      "options": [
+        "Funksiyani yopish",
+        "Muhitdan o'zgaruvchilarni yutadigan anonim funksiya — |x| x * 2",
+        "Lambda",
+        "Block"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое замыкание в Rust?",
+      "question_en": "What is a closure in Rust?",
+      "options_ru": [
+        "Функция закрытия",
+        "Анонимная функция, поглощающая переменные из окружения, — это |x| х * 2",
+        "Лямбда",
+        "Блокировать"
+      ],
+      "options_en": [
+        "Close function",
+        "An anonymous function that swallows variables from the environment is |x| x * 2",
+        "Lambda",
+        "Block"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Rust da Iterator trait nima beradi?",
+      "options": [
+        "Loop",
+        "next() metodi va map, filter, fold kabi ko'plab metodlar zanjiri",
+        "Iterable",
+        "Sequence"
+      ],
+      "answer": 1,
+      "question_ru": "Что дает черта Iterator в Rust?",
+      "question_en": "What does the Iterator trait provide in Rust?",
+      "options_ru": [
+        "Петля",
+        "метод next() и цепочка из многих методов, таких как карта, фильтр, сгиб",
+        "Итерируемый",
+        "Последовательность"
+      ],
+      "options_en": [
+        "Loop",
+        "next() method and a chain of many methods such as map, filter, fold",
+        "Iterable",
+        "Sequence"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Rust da move closure nima?",
+      "options": [
+        "Harakat closure",
+        "Muhit o'zgaruvchilarini borrow emas, ownership bilan oladi — thread uchun kerak",
+        "Move semantic",
+        "Owned closure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое закрытие хода в Rust?",
+      "question_en": "What is move closure in Rust?",
+      "options_ru": [
+        "Закрытие движения",
+        "Получает переменные среды с владением, а не заимствованием — необходимо для потока",
+        "Переместить семантику",
+        "Собственное закрытие"
+      ],
+      "options_en": [
+        "Movement closure",
+        "Gets environment variables with ownership, not borrow — needed for thread",
+        "Move semantic",
+        "Owned closure"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Rust da derive macro nima qiladi?",
+      "options": [
+        "Derive qilish",
+        "#[derive(Debug, Clone, PartialEq)] — trait larni avtomatik implement qilish",
+        "Macro derive",
+        "Auto implement"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает макрос Derivate в Rust?",
+      "question_en": "What does the derive macro do in Rust?",
+      "options_ru": [
+        "Вывести",
+        "#[derive(Debug, Clone, PartialEq)] — автоматическая реализация трейтов",
+        "Макропроизводная",
+        "Автоматическая реализация"
+      ],
+      "options_en": [
+        "Derive",
+        "#[derive(Debug, Clone, PartialEq)] — automatic implementation of traits",
+        "Macro derivative",
+        "Auto implement"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Rust da pattern destructuring nima?",
+      "options": [
+        "Destruksiya",
+        "let (x, y) = point; match, function args da ham — qiymatlarni ajratish",
+        "Unpack",
+        "Spread"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое деструктуризация шаблонов в Rust?",
+      "question_en": "Rust da pattern destructuring nima?",
+      "options_ru": [
+        "Разрушение",
+        "пусть (x, y) = точка; совпадение, также в функции args — разделение значений",
+        "Распаковать",
+        "Распространение"
+      ],
+      "options_en": [
+        "Destruction",
+        "let (x, y) = point; match, also in function args — separating values",
+        "Unpack",
+        "Spread"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Rust da where clause nima uchun?",
+      "options": [
+        "Where statement",
+        "Generic constraint larni alohida, o'qilishi oson joyda yozish — where T: Display",
+        "Constraint clause",
+        "Type bound"
+      ],
+      "answer": 1,
+      "question_ru": "Почему предложениеwhere в Rust?",
+      "question_en": "Why the where clause in Rust?",
+      "options_ru": [
+        "Где заявление",
+        "Запишите общие ограничения в отдельном, удобном для чтения месте, где T: Display.",
+        "Ограничительная оговорка",
+        "Тип связан"
+      ],
+      "options_en": [
+        "Where statement",
+        "Write generic constraints in a separate, easy-to-read place — where T: Display",
+        "Constraint clause",
+        "Type bound"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Rust da unsafe nima?",
+      "options": [
+        "Xavfli kod",
+        "Raw pointer, FFI, unsafe trait impl kabi — kompilyator kafolatini chetlab o'tish bloki",
+        "Memory unsafe",
+        "Low level"
+      ],
+      "answer": 1,
+      "question_ru": "Что небезопасно в Rust?",
+      "question_en": "What is unsafe in Rust?",
+      "options_ru": [
+        "Опасный код",
+        "Как и необработанный указатель, FFI, реализация небезопасной черты — компилятор гарантирует обход блока",
+        "Память небезопасна",
+        "Низкий уровень"
+      ],
+      "options_en": [
+        "Dangerous code",
+        "Like raw pointer, FFI, unsafe trait impl — compiler guarantee bypass block",
+        "Memory unsafe",
+        "Low level"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Rust da type alias nima uchun?",
+      "options": [
+        "Tip nomi",
+        "type Km = u32 — murakkab tipga qisqa nom berish",
+        "New type",
+        "Typedef"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем вводить псевдоним в Rust?",
+      "question_en": "Rust da type alias nima uchun?",
+      "options_ru": [
+        "Введите имя",
+        "тип Km = u32 — короткое имя сложного типа",
+        "Новый тип",
+        "Типопределение"
+      ],
+      "options_en": [
+        "Type name",
+        "type Km = u32 — murakkab tipga qisqa nom berish",
+        "New type",
+        "Typedef"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Rust da if let nima uchun?",
+      "options": [
+        "If statement",
+        "Bitta pattern uchun match — if let Some(x) = option { ... }",
+        "Pattern match",
+        "Optional if"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем, если впустить Rust?",
+      "question_en": "Why if let in Rust?",
+      "options_ru": [
+        "Если заявление",
+        "Соответствует одному шаблону — if let Some(x) = option { ... }",
+        "Соответствие шаблону",
+        "Необязательно, если"
+      ],
+      "options_en": [
+        "If statement",
+        "Match for one pattern — if let Some(x) = option { ... }",
+        "Pattern match",
+        "Optional if"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Rust da while let nima?",
+      "options": [
+        "While loop",
+        "Loop ichida pattern matching — while let Some(x) = iter.next()",
+        "Pattern loop",
+        "Match loop"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое время в Rust?",
+      "question_en": "What is a while let in Rust?",
+      "options_ru": [
+        "Пока цикл",
+        "Сопоставление шаблонов в цикле — while let Some(x) = iter.next()",
+        "Петля узора",
+        "Матч-петля"
+      ],
+      "options_en": [
+        "While loop",
+        "Pattern matching in a loop — while let Some(x) = iter.next()",
+        "Pattern loop",
+        "Match loop"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Rust da from/into trait nima uchun?",
+      "options": [
+        "Konvertatsiya",
+        "Tiplar o'rtasida konvertatsiya — From<T> implement qilsang Into<T> bepul keladi",
+        "Type cast",
+        "Conversion trait"
+      ],
+      "answer": 1,
+      "question_ru": "Почему из/в трейт в Rust?",
+      "question_en": "Why from/into trait in Rust?",
+      "options_ru": [
+        "Конверсия",
+        "Преобразование между типами. Если вы реализуете From<T> , Into<T> предоставляется бесплатно.",
+        "Тип актерского состава",
+        "Conversion trait"
+      ],
+      "options_en": [
+        "Conversion",
+        "Conversion between types — If you implement From<T> , Into<T> comes for free",
+        "Type cast",
+        "Conversion trait"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Rust da borrow checker nima qiladi?",
+      "options": [
+        "Qarz tekshiradi",
+        "Compile time da: bir vaqtda faqat bitta mutable yoki ko'p immutable reference — memory safety",
+        "Memory check",
+        "Pointer check"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает проверка заимствований в Rust?",
+      "question_en": "What does a borrow checker do in Rust?",
+      "options_ru": [
+        "Проверка долга",
+        "Во время компиляции: только одна изменяемая ссылка или несколько неизменяемых ссылок одновременно — безопасность памяти.",
+        "Проверка памяти",
+        "Проверка указателя"
+      ],
+      "options_en": [
+        "Debt checks",
+        "At compile time: only one mutable or many immutable references at a time — memory safety",
+        "Memory check",
+        "Pointer check"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Rust da async/await qanday ishlaydi?",
+      "options": [
+        "Oddiy async",
+        "Future trait asosida — tokio kabi runtime kerak, zero-cost abstraction",
+        "Thread async",
+        "Coroutine"
+      ],
+      "answer": 1,
+      "question_ru": "Как работает async/await в Rust?",
+      "question_en": "How does async/await work in Rust?",
+      "options_ru": [
+        "Простой асинхронный",
+        "На основе будущей черты - необходима среда выполнения, подобная Токио, абстракция с нулевой стоимостью.",
+        "Асинхронный поток",
+        "Сопрограмма"
+      ],
+      "options_en": [
+        "Simple async",
+        "Based on future trait - runtime like Tokyo is needed, zero-cost abstraction",
+        "Thread async",
+        "Coroutine"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Rust da Pin<T> nima uchun?",
+      "options": [
+        "Pin element",
+        "Future uchun — ob'ektning xotira manzili o'zgarmasligini kafolatlash (self-referential struct)",
+        "Memory pin",
+        "Pointer pin"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем Pin<T> в Rust?",
+      "question_en": "Why Pin<T> in Rust?",
+      "options_ru": [
+        "Контактный элемент",
+        "For Future — гарантия того, что адрес объекта в памяти не изменится (самореферентная структура)",
+        "Контакт памяти",
+        "Указательный штифт"
+      ],
+      "options_en": [
+        "Pin element",
+        "Future uchun — ob'ektning xotira manzili o'zgarmasligini kafolatlash (self-referential struct)",
+        "Memory pin",
+        "Pointer pin"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Rust da zero-cost abstraction nima?",
+      "options": [
+        "Bepul abstraktsiya",
+        "Yuqori darajali konstruksiyalar (iterator, closure) kompilyatsiyada oddiy kod kabi — overhead yo'q",
+        "No overhead",
+        "Compile optimization"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое абстракция с нулевой стоимостью в Rust?",
+      "question_en": "Rust da zero-cost abstraction nima?",
+      "options_ru": [
+        "Бесплатная абстракция",
+        "Конструкции высокого уровня (итератор, замыкание) компилируются как обычный код — без накладных расходов.",
+        "Никаких накладных расходов",
+        "Компиляция оптимизации"
+      ],
+      "options_en": [
+        "Free abstraction",
+        "High-level constructs (iterator, closure) compile like normal code — no overhead",
+        "No overhead",
+        "Compile optimization"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Rust da proc macro nima?",
+      "options": [
+        "Process macro",
+        "Kompilyatsiya vaqtida token stream qabul qilib, kod yaratadigan maxsus makro turlari",
+        "Procedural macro",
+        "Code gen macro"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое макрос proc в Rust?",
+      "question_en": "What is a proc macro in Rust?",
+      "options_ru": [
+        "Макрос процесса",
+        "Специальные типы макросов, которые генерируют код, получая поток токенов во время компиляции.",
+        "Процедурный макрос",
+        "Макрос кодового гена"
+      ],
+      "options_en": [
+        "Process macro",
+        "Special types of macros that generate code by receiving a token stream at compile time",
+        "Procedural macro",
+        "Code gene macro"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Rust da RAII (Resource Acquisition Is Initialization) nima?",
+      "options": [
+        "Resurs olish",
+        "Resurs yutilishi va bo'shatilishi scope bilan bog'liq — Drop trait avtomatik chaqiriladi",
+        "Memory management",
+        "Destructor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое RAII (приобретение ресурсов — это инициализация) в Rust?",
+      "question_en": "What is RAII (Resource Acquisition Is Initialization) in Rust?",
+      "options_ru": [
+        "Приобретение ресурсов",
+        "Прием и выпуск ресурсов зависят от области действия — признак Drop активируется автоматически.",
+        "Управление памятью",
+        "Деструктор"
+      ],
+      "options_en": [
+        "Resource acquisition",
+        "Resurs yutilishi va bo'shatilishi scope bilan bog'liq — Drop trait avtomatik chaqiriladi",
+        "Memory management",
+        "Destructor"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Rust da variance nima?",
+      "options": [
+        "Farq",
+        "Generic parametrlar va lifetimeler boshqa tiplarga qanday munosabatda bo'lishi — covariant, invariant, contravariant",
+        "Type relation",
+        "Generic relation"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое дисперсия в Rust?",
+      "question_en": "What is variance in Rust?",
+      "options_ru": [
+        "Разница",
+        "Как общие параметры и время жизни связаны с другими типами — ковариантными, инвариантными, контравариантными.",
+        "Type relation",
+        "Родовое отношение"
+      ],
+      "options_en": [
+        "The difference",
+        "How generic parameters and lifetimes relate to other types — covariant, invariant, contravariant",
+        "Type relation",
+        "Generic relation"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Rust da Send va Sync trait nima?",
+      "options": [
+        "Yuborish va sinx",
+        "Send — tip boshqa thread ga yuborilishi mumkin; Sync — reference ko'p thread da bo'lishi mumkin",
+        "Thread trait",
+        "Async trait"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция «Отправка и синхронизация» в Rust?",
+      "question_en": "Rust da Send va Sync trait nima?",
+      "options_ru": [
+        "Отправить и синхронизировать",
+        "Отправить — тип можно отправить в другой поток; Синхронизация — ссылка может быть в нескольких потоках",
+        "Характеристика резьбы",
+        "Асинхронная черта"
+      ],
+      "options_en": [
+        "Send and synch",
+        "Send — type can be sent to another thread; Sync — reference can be in multiple threads",
+        "Thread trait",
+        "Async trait"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Rust da PhantomData nima uchun?",
+      "options": [
+        "Xayoliy ma'lumot",
+        "Generic parametrni 'ishlatgan' kabi ko'rsatish — type erasure, variance belgilash",
+        "Phantom type",
+        "Type marker"
+      ],
+      "answer": 1,
+      "question_ru": "Почему PhantomData в Rust?",
+      "question_en": "Why PhantomData in Rust?",
+      "options_ru": [
+        "Вымышленная информация",
+        "Указание общего параметра как «используемого» — стирание типа, дисперсия",
+        "Фантомный тип",
+        "Тип маркера"
+      ],
+      "options_en": [
+        "Fictitious information",
+        "Generic parametrni 'ishlatgan' kabi ko'rsatish — type erasure, variance belgilash",
+        "Phantom type",
+        "Type marker"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Rust da const generics nima?",
+      "options": [
+        "Const tip",
+        "Generic parametr sifatida compile-time konstantalar — [T; N] kabi",
+        "Value generic",
+        "Static generic"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое константные дженерики в Rust?",
+      "question_en": "What are const generics in Rust?",
+      "options_ru": [
+        "Тип константы",
+        "Константы времени компиляции как общие параметры — [T; как Н].",
+        "Общее значение",
+        "Статический универсальный"
+      ],
+      "options_en": [
+        "Const type",
+        "Compile-time constants as generic parameters — [T; like N].",
+        "Value generic",
+        "Static generic"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Rust da monomorphization nima?",
+      "options": [
+        "Bitta morfizm",
+        "Generic kod har tip uchun alohida compiled versiyaga aylanadi — zero-cost ammo katta binary",
+        "Code gen",
+        "Template instantiation"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое мономорфизация в Rust?",
+      "question_en": "What is monomorphization in Rust?",
+      "options_ru": [
+        "Один морфизм",
+        "Общий код становится отдельной скомпилированной версией для каждого типа — с нулевой стоимостью, но большим двоичным кодом.",
+        "Генерация кода",
+        "Создание экземпляра шаблона"
+      ],
+      "options_en": [
+        "A single morphism",
+        "Generic code becomes a separate compiled version for each type — zero-cost but large binary",
+        "Code gen",
+        "Template instantiation"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Rust da trait object (dyn Trait) nima?",
+      "options": [
+        "Dinamik dispatch",
+        "Vtable orqali runtime dispatch — dynamic polymorphism, Box<dyn Error> kabi",
+        "Dynamic type",
+        "Abstract trait"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое объект типажа (dyn Trait) в Rust?",
+      "question_en": "What is a trait object (dyn Trait) in Rust?",
+      "options_ru": [
+        "Динамическая отправка",
+        "Отправка во время выполнения через vtable — динамический полиморфизм, например Box<dyn Error>",
+        "Динамический тип",
+        "Абстрактная черта"
+      ],
+      "options_en": [
+        "Dinamik dispatch",
+        "Runtime dispatch via vtable — dynamic polymorphism, like Box<dyn Error>",
+        "Dynamic type",
+        "Abstract trait"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Rust da Cow<'a, B> nima uchun?",
+      "options": [
+        "Sigir",
+        "Clone-on-Write — kerak bo'lganda clone qiladi, read-only bo'lsa reference saqlaydi",
+        "Smart pointer",
+        "Lazy clone"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Cow<'a, B> в Rust?",
+      "question_en": "Why Cow<'a, B> in Rust?",
+      "options_ru": [
+        "Корова",
+        "Клонирование при записи — клонирует при необходимости, сохраняет ссылку, когда она доступна только для чтения.",
+        "Умный указатель",
+        "Ленивый клон"
+      ],
+      "options_en": [
+        "A cow",
+        "Clone-on-Write — clones when needed, saves reference when read-only",
+        "Smart pointer",
+        "Lazy clone"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Rust da no_std nima?",
+      "options": [
+        "No standard",
+        "Standard kutubxonasiz ishlash — embedded, OS kernel kabi resurs cheklangan muhitlar",
+        "Minimal Rust",
+        "Core only"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое no_std в Rust?",
+      "question_en": "What is no_std in Rust?",
+      "options_ru": [
+        "Нет стандарта",
+        "Работа без стандартной библиотеки — среды с ограниченными ресурсами, такие как встроенное ядро ОС",
+        "Минимальная ржавчина",
+        "Только ядро"
+      ],
+      "options_en": [
+        "No standard",
+        "Working without a standard library - resource-limited environments such as embedded, OS kernel",
+        "Minimal Rust",
+        "Core only"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Rust da MIR (Mid-level Intermediate Representation) nima?",
+      "options": [
+        "Oʻrta daraja",
+        "Rustning optimizatsiya va borrow checking uchun ichki oʻrta daraja reprezentatsiyasi",
+        "AST turi",
+        "Bytecode"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое MIR (промежуточное представление среднего уровня) в Rust?",
+      "question_en": "Rust da MIR (Mid-level Intermediate Representation) nima?",
+      "options_ru": [
+        "Средний уровень",
+        "Внутреннее представление среднего уровня Rust для оптимизации и проверки заимствований.",
+        "Тип АСТ",
+        "Байт-код"
+      ],
+      "options_en": [
+        "Oʻrta daraja",
+        "Rust's internal middle-level representation for optimization and borrow checking",
+        "AST type",
+        "Bytecode"
+      ]
+    }
   ]
 }

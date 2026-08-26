@@ -2,55 +2,1305 @@
   "technology": "Elixir",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Elixir nima?","options":["JavaScript turi","Erlang VM (BEAM) da ishlaydigan funksional, concurrent dasturlash tili","Database tili","CSS preprocessor"],"answer":1},
-    {"id":2,"level":"easy","question":"Elixir da IO.puts nima qiladi?","options":["Print file","Konsolga matn chiqaradi va yangi qator qo'shadi","Debug log","Error log"],"answer":1},
-    {"id":3,"level":"easy","question":"Elixir da o'zgaruvchi qanday e'lon qilinadi?","options":["var x = 5","int x = 5","x = 5","let x = 5"],"answer":2},
-    {"id":4,"level":"easy","question":"Elixir da atom nima?","options":["Atom element","Konstantа nomi — :ok, :error, :hello — qiymati o'zi","Symbol","Constant"],"answer":1},
-    {"id":5,"level":"easy","question":"Elixir da tuple nima?","options":["Ro'yxat","Belgilangan elementlar to'plami — {:ok, value}, {:error, reason}","Array","Fixed list"],"answer":1},
-    {"id":6,"level":"easy","question":"Elixir da list nima?","options":["Array","Linked list — [1, 2, 3], head | tail pattern bilan","Dynamic array","Tuple"],"answer":1},
-    {"id":7,"level":"easy","question":"Elixir da pattern matching nima?","options":["String match","= operatori orqali chap va o'ng tomonni moslashtirish — {:ok, val} = result","Assignment","Bind"],"answer":1},
-    {"id":8,"level":"easy","question":"Elixir da def nima uchun?","options":["Definition","Public funksiya e'lon qilish","Variable define","Data define"],"answer":1},
-    {"id":9,"level":"easy","question":"Elixir da defp nima farq qiladi?","options":["Default private","Private funksiya — faqat modul ichida kirish mumkin","Private def","Module private"],"answer":1},
-    {"id":10,"level":"easy","question":"Elixir da |> (pipe) operator nima qiladi?","options":["Pipe","Chap qiymatni o'ng funksiyaning birinchi argumentiga uzatadi — zanjir hosil qilish","Redirect","Arrow"],"answer":1},
-    {"id":11,"level":"easy","question":"Elixir da Map nima?","options":["Xarita","Kalit-qiymat juftliklari — %{key: value} yoki %{\"key\" => value}","Dictionary","Hash"],"answer":1},
-    {"id":12,"level":"easy","question":"Elixir da defmodule nima uchun?","options":["Module define","Modul e'lon qilish — kodni tashkil qilish birlig","Module keyword","Namespace"],"answer":1},
-    {"id":13,"level":"easy","question":"Elixir da immutability nima?","options":["O'zgaruvchan","Barcha ma'lumotlar o'zgarmas — yangi qiymat yangi o'zgaruvchi","Mutable","Constant"],"answer":1},
-    {"id":14,"level":"easy","question":"Elixir da if nima qiladi?","options":["If statement","Shart ifodasi — do/else bloki bilan","Condition","Flow control"],"answer":1},
-    {"id":15,"level":"easy","question":"Elixir da Enum.map nima?","options":["Map yaratish","Kolleksiya elementlarini transformatsiya qiladi","Hash map","Element select"],"answer":1},
-    {"id":16,"level":"medium","question":"Elixir da process nima?","options":["OS process","BEAM virtual machine lightweight process — juda arzon, millionlab bo'lishi mumkin","Thread","Task"],"answer":1},
-    {"id":17,"level":"medium","question":"Elixir da spawn nima uchun?","options":["Yaratish","Yangi process yaratish — spawn(fn -> ... end)","Fork","Thread create"],"answer":1},
-    {"id":18,"level":"medium","question":"Elixir da send va receive nima uchun?","options":["Network send/receive","Processlar o'rtasida message passing — send(pid, message)","Message queue","IPC"],"answer":1},
-    {"id":19,"level":"medium","question":"Elixir da GenServer nima?","options":["Generic server","OTP — stateful server process — init, handle_call, handle_cast, handle_info","Web server","Process server"],"answer":1},
-    {"id":20,"level":"medium","question":"Elixir da Supervisor nima?","options":["Nazoratchi","Process monitoring — ishlamay qolgan processlarni qayta ishga tushirish","Process manager","Error handler"],"answer":1},
-    {"id":21,"level":"medium","question":"Elixir da OTP nima?","options":["One Time Password","Open Telecom Platform — fault-tolerant tizimlar uchun Erlang/Elixir framework","Platform","Toolkit"],"answer":1},
-    {"id":22,"level":"medium","question":"Elixir da Agent nima?","options":["Vakil","Oddiy stateful process — GenServer dan sodda, bitta qiymat saqlash uchun","Simple server","State holder"],"answer":1},
-    {"id":23,"level":"medium","question":"Elixir da Task nima uchun?","options":["Vazifa","Bir martalik asinxron hisoblash — Task.async/Task.await","Async process","Background job"],"answer":1},
-    {"id":24,"level":"medium","question":"Elixir da protocol nima?","options":["Network protocol","Polimorfizm mexanizmi — turli tiplar uchun implementatsiya","Typeclass","Interface"],"answer":1},
-    {"id":25,"level":"medium","question":"Elixir da behaviour nima?","options":["Xatti-harakat","Callback funksiyalar to'plami — GenServer, Supervisor kabi","Interface","Contract"],"answer":1},
-    {"id":26,"level":"medium","question":"Elixir da use nima uchun?","options":["Ishlatish","Modul funksionalligini import qilish va __using__ macro ni ishga tushirish","Import","Include"],"answer":1},
-    {"id":27,"level":"medium","question":"Elixir da macro nima?","options":["Makro","Kompilyatsiya vaqtida kodni kengaytirish — quote va unquote bilan AST manipulyatsiya","Code gen","Template"],"answer":1},
-    {"id":28,"level":"medium","question":"Elixir da ETS (Erlang Term Storage) nima?","options":["External storage","In-memory table — tez, concurrent, process dan mustaqil xotira","Cache","Database"],"answer":1},
-    {"id":29,"level":"medium","question":"Elixir da Ecto nima?","options":["Eko tizim","Database wrapper va query language — changeset, repo, migration","ORM","SQL library"],"answer":1},
-    {"id":30,"level":"medium","question":"Elixir da Phoenix nima?","options":["Zumrad qush","Yuksak ishlash quvvatiga ega web framework — LiveView, channels bilan","Web framework","REST API"],"answer":1},
-    {"id":31,"level":"medium","question":"Elixir da with nima uchun?","options":["Bilan","Bir nechta pattern match zanjiri — muvaffaqiyatsiz bo'lsa error qaytaradi","Do chain","Error chain"],"answer":1},
-    {"id":32,"level":"medium","question":"Elixir da Stream nima?","options":["Data stream","Lazy enumerable — katta ma'lumotlar uchun xotirani tejash","Enum lazy","Lazy list"],"answer":1},
-    {"id":33,"level":"medium","question":"Elixir da for comprehension nima?","options":["For tsikl","for x <- list, condition, do: expression — filtering va mapping birgalikda","List gen","Generator"],"answer":1},
-    {"id":34,"level":"medium","question":"Elixir da String.split nima qiladi?","options":["String ajratish","Stringni delimiter bo'yicha list ga bo'ladi","Tokenize","Explode"],"answer":1},
-    {"id":35,"level":"medium","question":"Elixir da Kernel.inspect nima qiladi?","options":["Tekshirish","Har qanday qiymatni debug uchun string representatsiyaga aylantiradi","Print","Debug"],"answer":1},
-    {"id":36,"level":"hard","question":"Elixir da Let it crash philosophy nima?","options":["Ishonch","Xatoliklarni tuzatish o'rniga process o'lib Supervisor qayta tiklashiga ruxsat berish","Error handling","Fault tolerance"],"answer":1},
-    {"id":37,"level":"hard","question":"Elixir da hot code reload nima?","options":["Issiq qayta yuklash","Tizimni to'xtatmasdan yangi kod versiyasini ishga tushirish — BEAM qo'llab-quvvatlaydi","Live reload","Code update"],"answer":1},
-    {"id":38,"level":"hard","question":"Elixir da distributed computing qanday?","options":["Cloud computing","Node larni bir-biriga ulash — Node.connect, :rpc, pg — bir nechta serverlarda process","Multi node","Network computing"],"answer":1},
-    {"id":39,"level":"hard","question":"Elixir da DynamicSupervisor nima?","options":["Dinamik nazoratchi","Runtime da bola processlarni dinamik yaratish va boshqarish","Dynamic server","Process pool"],"answer":1},
-    {"id":40,"level":"hard","question":"Elixir da Registry nima uchun?","options":["Ro'yxat","Process larni nom bilan ro'yxatdan o'tkazish va topish — global, local","Name registry","Process lookup"],"answer":1},
-    {"id":41,"level":"hard","question":"Elixir da LiveView nima?","options":["Live video","Server-side real-time UI — WebSocket orqali, JavaScript minimal","Real-time UI","Server rendering"],"answer":1},
-    {"id":42,"level":"hard","question":"Elixir da quote va unquote nima uchun?","options":["Qo'shtirnoq","Macro da AST bilan ishlash — quote — AST yaratish, unquote — qiymat qo'yish","Code AST","Template macro"],"answer":1},
-    {"id":43,"level":"hard","question":"Elixir da GenStage nima?","options":["Stage server","Back-pressure bilan producer-consumer pipeline — data processing","Data pipeline","Stream processing"],"answer":1},
-    {"id":44,"level":"hard","question":"Elixir da Broadway nima?","options":["Broadway musical","Concurrent, multi-stage data ingestion framework — GenStage asosida","Message pipeline","Event processing"],"answer":1},
-    {"id":45,"level":"hard","question":"Elixir da Nx (Numerical Elixir) nima?","options":["N extension","Tensor va numerical computing kutubxonasi — ML uchun","Math library","Scientific computing"],"answer":1},
-    {"id":46,"level":"hard","question":"Elixir da ETS vs DETS farqi?","options":["Hech qanday farq yo'q","ETS — in-memory (tez); DETS — disk asosida (persistent, lekin sekin)","DETS tezroq","ETS persistent"],"answer":1},
-    {"id":47,"level":"hard","question":"Elixir da Mnesia nima?","options":["Amneziya","Erlang distributed in-memory/disk database — ACID, replication","Distributed DB","BEAM database"],"answer":1},
-    {"id":48,"level":"hard","question":"Elixir da sigil nima?","options":["Sigil belgisi","~r, ~s, ~w kabi maxsus literal — custom sigil ham yaratish mumkin","String literal","Macro literal"],"answer":1},
-    {"id":49,"level":"hard","question":"Elixir da mix nima uchun?","options":["Aralashtirish","Elixir build tool — loyiha yaratish, test, compile, dependency boshqarish","Package manager","Build system"],"answer":1},
-    {"id":50,"level":"hard","question":"Elixir da Telemetry nima uchun?","options":["Telekommunikatsiya","Metrics va monitoring uchun event-based kutubxona — attach handlers","Metrics library","Monitoring"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Elixir nima?",
+      "options": [
+        "JavaScript turi",
+        "Erlang VM (BEAM) da ishlaydigan funksional, concurrent dasturlash tili",
+        "Database tili",
+        "CSS preprocessor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Эликсир?",
+      "question_en": "What is Elixir?",
+      "options_ru": [
+        "Тип JavaScript",
+        "Erlang — это функциональный язык параллельного программирования, работающий на виртуальной машине (BEAM).",
+        "Язык базы данных",
+        "CSS-препроцессор"
+      ],
+      "options_en": [
+        "JavaScript turi",
+        "Erlang is a functional, concurrent programming language that runs on the VM (BEAM).",
+        "Database tili",
+        "CSS preprocessor"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Elixir da IO.puts nima qiladi?",
+      "options": [
+        "Print file",
+        "Konsolga matn chiqaradi va yangi qator qo'shadi",
+        "Debug log",
+        "Error log"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает IO.puts в Elixir?",
+      "question_en": "What does IO.puts do in Elixir?",
+      "options_ru": [
+        "Распечатать файл",
+        "Выводит текст на консоль и добавляет новую строку",
+        "Журнал отладки",
+        "Журнал ошибок"
+      ],
+      "options_en": [
+        "Print file",
+        "Outputs text to the console and adds a new line",
+        "Debug log",
+        "Error log"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Elixir da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "var x = 5",
+        "int x = 5",
+        "x = 5",
+        "let x = 5"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить переменную в Elixir?",
+      "question_en": "How to declare a variable in Elixir?",
+      "options_ru": [
+        "вар х = 5",
+        "интервал х = 5",
+        "х = 5",
+        "пусть х = 5"
+      ],
+      "options_en": [
+        "var x = 5",
+        "int x = 5",
+        "x = 5",
+        "let x = 5"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Elixir da atom nima?",
+      "options": [
+        "Atom element",
+        "Konstantа nomi — :ok, :error, :hello — qiymati o'zi",
+        "Symbol",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое атом в эликсире?",
+      "question_en": "What is Atom in Elixir?",
+      "options_ru": [
+        "Атомный элемент",
+        "Имя константы — :ok, :error, :hello — является само значением.",
+        "Символ",
+        "Константа"
+      ],
+      "options_en": [
+        "Atomic element",
+        "The name of the constant — :ok, :error, :hello — is the value itself",
+        "Symbol",
+        "Constant"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Elixir da tuple nima?",
+      "options": [
+        "Ro'yxat",
+        "Belgilangan elementlar to'plami — {:ok, value}, {:error, reason}",
+        "Array",
+        "Fixed list"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое кортеж в Эликсире?",
+      "question_en": "Elixir da tuple nima?",
+      "options_ru": [
+        "Список",
+        "Набор указанных элементов — {:ok, значение}, {:ошибка, причина}",
+        "Массив",
+        "Фиксированный список"
+      ],
+      "options_en": [
+        "List",
+        "Set of specified elements — {:ok, value}, {:error, reason}",
+        "Array",
+        "Fixed list"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Elixir da list nima?",
+      "options": [
+        "Array",
+        "Linked list — [1, 2, 3], head | tail pattern bilan",
+        "Dynamic array",
+        "Tuple"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в Elixir?",
+      "question_en": "What is a list in Elixir?",
+      "options_ru": [
+        "Массив",
+        "Связанный список — [1, 2, 3], заголовок | с рисунком хвоста",
+        "Динамический массив",
+        "Кортеж"
+      ],
+      "options_en": [
+        "Array",
+        "Linked list — [1, 2, 3], head | with tail pattern",
+        "Dynamic array",
+        "A tuple"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Elixir da pattern matching nima?",
+      "options": [
+        "String match",
+        "= operatori orqali chap va o'ng tomonni moslashtirish — {:ok, val} = result",
+        "Assignment",
+        "Bind"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопоставление с образцом в Elixir?",
+      "question_en": "What is pattern matching in Elixir?",
+      "options_ru": [
+        "Строковое совпадение",
+        "Сопоставление левой и правой части с помощью оператора = — {:ok, val} = результат",
+        "Назначение",
+        "Связать"
+      ],
+      "options_en": [
+        "String match",
+        "Matching the left and right side using the = operator — {:ok, val} = result",
+        "Assignment",
+        "Bind"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Elixir da def nima uchun?",
+      "options": [
+        "Definition",
+        "Public funksiya e'lon qilish",
+        "Variable define",
+        "Data define"
+      ],
+      "answer": 1,
+      "question_ru": "Почему защита в Эликсире?",
+      "question_en": "Elixir da def nima uchun?",
+      "options_ru": [
+        "Определение",
+        "Декларация публичной функции",
+        "Определить переменные",
+        "Определение данных"
+      ],
+      "options_en": [
+        "Definition",
+        "Public function declaration",
+        "Define variables",
+        "Data definition"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Elixir da defp nima farq qiladi?",
+      "options": [
+        "Default private",
+        "Private funksiya — faqat modul ichida kirish mumkin",
+        "Private def",
+        "Module private"
+      ],
+      "answer": 1,
+      "question_ru": "Что отличает defp в Elixir?",
+      "question_en": "What makes defp different in Elixir?",
+      "options_ru": [
+        "По умолчанию частный",
+        "Частная функция — доступна только внутри модуля.",
+        "Частная защита",
+        "Модуль приватный"
+      ],
+      "options_en": [
+        "Default private",
+        "Private funksiya — faqat modul ichida kirish mumkin",
+        "Private def",
+        "Module private"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Elixir da |> (pipe) operator nima qiladi?",
+      "options": [
+        "Pipe",
+        "Chap qiymatni o'ng funksiyaning birinchi argumentiga uzatadi — zanjir hosil qilish",
+        "Redirect",
+        "Arrow"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает оператор |> (pipe) в Elixir?",
+      "question_en": "What does the |> (pipe) operator do in Elixir?",
+      "options_ru": [
+        "Труба",
+        "Передает левое значение в первый аргумент правой функции — создавая цепочку",
+        "Перенаправление",
+        "Стрелка"
+      ],
+      "options_en": [
+        "Pipe",
+        "Passes the left value to the first argument of the right function — creating a chain",
+        "Redirect",
+        "Arrow"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Elixir da Map nima?",
+      "options": [
+        "Xarita",
+        "Kalit-qiymat juftliklari — %{key: value} yoki %{\"key\" => value}",
+        "Dictionary",
+        "Hash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое карта в Эликсире?",
+      "question_en": "What is Map in Elixir?",
+      "options_ru": [
+        "Карта",
+        "Пары ключ-значение — %{ключ: значение} или %{\"ключ\" => значение}.",
+        "Словарь",
+        "Хэш"
+      ],
+      "options_en": [
+        "Xarita",
+        "Key-value pairs — %{key: value} or %{\"key\" => value}",
+        "Dictionary",
+        "Hash"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Elixir da defmodule nima uchun?",
+      "options": [
+        "Module define",
+        "Modul e'lon qilish — kodni tashkil qilish birlig",
+        "Module keyword",
+        "Namespace"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем демодулировать в Эликсире?",
+      "question_en": "Elixir da defmodule nima uchun?",
+      "options_ru": [
+        "Определить модуль",
+        "Объявление модуля — это единица организации кода.",
+        "Ключевое слово модуля",
+        "Пространство имен"
+      ],
+      "options_en": [
+        "Module define",
+        "A module declaration is a unit of code organization",
+        "Module keyword",
+        "Namespace"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Elixir da immutability nima?",
+      "options": [
+        "O'zgaruvchan",
+        "Barcha ma'lumotlar o'zgarmas — yangi qiymat yangi o'zgaruvchi",
+        "Mutable",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое неизменяемость в Эликсире?",
+      "question_en": "What is immutability in Elixir?",
+      "options_ru": [
+        "Сменный",
+        "Все данные неизменяемы: новое значение — это новая переменная.",
+        "Изменяемый",
+        "Константа"
+      ],
+      "options_en": [
+        "Changeable",
+        "All data is immutable—a new value is a new variable",
+        "Mutable",
+        "Constant"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Elixir da if nima qiladi?",
+      "options": [
+        "If statement",
+        "Shart ifodasi — do/else bloki bilan",
+        "Condition",
+        "Flow control"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает if do в Эликсире?",
+      "question_en": "What does if do in Elixir?",
+      "options_ru": [
+        "Если заявление",
+        "Условный оператор — с блоком do/else",
+        "Состояние",
+        "Управление потоком"
+      ],
+      "options_en": [
+        "If statement",
+        "A conditional statement — with a do/else block",
+        "Condition",
+        "Flow control"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Elixir da Enum.map nima?",
+      "options": [
+        "Map yaratish",
+        "Kolleksiya elementlarini transformatsiya qiladi",
+        "Hash map",
+        "Element select"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Enum.map в Elixir?",
+      "question_en": "What is Enum.map in Elixir?",
+      "options_ru": [
+        "Создать карту",
+        "Преобразует элементы коллекции",
+        "Хэш-карта",
+        "Выбор элемента"
+      ],
+      "options_en": [
+        "Create a map",
+        "Transforms collection elements",
+        "Hash map",
+        "Element select"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Elixir da process nima?",
+      "options": [
+        "OS process",
+        "BEAM virtual machine lightweight process — juda arzon, millionlab bo'lishi mumkin",
+        "Thread",
+        "Task"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое процесс в Elixir?",
+      "question_en": "What is a process in Elixir?",
+      "options_ru": [
+        "Процесс ОС",
+        "Облегченный процесс виртуальной машины BEAM — очень дешево, могут стоить миллионы",
+        "Нить",
+        "Задача"
+      ],
+      "options_en": [
+        "OS process",
+        "BEAM virtual machine lightweight process — very cheap, can be millions",
+        "Thread",
+        "Task"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Elixir da spawn nima uchun?",
+      "options": [
+        "Yaratish",
+        "Yangi process yaratish — spawn(fn -> ... end)",
+        "Fork",
+        "Thread create"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем спауниться в Эликсире?",
+      "question_en": "Why spawn in Elixir?",
+      "options_ru": [
+        "Создание",
+        "Создайте новый процесс — spawn(fn -> ... end)",
+        "Вилка",
+        "Создание темы"
+      ],
+      "options_en": [
+        "Creation",
+        "Create a new process — spawn(fn -> ... end)",
+        "Fork",
+        "Thread creation"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Elixir da send va receive nima uchun?",
+      "options": [
+        "Network send/receive",
+        "Processlar o'rtasida message passing — send(pid, message)",
+        "Message queue",
+        "IPC"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем отправлять и получать в Elixir?",
+      "question_en": "Why send and receive in Elixir?",
+      "options_ru": [
+        "Сеть отправки/получения",
+        "Передача сообщений между процессами — send(pid, message)",
+        "Очередь сообщений",
+        "МПК"
+      ],
+      "options_en": [
+        "Network send/receive",
+        "Processlar o'rtasida message passing — send(pid, message)",
+        "Message queue",
+        "IPC"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Elixir da GenServer nima?",
+      "options": [
+        "Generic server",
+        "OTP — stateful server process — init, handle_call, handle_cast, handle_info",
+        "Web server",
+        "Process server"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GenServer в Elixir?",
+      "question_en": "What is GenServer in Elixir?",
+      "options_ru": [
+        "Общий сервер",
+        "OTP — серверный процесс с отслеживанием состояния — init, handle_call, handle_cast, handle_info",
+        "Веб-сервер",
+        "Сервер обработки"
+      ],
+      "options_en": [
+        "Generic server",
+        "OTP — stateful server process — init, handle_call, handle_cast, handle_info",
+        "Web server",
+        "Process server"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Elixir da Supervisor nima?",
+      "options": [
+        "Nazoratchi",
+        "Process monitoring — ishlamay qolgan processlarni qayta ishga tushirish",
+        "Process manager",
+        "Error handler"
+      ],
+      "answer": 1,
+      "question_ru": "Elixir da Supervisor nima?",
+      "question_en": "What is Supervisor in Elixir?",
+      "options_ru": [
+        "супервайзер",
+        "Мониторинг процессов — перезапуск процессов, которые перестали работать",
+        "Менеджер процессов",
+        "Обработчик ошибок"
+      ],
+      "options_en": [
+        "Nazoratchi",
+        "Process monitoring — restarting processes that have stopped working",
+        "Process manager",
+        "Error handler"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Elixir da OTP nima?",
+      "options": [
+        "One Time Password",
+        "Open Telecom Platform — fault-tolerant tizimlar uchun Erlang/Elixir framework",
+        "Platform",
+        "Toolkit"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое OTP в Эликсире?",
+      "question_en": "What is OTP in Elixir?",
+      "options_ru": [
+        "Одноразовый пароль",
+        "Open Telecom Platform — это платформа Erlang/Elixir для отказоустойчивых систем.",
+        "Платформа",
+        "Инструментарий"
+      ],
+      "options_en": [
+        "One Time Password",
+        "Open Telecom Platform is an Erlang/Elixir framework for fault-tolerant systems",
+        "Platform",
+        "Toolkit"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Elixir da Agent nima?",
+      "options": [
+        "Vakil",
+        "Oddiy stateful process — GenServer dan sodda, bitta qiymat saqlash uchun",
+        "Simple server",
+        "State holder"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое агент в Эликсире?",
+      "question_en": "What is an Agent in Elixir?",
+      "options_ru": [
+        "Представитель",
+        "Простой процесс с отслеживанием состояния проще, чем GenServer, для хранения одного значения.",
+        "Простой сервер",
+        "Государственный держатель"
+      ],
+      "options_en": [
+        "Representative",
+        "A simple stateful process is simpler than GenServer, for storing a single value",
+        "Simple server",
+        "State holder"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Elixir da Task nima uchun?",
+      "options": [
+        "Vazifa",
+        "Bir martalik asinxron hisoblash — Task.async/Task.await",
+        "Async process",
+        "Background job"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Задача в Эликсире?",
+      "question_en": "Why Task in Elixir?",
+      "options_ru": [
+        "Задача",
+        "Одноразовое асинхронное вычисление — Task.async/Task.await.",
+        "Асинхронный процесс",
+        "Фоновое задание"
+      ],
+      "options_en": [
+        "Vazifa",
+        "Bir martalik asinxron hisoblash — Task.async/Task.await",
+        "Async process",
+        "Background job"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Elixir da protocol nima?",
+      "options": [
+        "Network protocol",
+        "Polimorfizm mexanizmi — turli tiplar uchun implementatsiya",
+        "Typeclass",
+        "Interface"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое протокол в Elixir?",
+      "question_en": "What is a protocol in Elixir?",
+      "options_ru": [
+        "Сетевой протокол",
+        "Механизм полиморфизма — это реализация для разных типов",
+        "Типкласс",
+        "Интерфейс"
+      ],
+      "options_en": [
+        "Network protocol",
+        "The polymorphism mechanism is an implementation for different types",
+        "Typeclass",
+        "Interface"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Elixir da behaviour nima?",
+      "options": [
+        "Xatti-harakat",
+        "Callback funksiyalar to'plami — GenServer, Supervisor kabi",
+        "Interface",
+        "Contract"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое поведение в Эликсире?",
+      "question_en": "What is behavior in Elixir?",
+      "options_ru": [
+        "Поведение",
+        "Коллекция функций обратного вызова — GenServer, Supervisor и т. д.",
+        "Интерфейс",
+        "Контракт"
+      ],
+      "options_en": [
+        "Behavior",
+        "A collection of callback functions — GenServer, Supervisor, etc",
+        "Interface",
+        "Contract"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Elixir da use nima uchun?",
+      "options": [
+        "Ishlatish",
+        "Modul funksionalligini import qilish va __using__ macro ni ishga tushirish",
+        "Import",
+        "Include"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать Эликсир?",
+      "question_en": "Why use Elixir?",
+      "options_ru": [
+        "Использование",
+        "Импортируйте функциональность модуля и запустите макрос __using__.",
+        "Импорт",
+        "Включить"
+      ],
+      "options_en": [
+        "Ishlatish",
+        "Import the module functionality and run the __using__ macro",
+        "Import",
+        "Include"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Elixir da macro nima?",
+      "options": [
+        "Makro",
+        "Kompilyatsiya vaqtida kodni kengaytirish — quote va unquote bilan AST manipulyatsiya",
+        "Code gen",
+        "Template"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое макрос в Elixir?",
+      "question_en": "What is a macro in Elixir?",
+      "options_ru": [
+        "Макрос",
+        "Расширение кода времени компиляции — манипуляции AST с кавычками и снятием кавычек.",
+        "Генерация кода",
+        "Шаблон"
+      ],
+      "options_en": [
+        "Macro",
+        "Compile-time code extension — AST manipulation with quote and unquote",
+        "Code gen",
+        "Template"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Elixir da ETS (Erlang Term Storage) nima?",
+      "options": [
+        "External storage",
+        "In-memory table — tez, concurrent, process dan mustaqil xotira",
+        "Cache",
+        "Database"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ETS (Erlang Term Storage) в Elixir?",
+      "question_en": "What is ETS (Erlang Term Storage) in Elixir?",
+      "options_ru": [
+        "Внешнее хранилище",
+        "Таблица в памяти — быстрая, параллельная, независимая от процесса память.",
+        "Кэш",
+        "База данных"
+      ],
+      "options_en": [
+        "External storage",
+        "In-memory table — tez, concurrent, process dan mustaqil xotira",
+        "Cache",
+        "Database"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Elixir da Ecto nima?",
+      "options": [
+        "Eko tizim",
+        "Database wrapper va query language — changeset, repo, migration",
+        "ORM",
+        "SQL library"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое экто в эликсире?",
+      "question_en": "What is Ecto in Elixir?",
+      "options_ru": [
+        "Эко система",
+        "Оболочка базы данных и язык запросов — набор изменений, репозиторий, миграция",
+        "ОРМ",
+        "SQL-библиотека"
+      ],
+      "options_en": [
+        "Eco system",
+        "Database wrapper and query language — changeset, repo, migration",
+        "ORM",
+        "SQL library"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Elixir da Phoenix nima?",
+      "options": [
+        "Zumrad qush",
+        "Yuksak ishlash quvvatiga ega web framework — LiveView, channels bilan",
+        "Web framework",
+        "REST API"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Феникс в Эликсире?",
+      "question_en": "Elixir da Phoenix nima?",
+      "options_ru": [
+        "Изумрудная птица",
+        "Высокопроизводительная веб-платформа с LiveView и каналами",
+        "Веб-фреймворк",
+        "ОТДЫХ API"
+      ],
+      "options_en": [
+        "Emerald bird",
+        "High performance web framework with LiveView, channels",
+        "Web framework",
+        "REST API"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Elixir da with nima uchun?",
+      "options": [
+        "Bilan",
+        "Bir nechta pattern match zanjiri — muvaffaqiyatsiz bo'lsa error qaytaradi",
+        "Do chain",
+        "Error chain"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Эликсире?",
+      "question_en": "Elixir da with nima uchun?",
+      "options_ru": [
+        "С",
+        "Множественные цепочки совпадений шаблонов — в случае неудачи возвращается ошибка.",
+        "Сделать цепочку",
+        "Цепочка ошибок"
+      ],
+      "options_en": [
+        "With",
+        "Multiple pattern match chains — returns error if unsuccessful",
+        "Do chain",
+        "Error chain"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Elixir da Stream nima?",
+      "options": [
+        "Data stream",
+        "Lazy enumerable — katta ma'lumotlar uchun xotirani tejash",
+        "Enum lazy",
+        "Lazy list"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое поток в Elixir?",
+      "question_en": "What is a Stream in Elixir?",
+      "options_ru": [
+        "Поток данных",
+        "Lazy enumerable — экономьте память для больших данных",
+        "Enum ленивый",
+        "Ленивый список"
+      ],
+      "options_en": [
+        "Data stream",
+        "Lazy enumerable — save memory for large data",
+        "Enum is lazy",
+        "Lazy list"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Elixir da for comprehension nima?",
+      "options": [
+        "For tsikl",
+        "for x <- list, condition, do: expression — filtering va mapping birgalikda",
+        "List gen",
+        "Generator"
+      ],
+      "answer": 1,
+      "question_ru": "Что для понимания в Эликсире?",
+      "question_en": "What is for comprehension in Elixir?",
+      "options_ru": [
+        "Для цикла",
+        "for x <- список, условие, do:выражение — совместная фильтрация и сопоставление",
+        "Генерация списка",
+        "Генератор"
+      ],
+      "options_en": [
+        "For cycle",
+        "for x <- list, condition, do: expression — filtering and mapping together",
+        "List gen",
+        "Generator"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Elixir da String.split nima qiladi?",
+      "options": [
+        "String ajratish",
+        "Stringni delimiter bo'yicha list ga bo'ladi",
+        "Tokenize",
+        "Explode"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает String.split в Elixir?",
+      "question_en": "What does String.split do in Elixir?",
+      "options_ru": [
+        "Распределение строк",
+        "Разбивает строку на список на основе разделителя",
+        "токенизировать",
+        "Взорваться"
+      ],
+      "options_en": [
+        "String allocation",
+        "Splits the string into a list based on the delimiter",
+        "Tokenize",
+        "Explode"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Elixir da Kernel.inspect nima qiladi?",
+      "options": [
+        "Tekshirish",
+        "Har qanday qiymatni debug uchun string representatsiyaga aylantiradi",
+        "Print",
+        "Debug"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает Kernel.inspect в Elixir?",
+      "question_en": "What does Kernel.inspect do in Elixir?",
+      "options_ru": [
+        "Проверить",
+        "Преобразует любое значение в строковое представление для отладки.",
+        "Распечатать",
+        "Отладка"
+      ],
+      "options_en": [
+        "Check",
+        "Converts any value to a string representation for debugging",
+        "Print",
+        "Debug"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Elixir da Let it crash philosophy nima?",
+      "options": [
+        "Ishonch",
+        "Xatoliklarni tuzatish o'rniga process o'lib Supervisor qayta tiklashiga ruxsat berish",
+        "Error handling",
+        "Fault tolerance"
+      ],
+      "answer": 1,
+      "question_ru": "Какова философия «Пусть все рухнет» в Elixir?",
+      "question_en": "What is the Let it crash philosophy at Elixir?",
+      "options_ru": [
+        "Уверенность",
+        "Разрешить Supervisor восстанавливаться после смерти процесса вместо отладки",
+        "Обработка ошибок",
+        "Отказоустойчивость"
+      ],
+      "options_en": [
+        "Confidence",
+        "Allow Supervisor to recover from process death instead of debugging",
+        "Error handling",
+        "Fault tolerance"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Elixir da hot code reload nima?",
+      "options": [
+        "Issiq qayta yuklash",
+        "Tizimni to'xtatmasdan yangi kod versiyasini ishga tushirish — BEAM qo'llab-quvvatlaydi",
+        "Live reload",
+        "Code update"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое горячая перезагрузка кода в Elixir?",
+      "question_en": "What is hot code reload in Elixir?",
+      "options_ru": [
+        "Теплая перезагрузка",
+        "Запуск новой версии кода без остановки системы — поддерживается BEAM",
+        "Живая перезагрузка",
+        "Обновление кода"
+      ],
+      "options_en": [
+        "Warm reboot",
+        "Running a new code version without stopping the system — supported by BEAM",
+        "Live reload",
+        "Code update"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Elixir da distributed computing qanday?",
+      "options": [
+        "Cloud computing",
+        "Node larni bir-biriga ulash — Node.connect, :rpc, pg — bir nechta serverlarda process",
+        "Multi node",
+        "Network computing"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое распределенные вычисления в Elixir?",
+      "question_en": "Elixir da distributed computing qanday?",
+      "options_ru": [
+        "Облачные вычисления",
+        "Соединение узлов друг с другом — Node.connect, :rpc, pg — процесс на нескольких серверах",
+        "Multi node",
+        "Сетевые вычисления"
+      ],
+      "options_en": [
+        "Cloud computing",
+        "Connecting nodes to each other — Node.connect, :rpc, pg — process on several servers",
+        "Multi node",
+        "Network computing"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Elixir da DynamicSupervisor nima?",
+      "options": [
+        "Dinamik nazoratchi",
+        "Runtime da bola processlarni dinamik yaratish va boshqarish",
+        "Dynamic server",
+        "Process pool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое DynamicSupervisor в Elixir?",
+      "question_en": "Elixir da DynamicSupervisor nima?",
+      "options_ru": [
+        "Динамический контроллер",
+        "Динамическое создание и управление дочерними процессами во время выполнения.",
+        "Динамический сервер",
+        "Пул процессов"
+      ],
+      "options_en": [
+        "Dynamic controller",
+        "Dynamic creation and management of child processes at runtime",
+        "Dynamic server",
+        "Process pool"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Elixir da Registry nima uchun?",
+      "options": [
+        "Ro'yxat",
+        "Process larni nom bilan ro'yxatdan o'tkazish va topish — global, local",
+        "Name registry",
+        "Process lookup"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем регистрация в Elixir?",
+      "question_en": "Why Registry in Elixir?",
+      "options_ru": [
+        "Список",
+        "Регистрация и поиск процессов по имени — глобальные, локальные",
+        "Реестр имен",
+        "Поиск процесса"
+      ],
+      "options_en": [
+        "List",
+        "Registering and finding processes by name — global, local",
+        "Name registry",
+        "Process lookup"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Elixir da LiveView nima?",
+      "options": [
+        "Live video",
+        "Server-side real-time UI — WebSocket orqali, JavaScript minimal",
+        "Real-time UI",
+        "Server rendering"
+      ],
+      "answer": 1,
+      "question_ru": "Elixir da LiveView nima?",
+      "question_en": "What is LiveView in Elixir?",
+      "options_ru": [
+        "Живое видео",
+        "Серверный пользовательский интерфейс в реальном времени — через WebSocket, минимальный JavaScript.",
+        "Пользовательский интерфейс в реальном времени",
+        "Серверный рендеринг"
+      ],
+      "options_en": [
+        "Live video",
+        "Server-side real-time UI — via WebSocket, minimal JavaScript",
+        "Real-time UI",
+        "Server rendering"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Elixir da quote va unquote nima uchun?",
+      "options": [
+        "Qo'shtirnoq",
+        "Macro da AST bilan ishlash — quote — AST yaratish, unquote — qiymat qo'yish",
+        "Code AST",
+        "Template macro"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем цитировать и снимать кавычки в Elixir?",
+      "question_en": "Why quote and unquote in Elixir?",
+      "options_ru": [
+        "Цитата",
+        "Работа с AST в макросе — кавычка — создать AST, снять кавычки — установить значение",
+        "Код АСТ",
+        "Макрос шаблона"
+      ],
+      "options_en": [
+        "Quote",
+        "Work with AST in Macro — quote — create AST, unquote — set value",
+        "Code AST",
+        "Template macro"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Elixir da GenStage nima?",
+      "options": [
+        "Stage server",
+        "Back-pressure bilan producer-consumer pipeline — data processing",
+        "Data pipeline",
+        "Stream processing"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GenStage в Elixir?",
+      "question_en": "What is GenStage in Elixir?",
+      "options_ru": [
+        "Сценический сервер",
+        "Конвейер производитель-потребитель с противодавлением — обработка данных",
+        "Конвейер данных",
+        "Потоковая обработка"
+      ],
+      "options_en": [
+        "Stage server",
+        "Producer-consumer pipeline with back-pressure — data processing",
+        "Data pipeline",
+        "Stream processing"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Elixir da Broadway nima?",
+      "options": [
+        "Broadway musical",
+        "Concurrent, multi-stage data ingestion framework — GenStage asosida",
+        "Message pipeline",
+        "Event processing"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Бродвей в «Эликсире»?",
+      "question_en": "What is Broadway at Elixir?",
+      "options_ru": [
+        "Бродвейский мюзикл",
+        "Платформа параллельного многоэтапного приема данных — на основе GenStage",
+        "Конвейер сообщений",
+        "Обработка событий"
+      ],
+      "options_en": [
+        "Broadway musical",
+        "Concurrent, multi-stage data ingestion framework — based on GenStage",
+        "Message pipeline",
+        "Event processing"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Elixir da Nx (Numerical Elixir) nima?",
+      "options": [
+        "N extension",
+        "Tensor va numerical computing kutubxonasi — ML uchun",
+        "Math library",
+        "Scientific computing"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Nx (числовой эликсир) в Эликсире?",
+      "question_en": "What is Nx (Numerical Elixir) in Elixir?",
+      "options_ru": [
+        "расширение N",
+        "Библиотека тензорных и числовых вычислений — для ML",
+        "Math library",
+        "Научные вычисления"
+      ],
+      "options_en": [
+        "N extension",
+        "Tensor and numerical computing library — for ML",
+        "Math library",
+        "Scientific computing"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Elixir da ETS vs DETS farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "ETS — in-memory (tez); DETS — disk asosida (persistent, lekin sekin)",
+        "DETS tezroq",
+        "ETS persistent"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между ETS и DETS в Эликсире?",
+      "question_en": "Difference between ETS vs DETS in Elixir?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "ETS — в памяти (быстро); DETS — на диске (постоянно, но медленно)",
+        "ДЭТС быстрее",
+        "ETS является постоянным"
+      ],
+      "options_en": [
+        "There is no difference",
+        "ETS — in-memory (fast); DETS — disk-based (persistent but slow)",
+        "DETS is faster",
+        "ETS is persistent"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Elixir da Mnesia nima?",
+      "options": [
+        "Amneziya",
+        "Erlang distributed in-memory/disk database — ACID, replication",
+        "Distributed DB",
+        "BEAM database"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Мнезия в Эликсире?",
+      "question_en": "What is Mnesia in Elixir?",
+      "options_ru": [
+        "Амнезия",
+        "Распределенная база данных Erlang в памяти/на диске — ACID, репликация",
+        "Распределенная БД",
+        "База данных BEAM"
+      ],
+      "options_en": [
+        "Amnesia",
+        "Erlang distributed in-memory/disk database — ACID, replication",
+        "Distributed DB",
+        "BEAM database"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Elixir da sigil nima?",
+      "options": [
+        "Sigil belgisi",
+        "~r, ~s, ~w kabi maxsus literal — custom sigil ham yaratish mumkin",
+        "String literal",
+        "Macro literal"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сигил в Эликсире?",
+      "question_en": "What is a sigil in Elixir?",
+      "options_ru": [
+        "Символ сигила",
+        "Также возможно создавать собственные символы, такие как ~r, ~s, ~w.",
+        "Строковый литерал",
+        "Макрос-литерал"
+      ],
+      "options_en": [
+        "Sigil symbol",
+        "It is also possible to create custom sigils such as ~r, ~s, ~w",
+        "A string literal",
+        "Macro literal"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Elixir da mix nima uchun?",
+      "options": [
+        "Aralashtirish",
+        "Elixir build tool — loyiha yaratish, test, compile, dependency boshqarish",
+        "Package manager",
+        "Build system"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем прибивать Эликсир?",
+      "question_en": "Why nail in Elixir?",
+      "options_ru": [
+        "Смешивание",
+        "Инструмент сборки Elixir — создание проектов, тестирование, компиляция, управление зависимостями.",
+        "Менеджер пакетов",
+        "Система сборки"
+      ],
+      "options_en": [
+        "Blending",
+        "Elixir build tool — project creation, test, compile, dependency management",
+        "Package manager",
+        "Build system"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Elixir da Telemetry nima uchun?",
+      "options": [
+        "Telekommunikatsiya",
+        "Metrics va monitoring uchun event-based kutubxona — attach handlers",
+        "Metrics library",
+        "Monitoring"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем телеметрия в Эликсире?",
+      "question_en": "Why Telemetry in Elixir?",
+      "options_ru": [
+        "Телекоммуникации",
+        "Библиотека на основе событий для метрик и мониторинга — подключение обработчиков",
+        "Библиотека метрик",
+        "Мониторинг"
+      ],
+      "options_en": [
+        "Telecommunications",
+        "Event-based library for metrics and monitoring — attach handlers",
+        "Metrics library",
+        "Monitoring"
+      ]
+    }
   ]
 }

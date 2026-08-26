@@ -2,55 +2,1305 @@
   "technology": "Tailwind CSS",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"Tailwind CSS nima?","options":["CSS framework komponentlar bilan","Utility-first CSS framework — to'g'ridan-to'g'ri HTML da klass bilan stil","JavaScript framework","CSS preprocessor"],"answer":1},
-    {"id":2,"level":"easy","question":"Tailwind da matn rangini qanday belgilaysiz?","options":["color-red-500","text-red-500","font-red-500","txt-red-500"],"answer":1},
-    {"id":3,"level":"easy","question":"Tailwind da fon rangini qanday belgilaysiz?","options":["bg-blue-500","background-blue-500","back-blue-500","fon-blue-500"],"answer":0},
-    {"id":4,"level":"easy","question":"Tailwind da padding qanday qo'shiladi?","options":["pad-4","p-4","padding-4","pt-4 faqat top"],"answer":1},
-    {"id":5,"level":"easy","question":"Tailwind da margin qanday qo'shiladi?","options":["mg-4","margin-4","m-4","mar-4"],"answer":2},
-    {"id":6,"level":"easy","question":"Tailwind da flexbox nima bilan yoqiladi?","options":["flexbox","flex","display-flex","d-flex"],"answer":1},
-    {"id":7,"level":"easy","question":"Tailwind da elementni yashirish uchun qaysi klass?","options":["hide","invisible","display-none","hidden"],"answer":3},
-    {"id":8,"level":"easy","question":"Tailwind da responsive breakpoint uchun qanday prefix?","options":["@md:","[md]","md:","--md-"],"answer":2},
-    {"id":9,"level":"easy","question":"Tailwind da text o'lchamini qanday belgilaysiz?","options":["text-size-lg","font-large","text-lg","size-lg"],"answer":2},
-    {"id":10,"level":"easy","question":"Tailwind da rounded corners qanday qo'shiladi?","options":["corner-md","border-round-md","rounded-md","radius-md"],"answer":2},
-    {"id":11,"level":"easy","question":"Tailwind da shadow qanday qo'shiladi?","options":["box-shadow-md","shadow-md","drop-shadow-md","shade-md"],"answer":1},
-    {"id":12,"level":"easy","question":"Tailwind da grid nima bilan yoqiladi?","options":["display-grid","grid","grid-system","grid-layout"],"answer":1},
-    {"id":13,"level":"easy","question":"Tailwind da hover effekti qanday?","options":["on-hover:","hover::","hover:","on:hover:"],"answer":2},
-    {"id":14,"level":"easy","question":"Tailwind da dark mode qanday qo'llaniladi?","options":["dark::","dark-mode:","dark:","@dark:"],"answer":2},
-    {"id":15,"level":"easy","question":"Tailwind da width full (100%) nima?","options":["w-100","w-full","width-full","w-max"],"answer":1},
-    {"id":16,"level":"medium","question":"Tailwind da tailwind.config.js nima uchun?","options":["JavaScript konfiguratsiyasi","Tailwind ni sozlash — rang, shrift, breakpoint, extend va plugins konfiguratsiyasi","CSS konfiguratsiyasi","Build konfiguratsiyasi"],"answer":1},
-    {"id":17,"level":"medium","question":"Tailwind da @apply direktivi nima qiladi?","options":["CSS apply","Tailwind utility klasslarini CSS qoidasiga qo'llash — component klass yaratish","Mixin qo'llash","Extend qilish"],"answer":1},
-    {"id":18,"level":"medium","question":"Tailwind da arbitrary values qanday ishlatiladi?","options":["[value]","arbitrary(value)","Ishlatilmaydi","*[value]"],"answer":0},
-    {"id":19,"level":"medium","question":"Tailwind da JIT (Just-in-Time) mode nima?","options":["JavaScript JIT","Faqat ishlatilgan klasslarni generatsiya qiladigan engine — Tailwind v3 default","Compile mode","Fast mode"],"answer":1},
-    {"id":20,"level":"medium","question":"Tailwind da PurgeCSS / content konfiguratsiyasi nima uchun?","options":["CSS purge","Ishlatilmagan CSS klasslarni production bundledan olib tashlash — kichik fayl","Content type","Template path"],"answer":1},
-    {"id":21,"level":"medium","question":"Tailwind da theme() funksiyasi CSS da qanday ishlatiladi?","options":["CSS funksiyasi","CSS da Tailwind theme qiymatlarini ishlatish: theme('colors.blue.500')","JavaScript funksiya","Config funksiya"],"answer":1},
-    {"id":22,"level":"medium","question":"Tailwind da plugin qanday qo'shiladi?","options":["npm plugin","tailwind.config.js da plugins arrayga qo'shish","CSS plugin","Config plugin"],"answer":1},
-    {"id":23,"level":"medium","question":"Tailwind da extend va override farqi tailwind.config.js da?","options":["Hech qanday farq yo'q","extend — default qiymatlarga qo'shadi; theme ichida to'g'ridan-to'g'ri yozish — default ni almaydi","override kengaytiradi","extend o'chiradi"],"answer":1},
-    {"id":24,"level":"medium","question":"Tailwind da group va group-hover nima uchun?","options":["Elementlar guruhi","Ota elementga group klasi berib, bola elementda group-hover: bilan ota hover stilini qo'llash","CSS group","Hover group"],"answer":1},
-    {"id":25,"level":"medium","question":"Tailwind da peer nima uchun ishlatiladi?","options":["Tengdosh element","Sibling elementlarni kuzatib, peer-* variant bilan stil qo'llash","Input peer","Form peer"],"answer":1},
-    {"id":26,"level":"medium","question":"Tailwind da container nima qiladi?","options":["Div container","Max-width ni responsive breakpointlarga moslashtiradi","Width limiter","Block element"],"answer":1},
-    {"id":27,"level":"medium","question":"Tailwind da space-x-4 nima qiladi?","options":["X o'qi bo'yicha padding","Flex/grid bolalar orasida gorizontal bo'shliq (margin-left) qo'shadi","Grid gap","Spacing"],"answer":1},
-    {"id":28,"level":"medium","question":"Tailwind da divide-x nima qiladi?","options":["Elementni bo'lish","Bolalar orasiga vertikal chiziq qo'shadi (border-right)","Divide layout","Split element"],"answer":1},
-    {"id":29,"level":"medium","question":"Tailwind da ring nima uchun?","options":["Border ring","Box shadow orqali yasalgan ring — focus state uchun — ring-2 ring-blue-500","Focus ring","CSS ring"],"answer":1},
-    {"id":30,"level":"medium","question":"Tailwind da aspect-ratio nima?","options":["Image ratio","Elementning kenglik/balandlik nisbati — aspect-video, aspect-square, aspect-[16/9]","Video ratio","Container ratio"],"answer":1},
-    {"id":31,"level":"medium","question":"Tailwind da line-clamp nima qiladi?","options":["Qatorni o'chirish","Matnni belgilangan qator sonida kesib, ellipsis qo'yadi","Text clamp","Content clamp"],"answer":1},
-    {"id":32,"level":"medium","question":"Tailwind da backdrop-blur nima?","options":["Image blur","Elementning ortidagi fon (backdrop) ni blur qiladi — glassmorphism uchun","CSS blur","Filter blur"],"answer":1},
-    {"id":33,"level":"medium","question":"Tailwind da transition-all nima qiladi?","options":["Barcha animatsiyalar","Barcha CSS xususiyatlar uchun transition qo'shadi","CSS transition","All transitions"],"answer":1},
-    {"id":34,"level":"medium","question":"Tailwind da gradient qanday yaratiladi?","options":["gradient-to-r","bg-gradient-to-r from-blue-500 to-purple-500","CSS gradient","Linear gradient"],"answer":1},
-    {"id":35,"level":"medium","question":"Tailwind da text-ellipsis nima qiladi?","options":["Matn animatsiyasi","Overflow bo'lgan matnni '...' bilan kesadi","Text overflow","Ellipsis text"],"answer":1},
-    {"id":36,"level":"hard","question":"Tailwind da custom color palette qanday qo'shiladi?","options":["CSS o'zgaruvchi","tailwind.config.js da theme.extend.colors ichiga hex/hsl qiymatlar","Color plugin","Palette file"],"answer":1},
-    {"id":37,"level":"hard","question":"Tailwind da CSS Variables bilan integratsiya?","options":["Almashtirish","CSS Custom Properties ni Tailwind theme da ishlatish — dynamic theming uchun","No integration","Config only"],"answer":1},
-    {"id":38,"level":"hard","question":"Tailwind da @layer directive nima uchun?","options":["CSS layer","CSS cascade layerlarini boshqarish — base, components, utilities — specificity nazorat","Layer management","Style layer"],"answer":1},
-    {"id":39,"level":"hard","question":"Tailwind da safelist nima uchun ishlatiladi?","options":["Xavfsiz ro'yxat","Dinamik klasslar uchun — JIT mode da purge qilinmasligi kerak bo'lgan klasslarni ko'rsatish","Whitelist","Protected list"],"answer":1},
-    {"id":40,"level":"hard","question":"Tailwind da plugin API bilan custom utility qanday yaratiladi?","options":["CSS utility","addUtilities({'.my-util': { }}) — tailwind.config.js plugins ichida","Plugin util","Custom class"],"answer":1},
-    {"id":41,"level":"hard","question":"Tailwind v4 da nima o'zgardi?","options":["Hech qanday o'zgarish","CSS-first konfiguratsiyasi — tailwind.config.js o'rniga @import 'tailwindcss' va @theme directive","Faqat performance","Yangi ranglar"],"answer":1},
-    {"id":42,"level":"hard","question":"Tailwind da matchUtilities plugin API nima uchun?","options":["Match qilish","Dinamik qiymatlar bilan custom utility klasslari yaratish — arbitrary value qo'llab-quvvatlash","Utility match","Value match"],"answer":1},
-    {"id":43,"level":"hard","question":"Tailwind da important modifier (!) nima qiladi?","options":["CSS important","Klass oldiga ! qo'yib, xususiyatga !important qo'shadi — !text-red-500","Override","Priority"],"answer":1},
-    {"id":44,"level":"hard","question":"Tailwind da presets nima?","options":["Default settings","Boshqa loyihalarda qayta ishlatiladigan Tailwind konfiguratsiyasi — shared design system","Config preset","Theme preset"],"answer":1},
-    {"id":45,"level":"hard","question":"Tailwind da postcss.config.js nima uchun?","options":["Post CSS","Tailwind va Autoprefixer ni PostCSS pipeline ga qo'shish — build jarayoni","CSS processor","Build config"],"answer":1},
-    {"id":46,"level":"hard","question":"Tailwind da data attribute variant nima?","options":["Data attribute","data-[state=active]: klass bilan HTML data atributiga asosida stil qo'llash","HTML data","Attribute selector"],"answer":1},
-    {"id":47,"level":"hard","question":"Tailwind da has() variant nima uchun?","options":["CSS has","Ichidagi element holatiga asosida ota elementga stil qo'llash — has-[:checked]:","Parent selector","Child check"],"answer":1},
-    {"id":48,"level":"hard","question":"Tailwind da typography plugin nima beradi?","options":["Font plugin","@tailwindcss/typography — prose klass bilan rich text kontent stilizatsiyasi","Text plugin","Markdown style"],"answer":1},
-    {"id":49,"level":"hard","question":"Tailwind da forms plugin nima uchun?","options":["Form layout","@tailwindcss/forms — browser default form elementlar stilini reset qilib, Tailwind bilan stil qo'llash","Form reset","Input style"],"answer":1},
-    {"id":50,"level":"hard","question":"Tailwind da container queries nima?","options":["CSS container","@tailwindcss/container-queries — viewport emas, ota element o'lchamiga asosida responsive stil","Container CSS","Viewport query"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Tailwind CSS nima?",
+      "options": [
+        "CSS framework komponentlar bilan",
+        "Utility-first CSS framework — to'g'ridan-to'g'ri HTML da klass bilan stil",
+        "JavaScript framework",
+        "CSS preprocessor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое CSS Tailwind?",
+      "question_en": "What is Tailwind CSS?",
+      "options_ru": [
+        "CSS-фреймворк с компонентами",
+        "Фреймворк CSS, ориентированный на утилиты: стиль непосредственно в HTML с помощью классов.",
+        "Фреймворк JavaScript",
+        "CSS-препроцессор"
+      ],
+      "options_en": [
+        "CSS framework with components",
+        "Utility-first CSS framework — style directly in HTML with classes",
+        "JavaScript framework",
+        "CSS preprocessor"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Tailwind da matn rangini qanday belgilaysiz?",
+      "options": [
+        "color-red-500",
+        "text-red-500",
+        "font-red-500",
+        "txt-red-500"
+      ],
+      "answer": 1,
+      "question_ru": "Как установить цвет текста в Tailwind?",
+      "question_en": "How do you set text color in Tailwind?",
+      "options_ru": [
+        "цвет-красный-500",
+        "текст-красный-500",
+        "шрифт-красный-500",
+        "txt-красный-500"
+      ],
+      "options_en": [
+        "color-red-500",
+        "text-red-500",
+        "font-red-500",
+        "txt-red-500"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Tailwind da fon rangini qanday belgilaysiz?",
+      "options": [
+        "bg-blue-500",
+        "background-blue-500",
+        "back-blue-500",
+        "fon-blue-500"
+      ],
+      "answer": 0,
+      "question_ru": "Как установить цвет фона в Tailwind?",
+      "question_en": "How do you set the background color in Tailwind?",
+      "options_ru": [
+        "bg-синий-500",
+        "фон-синий-500",
+        "спина-синий-500",
+        "fon-blue-500"
+      ],
+      "options_en": [
+        "bg-blue-500",
+        "background-blue-500",
+        "back-blue-500",
+        "background-blue-500"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Tailwind da padding qanday qo'shiladi?",
+      "options": [
+        "pad-4",
+        "p-4",
+        "padding-4",
+        "pt-4 faqat top"
+      ],
+      "answer": 1,
+      "question_ru": "Как добавить отступы в Tailwind?",
+      "question_en": "How to add padding in Tailwind?",
+      "options_ru": [
+        "площадка-4",
+        "р-4",
+        "отступ-4",
+        "PT-4 только сверху"
+      ],
+      "options_en": [
+        "pad-4",
+        "p-4",
+        "padding-4",
+        "pt-4 top only"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Tailwind da margin qanday qo'shiladi?",
+      "options": [
+        "mg-4",
+        "margin-4",
+        "m-4",
+        "mar-4"
+      ],
+      "answer": 2,
+      "question_ru": "Как добавить маржу в Tailwind?",
+      "question_en": "How to add margin in Tailwind?",
+      "options_ru": [
+        "мг-4",
+        "маржа-4",
+        "м-4",
+        "мар-4"
+      ],
+      "options_en": [
+        "mg-4",
+        "margin-4",
+        "m-4",
+        "mar-4"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Tailwind da flexbox nima bilan yoqiladi?",
+      "options": [
+        "flexbox",
+        "flex",
+        "display-flex",
+        "d-flex"
+      ],
+      "answer": 1,
+      "question_ru": "Что обеспечивает флексбокс в Tailwind?",
+      "question_en": "What enables flexbox in Tailwind?",
+      "options_ru": [
+        "флексбокс",
+        "гибкий",
+        "дисплей-гибкий",
+        "d-флекс"
+      ],
+      "options_en": [
+        "flexbox",
+        "flex",
+        "display-flex",
+        "d-flex"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Tailwind da elementni yashirish uchun qaysi klass?",
+      "options": [
+        "hide",
+        "invisible",
+        "display-none",
+        "hidden"
+      ],
+      "answer": 3,
+      "question_ru": "Какой класс скрыть элемент в Tailwind?",
+      "question_en": "Which class to hide an element in Tailwind?",
+      "options_ru": [
+        "hide",
+        "invisible",
+        "дисплей-нет",
+        "hidden"
+      ],
+      "options_en": [
+        "hide",
+        "invisible",
+        "display-none",
+        "hidden"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Tailwind da responsive breakpoint uchun qanday prefix?",
+      "options": [
+        "@md:",
+        "[md]",
+        "md:",
+        "--md-"
+      ],
+      "answer": 2,
+      "question_ru": "Какой префикс для адаптивной точки останова в Tailwind?",
+      "question_en": "What is the prefix for responsive breakpoint in Tailwind?",
+      "options_ru": [
+        "@мд:",
+        "[мд]",
+        "доктор медицинских наук:",
+        "--md-"
+      ],
+      "options_en": [
+        "@md:",
+        "[md]",
+        "MD:",
+        "--md-"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Tailwind da text o'lchamini qanday belgilaysiz?",
+      "options": [
+        "text-size-lg",
+        "font-large",
+        "text-lg",
+        "size-lg"
+      ],
+      "answer": 2,
+      "question_ru": "Как установить размер текста в Tailwind?",
+      "question_en": "Tailwind da text o'lchamini qanday belgilaysiz?",
+      "options_ru": [
+        "размер текста-LG",
+        "большой шрифт",
+        "текст-LG",
+        "размер-LG"
+      ],
+      "options_en": [
+        "text-size-lg",
+        "font-large",
+        "text-lg",
+        "size-lg"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Tailwind da rounded corners qanday qo'shiladi?",
+      "options": [
+        "corner-md",
+        "border-round-md",
+        "rounded-md",
+        "radius-md"
+      ],
+      "answer": 2,
+      "question_ru": "Как добавить закругленные углы в Tailwind?",
+      "question_en": "How to add rounded corners in Tailwind?",
+      "options_ru": [
+        "Угол-Мкр.",
+        "граница-круглый-МД",
+        "округлый-MD",
+        "радиус-МД"
+      ],
+      "options_en": [
+        "corner-md",
+        "border-round-md",
+        "rounded-md",
+        "radius-md"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Tailwind da shadow qanday qo'shiladi?",
+      "options": [
+        "box-shadow-md",
+        "shadow-md",
+        "drop-shadow-md",
+        "shade-md"
+      ],
+      "answer": 1,
+      "question_ru": "Как добавить тень в Tailwind?",
+      "question_en": "Tailwind da shadow qanday qo'shiladi?",
+      "options_ru": [
+        "коробка-тень-MD",
+        "тень-MD",
+        "падающая тень-MD",
+        "тень-МД"
+      ],
+      "options_en": [
+        "box-shadow-md",
+        "shadow-md",
+        "drop-shadow-md",
+        "shade-md"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Tailwind da grid nima bilan yoqiladi?",
+      "options": [
+        "display-grid",
+        "grid",
+        "grid-system",
+        "grid-layout"
+      ],
+      "answer": 1,
+      "question_ru": "Какая сетка включена в Tailwind?",
+      "question_en": "What is the grid enabled in Tailwind?",
+      "options_ru": [
+        "сетка дисплея",
+        "сетка",
+        "сетка-система",
+        "сетка-макет"
+      ],
+      "options_en": [
+        "display-grid",
+        "grid",
+        "grid-system",
+        "grid-layout"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Tailwind da hover effekti qanday?",
+      "options": [
+        "on-hover:",
+        "hover::",
+        "hover:",
+        "on:hover:"
+      ],
+      "answer": 2,
+      "question_ru": "Что такое эффект наведения в Tailwind?",
+      "question_en": "What is the hover effect in Tailwind?",
+      "options_ru": [
+        "при наведении:",
+        "наведите курсор::",
+        "наведение:",
+        "вкл.: наведите указатель мыши:"
+      ],
+      "options_en": [
+        "on-hover:",
+        "hover::",
+        "hover:",
+        "on:hover:"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Tailwind da dark mode qanday qo'llaniladi?",
+      "options": [
+        "dark::",
+        "dark-mode:",
+        "dark:",
+        "@dark:"
+      ],
+      "answer": 2,
+      "question_ru": "Как использовать темный режим в Tailwind?",
+      "question_en": "How to use dark mode in Tailwind?",
+      "options_ru": [
+        "темно::",
+        "темный режим:",
+        "темно:",
+        "@темный:"
+      ],
+      "options_en": [
+        "dark::",
+        "dark-mode:",
+        "dark:",
+        "@dark:"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Tailwind da width full (100%) nima?",
+      "options": [
+        "w-100",
+        "w-full",
+        "width-full",
+        "w-max"
+      ],
+      "answer": 1,
+      "question_ru": "Какова полная ширина (100%) в Tailwind?",
+      "question_en": "What is width full (100%) in Tailwind?",
+      "options_ru": [
+        "w-100",
+        "ч-полный",
+        "полная ширина",
+        "Вт-макс"
+      ],
+      "options_en": [
+        "w-100",
+        "w-full",
+        "width-full",
+        "w-max"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Tailwind da tailwind.config.js nima uchun?",
+      "options": [
+        "JavaScript konfiguratsiyasi",
+        "Tailwind ni sozlash — rang, shrift, breakpoint, extend va plugins konfiguratsiyasi",
+        "CSS konfiguratsiyasi",
+        "Build konfiguratsiyasi"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Tailwind.config.js в Tailwind?",
+      "question_en": "Why tailwind.config.js in Tailwind?",
+      "options_ru": [
+        "Конфигурация JavaScript",
+        "Конфигурация Tailwind — цвет, шрифт, точка останова, расширение и конфигурация плагинов.",
+        "Конфигурация CSS",
+        "Конфигурация сборки"
+      ],
+      "options_en": [
+        "JavaScript configuration",
+        "Tailwind configuration — color, font, breakpoint, extend and plugins configuration",
+        "CSS configuration",
+        "Build configuration"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Tailwind da @apply direktivi nima qiladi?",
+      "options": [
+        "CSS apply",
+        "Tailwind utility klasslarini CSS qoidasiga qo'llash — component klass yaratish",
+        "Mixin qo'llash",
+        "Extend qilish"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает директива @apply в Tailwind?",
+      "question_en": "Tailwind da @apply direktivi nima qiladi?",
+      "options_ru": [
+        "Применить CSS",
+        "Применение служебных классов Tailwind к правилу CSS — создание класса компонента",
+        "Приложение для смешивания",
+        "Продлить"
+      ],
+      "options_en": [
+        "Apply CSS",
+        "Applying Tailwind utility classes to a CSS rule — creating a component class",
+        "Mixing application",
+        "Extend"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Tailwind da arbitrary values qanday ishlatiladi?",
+      "options": [
+        "[value]",
+        "arbitrary(value)",
+        "Ishlatilmaydi",
+        "*[value]"
+      ],
+      "answer": 0,
+      "question_ru": "Как использовать произвольные значения в Tailwind?",
+      "question_en": "How to use arbitrary values ​​in Tailwind?",
+      "options_ru": [
+        "[значение]",
+        "произвольное (значение)",
+        "Не используется",
+        "*[ценить]"
+      ],
+      "options_en": [
+        "[value]",
+        "arbitrary(value)",
+        "Not used",
+        "*[value]"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Tailwind da JIT (Just-in-Time) mode nima?",
+      "options": [
+        "JavaScript JIT",
+        "Faqat ishlatilgan klasslarni generatsiya qiladigan engine — Tailwind v3 default",
+        "Compile mode",
+        "Fast mode"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое режим JIT (точно в срок) в Tailwind?",
+      "question_en": "What is JIT (Just-in-Time) mode in Tailwind?",
+      "options_ru": [
+        "JIT-компиляция JavaScript",
+        "Движок, который генерирует только используемые классы — Tailwind v3 по умолчанию.",
+        "Режим компиляции",
+        "Быстрый режим"
+      ],
+      "options_en": [
+        "JavaScript JIT",
+        "Engine that only generates used classes — Tailwind v3 default",
+        "Compile mode",
+        "Fast mode"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Tailwind da PurgeCSS / content konfiguratsiyasi nima uchun?",
+      "options": [
+        "CSS purge",
+        "Ishlatilmagan CSS klasslarni production bundledan olib tashlash — kichik fayl",
+        "Content type",
+        "Template path"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Tailwind используется конфигурация PurgeCSS/content?",
+      "question_en": "Tailwind da PurgeCSS / content konfiguratsiyasi nima uchun?",
+      "options_ru": [
+        "Очистка CSS",
+        "Удалить неиспользуемые классы CSS из производственного пакета — небольшой файл",
+        "Тип контента",
+        "Путь к шаблону"
+      ],
+      "options_en": [
+        "CSS purge",
+        "Remove unused CSS classes from production bundle - small file",
+        "Content type",
+        "Template path"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Tailwind da theme() funksiyasi CSS da qanday ishlatiladi?",
+      "options": [
+        "CSS funksiyasi",
+        "CSS da Tailwind theme qiymatlarini ishlatish: theme('colors.blue.500')",
+        "JavaScript funksiya",
+        "Config funksiya"
+      ],
+      "answer": 1,
+      "question_ru": "Как использовать функцию theme() в Tailwind в CSS?",
+      "question_en": "Tailwind da theme() funksiyasi CSS da qanday ishlatiladi?",
+      "options_ru": [
+        "CSS-функция",
+        "Использование значений темы Tailwind в CSS: theme('colors.blue.500')",
+        "Функция JavaScript",
+        "Функция конфигурации"
+      ],
+      "options_en": [
+        "CSS function",
+        "Using Tailwind theme values ​​in CSS: theme('colors.blue.500')",
+        "JavaScript function",
+        "Config function"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Tailwind da plugin qanday qo'shiladi?",
+      "options": [
+        "npm plugin",
+        "tailwind.config.js da plugins arrayga qo'shish",
+        "CSS plugin",
+        "Config plugin"
+      ],
+      "answer": 1,
+      "question_ru": "Как добавить плагин в Tailwind?",
+      "question_en": "How to add a plugin in Tailwind?",
+      "options_ru": [
+        "плагин npm",
+        "Добавить в массив плагинов в Tailwind.config.js",
+        "CSS-плагин",
+        "Плагин конфигурации"
+      ],
+      "options_en": [
+        "npm plugin",
+        "Add to plugins array in tailwind.config.js",
+        "CSS plugin",
+        "Config plugin"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Tailwind da extend va override farqi tailwind.config.js da?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "extend — default qiymatlarga qo'shadi; theme ichida to'g'ridan-to'g'ri yozish — default ni almaydi",
+        "override kengaytiradi",
+        "extend o'chiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между расширением и переопределением в Tailwind в Tailwind.config.js?",
+      "question_en": "Tailwind da extend va override farqi tailwind.config.js da?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "расширить — добавляет значения по умолчанию; Пишу прямо в теме, не получается по умолчанию",
+        "переопределение расширяется",
+        "продлить удаление"
+      ],
+      "options_en": [
+        "There is no difference",
+        "extend — adds to default values; Writing directly in the theme does not get the default",
+        "override extends",
+        "extend o'chiradi"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Tailwind da group va group-hover nima uchun?",
+      "options": [
+        "Elementlar guruhi",
+        "Ota elementga group klasi berib, bola elementda group-hover: bilan ota hover stilini qo'llash",
+        "CSS group",
+        "Hover group"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем группировать и группировать наведение в Tailwind?",
+      "question_en": "Why group and group-hover in Tailwind?",
+      "options_ru": [
+        "Группа элементов",
+        "Присвойте родительскому элементу групповой класс и примените родительский стиль наведения к дочернему элементу с помощью группового наведения:",
+        "группа CSS",
+        "Группа наведения"
+      ],
+      "options_en": [
+        "A group of elements",
+        "Give the parent element a group class and apply the parent hover style to the child element with group-hover:",
+        "CSS group",
+        "Hover group"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Tailwind da peer nima uchun ishlatiladi?",
+      "options": [
+        "Tengdosh element",
+        "Sibling elementlarni kuzatib, peer-* variant bilan stil qo'llash",
+        "Input peer",
+        "Form peer"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется одноранговый узел в Tailwind?",
+      "question_en": "What is a peer used for in Tailwind?",
+      "options_ru": [
+        "Одноранговый элемент",
+        "Следуйте родственным элементам и применяйте стиль с помощью опции Peer-*.",
+        "Входной узел",
+        "Форма равноправного участника"
+      ],
+      "options_en": [
+        "Peer element",
+        "Follow sibling elements and apply style with the peer-* option",
+        "Input peer",
+        "Form peer"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Tailwind da container nima qiladi?",
+      "options": [
+        "Div container",
+        "Max-width ni responsive breakpointlarga moslashtiradi",
+        "Width limiter",
+        "Block element"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает контейнер в Tailwind?",
+      "question_en": "What does a container do in Tailwind?",
+      "options_ru": [
+        "Div-контейнер",
+        "Регулирует максимальную ширину для адаптивных точек останова.",
+        "Ограничитель ширины",
+        "Блочный элемент"
+      ],
+      "options_en": [
+        "Div container",
+        "Adjusts max-width to responsive breakpoints",
+        "Width limiter",
+        "Block element"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Tailwind da space-x-4 nima qiladi?",
+      "options": [
+        "X o'qi bo'yicha padding",
+        "Flex/grid bolalar orasida gorizontal bo'shliq (margin-left) qo'shadi",
+        "Grid gap",
+        "Spacing"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает Space-x-4 в Tailwind?",
+      "question_en": "What does space-x-4 do in Tailwind?",
+      "options_ru": [
+        "Отступы по оси X",
+        "Flex/grid добавляет горизонтальное пространство (слева) между дочерними элементами.",
+        "Grid gap",
+        "Расстояние"
+      ],
+      "options_en": [
+        "Padding on the x-axis",
+        "Flex/grid adds horizontal space (margin-left) between children",
+        "Grid talk",
+        "Spacing"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Tailwind da divide-x nima qiladi?",
+      "options": [
+        "Elementni bo'lish",
+        "Bolalar orasiga vertikal chiziq qo'shadi (border-right)",
+        "Divide layout",
+        "Split element"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает div-x в Tailwind?",
+      "question_en": "Tailwind da divide-x nima qiladi?",
+      "options_ru": [
+        "Разделить элемент",
+        "Добавляет вертикальную линию между дочерними элементами (справа от границы)",
+        "Разделить макет",
+        "Разделить элемент"
+      ],
+      "options_en": [
+        "Split an element",
+        "Adds a vertical line between children (border-right)",
+        "Divide layout",
+        "Split element"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Tailwind da ring nima uchun?",
+      "options": [
+        "Border ring",
+        "Box shadow orqali yasalgan ring — focus state uchun — ring-2 ring-blue-500",
+        "Focus ring",
+        "CSS ring"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем звонить в Tailwind?",
+      "question_en": "Tailwind da ring nima uchun?",
+      "options_ru": [
+        "Пограничное кольцо",
+        "Кольцо, созданное тенью коробки — для состояния фокуса — кольцо-2 кольцо-синее-500",
+        "Кольцо фокусировки",
+        "CSS-кольцо"
+      ],
+      "options_en": [
+        "Border ring",
+        "Box shadow orqali yasalgan ring — focus state uchun — ring-2 ring-blue-500",
+        "Focus ring",
+        "CSS ring"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Tailwind da aspect-ratio nima?",
+      "options": [
+        "Image ratio",
+        "Elementning kenglik/balandlik nisbati — aspect-video, aspect-square, aspect-[16/9]",
+        "Video ratio",
+        "Container ratio"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое соотношение сторон в Tailwind?",
+      "question_en": "What is aspect-ratio in Tailwind?",
+      "options_ru": [
+        "Соотношение изображений",
+        "Elementning kenglik/balandlik nisbati — aspect-video, aspect-square, aspect-[16/9]",
+        "Соотношение видео",
+        "Container ratio"
+      ],
+      "options_en": [
+        "Image ratio",
+        "Element aspect ratio — aspect-video, aspect-square, aspect-[16/9]",
+        "Video ratio",
+        "Container ratio"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Tailwind da line-clamp nima qiladi?",
+      "options": [
+        "Qatorni o'chirish",
+        "Matnni belgilangan qator sonida kesib, ellipsis qo'yadi",
+        "Text clamp",
+        "Content clamp"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает зажим лески при попутном ветре?",
+      "question_en": "What does a line-clamp do on a tailwind?",
+      "options_ru": [
+        "Удалить строку",
+        "Обрезает текст на указанное количество строк и вставляет многоточие.",
+        "Текстовый зажим",
+        "Зажим содержимого"
+      ],
+      "options_en": [
+        "Delete row",
+        "Cuts the text at the specified number of lines and inserts an ellipsis",
+        "Text clamp",
+        "Content clamp"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Tailwind da backdrop-blur nima?",
+      "options": [
+        "Image blur",
+        "Elementning ortidagi fon (backdrop) ni blur qiladi — glassmorphism uchun",
+        "CSS blur",
+        "Filter blur"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое размытие фона в Tailwind?",
+      "question_en": "Tailwind da backdrop-blur nima?",
+      "options_ru": [
+        "Размытие изображения",
+        "Размывает фон позади элемента — для гласморфизма.",
+        "CSS-размытие",
+        "Фильтр размытия"
+      ],
+      "options_en": [
+        "Image blur",
+        "Blurs the background behind the element — for glassmorphism",
+        "CSS blur",
+        "Filter blur"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Tailwind da transition-all nima qiladi?",
+      "options": [
+        "Barcha animatsiyalar",
+        "Barcha CSS xususiyatlar uchun transition qo'shadi",
+        "CSS transition",
+        "All transitions"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает переход-все в Tailwind?",
+      "question_en": "What does transition-all do in Tailwind?",
+      "options_ru": [
+        "Все анимации",
+        "Добавляет переход для всех свойств CSS.",
+        "CSS-переход",
+        "Все переходы"
+      ],
+      "options_en": [
+        "All animations",
+        "Adds a transition for all CSS properties",
+        "CSS transition",
+        "All transitions"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Tailwind da gradient qanday yaratiladi?",
+      "options": [
+        "gradient-to-r",
+        "bg-gradient-to-r from-blue-500 to-purple-500",
+        "CSS gradient",
+        "Linear gradient"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать градиент в Tailwind?",
+      "question_en": "Tailwind da gradient qanday yaratiladi?",
+      "options_ru": [
+        "градиент к r",
+        "bg-gradient-to-r от синего-500 до фиолетового-500",
+        "CSS-градиент",
+        "Линейный градиент"
+      ],
+      "options_en": [
+        "gradient-to-r",
+        "bg-gradient-to-r from-blue-500 to-purple-500",
+        "CSS gradient",
+        "Linear gradient"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Tailwind da text-ellipsis nima qiladi?",
+      "options": [
+        "Matn animatsiyasi",
+        "Overflow bo'lgan matnni '...' bilan kesadi",
+        "Text overflow",
+        "Ellipsis text"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает текст-многоточие в Tailwind?",
+      "question_en": "Tailwind da text-ellipsis nima qiladi?",
+      "options_ru": [
+        "Текстовая анимация",
+        "Усекает текст переполнения с помощью '...'",
+        "Переполнение текста",
+        "Текст с многоточием"
+      ],
+      "options_en": [
+        "Text animation",
+        "Truncates overflow text with '...'",
+        "Text overflow",
+        "Ellipsis text"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Tailwind da custom color palette qanday qo'shiladi?",
+      "options": [
+        "CSS o'zgaruvchi",
+        "tailwind.config.js da theme.extend.colors ichiga hex/hsl qiymatlar",
+        "Color plugin",
+        "Palette file"
+      ],
+      "answer": 1,
+      "question_ru": "Как добавить собственную цветовую палитру в Tailwind?",
+      "question_en": "How to add custom color palette in Tailwind?",
+      "options_ru": [
+        "CSS-переменная",
+        "значения hex/hsl в theme.extend.colors в Tailwind.config.js",
+        "Плагин цвета",
+        "Файл палитры"
+      ],
+      "options_en": [
+        "CSS variable",
+        "hex/hsl values ​​into theme.extend.colors in tailwind.config.js",
+        "Color plugin",
+        "Palette file"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Tailwind da CSS Variables bilan integratsiya?",
+      "options": [
+        "Almashtirish",
+        "CSS Custom Properties ni Tailwind theme da ishlatish — dynamic theming uchun",
+        "No integration",
+        "Config only"
+      ],
+      "answer": 1,
+      "question_ru": "Интеграция с переменными CSS в Tailwind?",
+      "question_en": "Tailwind da CSS Variables bilan integratsiya?",
+      "options_ru": [
+        "Обмен",
+        "Использование пользовательских свойств CSS в теме Tailwind — для динамического оформления тем.",
+        "Нет интеграции",
+        "Только конфигурация"
+      ],
+      "options_en": [
+        "Exchange",
+        "Using CSS Custom Properties in Tailwind theme — for dynamic theming",
+        "No integration",
+        "Config only"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Tailwind da @layer directive nima uchun?",
+      "options": [
+        "CSS layer",
+        "CSS cascade layerlarini boshqarish — base, components, utilities — specificity nazorat",
+        "Layer management",
+        "Style layer"
+      ],
+      "answer": 1,
+      "question_ru": "Почему директива @layer в Tailwind?",
+      "question_en": "Tailwind da @layer directive nima uchun?",
+      "options_ru": [
+        "CSS-слой",
+        "Управление каскадными слоями CSS — база, компоненты, утилиты — контроль специфики",
+        "Управление слоями",
+        "Слой стиля"
+      ],
+      "options_en": [
+        "CSS layer",
+        "Control of CSS cascade layers — base, components, utilities — specificity control",
+        "Layer management",
+        "Style layer"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Tailwind da safelist nima uchun ishlatiladi?",
+      "options": [
+        "Xavfsiz ro'yxat",
+        "Dinamik klasslar uchun — JIT mode da purge qilinmasligi kerak bo'lgan klasslarni ko'rsatish",
+        "Whitelist",
+        "Protected list"
+      ],
+      "answer": 1,
+      "question_ru": "Почему список надежных отправителей используется в Tailwind?",
+      "question_en": "Why is safelist used in Tailwind?",
+      "options_ru": [
+        "Безопасный список",
+        "Для динамических классов — показать классы, которые не следует удалять в режиме JIT.",
+        "Белый список",
+        "Защищенный список"
+      ],
+      "options_en": [
+        "Safe list",
+        "For dynamic classes — show classes that should not be purged in JIT mode",
+        "Whitelist",
+        "Protected list"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Tailwind da plugin API bilan custom utility qanday yaratiladi?",
+      "options": [
+        "CSS utility",
+        "addUtilities({'.my-util': { }}) — tailwind.config.js plugins ichida",
+        "Plugin util",
+        "Custom class"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать собственную утилиту с API плагина в Tailwind?",
+      "question_en": "How to create custom utility with plugin API in Tailwind?",
+      "options_ru": [
+        "CSS-утилита",
+        "addUtilities({'.my-util': { }}) — в плагинах Tailwind.config.js",
+        "Утилита плагина",
+        "Custom class"
+      ],
+      "options_en": [
+        "CSS utility",
+        "addUtilities({'.my-util': { }}) — in tailwind.config.js plugins",
+        "Plugin utility",
+        "Custom class"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Tailwind v4 da nima o'zgardi?",
+      "options": [
+        "Hech qanday o'zgarish",
+        "CSS-first konfiguratsiyasi — tailwind.config.js o'rniga @import 'tailwindcss' va @theme directive",
+        "Faqat performance",
+        "Yangi ranglar"
+      ],
+      "answer": 1,
+      "question_ru": "Что изменилось в Tailwind v4?",
+      "question_en": "What has changed in Tailwind v4?",
+      "options_ru": [
+        "Без изменений",
+        "Конфигурация с упором на CSS — директива @import 'tailwindcss' и @theme вместо Tailwind.config.js",
+        "Только производительность",
+        "Новые цвета"
+      ],
+      "options_en": [
+        "Hech qanday o'zgarish",
+        "CSS-first konfiguratsiyasi — tailwind.config.js o'rniga @import 'tailwindcss' va @theme directive",
+        "Performance only",
+        "New colors"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Tailwind da matchUtilities plugin API nima uchun?",
+      "options": [
+        "Match qilish",
+        "Dinamik qiymatlar bilan custom utility klasslari yaratish — arbitrary value qo'llab-quvvatlash",
+        "Utility match",
+        "Value match"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем нужен API плагина matchUtilities в Tailwind?",
+      "question_en": "Why matchUtilities plugin API in Tailwind?",
+      "options_ru": [
+        "Сделать матч",
+        "Создание пользовательских классов утилит с динамическими значениями — поддержка произвольных значений",
+        "Утилиты соответствия",
+        "Соответствие значений"
+      ],
+      "options_en": [
+        "Match qilish",
+        "Dinamik qiymatlar bilan custom utility klasslari yaratish — arbitrary value qo'llab-quvvatlash",
+        "Utility match",
+        "Value match"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Tailwind da important modifier (!) nima qiladi?",
+      "options": [
+        "CSS important",
+        "Klass oldiga ! qo'yib, xususiyatga !important qo'shadi — !text-red-500",
+        "Override",
+        "Priority"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает важный модификатор (!) в Tailwind?",
+      "question_en": "What does the important modifier (!) do in Tailwind?",
+      "options_ru": [
+        "CSS важен",
+        "Иди в класс! добавляет !important к свойству — !text-red-500",
+        "Переопределить",
+        "Приоритет"
+      ],
+      "options_en": [
+        "CSS is important",
+        "Go to class! adds !important to the property — !text-red-500",
+        "Override",
+        "Priority"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Tailwind da presets nima?",
+      "options": [
+        "Default settings",
+        "Boshqa loyihalarda qayta ishlatiladigan Tailwind konfiguratsiyasi — shared design system",
+        "Config preset",
+        "Theme preset"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое пресеты в Tailwind?",
+      "question_en": "What are presets in Tailwind?",
+      "options_ru": [
+        "Настройки по умолчанию",
+        "Конфигурация попутного ветра, которую можно повторно использовать в других проектах — общая система проектирования",
+        "Предварительная настройка конфигурации",
+        "Предустановка темы"
+      ],
+      "options_en": [
+        "Default settings",
+        "Tailwind configuration that can be reused in other projects — shared design system",
+        "Config preset",
+        "Theme preset"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Tailwind da postcss.config.js nima uchun?",
+      "options": [
+        "Post CSS",
+        "Tailwind va Autoprefixer ni PostCSS pipeline ga qo'shish — build jarayoni",
+        "CSS processor",
+        "Build config"
+      ],
+      "answer": 1,
+      "question_ru": "Почему postcss.config.js в Tailwind?",
+      "question_en": "Why postcss.config.js in Tailwind?",
+      "options_ru": [
+        "Опубликовать CSS",
+        "Добавьте Tailwind и Autoprefixer в конвейер PostCSS — процесс сборки",
+        "CSS-процессор",
+        "Конфигурация сборки"
+      ],
+      "options_en": [
+        "Post CSS",
+        "Tailwind va Autoprefixer ni PostCSS pipeline ga qo'shish — build jarayoni",
+        "CSS processor",
+        "Build config"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Tailwind da data attribute variant nima?",
+      "options": [
+        "Data attribute",
+        "data-[state=active]: klass bilan HTML data atributiga asosida stil qo'llash",
+        "HTML data",
+        "Attribute selector"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое опция атрибута данных в Tailwind?",
+      "question_en": "What is the data attribute option in Tailwind?",
+      "options_ru": [
+        "Атрибут данных",
+        "data-[state=active]: применить стиль на основе атрибута данных HTML с классом",
+        "HTML-данные",
+        "Селектор атрибутов"
+      ],
+      "options_en": [
+        "Data attribute",
+        "data-[state=active]: apply style based on HTML data attribute with class",
+        "HTML data",
+        "Attribute selector"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Tailwind da has() variant nima uchun?",
+      "options": [
+        "CSS has",
+        "Ichidagi element holatiga asosida ota elementga stil qo'llash — has-[:checked]:",
+        "Parent selector",
+        "Child check"
+      ],
+      "answer": 1,
+      "question_ru": "Почему опция has() в Tailwind?",
+      "question_en": "Tailwind da has() variant nima uchun?",
+      "options_ru": [
+        "CSS имеет",
+        "Примените стиль к родительскому элементу в зависимости от положения элемента внутри него — has-[:checked]:",
+        "Родительский селектор",
+        "Проверка ребенка"
+      ],
+      "options_en": [
+        "CSS has",
+        "Apply a style to the parent element based on the position of the element inside it — has-[:checked]:",
+        "Parent selector",
+        "Child check"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Tailwind da typography plugin nima beradi?",
+      "options": [
+        "Font plugin",
+        "@tailwindcss/typography — prose klass bilan rich text kontent stilizatsiyasi",
+        "Text plugin",
+        "Markdown style"
+      ],
+      "answer": 1,
+      "question_ru": "Что предоставляет плагин типографики в Tailwind?",
+      "question_en": "What does the typography plugin provide in Tailwind?",
+      "options_ru": [
+        "Плагин шрифта",
+        "@tailwindcss/typography — оформление форматированного текстового контента с помощью класса prose",
+        "Текстовый плагин",
+        "Стиль уценки"
+      ],
+      "options_en": [
+        "Font plugin",
+        "@tailwindcss/typography — rich text content styling with prose class",
+        "Text plugin",
+        "Markdown style"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Tailwind da forms plugin nima uchun?",
+      "options": [
+        "Form layout",
+        "@tailwindcss/forms — browser default form elementlar stilini reset qilib, Tailwind bilan stil qo'llash",
+        "Form reset",
+        "Input style"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем плагин форм в Tailwind?",
+      "question_en": "Why forms plugin in Tailwind?",
+      "options_ru": [
+        "Form layout",
+        "@tailwindcss/forms — применить стиль с помощью Tailwind, сбросив стили элементов формы по умолчанию в браузере.",
+        "Сброс формы",
+        "Стиль ввода"
+      ],
+      "options_en": [
+        "Form layout",
+        "@tailwindcss/forms — apply styling with Tailwind by resetting browser default form element styles",
+        "Form reset",
+        "Input style"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Tailwind da container queries nima?",
+      "options": [
+        "CSS container",
+        "@tailwindcss/container-queries — viewport emas, ota element o'lchamiga asosida responsive stil",
+        "Container CSS",
+        "Viewport query"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое контейнерные запросы в Tailwind?",
+      "question_en": "What are container queries in Tailwind?",
+      "options_ru": [
+        "CSS-контейнер",
+        "@tailwindcss/container-queries — адаптивный стиль, основанный на размере родительского элемента, а не области просмотра.",
+        "CSS-контейнер",
+        "Запрос области просмотра"
+      ],
+      "options_en": [
+        "CSS container",
+        "@tailwindcss/container-queries — viewport emas, ota element o'lchamiga asosida responsive stil",
+        "Container CSS",
+        "Viewport query"
+      ]
+    }
   ]
 }

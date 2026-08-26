@@ -2,55 +2,1305 @@
   "technology": "Java",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Java da main metod qanday e'lon qilinadi?","options":["void main()","public static void main(String[] args)","static main()","public void main()"],"answer":1},
-    {"id":2,"level":"easy","question":"Java da o'zgaruvchi turi qanday e'lon qilinadi?","options":["var x = 5;","x = 5;","int x = 5;","let x = 5;"],"answer":2},
-    {"id":3,"level":"easy","question":"Java da String nima?","options":["Primitiv tip","Immutable belgilar ketma-ketligini ifodalovchi klass","Array turi","Char to'plami"],"answer":1},
-    {"id":4,"level":"easy","question":"Java da OOP ning 4 asosiy prinsipi qaysilar?","options":["Encapsulation, Abstraction, Inheritance, Polymorphism","Class, Object, Method, Field","Public, Private, Protected, Default","Static, Dynamic, Abstract, Final"],"answer":0},
-    {"id":5,"level":"easy","question":"Java da ArrayList va Array farqi nima?","options":["Hech qanday farq yo'q","ArrayList dinamik o'lchamli, Array esa statik o'lchamli","Array dinamik","ArrayList primitiv saqlaydi"],"answer":1},
-    {"id":6,"level":"easy","question":"Java da interface nima?","options":["Klass turi","Faqat abstract metodlar va konstantalar e'lon qilingan shartnoma","Klass meros","Abstract klass"],"answer":1},
-    {"id":7,"level":"easy","question":"Java da abstract klass nima?","options":["To'liq implementatsiya bo'lmagan klass","Ob'ekt yaratib bo'lmaydigan, implementatsiyasiz metodlarga ega bo'lishi mumkin bo'lgan klass","Interface turi","Final klass"],"answer":1},
-    {"id":8,"level":"easy","question":"Java da exception handling qanday amalga oshiriladi?","options":["try-catch-finally","error-handle","if-error","exception()"],"answer":0},
-    {"id":9,"level":"easy","question":"Java da final kalit so'zi nima anglatadi?","options":["Funksiya tugadi","O'zgarmas — final variable, override bo'lmaydigan final method, meros bo'lmaydigan final class","Statik element","Private element"],"answer":1},
-    {"id":10,"level":"easy","question":"Java da static kalit so'zi nima uchun?","options":["Statik web sahifa","Klass darajasida — instance yaratmasdan kirish mumkin bo'lgan member","Doimiy qiymat","Xotira optimallashtirish"],"answer":1},
-    {"id":11,"level":"easy","question":"Java da constructor nima?","options":["Funksiya turi","Ob'ekt yaratilganda avtomatik chaqiriladigan, klass nomi bilan bir xil metod","Main metod","Static metod"],"answer":1},
-    {"id":12,"level":"easy","question":"Java da String.equals() va == farqi nima?","options":["Hech qanday farq yo'q","equals() — kontent taqqoslaydi; == — referens (xotira manzil) taqqoslaydi","== kontent taqqoslaydi","Ikkalasi bir xil"],"answer":1},
-    {"id":13,"level":"easy","question":"Java da HashMap nima?","options":["Ketma-ket ro'yxat","Kalit-qiymat juftliklari saqlash uchun hash asosidagi struktura","Ordered map","Tree map"],"answer":1},
-    {"id":14,"level":"easy","question":"Java da for-each tsikli qanday yoziladi?","options":["for (i = 0; i < n; i++)","foreach (item in list)","for (Type item : collection)","for item in collection"],"answer":2},
-    {"id":15,"level":"easy","question":"Java da NullPointerException qachon yuzaga keladi?","options":["Noto'g'ri indeks","null referens bilan metod yoki field ga murojaat qilganda","Tip xatosi","Stack overflow"],"answer":1},
-    {"id":16,"level":"medium","question":"Java da Generics nima uchun ishlatiladi?","options":["Umumiy funksiya","Tip xavfsizligini ta'minlovchi — List<String> kabi tip parametrlash","Performance optimallashtirish","Array kengaytirish"],"answer":1},
-    {"id":17,"level":"medium","question":"Java da Lambda expressions nima?","options":["Lambda hesoblash","Anonim funksiya — (params) -> expression yoki {block}","Rekursiv funksiya","Anonymous class"],"answer":1},
-    {"id":18,"level":"medium","question":"Java da Stream API nima uchun?","options":["Network stream","Collection larni funksional uslubda qayta ishlash — filter, map, reduce, collect","Data stream","IO stream"],"answer":1},
-    {"id":19,"level":"medium","question":"Java da Optional nima uchun?","options":["Ixtiyoriy parametr","null ga alternativa — qiymat yo'qligi holati bilan xavfsiz ishlash","Optional klass","Nullable tip"],"answer":1},
-    {"id":20,"level":"medium","question":"Java da synchronized kalit so'zi nima uchun?","options":["Sinxronizatsiya","Ko'p thread muhitida bitta vaqtda faqat bitta thread blokga kirishi uchun","Thread yaratish","Lock qilish"],"answer":1},
-    {"id":21,"level":"medium","question":"Java da interface vs abstract class: qaysi holda qaysi biri?","options":["Har doim interface","Interface — ko'p meros uchun shartnoma; abstract class — umumiy implementatsiya va holat bo'lganda","Har doim abstract","Farq yo'q"],"answer":1},
-    {"id":22,"level":"medium","question":"Java da Checked va Unchecked exception farqi?","options":["Hech qanday farq yo'q","Checked — kompilyatsiyada tekshiriladi (handle/declare majburiy); Unchecked — runtime exception (RuntimeException)","Unchecked majburiy","Checked runtime"],"answer":1},
-    {"id":23,"level":"medium","question":"Java da Iterator pattern nima?","options":["Iteratsiya usuli","Collection elementlarini ketma-ket aylanib chiqish uchun standart interfeys","Loop pattern","Cursor pattern"],"answer":1},
-    {"id":24,"level":"medium","question":"Java da volatile kalit so'zi nima qiladi?","options":["Sekin qiladi","O'zgaruvchi qiymatini thread local cache da emas, asosiy xotirada saqlashni kafolatlaydi","Thread xavfsizlik","Lock mexanizmi"],"answer":1},
-    {"id":25,"level":"medium","question":"Java da equals() va hashCode() metodlari nega birgalikda override qilinadi?","options":["Majburiy emas","equals() true bo'lsa hashCode() bir xil bo'lishi kerak — HashMap, HashSet to'g'ri ishlashi uchun","Performance uchun","Inheritance uchun"],"answer":1},
-    {"id":26,"level":"medium","question":"Java da String Pool nima?","options":["String massivi","String literallar uchun heap da maxsus joy — bir xil stringlar bitta ob'ekt bo'lishi uchun","String cache","String buffer"],"answer":1},
-    {"id":27,"level":"medium","question":"Java da StringBuilder vs String: qachon StringBuilder?","options":["Har doim String","Ko'p string birlashtirish bo'lsa — StringBuilder mutable, String immutable (yangi ob'ekt yaratadi)","Har doim StringBuilder","Farq yo'q"],"answer":1},
-    {"id":28,"level":"medium","question":"Java da Comparable va Comparator farqi?","options":["Hech qanday farq yo'q","Comparable — ob'ekt o'zini taqqoslay oladi (compareTo); Comparator — tashqi taqqoslash mantiq","Comparator ichki","Comparable tashqi"],"answer":1},
-    {"id":29,"level":"medium","question":"Java da varargs nima?","options":["Variable arguments","Ixtiyoriy sonli argumentlar: void method(String... args) — array sifatida ishlaydi","Optional params","Default args"],"answer":0},
-    {"id":30,"level":"medium","question":"Java da enum nima?","options":["Belgilangan konstantalar to'plami","Muqobil raqam","List turi","Map turi"],"answer":0},
-    {"id":31,"level":"medium","question":"Java da JVM, JRE, JDK farqlari nima?","options":["Hech qanday farq yo'q","JVM — bytecode ijrochisi; JRE — JVM + kutubxonalar; JDK — JRE + kompilyator + tool lar","JDK faqat kompilyator","JRE dasturchilar uchun"],"answer":1},
-    {"id":32,"level":"medium","question":"Java da Garbage Collection nima?","options":["Kodni tozalash","JVM tomonidan foydalanilmayotgan ob'ektlar xotirasini avtomatik bo'shatish","Manual xotira boshqarish","Cache tozalash"],"answer":1},
-    {"id":33,"level":"medium","question":"Java da try-with-resources nima uchun?","options":["Resource yaratish","AutoCloseable implement qilgan resurslarni avtomatik yopish — finally kerak emas","Resource boshqarish","Closeable pattern"],"answer":1},
-    {"id":34,"level":"medium","question":"Java da @Override annotation nima qiladi?","options":["Override bajara oladi","Kompilyatorga metod overriding ekanligini aytadi — xato bo'lsa ogohlantiradi","Metod kuchaytirishadi","Abstract metod"],"answer":1},
-    {"id":35,"level":"medium","question":"Java da deep copy va shallow copy farqi?","options":["Hech qanday farq yo'q","Shallow — referenslar nusxalanadi; Deep — ichki ob'ektlar ham nusxalanadi","Deep copy tezroq","Shallow copy xotirani ko'p oladi"],"answer":1},
-    {"id":36,"level":"hard","question":"Java da CompletableFuture nima uchun?","options":["Future kengaytirish","Asinxron, non-blocking hisoblash zanjiri — thenApply, thenCompose, allOf va boshqalar","Thread yaratish","Async event"],"answer":1},
-    {"id":37,"level":"hard","question":"Java da JIT compilation nima?","options":["Java Integration Tool","Runtime da bytecode ni mahalliy mashin kodiga aylantirish — performance optimallashtirish","Just In Test","Java Interpretation Tool"],"answer":1},
-    {"id":38,"level":"hard","question":"Java da Memory Model (JMM) nima?","options":["Xotira tuzilmasi","Ko'p thread da o'zgaruvchilar ko'rinishi va operatsiyalar tartibini belgilovchi spetsifikatsiya","Heap model","Stack model"],"answer":1},
-    {"id":39,"level":"hard","question":"Java da ReentrantLock va synchronized farqi?","options":["Hech qanday farq yo'q","ReentrantLock — tryLock, timeout, fairness, manual unlock; synchronized — sodda, avtomatik unlock","synchronized tezroq","ReentrantLock eski"],"answer":1},
-    {"id":40,"level":"hard","question":"Java da ConcurrentHashMap nima uchun?","options":["Multi-thread map","Thread-safe HashMap — bucket darajasida lock, HashMap dan ko'p thread da tezroq","Sorted map","Synchronized map"],"answer":1},
-    {"id":41,"level":"hard","question":"Java da Phantom Reference nima?","options":["Xayoliy referens","Ob'ekt garbage collect bo'lishidan oldin aniqlanadigan eng zaif referens — cleanup uchun","Weak reference","Soft reference"],"answer":1},
-    {"id":42,"level":"hard","question":"Java da Record class (Java 16+) nima uchun?","options":["Ma'lumot yozish","Immutable ma'lumot tashuvchi — avtomatik constructor, getters, equals, hashCode, toString","Data class","DTO klass"],"answer":1},
-    {"id":43,"level":"hard","question":"Java da Sealed classes nima?","options":["Yopiq klass","Qaysi klasslar meros ola olishini cheklash — permits kalit so'zi bilan","Final klass turi","Private klass"],"answer":1},
-    {"id":44,"level":"hard","question":"Java da Pattern Matching for instanceof nima?","options":["Instanceof tekshirish","instanceof tekshiruvi va cast ni birlashtirilgan sintaksis: if (obj instanceof String s)","Type checking","Casting"],"answer":1},
-    {"id":45,"level":"hard","question":"Java da Fork/Join framework nima uchun?","options":["Thread fork","Katta vazifani bo'laklarga bo'lib parallel bajarish — divide and conquer","Process fork","Task split"],"answer":1},
-    {"id":46,"level":"hard","question":"Java da Project Loom (Virtual Threads) nima?","options":["Project framework","JVM darajasida yengil virtual thread lar — millionlab thread xarajatsiz ishlash","Fiber library","Coroutine"],"answer":1},
-    {"id":47,"level":"hard","question":"Java da Instrumentation API nima uchun?","options":["Musiqa instrumentlari","Bytecode o'zgartirish va monitoring — APM, profiler, code coverage tool lar uchun","Hardware instrument","Test instrument"],"answer":1},
-    {"id":48,"level":"hard","question":"Java da ServiceLoader nima?","options":["Service yuklash","Service Provider Interface (SPI) — runtime da servis implementatsiyalarini topish","Plugin loader","Module loader"],"answer":1},
-    {"id":49,"level":"hard","question":"Java da MethodHandles va Reflection farqi?","options":["Hech qanday farq yo'q","MethodHandles — tezroq, type-safe, JVM optimizatsiyasi bor; Reflection — sekin, runtime type-check","Reflection tezroq","MethodHandles eski"],"answer":1},
-    {"id":50,"level":"hard","question":"Java da GraalVM nima?","options":["Java versiya","Ko'p tilli virtual mashina — native image kompilyatsiya, tez startup, kichik footprint","JavaScript VM","Scala VM"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Java da main metod qanday e'lon qilinadi?",
+      "options": [
+        "void main()",
+        "public static void main(String[] args)",
+        "static main()",
+        "public void main()"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить основной метод в Java?",
+      "question_en": "How to declare main method in Java?",
+      "options_ru": [
+        "недействительный основной()",
+        "public static void main(String[] args)",
+        "статический основной()",
+        "публичный недействительный основной()"
+      ],
+      "options_en": [
+        "void main()",
+        "public static void main(String[] args)",
+        "static main()",
+        "public void main()"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Java da o'zgaruvchi turi qanday e'lon qilinadi?",
+      "options": [
+        "var x = 5;",
+        "x = 5;",
+        "int x = 5;",
+        "let x = 5;"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить тип переменной в Java?",
+      "question_en": "How to declare a variable type in Java?",
+      "options_ru": [
+        "вар х = 5;",
+        "х = 5;",
+        "интервал х = 5;",
+        "пусть х = 5;"
+      ],
+      "options_en": [
+        "var x = 5;",
+        "x = 5;",
+        "int x = 5;",
+        "let x = 5;"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Java da String nima?",
+      "options": [
+        "Primitiv tip",
+        "Immutable belgilar ketma-ketligini ifodalovchi klass",
+        "Array turi",
+        "Char to'plami"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое строка в Java?",
+      "question_en": "What is a String in Java?",
+      "options_ru": [
+        "Примитивный тип",
+        "Класс, представляющий неизменяемую последовательность символов.",
+        "Тип массива",
+        "Набор символов"
+      ],
+      "options_en": [
+        "Primitiv tip",
+        "A class representing an immutable character sequence",
+        "Array type",
+        "Char set"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Java da OOP ning 4 asosiy prinsipi qaysilar?",
+      "options": [
+        "Encapsulation, Abstraction, Inheritance, Polymorphism",
+        "Class, Object, Method, Field",
+        "Public, Private, Protected, Default",
+        "Static, Dynamic, Abstract, Final"
+      ],
+      "answer": 0,
+      "question_ru": "Каковы 4 основных принципа ООП в Java?",
+      "question_en": "What are the 4 main principles of OOP in Java?",
+      "options_ru": [
+        "Инкапсуляция, абстракция, наследование, полиморфизм",
+        "Класс, объект, метод, поле",
+        "Публичный, Частный, Защищенный, По умолчанию",
+        "Статический, Динамический, Абстрактный, Финальный"
+      ],
+      "options_en": [
+        "Encapsulation, Abstraction, Inheritance, Polymorphism",
+        "Class, Object, Method, Field",
+        "Public, Private, Protected, Default",
+        "Static, Dynamic, Abstract, Final"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Java da ArrayList va Array farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "ArrayList dinamik o'lchamli, Array esa statik o'lchamli",
+        "Array dinamik",
+        "ArrayList primitiv saqlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между ArrayList и Array в Java?",
+      "question_en": "What is the difference between ArrayList and Array in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "ArrayList имеет динамический размер, а Array имеет статический размер.",
+        "Массив является динамическим",
+        "ArrayList хранит примитивы"
+      ],
+      "options_en": [
+        "There is no difference",
+        "ArrayList is dynamically sized while Array is statically sized",
+        "Array is dynamic",
+        "ArrayList stores primitives"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Java da interface nima?",
+      "options": [
+        "Klass turi",
+        "Faqat abstract metodlar va konstantalar e'lon qilingan shartnoma",
+        "Klass meros",
+        "Abstract klass"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интерфейс в Java?",
+      "question_en": "What is an interface in Java?",
+      "options_ru": [
+        "Тип класса",
+        "В контракте объявляются только абстрактные методы и константы.",
+        "Наследование классов",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "Klass turi",
+        "Only abstract methods and constants are declared in the contract",
+        "Class inheritance",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Java da abstract klass nima?",
+      "options": [
+        "To'liq implementatsiya bo'lmagan klass",
+        "Ob'ekt yaratib bo'lmaydigan, implementatsiyasiz metodlarga ega bo'lishi mumkin bo'lgan klass",
+        "Interface turi",
+        "Final klass"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое абстрактный класс в Java?",
+      "question_en": "What is an abstract class in Java?",
+      "options_ru": [
+        "Класс, который не является полной реализацией",
+        "Класс, в котором объект не может быть создан и может иметь методы без реализации.",
+        "Тип интерфейса",
+        "Заключительный урок"
+      ],
+      "options_en": [
+        "A class that is not a complete implementation",
+        "A class in which an object cannot be instantiated and can have methods without an implementation",
+        "Interface type",
+        "Final class"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Java da exception handling qanday amalga oshiriladi?",
+      "options": [
+        "try-catch-finally",
+        "error-handle",
+        "if-error",
+        "exception()"
+      ],
+      "answer": 0,
+      "question_ru": "Как осуществляется обработка исключений в Java?",
+      "question_en": "How is exception handling done in Java?",
+      "options_ru": [
+        "попробуй-поймай-наконец-то",
+        "дескриптор ошибки",
+        "если-ошибка",
+        "исключение()"
+      ],
+      "options_en": [
+        "try-catch-finally",
+        "error-handle",
+        "if-error",
+        "exception()"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Java da final kalit so'zi nima anglatadi?",
+      "options": [
+        "Funksiya tugadi",
+        "O'zgarmas — final variable, override bo'lmaydigan final method, meros bo'lmaydigan final class",
+        "Statik element",
+        "Private element"
+      ],
+      "answer": 1,
+      "question_ru": "Что означает ключевое слово Final в Java?",
+      "question_en": "What does final keyword mean in Java?",
+      "options_ru": [
+        "Функция завершена",
+        "Неизменяемый — конечная переменная, конечный метод, который нельзя переопределить, конечный класс, который нельзя унаследовать.",
+        "Статический элемент",
+        "Частный элемент"
+      ],
+      "options_en": [
+        "The function is finished",
+        "Immutable — final variable, final method that cannot be overridden, final class that cannot be inherited",
+        "A static element",
+        "Private element"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Java da static kalit so'zi nima uchun?",
+      "options": [
+        "Statik web sahifa",
+        "Klass darajasida — instance yaratmasdan kirish mumkin bo'lgan member",
+        "Doimiy qiymat",
+        "Xotira optimallashtirish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется ключевое слово static в Java?",
+      "question_en": "What is the static keyword in Java for?",
+      "options_ru": [
+        "Статическая веб-страница",
+        "На уровне класса — член, к которому можно получить доступ без создания экземпляра.",
+        "Постоянное значение",
+        "Оптимизация памяти"
+      ],
+      "options_en": [
+        "Static web page",
+        "At the class level — a member that can be accessed without creating an instance",
+        "Constant value",
+        "Xotira optimallashtirish"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Java da constructor nima?",
+      "options": [
+        "Funksiya turi",
+        "Ob'ekt yaratilganda avtomatik chaqiriladigan, klass nomi bilan bir xil metod",
+        "Main metod",
+        "Static metod"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое конструктор в Java?",
+      "question_en": "What is a constructor in Java?",
+      "options_ru": [
+        "Тип функции",
+        "Метод с тем же именем, что и класс, который вызывается автоматически при создании объекта.",
+        "Основной метод",
+        "Статический метод"
+      ],
+      "options_en": [
+        "Function type",
+        "A method with the same name as the class, which is called automatically when the object is created",
+        "Main method",
+        "Static method"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Java da String.equals() va == farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "equals() — kontent taqqoslaydi; == — referens (xotira manzil) taqqoslaydi",
+        "== kontent taqqoslaydi",
+        "Ikkalasi bir xil"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между String.equals() и == в Java?",
+      "question_en": "What is the difference between String.equals() and == in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Equals() — сравнивает содержимое; == — сравнивает ссылку (адрес памяти).",
+        "== сравнивает содержимое",
+        "Оба одинаковы"
+      ],
+      "options_en": [
+        "There is no difference",
+        "equals() — compares content; == — compares reference (memory address).",
+        "== compares content",
+        "Both are the same"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Java da HashMap nima?",
+      "options": [
+        "Ketma-ket ro'yxat",
+        "Kalit-qiymat juftliklari saqlash uchun hash asosidagi struktura",
+        "Ordered map",
+        "Tree map"
+      ],
+      "answer": 1,
+      "question_ru": "Java da HashMap nima?",
+      "question_en": "What is HashMap in Java?",
+      "options_ru": [
+        "Последовательный список",
+        "Хеш-структура для хранения пар ключ-значение.",
+        "Заказанная карта",
+        "Карта дерева"
+      ],
+      "options_en": [
+        "A sequential list",
+        "A hash-based structure for storing key-value pairs",
+        "Ordered map",
+        "Tree map"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Java da for-each tsikli qanday yoziladi?",
+      "options": [
+        "for (i = 0; i < n; i++)",
+        "foreach (item in list)",
+        "for (Type item : collection)",
+        "for item in collection"
+      ],
+      "answer": 2,
+      "question_ru": "Как написать цикл for-each в Java?",
+      "question_en": "How to write a for-each loop in Java?",
+      "options_ru": [
+        "для (я = 0; я < n; я++)",
+        "foreach (элемент в списке)",
+        "для (Тип элемента: коллекция)",
+        "за предмет в коллекции"
+      ],
+      "options_en": [
+        "for (i = 0; i < n; i++)",
+        "foreach (item in list)",
+        "for (Type item : collection)",
+        "for item in collection"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Java da NullPointerException qachon yuzaga keladi?",
+      "options": [
+        "Noto'g'ri indeks",
+        "null referens bilan metod yoki field ga murojaat qilganda",
+        "Tip xatosi",
+        "Stack overflow"
+      ],
+      "answer": 1,
+      "question_ru": "Когда в Java возникает исключение NullPointerException?",
+      "question_en": "When does NullPointerException occur in Java?",
+      "options_ru": [
+        "Неверный индекс",
+        "при обращении к методу или полю с нулевой ссылкой",
+        "Ошибка типа",
+        "Переполнение стека"
+      ],
+      "options_en": [
+        "Invalid index",
+        "when referring to a method or field with a null reference",
+        "Type error",
+        "Stack overflow"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Java da Generics nima uchun ishlatiladi?",
+      "options": [
+        "Umumiy funksiya",
+        "Tip xavfsizligini ta'minlovchi — List<String> kabi tip parametrlash",
+        "Performance optimallashtirish",
+        "Array kengaytirish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему дженерики используются в Java?",
+      "question_en": "Why are Generics used in Java?",
+      "options_ru": [
+        "Общая функция",
+        "Типобезопасная параметризация — это тип типа List<String>.",
+        "Оптимизация производительности",
+        "Расширение массива"
+      ],
+      "options_en": [
+        "General function",
+        "Type-safe parameterization is a type like List<String>",
+        "Performance optimization",
+        "Array expansion"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Java da Lambda expressions nima?",
+      "options": [
+        "Lambda hesoblash",
+        "Anonim funksiya — (params) -> expression yoki {block}",
+        "Rekursiv funksiya",
+        "Anonymous class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое лямбда-выражения в Java?",
+      "question_en": "What are Lambda expressions in Java?",
+      "options_ru": [
+        "Расчет лямбды",
+        "Анонимная функция — (параметры) -> выражение или {блок}",
+        "Рекурсивная функция",
+        "Анонимный класс"
+      ],
+      "options_en": [
+        "Lambda calculation",
+        "Anonymous function — (params) -> expression or {block}",
+        "Recursive function",
+        "Anonymous class"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Java da Stream API nima uchun?",
+      "options": [
+        "Network stream",
+        "Collection larni funksional uslubda qayta ishlash — filter, map, reduce, collect",
+        "Data stream",
+        "IO stream"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Stream API в Java?",
+      "question_en": "Why Stream API in Java?",
+      "options_ru": [
+        "Сетевой поток",
+        "Функциональная обработка коллекций — фильтрация, сопоставление, сокращение, сбор.",
+        "Поток данных",
+        "поток ввода-вывода"
+      ],
+      "options_en": [
+        "Network stream",
+        "Processing collections in a functional way — filter, map, reduce, collect",
+        "Data stream",
+        "IO stream"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Java da Optional nima uchun?",
+      "options": [
+        "Ixtiyoriy parametr",
+        "null ga alternativa — qiymat yo'qligi holati bilan xavfsiz ishlash",
+        "Optional klass",
+        "Nullable tip"
+      ],
+      "answer": 1,
+      "question_ru": "Почему необязательно в Java?",
+      "question_en": "Why Optional in Java?",
+      "options_ru": [
+        "Необязательный параметр",
+        "Альтернативой null является безопасная обработка условия отсутствия значения.",
+        "Дополнительный класс",
+        "Обнуляемый тип"
+      ],
+      "options_en": [
+        "Optional parameter",
+        "An alternative to null is safe handling of the no-value condition",
+        "Optional class",
+        "Nullable type"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Java da synchronized kalit so'zi nima uchun?",
+      "options": [
+        "Sinxronizatsiya",
+        "Ko'p thread muhitida bitta vaqtda faqat bitta thread blokga kirishi uchun",
+        "Thread yaratish",
+        "Lock qilish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ключевое слово синхронизируется в Java?",
+      "question_en": "Why is the keyword synchronized in Java?",
+      "options_ru": [
+        "Синхронизация",
+        "Чтобы только один поток мог одновременно обращаться к блоку в многопоточной среде.",
+        "Создать тему",
+        "Сделать замок"
+      ],
+      "options_en": [
+        "Synchronization",
+        "So that only one thread can access a block at a time in a multi-threaded environment",
+        "Create a thread",
+        "Lock qilish"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Java da interface vs abstract class: qaysi holda qaysi biri?",
+      "options": [
+        "Har doim interface",
+        "Interface — ko'p meros uchun shartnoma; abstract class — umumiy implementatsiya va holat bo'lganda",
+        "Har doim abstract",
+        "Farq yo'q"
+      ],
+      "answer": 1,
+      "question_ru": "Интерфейс против абстрактного класса в Java: что в каком случае?",
+      "question_en": "Interface vs abstract class in Java: which is which in which case?",
+      "options_ru": [
+        "Всегда интерфейс",
+        "Интерфейс — это контракт на множественное наследование; абстрактный класс — когда есть общая реализация и состояние",
+        "Всегда абстрактно",
+        "Нет никакой разницы"
+      ],
+      "options_en": [
+        "Always an interface",
+        "Interface is a contract for multiple inheritance; abstract class — when there is a common implementation and state",
+        "Always abstract",
+        "There is no difference"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Java da Checked va Unchecked exception farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Checked — kompilyatsiyada tekshiriladi (handle/declare majburiy); Unchecked — runtime exception (RuntimeException)",
+        "Unchecked majburiy",
+        "Checked runtime"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между проверенным и непроверенным исключением в Java?",
+      "question_en": "Difference between Checked and Unchecked exception in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Checked — проверяется при компиляции (дескриптор/объявление обязателен); Не отмечено — исключение времени выполнения (RuntimeException)",
+        "Снятый флажок является обязательным",
+        "Проверено время выполнения"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Checked — is checked during compilation (handle/declare is mandatory); Unchecked — runtime exception (RuntimeException)",
+        "Unchecked is mandatory",
+        "Checked runtime"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Java da Iterator pattern nima?",
+      "options": [
+        "Iteratsiya usuli",
+        "Collection elementlarini ketma-ket aylanib chiqish uchun standart interfeys",
+        "Loop pattern",
+        "Cursor pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон Iterator в Java?",
+      "question_en": "What is Iterator pattern in Java?",
+      "options_ru": [
+        "Итерационный метод",
+        "Стандартный интерфейс для перебора элементов коллекции.",
+        "Петлевой узор",
+        "Шаблон курсора"
+      ],
+      "options_en": [
+        "Iteration method",
+        "Standard interface for iterating over Collection elements",
+        "Loop pattern",
+        "Cursor pattern"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Java da volatile kalit so'zi nima qiladi?",
+      "options": [
+        "Sekin qiladi",
+        "O'zgaruvchi qiymatini thread local cache da emas, asosiy xotirada saqlashni kafolatlaydi",
+        "Thread xavfsizlik",
+        "Lock mexanizmi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает ключевое слово Volatible в Java?",
+      "question_en": "What does the volatile keyword do in Java?",
+      "options_ru": [
+        "Это медленно",
+        "Гарантирует, что значение переменной хранится в основной памяти, а не в локальном кеше потока.",
+        "Безопасность резьбы",
+        "Механизм замка"
+      ],
+      "options_en": [
+        "It's slow",
+        "O'zgaruvchi qiymatini thread local cache da emas, asosiy xotirada saqlashni kafolatlaydi",
+        "Thread xavfsizlik",
+        "Lock mechanism"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Java da equals() va hashCode() metodlari nega birgalikda override qilinadi?",
+      "options": [
+        "Majburiy emas",
+        "equals() true bo'lsa hashCode() bir xil bo'lishi kerak — HashMap, HashSet to'g'ri ishlashi uchun",
+        "Performance uchun",
+        "Inheritance uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Почему методы Equals() и hashCode() переопределяются вместе в Java?",
+      "question_en": "Why are equals() and hashCode() methods overridden together in Java?",
+      "options_ru": [
+        "Не обязательно",
+        "hashCode() должен быть таким же, если значение методаquals() истинно — HashMap, HashSet работают корректно.",
+        "Для производительности",
+        "Для наследства"
+      ],
+      "options_en": [
+        "Not mandatory",
+        "hashCode() must be the same if equals() is true — HashMap, HashSet to work correctly",
+        "For performance",
+        "For Inheritance"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Java da String Pool nima?",
+      "options": [
+        "String massivi",
+        "String literallar uchun heap da maxsus joy — bir xil stringlar bitta ob'ekt bo'lishi uchun",
+        "String cache",
+        "String buffer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое пул строк в Java?",
+      "question_en": "What is String Pool in Java?",
+      "options_ru": [
+        "Массив строк",
+        "Специальное место в куче для строковых литералов — чтобы идентичные строки представляли собой один объект.",
+        "Строковый кеш",
+        "Строковый буфер"
+      ],
+      "options_en": [
+        "An array of Strings",
+        "A special place on the heap for string literals — so that identical strings are a single object",
+        "String cache",
+        "String buffer"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Java da StringBuilder vs String: qachon StringBuilder?",
+      "options": [
+        "Har doim String",
+        "Ko'p string birlashtirish bo'lsa — StringBuilder mutable, String immutable (yangi ob'ekt yaratadi)",
+        "Har doim StringBuilder",
+        "Farq yo'q"
+      ],
+      "answer": 1,
+      "question_ru": "StringBuilder против String в Java: когда StringBuilder?",
+      "question_en": "StringBuilder vs String in Java: when StringBuilder?",
+      "options_ru": [
+        "Всегда строка",
+        "При объединении нескольких строк — изменяемый StringBuilder, неизменяемый String (создает новый объект).",
+        "Всегда StringBuilder",
+        "Нет никакой разницы"
+      ],
+      "options_en": [
+        "Always a String",
+        "If concatenating multiple strings — StringBuilder mutable, String immutable (creates a new object)",
+        "Always a StringBuilder",
+        "There is no difference"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Java da Comparable va Comparator farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Comparable — ob'ekt o'zini taqqoslay oladi (compareTo); Comparator — tashqi taqqoslash mantiq",
+        "Comparator ichki",
+        "Comparable tashqi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между Comparable и Comparator в Java?",
+      "question_en": "Difference between Comparable and Comparator in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Comparable — объект может сравнивать сам себя (compareTo); Компаратор — это внешняя логика сравнения.",
+        "Компаратор внутренний",
+        "Сопоставимый внешний вид"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Comparable — the object can compare itself (compareTo); Comparator is external comparison logic",
+        "Comparator internal",
+        "Comparable tashqi"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Java da varargs nima?",
+      "options": [
+        "Variable arguments",
+        "Ixtiyoriy sonli argumentlar: void method(String... args) — array sifatida ishlaydi",
+        "Optional params",
+        "Default args"
+      ],
+      "answer": 0,
+      "question_ru": "Что такое varargs в Java?",
+      "question_en": "What are varargs in Java?",
+      "options_ru": [
+        "Переменные аргументы",
+        "Произвольное количество аргументов: void метод(String... args) — работает как массив.",
+        "Необязательные параметры",
+        "Аргументы по умолчанию"
+      ],
+      "options_en": [
+        "Variable arguments",
+        "An arbitrary number of arguments: void method(String... args) — works as an array",
+        "Optional params",
+        "Default args"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Java da enum nima?",
+      "options": [
+        "Belgilangan konstantalar to'plami",
+        "Muqobil raqam",
+        "List turi",
+        "Map turi"
+      ],
+      "answer": 0,
+      "question_ru": "Что такое перечисление в Java?",
+      "question_en": "What is an enum in Java?",
+      "options_ru": [
+        "Набор определенных констант",
+        "Альтернативный номер",
+        "Тип списка",
+        "Тип карты"
+      ],
+      "options_en": [
+        "A set of defined constants",
+        "Alternate number",
+        "List type",
+        "Map turi"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Java da JVM, JRE, JDK farqlari nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "JVM — bytecode ijrochisi; JRE — JVM + kutubxonalar; JDK — JRE + kompilyator + tool lar",
+        "JDK faqat kompilyator",
+        "JRE dasturchilar uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Каковы различия между JVM, JRE, JDK в Java?",
+      "question_en": "What are the differences between JVM, JRE, JDK in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "JVM — исполнитель байт-кода; JRE — JVM + библиотеки; JDK — JRE + компилятор + инструменты",
+        "JDK — это просто компилятор",
+        "JRE для разработчиков"
+      ],
+      "options_en": [
+        "There is no difference",
+        "JVM — bytecode executor; JRE — JVM + libraries; JDK — JRE + compiler + tools",
+        "JDK is just a compiler",
+        "JRE for developers"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Java da Garbage Collection nima?",
+      "options": [
+        "Kodni tozalash",
+        "JVM tomonidan foydalanilmayotgan ob'ektlar xotirasini avtomatik bo'shatish",
+        "Manual xotira boshqarish",
+        "Cache tozalash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сборка мусора в Java?",
+      "question_en": "What is Garbage Collection in Java?",
+      "options_ru": [
+        "Очистка кода",
+        "Автоматически освобождать память объектов, которые не используются JVM.",
+        "Ручное управление памятью",
+        "Очистить кеш"
+      ],
+      "options_en": [
+        "Cleaning up the code",
+        "Automatically free memory of objects that are not being used by the JVM",
+        "Manual memory management",
+        "Clear cache"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Java da try-with-resources nima uchun?",
+      "options": [
+        "Resource yaratish",
+        "AutoCloseable implement qilgan resurslarni avtomatik yopish — finally kerak emas",
+        "Resource boshqarish",
+        "Closeable pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать ресурсы в Java?",
+      "question_en": "Why try-with-resources in Java?",
+      "options_ru": [
+        "Создание ресурса",
+        "Автоматическое закрытие ресурсов, реализованное с помощью AutoCloseable, наконец-то стало ненужным.",
+        "Resource boshqarish",
+        "Закрываемый шаблон"
+      ],
+      "options_en": [
+        "Resource yaratish",
+        "Automatic closing of resources implemented by AutoCloseable is finally unnecessary",
+        "Resource management",
+        "Closeable pattern"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Java da @Override annotation nima qiladi?",
+      "options": [
+        "Override bajara oladi",
+        "Kompilyatorga metod overriding ekanligini aytadi — xato bo'lsa ogohlantiradi",
+        "Metod kuchaytirishadi",
+        "Abstract metod"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает аннотация @Override в Java?",
+      "question_en": "What does @Override annotation do in Java?",
+      "options_ru": [
+        "Переопределение может сделать",
+        "Сообщает компилятору, что метод переопределяется — предупреждает, если есть ошибка",
+        "Метод усиливает",
+        "Абстрактный метод"
+      ],
+      "options_en": [
+        "Override can do",
+        "Tells the compiler that the method is overriding — warns if there is an error",
+        "The method strengthens",
+        "Abstract method"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Java da deep copy va shallow copy farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Shallow — referenslar nusxalanadi; Deep — ichki ob'ektlar ham nusxalanadi",
+        "Deep copy tezroq",
+        "Shallow copy xotirani ko'p oladi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между глубоким копированием и поверхностным копированием в Java?",
+      "question_en": "Difference between deep copy and shallow copy in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Мелкий — ссылки копируются; Deep — также копируются внутренние объекты",
+        "Глубокое копирование выполняется быстрее",
+        "Мелкая копия занимает много памяти"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Shallow — references are copied; Deep — internal objects are also copied",
+        "Deep copy is faster",
+        "Shallow copy takes up a lot of memory"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Java da CompletableFuture nima uchun?",
+      "options": [
+        "Future kengaytirish",
+        "Asinxron, non-blocking hisoblash zanjiri — thenApply, thenCompose, allOf va boshqalar",
+        "Thread yaratish",
+        "Async event"
+      ],
+      "answer": 1,
+      "question_ru": "Почему CompletableFuture в Java?",
+      "question_en": "Why CompletableFuture in Java?",
+      "options_ru": [
+        "Будущее расширение",
+        "Асинхронная неблокирующая вычислительная цепочка — thenApply, thenCompose, allOf и т. д.",
+        "Создать тему",
+        "Асинхронное событие"
+      ],
+      "options_en": [
+        "Future expansion",
+        "Asynchronous, non-blocking computing chain — thenApply, thenCompose, allOf, and more",
+        "Create a thread",
+        "Async event"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Java da JIT compilation nima?",
+      "options": [
+        "Java Integration Tool",
+        "Runtime da bytecode ni mahalliy mashin kodiga aylantirish — performance optimallashtirish",
+        "Just In Test",
+        "Java Interpretation Tool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое JIT-компиляция в Java?",
+      "question_en": "What is JIT compilation in Java?",
+      "options_ru": [
+        "Инструмент интеграции Java",
+        "Преобразование байт-кода в собственный машинный код во время выполнения — это оптимизация производительности.",
+        "Just In Test",
+        "Инструмент интерпретации Java"
+      ],
+      "options_en": [
+        "Java Integration Tool",
+        "Converting bytecode to native machine code at runtime is a performance optimization",
+        "Just In Test",
+        "Java Interpretation Tool"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Java da Memory Model (JMM) nima?",
+      "options": [
+        "Xotira tuzilmasi",
+        "Ko'p thread da o'zgaruvchilar ko'rinishi va operatsiyalar tartibini belgilovchi spetsifikatsiya",
+        "Heap model",
+        "Stack model"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое модель памяти (JMM) в Java?",
+      "question_en": "What is Memory Model (JMM) in Java?",
+      "options_ru": [
+        "Структура памяти",
+        "Спецификация, определяющая внешний вид переменных и порядок операций в многопоточности.",
+        "Модель кучи",
+        "Модель стека"
+      ],
+      "options_en": [
+        "Memory structure",
+        "A specification that defines the appearance of variables and the order of operations in multithreading",
+        "Heap model",
+        "Stack model"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Java da ReentrantLock va synchronized farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "ReentrantLock — tryLock, timeout, fairness, manual unlock; synchronized — sodda, avtomatik unlock",
+        "synchronized tezroq",
+        "ReentrantLock eski"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между ReentrantLock и синхронизацией в Java?",
+      "question_en": "Difference between ReentrantLock and synchronized in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "ReentrantLock — tryLock, тайм-аут, справедливость, ручная разблокировка; синхронизировано — простая автоматическая разблокировка",
+        "синхронизировано быстрее",
+        "ReentrantLock устарел"
+      ],
+      "options_en": [
+        "There is no difference",
+        "ReentrantLock — tryLock, timeout, fairness, manual unlock; synchronized — simple, automatic unlock",
+        "synchronized is faster",
+        "ReentrantLock is old"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Java da ConcurrentHashMap nima uchun?",
+      "options": [
+        "Multi-thread map",
+        "Thread-safe HashMap — bucket darajasida lock, HashMap dan ko'p thread da tezroq",
+        "Sorted map",
+        "Synchronized map"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ConcurrentHashMap в Java?",
+      "question_en": "Why ConcurrentHashMap in Java?",
+      "options_ru": [
+        "Многопоточная карта",
+        "Потокобезопасный HashMap — блокировка на уровне сегмента, быстрее, чем HashMap в нескольких потоках.",
+        "Сортированная карта",
+        "Синхронизированная карта"
+      ],
+      "options_en": [
+        "Multi-thread map",
+        "Thread-safe HashMap — bucket-level lock, faster than HashMap on multiple threads",
+        "Sorted map",
+        "Synchronized map"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Java da Phantom Reference nima?",
+      "options": [
+        "Xayoliy referens",
+        "Ob'ekt garbage collect bo'lishidan oldin aniqlanadigan eng zaif referens — cleanup uchun",
+        "Weak reference",
+        "Soft reference"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое фантомная ссылка в Java?",
+      "question_en": "What is Phantom Reference in Java?",
+      "options_ru": [
+        "Воображаемая ссылка",
+        "Для очистки самая слабая ссылка определяется до того, как объект будет собран мусором.",
+        "Слабая ссылка",
+        "Мягкая ссылка"
+      ],
+      "options_en": [
+        "Imaginary reference",
+        "For cleanup, the weakest reference is defined before the object is garbage collected",
+        "Weak reference",
+        "Soft reference"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Java da Record class (Java 16+) nima uchun?",
+      "options": [
+        "Ma'lumot yozish",
+        "Immutable ma'lumot tashuvchi — avtomatik constructor, getters, equals, hashCode, toString",
+        "Data class",
+        "DTO klass"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем записывать класс на Java (Java 16+)?",
+      "question_en": "Why Record class in Java (Java 16+)?",
+      "options_ru": [
+        "Напишите информацию",
+        "Неизменяемый носитель данных — автоматический конструктор, геттеры, равенства, hashCode, toString",
+        "Класс данных",
+        "класс DTO"
+      ],
+      "options_en": [
+        "Write information",
+        "Immutable data carrier — automatic constructor, getters, equals, hashCode, toString",
+        "Data class",
+        "DTO class"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Java da Sealed classes nima?",
+      "options": [
+        "Yopiq klass",
+        "Qaysi klasslar meros ola olishini cheklash — permits kalit so'zi bilan",
+        "Final klass turi",
+        "Private klass"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое запечатанные классы в Java?",
+      "question_en": "What is Sealed classes in Java?",
+      "options_ru": [
+        "Закрытый класс",
+        "Qaysi klasslar meros ola olishini cheklash — permits kalit so'zi bilan",
+        "Тип итогового класса",
+        "Частный класс"
+      ],
+      "options_en": [
+        "Yopiq klass",
+        "Restrict which classes can inherit with the permits keyword",
+        "Final class type",
+        "Private class"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Java da Pattern Matching for instanceof nima?",
+      "options": [
+        "Instanceof tekshirish",
+        "instanceof tekshiruvi va cast ni birlashtirilgan sintaksis: if (obj instanceof String s)",
+        "Type checking",
+        "Casting"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопоставление с образцом для экземпляра в Java?",
+      "question_en": "What is Pattern Matching for instanceof in Java?",
+      "options_ru": [
+        "Экземпляр проверки",
+        "Комбинированный синтаксис проверки и приведения экземпляра: if (obj instanceof String s)",
+        "Проверка типа",
+        "Кастинг"
+      ],
+      "options_en": [
+        "Instanceof check",
+        "The combined syntax of instanceof validation and cast is: if (obj instanceof String s)",
+        "Type checking",
+        "Casting"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Java da Fork/Join framework nima uchun?",
+      "options": [
+        "Thread fork",
+        "Katta vazifani bo'laklarga bo'lib parallel bajarish — divide and conquer",
+        "Process fork",
+        "Task split"
+      ],
+      "answer": 1,
+      "question_ru": "Почему платформа Fork/Join в Java?",
+      "question_en": "Why Fork/Join framework in Java?",
+      "options_ru": [
+        "Вилка нити",
+        "Katta vazifani bo'laklarga bo'lib parallel bajarish — divide and conquer",
+        "Вилка процесса",
+        "Разделение задач"
+      ],
+      "options_en": [
+        "Thread fork",
+        "Parallel execution of a large task in parts — divide and conquer",
+        "Process fork",
+        "Task split"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Java da Project Loom (Virtual Threads) nima?",
+      "options": [
+        "Project framework",
+        "JVM darajasida yengil virtual thread lar — millionlab thread xarajatsiz ishlash",
+        "Fiber library",
+        "Coroutine"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Project Loom (виртуальные потоки) в Java?",
+      "question_en": "Java da Project Loom (Virtual Threads) nima?",
+      "options_ru": [
+        "Рамки проекта",
+        "Легкие виртуальные потоки на уровне JVM — миллионы беспоточных операций.",
+        "Библиотека волокон",
+        "Сопрограмма"
+      ],
+      "options_en": [
+        "Project framework",
+        "Lightweight virtual threads at the JVM level — millions of thread-free operations",
+        "Fiber library",
+        "Coroutine"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Java da Instrumentation API nima uchun?",
+      "options": [
+        "Musiqa instrumentlari",
+        "Bytecode o'zgartirish va monitoring — APM, profiler, code coverage tool lar uchun",
+        "Hardware instrument",
+        "Test instrument"
+      ],
+      "answer": 1,
+      "question_ru": "Почему инструментальный API в Java?",
+      "question_en": "Why Instrumentation API in Java?",
+      "options_ru": [
+        "Музыкальные инструменты",
+        "Модификация и мониторинг байт-кода — для APM, профилировщика, инструментов покрытия кода.",
+        "Аппаратный инструмент",
+        "Тестовый прибор"
+      ],
+      "options_en": [
+        "Musical instruments",
+        "Bytecode o'zgartirish va monitoring — APM, profiler, code coverage tool lar uchun",
+        "Hardware instrument",
+        "Test instrument"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Java da ServiceLoader nima?",
+      "options": [
+        "Service yuklash",
+        "Service Provider Interface (SPI) — runtime da servis implementatsiyalarini topish",
+        "Plugin loader",
+        "Module loader"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ServiceLoader в Java?",
+      "question_en": "What is ServiceLoader in Java?",
+      "options_ru": [
+        "Скачать сервис",
+        "Интерфейс поставщика услуг (SPI) — поиск реализаций сервисов во время выполнения.",
+        "Плагин-загрузчик",
+        "Загрузчик модулей"
+      ],
+      "options_en": [
+        "Download service",
+        "Service Provider Interface (SPI) — finding service implementations at runtime",
+        "Plugin loader",
+        "Module loader"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Java da MethodHandles va Reflection farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "MethodHandles — tezroq, type-safe, JVM optimizatsiyasi bor; Reflection — sekin, runtime type-check",
+        "Reflection tezroq",
+        "MethodHandles eski"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между MethodHandles и отражением в Java?",
+      "question_en": "Difference between MethodHandles and Reflection in Java?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "MethodHandles — быстрее, типобезопаснее, с оптимизацией JVM; Отражение — медленная проверка типов во время выполнения.",
+        "Отражение происходит быстрее",
+        "MethodHandles устарел"
+      ],
+      "options_en": [
+        "There is no difference",
+        "MethodHandles — faster, type-safe, with JVM optimization; Reflection — slow, runtime type-check",
+        "Reflection is faster",
+        "MethodHandles is old"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Java da GraalVM nima?",
+      "options": [
+        "Java versiya",
+        "Ko'p tilli virtual mashina — native image kompilyatsiya, tez startup, kichik footprint",
+        "JavaScript VM",
+        "Scala VM"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GraalVM в Java?",
+      "question_en": "What is GraalVM in Java?",
+      "options_ru": [
+        "Java-версия",
+        "Многоязычная виртуальная машина — компиляция собственных образов, быстрый запуск, небольшой размер",
+        "JavaScript виртуальная машина",
+        "Скала ВМ"
+      ],
+      "options_en": [
+        "Java version",
+        "Multilingual virtual machine — native image compilation, fast startup, small footprint",
+        "JavaScript VM",
+        "Scala VM"
+      ]
+    }
   ]
 }

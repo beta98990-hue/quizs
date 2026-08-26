@@ -1,5 +1,7 @@
 /* ============================================================
-   DevQuiz — app.js — Complete Application Logic (Production Ready)
+   DevQuiz — app.js — Complete Application Logic with Multi-Language
+   Languages: Uzbek (uz), Russian (ru), English (en)
+   Zero-Reload SPA Multi-Language Engine
    ============================================================ */
 
 'use strict';
@@ -18,67 +20,64 @@ function escapeHTML(str) {
 }
 
 // ============================================================
-// TECHNOLOGY DATA
+// TECHNOLOGY DATA (31 Technologies)
 // ============================================================
 const TECHNOLOGIES = {
   frontend: [
-    { id: 'html',       name: 'HTML',        icon: '🌐', color: '#e34f26', bg: 'rgba(227,79,38,0.1)',   desc: 'HyperText Markup Language — web sahifalarning asosiy tuzilmasi' },
-    { id: 'css',        name: 'CSS',          icon: '🎨', color: '#264de4', bg: 'rgba(38,77,228,0.1)',   desc: 'Cascading Style Sheets — web sahifalarni bezash va joylashish' },
-    { id: 'javascript', name: 'JavaScript',   icon: '⚡', color: '#f7df1e', bg: 'rgba(247,223,30,0.1)',  desc: 'Dinamik web ilovalar uchun dunyoning eng mashhur tili' },
-    { id: 'sass',       name: 'Sass',         icon: '💅', color: '#cc6699', bg: 'rgba(204,102,153,0.1)', desc: 'CSS preprocessor — kuchli o\'zgaruvchilar va mixinlar' },
-    { id: 'scss',       name: 'SCSS',         icon: '🎯', color: '#c69', bg: 'rgba(204,102,153,0.08)',   desc: 'CSS-kabi sintaksis bilan Sass — zamonaviy CSS yozish usuli' },
-    { id: 'less',       name: 'Less',         icon: '🔷', color: '#1d365d', bg: 'rgba(29,54,93,0.1)',    desc: 'JavaScript asosida ishlaydi — sodda va kuchli CSS preprocessor' },
-    { id: 'react',      name: 'React',        icon: '⚛️', color: '#61dafb', bg: 'rgba(97,218,251,0.1)',  desc: 'Facebook\'ning component-based UI kutubxonasi' },
-    { id: 'vue',        name: 'Vue',          icon: '💚', color: '#4fc08d', bg: 'rgba(79,192,141,0.1)',  desc: 'Progressive JavaScript framework — yengil va kuchli' },
-    { id: 'angular',    name: 'Angular',      icon: '🔺', color: '#dd0031', bg: 'rgba(221,0,49,0.1)',    desc: 'Google\'ning enterprise-grade TypeScript web framework' },
-    { id: 'tailwind',   name: 'Tailwind CSS', icon: '🌊', color: '#06b6d4', bg: 'rgba(6,182,212,0.1)',  desc: 'Utility-first CSS framework — zamonaviy dizayn uchun' },
-    { id: 'bootstrap',  name: 'Bootstrap',    icon: '🅱️', color: '#7952b3', bg: 'rgba(121,82,179,0.1)', desc: 'Eng mashhur responsive CSS framework — komponent to\'plami' },
+    { id: 'html',       name: 'HTML',        icon: '🌐', color: '#e34f26', bg: 'rgba(227,79,38,0.1)' },
+    { id: 'css',        name: 'CSS',          icon: '🎨', color: '#264de4', bg: 'rgba(38,77,228,0.1)' },
+    { id: 'javascript', name: 'JavaScript',   icon: '⚡', color: '#f7df1e', bg: 'rgba(247,223,30,0.1)' },
+    { id: 'sass',       name: 'Sass',         icon: '💅', color: '#cc6699', bg: 'rgba(204,102,153,0.1)' },
+    { id: 'scss',       name: 'SCSS',         icon: '🎯', color: '#c69', bg: 'rgba(204,102,153,0.08)' },
+    { id: 'less',       name: 'Less',         icon: '🔷', color: '#1d365d', bg: 'rgba(29,54,93,0.1)' },
+    { id: 'react',      name: 'React',        icon: '⚛️', color: '#61dafb', bg: 'rgba(97,218,251,0.1)' },
+    { id: 'vue',        name: 'Vue',          icon: '💚', color: '#4fc08d', bg: 'rgba(79,192,141,0.1)' },
+    { id: 'angular',    name: 'Angular',      icon: '🔺', color: '#dd0031', bg: 'rgba(221,0,49,0.1)' },
+    { id: 'tailwind',   name: 'Tailwind CSS', icon: '🌊', color: '#06b6d4', bg: 'rgba(6,182,212,0.1)' },
+    { id: 'bootstrap',  name: 'Bootstrap',    icon: '🅱️', color: '#7952b3', bg: 'rgba(121,82,179,0.1)' },
   ],
   backend: [
-    { id: 'python',  name: 'Python',  icon: '🐍', color: '#3776ab', bg: 'rgba(55,118,171,0.1)',   desc: 'Soddaligi va kuchliligi bilan mashhur universal dasturlash tili' },
-    { id: 'java',    name: 'Java',    icon: '☕', color: '#ed8b00', bg: 'rgba(237,139,0,0.1)',    desc: 'Enterprise darajasida keng qo\'llaniluvchi OOP tili' },
-    { id: 'php',     name: 'PHP',     icon: '🐘', color: '#777bb4', bg: 'rgba(119,123,180,0.1)', desc: 'Web dasturlashda 30 yillik tajribaga ega server-side tili' },
-    { id: 'nodejs',  name: 'Node.js', icon: '🟢', color: '#339933', bg: 'rgba(51,153,51,0.1)',   desc: 'JavaScript runtime — fast, scalable server-side dasturlash' },
-    { id: 'go',      name: 'Go',      icon: '🐹', color: '#00add8', bg: 'rgba(0,173,216,0.1)',   desc: 'Google\'ning tez va samarali compiled dasturlash tili' },
-    { id: 'csharp',  name: 'C#',      icon: '💜', color: '#239120', bg: 'rgba(35,145,32,0.1)',   desc: 'Microsoft\'ning kuchli .NET ekosistemasi dasturlash tili' },
-    { id: 'ruby',    name: 'Ruby',    icon: '💎', color: '#cc342d', bg: 'rgba(204,52,45,0.1)',   desc: 'Dasturchi baxtiga yo\'naltirilgan elegantlik va soddalik tili' },
-    { id: 'rust',    name: 'Rust',    icon: '🦀', color: '#dea584', bg: 'rgba(222,165,132,0.1)', desc: 'Xotira xavfsizligi va yuqori samaradorlik — sistemalar tili' },
-    { id: 'cpp',     name: 'C++',     icon: '⚙️', color: '#00599c', bg: 'rgba(0,89,156,0.1)',   desc: 'Tizim dasturlash va yuqori samarali ilovalar uchun til' },
-    { id: 'c',       name: 'C',       icon: '🔧', color: '#a8b9cc', bg: 'rgba(168,185,204,0.1)', desc: 'Barcha zamonaviy tillarning otasi — tizim dasturlash asosi' },
-    { id: 'kotlin',  name: 'Kotlin',  icon: '🟠', color: '#7f52ff', bg: 'rgba(127,82,255,0.1)', desc: 'JVM va Android uchun zamonaviy, concise dasturlash tili' },
-    { id: 'swift',   name: 'Swift',   icon: '🦅', color: '#fa7343', bg: 'rgba(250,115,67,0.1)', desc: 'Apple platformalari uchun tez, xavfsiz va ifodali tili' },
-    { id: 'scala',   name: 'Scala',   icon: '🔴', color: '#dc322f', bg: 'rgba(220,50,47,0.1)',  desc: 'Funksional va OOP — JVM da kuchli expressiveness' },
-    { id: 'perl',    name: 'Perl',    icon: '🐪', color: '#39457e', bg: 'rgba(57,69,126,0.1)',  desc: 'Matn manipulyatsiyasi va tizim administratsiya uchun kuchli tili' },
-    { id: 'r',       name: 'R',       icon: '📊', color: '#276dc3', bg: 'rgba(39,109,195,0.1)', desc: 'Statistik hisoblash va ma\'lumot vizualizatsiyasi uchun tili' },
-    { id: 'haskell', name: 'Haskell', icon: 'λ',  color: '#5e5086', bg: 'rgba(94,80,134,0.1)',  desc: 'Sof funksional dasturlash — akademik va industrial kuchli tili' },
-    { id: 'elixir',  name: 'Elixir',  icon: '💧', color: '#6e4a7e', bg: 'rgba(110,74,126,0.1)', desc: 'Erlang VM da — scalable va fault-tolerant ilovalar uchun' },
-    { id: 'erlang',  name: 'Erlang',  icon: '📡', color: '#b83998', bg: 'rgba(184,57,152,0.1)', desc: 'Massiv concurrency va 9 nines availability uchun tili' },
-    { id: 'clojure', name: 'Clojure', icon: '🔮', color: '#63b132', bg: 'rgba(99,177,50,0.1)',  desc: 'JVM da Lisp dialekti — immutable, funksional dasturlash' },
-    { id: 'dart',    name: 'Dart',    icon: '🎯', color: '#0175c2', bg: 'rgba(1,117,194,0.1)',  desc: 'Google\'ning Flutter uchun zamonaviy, ixcham dasturlash tili' },
+    { id: 'python',  name: 'Python',  icon: '🐍', color: '#3776ab', bg: 'rgba(55,118,171,0.1)' },
+    { id: 'java',    name: 'Java',    icon: '☕', color: '#ed8b00', bg: 'rgba(237,139,0,0.1)' },
+    { id: 'php',     name: 'PHP',     icon: '🐘', color: '#777bb4', bg: 'rgba(119,123,180,0.1)' },
+    { id: 'nodejs',  name: 'Node.js', icon: '🟢', color: '#339933', bg: 'rgba(51,153,51,0.1)' },
+    { id: 'go',      name: 'Go',      icon: '🐹', color: '#00add8', bg: 'rgba(0,173,216,0.1)' },
+    { id: 'csharp',  name: 'C#',      icon: '💜', color: '#239120', bg: 'rgba(35,145,32,0.1)' },
+    { id: 'ruby',    name: 'Ruby',    icon: '💎', color: '#cc342d', bg: 'rgba(204,52,45,0.1)' },
+    { id: 'rust',    name: 'Rust',    icon: '🦀', color: '#dea584', bg: 'rgba(222,165,132,0.1)' },
+    { id: 'cpp',     name: 'C++',     icon: '⚙️', color: '#00599c', bg: 'rgba(0,89,156,0.1)' },
+    { id: 'c',       name: 'C',       icon: '🔧', color: '#a8b9cc', bg: 'rgba(168,185,204,0.1)' },
+    { id: 'kotlin',  name: 'Kotlin',  icon: '🟠', color: '#7f52ff', bg: 'rgba(127,82,255,0.1)' },
+    { id: 'swift',   name: 'Swift',   icon: '🦅', color: '#fa7343', bg: 'rgba(250,115,67,0.1)' },
+    { id: 'scala',   name: 'Scala',   icon: '🔴', color: '#dc322f', bg: 'rgba(220,50,47,0.1)' },
+    { id: 'perl',    name: 'Perl',    icon: '🐪', color: '#39457e', bg: 'rgba(57,69,126,0.1)' },
+    { id: 'r',       name: 'R',       icon: '📊', color: '#276dc3', bg: 'rgba(39,109,195,0.1)' },
+    { id: 'haskell', name: 'Haskell', icon: 'λ',  color: '#5e5086', bg: 'rgba(94,80,134,0.1)' },
+    { id: 'elixir',  name: 'Elixir',  icon: '💧', color: '#6e4a7e', bg: 'rgba(110,74,126,0.1)' },
+    { id: 'erlang',  name: 'Erlang',  icon: '📡', color: '#b83998', bg: 'rgba(184,57,152,0.1)' },
+    { id: 'clojure', name: 'Clojure', icon: '🔮', color: '#63b132', bg: 'rgba(99,177,50,0.1)' },
+    { id: 'dart',    name: 'Dart',    icon: '🎯', color: '#0175c2', bg: 'rgba(1,117,194,0.1)' },
   ]
 };
 
 // ============================================================
-// STORAGE & PROGRESS CONSTANTS
+// STORAGE CONSTANTS
 // ============================================================
 const PROGRESS_STORAGE_KEY = 'devquiz_user_progress';
+const LANG_STORAGE_KEY = 'devquiz_language';
 const REQUIRED_SCORE_FOR_COMPLETION = 30;
 
-// A technology counts as completed only after every question is answered
-// correctly. This also prevents old, partially-completed localStorage records
-// from being shown with a check mark.
-function isPerfectCompletion(record) {
-  return Boolean(
-    record &&
-    record.completed === true &&
-    Number(record.bestScore) === REQUIRED_SCORE_FOR_COMPLETION
-  );
-}
+const SUPPORTED_LANGUAGES = {
+  uz: { code: 'UZ', flag: '🇺🇿', name: 'O‘zbekcha' },
+  ru: { code: 'RU', flag: '🇷🇺', name: 'Русский' },
+  en: { code: 'EN', flag: '🇬🇧', name: 'English' }
+};
 
 // ============================================================
 // STATE
 // ============================================================
 const state = {
+  lang: 'uz',
   theme: 'dark',
   currentCategory: null,
   currentTech: null,
@@ -93,8 +92,197 @@ const state = {
 };
 
 // ============================================================
-// USER PROGRESS & UNIFIED STATS ENGINE (Single Source of Truth)
+// TRANSLATION HELPER (i18n Core)
 // ============================================================
+function t(key, params = {}) {
+  const currentLang = state.lang || 'uz';
+  const translations = window.DEVQUIZ_TRANSLATIONS || {};
+  const currentDict = translations[currentLang] || translations['uz'] || {};
+  const fallbackDict = translations['uz'] || {};
+
+  let text = currentDict[key];
+  if (text === undefined) {
+    text = fallbackDict[key] !== undefined ? fallbackDict[key] : key;
+  }
+
+  if (typeof text === 'string' && params && typeof params === 'object') {
+    Object.entries(params).forEach(([paramKey, paramValue]) => {
+      text = text.replace(new RegExp(`\\{${paramKey}\\}`, 'g'), String(paramValue));
+    });
+  }
+
+  return text;
+}
+
+function getTechDesc(techId) {
+  const descKey = 'techDesc_' + techId;
+  return t(descKey);
+}
+
+// Check if a question has a translated version or falls back to Uzbek
+function getQuestionText(q) {
+  if (!q) return '';
+  if (state.lang === 'ru' && q.question_ru) return q.question_ru;
+  if (state.lang === 'en' && q.question_en) return q.question_en;
+  return q.question || '';
+}
+
+function getQuestionOptions(q) {
+  if (!q || !Array.isArray(q.options)) return [];
+  if (state.lang === 'ru' && Array.isArray(q.options_ru) && q.options_ru.length === q.options.length) return q.options_ru;
+  if (state.lang === 'en' && Array.isArray(q.options_en) && q.options_en.length === q.options.length) return q.options_en;
+  return q.options;
+}
+
+// ============================================================
+// LANGUAGE SWITCHER & DOM LOCALIZATION
+// ============================================================
+function initLanguage() {
+  const saved = localStorage.getItem(LANG_STORAGE_KEY);
+  if (saved && SUPPORTED_LANGUAGES[saved]) {
+    state.lang = saved;
+  } else {
+    state.lang = 'uz';
+  }
+  applyTranslations();
+}
+
+function setLanguage(lang) {
+  if (!SUPPORTED_LANGUAGES[lang]) return;
+  state.lang = lang;
+  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  applyTranslations();
+  showToast(t('toastLanguageChanged'), 2500);
+}
+
+function selectLanguage(lang) {
+  setLanguage(lang);
+  closeLangDropdown();
+}
+
+function applyTranslations() {
+  const langConfig = SUPPORTED_LANGUAGES[state.lang] || SUPPORTED_LANGUAGES['uz'];
+  document.documentElement.setAttribute('lang', state.lang);
+
+  // Update navbar language switcher indicator
+  const flagEl = document.getElementById('currentLangFlag');
+  const codeEl = document.getElementById('currentLangCode');
+  if (flagEl) flagEl.textContent = langConfig.flag;
+  if (codeEl) codeEl.textContent = langConfig.code;
+
+  // Update dropdown active option
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    const btnLang = btn.getAttribute('data-lang');
+    btn.classList.toggle('active', btnLang === state.lang);
+  });
+
+  // Update mobile segmented buttons
+  document.querySelectorAll('.mobile-lang-btn').forEach(btn => {
+    const btnLang = btn.getAttribute('data-lang');
+    btn.classList.toggle('active', btnLang === state.lang);
+  });
+
+  // Translate all DOM elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (!key) return;
+    el.innerHTML = t(key);
+  });
+
+  // Translate all DOM element attributes with data-i18n-attr
+  // Format: "attr1:key1,attr2:key2"
+  document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+    const raw = el.getAttribute('data-i18n-attr');
+    if (!raw) return;
+    raw.split(',').forEach(pair => {
+      const [attr, key] = pair.split(':').map(s => s.trim());
+      if (attr && key) {
+        el.setAttribute(attr, t(key));
+      }
+    });
+  });
+
+  // Re-render active view components
+  updateGlobalProgressUI();
+
+  if (state.currentCategory) {
+    const badge = document.getElementById('category-badge');
+    if (badge) badge.textContent = state.currentCategory === 'frontend' ? t('frontendTitle') : t('backendTitle');
+    renderTechGrid(state.currentCategory);
+  }
+
+  // If currently in quiz, re-render question card
+  const quizActive = document.getElementById('page-quiz')?.classList.contains('active');
+  if (quizActive && state.questions.length > 0) {
+    renderQuestion(state.currentIndex);
+  }
+
+  // If in results page, re-update results texts
+  const resultActive = document.getElementById('page-result')?.classList.contains('active');
+  if (resultActive && state.lastQuizResult) {
+    updateResultPageLanguage();
+  }
+
+  // If profile modal is open, re-render dashboard
+  const profileOpen = document.getElementById('profile-modal')?.classList.contains('active');
+  if (profileOpen) {
+    renderProfileDashboard();
+  }
+
+  // If review modal is open, re-render questions
+  const reviewOpen = document.getElementById('review-modal')?.classList.contains('active');
+  if (reviewOpen) {
+    renderReviewQuestions();
+  }
+}
+
+function toggleLangDropdown(e) {
+  if (e) e.stopPropagation();
+  const dropdown = document.getElementById('langDropdown');
+  const btn = document.getElementById('langBtn');
+  if (!dropdown || !btn) return;
+
+  const isOpen = dropdown.classList.toggle('open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', String(isOpen));
+}
+
+function closeLangDropdown() {
+  const dropdown = document.getElementById('langDropdown');
+  const btn = document.getElementById('langBtn');
+  if (dropdown) dropdown.classList.remove('open');
+  if (btn) {
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+}
+
+// Close language dropdown on outside click
+document.addEventListener('click', (e) => {
+  const switcher = document.getElementById('langSwitcher');
+  if (switcher && !switcher.contains(e.target)) {
+    closeLangDropdown();
+  }
+});
+
+// Close language dropdown on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLangDropdown();
+  }
+});
+
+// ============================================================
+// STORAGE & PROGRESS LOGIC
+// ============================================================
+function isPerfectCompletion(record) {
+  return Boolean(
+    record &&
+    record.completed === true &&
+    Number(record.bestScore) === REQUIRED_SCORE_FOR_COMPLETION
+  );
+}
+
 function getUserProgress() {
   try {
     const raw = localStorage.getItem(PROGRESS_STORAGE_KEY);
@@ -117,71 +305,67 @@ function saveUserProgress(progress) {
 }
 
 function getRankInfo(completedCount) {
-  const total = 31;
   if (completedCount >= 31) {
     return {
       id: 'senior',
-      title: 'Senior Developer',
+      title: t('rankSenior'),
       icon: '🥇',
       badgeClass: 'rank-senior',
-      tag: "Senior Dasturchi",
-      levelText: "Senior daraja",
-      targetText: "Barcha 31 texnologiya egallandi! 🏆",
+      tag: t('rankSeniorTag'),
+      levelText: t('levelSenior'),
+      targetText: t('targetCompletedAll'),
       nextMin: 31,
       min: 31
     };
   } else if (completedCount >= 20) {
     return {
       id: 'middle',
-      title: 'Middle Developer',
+      title: t('rankMiddle'),
       icon: '🥈',
       badgeClass: 'rank-middle',
-      tag: "Middle Dasturchi",
-      levelText: "Middle daraja",
-      targetText: `Keyingi bosqich: <strong>Senior (${31 - completedCount} ta qoldi)</strong>`,
+      tag: t('rankMiddleTag'),
+      levelText: t('levelMiddle'),
+      targetText: t('targetSenior', { count: 31 - completedCount }),
       nextMin: 31,
       min: 20
     };
   } else if (completedCount >= 10) {
     return {
       id: 'junior',
-      title: 'Junior Developer',
+      title: t('rankJunior'),
       icon: '🥉',
       badgeClass: 'rank-junior',
-      tag: "Junior Dasturchi",
-      levelText: "Junior daraja",
-      targetText: `Keyingi bosqich: <strong>Middle (${20 - completedCount} ta qoldi)</strong>`,
+      tag: t('rankJuniorTag'),
+      levelText: t('levelJunior'),
+      targetText: t('targetMiddle', { count: 20 - completedCount }),
       nextMin: 20,
       min: 10
     };
   } else {
     return {
       id: 'beginner',
-      title: 'Beginner Developer',
+      title: t('rankBeginner'),
       icon: '🌱',
       badgeClass: 'rank-beginner',
-      tag: "Boshlang'ich Dasturchi",
-      levelText: "Boshlang'ich daraja",
-      targetText: `Keyingi bosqich: <strong>Junior (${10 - completedCount} ta qoldi)</strong>`,
+      tag: t('rankBeginnerTag'),
+      levelText: t('levelBeginner'),
+      targetText: t('targetJunior', { count: 10 - completedCount }),
       nextMin: 10,
       min: 0
     };
   }
 }
 
-// Single Source of Truth for all statistics and progress calculations
 function getStats() {
   const progress = getUserProgress();
   const completedTechs = progress.completedTechs || {};
-  
-  // Strictly filter only technologies with completed === true
+
   const completedList = Object.entries(completedTechs)
     .filter(([_, data]) => isPerfectCompletion(data));
   const completedCount = completedList.length;
   const totalTechs = 31;
   const progressPercentage = completedCount > 0 ? parseFloat(((completedCount / totalTechs) * 100).toFixed(1)) : 0;
 
-  // Calculate total score and average accuracy
   let totalScore = 0;
   let perfectCount = 0;
   completedList.forEach(([_, data]) => {
@@ -190,8 +374,8 @@ function getStats() {
     if (score === REQUIRED_SCORE_FOR_COMPLETION) perfectCount++;
   });
 
-  const averageScore = completedCount > 0 
-    ? Math.round((totalScore / (completedCount * 30)) * 100) 
+  const averageScore = completedCount > 0
+    ? Math.round((totalScore / (completedCount * 30)) * 100)
     : 0;
 
   const rank = getRankInfo(completedCount);
@@ -219,7 +403,7 @@ function updateGlobalProgressUI() {
   const navTitle = document.getElementById('nav-rank-title');
   const navCount = document.getElementById('nav-rank-count');
   if (navIcon) navIcon.textContent = stats.rank.icon;
-  if (navTitle) navTitle.textContent = stats.rank.title.replace(' Developer', '');
+  if (navTitle) navTitle.textContent = stats.rank.title.replace(' Developer', '').replace(' Разработчик', '').replace(' Dasturchi', '');
   if (navCount) navCount.textContent = `${stats.completedCount}/${stats.totalTechs}`;
 
   // Hero Progression Card
@@ -243,6 +427,7 @@ function updateGlobalProgressUI() {
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initLanguage();
   addSVGDefs();
   updateGlobalProgressUI();
 });
@@ -300,7 +485,7 @@ function showPage(pageId) {
 function selectCategory(category) {
   state.currentCategory = category;
   const badge = document.getElementById('category-badge');
-  if (badge) badge.textContent = category === 'frontend' ? 'Frontend' : 'Backend';
+  if (badge) badge.textContent = category === 'frontend' ? t('frontendTitle') : t('backendTitle');
   renderTechGrid(category);
   showPage('technologies');
 }
@@ -314,12 +499,10 @@ function prepareQuizQuestions(rawQuestions) {
   const targetTotal = Math.min(30, rawQuestions.length);
   const targetPerTier = 10;
 
-  // Separate pools by difficulty level
   let easy = rawQuestions.filter(q => q.level === 'easy');
   let medium = rawQuestions.filter(q => q.level === 'medium');
   let hard = rawQuestions.filter(q => q.level === 'hard');
 
-  // If no level tags, fallback
   if (easy.length === 0 && medium.length === 0 && hard.length === 0) {
     easy = [...rawQuestions];
   }
@@ -330,7 +513,6 @@ function prepareQuizQuestions(rawQuestions) {
 
   let combined = [...selectedEasy, ...selectedMedium, ...selectedHard];
 
-  // Self-balancing fill if any tier had less than 10 questions
   if (combined.length < targetTotal) {
     const selectedIds = new Set(combined.map(q => q.id || q.question));
     const remaining = rawQuestions.filter(q => !selectedIds.has(q.id || q.question)).sort(() => Math.random() - 0.5);
@@ -340,29 +522,47 @@ function prepareQuizQuestions(rawQuestions) {
 
   combined = combined.slice(0, targetTotal);
 
-  // Randomize options (A, B, C, D) for each question and re-map correct answer index
   return combined.map((q, qIdx) => {
     const originalOptions = [...(q.options || [])];
+    const originalOptionsRu = Array.isArray(q.options_ru) ? [...q.options_ru] : null;
+    const originalOptionsEn = Array.isArray(q.options_en) ? [...q.options_en] : null;
     const correctIndex = (typeof q.answer === 'number' && q.answer >= 0 && q.answer < originalOptions.length) ? q.answer : 0;
-    const correctText = originalOptions[correctIndex];
 
-    // Shuffle options array
-    const shuffledOptions = [...originalOptions].sort(() => Math.random() - 0.5);
-    const newAnswerIndex = shuffledOptions.indexOf(correctText);
+    // Create index array and shuffle
+    const indices = originalOptions.map((_, i) => i);
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = indices[i];
+      indices[i] = indices[j];
+      indices[j] = temp;
+    }
+
+    const shuffledOptions = indices.map(i => originalOptions[i]);
+    const shuffledOptionsRu = (originalOptionsRu && originalOptionsRu.length === originalOptions.length)
+      ? indices.map(i => originalOptionsRu[i])
+      : undefined;
+    const shuffledOptionsEn = (originalOptionsEn && originalOptionsEn.length === originalOptions.length)
+      ? indices.map(i => originalOptionsEn[i])
+      : undefined;
+    const newAnswerIndex = indices.indexOf(correctIndex);
 
     return {
       id: qIdx + 1,
       originalId: q.id || (qIdx + 1),
       level: q.level || 'easy',
       question: q.question,
+      question_ru: q.question_ru,
+      question_en: q.question_en,
       options: shuffledOptions,
+      options_ru: shuffledOptionsRu,
+      options_en: shuffledOptionsEn,
       answer: newAnswerIndex !== -1 ? newAnswerIndex : 0
     };
   });
 }
 
 // ============================================================
-// RENDER TECH GRID (With Strict ✔ Completed & ❌ Incomplete Statuses)
+// RENDER TECH GRID
 // ============================================================
 function renderTechGrid(category) {
   const grid = document.getElementById('tech-grid');
@@ -375,31 +575,33 @@ function renderTechGrid(category) {
   techs.forEach((tech, i) => {
     const techData = stats.completedTechs[tech.id];
     const isCompleted = isPerfectCompletion(techData);
+    const techDesc = getTechDesc(tech.id);
+    const categoryLabel = category === 'frontend' ? t('frontendTitle') : t('backendTitle');
 
     const card = document.createElement('div');
     card.className = `tech-card${isCompleted ? ' completed' : ' incomplete'}`;
     card.tabIndex = 0;
     card.setAttribute('role', 'button');
-    card.setAttribute('aria-label', `${tech.name} testini boshlash`);
+    card.setAttribute('aria-label', t('startQuizAria', { name: tech.name }));
     card.style.animation = 'pageFadeIn 0.35s ease both';
     card.style.animationDelay = `${i * 0.03}s`;
 
     let statusBadgeHTML = '';
     let scoreHTML = '';
     if (isCompleted && techData && typeof techData.bestScore === 'number') {
-      statusBadgeHTML = `<span class="tech-status-badge status-completed" title="Test to'liq tugatilgan">✔ Tugatilgan</span>`;
+      statusBadgeHTML = `<span class="tech-status-badge status-completed" title="${t('techCompletedTitle')}">${t('statusCompleted')}</span>`;
       scoreHTML = `
         <div class="tech-score-indicator">
-          <span>Eng yaxshi:</span>
+          <span>${t('bestScoreLabel')}</span>
           <span class="tech-best-score">${techData.bestScore}/30 (${techData.percentage || Math.round((techData.bestScore / 30) * 100)}%)</span>
         </div>
       `;
     } else {
-      statusBadgeHTML = `<span class="tech-status-badge status-incomplete" title="Test hali to'liq tugatilmagan">❌ Tugallanmagan</span>`;
+      statusBadgeHTML = `<span class="tech-status-badge status-incomplete" title="${t('techIncompleteTitle')}">${t('statusIncomplete')}</span>`;
       scoreHTML = `
         <div class="tech-score-indicator">
-          <span>Holat:</span>
-          <span class="tech-pending-score">Topshirilmagan</span>
+          <span>${t('statusLabel')}</span>
+          <span class="tech-pending-score">${t('notTaken')}</span>
         </div>
       `;
     }
@@ -412,15 +614,15 @@ function renderTechGrid(category) {
           </div>
           <div class="tech-titles">
             <h3 class="tech-name">${escapeHTML(tech.name)}</h3>
-            <span class="tech-category">${escapeHTML(category)}</span>
+            <span class="tech-category">${escapeHTML(categoryLabel)}</span>
           </div>
         </div>
         ${statusBadgeHTML}
       </div>
-      <p class="tech-desc">${escapeHTML(tech.desc)}</p>
+      <p class="tech-desc">${escapeHTML(techDesc)}</p>
       ${scoreHTML}
       <button class="start-quiz-btn" onclick="event.stopPropagation(); startQuiz('${tech.id}')">
-        ${isCompleted ? 'Qayta topshirish ↺' : 'Testni boshlash →'}
+        ${isCompleted ? t('retakeQuizBtn') : t('startQuizBtn')}
       </button>
     `;
 
@@ -434,28 +636,26 @@ function renderTechGrid(category) {
 }
 
 // ============================================================
-// QUIZ START (Loads Exactly 30 Questions: 10 Easy, 10 Med, 10 Hard)
+// QUIZ START
 // ============================================================
 function startQuiz(techId) {
   const allTechs = [...TECHNOLOGIES.frontend, ...TECHNOLOGIES.backend];
   const tech = allTechs.find(t => t.id === techId);
-  if (!tech) { showToast("Texnologiya topilmadi!"); return; }
+  if (!tech) { showToast(t('toastTechNotFound')); return; }
 
   state.currentTech = tech;
   state.answers = {};
   state.currentIndex = 0;
   state.elapsedSeconds = 0;
 
-  // Load from embedded QUIZ_DATA
   const data = window.QUIZ_DATA && window.QUIZ_DATA[techId];
   const rawQuestions = data && data.questions;
 
   if (!rawQuestions || rawQuestions.length === 0) {
-    showToast(`"${tech.name}" uchun savollar yuklanmadi. Qayta urinib ko'ring.`);
+    showToast(t('toastQuestionsNotLoaded', { tech: tech.name }));
     return;
   }
 
-  // Generate exact 30 questions with randomized options
   state.questions = prepareQuizQuestions(rawQuestions);
   stopTimer();
   showPage('quiz');
@@ -482,8 +682,8 @@ function renderQuestionDots() {
   state.questions.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'q-dot';
-    dot.setAttribute('title', `Savol ${i + 1}`);
-    dot.setAttribute('aria-label', `Savol ${i + 1}`);
+    dot.setAttribute('title', t('questionAria', { num: i + 1 }));
+    dot.setAttribute('aria-label', t('questionAria', { num: i + 1 }));
     dot.onclick = () => { renderQuestion(i); };
     container.appendChild(dot);
   });
@@ -503,7 +703,7 @@ function updateDots() {
 }
 
 // ============================================================
-// RENDER QUESTION (With Strict HTML Escaping for Code/Tags)
+// RENDER QUESTION
 // ============================================================
 function renderQuestion(index) {
   state.currentIndex = index;
@@ -513,13 +713,13 @@ function renderQuestion(index) {
   const total = state.questions.length;
   const letters = ['A', 'B', 'C', 'D'];
   const level = q.level || 'easy';
-  const levelLabels = { easy: 'Oson', medium: "O'rta", hard: 'Qiyin' };
+  const levelLabel = t(level);
 
-  // ── Header count ───────────────────────────────────────────
+  // Header count
   const countEl = document.getElementById('quiz-q-count');
-  if (countEl) countEl.textContent = `Savol ${index + 1} / ${total}`;
+  if (countEl) countEl.textContent = t('questionCount', { current: index + 1, total: total });
 
-  // ── Progress bar ───────────────────────────────────────────
+  // Progress bar
   const answered = Object.keys(state.answers).length;
   const pct = Math.round((answered / total) * 100);
   const bar = document.getElementById('progress-bar');
@@ -527,8 +727,9 @@ function renderQuestion(index) {
   if (bar) bar.style.width = `${pct}%`;
   if (pctEl) pctEl.textContent = `${pct}%`;
 
-  // ── Build options HTML with escapeHTML ──────────────────────
-  const optionsHTML = (q.options || []).map((opt, i) => {
+  // Options
+  const currentOptions = getQuestionOptions(q);
+  const optionsHTML = (currentOptions || []).map((opt, i) => {
     const selected = state.answers[index] === i ? ' selected' : '';
     const letterSel = selected ? ' style="background:var(--accent-primary);color:white;"' : '';
     const safeOpt = escapeHTML(opt);
@@ -540,12 +741,13 @@ function renderQuestion(index) {
       </button>`;
   }).join('');
 
-  // ── Rebuild question card with escapeHTML ──────────────────
+  // Rebuild question card
   const card = document.getElementById('question-card');
+  const qText = getQuestionText(q);
   if (card) {
     card.innerHTML = `
-      <div class="question-level-badge ${escapeHTML(level)}">${escapeHTML(levelLabels[level] || level)}</div>
-      <h3 class="question-text">${escapeHTML(q.question)}</h3>
+      <div class="question-level-badge ${escapeHTML(level)}">${escapeHTML(levelLabel)}</div>
+      <h3 class="question-text">${escapeHTML(qText)}</h3>
       <div class="options-grid">${optionsHTML}</div>
     `;
     card.style.animation = 'none';
@@ -553,7 +755,7 @@ function renderQuestion(index) {
     card.style.animation = 'questionSlide 0.25s ease';
   }
 
-  // ── Navigation buttons ─────────────────────────────────────
+  // Navigation buttons
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
   if (prevBtn) prevBtn.disabled = (index === 0);
@@ -565,7 +767,6 @@ function renderQuestion(index) {
 function selectAnswer(questionIndex, optionIndex) {
   state.answers[questionIndex] = optionIndex;
 
-  // Update button visual styles
   const options = document.querySelectorAll('.option-btn');
   options.forEach((btn, i) => {
     const isSelected = i === optionIndex;
@@ -654,9 +855,9 @@ function confirmFinish() {
   const textEl = document.getElementById('finish-modal-text');
   if (textEl) {
     if (unanswered > 0) {
-      textEl.textContent = `${unanswered} ta savolga hali javob bermadingiz (${answered}/30 javob berildi). Testni baribir yakunlaysizmi?`;
+      textEl.textContent = t('confirmFinishUnanswered', { unanswered, answered });
     } else {
-      textEl.textContent = 'Barcha 30 ta savolga to\'liq javob berdingiz. Testni yakunlashga tayyormisiz?';
+      textEl.textContent = t('confirmFinishAllAnswered');
     }
   }
   openModal('finish-modal');
@@ -692,7 +893,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============================================================
-// FINISH QUIZ & CALCULATE RESULTS (30 Questions System)
+// FINISH QUIZ & CALCULATE RESULTS
 // ============================================================
 function finishQuiz() {
   closeModal('finish-modal');
@@ -723,22 +924,21 @@ function calculateResults() {
   const total = questions.length || 30;
   const pct = Math.round((correct / total) * 100);
 
-  // Grade determination according to user requirements for 30 questions
   let grade, gradeClass, gradeIcon, gradeMsg;
   const isPerfectScore = correct === total;
   if (isPerfectScore) {
-    grade = "A'lo"; gradeClass = 'grade-excellent'; gradeIcon = '🏆';
-    gradeMsg = `Mukammal natija! Siz ${escapeHTML(tech.name)} ni 100% bilasiz!`;
+    grade = t('gradeExcellent'); gradeClass = 'grade-excellent'; gradeIcon = '🏆';
+    gradeMsg = t('gradeMsgExcellent', { tech: tech.name });
     spawnConfetti();
   } else if (correct >= 24) {
-    grade = 'Yaxshi'; gradeClass = 'grade-good'; gradeIcon = '⭐';
-    gradeMsg = `Yaxshi natija! ${escapeHTML(tech.name)} bo'yicha bilimingiz mustahkam.`;
+    grade = t('gradeGood'); gradeClass = 'grade-good'; gradeIcon = '⭐';
+    gradeMsg = t('gradeMsgGood', { tech: tech.name });
   } else if (correct >= 15) {
-    grade = 'Qoniqarli'; gradeClass = 'grade-satisfactory'; gradeIcon = '📚';
-    gradeMsg = `${escapeHTML(tech.name)} bo'yicha bilimingizni yanada chuqurlashtiring.`;
+    grade = t('gradeSatisfactory'); gradeClass = 'grade-satisfactory'; gradeIcon = '📚';
+    gradeMsg = t('gradeMsgSatisfactory', { tech: tech.name });
   } else {
-    grade = "80% dan kam"; gradeClass = 'grade-poor'; gradeIcon = '💪';
-    gradeMsg = `Tilni 80% dan kam bilasiz. Ko'proq mashq qiling!`;
+    grade = t('gradePoor'); gradeClass = 'grade-poor'; gradeIcon = '💪';
+    gradeMsg = t('gradeMsgPoor');
   }
 
   // Store for Review Mode
@@ -751,13 +951,14 @@ function calculateResults() {
     skipped,
     percentage: pct,
     grade,
+    gradeClass,
+    gradeIcon,
+    gradeMsg,
     timeTaken: state.elapsedSeconds
   };
 
-  // Only a 100% score unlocks a technology and affects rank/progress.
   const progress = getUserProgress();
   const prevCount = getStats().completedCount;
-  const prevRecord = progress.completedTechs[tech.id];
 
   if (isPerfectScore) {
     progress.completedTechs[tech.id] = {
@@ -774,63 +975,82 @@ function calculateResults() {
 
   const newCount = getStats().completedCount;
 
-  // Update Global UI
   updateGlobalProgressUI();
+  updateResultPageUI();
+  checkAndTriggerRankUp(prevCount, newCount);
+  submitToBackend(tech.id, answers, correct, wrong, skipped, pct, grade);
+}
 
-  // Update UI Elements
+function updateResultPageUI() {
+  const result = state.lastQuizResult;
+  if (!result) return;
+
   const techBadge = document.getElementById('result-tech-badge');
-  if (techBadge) techBadge.textContent = tech.name;
+  if (techBadge) techBadge.textContent = result.tech.name;
 
   const scoreEl = document.getElementById('result-score');
-  if (scoreEl) scoreEl.textContent = correct;
+  if (scoreEl) scoreEl.textContent = result.correct;
 
   const percentEl = document.getElementById('result-percent');
-  if (percentEl) percentEl.textContent = `${pct}%`;
+  if (percentEl) percentEl.textContent = `${result.percentage}%`;
 
   const resCorrect = document.getElementById('res-correct');
-  if (resCorrect) resCorrect.textContent = correct;
+  if (resCorrect) resCorrect.textContent = result.correct;
 
   const resWrong = document.getElementById('res-wrong');
-  if (resWrong) resWrong.textContent = wrong;
+  if (resWrong) resWrong.textContent = result.wrong;
 
   const resSkipped = document.getElementById('res-skipped');
-  if (resSkipped) resSkipped.textContent = skipped;
+  if (resSkipped) resSkipped.textContent = result.skipped;
 
-  // Format time
-  const m = Math.floor(state.elapsedSeconds / 60);
-  const s = state.elapsedSeconds % 60;
+  const m = Math.floor(result.timeTaken / 60);
+  const s = result.timeTaken % 60;
   const timeEl = document.getElementById('res-time');
   if (timeEl) timeEl.textContent = `${m}:${s.toString().padStart(2, '0')}`;
 
-  // Grade badge & text
   const gradeBadge = document.getElementById('grade-badge');
-  if (gradeBadge) gradeBadge.className = `grade-badge ${gradeClass}`;
+  if (gradeBadge) gradeBadge.className = `grade-badge ${result.gradeClass}`;
 
   const iconEl = document.getElementById('grade-icon');
-  if (iconEl) iconEl.textContent = gradeIcon;
+  if (iconEl) iconEl.textContent = result.gradeIcon;
 
   const textEl = document.getElementById('grade-text');
-  if (textEl) textEl.textContent = grade;
+  if (textEl) textEl.textContent = result.grade;
 
   const msgEl = document.getElementById('grade-message');
-  if (msgEl) msgEl.textContent = gradeMsg;
+  if (msgEl) msgEl.textContent = result.gradeMsg;
 
-  // Animate circular score progress
   setTimeout(() => {
-    const circumference = 2 * Math.PI * 85; // r=85 => ~534.07
-    const offset = circumference - (pct / 100) * circumference;
+    const circumference = 2 * Math.PI * 85;
+    const offset = circumference - (result.percentage / 100) * circumference;
     const progressCircle = document.getElementById('score-progress');
     if (progressCircle) {
       progressCircle.style.strokeDasharray = `${circumference}`;
       progressCircle.style.strokeDashoffset = `${offset}`;
     }
   }, 200);
+}
 
-  // Check for Rank Upgrade
-  checkAndTriggerRankUp(prevCount, newCount);
+function updateResultPageLanguage() {
+  const result = state.lastQuizResult;
+  if (!result) return;
 
-  // Submit formatted answers to backend if running
-  submitToBackend(tech.id, answers, correct, wrong, skipped, pct, grade);
+  const total = result.questions ? result.questions.length : 30;
+  const isPerfectScore = result.correct === total;
+  if (isPerfectScore) {
+    result.grade = t('gradeExcellent');
+    result.gradeMsg = t('gradeMsgExcellent', { tech: result.tech.name });
+  } else if (result.correct >= 24) {
+    result.grade = t('gradeGood');
+    result.gradeMsg = t('gradeMsgGood', { tech: result.tech.name });
+  } else if (result.correct >= 15) {
+    result.grade = t('gradeSatisfactory');
+    result.gradeMsg = t('gradeMsgSatisfactory', { tech: result.tech.name });
+  } else {
+    result.grade = t('gradePoor');
+    result.gradeMsg = t('gradeMsgPoor');
+  }
+  updateResultPageUI();
 }
 
 // ============================================================
@@ -838,25 +1058,48 @@ function calculateResults() {
 // ============================================================
 function checkAndTriggerRankUp(prevCount, newCount) {
   if (prevCount < 10 && newCount >= 10) {
-    triggerRankUpModal('junior', 'Tabriklaymiz! Siz Junior Developersiz! 🥉', 'Siz 10 ta texnologiyani muvaffaqiyatli topshirdingiz va Junior unvoniga erishdingiz!', '🥉', 'Keyingi maqsad: Middle Developer (20 ta)');
+    triggerRankUpModal(
+      'junior',
+      t('rankUpJuniorTitle'),
+      t('rankUpJuniorDesc'),
+      '🥉',
+      t('rankUpJuniorPerk1'),
+      t('rankUpJuniorPerk2')
+    );
   } else if (prevCount < 20 && newCount >= 20) {
-    triggerRankUpModal('middle', 'Ajoyib! Siz Middle Developersiz! 🥈', 'Siz 20 ta texnologiyani muvaffaqiyatli topshirdingiz va Middle darajasiga yetdingiz!', '🥈', 'Keyingi maqsad: Senior Developer (31 ta)');
+    triggerRankUpModal(
+      'middle',
+      t('rankUpMiddleTitle'),
+      t('rankUpMiddleDesc'),
+      '🥈',
+      t('rankUpMiddlePerk1'),
+      t('rankUpMiddlePerk2')
+    );
   } else if (prevCount < 31 && newCount >= 31) {
-    triggerRankUpModal('senior', 'Dahshat! Siz Senior Developersiz! 🥇', 'Tabriklaymiz! Siz platformadagi barcha 31 ta texnologiyani to\'liq egallab, Senior unvoniga loyiq deb topildingiz!', '🥇', 'Mukammal! Barcha 31 texnologiya zabt etildi! 🏆');
+    triggerRankUpModal(
+      'senior',
+      t('rankUpSeniorTitle'),
+      t('rankUpSeniorDesc'),
+      '🥇',
+      t('rankUpSeniorPerk1'),
+      t('rankUpSeniorPerk2')
+    );
   }
 }
 
-function triggerRankUpModal(rankId, title, desc, icon, nextPerk) {
+function triggerRankUpModal(rankId, title, desc, icon, perk1, perk2) {
   setTimeout(() => {
     const titleEl = document.getElementById('rankup-title');
     const descEl = document.getElementById('rankup-desc');
     const iconEl = document.getElementById('rankup-icon');
-    const perkEl = document.getElementById('rankup-perk-2');
+    const perk1El = document.getElementById('rankup-perk-1');
+    const perk2El = document.getElementById('rankup-perk-2');
 
     if (titleEl) titleEl.textContent = title;
     if (descEl) descEl.textContent = desc;
     if (iconEl) iconEl.textContent = icon;
-    if (perkEl) perkEl.textContent = nextPerk;
+    if (perk1El) perk1El.textContent = perk1;
+    if (perk2El) perk2El.textContent = perk2;
 
     spawnConfetti();
     openModal('rankup-modal');
@@ -887,24 +1130,30 @@ async function submitToBackend(techId, answers, correct, wrong, skipped, percent
       signal: AbortSignal.timeout(3000),
     });
   } catch (e) {
-    // Graceful offline behavior — quiz still functions fully in browser
+    // Graceful offline behavior
   }
 }
 
 // ============================================================
-// REVIEW MODE (Javoblarni Tahlil Qilish)
+// REVIEW MODE
 // ============================================================
 function openReviewModal(filter = 'all') {
   const result = state.lastQuizResult;
   if (!result) {
-    showToast("Tahlil qilish uchun natijalar topilmadi!");
+    showToast(t('toastNoReviewResults'));
     return;
   }
 
   const subEl = document.getElementById('review-tech-subtitle');
-  if (subEl) subEl.textContent = `"${result.tech.name}" — 30 ta savol tahlili (${result.correct} to'g'ri, ${result.wrong} noto'g'ri, ${result.skipped} o'tkazilgan)`;
+  if (subEl) {
+    subEl.textContent = t('reviewModalSubtitle', {
+      tech: result.tech.name,
+      correct: result.correct,
+      wrong: result.wrong,
+      skipped: result.skipped
+    });
+  }
 
-  // Update filter count badges
   const fAll = document.getElementById('rev-filter-all');
   const fCor = document.getElementById('rev-filter-correct');
   const fWro = document.getElementById('rev-filter-wrong');
@@ -922,7 +1171,6 @@ function openReviewModal(filter = 'all') {
 function filterReviewQuestions(filter) {
   state.reviewFilter = filter;
 
-  // Update filter buttons
   document.querySelectorAll('.review-filter-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.filter === filter);
   });
@@ -935,10 +1183,19 @@ function renderReviewQuestions() {
   const result = state.lastQuizResult;
   if (!container || !result) return;
 
+  const subEl = document.getElementById('review-tech-subtitle');
+  if (subEl) {
+    subEl.textContent = t('reviewModalSubtitle', {
+      tech: result.tech.name,
+      correct: result.correct,
+      wrong: result.wrong,
+      skipped: result.skipped
+    });
+  }
+
   container.innerHTML = '';
   const filter = state.reviewFilter;
   const letters = ['A', 'B', 'C', 'D'];
-  const levelLabels = { easy: 'Oson', medium: "O'rta", hard: 'Qiyin' };
 
   result.questions.forEach((q, i) => {
     const userAns = result.answers[i];
@@ -946,20 +1203,23 @@ function renderReviewQuestions() {
     const isCorrect = !isSkipped && userAns === q.answer;
     const isWrong = !isSkipped && !isCorrect;
 
-    // Filter check
     if (filter === 'correct' && !isCorrect) return;
     if (filter === 'wrong' && !isWrong) return;
     if (filter === 'skipped' && !isSkipped) return;
 
     const statusClass = isCorrect ? 'status-correct' : (isWrong ? 'status-wrong' : 'status-skipped');
     const statusTag = isCorrect
-      ? '<span class="review-status-tag correct">✓ To\'g\'ri</span>'
-      : (isWrong ? '<span class="review-status-tag wrong">✗ Noto\'g\'ri</span>' : '<span class="review-status-tag skipped">— O\'tkazilgan</span>');
+      ? `<span class="review-status-tag correct">${t('filterCorrect')}</span>`
+      : (isWrong ? `<span class="review-status-tag wrong">${t('filterWrong')}</span>` : `<span class="review-status-tag skipped">${t('filterSkipped')}</span>`);
 
     const card = document.createElement('div');
     card.className = `review-q-card ${statusClass}`;
 
-    const optionsHTML = (q.options || []).map((opt, optIndex) => {
+    const currentOptions = getQuestionOptions(q);
+    const qText = getQuestionText(q);
+    const levelLabel = t(q.level || 'easy');
+
+    const optionsHTML = (currentOptions || []).map((opt, optIndex) => {
       const isExpected = optIndex === q.answer;
       const isChosen = optIndex === userAns;
 
@@ -968,10 +1228,10 @@ function renderReviewQuestions() {
 
       if (isExpected) {
         optClass = ' is-correct';
-        badgeHTML = '<span class="review-opt-badge badge-correct">To\'g\'ri javob</span>';
+        badgeHTML = `<span class="review-opt-badge badge-correct">${t('correctAnswerBadge')}</span>`;
       } else if (isChosen && isWrong) {
         optClass = ' is-user-wrong';
-        badgeHTML = '<span class="review-opt-badge badge-user-wrong">Siz tanlagan javob</span>';
+        badgeHTML = `<span class="review-opt-badge badge-user-wrong">${t('userWrongBadge')}</span>`;
       }
 
       return `
@@ -984,10 +1244,10 @@ function renderReviewQuestions() {
 
     card.innerHTML = `
       <div class="review-q-top">
-        <span class="review-q-num">Savol ${i + 1} / 30 · <small>${escapeHTML(levelLabels[q.level] || q.level)}</small></span>
+        <span class="review-q-num">${t('questionCount', { current: i + 1, total: 30 })} · <small>${escapeHTML(levelLabel)}</small></span>
         ${statusTag}
       </div>
-      <div class="review-q-text">${escapeHTML(q.question)}</div>
+      <div class="review-q-text">${escapeHTML(qText)}</div>
       <div class="review-options-grid">${optionsHTML}</div>
     `;
 
@@ -995,7 +1255,7 @@ function renderReviewQuestions() {
   });
 
   if (container.children.length === 0) {
-    container.innerHTML = `<div style="text-align:center; padding: 32px; color: var(--text-muted);">Ushbu filtr bo'yicha savollar topilmadi.</div>`;
+    container.innerHTML = `<div style="text-align:center; padding: 32px; color: var(--text-muted);">${t('noFilteredQuestions')}</div>`;
   }
 }
 
@@ -1025,7 +1285,7 @@ function renderProfileDashboard() {
   if (compEl) compEl.textContent = `${stats.completedCount}/${stats.totalTechs}`;
   if (avgEl) avgEl.textContent = `${stats.averageScore}%`;
   if (perfEl) perfEl.textContent = stats.perfectCount;
-  if (nextEl) nextEl.textContent = stats.completedCount >= 31 ? 'Maksimal!' : `${stats.remainingForNext} ta`;
+  if (nextEl) nextEl.textContent = stats.completedCount >= 31 ? t('profMaxLevel') : t('profRemainingCount', { count: stats.remainingForNext });
 
   // Roadmap Steps
   const stepBeg = document.getElementById('step-beginner')?.querySelector('.step-dot');
@@ -1037,73 +1297,75 @@ function renderProfileDashboard() {
   const l2 = document.getElementById('line-2');
   const l3 = document.getElementById('line-3');
 
-  // Beginner: 0-9 active (🌱), 10+ completed (✔)
   if (stepBeg) {
     if (stats.completedCount >= 10) {
       stepBeg.className = 'step-dot completed';
       stepBeg.textContent = '✔';
-      stepBeg.title = "Beginner bosqichi yakunlangan";
+      stepBeg.title = t('tooltipBeginnerDone');
     } else {
       stepBeg.className = 'step-dot active';
       stepBeg.textContent = '🌱';
-      stepBeg.title = "Hozirgi daraja: Beginner";
+      stepBeg.title = t('tooltipBeginnerActive');
     }
   }
   if (l1) { l1.className = 'step-line ' + (stats.completedCount >= 10 ? 'active' : ''); }
 
-  // Junior: 0-9 inactive (🥉), 10-19 active (🥉), 20+ completed (✔)
   if (stepJun) {
     if (stats.completedCount >= 20) {
       stepJun.className = 'step-dot completed';
       stepJun.textContent = '✔';
-      stepJun.title = "Junior bosqichi yakunlangan";
+      stepJun.title = t('tooltipJuniorDone');
     } else if (stats.completedCount >= 10) {
       stepJun.className = 'step-dot active';
       stepJun.textContent = '🥉';
-      stepJun.title = "Hozirgi daraja: Junior";
+      stepJun.title = t('tooltipJuniorActive');
     } else {
       stepJun.className = 'step-dot';
       stepJun.textContent = '🥉';
-      stepJun.title = "Junior (10 ta texnologiya kerak)";
+      stepJun.title = t('tooltipJuniorLocked');
     }
   }
   if (l2) { l2.className = 'step-line ' + (stats.completedCount >= 20 ? 'active' : ''); }
 
-  // Middle: 0-19 inactive (🥈), 20-30 active (🥈), 31 completed (✔)
   if (stepMid) {
     if (stats.completedCount >= 31) {
       stepMid.className = 'step-dot completed';
       stepMid.textContent = '✔';
-      stepMid.title = "Middle bosqichi yakunlangan";
+      stepMid.title = t('tooltipMiddleDone');
     } else if (stats.completedCount >= 20) {
       stepMid.className = 'step-dot active';
       stepMid.textContent = '🥈';
-      stepMid.title = "Hozirgi daraja: Middle";
+      stepMid.title = t('tooltipMiddleActive');
     } else {
       stepMid.className = 'step-dot';
       stepMid.textContent = '🥈';
-      stepMid.title = "Middle (20 ta texnologiya kerak)";
+      stepMid.title = t('tooltipMiddleLocked');
     }
   }
   if (l3) { l3.className = 'step-line ' + (stats.completedCount >= 31 ? 'active' : ''); }
 
-  // Senior: 0-30 inactive (🥇), 31 completed (🏆)
   if (stepSen) {
     if (stats.completedCount >= 31) {
       stepSen.className = 'step-dot active completed';
       stepSen.textContent = '🏆';
-      stepSen.title = "Senior bosqichi egallandi!";
+      stepSen.title = t('tooltipSeniorActive');
     } else {
       stepSen.className = 'step-dot';
       stepSen.textContent = '🥇';
-      stepSen.title = "Senior (31 ta texnologiya kerak)";
+      stepSen.title = t('tooltipSeniorLocked');
     }
   }
 
-  // Technologies List in Profile (Strict ✔ and ❌)
+  // Technologies List in Profile
   const listContainer = document.getElementById('profile-techs-list');
   const listSummary = document.getElementById('prof-list-summary');
-  if (listSummary) listSummary.textContent = `${stats.completedCount} / ${stats.totalTechs} yakunlangan (${stats.progressPercentage}%)`;
+  if (listSummary) {
+    listSummary.textContent = t('techsCompletedSummary', {
+      completed: stats.completedCount,
+      total: stats.totalTechs,
+      percent: stats.progressPercentage
+    });
+  }
 
   if (listContainer) {
     listContainer.innerHTML = '';
@@ -1123,7 +1385,7 @@ function renderProfileDashboard() {
         <div class="p-tech-status-col">
           ${isDone
             ? `<span class="p-tech-score completed">✔ ${data.bestScore}/30 (${data.percentage || Math.round((data.bestScore / 30) * 100)}%)</span>`
-            : `<span class="p-tech-pending incomplete">❌ Tugallanmagan</span>`
+            : `<span class="p-tech-pending incomplete">${t('statusIncomplete')}</span>`
           }
         </div>
       `;
@@ -1138,7 +1400,7 @@ function resetUserProgress() {
   closeModal('profile-modal');
   updateGlobalProgressUI();
   if (state.currentCategory) renderTechGrid(state.currentCategory);
-  showToast("Barcha natijalar va progress tozalandi! Boshidan boshlashingiz mumkin.");
+  showToast(t('toastProgressReset'));
 }
 
 // ============================================================
@@ -1209,11 +1471,9 @@ function toggleMenu() {
 // KEYBOARD SHORTCUTS
 // ============================================================
 document.addEventListener('keydown', (e) => {
-  // Do not intercept if a modal is open
   const isModalOpen = document.querySelector('.modal-overlay.active');
   if (isModalOpen) return;
 
-  // Do not intercept if user is typing in an input or textarea
   if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) return;
 
   const quizActive = document.getElementById('page-quiz')?.classList.contains('active');

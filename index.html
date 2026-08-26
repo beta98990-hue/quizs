@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevQuiz — Programming Skills Test Platform</title>
-  <meta name="description" content="Dasturlash texnologiyalari bo'yicha bilimingizni sinab ko'ring. Frontend va Backend yo'nalishlari, 31 ta texnologiya, 50 ta savol." />
+  <title data-i18n="appTitle">DevQuiz — Programming Skills Test Platform</title>
+  <meta name="description" data-i18n-attr="content:metaDesc" content="Dasturlash texnologiyalari bo'yicha bilimingizni sinab ko'ring. Frontend va Backend yo'nalishlari, 31 ta texnologiya, 930 ta savol." />
   <meta name="keywords" content="dasturlash, test, quiz, frontend, backend, javascript, python, java, react" />
-  <meta property="og:title" content="DevQuiz — Programming Skills Test" />
-  <meta property="og:description" content="Professional dasturlash bilim testi platformasi" />
+  <meta property="og:title" data-i18n-attr="content:appTitle" content="DevQuiz — Programming Skills Test" />
+  <meta property="og:description" data-i18n-attr="content:appSubtitle" content="Professional dasturlash bilim testi platformasi" />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'><rect width='28' height='28' rx='6' fill='%236366f1'/><path d='M7 9l6 5-6 5M15 19h6' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,17 +27,46 @@
           <path d="M14 18H24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
       </div>
-      <span class="logo-text">DevQuiz</span>
+      <span class="logo-text" data-i18n="logoText">DevQuiz</span>
     </a>
     <div class="nav-actions">
       <!-- Rank Badge & Dashboard Trigger -->
-      <button class="nav-rank-btn" id="navRankBtn" onclick="openProfileModal()" aria-label="Foydalanuvchi profili va darajasi" title="Profil va statistika">
+      <button class="nav-rank-btn" id="navRankBtn" onclick="openProfileModal()" aria-label="Foydalanuvchi profili va darajasi" data-i18n-attr="title:profileAndStats,aria-label:profileAria">
         <span class="rank-icon" id="nav-rank-icon">🌱</span>
         <span class="rank-title" id="nav-rank-title">Beginner</span>
         <span class="rank-count" id="nav-rank-count">0/31</span>
       </button>
 
-      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Mavzuni o'zgartirish" title="Dark/Light rejim">
+      <!-- Modern SaaS Language Switcher Dropdown -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" onclick="toggleLangDropdown(event)" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:selectLanguage,title:selectLanguage">
+          <span class="lang-flag" id="currentLangFlag">🇺🇿</span>
+          <span class="lang-code" id="currentLangCode">UZ</span>
+          <svg class="lang-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" role="menu" aria-orientation="vertical">
+          <button class="lang-option active" data-lang="uz" onclick="selectLanguage('uz')" role="menuitem" tabindex="0">
+            <span class="lang-option-flag">UZ</span>
+            <span class="lang-option-label" data-i18n="langUz">O‘zbekcha</span>
+            <span class="lang-check" aria-hidden="true">✓</span>
+          </button>
+          <button class="lang-option" data-lang="ru" onclick="selectLanguage('ru')" role="menuitem" tabindex="0">
+            <span class="lang-option-flag">RU</span>
+            <span class="lang-option-label" data-i18n="langRu">Русский</span>
+            <span class="lang-check" aria-hidden="true">✓</span>
+          </button>
+          <button class="lang-option" data-lang="en" onclick="selectLanguage('en')" role="menuitem" tabindex="0">
+            <span class="lang-option-flag">EN</span>
+            <span class="lang-option-label" data-i18n="langEn">English</span>
+            <span class="lang-check" aria-hidden="true">✓</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Mavzuni o'zgartirish" data-i18n-attr="aria-label:themeToggleAria,title:themeToggleTitle">
         <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
           <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
@@ -48,7 +77,9 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
       </button>
-      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Mobil menyu" aria-expanded="false">
+
+      <!-- Hamburger for Mobile -->
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Mobil menyu" data-i18n-attr="aria-label:mobileMenuAria" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -57,16 +88,30 @@
 
 <!-- Mobile Navigation Drawer -->
 <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-  <button class="mobile-nav-link" onclick="openProfileModal(); toggleMenu();">
+  <div class="mobile-lang-section">
+    <span class="mobile-lang-title" data-i18n="selectLanguage">Tilni tanlang</span>
+    <div class="mobile-lang-segmented" role="radiogroup" aria-label="Til tanlash">
+      <button class="mobile-lang-btn active" data-lang="uz" onclick="selectLanguage('uz'); toggleMenu();">
+        <span>🇺🇿</span> UZ
+      </button>
+      <button class="mobile-lang-btn" data-lang="ru" onclick="selectLanguage('ru'); toggleMenu();">
+        <span>🇷🇺</span> RU
+      </button>
+      <button class="mobile-lang-btn" data-lang="en" onclick="selectLanguage('en'); toggleMenu();">
+        <span>ᴇɴ</span> EN
+      </button>
+    </div>
+  </div>
+  <button class="mobile-nav-link" onclick="openProfileModal(); toggleMenu();" data-i18n="navMyProfile">
     📊 Mening Profilim & Progress
   </button>
-  <button class="mobile-nav-link" onclick="showPage('home'); toggleMenu();">
+  <button class="mobile-nav-link" onclick="showPage('home'); toggleMenu();" data-i18n="navHome">
     🏠 Bosh sahifa
   </button>
-  <button class="mobile-nav-link" onclick="selectCategory('frontend'); toggleMenu();">
+  <button class="mobile-nav-link" onclick="selectCategory('frontend'); toggleMenu();" data-i18n="navFrontend">
     💻 Frontend Testlari (11 ta)
   </button>
-  <button class="mobile-nav-link" onclick="selectCategory('backend'); toggleMenu();">
+  <button class="mobile-nav-link" onclick="selectCategory('backend'); toggleMenu();" data-i18n="navBackend">
     ⚙️ Backend Testlari (20 ta)
   </button>
 </div>
@@ -84,34 +129,34 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        <span>Professional Programming Assessment</span>
+        <span data-i18n="heroBadge">Professional Programming Assessment</span>
       </div>
       <h1 class="hero-title">
-        Dasturlash bilimingizni <span class="gradient-text">sinab ko'ring</span>
+        <span data-i18n="heroTitlePrefix">Dasturlash bilimingizni </span><span class="gradient-text" data-i18n="heroTitleGradient">sinab ko'ring</span>
       </h1>
-      <p class="hero-desc">
+      <p class="hero-desc" data-i18n="heroDesc">
         31 ta texnologiya, har birida aniq 30 ta professional savol (10 Easy, 10 Medium, 10 Hard). 
         Frontend yoki Backend yo'nalishini tanlang va bilimingizni baholang.
       </p>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-num">31</span>
-          <span class="stat-label">Texnologiya</span>
+          <span class="stat-label" data-i18n="statTechs">Texnologiya</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="stat-num">930</span>
-          <span class="stat-label">Savollar</span>
+          <span class="stat-label" data-i18n="statQuestions">Savollar</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="stat-num">4</span>
-          <span class="stat-label">Rank Bosqichlari</span>
+          <span class="stat-label" data-i18n="statRanks">Rank Bosqichlari</span>
         </div>
       </div>
 
       <!-- Global Progression Card -->
-      <div class="hero-progress-card" onclick="openProfileModal()" role="button" tabindex="0" aria-label="Umumiy dasturchilik progressini ko'rish">
+      <div class="hero-progress-card" onclick="openProfileModal()" role="button" tabindex="0" aria-label="Umumiy dasturchilik progressini ko'rish" data-i18n-attr="aria-label:viewGlobalProgress">
         <div class="hero-progress-header">
           <div class="hero-rank-badge" id="hero-rank-badge">
             <span class="hero-rank-icon" id="hero-rank-icon">🌱</span>
@@ -122,7 +167,7 @@
           </div>
           <div class="hero-progress-count">
             <span class="hero-count-val" id="hero-completed-count">0</span>
-            <span class="hero-count-max">/ 31 tugatildi</span>
+            <span class="hero-count-max" data-i18n="completedCountMax">/ 31 tugatildi</span>
           </div>
         </div>
         <div class="hero-progress-bar-outer">
@@ -130,7 +175,7 @@
         </div>
         <div class="hero-progress-footer">
           <span class="hero-next-target" id="hero-next-target">Keyingi bosqich: <strong>Junior (10 ta)</strong></span>
-          <span class="hero-view-details">Batafsil tahlil & progress →</span>
+          <span class="hero-view-details" data-i18n="viewDetails">Batafsil tahlil & progress →</span>
         </div>
       </div>
       <div class="category-cards">
@@ -147,8 +192,8 @@
             </svg>
           </div>
           <div class="card-info">
-            <h2 class="card-title">Frontend</h2>
-            <p class="card-subtitle">11 texnologiya · UI/UX, Web</p>
+            <h2 class="card-title" data-i18n="frontendTitle">Frontend</h2>
+            <p class="card-subtitle" data-i18n="frontendSubtitle">11 texnologiya · UI/UX, Web</p>
             <div class="card-tags">
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
@@ -176,8 +221,8 @@
             </svg>
           </div>
           <div class="card-info">
-            <h2 class="card-title">Backend</h2>
-            <p class="card-subtitle">20 texnologiya · Server, DB</p>
+            <h2 class="card-title" data-i18n="backendTitle">Backend</h2>
+            <p class="card-subtitle" data-i18n="backendSubtitle">20 texnologiya · Server, DB</p>
             <div class="card-tags">
               <span class="tag">Python</span>
               <span class="tag">Java</span>
@@ -197,7 +242,7 @@
 
   <!-- FOOTER HOME -->
   <footer class="home-footer">
-    <p>© 2026 DevQuiz · Professional Programming Assessment Platform</p>
+    <p data-i18n="footerText">© 2026 DevQuiz · Professional Programming Assessment Platform</p>
   </footer>
 </main>
 
@@ -205,16 +250,16 @@
 <div id="page-technologies" class="page" role="region" aria-label="Texnologiya tanlash">
   <div class="page-container">
     <div class="page-header">
-      <button class="back-btn" onclick="showPage('home')" aria-label="Bosh sahifaga qaytish">
+      <button class="back-btn" onclick="showPage('home')" aria-label="Bosh sahifaga qaytish" data-i18n-attr="aria-label:backHomeAria">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M19 12H5M12 19l-7-7 7-7"/>
         </svg>
-        Orqaga
+        <span data-i18n="back">Orqaga</span>
       </button>
       <div class="page-title-group">
         <div class="page-badge" id="category-badge">Frontend</div>
-        <h2 class="page-title">Texnologiyani tanlang</h2>
-        <p class="page-subtitle">Qaysi texnologiyadan test topshirmoqchisiz?</p>
+        <h2 class="page-title" data-i18n="chooseTechnology">Texnologiyani tanlang</h2>
+        <p class="page-subtitle" data-i18n="chooseTechSubtitle">Qaysi texnologiyadan test topshirmoqchisiz?</p>
       </div>
     </div>
 
@@ -230,11 +275,11 @@
     <!-- Quiz Header -->
     <div class="quiz-header">
       <div class="quiz-header-left">
-        <button class="back-btn" onclick="confirmExit()" aria-label="Testdan chiqish">
+        <button class="back-btn" onclick="confirmExit()" aria-label="Testdan chiqish" data-i18n-attr="aria-label:exitQuizAria">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M19 12H5M12 19l-7-7 7-7"/>
           </svg>
-          Chiqish
+          <span data-i18n="exit">Chiqish</span>
         </button>
         <div class="quiz-tech-info">
           <span class="quiz-tech-name" id="quiz-tech-name">HTML</span>
@@ -242,7 +287,7 @@
         </div>
       </div>
       <div class="quiz-header-right">
-        <div class="quiz-timer" id="quiz-timer" title="Sarflangan vaqt">
+        <div class="quiz-timer" id="quiz-timer" title="Sarflangan vaqt" data-i18n-attr="title:timeSpent">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
           </svg>
@@ -254,7 +299,7 @@
     <!-- Progress Bar -->
     <div class="progress-section">
       <div class="progress-info">
-        <span class="progress-text">Progress</span>
+        <span class="progress-text" data-i18n="progress">Progress</span>
         <span class="progress-percent" id="progress-percent">0%</span>
       </div>
       <div class="progress-bar-outer" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
@@ -272,17 +317,17 @@
 
     <!-- Navigation -->
     <div class="quiz-nav">
-      <button class="nav-btn prev-btn" id="prev-btn" onclick="navigateQuestion(-1)" disabled aria-label="Oldingi savol">
+      <button class="nav-btn prev-btn" id="prev-btn" onclick="navigateQuestion(-1)" disabled aria-label="Oldingi savol" data-i18n-attr="aria-label:previousAria">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M19 12H5M12 19l-7-7 7-7"/>
         </svg>
-        Oldingi
+        <span data-i18n="previous">Oldingi</span>
       </button>
       <div class="nav-center">
-        <button class="skip-btn" onclick="skipQuestion()" aria-label="Savolni o'tkazib yuborish">O'tkazib yuborish</button>
+        <button class="skip-btn" onclick="skipQuestion()" aria-label="Savolni o'tkazib yuborish" data-i18n-attr="aria-label:skipAria" data-i18n="skip">O'tkazib yuborish</button>
       </div>
-      <button class="nav-btn next-btn" id="next-btn" onclick="navigateQuestion(1)" aria-label="Keyingi savol">
-        Keyingi
+      <button class="nav-btn next-btn" id="next-btn" onclick="navigateQuestion(1)" aria-label="Keyingi savol" data-i18n-attr="aria-label:nextAria">
+        <span data-i18n="next">Keyingi</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
@@ -293,7 +338,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
-        Testni yakunlash
+        <span data-i18n="finishQuiz">Testni yakunlash</span>
       </button>
     </div>
   </div>
@@ -308,7 +353,7 @@
     <div class="result-card">
       <div class="result-header">
         <div class="result-tech-badge" id="result-tech-badge">HTML</div>
-        <h2 class="result-title">Test yakunlandi!</h2>
+        <h2 class="result-title" data-i18n="quizCompleted">Test yakunlandi!</h2>
       </div>
 
       <!-- Score Circle -->
@@ -321,7 +366,7 @@
           </svg>
           <div class="score-inner">
             <span class="score-num" id="result-score">0</span>
-            <span class="score-total">/ 30</span>
+            <span class="score-total" data-i18n="outOfTotal">/ 30</span>
             <span class="score-percent" id="result-percent">0%</span>
           </div>
         </div>
@@ -341,22 +386,22 @@
         <div class="result-stat correct">
           <div class="stat-icon">✓</div>
           <div class="stat-value" id="res-correct">0</div>
-          <div class="stat-label">To'g'ri</div>
+          <div class="stat-label" data-i18n="correctLabel">To'g'ri</div>
         </div>
         <div class="result-stat wrong">
           <div class="stat-icon">✗</div>
           <div class="stat-value" id="res-wrong">0</div>
-          <div class="stat-label">Noto'g'ri</div>
+          <div class="stat-label" data-i18n="wrongLabel">Noto'g'ri</div>
         </div>
         <div class="result-stat skipped">
           <div class="stat-icon">—</div>
           <div class="stat-value" id="res-skipped">0</div>
-          <div class="stat-label">O'tkazilgan</div>
+          <div class="stat-label" data-i18n="skippedLabel">O'tkazilgan</div>
         </div>
         <div class="result-stat time">
           <div class="stat-icon">⏱</div>
           <div class="stat-value" id="res-time">0:00</div>
-          <div class="stat-label">Vaqt</div>
+          <div class="stat-label" data-i18n="timeLabel">Vaqt</div>
         </div>
       </div>
 
@@ -366,26 +411,26 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>
           </svg>
-          Javoblarni tahlil qilish (Review)
+          <span data-i18n="reviewAnswersBtn">Javoblarni tahlil qilish (Review)</span>
         </button>
         <button class="action-btn primary-btn" onclick="retryQuiz()">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.44"/>
           </svg>
-          Qayta urinish
+          <span data-i18n="tryAgainBtn">Qayta urinish</span>
         </button>
         <button class="action-btn secondary-btn" onclick="showPage('technologies')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
             <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
           </svg>
-          Boshqa texnologiya
+          <span data-i18n="otherTechBtn">Boshqa texnologiya</span>
         </button>
         <button class="action-btn outline-btn" onclick="showPage('home')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
-          Bosh sahifa
+          <span data-i18n="homeBtn">Bosh sahifa</span>
         </button>
       </div>
     </div>
@@ -399,25 +444,25 @@
   <div class="modal review-modal-content">
     <div class="review-modal-header">
       <div class="review-header-title">
-        <h3 class="modal-title" id="review-modal-title">🔍 Javoblarni Tahlil Qilish</h3>
+        <h3 class="modal-title" id="review-modal-title" data-i18n="reviewModalTitle">🔍 Javoblarni Tahlil Qilish</h3>
         <p class="modal-subtitle" id="review-tech-subtitle">30 ta savolning batafsil natijalari</p>
       </div>
-      <button class="close-icon-btn" onclick="closeModal('review-modal')" aria-label="Yopish">✕</button>
+      <button class="close-icon-btn" onclick="closeModal('review-modal')" aria-label="Yopish" data-i18n-attr="aria-label:close">✕</button>
     </div>
 
     <!-- Review Filter Tabs -->
     <div class="review-filters">
       <button class="review-filter-btn active" data-filter="all" onclick="filterReviewQuestions('all')">
-        Barchasi (<span id="rev-filter-all">30</span>)
+        <span data-i18n="filterAll">Barchasi</span> (<span id="rev-filter-all">30</span>)
       </button>
       <button class="review-filter-btn correct" data-filter="correct" onclick="filterReviewQuestions('correct')">
-        ✓ To'g'ri (<span id="rev-filter-correct">0</span>)
+        <span data-i18n="filterCorrect">✓ To'g'ri</span> (<span id="rev-filter-correct">0</span>)
       </button>
       <button class="review-filter-btn wrong" data-filter="wrong" onclick="filterReviewQuestions('wrong')">
-        ✗ Noto'g'ri (<span id="rev-filter-wrong">0</span>)
+        <span data-i18n="filterWrong">✗ Noto'g'ri</span> (<span id="rev-filter-wrong">0</span>)
       </button>
       <button class="review-filter-btn skipped" data-filter="skipped" onclick="filterReviewQuestions('skipped')">
-        — O'tkazilgan (<span id="rev-filter-skipped">0</span>)
+        <span data-i18n="filterSkipped">— O'tkazilgan</span> (<span id="rev-filter-skipped">0</span>)
       </button>
     </div>
 
@@ -427,7 +472,7 @@
     </div>
 
     <div class="review-modal-footer">
-      <button class="action-btn secondary-btn" onclick="closeModal('review-modal')">Yopish</button>
+      <button class="action-btn secondary-btn" onclick="closeModal('review-modal')" data-i18n="close">Yopish</button>
     </div>
   </div>
 </div>
@@ -436,7 +481,7 @@
 <div class="modal-overlay" id="rankup-modal" role="dialog" aria-modal="true" aria-labelledby="rankup-modal-title">
   <div class="modal rankup-modal-card">
     <div class="rankup-badge-anim" id="rankup-icon">🥉</div>
-    <span class="rankup-tag">YANGI DARAJA OCHILDI!</span>
+    <span class="rankup-tag" data-i18n="rankUpTag">YANGI DARAJA OCHILDI!</span>
     <h2 class="rankup-title" id="rankup-title">Tabriklaymiz! Siz Junior Developersiz!</h2>
     <p class="rankup-desc" id="rankup-desc">
       Siz 10 ta texnologiyani muvaffaqiyatli topshirdingiz va Junior unvoniga erishdingiz!
@@ -451,7 +496,7 @@
     </div>
     <div class="modal-actions" style="width: 100%;">
       <button class="action-btn primary-btn" style="width:100%; justify-content:center;" onclick="closeModal('rankup-modal')">
-        Ajoyib! Davom etish 🚀
+        <span data-i18n="rankUpContinueBtn">Ajoyib! Davom etish 🚀</span>
       </button>
     </div>
   </div>
@@ -465,10 +510,10 @@
         <div class="profile-avatar" id="profile-avatar">👨‍💻</div>
         <div>
           <div class="profile-rank-chip" id="profile-rank-chip">🌱 Beginner Developer</div>
-          <h3 class="modal-title" id="profile-modal-title">Dasturchi Profili & Progress</h3>
+          <h3 class="modal-title" id="profile-modal-title" data-i18n="profileModalTitle">Dasturchi Profili & Progress</h3>
         </div>
       </div>
-      <button class="close-icon-btn" onclick="closeModal('profile-modal')" aria-label="Yopish">✕</button>
+      <button class="close-icon-btn" onclick="closeModal('profile-modal')" aria-label="Yopish" data-i18n-attr="aria-label:close">✕</button>
     </div>
 
     <!-- Summary Stats Grid -->
@@ -476,47 +521,47 @@
       <div class="p-stat-card">
         <span class="p-stat-icon">🏆</span>
         <span class="p-stat-val" id="prof-completed-techs">0/31</span>
-        <span class="p-stat-lbl">Tugatilgan Texnologiyalar</span>
+        <span class="p-stat-lbl" data-i18n="profCompletedTechs">Tugatilgan Texnologiyalar</span>
       </div>
       <div class="p-stat-card">
         <span class="p-stat-icon">🎯</span>
         <span class="p-stat-val" id="prof-avg-score">0%</span>
-        <span class="p-stat-lbl">O'rtacha Natija</span>
+        <span class="p-stat-lbl" data-i18n="profAvgScore">O'rtacha Natija</span>
       </div>
       <div class="p-stat-card">
         <span class="p-stat-icon">⭐</span>
         <span class="p-stat-val" id="prof-perfect-count">0</span>
-        <span class="p-stat-lbl">A'lo (100%) Testlar</span>
+        <span class="p-stat-lbl" data-i18n="profPerfectCount">A'lo (100%) Testlar</span>
       </div>
       <div class="p-stat-card">
         <span class="p-stat-icon">🚀</span>
         <span class="p-stat-val" id="prof-next-rank-val">10 ta</span>
-        <span class="p-stat-lbl">Keyingi Darajagacha</span>
+        <span class="p-stat-lbl" data-i18n="profNextRank">Keyingi Darajagacha</span>
       </div>
     </div>
 
     <!-- Level Milestones Bar -->
     <div class="milestones-container">
-      <h4 class="milestone-title">Dasturchilik Bosqichlari (Roadmap):</h4>
+      <h4 class="milestone-title" data-i18n="roadmapTitle">Dasturchilik Bosqichlari (Roadmap):</h4>
       <div class="milestones-steps">
         <div class="step-item" id="step-beginner">
           <div class="step-dot active">🌱</div>
-          <span class="step-label">Beginner<br><small>0+ texnologiya</small></span>
+          <span class="step-label" data-i18n="stepBeginnerLabel">Beginner<br><small>0+ texnologiya</small></span>
         </div>
         <div class="step-line" id="line-1"></div>
         <div class="step-item" id="step-junior">
           <div class="step-dot">🥉</div>
-          <span class="step-label">Junior<br><small>10 ta</small></span>
+          <span class="step-label" data-i18n="stepJuniorLabel">Junior<br><small>10 ta</small></span>
         </div>
         <div class="step-line" id="line-2"></div>
         <div class="step-item" id="step-middle">
           <div class="step-dot">🥈</div>
-          <span class="step-label">Middle<br><small>20 ta</small></span>
+          <span class="step-label" data-i18n="stepMiddleLabel">Middle<br><small>20 ta</small></span>
         </div>
         <div class="step-line" id="line-3"></div>
         <div class="step-item" id="step-senior">
           <div class="step-dot">🥇</div>
-          <span class="step-label">Senior<br><small>31 ta to'liq</small></span>
+          <span class="step-label" data-i18n="stepSeniorLabel">Senior<br><small>31 ta to'liq</small></span>
         </div>
       </div>
     </div>
@@ -524,7 +569,7 @@
     <!-- Technologies Progress Table / List -->
     <div class="profile-techs-section">
       <div class="techs-sec-header">
-        <h4>Barcha 31 ta Texnologiya Holati</h4>
+        <h4 data-i18n="allTechsStatusTitle">Barcha 31 ta Texnologiya Holati</h4>
         <span class="techs-sec-count" id="prof-list-summary">0 ta yakunlangan</span>
       </div>
       <div class="profile-techs-list" id="profile-techs-list">
@@ -533,10 +578,10 @@
     </div>
 
     <div class="profile-modal-footer">
-      <button class="reset-progress-btn" onclick="openModal('reset-modal')" title="Barcha natijalarni tozalash">
+      <button class="reset-progress-btn" onclick="openModal('reset-modal')" title="Barcha natijalarni tozalash" data-i18n-attr="title:resetProgressTitle" data-i18n="resetProgressBtn">
         🗑️ Progressni qayta o'rnatish
       </button>
-      <button class="action-btn primary-btn" onclick="closeModal('profile-modal')">Yopish</button>
+      <button class="action-btn primary-btn" onclick="closeModal('profile-modal')" data-i18n="close">Yopish</button>
     </div>
   </div>
 </div>
@@ -550,11 +595,11 @@
         <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
       </svg>
     </div>
-    <h3 class="modal-title" id="reset-modal-title">Progressni o'chirib tashlamoqchimisiz?</h3>
-    <p class="modal-text">Barcha topshirilgan testlar, to'plangan ballar va darajangiz butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.</p>
+    <h3 class="modal-title" id="reset-modal-title" data-i18n="confirmResetTitle">Progressni o'chirib tashlamoqchimisiz?</h3>
+    <p class="modal-text" data-i18n="confirmResetText">Barcha topshirilgan testlar, to'plangan ballar va darajangiz butunlay o'chiriladi. Bu amalni ortga qaytarib bo'lmaydi.</p>
     <div class="modal-actions">
-      <button class="modal-btn cancel" onclick="closeModal('reset-modal')">Bekor qilish</button>
-      <button class="modal-btn confirm" onclick="resetUserProgress()">Ha, barchasini tozalash</button>
+      <button class="modal-btn cancel" onclick="closeModal('reset-modal')" data-i18n="cancelBtn">Bekor qilish</button>
+      <button class="modal-btn confirm" onclick="resetUserProgress()" data-i18n="confirmResetBtn">Ha, barchasini tozalash</button>
     </div>
   </div>
 </div>
@@ -568,11 +613,11 @@
         <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
       </svg>
     </div>
-    <h3 class="modal-title" id="exit-modal-title">Testdan chiqmoqchimisiz?</h3>
-    <p class="modal-text">Testni tark etsangiz, joriy natijalaringiz saqlanmaydi. Davom etmoqchimisiz?</p>
+    <h3 class="modal-title" id="exit-modal-title" data-i18n="confirmExitTitle">Testdan chiqmoqchimisiz?</h3>
+    <p class="modal-text" data-i18n="confirmExitText">Testni tark etsangiz, joriy natijalaringiz saqlanmaydi. Davom etmoqchimisiz?</p>
     <div class="modal-actions">
-      <button class="modal-btn cancel" onclick="closeModal('exit-modal')">Davom etish</button>
-      <button class="modal-btn confirm" onclick="exitQuiz()">Ha, chiqish</button>
+      <button class="modal-btn cancel" onclick="closeModal('exit-modal')" data-i18n="continueQuizBtn">Davom etish</button>
+      <button class="modal-btn confirm" onclick="exitQuiz()" data-i18n="confirmExitBtn">Ha, chiqish</button>
     </div>
   </div>
 </div>
@@ -585,11 +630,11 @@
         <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
       </svg>
     </div>
-    <h3 class="modal-title" id="finish-modal-title">Testni yakunlash</h3>
+    <h3 class="modal-title" id="finish-modal-title" data-i18n="confirmFinishTitle">Testni yakunlash</h3>
     <p class="modal-text" id="finish-modal-text">Hali javob berilmagan savollar bor. Testni yakunlashni xohlaysizmi?</p>
     <div class="modal-actions">
-      <button class="modal-btn cancel" onclick="closeModal('finish-modal')">Orqaga</button>
-      <button class="modal-btn confirm-success" onclick="finishQuiz()">Yakunlash</button>
+      <button class="modal-btn cancel" onclick="closeModal('finish-modal')" data-i18n="back">Orqaga</button>
+      <button class="modal-btn confirm-success" onclick="finishQuiz()" data-i18n="confirmFinishBtn">Yakunlash</button>
     </div>
   </div>
 </div>
@@ -600,6 +645,7 @@
   <span class="toast-text" id="toast-text">Xabar</span>
 </div>
 
+<script src="translations.js"></script>
 <script src="questions-data.js"></script>
 <script src="app.js"></script>
 </body>

@@ -2,55 +2,1305 @@
   "technology": "C++",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"C++ nima?","options":["Scripting tili","C tilining kengaytirilgan versiyasi — OOP va past darajali dasturlash","Web tili","Database tili"],"answer":1},
-    {"id":2,"level":"easy","question":"C++ da cout nima uchun?","options":["Kirish uchun","Standard output oqimi — matn chiqarish","Fayl yozish","Log yozish"],"answer":1},
-    {"id":3,"level":"easy","question":"C++ da cin nima uchun?","options":["Chiqish uchun","Standard input oqimi — foydalanuvchidan ma'lumot olish","Fayl o'qish","Socket input"],"answer":1},
-    {"id":4,"level":"easy","question":"C++ da pointer nima?","options":["Ko'rsatgich o'zgaruvchi","Boshqa o'zgaruvchining xotira manzilini saqlaydigan o'zgaruvchi","Reference","Smart pointer"],"answer":1},
-    {"id":5,"level":"easy","question":"C++ da reference nima?","options":["Manba","Mavjud o'zgaruvchining taxallusi — alias, har doim ob'ektga murojaat qiladi","Pointer turi","Const variable"],"answer":1},
-    {"id":6,"level":"easy","question":"C++ da new va delete operatorlari nima uchun?","options":["Yangi o'zgaruvchi","Heap da xotira ajratish (new) va bo'shatish (delete)","Stack allocation","Array yaratish"],"answer":1},
-    {"id":7,"level":"easy","question":"C++ da class va struct farqi nima?","options":["Hech qanday farq yo'q","class — default private; struct — default public; ikkalasi OOP uchun ishlatiladi","struct klass emas","class struct emas"],"answer":1},
-    {"id":8,"level":"easy","question":"C++ da constructor nima?","options":["Klass yaratish","Ob'ekt yaratilganda avtomatik chaqiriladigan, klass nomi bilan bir xil metod","Main funksiya","Static metod"],"answer":1},
-    {"id":9,"level":"easy","question":"C++ da destructor nima?","options":["Ob'ekt o'chirish","Ob'ekt yo'q qilinganda avtomatik chaqiriladigan ~ClassName() metod","Memory clear","Cleanup"],"answer":1},
-    {"id":10,"level":"easy","question":"C++ da virtual funksiya nima uchun?","options":["Virtual reality","Runtime polymorphism — bola klass override qilib, pointer orqali to'g'ri metod chaqirish","Abstract method","Interface method"],"answer":1},
-    {"id":11,"level":"easy","question":"C++ da template nima?","options":["HTML template","Tip parametrlari bilan qayta ishlatiladigan funksiya/klass — generics","Code template","Design pattern"],"answer":1},
-    {"id":12,"level":"easy","question":"C++ da namespace nima uchun?","options":["Fayl nomi","Nomlar ziddiyatini oldini oluvchi mantiqiy guruh — std::cout","Scope","Module"],"answer":1},
-    {"id":13,"level":"easy","question":"C++ da #include nima qiladi?","options":["Fayl o'chirish","Header faylni yoki kutubxonani qo'shish — #include <iostream>","Import","Module load"],"answer":1},
-    {"id":14,"level":"easy","question":"C++ da endl nima?","options":["End of line","Yangi qator va buffer tozalash — cout << endl","End label","End of file"],"answer":1},
-    {"id":15,"level":"easy","question":"C++ da const nima uchun?","options":["Construction","O'zgarmas qiymat — kompilyatsiya vaqtida yoki runtime da doimiy","Constant","Final"],"answer":1},
-    {"id":16,"level":"medium","question":"C++ da RAII nima?","options":["Random Access Index","Resource Acquisition Is Initialization — resurs yutilishi va bo'shatilishi ob'ekt lifetime bilan bog'liq","Resource management","Memory pattern"],"answer":1},
-    {"id":17,"level":"medium","question":"C++ da smart pointer lardan qaysilar bor?","options":["FastPointer, SafePointer","unique_ptr, shared_ptr, weak_ptr","AutoPtr, SharedPtr","SmartRef, AutoRef"],"answer":1},
-    {"id":18,"level":"medium","question":"C++ da unique_ptr nima?","options":["Noyob ko'rsatgich","Faqat bitta egali smart pointer — copy yo'q, move bilan uzatiladi","Shared pointer","Raw pointer"],"answer":1},
-    {"id":19,"level":"medium","question":"C++ da shared_ptr nima?","options":["Ulashilgan pointer","Reference counting smart pointer — ko'p egalik, son 0 da xotira bo'shatiladi","Unique pointer","Weak pointer"],"answer":1},
-    {"id":20,"level":"medium","question":"C++ da move semantics nima?","options":["Harakatlantirish","O'zgarmas nusxa o'rniga resursni ko'chirish — && rvalue reference, performance uchun","Copy semantic","Reference semantic"],"answer":1},
-    {"id":21,"level":"medium","question":"C++ da lambda expression nima?","options":["Lambda calculus","[capture](params) { body } — anonim funksiya ob'ekti","Anonymous function","Closure"],"answer":1},
-    {"id":22,"level":"medium","question":"C++ da STL nima?","options":["Static Template Library","Standard Template Library — vector, map, set, algorithm kutubxonasi","Standard Tool Library","System Template Layer"],"answer":1},
-    {"id":23,"level":"medium","question":"C++ da override kalit so'zi nima?","options":["Override bajara oladi","virtual metodini qayta implement qilayotganini kompilyatorga bildirish — xatolarni aniqlash","Virtual method","Polymorphism"],"answer":1},
-    {"id":24,"level":"medium","question":"C++ da pure virtual function nima?","options":["Oddiy virtual","virtual void func() = 0 — abstract method, klass abstract bo'ladi","Final virtual","Interface method"],"answer":1},
-    {"id":25,"level":"medium","question":"C++ da copy constructor nima?","options":["Klass nusxalash","Ob'ektni boshqa ob'ektdan nusxalab yaratish — MyClass(const MyClass& other)","Clone method","Assignment"],"answer":1},
-    {"id":26,"level":"medium","question":"C++ da operator overloading nima?","options":["Operator yuklanmasi","Mavjud operatorlarga (+, -, <<) yangi ta'rif berish — ob'ektlar uchun","Custom operator","Math operator"],"answer":1},
-    {"id":27,"level":"medium","question":"C++ da constexpr nima?","options":["Constant expression","Kompilyatsiya vaqtida baholanadigan funksiya yoki o'zgaruvchi — const dan kuchliroq","Const function","Static const"],"answer":1},
-    {"id":28,"level":"medium","question":"C++ da auto kalit so'zi nima?","options":["Automatik","Tip inference — kompilyator tipni o'zi aniqlaydi","Dynamic type","Variant type"],"answer":1},
-    {"id":29,"level":"medium","question":"C++ da range-based for loop nima?","options":["Odatiy for","for (auto& elem : container) — STL va massivlar uchun ixcham iteratsiya","Foreach","Iterator loop"],"answer":1},
-    {"id":30,"level":"medium","question":"C++ da initializer list nima?","options":["Ro'yxat","Constructor da base class va member larni initsializatsiya qilish — : x(val)","Init array","Default values"],"answer":1},
-    {"id":31,"level":"medium","question":"C++ da friend function/class nima?","options":["Do'st funksiya","Klass private/protected memberlariga kirish huquqiga ega funksiya/klass — encapsulation buzadi","External function","Access control"],"answer":1},
-    {"id":32,"level":"medium","question":"C++ da multiple inheritance nima?","options":["Ko'p meros","Bir klass bir nechta klass dan meros olishi — Diamond problem bo'lishi mumkin","Multi class","Mixin"],"answer":1},
-    {"id":33,"level":"medium","question":"C++ da virtual inheritance nima uchun?","options":["Virtual klass","Diamond muammosini hal qilish — umumiy ota klass faqat bitta nusxa bo'lishi uchun","Multiple inherit","Interface inherit"],"answer":1},
-    {"id":34,"level":"medium","question":"C++ da noexcept nima uchun?","options":["No exception","Funksiya exception chiqarmasligini kafolatlash — kompilyator optimizatsiya qiladi","Try-catch","Error handle"],"answer":1},
-    {"id":35,"level":"medium","question":"C++ da structured binding (C++17) nima?","options":["Bog'lash","auto [x, y] = pair; — tuple, pair, struct elementlarini ajratib olish","Unpack","Destructure"],"answer":1},
-    {"id":36,"level":"hard","question":"C++ da vtable nima?","options":["Virtual table","Virtual funksiyalar uchun runtime dispatch jadvali — har klass uchun yaratiladi","Method table","Function pointer array"],"answer":1},
-    {"id":37,"level":"hard","question":"C++ da template metaprogramming nima?","options":["Template kodi","Kompilyatsiya vaqtida hisoblash — type traits, SFINAE, constexpr funksiyalar","Generic meta","Compile compute"],"answer":1},
-    {"id":38,"level":"hard","question":"C++ da SFINAE nima?","options":["Simple Function Namespace Inheritance","Substitution Failure Is Not An Error — template overload resolution da xato bo'lsa boshqa overloadga o'tish","Error handling","Template rule"],"answer":1},
-    {"id":39,"level":"hard","question":"C++ da concepts (C++20) nima?","options":["Tushunchalar","Template constraint larni ifodalash uchun named requirementlar — requires clause","Type constraint","Generic constraint"],"answer":1},
-    {"id":40,"level":"hard","question":"C++ da coroutines (C++20) nima?","options":["Ko'p thread","co_await, co_yield, co_return bilan to'xtatib-davom ettiradigan funksiyalar","Async function","Generator"],"answer":1},
-    {"id":41,"level":"hard","question":"C++ da ranges (C++20) nima?","options":["Range loop","Lazy, composable view va algorithm — range::filter, range::transform zanjiri","Iterator range","STL range"],"answer":1},
-    {"id":42,"level":"hard","question":"C++ da modules (C++20) nima uchun?","options":["npm moduli","Header file ning zamonaviy alternativa — build tezlik, encapsulation, macro izolatsiya","Include system","Library"],"answer":1},
-    {"id":43,"level":"hard","question":"C++ da three-way comparison (spaceship operator <=>) nima?","options":["Uch taraf","Bir operatorda barcha taqqoslash operatorlarini avtomatik chiqaradigan operator","Compare all","Auto compare"],"answer":1},
-    {"id":44,"level":"hard","question":"C++ da perfect forwarding nima?","options":["To'liq uzatish","std::forward bilan template funksiyada argument tipini (lvalue/rvalue) saqlab uzatish","Move forward","Ref forward"],"answer":1},
-    {"id":45,"level":"hard","question":"C++ da type erasure nima?","options":["Tipni o'chirish","Konkret tipni yashirib, generik interfeys orqali ishlash — std::function, std::any","Type hiding","Polymorphism trick"],"answer":1},
-    {"id":46,"level":"hard","question":"C++ da memory order nima?","options":["Xotira tartibi","Atomik operatsiyalar tartibini belgilash — relaxed, acquire, release, seq_cst","Thread order","CPU order"],"answer":1},
-    {"id":47,"level":"hard","question":"C++ da tag dispatch nima?","options":["Teg dispatch","Tip tag orqali overload tanlash — compile time dispatch, SFINAE alternativa","Template dispatch","Function select"],"answer":1},
-    {"id":48,"level":"hard","question":"C++ da expression templates nima?","options":["Template ifoda","Lazy evaluation va loop fusion — matematik kutubxonalar (Eigen, Blaze) ishlatadi","Lazy template","Math template"],"answer":1},
-    {"id":49,"level":"hard","question":"C++ da ABI (Application Binary Interface) nima?","options":["API turi","Ikkilik darajada: klass layout, name mangling, calling convention — versiya muvofiqligi","Binary interface","Library interface"],"answer":1},
-    {"id":50,"level":"hard","question":"C++ da CRT (Copy and Resource Transfer) idiom nima?","options":["CRT kutubxona","Rule of 3/5/0 — destructor, copy constructor, copy assignment, move constructor, move assignment boshqarish","Memory rule","RAII rule"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "C++ nima?",
+      "options": [
+        "Scripting tili",
+        "C tilining kengaytirilgan versiyasi — OOP va past darajali dasturlash",
+        "Web tili",
+        "Database tili"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое С++?",
+      "question_en": "What is C++?",
+      "options_ru": [
+        "Язык сценариев",
+        "Расширенная версия C — ООП и низкоуровневое программирование",
+        "Веб-язык",
+        "Язык базы данных"
+      ],
+      "options_en": [
+        "Scripting language",
+        "An extended version of C — OOP and low-level programming",
+        "Web language",
+        "Database tili"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "C++ da cout nima uchun?",
+      "options": [
+        "Kirish uchun",
+        "Standard output oqimi — matn chiqarish",
+        "Fayl yozish",
+        "Log yozish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужен cout в C++?",
+      "question_en": "What is cout in C++ for?",
+      "options_ru": [
+        "Чтобы войти",
+        "Стандартный поток вывода — текстовый вывод.",
+        "Записать файл",
+        "Написать журнал"
+      ],
+      "options_en": [
+        "To enter",
+        "The standard output stream is text output",
+        "Write file",
+        "Write a log"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "C++ da cin nima uchun?",
+      "options": [
+        "Chiqish uchun",
+        "Standard input oqimi — foydalanuvchidan ma'lumot olish",
+        "Fayl o'qish",
+        "Socket input"
+      ],
+      "answer": 1,
+      "question_ru": "Почему cin в C++?",
+      "question_en": "Why cin in C++?",
+      "options_ru": [
+        "Чтобы выйти",
+        "Стандартный поток ввода — получение информации от пользователя",
+        "Чтение файла",
+        "Входной разъем"
+      ],
+      "options_en": [
+        "To get out",
+        "Standard input stream — receiving information from the user",
+        "Read file",
+        "Socket input"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "C++ da pointer nima?",
+      "options": [
+        "Ko'rsatgich o'zgaruvchi",
+        "Boshqa o'zgaruvchining xotira manzilini saqlaydigan o'zgaruvchi",
+        "Reference",
+        "Smart pointer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое указатель в C++?",
+      "question_en": "What is a pointer in C++?",
+      "options_ru": [
+        "Переменная-указатель",
+        "Переменная, хранящая адрес памяти другой переменной.",
+        "Ссылка",
+        "Умный указатель"
+      ],
+      "options_en": [
+        "A pointer variable",
+        "A variable that stores the memory address of another variable",
+        "Reference",
+        "Smart pointer"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "C++ da reference nima?",
+      "options": [
+        "Manba",
+        "Mavjud o'zgaruvchining taxallusi — alias, har doim ob'ektga murojaat qiladi",
+        "Pointer turi",
+        "Const variable"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ссылка в C++?",
+      "question_en": "C++ da reference nima?",
+      "options_ru": [
+        "Источник",
+        "Псевдоним существующей переменной всегда относится к объекту.",
+        "Тип указателя",
+        "Константная переменная"
+      ],
+      "options_en": [
+        "Source",
+        "Mavjud o'zgaruvchining taxallusi — alias, har doim ob'ektga murojaat qiladi",
+        "Pointer type",
+        "Const variable"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "C++ da new va delete operatorlari nima uchun?",
+      "options": [
+        "Yangi o'zgaruvchi",
+        "Heap da xotira ajratish (new) va bo'shatish (delete)",
+        "Stack allocation",
+        "Array yaratish"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем нужны операторы создания и удаления в C++?",
+      "question_en": "Why new and delete operators in C++?",
+      "options_ru": [
+        "Новая переменная",
+        "Выделение кучи памяти (новое) и освобождение (удаление)",
+        "Распределение стека",
+        "Создать массив"
+      ],
+      "options_en": [
+        "A new variable",
+        "Heap memory allocation (new) and freeing (delete)",
+        "Stack allocation",
+        "Array yaratish"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "C++ da class va struct farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "class — default private; struct — default public; ikkalasi OOP uchun ishlatiladi",
+        "struct klass emas",
+        "class struct emas"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между классом и структурой в C++?",
+      "question_en": "What is the difference between class and struct in C++?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "класс — приватный по умолчанию; struct — общедоступный по умолчанию; оба используются для ООП",
+        "структура - это не класс",
+        "класс не является структурой"
+      ],
+      "options_en": [
+        "There is no difference",
+        "class — default private; struct — default public; both are used for OOP",
+        "struct is not a class",
+        "class is not a struct"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "C++ da constructor nima?",
+      "options": [
+        "Klass yaratish",
+        "Ob'ekt yaratilganda avtomatik chaqiriladigan, klass nomi bilan bir xil metod",
+        "Main funksiya",
+        "Static metod"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое конструктор в C++?",
+      "question_en": "What is a constructor in C++?",
+      "options_ru": [
+        "Создать класс",
+        "Метод с тем же именем, что и класс, который вызывается автоматически при создании объекта.",
+        "Основная функция",
+        "Статический метод"
+      ],
+      "options_en": [
+        "Klass yaratish",
+        "A method with the same name as the class, which is called automatically when the object is created",
+        "Main function",
+        "Static method"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "C++ da destructor nima?",
+      "options": [
+        "Ob'ekt o'chirish",
+        "Ob'ekt yo'q qilinganda avtomatik chaqiriladigan ~ClassName() metod",
+        "Memory clear",
+        "Cleanup"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое деструктор в C++?",
+      "question_en": "What is a destructor in C++?",
+      "options_ru": [
+        "Удалить объект",
+        "Метод ~ClassName() вызывается автоматически при уничтожении объекта.",
+        "Очистка памяти",
+        "Очистка"
+      ],
+      "options_en": [
+        "Delete object",
+        "The ~ClassName() method is called automatically when the object is destroyed",
+        "Memory clear",
+        "Cleanup"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "C++ da virtual funksiya nima uchun?",
+      "options": [
+        "Virtual reality",
+        "Runtime polymorphism — bola klass override qilib, pointer orqali to'g'ri metod chaqirish",
+        "Abstract method",
+        "Interface method"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужна виртуальная функция в C++?",
+      "question_en": "What is a virtual function in C++ for?",
+      "options_ru": [
+        "Виртуальная реальность",
+        "Полиморфизм времени выполнения — переопределение дочернего класса и вызов правильного метода через указатель.",
+        "Abstract method",
+        "Interface method"
+      ],
+      "options_en": [
+        "Virtual reality",
+        "Runtime polymorphism — overriding a child class and calling the correct method through a pointer",
+        "Abstract method",
+        "Interface method"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "C++ da template nima?",
+      "options": [
+        "HTML template",
+        "Tip parametrlari bilan qayta ishlatiladigan funksiya/klass — generics",
+        "Code template",
+        "Design pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон в C++?",
+      "question_en": "What is a template in C++?",
+      "options_ru": [
+        "HTML-шаблон",
+        "Многоразовая функция/класс с параметрами типа является дженериками.",
+        "Шаблон кода",
+        "Шаблон проектирования"
+      ],
+      "options_en": [
+        "HTML template",
+        "A reusable function/class with type parameters is generics",
+        "Code template",
+        "Design pattern"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "C++ da namespace nima uchun?",
+      "options": [
+        "Fayl nomi",
+        "Nomlar ziddiyatini oldini oluvchi mantiqiy guruh — std::cout",
+        "Scope",
+        "Module"
+      ],
+      "answer": 1,
+      "question_ru": "Why namespace in C++?",
+      "question_en": "Why namespace in C++?",
+      "options_ru": [
+        "Имя файла",
+        "Логическая группа, которая позволяет избежать конфликтов имен, — это std::cout.",
+        "Область применения",
+        "Модуль"
+      ],
+      "options_en": [
+        "Fayl nomi",
+        "Nomlar ziddiyatini oldini oluvchi mantiqiy guruh — std::cout",
+        "Scope",
+        "Module"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "C++ da #include nima qiladi?",
+      "options": [
+        "Fayl o'chirish",
+        "Header faylni yoki kutubxonani qo'shish — #include <iostream>",
+        "Import",
+        "Module load"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает #include в C++?",
+      "question_en": "What does #include do in C++?",
+      "options_ru": [
+        "Удалить файл",
+        "Включить заголовочный файл или библиотеку — #include <iostream>",
+        "Импорт",
+        "Загрузка модуля"
+      ],
+      "options_en": [
+        "Delete file",
+        "Include a header file or library — #include <iostream>",
+        "Import",
+        "Module load"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "C++ da endl nima?",
+      "options": [
+        "End of line",
+        "Yangi qator va buffer tozalash — cout << endl",
+        "End label",
+        "End of file"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое endl в C++?",
+      "question_en": "What is endl in C++?",
+      "options_ru": [
+        "Конец строки",
+        "Очистка новой строки и буфера — cout << endl",
+        "Конечная метка",
+        "Конец файла"
+      ],
+      "options_en": [
+        "End of line",
+        "Newline and buffer cleanup — cout << endl",
+        "End label",
+        "End of file"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "C++ da const nima uchun?",
+      "options": [
+        "Construction",
+        "O'zgarmas qiymat — kompilyatsiya vaqtida yoki runtime da doimiy",
+        "Constant",
+        "Final"
+      ],
+      "answer": 1,
+      "question_ru": "Почему const в C++?",
+      "question_en": "Why const in C++?",
+      "options_ru": [
+        "Строительство",
+        "Постоянное значение является константой во время компиляции или во время выполнения.",
+        "Константа",
+        "Финал"
+      ],
+      "options_en": [
+        "Construction",
+        "A constant value is a constant at compile time or runtime",
+        "Constant",
+        "Final"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "C++ da RAII nima?",
+      "options": [
+        "Random Access Index",
+        "Resource Acquisition Is Initialization — resurs yutilishi va bo'shatilishi ob'ekt lifetime bilan bog'liq",
+        "Resource management",
+        "Memory pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое RAII в C++?",
+      "question_en": "What is RAII in C++?",
+      "options_ru": [
+        "Индекс произвольного доступа",
+        "Получение ресурсов — это инициализация — получение и освобождение ресурсов связано со временем жизни объекта.",
+        "Управление ресурсами",
+        "Шаблон памяти"
+      ],
+      "options_en": [
+        "Random Access Index",
+        "Resource Acquisition Is Initialization — resource acquisition and release is related to object lifetime",
+        "Resource management",
+        "Memory pattern"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "C++ da smart pointer lardan qaysilar bor?",
+      "options": [
+        "FastPointer, SafePointer",
+        "unique_ptr, shared_ptr, weak_ptr",
+        "AutoPtr, SharedPtr",
+        "SmartRef, AutoRef"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интеллектуальные указатели в C++?",
+      "question_en": "What are smart pointers in C++?",
+      "options_ru": [
+        "Фастпоинтер, Сафепоинтер",
+        "unique_ptr, общий_ptr, слабый_ptr",
+        "АвтоПтр, ШаредПтр",
+        "СмартСсылка, АвтоСсылка"
+      ],
+      "options_en": [
+        "FastPointer, SafePointer",
+        "unique_ptr, shared_ptr, weak_ptr",
+        "AutoPtr, SharedPtr",
+        "SmartRef, AutoRef"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "C++ da unique_ptr nima?",
+      "options": [
+        "Noyob ko'rsatgich",
+        "Faqat bitta egali smart pointer — copy yo'q, move bilan uzatiladi",
+        "Shared pointer",
+        "Raw pointer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое unique_ptr в C++?",
+      "question_en": "What is unique_ptr in C++?",
+      "options_ru": [
+        "Уникальный указатель",
+        "Умный указатель только с одним владельцем — без копии, передается при перемещении",
+        "Общий указатель",
+        "Необработанный указатель"
+      ],
+      "options_en": [
+        "A unique pointer",
+        "Faqat bitta egali smart pointer — copy yo'q, move bilan uzatiladi",
+        "Shared pointer",
+        "Raw pointer"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "C++ da shared_ptr nima?",
+      "options": [
+        "Ulashilgan pointer",
+        "Reference counting smart pointer — ko'p egalik, son 0 da xotira bo'shatiladi",
+        "Unique pointer",
+        "Weak pointer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Shared_ptr в C++?",
+      "question_en": "What is shared_ptr in C++?",
+      "options_ru": [
+        "Общий указатель",
+        "Интеллектуальный указатель с подсчетом ссылок — множественное владение, память освобождается при счете 0",
+        "Уникальный указатель",
+        "Слабый указатель"
+      ],
+      "options_en": [
+        "A shared pointer",
+        "Reference counting smart pointer — multi-ownership, memory is freed at count 0",
+        "Unique pointer",
+        "Weak pointer"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "C++ da move semantics nima?",
+      "options": [
+        "Harakatlantirish",
+        "O'zgarmas nusxa o'rniga resursni ko'chirish — && rvalue reference, performance uchun",
+        "Copy semantic",
+        "Reference semantic"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое семантика перемещения в C++?",
+      "question_en": "What is move semantics in C++?",
+      "options_ru": [
+        "Движение",
+        "Копирование ресурса вместо неизменяемой копии — ссылка && rvalue для повышения производительности",
+        "Копировать семантику",
+        "Справочная семантика"
+      ],
+      "options_en": [
+        "Movement",
+        "O'zgarmas nusxa o'rniga resursni ko'chirish — && rvalue reference, performance uchun",
+        "Copy semantic",
+        "Reference semantics"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "C++ da lambda expression nima?",
+      "options": [
+        "Lambda calculus",
+        "[capture](params) { body } — anonim funksiya ob'ekti",
+        "Anonymous function",
+        "Closure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое лямбда-выражение в C++?",
+      "question_en": "What is a lambda expression in C++?",
+      "options_ru": [
+        "Лямбда-исчисление",
+        "[capture](params) {body } — объект анонимной функции",
+        "Анонимная функция",
+        "Закрытие"
+      ],
+      "options_en": [
+        "Lambda calculus",
+        "[capture](params) { body } — anonymous function object",
+        "Anonymous function",
+        "Closure"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "C++ da STL nima?",
+      "options": [
+        "Static Template Library",
+        "Standard Template Library — vector, map, set, algorithm kutubxonasi",
+        "Standard Tool Library",
+        "System Template Layer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое STL в C++?",
+      "question_en": "What is STL in C++?",
+      "options_ru": [
+        "Статическая библиотека шаблонов",
+        "Стандартная библиотека шаблонов — библиотека векторов, карт, наборов и алгоритмов.",
+        "Стандартная библиотека инструментов",
+        "Слой системного шаблона"
+      ],
+      "options_en": [
+        "Static Template Library",
+        "Standard Template Library — vector, map, set, algorithm library",
+        "Standard Tool Library",
+        "System Template Layer"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "C++ da override kalit so'zi nima?",
+      "options": [
+        "Override bajara oladi",
+        "virtual metodini qayta implement qilayotganini kompilyatorga bildirish — xatolarni aniqlash",
+        "Virtual method",
+        "Polymorphism"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ключевое слово override в C++?",
+      "question_en": "What is the override keyword in C++?",
+      "options_ru": [
+        "Переопределение может сделать",
+        "уведомление компилятора о том, что он переопределяет виртуальный метод — обнаружение ошибок",
+        "Виртуальный метод",
+        "Полиморфизм"
+      ],
+      "options_en": [
+        "Override can do",
+        "notifying the compiler that it is reimplementing a virtual method — detecting errors",
+        "Virtual method",
+        "Polymorphism"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "C++ da pure virtual function nima?",
+      "options": [
+        "Oddiy virtual",
+        "virtual void func() = 0 — abstract method, klass abstract bo'ladi",
+        "Final virtual",
+        "Interface method"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое чистая виртуальная функция в C++?",
+      "question_en": "What is a pure virtual function in C++?",
+      "options_ru": [
+        "Простой виртуальный",
+        "virtual void func() = 0 — абстрактный метод, класс будет абстрактным",
+        "Финал виртуальный",
+        "Interface method"
+      ],
+      "options_en": [
+        "Simple virtual",
+        "virtual void func() = 0 — abstract method, the class will be abstract",
+        "The final is virtual",
+        "Interface method"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "C++ da copy constructor nima?",
+      "options": [
+        "Klass nusxalash",
+        "Ob'ektni boshqa ob'ektdan nusxalab yaratish — MyClass(const MyClass& other)",
+        "Clone method",
+        "Assignment"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое конструктор копирования в C++?",
+      "question_en": "What is copy constructor in C++?",
+      "options_ru": [
+        "Копия класса",
+        "Создайте объект, скопировав его из другого объекта — MyClass(const MyClass&other)",
+        "Метод клонирования",
+        "Назначение"
+      ],
+      "options_en": [
+        "Klass nusxalash",
+        "Create an object by copying it from another object — MyClass(const MyClass& other)",
+        "Clone method",
+        "Assignment"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "C++ da operator overloading nima?",
+      "options": [
+        "Operator yuklanmasi",
+        "Mavjud operatorlarga (+, -, <<) yangi ta'rif berish — ob'ektlar uchun",
+        "Custom operator",
+        "Math operator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перегрузка операторов в C++?",
+      "question_en": "What is operator overloading in C++?",
+      "options_ru": [
+        "Загрузка оператора",
+        "Переопределение существующих операторов (+, -, <<) — для объектов",
+        "Пользовательский оператор",
+        "Математический оператор"
+      ],
+      "options_en": [
+        "Operator loading",
+        "Redefining existing operators (+, -, <<) — for objects",
+        "Custom operator",
+        "Math operator"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "C++ da constexpr nima?",
+      "options": [
+        "Constant expression",
+        "Kompilyatsiya vaqtida baholanadigan funksiya yoki o'zgaruvchi — const dan kuchliroq",
+        "Const function",
+        "Static const"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое constexpr в C++?",
+      "question_en": "What is constexpr in C++?",
+      "options_ru": [
+        "Постоянное выражение",
+        "Функция или переменная, вычисляемая во время компиляции, сильнее, чем const",
+        "Const function",
+        "Статическая константа"
+      ],
+      "options_en": [
+        "Constant expression",
+        "A function or variable evaluated at compile time is stronger than const",
+        "Const function",
+        "Static const"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "C++ da auto kalit so'zi nima?",
+      "options": [
+        "Automatik",
+        "Tip inference — kompilyator tipni o'zi aniqlaydi",
+        "Dynamic type",
+        "Variant type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ключевое слово auto в C++?",
+      "question_en": "What is auto keyword in C++?",
+      "options_ru": [
+        "Автоматический",
+        "Вывод типа — компилятор сам выводит тип.",
+        "Динамический тип",
+        "Тип варианта"
+      ],
+      "options_en": [
+        "Automatic",
+        "Type inference — the compiler infers the type itself",
+        "Dynamic type",
+        "Variant type"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "C++ da range-based for loop nima?",
+      "options": [
+        "Odatiy for",
+        "for (auto& elem : container) — STL va massivlar uchun ixcham iteratsiya",
+        "Foreach",
+        "Iterator loop"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое цикл for на основе диапазона в C++?",
+      "question_en": "What is a range-based for loop in C++?",
+      "options_ru": [
+        "Обычное дело для",
+        "for (auto& elem :Container) — компактная итерация для STL и массивов.",
+        "foreach",
+        "Цикл итератора"
+      ],
+      "options_en": [
+        "The usual for",
+        "for (auto& elem : container) is compact iteration for STL and arrays",
+        "foreach",
+        "Iterator loop"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "C++ da initializer list nima?",
+      "options": [
+        "Ro'yxat",
+        "Constructor da base class va member larni initsializatsiya qilish — : x(val)",
+        "Init array",
+        "Default values"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список инициализаторов в C++?",
+      "question_en": "What is an initializer list in C++?",
+      "options_ru": [
+        "Список",
+        "Инициализация базового класса и членов в конструкторе — : x(val)",
+        "Инициализирующий массив",
+        "Значения по умолчанию"
+      ],
+      "options_en": [
+        "List",
+        "Initialization of base class and members in constructor — : x(val)",
+        "Init array",
+        "Default values"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "C++ da friend function/class nima?",
+      "options": [
+        "Do'st funksiya",
+        "Klass private/protected memberlariga kirish huquqiga ega funksiya/klass — encapsulation buzadi",
+        "External function",
+        "Access control"
+      ],
+      "answer": 1,
+      "question_ru": "C++ da friend function/class nima?",
+      "question_en": "C++ da friend function/class nima?",
+      "options_ru": [
+        "Функция друга",
+        "Функция/класс, имеющая доступ к закрытым/защищенным членам класса, нарушает инкапсуляцию.",
+        "Внешняя функция",
+        "Контроль доступа"
+      ],
+      "options_en": [
+        "Friend function",
+        "A function/class that has access to private/protected members of a class breaks encapsulation",
+        "External function",
+        "Access control"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "C++ da multiple inheritance nima?",
+      "options": [
+        "Ko'p meros",
+        "Bir klass bir nechta klass dan meros olishi — Diamond problem bo'lishi mumkin",
+        "Multi class",
+        "Mixin"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое множественное наследование в C++?",
+      "question_en": "What is multiple inheritance in C++?",
+      "options_ru": [
+        "Много наследия",
+        "Класс может наследовать более чем от одного класса — Diamond может стать проблемой",
+        "Мультикласс",
+        "Миксин"
+      ],
+      "options_en": [
+        "Ko'p meros",
+        "Bir klass bir nechta klass dan meros olishi — Diamond problem bo'lishi mumkin",
+        "Multi class",
+        "Mixin"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "C++ da virtual inheritance nima uchun?",
+      "options": [
+        "Virtual klass",
+        "Diamond muammosini hal qilish — umumiy ota klass faqat bitta nusxa bo'lishi uchun",
+        "Multiple inherit",
+        "Interface inherit"
+      ],
+      "answer": 1,
+      "question_ru": "Почему виртуальное наследование в C++?",
+      "question_en": "Why virtual inheritance in C++?",
+      "options_ru": [
+        "Виртуальный класс",
+        "Решение проблемы Diamond — чтобы у общего родительского класса была только одна копия",
+        "Множественное наследование",
+        "Наследование интерфейса"
+      ],
+      "options_en": [
+        "Virtual class",
+        "Diamond muammosini hal qilish — umumiy ota klass faqat bitta nusxa bo'lishi uchun",
+        "Multiple inheritance",
+        "Interface inherit"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "C++ da noexcept nima uchun?",
+      "options": [
+        "No exception",
+        "Funksiya exception chiqarmasligini kafolatlash — kompilyator optimizatsiya qiladi",
+        "Try-catch",
+        "Error handle"
+      ],
+      "answer": 1,
+      "question_ru": "Почему noException в C++?",
+      "question_en": "C++ da noexcept nima uchun?",
+      "options_ru": [
+        "Не исключение",
+        "Обеспечение того, чтобы функция не выбрасывала исключение, является оптимизацией компилятора.",
+        "Попробуй-поймай",
+        "Обработчик ошибки"
+      ],
+      "options_en": [
+        "No exception",
+        "Ensuring that a function does not throw an exception is a compiler optimization",
+        "Try-catch",
+        "Error handle"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "C++ da structured binding (C++17) nima?",
+      "options": [
+        "Bog'lash",
+        "auto [x, y] = pair; — tuple, pair, struct elementlarini ajratib olish",
+        "Unpack",
+        "Destructure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое структурированная привязка в C++ (C++17)?",
+      "question_en": "What is structured binding in C++ (C++17)?",
+      "options_ru": [
+        "Связывание",
+        "авто [x, y] = пара; — извлечение кортежа, пары, элементов структуры",
+        "Распаковать",
+        "Разрушение"
+      ],
+      "options_en": [
+        "Binding",
+        "auto [x, y] = pair; — extraction of tuple, pair, struct elements",
+        "Unpack",
+        "Destructure"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "C++ da vtable nima?",
+      "options": [
+        "Virtual table",
+        "Virtual funksiyalar uchun runtime dispatch jadvali — har klass uchun yaratiladi",
+        "Method table",
+        "Function pointer array"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое vtable в C++?",
+      "question_en": "C++ da vtable nima?",
+      "options_ru": [
+        "Виртуальный стол",
+        "Для каждого класса создается таблица диспетчеризации во время выполнения виртуальных функций.",
+        "Таблица методов",
+        "Массив указателей функций"
+      ],
+      "options_en": [
+        "Virtual table",
+        "A runtime dispatch table for virtual functions is created for each class",
+        "Method table",
+        "Function pointer array"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "C++ da template metaprogramming nima?",
+      "options": [
+        "Template kodi",
+        "Kompilyatsiya vaqtida hisoblash — type traits, SFINAE, constexpr funksiyalar",
+        "Generic meta",
+        "Compile compute"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое метапрограммирование шаблонов в C++?",
+      "question_en": "What is template metaprogramming in C++?",
+      "options_ru": [
+        "Template kodi",
+        "Вычисление во время компиляции — признаки типа, SFINAE, функции constexpr",
+        "Общая мета",
+        "Компиляция вычислений"
+      ],
+      "options_en": [
+        "Template code",
+        "Compile-time calculation — type traits, SFINAE, constexpr functions",
+        "Generic meta",
+        "Compile compute"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "C++ da SFINAE nima?",
+      "options": [
+        "Simple Function Namespace Inheritance",
+        "Substitution Failure Is Not An Error — template overload resolution da xato bo'lsa boshqa overloadga o'tish",
+        "Error handling",
+        "Template rule"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое SFINAE в C++?",
+      "question_en": "What is SFINAE in C++?",
+      "options_ru": [
+        "Наследование пространства имен простой функции",
+        "Ошибка замены не является ошибкой — переключение на другую перегрузку, если при разрешении перегрузки шаблона возникла ошибка.",
+        "Обработка ошибок",
+        "Правило шаблона"
+      ],
+      "options_en": [
+        "Simple Function Namespace Inheritance",
+        "Substitution Failure Is Not An Error — template overload resolution da xato bo'lsa boshqa overloadga o'tish",
+        "Error handling",
+        "Template rule"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "C++ da concepts (C++20) nima?",
+      "options": [
+        "Tushunchalar",
+        "Template constraint larni ifodalash uchun named requirementlar — requires clause",
+        "Type constraint",
+        "Generic constraint"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое концепции в C++ (C++20)?",
+      "question_en": "C++ da concepts (C++20) nima?",
+      "options_ru": [
+        "Концепции",
+        "Именованные требования для выражения ограничений шаблона — пункт require",
+        "Тип ограничения",
+        "Общее ограничение"
+      ],
+      "options_en": [
+        "Concepts",
+        "Named requirements to express template constraints — requires clause",
+        "Type constraint",
+        "Generic constraint"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "C++ da coroutines (C++20) nima?",
+      "options": [
+        "Ko'p thread",
+        "co_await, co_yield, co_return bilan to'xtatib-davom ettiradigan funksiyalar",
+        "Async function",
+        "Generator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопрограммы в C++ (C++20)?",
+      "question_en": "What are coroutines in C++ (C++20)?",
+      "options_ru": [
+        "Много тем",
+        "Функции приостановки-возобновления с co_await, co_yield, co_return",
+        "Асинхронная функция",
+        "Генератор"
+      ],
+      "options_en": [
+        "Many threads",
+        "Suspend-resume functions with co_await, co_yield, co_return",
+        "Async function",
+        "Generator"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "C++ da ranges (C++20) nima?",
+      "options": [
+        "Range loop",
+        "Lazy, composable view va algorithm — range::filter, range::transform zanjiri",
+        "Iterator range",
+        "STL range"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое диапазоны в C++ (C++20)?",
+      "question_en": "What is ranges in C++ (C++20)?",
+      "options_ru": [
+        "Петля диапазона",
+        "Ленивое, составное представление и алгоритм — цепочка range::filter, range::transform",
+        "Диапазон итератора",
+        "STL-диапазон"
+      ],
+      "options_en": [
+        "Range loop",
+        "Lazy, composable view and algorithm — range::filter, range::transform chain",
+        "Iterator range",
+        "STL range"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "C++ da modules (C++20) nima uchun?",
+      "options": [
+        "npm moduli",
+        "Header file ning zamonaviy alternativa — build tezlik, encapsulation, macro izolatsiya",
+        "Include system",
+        "Library"
+      ],
+      "answer": 1,
+      "question_ru": "Почему модули в C++ (C++20)?",
+      "question_en": "Why modules in C++ (C++20)?",
+      "options_ru": [
+        "модуль npm",
+        "Современная альтернатива заголовочному файлу — скорость сборки, инкапсуляция, изоляция макросов.",
+        "Включить систему",
+        "Библиотека"
+      ],
+      "options_en": [
+        "npm module",
+        "Header file modern alternative — build speed, encapsulation, macro isolation",
+        "Include system",
+        "Library"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "C++ da three-way comparison (spaceship operator <=>) nima?",
+      "options": [
+        "Uch taraf",
+        "Bir operatorda barcha taqqoslash operatorlarini avtomatik chiqaradigan operator",
+        "Compare all",
+        "Auto compare"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое трехстороннее сравнение (оператор космического корабля <=>) в C++?",
+      "question_en": "What is three-way comparison (spaceship operator <=>) in C++?",
+      "options_ru": [
+        "Три стороны",
+        "Оператор, который автоматически извлекает все операторы сравнения в один оператор.",
+        "Сравнить все",
+        "Авто сравнение"
+      ],
+      "options_en": [
+        "Three sides",
+        "An operator that automatically extracts all comparison operators in one operator",
+        "Compare all",
+        "Auto compare"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "C++ da perfect forwarding nima?",
+      "options": [
+        "To'liq uzatish",
+        "std::forward bilan template funksiyada argument tipini (lvalue/rvalue) saqlab uzatish",
+        "Move forward",
+        "Ref forward"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое идеальная пересылка в C++?",
+      "question_en": "C++ da perfect forwarding nima?",
+      "options_ru": [
+        "Полная передача",
+        "Передайте тип аргумента (lvalue/rvalue) в функцию шаблона с помощью std::forward",
+        "Двигайтесь вперед",
+        "Ссылка вперед"
+      ],
+      "options_en": [
+        "Full transmission",
+        "Pass the argument type (lvalue/rvalue) in the template function with std::forward",
+        "Move forward",
+        "Ref forward"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "C++ da type erasure nima?",
+      "options": [
+        "Tipni o'chirish",
+        "Konkret tipni yashirib, generik interfeys orqali ishlash — std::function, std::any",
+        "Type hiding",
+        "Polymorphism trick"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое стирание типов в C++?",
+      "question_en": "What is type erasure in C++?",
+      "options_ru": [
+        "Удалить тип",
+        "Скрытие конкретного типа и работа через общий интерфейс — std::function, std::any",
+        "Скрытие типа",
+        "Трюк с полиморфизмом"
+      ],
+      "options_en": [
+        "Delete type",
+        "Hiding the concrete type and working through the generic interface — std::function, std::any",
+        "Type hiding",
+        "Polymorphism trick"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "C++ da memory order nima?",
+      "options": [
+        "Xotira tartibi",
+        "Atomik operatsiyalar tartibini belgilash — relaxed, acquire, release, seq_cst",
+        "Thread order",
+        "CPU order"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое порядок памяти в C++?",
+      "question_en": "What is memory order in C++?",
+      "options_ru": [
+        "Расположение памяти",
+        "Установка порядка атомарных операций — расслабление, получение, выпуск, seq_cst",
+        "Порядок резьбы",
+        "Порядок ЦП"
+      ],
+      "options_en": [
+        "Xotira tartibi",
+        "Setting the order of atomic operations — relaxed, acquire, release, seq_cst",
+        "Thread order",
+        "CPU order"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "C++ da tag dispatch nima?",
+      "options": [
+        "Teg dispatch",
+        "Tip tag orqali overload tanlash — compile time dispatch, SFINAE alternativa",
+        "Template dispatch",
+        "Function select"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое диспетчеризация тегов в C++?",
+      "question_en": "What is tag dispatch in C++?",
+      "options_ru": [
+        "Отправка тегов",
+        "Выбор перегрузки по тегу типа — отправка во время компиляции, альтернатива SFINAE",
+        "Отправка шаблона",
+        "Выбор функции"
+      ],
+      "options_en": [
+        "Tag dispatch",
+        "Select overload by type tag — compile time dispatch, SFINAE alternative",
+        "Template dispatch",
+        "Function selection"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "C++ da expression templates nima?",
+      "options": [
+        "Template ifoda",
+        "Lazy evaluation va loop fusion — matematik kutubxonalar (Eigen, Blaze) ishlatadi",
+        "Lazy template",
+        "Math template"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблоны выражений в C++?",
+      "question_en": "What are expression templates in C++?",
+      "options_ru": [
+        "Шаблонное выражение",
+        "Для ленивых вычислений и слияния циклов используются математические библиотеки (Eigen, Blaze).",
+        "Ленивый шаблон",
+        "Математический шаблон"
+      ],
+      "options_en": [
+        "Template expression",
+        "Lazy evaluation and loop fusion use mathematical libraries (Eigen, Blaze).",
+        "Lazy template",
+        "Math template"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "C++ da ABI (Application Binary Interface) nima?",
+      "options": [
+        "API turi",
+        "Ikkilik darajada: klass layout, name mangling, calling convention — versiya muvofiqligi",
+        "Binary interface",
+        "Library interface"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ABI (двоичный интерфейс приложения) в C++?",
+      "question_en": "What is ABI (Application Binary Interface) in C++?",
+      "options_ru": [
+        "Тип API",
+        "На двоичном уровне: макет класса, искажение имен, соглашение о вызовах — совместимость версий.",
+        "Бинарный интерфейс",
+        "Интерфейс библиотеки"
+      ],
+      "options_en": [
+        "API type",
+        "At the binary level: class layout, name mangling, calling convention — version compatibility",
+        "Binary interface",
+        "Library interface"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "C++ da CRT (Copy and Resource Transfer) idiom nima?",
+      "options": [
+        "CRT kutubxona",
+        "Rule of 3/5/0 — destructor, copy constructor, copy assignment, move constructor, move assignment boshqarish",
+        "Memory rule",
+        "RAII rule"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое идиома CRT (копирование и передача ресурсов) в C++?",
+      "question_en": "What is the CRT (Copy and Resource Transfer) idiom in C++?",
+      "options_ru": [
+        "ЭЛТ-библиотека",
+        "Правило 3/5/0 — деструктор, конструктор копирования, назначение копирования, конструктор перемещения, управление назначением перемещения.",
+        "Правило памяти",
+        "правило RAII"
+      ],
+      "options_en": [
+        "CRT library",
+        "Rule of 3/5/0 — destructor, copy constructor, copy assignment, move constructor, move assignment management",
+        "Memory rule",
+        "RAII rule"
+      ]
+    }
   ]
 }

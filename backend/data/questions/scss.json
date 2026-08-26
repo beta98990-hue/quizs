@@ -2,55 +2,1305 @@
   "technology": "SCSS",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"SCSS Sass dan qanday farq qiladi?","options":["Hech qanday farq yo'q","SCSS CSS-like sintaksis ({} va ;) ishlatadi, Sass indentation asosida","Sass yangroq","SCSS eski"],"answer":1},
-    {"id":2,"level":"easy","question":"SCSS faylining kengaytmasi nima?","options":[".sass",".css",".scss",".less"],"answer":2},
-    {"id":3,"level":"easy","question":"SCSS da o'zgaruvchi qanday e'lon qilinadi?","options":["var(--color): red","$primary-color: #333;","@color: #333;","let color = #333;"],"answer":1},
-    {"id":4,"level":"easy","question":"SCSS da nesting qanday ishlaydi?","options":[".parent > .child { }","CSS kabi, ichma-ich selectorlar { } ichida yoziladi","@nest .child { }","Nested .child { }"],"answer":1},
-    {"id":5,"level":"easy","question":"SCSS da mixin qanday e'lon qilinadi?","options":["@define mixin-name { }","mixin mixin-name { }","@mixin mixin-name { }","#mixin mixin-name { }"],"answer":2},
-    {"id":6,"level":"easy","question":"SCSS da mixin qanday chaqiriladi?","options":["@call mixin-name","@use mixin-name","@apply mixin-name","@include mixin-name"],"answer":3},
-    {"id":7,"level":"easy","question":"SCSS da & (parent selector) nima anglatadi?","options":["Universal selector","Ota selektor — &:hover, &__element, &--modifier","Va operatori","Wildcard"],"answer":1},
-    {"id":8,"level":"easy","question":"SCSS da matematik operatsiyalar mumkinmi?","options":["Yo'q, faqat CSS funksiyalar","Ha, +, -, *, /, % operatorlari bilan","Faqat CSS calc() bilan","Faqat qo'shish va ayirish"],"answer":1},
-    {"id":9,"level":"easy","question":"SCSS da // bilan comment kompilyatsiyaga kiradimi?","options":["Ha, har doim","Yo'q, faqat /* */ kompilyatsiyaga kiradi","Har doim kiradi","Ixtiyoriy"],"answer":1},
-    {"id":10,"level":"easy","question":"SCSS da rang funksiyalari (lighten, darken) ishlaydi?","options":["Yo'q","Ha, Sass rang funksiyalari SCSS da ham ishlaydi","Faqat SCSS da","Faqat Sass da"],"answer":1},
-    {"id":11,"level":"easy","question":"SCSS da @extend nima qiladi?","options":["Faylni uzaytiradi","Bir selektor boshqa selektor CSS ni meros oladi","Mixin chaqiradi","Import qiladi"],"answer":1},
-    {"id":12,"level":"easy","question":"SCSS da @import nima uchun (eski usul)?","options":["CSS import","Boshqa SCSS fayllarni qo'shish uchun (endi @use afzalroq)","JavaScript import","Font import"],"answer":1},
-    {"id":13,"level":"easy","question":"SCSS da placeholder selector qanday e'lon qilinadi?","options":[".placeholder { }","#placeholder { }","%placeholder { }","*placeholder { }"],"answer":2},
-    {"id":14,"level":"easy","question":"SCSS da @if nima uchun?","options":["CSS if","Shartga asosida stil qo'llash","HTML if","JavaScript if"],"answer":1},
-    {"id":15,"level":"easy","question":"SCSS da map-get($map, key) nima qiladi?","options":["Map yaratadi","Map dan kalit bo'yicha qiymat oladi","Map o'chiradi","Map birlashtiradi"],"answer":1},
-    {"id":16,"level":"medium","question":"SCSS da @use va @import farqi nima?","options":["Hech qanday farq yo'q","@use namespace bilan yuklaydi, global scope yo'lliq; @import global namespace (deprecated)","@use eski","@import yangroq"],"answer":1},
-    {"id":17,"level":"medium","question":"SCSS da list nima?","options":["HTML ro'yxat","Bo'sh yoki vergul bilan ajratilgan qiymatlar to'plami — (1, 2, 3) yoki (1 2 3)","Array turi","Map turi"],"answer":1},
-    {"id":18,"level":"medium","question":"SCSS da @each nima uchun?","options":["Event handler","Ro'yxat yoki map bo'yicha iteratsiya qilib CSS yaratish","Foreach loop","Each selector"],"answer":1},
-    {"id":19,"level":"medium","question":"SCSS da @for from through nima?","options":["For tsikl","Diapazon bo'yicha takrorlash: @for $i from 1 through 5","Shart tsikl","Map tsikl"],"answer":1},
-    {"id":20,"level":"medium","question":"SCSS da @while nima uchun?","options":["While loop","Shart bajarilguncha takrorlanadigan CSS generatsiya","Timer","Tsikl to'xtatish"],"answer":1},
-    {"id":21,"level":"medium","question":"SCSS da !default flag nima qiladi?","options":["Standart belgilash","O'zgaruvchi allaqachon e'lon bo'lsa qiymat bermaslik — kutubxona theming uchun","Override qilish","Null tekshirish"],"answer":1},
-    {"id":22,"level":"medium","question":"SCSS da BEM naming convention qanday amalga oshiriladi?","options":["Alohida selektor","& bilan: &__element, &--modifier — nesting ichida","Maxsus BEM plugin","Separate files"],"answer":1},
-    {"id":23,"level":"medium","question":"SCSS da @forward nima qiladi?","options":["Fayl yo'naltirish","Modul tarkibini boshqa modul orqali re-eksport qilish","CSS forward","Import yo'naltirish"],"answer":1},
-    {"id":24,"level":"medium","question":"SCSS da @mixin da @content block nima qiladi?","options":["Kontent qo'shish","Mixin chaqirilganda blok kontent qo'yish imkonini beradi — responsive mixin uchun","Placeholder kontent","CSS kontent"],"answer":1},
-    {"id":25,"level":"medium","question":"SCSS da @use 'module' as * nima qiladi?","options":["Barcha eksport","Modul namespace ni olib tashlaydi — to'g'ridan-to'g'ri nom bilan kirish","Module star import","All import"],"answer":1},
-    {"id":26,"level":"medium","question":"SCSS da sass:math moduli nima beradi?","options":["Math.js","Matematik funksiyalar: floor, ceil, round, abs, max, min, div va boshqalar","CSS math","Calculator"],"answer":1},
-    {"id":27,"level":"medium","question":"SCSS da @use 'sass:color' moduli nima beradi?","options":["Rang kutubxona","Rang manipulyatsiyasi: color.adjust, color.scale, color.mix, color.change","CSS rang","Color picker"],"answer":1},
-    {"id":28,"level":"medium","question":"SCSS da interpolation #{} qayerda ishlatiladi?","options":["Faqat qiymatlarda","Selektor nomi, xususiyat nomi, URL larida o'zgaruvchi qiymatini kiritish","Comment ichida","Funksiya ichida"],"answer":1},
-    {"id":29,"level":"medium","question":"SCSS da @warn va @error farqi?","options":["Hech qanday farq yo'q","@warn — ogohlantirish, kompilyatsiya davom etadi; @error — xato, kompilyatsiya to'xtaydi","@error ogohlantiradi","@warn to'xtatadi"],"answer":1},
-    {"id":30,"level":"medium","question":"SCSS da rgba() funksiyasi qanday?","options":["Faqat CSS rgba","CSS rgba() bilan bir xil; $color va $alpha bilan ham: rgba($color, 0.5)","Sass maxsus funksiya","Rang blend"],"answer":1},
-    {"id":31,"level":"medium","question":"SCSS da partial fayl nima?","options":["To'liqsiz fayl","_ bilan boshlangan fayl — mustaqil kompilyatsiya qilinmaydi, @use bilan import qilinadi","Hidden fayl","Config fayl"],"answer":1},
-    {"id":32,"level":"medium","question":"SCSS da @use 'sass:list' nima beradi?","options":["HTML list","List funksiyalari: list.nth, list.length, list.append, list.join, list.zip","CSS list","Array funksiyalar"],"answer":1},
-    {"id":33,"level":"medium","question":"SCSS da selector.nest() funksiyasi nima qiladi?","options":["Selector yaratish","Selectorlarni programmatik birlashtirish va nesting yaratish","Selector merge","Selector combine"],"answer":1},
-    {"id":34,"level":"medium","question":"SCSS da @mixin responsive nima uchun?","options":["CSS responsive","Breakpoint asosida media querylarni mixin orqali qo'llash — DRY kod","Mixin pattern","Media mixin"],"answer":1},
-    {"id":35,"level":"medium","question":"SCSS da design system uchun token management qanday?","options":["Token file","$primary, $spacing-sm kabi o'zgaruvchilar va maps bilan markazlashtirilgan sozlamalar","Brand file","Config file"],"answer":1},
-    {"id":36,"level":"hard","question":"SCSS da @use with() configuration nima?","options":["Config yaratish","@use 'module' with ($var: override) — modulning !default o'zgaruvchilarini qayta belgilash","Module config","Setup config"],"answer":1},
-    {"id":37,"level":"hard","question":"SCSS da meta.load-css() nima uchun?","options":["CSS yuklash","Mixin ichidan CSS faylni dinamik yuklash — runtime theming","Dynamic import","Lazy CSS"],"answer":1},
-    {"id":38,"level":"hard","question":"SCSS da @use bilan namespace collision qanday oldini olinadi?","options":["Iloji yo'q","@use 'file' as alias — unique alias bilan kirish: alias.$variable","Global namespace","Import alias"],"answer":1},
-    {"id":39,"level":"hard","question":"SCSS da sourcemap nima uchun?","options":["Xarita","Kompilyatsiyalangan CSS ni original SCSS fayliga karta — debugging uchun","CSS xarita","Development tool"],"answer":1},
-    {"id":40,"level":"hard","question":"SCSS da advanced mixin pattern: wrapper mixin nima?","options":["Mixin wrapping","@content bilan media query, theme, state wrappers — kod strukturasi uchun","HOC mixin","Layout wrapper"],"answer":1},
-    {"id":41,"level":"hard","question":"SCSS da deep map nested access qanday?","options":["map.get chain","map.get(map.get($map, key1), key2) — nested kalit olish yoki custom function","Direct access","Nested selector"],"answer":1},
-    {"id":42,"level":"hard","question":"SCSS da recursive map merge qanday?","options":["map.merge()","Custom funksiya bilan deep merge — standart map.merge faqat top-level birlashtiradi","Auto merge","Deep merge"],"answer":1},
-    {"id":43,"level":"hard","question":"SCSS da compile performance optimallashtirish?","options":["Kodni qisqartirish","@use bilan modular import, partial files, mixin o'rniga placeholder — CSS chiqish hajmi","Cache","Parallel compile"],"answer":1},
-    {"id":44,"level":"hard","question":"SCSS da color contrast checking qanday?","options":["CSS filter","color.adjust bilan lightness/darkness hisoblash, a11y uchun contrast ratio kontroli","Contrast plugin","Auto check"],"answer":1},
-    {"id":45,"level":"hard","question":"SCSS da CSS Custom Properties bilan integratsiya?","options":["Almashtirish","$sass-var ni CSS --custom-property ga o'tkazish — dynamic theming uchun ikkalasini birga ishlatish","CSS only","SCSS only"],"answer":1},
-    {"id":46,"level":"hard","question":"SCSS da @function qanday yaratiladi va mixin dan farqi?","options":["function keyword","@function — qiymat qaytaradi; @mixin — CSS bloki chiqaradi; @function hisoblash uchun","Farq yo'q","@func keyword"],"answer":1},
-    {"id":47,"level":"hard","question":"SCSS da string interpolation bilan selektor generatsiya?","options":["String concat","#{$variable} bilan: .icon-#{$name} — dinamik klass nomlari yaratish","Template string","Selector string"],"answer":1},
-    {"id":48,"level":"hard","question":"SCSS da grid system custom qurilishi qanday?","options":["Bootstrap grid","@for loop + mixin bilan: ustunlar, gutters, breakpoints — custom grid framework","CSS grid","Flexbox grid"],"answer":1},
-    {"id":49,"level":"hard","question":"SCSS da unit testing qanday amalga oshiriladi?","options":["Iloji yo'q","sass-true kutubxonasi bilan: @include assert, @include expect, @include contains","Jest bilan","Manual test"],"answer":1},
-    {"id":50,"level":"hard","question":"SCSS da multi-theme implementation qanday?","options":["Bitta tema","CSS Custom Properties + SCSS maps: har bir tema uchun o'zgaruvchilar map + @each loop bilan apply","Multiple CSS files","JS theming"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "SCSS Sass dan qanday farq qiladi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "SCSS CSS-like sintaksis ({} va ;) ishlatadi, Sass indentation asosida",
+        "Sass yangroq",
+        "SCSS eski"
+      ],
+      "answer": 1,
+      "question_ru": "Чем SCSS отличается от Sass?",
+      "question_en": "How does SCSS differ from Sass?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "SCSS использует синтаксис, подобный CSS ({} и ;), основанный на отступах Sass.",
+        "Сасс ярче",
+        "SCSS старый"
+      ],
+      "options_en": [
+        "There is no difference",
+        "SCSS uses CSS-like syntax ({} and ;), based on Sass indentation",
+        "Sass is brighter",
+        "SCSS is old"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "SCSS faylining kengaytmasi nima?",
+      "options": [
+        ".sass",
+        ".css",
+        ".scss",
+        ".less"
+      ],
+      "answer": 2,
+      "question_ru": "Что такое расширение файла SCSS?",
+      "question_en": "What is SCSS File Extension?",
+      "options_ru": [
+        ".дерзость",
+        ".css",
+        ".scss",
+        ".меньше"
+      ],
+      "options_en": [
+        ".sass",
+        ".css",
+        ".scss",
+        ".less"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "SCSS da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "var(--color): red",
+        "$primary-color: #333;",
+        "@color: #333;",
+        "let color = #333;"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в SCSS?",
+      "question_en": "SCSS da o'zgaruvchi qanday e'lon qilinadi?",
+      "options_ru": [
+        "var(--color): красный",
+        "$первичный цвет: #333;",
+        "@цвет: #333;",
+        "пусть цвет = #333;"
+      ],
+      "options_en": [
+        "var(--color): red",
+        "$primary-color: #333;",
+        "@color: #333;",
+        "let color = #333;"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "SCSS da nesting qanday ishlaydi?",
+      "options": [
+        ".parent > .child { }",
+        "CSS kabi, ichma-ich selectorlar { } ichida yoziladi",
+        "@nest .child { }",
+        "Nested .child { }"
+      ],
+      "answer": 1,
+      "question_ru": "SCSS da nesting qanday ishlaydi?",
+      "question_en": "How does nesting work in SCSS?",
+      "options_ru": [
+        ".parent > .child { }",
+        "Как и в CSS, вложенные селекторы пишутся внутри { }.",
+        "@nest .child { }",
+        "вложенный .child { }"
+      ],
+      "options_en": [
+        ".parent > .child { }",
+        "Like CSS, nested selectors are written inside { }",
+        "@nest .child { }",
+        "nested .child { }"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "SCSS da mixin qanday e'lon qilinadi?",
+      "options": [
+        "@define mixin-name { }",
+        "mixin mixin-name { }",
+        "@mixin mixin-name { }",
+        "#mixin mixin-name { }"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить миксин в SCSS?",
+      "question_en": "How to declare a mixin in SCSS?",
+      "options_ru": [
+        "@define имя-миксина { }",
+        "миксин имя-миксина { }",
+        "@mixin имя-миксина { }",
+        "#mixin имя-миксина { }"
+      ],
+      "options_en": [
+        "@define mixin-name { }",
+        "mixin mixin-name { }",
+        "@mixin mixin-name { }",
+        "#mixin mixin-name { }"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "SCSS da mixin qanday chaqiriladi?",
+      "options": [
+        "@call mixin-name",
+        "@use mixin-name",
+        "@apply mixin-name",
+        "@include mixin-name"
+      ],
+      "answer": 3,
+      "question_ru": "Как вызвать миксин в SCSS?",
+      "question_en": "How to call mixin in SCSS?",
+      "options_ru": [
+        "@call имя миксина",
+        "@use имя-миксина",
+        "@apply имя-миксина",
+        "@include имя-миксина"
+      ],
+      "options_en": [
+        "@call mixin-name",
+        "@use mixin-name",
+        "@apply mixin-name",
+        "@include mixin-name"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "SCSS da & (parent selector) nima anglatadi?",
+      "options": [
+        "Universal selector",
+        "Ota selektor — &:hover, &__element, &--modifier",
+        "Va operatori",
+        "Wildcard"
+      ],
+      "answer": 1,
+      "question_ru": "Что означает & (родительский селектор) в SCSS?",
+      "question_en": "What does & (parent selector) mean in SCSS?",
+      "options_ru": [
+        "Универсальный селектор",
+        "Родительский селектор — &:hover, &__element, &--модификатор",
+        "И оператор",
+        "Подстановочный знак"
+      ],
+      "options_en": [
+        "Universal selector",
+        "Parent selector — &:hover, &__element, &--modifier",
+        "Va operatori",
+        "Wildcard"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "SCSS da matematik operatsiyalar mumkinmi?",
+      "options": [
+        "Yo'q, faqat CSS funksiyalar",
+        "Ha, +, -, *, /, % operatorlari bilan",
+        "Faqat CSS calc() bilan",
+        "Faqat qo'shish va ayirish"
+      ],
+      "answer": 1,
+      "question_ru": "Возможны ли математические операции в SCSS?",
+      "question_en": "SCSS da matematik operatsiyalar mumkinmi?",
+      "options_ru": [
+        "Нет, только функции CSS",
+        "Да, с операторами +, -, *, /, %",
+        "Только с помощью CSS Calc()",
+        "Просто добавьте и вычтите"
+      ],
+      "options_en": [
+        "No, only CSS functions",
+        "Yes, with +, -, *, /, % operators",
+        "Only with CSS calc()",
+        "Just add and subtract"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "SCSS da // bilan comment kompilyatsiyaga kiradimi?",
+      "options": [
+        "Ha, har doim",
+        "Yo'q, faqat /* */ kompilyatsiyaga kiradi",
+        "Har doim kiradi",
+        "Ixtiyoriy"
+      ],
+      "answer": 1,
+      "question_ru": "Включает ли комментарий с // в SCSS компиляцию?",
+      "question_en": "Does comment with // in SCSS include compilation?",
+      "options_ru": [
+        "Да, всегда",
+        "Нет, в компиляцию включено только /* */",
+        "Всегда включено",
+        "Ixtiyoriy"
+      ],
+      "options_en": [
+        "Yes, always",
+        "No, only /* */ is included in the compilation",
+        "Har doim kiradi",
+        "Optional"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "SCSS da rang funksiyalari (lighten, darken) ishlaydi?",
+      "options": [
+        "Yo'q",
+        "Ha, Sass rang funksiyalari SCSS da ham ishlaydi",
+        "Faqat SCSS da",
+        "Faqat Sass da"
+      ],
+      "answer": 1,
+      "question_ru": "Работают ли в SCSS функции цвета (осветление, затемнение)?",
+      "question_en": "Do color functions (lighten, darken) work in SCSS?",
+      "options_ru": [
+        "Yo'q",
+        "Да, функции цвета Sass также работают в SCSS.",
+        "Только в СССС",
+        "Faqat Sass da"
+      ],
+      "options_en": [
+        "No",
+        "Yes, Sass color functions also work in SCSS",
+        "Only in SCSS",
+        "Only in Sass"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "SCSS da @extend nima qiladi?",
+      "options": [
+        "Faylni uzaytiradi",
+        "Bir selektor boshqa selektor CSS ni meros oladi",
+        "Mixin chaqiradi",
+        "Import qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает @extend в SCSS?",
+      "question_en": "What does @extend do in SCSS?",
+      "options_ru": [
+        "Расширяет файл",
+        "Один селектор наследует CSS другого селектора.",
+        "Михин звонит",
+        "Импорт"
+      ],
+      "options_en": [
+        "Extends the file",
+        "One selector inherits another selector's CSS",
+        "Mikhin calls",
+        "Imports"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "SCSS da @import nima uchun (eski usul)?",
+      "options": [
+        "CSS import",
+        "Boshqa SCSS fayllarni qo'shish uchun (endi @use afzalroq)",
+        "JavaScript import",
+        "Font import"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @import в SCSS (старый способ)?",
+      "question_en": "SCSS da @import nima uchun (eski usul)?",
+      "options_ru": [
+        "Импорт CSS",
+        "Чтобы добавить другие файлы SCSS, теперь предпочтительнее использовать (@use)",
+        "Импортировать JavaScript",
+        "Импорт шрифтов"
+      ],
+      "options_en": [
+        "CSS import",
+        "To add other SCSS files (@use is now preferred)",
+        "Import JavaScript",
+        "Font import"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "SCSS da placeholder selector qanday e'lon qilinadi?",
+      "options": [
+        ".placeholder { }",
+        "#placeholder { }",
+        "%placeholder { }",
+        "*placeholder { }"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить селектор заполнителя в SCSS?",
+      "question_en": "How to declare a placeholder selector in SCSS?",
+      "options_ru": [
+        ".placeholder { }",
+        "#placeholder { }",
+        "%placeholder { }",
+        "*заполнитель { }"
+      ],
+      "options_en": [
+        ".placeholder { }",
+        "#placeholder { }",
+        "%placeholder { }",
+        "*placeholder { }"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "SCSS da @if nima uchun?",
+      "options": [
+        "CSS if",
+        "Shartga asosida stil qo'llash",
+        "HTML if",
+        "JavaScript if"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @if в SCSS?",
+      "question_en": "Why @if in SCSS?",
+      "options_ru": [
+        "CSS, если",
+        "Условный стиль",
+        "HTML, если",
+        "JavaScript, если"
+      ],
+      "options_en": [
+        "CSS if",
+        "Conditional styling",
+        "HTML if",
+        "JavaScript if"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "SCSS da map-get($map, key) nima qiladi?",
+      "options": [
+        "Map yaratadi",
+        "Map dan kalit bo'yicha qiymat oladi",
+        "Map o'chiradi",
+        "Map birlashtiradi"
+      ],
+      "answer": 1,
+      "question_ru": "SCSS da map-get($map, key) nima qiladi?",
+      "question_en": "What does map-get($map, key) do in SCSS?",
+      "options_ru": [
+        "Создает карту",
+        "Получает значение из карты по ключу",
+        "Удаляет карту",
+        "Карта объединяет"
+      ],
+      "options_en": [
+        "Creates a map",
+        "Gets a value from Map by key",
+        "Deletes the map",
+        "Map combines"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "SCSS da @use va @import farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "@use namespace bilan yuklaydi, global scope yo'lliq; @import global namespace (deprecated)",
+        "@use eski",
+        "@import yangroq"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между @use и @import в SCSS?",
+      "question_en": "What is the difference between @use and @import in SCSS?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "@use загружает пространство имен, путь к глобальной области видимости; @import глобальное пространство имен (устарело)",
+        "@используй старый",
+        "@import громче"
+      ],
+      "options_en": [
+        "There is no difference",
+        "@use loads with namespace, global scope path; @import global namespace (deprecated)",
+        "@use old",
+        "@import is louder"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "SCSS da list nima?",
+      "options": [
+        "HTML ro'yxat",
+        "Bo'sh yoki vergul bilan ajratilgan qiymatlar to'plami — (1, 2, 3) yoki (1 2 3)",
+        "Array turi",
+        "Map turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в SCSS?",
+      "question_en": "What is a list in SCSS?",
+      "options_ru": [
+        "HTML ro'yxat",
+        "Пустой набор значений или значений, разделенных запятыми — (1, 2, 3) или (1 2 3).",
+        "Тип массива",
+        "Тип карты"
+      ],
+      "options_en": [
+        "HTML ro'yxat",
+        "Bo'sh yoki vergul bilan ajratilgan qiymatlar to'plami — (1, 2, 3) yoki (1 2 3)",
+        "Array type",
+        "Map turi"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "SCSS da @each nima uchun?",
+      "options": [
+        "Event handler",
+        "Ro'yxat yoki map bo'yicha iteratsiya qilib CSS yaratish",
+        "Foreach loop",
+        "Each selector"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @each в SCSS?",
+      "question_en": "Why @each in SCSS?",
+      "options_ru": [
+        "Обработчик событий",
+        "Создайте CSS, перебирая список или карту.",
+        "Цикл foreach",
+        "Каждый селектор"
+      ],
+      "options_en": [
+        "Event handler",
+        "Ro'yxat yoki map bo'yicha iteratsiya qilib CSS yaratish",
+        "Foreach loop",
+        "Each selector"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "SCSS da @for from through nima?",
+      "options": [
+        "For tsikl",
+        "Diapazon bo'yicha takrorlash: @for $i from 1 through 5",
+        "Shart tsikl",
+        "Map tsikl"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое @for fromthrough в SCSS?",
+      "question_en": "What is @for from through in SCSS?",
+      "options_ru": [
+        "Для цикла",
+        "Перебрать диапазон: @for $i от 1 до 5.",
+        "Состояние - цикл",
+        "Цикл карты"
+      ],
+      "options_en": [
+        "For cycle",
+        "Iterate over the range: @for $i from 1 through 5",
+        "The condition is cycle",
+        "Map cycle"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "SCSS da @while nima uchun?",
+      "options": [
+        "While loop",
+        "Shart bajarilguncha takrorlanadigan CSS generatsiya",
+        "Timer",
+        "Tsikl to'xtatish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @ while в SCSS?",
+      "question_en": "Why @while in SCSS?",
+      "options_ru": [
+        "Пока цикл",
+        "Генерация CSS, которая повторяется до тех пор, пока не будет выполнено условие",
+        "Таймер",
+        "Остановить цикл"
+      ],
+      "options_en": [
+        "While loop",
+        "CSS generation that repeats until a condition is met",
+        "Timer",
+        "Stop the cycle"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "SCSS da !default flag nima qiladi?",
+      "options": [
+        "Standart belgilash",
+        "O'zgaruvchi allaqachon e'lon bo'lsa qiymat bermaslik — kutubxona theming uchun",
+        "Override qilish",
+        "Null tekshirish"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает флаг !default в SCSS?",
+      "question_en": "What does the !default flag do in SCSS?",
+      "options_ru": [
+        "Настройка по умолчанию",
+        "Не присваивать значение, если переменная уже объявлена, — это библиотечная функция.",
+        "Переопределить",
+        "Нулевая проверка"
+      ],
+      "options_en": [
+        "Default setting",
+        "Not assigning a value if a variable is already declared is a library thing",
+        "Override",
+        "Null check"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "SCSS da BEM naming convention qanday amalga oshiriladi?",
+      "options": [
+        "Alohida selektor",
+        "& bilan: &__element, &--modifier — nesting ichida",
+        "Maxsus BEM plugin",
+        "Separate files"
+      ],
+      "answer": 1,
+      "question_ru": "Как реализовать соглашение об именах BEM в SCSS?",
+      "question_en": "SCSS da BEM naming convention qanday amalga oshiriladi?",
+      "options_ru": [
+        "Отдельный селектор",
+        "с &: &__element, &--modifier — внутри вложенности",
+        "Пользовательский плагин БЭМ",
+        "Отдельные файлы"
+      ],
+      "options_en": [
+        "A separate selector",
+        "with &: &__element, &--modifier — inside nesting",
+        "Maxsus BEM plugin",
+        "Separate files"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "SCSS da @forward nima qiladi?",
+      "options": [
+        "Fayl yo'naltirish",
+        "Modul tarkibini boshqa modul orqali re-eksport qilish",
+        "CSS forward",
+        "Import yo'naltirish"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает @forward в SCSS?",
+      "question_en": "SCSS da @forward nima qiladi?",
+      "options_ru": [
+        "Пересылка файлов",
+        "Реэкспортировать содержимое модуля через другой модуль.",
+        "CSS вперед",
+        "Импорт маршрутизации"
+      ],
+      "options_en": [
+        "Fayl yo'naltirish",
+        "Re-export the contents of a module through another module",
+        "CSS forward",
+        "Import routing"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "SCSS da @mixin da @content block nima qiladi?",
+      "options": [
+        "Kontent qo'shish",
+        "Mixin chaqirilganda blok kontent qo'yish imkonini beradi — responsive mixin uchun",
+        "Placeholder kontent",
+        "CSS kontent"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает блок @content в @mixin в SCSS?",
+      "question_en": "What does @content block do in @mixin in SCSS?",
+      "options_ru": [
+        "Добавить контент",
+        "Блок позволяет вставлять контент при вызове миксина — для адаптивного миксина.",
+        "Заполнитель содержимого",
+        "CSS-контент"
+      ],
+      "options_en": [
+        "Add content",
+        "Mixin chaqirilganda blok kontent qo'yish imkonini beradi — responsive mixin uchun",
+        "Placeholder kontent",
+        "CSS content"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "SCSS da @use 'module' as * nima qiladi?",
+      "options": [
+        "Barcha eksport",
+        "Modul namespace ni olib tashlaydi — to'g'ridan-to'g'ri nom bilan kirish",
+        "Module star import",
+        "All import"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает @use 'module' as * в SCSS?",
+      "question_en": "What does @use 'module' as * do in SCSS?",
+      "options_ru": [
+        "Весь экспорт",
+        "Удаляет пространство имен модуля — прямой доступ к имени",
+        "Импорт звезды модуля",
+        "Весь импорт"
+      ],
+      "options_en": [
+        "All exports",
+        "Removes the module namespace — direct name access",
+        "Module star import",
+        "All imports"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "SCSS da sass:math moduli nima beradi?",
+      "options": [
+        "Math.js",
+        "Matematik funksiyalar: floor, ceil, round, abs, max, min, div va boshqalar",
+        "CSS math",
+        "Calculator"
+      ],
+      "answer": 1,
+      "question_ru": "Что предоставляет модуль sass:math в SCSS?",
+      "question_en": "What does the sass:math module provide in SCSS?",
+      "options_ru": [
+        "Math.js",
+        "Математические функции: пол, потолок, округление, абс, максимум, минимум, дел и т. д.",
+        "CSS-математика",
+        "Калькулятор"
+      ],
+      "options_en": [
+        "Math.js",
+        "Matematik funksiyalar: floor, ceil, round, abs, max, min, div va boshqalar",
+        "CSS math",
+        "Calculator"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "SCSS da @use 'sass:color' moduli nima beradi?",
+      "options": [
+        "Rang kutubxona",
+        "Rang manipulyatsiyasi: color.adjust, color.scale, color.mix, color.change",
+        "CSS rang",
+        "Color picker"
+      ],
+      "answer": 1,
+      "question_ru": "Что предоставляет модуль @use 'sass:color' в SCSS?",
+      "question_en": "What does the @use 'sass:color' module provide in SCSS?",
+      "options_ru": [
+        "Библиотека цветов",
+        "Манипулирование цветом: color.adjust, color.scale, color.mix, color.change.",
+        "CSS-цвет",
+        "Выбор цвета"
+      ],
+      "options_en": [
+        "Color library",
+        "Color manipulation: color.adjust, color.scale, color.mix, color.change",
+        "CSS color",
+        "Color picker"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "SCSS da interpolation #{} qayerda ishlatiladi?",
+      "options": [
+        "Faqat qiymatlarda",
+        "Selektor nomi, xususiyat nomi, URL larida o'zgaruvchi qiymatini kiritish",
+        "Comment ichida",
+        "Funksiya ichida"
+      ],
+      "answer": 1,
+      "question_ru": "Где в SCSS используется интерполяция #{}?",
+      "question_en": "Where is interpolation #{} used in SCSS?",
+      "options_ru": [
+        "Только в значениях",
+        "Ввод значения переменной в имя селектора, имя свойства, URL-адреса.",
+        "В комментарии",
+        "Внутри функции"
+      ],
+      "options_en": [
+        "Only in values",
+        "Input of variable value in selector name, property name, URLs",
+        "Comment ichida",
+        "Inside the function"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "SCSS da @warn va @error farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "@warn — ogohlantirish, kompilyatsiya davom etadi; @error — xato, kompilyatsiya to'xtaydi",
+        "@error ogohlantiradi",
+        "@warn to'xtatadi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между @warn и @error в SCSS?",
+      "question_en": "Difference between @warn and @error in SCSS?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "@warn — предупреждение, компиляция продолжается; @error — ошибка, компиляция останавливается",
+        "@error предупреждает",
+        "@warn прекратится"
+      ],
+      "options_en": [
+        "There is no difference",
+        "@warn — warning, compilation continues; @error — error, compilation stops",
+        "@error warns",
+        "@warn will stop"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "SCSS da rgba() funksiyasi qanday?",
+      "options": [
+        "Faqat CSS rgba",
+        "CSS rgba() bilan bir xil; $color va $alpha bilan ham: rgba($color, 0.5)",
+        "Sass maxsus funksiya",
+        "Rang blend"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция rgba() в SCSS?",
+      "question_en": "What is the rgba() function in SCSS?",
+      "options_ru": [
+        "Просто css rgba",
+        "То же, что CSS rgba(); Также с $color и $alpha: rgba($color, 0.5)",
+        "Пользовательская функция Sass",
+        "Цветовая смесь"
+      ],
+      "options_en": [
+        "Faqat CSS rgba",
+        "Same as CSS rgba(); Also with $color and $alpha: rgba($color, 0.5)",
+        "Sass custom function",
+        "Color blend"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "SCSS da partial fayl nima?",
+      "options": [
+        "To'liqsiz fayl",
+        "_ bilan boshlangan fayl — mustaqil kompilyatsiya qilinmaydi, @use bilan import qilinadi",
+        "Hidden fayl",
+        "Config fayl"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое частичный файл в SCSS?",
+      "question_en": "What is a partial file in SCSS?",
+      "options_ru": [
+        "Неполный файл",
+        "Файл, начинающийся с _, не компилируется самостоятельно, он импортируется с помощью @use",
+        "Скрытый файл",
+        "Конфигурационный файл"
+      ],
+      "options_en": [
+        "Incomplete file",
+        "A file starting with _ is not compiled independently, it is imported with @use",
+        "Hidden file",
+        "Config file"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "SCSS da @use 'sass:list' nima beradi?",
+      "options": [
+        "HTML list",
+        "List funksiyalari: list.nth, list.length, list.append, list.join, list.zip",
+        "CSS list",
+        "Array funksiyalar"
+      ],
+      "answer": 1,
+      "question_ru": "Что дает @use 'sass:list' в SCSS?",
+      "question_en": "What does @use 'sass:list' give in SCSS?",
+      "options_ru": [
+        "HTML-список",
+        "List funksiyalari: list.nth, list.length, list.append, list.join, list.zip",
+        "Список CSS",
+        "Функции массива"
+      ],
+      "options_en": [
+        "HTML list",
+        "List functions: list.nth, list.length, list.append, list.join, list.zip",
+        "CSS list",
+        "Array functions"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "SCSS da selector.nest() funksiyasi nima qiladi?",
+      "options": [
+        "Selector yaratish",
+        "Selectorlarni programmatik birlashtirish va nesting yaratish",
+        "Selector merge",
+        "Selector combine"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция selector.nest() в SCSS?",
+      "question_en": "What does the selector.nest() function do in SCSS?",
+      "options_ru": [
+        "Создать селектор",
+        "Программное объединение и вложение селекторов",
+        "Объединение селекторов",
+        "Селектор комбайна"
+      ],
+      "options_en": [
+        "Selector yaratish",
+        "Programmatic concatenation and nesting of selectors",
+        "Selector merge",
+        "Selector combine"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "SCSS da @mixin responsive nima uchun?",
+      "options": [
+        "CSS responsive",
+        "Breakpoint asosida media querylarni mixin orqali qo'llash — DRY kod",
+        "Mixin pattern",
+        "Media mixin"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @mixin реагирует на SCSS?",
+      "question_en": "Why @mixin responsive in SCSS?",
+      "options_ru": [
+        "Адаптивный CSS",
+        "Применение медиа-запросов на основе точек останова через миксин — код DRY",
+        "Смешать шаблон",
+        "Медиа-миксин"
+      ],
+      "options_en": [
+        "Responsive CSS",
+        "Breakpoint asosida media querylarni mixin orqali qo'llash — DRY kod",
+        "Mix pattern",
+        "Media mixin"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "SCSS da design system uchun token management qanday?",
+      "options": [
+        "Token file",
+        "$primary, $spacing-sm kabi o'zgaruvchilar va maps bilan markazlashtirilgan sozlamalar",
+        "Brand file",
+        "Config file"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое управление токенами для системы проектирования в SCSS?",
+      "question_en": "What is token management for design system in SCSS?",
+      "options_ru": [
+        "Файл токена",
+        "Централизованные настройки с такими переменными, как $primary, $spacing-cm и карты.",
+        "Фирменный файл",
+        "Config file"
+      ],
+      "options_en": [
+        "Token file",
+        "Centralized settings with variables like $primary, $spacing-cm and maps",
+        "Brand file",
+        "Config file"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "SCSS da @use with() configuration nima?",
+      "options": [
+        "Config yaratish",
+        "@use 'module' with ($var: override) — modulning !default o'zgaruvchilarini qayta belgilash",
+        "Module config",
+        "Setup config"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое конфигурация @use with() в SCSS?",
+      "question_en": "What is @use with() configuration in SCSS?",
+      "options_ru": [
+        "Создать конфигурацию",
+        "@use 'module' with ($var: override) — переопределить переменные модуля !default.",
+        "Конфигурация модуля",
+        "Настройка конфигурации"
+      ],
+      "options_en": [
+        "Create a config",
+        "@use 'module' with ($var: override) — override the module's !default variables",
+        "Module config",
+        "Setup config"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "SCSS da meta.load-css() nima uchun?",
+      "options": [
+        "CSS yuklash",
+        "Mixin ichidan CSS faylni dinamik yuklash — runtime theming",
+        "Dynamic import",
+        "Lazy CSS"
+      ],
+      "answer": 1,
+      "question_ru": "Почему мета.load-css() в SCSS?",
+      "question_en": "Why meta.load-css() in SCSS?",
+      "options_ru": [
+        "Загрузка CSS",
+        "Динамическая загрузка CSS-файла из Mixin — темирование во время выполнения",
+        "Динамический импорт",
+        "Ленивый CSS"
+      ],
+      "options_en": [
+        "Loading CSS",
+        "Mixin ichidan CSS faylni dinamik yuklash — runtime theming",
+        "Dynamic import",
+        "Lazy CSS"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "SCSS da @use bilan namespace collision qanday oldini olinadi?",
+      "options": [
+        "Iloji yo'q",
+        "@use 'file' as alias — unique alias bilan kirish: alias.$variable",
+        "Global namespace",
+        "Import alias"
+      ],
+      "answer": 1,
+      "question_ru": "Как предотвратить столкновение пространства имен с @use в SCSS?",
+      "question_en": "How to prevent namespace collision with @use in SCSS?",
+      "options_ru": [
+        "Iloji yo'q",
+        "@use 'file' как псевдоним — Доступ с уникальным псевдонимом: alias.$variable",
+        "Глобальное пространство имен",
+        "Импортировать псевдоним"
+      ],
+      "options_en": [
+        "There is no way",
+        "@use 'file' as alias — Access with unique alias: alias.$variable",
+        "Global namespace",
+        "Import alias"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "SCSS da sourcemap nima uchun?",
+      "options": [
+        "Xarita",
+        "Kompilyatsiyalangan CSS ni original SCSS fayliga karta — debugging uchun",
+        "CSS xarita",
+        "Development tool"
+      ],
+      "answer": 1,
+      "question_ru": "Почему исходная карта в SCSS?",
+      "question_en": "Why sourcemap in SCSS?",
+      "options_ru": [
+        "Карта",
+        "Сопоставьте скомпилированный CSS с исходным файлом SCSS — для отладки.",
+        "CSS-карта",
+        "Инструмент разработки"
+      ],
+      "options_en": [
+        "Xarita",
+        "Map the compiled CSS to the original SCSS file — for debugging",
+        "CSS map",
+        "Development tool"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "SCSS da advanced mixin pattern: wrapper mixin nima?",
+      "options": [
+        "Mixin wrapping",
+        "@content bilan media query, theme, state wrappers — kod strukturasi uchun",
+        "HOC mixin",
+        "Layout wrapper"
+      ],
+      "answer": 1,
+      "question_ru": "Расширенный шаблон примеси в SCSS: что такое примесь-оболочка?",
+      "question_en": "Advanced mixin pattern in SCSS: What is a wrapper mixin?",
+      "options_ru": [
+        "Обертывание миксинов",
+        "Медиа-запрос, тема, оболочки состояния с @content — для структуры кода",
+        "HOC миксин",
+        "Обертка макета"
+      ],
+      "options_en": [
+        "Mixin wrapping",
+        "@content bilan media query, theme, state wrappers — kod strukturasi uchun",
+        "HOC mixin",
+        "Layout wrapper"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "SCSS da deep map nested access qanday?",
+      "options": [
+        "map.get chain",
+        "map.get(map.get($map, key1), key2) — nested kalit olish yoki custom function",
+        "Direct access",
+        "Nested selector"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое вложенный доступ к глубоким картам в SCSS?",
+      "question_en": "What is deep map nested access in SCSS?",
+      "options_ru": [
+        "цепочка map.get",
+        "map.get(map.get($map, key1), key2) — получить вложенный ключ или пользовательскую функцию",
+        "Прямой доступ",
+        "Вложенный селектор"
+      ],
+      "options_en": [
+        "map.get chain",
+        "map.get(map.get($map, key1), key2) — get nested key or custom function",
+        "Direct access",
+        "Nested selector"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "SCSS da recursive map merge qanday?",
+      "options": [
+        "map.merge()",
+        "Custom funksiya bilan deep merge — standart map.merge faqat top-level birlashtiradi",
+        "Auto merge",
+        "Deep merge"
+      ],
+      "answer": 1,
+      "question_ru": "Как происходит рекурсивное слияние карт в SCSS?",
+      "question_en": "How is recursive map merge in SCSS?",
+      "options_ru": [
+        "карта.слияние()",
+        "Глубокое слияние с пользовательской функцией — по умолчанию Map.merge объединяет только верхний уровень.",
+        "Автоматическое слияние",
+        "Глубокое слияние"
+      ],
+      "options_en": [
+        "map.merge()",
+        "Deep merge with custom function — default map.merge merges top-level only",
+        "Auto merge",
+        "Deep merge"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "SCSS da compile performance optimallashtirish?",
+      "options": [
+        "Kodni qisqartirish",
+        "@use bilan modular import, partial files, mixin o'rniga placeholder — CSS chiqish hajmi",
+        "Cache",
+        "Parallel compile"
+      ],
+      "answer": 1,
+      "question_ru": "Оптимизация производительности компиляции в SCSS?",
+      "question_en": "Optimizing compile performance in SCSS?",
+      "options_ru": [
+        "Минимизация кода",
+        "@use модульный импорт, частичные файлы, заполнитель вместо миксина — объем вывода CSS",
+        "Кэш",
+        "Параллельная компиляция"
+      ],
+      "options_en": [
+        "Code minification",
+        "@use modular import, partial files, placeholder instead of mixin — CSS output volume",
+        "Cache",
+        "Parallel compilation"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "SCSS da color contrast checking qanday?",
+      "options": [
+        "CSS filter",
+        "color.adjust bilan lightness/darkness hisoblash, a11y uchun contrast ratio kontroli",
+        "Contrast plugin",
+        "Auto check"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое проверка цветового контраста в SCSS?",
+      "question_en": "What is color contrast checking in SCSS?",
+      "options_ru": [
+        "CSS-фильтр",
+        "Расчет светлоты/темноты с помощью color.adjust, регулировка контрастности для a11y",
+        "Плагин контраста",
+        "Автоматическая проверка"
+      ],
+      "options_en": [
+        "CSS filter",
+        "Lightness/darkness calculation with color.adjust, contrast ratio control for a11y",
+        "Contrast plugin",
+        "Auto check"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "SCSS da CSS Custom Properties bilan integratsiya?",
+      "options": [
+        "Almashtirish",
+        "$sass-var ni CSS --custom-property ga o'tkazish — dynamic theming uchun ikkalasini birga ishlatish",
+        "CSS only",
+        "SCSS only"
+      ],
+      "answer": 1,
+      "question_ru": "Интеграция с пользовательскими свойствами CSS в SCSS?",
+      "question_en": "Integration with CSS Custom Properties in SCSS?",
+      "options_ru": [
+        "Обмен",
+        "Преобразуйте $sass-var в css --custom-property — используйте оба вместе для динамического оформления тем.",
+        "только CSS",
+        "только SCSS"
+      ],
+      "options_en": [
+        "Exchange",
+        "Convert $sass-var to css --custom-property — use both together for dynamic theming",
+        "CSS only",
+        "SCSS only"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "SCSS da @function qanday yaratiladi va mixin dan farqi?",
+      "options": [
+        "function keyword",
+        "@function — qiymat qaytaradi; @mixin — CSS bloki chiqaradi; @function hisoblash uchun",
+        "Farq yo'q",
+        "@func keyword"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать @function в SCSS и отличить ее от миксина?",
+      "question_en": "How to create @function in SCSS and difference from mixin?",
+      "options_ru": [
+        "Ключевое слово функции",
+        "@function — возвращает значение; @mixin — генерирует блок CSS; @функция для подсчета",
+        "Нет никакой разницы",
+        "Ключевое слово @func"
+      ],
+      "options_en": [
+        "function keyword",
+        "@function — returns a value; @mixin — emits a CSS block; @function to count",
+        "There is no difference",
+        "@func keyword"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "SCSS da string interpolation bilan selektor generatsiya?",
+      "options": [
+        "String concat",
+        "#{$variable} bilan: .icon-#{$name} — dinamik klass nomlari yaratish",
+        "Template string",
+        "Selector string"
+      ],
+      "answer": 1,
+      "question_ru": "Генерация селектора с интерполяцией строк в SCSS?",
+      "question_en": "Selector generation with string interpolation in SCSS?",
+      "options_ru": [
+        "Конкат строк",
+        "С #{$variable}: .icon-#{$name} — создание динамических имен классов.",
+        "Строка шаблона",
+        "Строка выбора"
+      ],
+      "options_en": [
+        "String concat",
+        "With #{$variable}: .icon-#{$name} — create dynamic class names",
+        "Template string",
+        "Selector string"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "SCSS da grid system custom qurilishi qanday?",
+      "options": [
+        "Bootstrap grid",
+        "@for loop + mixin bilan: ustunlar, gutters, breakpoints — custom grid framework",
+        "CSS grid",
+        "Flexbox grid"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать собственную сетку в SCSS?",
+      "question_en": "How to build custom grid system in SCSS?",
+      "options_ru": [
+        "Bootstrap grid",
+        "Цикл @for + с миксином: столбцы, поля, точки останова — настраиваемая структура сетки",
+        "CSS-сетка",
+        "Сетка флексбокса"
+      ],
+      "options_en": [
+        "Bootstrap grid",
+        "@for loop + with mixin: columns, gutters, breakpoints — custom grid framework",
+        "CSS grid",
+        "Flexbox grid"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "SCSS da unit testing qanday amalga oshiriladi?",
+      "options": [
+        "Iloji yo'q",
+        "sass-true kutubxonasi bilan: @include assert, @include expect, @include contains",
+        "Jest bilan",
+        "Manual test"
+      ],
+      "answer": 1,
+      "question_ru": "Как провести модульное тестирование в SCSS?",
+      "question_en": "How to do unit testing in SCSS?",
+      "options_ru": [
+        "Iloji yo'q",
+        "С библиотекой sass-true: @include утверждения, @include ожидаем, @include содержит",
+        "С жестом",
+        "Ручной тест"
+      ],
+      "options_en": [
+        "There is no way",
+        "With the sass-true library: @include assert, @include expect, @include contains",
+        "With a gesture",
+        "Manual test"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "SCSS da multi-theme implementation qanday?",
+      "options": [
+        "Bitta tema",
+        "CSS Custom Properties + SCSS maps: har bir tema uchun o'zgaruvchilar map + @each loop bilan apply",
+        "Multiple CSS files",
+        "JS theming"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое многотемная реализация в SCSS?",
+      "question_en": "What is multi-theme implementation in SCSS?",
+      "options_ru": [
+        "Одна тема",
+        "Пользовательские свойства CSS + карты SCSS: карта переменных для каждой темы + применение с помощью цикла @each",
+        "Несколько CSS-файлов",
+        "Скажи JS"
+      ],
+      "options_en": [
+        "One theme",
+        "CSS Custom Properties + SCSS maps: per-theme variables map + apply with @each loop",
+        "Multiple CSS files",
+        "Say JS"
+      ]
+    }
   ]
 }

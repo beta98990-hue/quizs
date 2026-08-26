@@ -2,55 +2,1305 @@
   "technology": "Kotlin",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Kotlin nima?","options":["JavaScript turi","JVM uchun zamonaviy statik tipli dasturlash tili — Android rasmiy tili","CSS preprocessor","Database tili"],"answer":1},
-    {"id":2,"level":"easy","question":"Kotlin da o'zgaruvchi qanday e'lon qilinadi?","options":["int x = 5","var x = 5 yoki val x = 5","let x = 5","x := 5"],"answer":1},
-    {"id":3,"level":"easy","question":"Kotlin da val va var farqi nima?","options":["Hech qanday farq yo'q","val — o'zgarmas (immutable), var — o'zgaruvchan (mutable)","var o'zgarmas","val o'zgaruvchan"],"answer":1},
-    {"id":4,"level":"easy","question":"Kotlin da funksiya qanday e'lon qilinadi?","options":["function greet() {}","def greet():","fun greet() {}","func greet() {}"],"answer":2},
-    {"id":5,"level":"easy","question":"Kotlin da null safety nima?","options":["Null tekshirish","Kompilyatsiya vaqtida nullable va non-null tiplarni ajratish — NullPointerException oldini olish","Null pointer","Optional type"],"answer":1},
-    {"id":6,"level":"easy","question":"Kotlin da String template qanday?","options":["String.format()","\"Hello $name!\" yoki \"${user.name}\"","String + concat","format(name)"],"answer":1},
-    {"id":7,"level":"easy","question":"Kotlin da data class nima?","options":["Ma'lumot klassi","equals, hashCode, toString, copy avtomatik — qiymat ob'ektlari uchun","Record class","Struct class"],"answer":1},
-    {"id":8,"level":"easy","question":"Kotlin da when nima?","options":["When event","Kuchli switch expression — har tip uchun, qiymat qaytaradi","Condition","Match"],"answer":1},
-    {"id":9,"level":"easy","question":"Kotlin da?.  operatori nima?","options":["Optional field","Safe call — null bo'lsa null qaytaradi, istisno bermaydi","Null check","Ternary"],"answer":1},
-    {"id":10,"level":"easy","question":"Kotlin da !! operatori nima?","options":["Double negation","Not-null assertion — null bo'lsa KotlinNullPointerException chiqaradi","Force unwrap","Assert non-null"],"answer":1},
-    {"id":11,"level":"easy","question":"Kotlin da List va MutableList farqi?","options":["Hech qanday farq yo'q","List — read-only, MutableList — o'zgartirish mumkin","MutableList read-only","List mutable"],"answer":1},
-    {"id":12,"level":"easy","question":"Kotlin da lambda sintaksisi qanday?","options":["(x) => x * 2","{ x -> x * 2 } yoki { it * 2 }","x -> x * 2","lambda x: x * 2"],"answer":1},
-    {"id":13,"level":"easy","question":"Kotlin da object keyword nima uchun?","options":["Ob'ekt yaratish","Singleton, companion object yoki anonymous object yaratish","Instance","Struct"],"answer":1},
-    {"id":14,"level":"easy","question":"Kotlin da extension function nima?","options":["Funksiya kengaytirish","Mavjud klassga yangi metod qo'shish — klass kodni o'zgartirmasdan","Mixin","Trait"],"answer":1},
-    {"id":15,"level":"easy","question":"Kotlin da Elvis operator ?: nima?","options":["Rock star operator","Null bo'lsa standart qiymat qaytarish — name ?: \"Unknown\"","Ternary operator","Null coalescing"],"answer":1},
-    {"id":16,"level":"medium","question":"Kotlin da sealed class nima?","options":["Yopiq klass","Cheklangan klass ierarxiyasi — when da exhaustive check qilish imkoni","Final class","Abstract class"],"answer":1},
-    {"id":17,"level":"medium","question":"Kotlin da coroutine nima?","options":["Ko'p thread","Yengil asinxron operatsiya — suspend funksiyalar, kotlinx.coroutines","Async function","Thread pool"],"answer":1},
-    {"id":18,"level":"medium","question":"Kotlin da suspend funksiya nima?","options":["To'xtatilgan funksiya","Coroutine ichida chaqiriladigan, to'xtatib-davom ettirilishi mumkin bo'lgan funksiya","Async function","Deferred function"],"answer":1},
-    {"id":19,"level":"medium","question":"Kotlin da Flow nima?","options":["Network flow","Asinxron ma'lumotlar oqimi — cold stream, collect bilan subscribe","RxJava alternativa","Data stream"],"answer":1},
-    {"id":20,"level":"medium","question":"Kotlin da inline function nima uchun?","options":["Inline kod","Lambda overhead ni kamaytirish — funksiya tanasi call site ga kopyalanadi","Optimization","Fast function"],"answer":1},
-    {"id":21,"level":"medium","question":"Kotlin da reified type parameter nima?","options":["Haqiqiy tip","Inline funksiyada runtime da tip ma'lumotiga kirish — is T, as T","Generic type","Type token"],"answer":1},
-    {"id":22,"level":"medium","question":"Kotlin da scope functions (let, run, with, apply, also) nima?","options":["Scope yaratish","Ob'ekt bilan ishlash uchun qisqartiruvchi funksiyalar — kontekst va qaytarish tipi farq qiladi","Block function","Lambda scope"],"answer":1},
-    {"id":23,"level":"medium","question":"Kotlin da operator overloading qanday?","options":["Operator ta'riflash","operator fun plus(other: MyClass) — +, -, *, /, [] kabi operatorlarni qayta ta'riflash","Custom operator","Math override"],"answer":1},
-    {"id":24,"level":"medium","question":"Kotlin da delegation nima?","options":["Delegat","by kalit so'zi bilan — interface delegation, property delegation (lazy, observable)","Mixin","Proxy"],"answer":1},
-    {"id":25,"level":"medium","question":"Kotlin da lazy delegate nima?","options":["Sekin yuklash","val x by lazy { } — birinchi kirish paytida hisoblanadi, keyin kesh qilinadi","Deferred init","Late init"],"answer":1},
-    {"id":26,"level":"medium","question":"Kotlin da companion object nima?","options":["Hamroh ob'ekt","Java static ga o'xshash — klass darajasida funksiya va xususiyatlar uchun","Static alternative","Object method"],"answer":1},
-    {"id":27,"level":"medium","question":"Kotlin da higher-order function nima?","options":["Yuqori funksiya","Funksiyani argument sifatida qabul qiladigan yoki qaytaradigan funksiya","Recursive function","Generic function"],"answer":1},
-    {"id":28,"level":"medium","question":"Kotlin da destructuring declaration nima?","options":["Destruksiya","val (x, y) = pair — komponent funksiyalari orqali qiymatlarni ajratish","Unpack","Spread"],"answer":1},
-    {"id":29,"level":"medium","question":"Kotlin da StateFlow va SharedFlow farqi nima?","options":["Hech qanday farq yo'q","StateFlow — har doim qiymatga ega hot stream; SharedFlow — yanroq hot stream, replay configurable","SharedFlow state","StateFlow shared"],"answer":1},
-    {"id":30,"level":"medium","question":"Kotlin da Dispatchers nima uchun?","options":["Event dispatch","Coroutine qaysi thread da ishlashini belgilash — Main, IO, Default, Unconfined","Thread select","Async dispatch"],"answer":1},
-    {"id":31,"level":"medium","question":"Kotlin da typealias nima uchun?","options":["Tip nomi","Mavjud tipga alternativ nom berish — typealias Name = String","Type alias","New type"],"answer":1},
-    {"id":32,"level":"medium","question":"Kotlin da @JvmStatic nima uchun?","options":["JVM static","Java dan companion object metodini static kabi chaqirish imkonini beradi","Java compat","Static annotation"],"answer":1},
-    {"id":33,"level":"medium","question":"Kotlin da Nothing tipi nima?","options":["Bo'sh tip","Hech qachon qaytarmaydigan funksiya qaytarish tipi — throw, infinite loop","Null type","Void type"],"answer":1},
-    {"id":34,"level":"medium","question":"Kotlin da Unit tipi nima?","options":["O'lchov birligi","Java void ning Kotlin ekvivalenti — qaytarish qiymati yo'q funksiyalar uchun","Void type","Empty return"],"answer":1},
-    {"id":35,"level":"medium","question":"Kotlin da lateinit nima uchun?","options":["Kech init","Non-null var ni keyinroq initsializatsiya qilish — null safety dan vaqtincha qochish","Lazy init","Deferred property"],"answer":1},
-    {"id":36,"level":"hard","question":"Kotlin da context receivers nima (Kotlin 1.6+)?","options":["Kontekst qabul qilish","Funksiya uchun qo'shimcha receiver kontekst — multiple receiver funksiyalar","Extension receiver","Implicit receiver"],"answer":1},
-    {"id":37,"level":"hard","question":"Kotlin da value class nima (Kotlin 1.5+)?","options":["Qiymat klassi","Wrapper — runtime da unboxed, overhead yo'q — @JvmInline value class","Inline class","Primitive class"],"answer":1},
-    {"id":38,"level":"hard","question":"Kotlin da structured concurrency nima?","options":["Tuzilgan concurrency","Coroutine scope ierarxiyasi — bola coroutinalar ota scope bilan bog'liq, barchasini bekor qilish","Thread structure","Job structure"],"answer":1},
-    {"id":39,"level":"hard","question":"Kotlin da Channel nima?","options":["Network channel","Coroutinlar o'rtasida ma'lumot almashish — hot stream, send/receive","Message queue","Event channel"],"answer":1},
-    {"id":40,"level":"hard","question":"Kotlin da Mutex (kotlinx.coroutines) nima?","options":["Mutatsiya","Coroutine-friendly mutual exclusion — withLock{ } bilan, thread blocking yo'q","Thread mutex","Suspend mutex"],"answer":1},
-    {"id":41,"level":"hard","question":"Kotlin da CPS (Continuation Passing Style) coroutine da nima?","options":["CPS transform","Suspend funksiyalar kompilyatsiyada Continuation parametrli callback larga aylanadi","Async transform","Callback style"],"answer":1},
-    {"id":42,"level":"hard","question":"Kotlin da @DslMarker annotation nima uchun?","options":["DSL marker","DSL da implicit receiver larini cheklash — xatoliklarning oldini olish","Annotation DSL","Scope marker"],"answer":1},
-    {"id":43,"level":"hard","question":"Kotlin da Multiplatform (KMP) nima?","options":["Ko'p platforma","Bitta Kotlin kodi bilan JVM, JS, Native uchun kod ulashish","Cross platform","Universal Kotlin"],"answer":1},
-    {"id":44,"level":"hard","question":"Kotlin da @OptIn annotation nima uchun?","options":["Optimizatsiya","Eksperimental yoki opt-in talab qiluvchi API ni ishlatishga ruxsat berish","API access","Experimental use"],"answer":1},
-    {"id":45,"level":"hard","question":"Kotlin da Arrow kutubxonasi nima uchun?","options":["Arrow funksiyasi","Funksional dasturlash — Either, Option, IO, typed errors, monad comprehension","FP library","Monad library"],"answer":1},
-    {"id":46,"level":"hard","question":"Kotlin da generateSequence nima?","options":["Ketma-ketlik generatsiya","Lazy sequence yaratish — generateSequence(0) { it + 1 } cheksiz ketma-ketlik","Infinite list","Lazy range"],"answer":1},
-    {"id":47,"level":"hard","question":"Kotlin da crossinline nima?","options":["Ko'ndalang inline","Lambda inline funksiyadan non-local return qilmasligi uchun — crossinline lambda","Lambda restrict","Return restrict"],"answer":1},
-    {"id":48,"level":"hard","question":"Kotlin da noinline nima?","options":["Inline emas","Inline funksiyaning ba'zi lambda parametrlarini inline qilmaslik","No inline","Skip inline"],"answer":1},
-    {"id":49,"level":"hard","question":"Kotlin da Deferred nima?","options":["Kechiktirilgan","async{ } natijasi — Job ning qiymat qaytaruvchi versiyasi, await() bilan olish","Async result","Future"],"answer":1},
-    {"id":50,"level":"hard","question":"Kotlin da SupervisorScope nima?","options":["Supervisor pattern","Bola coroutine xatosi boshqalarini bekor qilmaydi — mustaqil scope","Error isolation","Fault tolerance"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Kotlin nima?",
+      "options": [
+        "JavaScript turi",
+        "JVM uchun zamonaviy statik tipli dasturlash tili — Android rasmiy tili",
+        "CSS preprocessor",
+        "Database tili"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Котлин?",
+      "question_en": "Kotlin nima?",
+      "options_ru": [
+        "Тип JavaScript",
+        "Современный статически типизированный язык программирования для JVM является официальным языком Android.",
+        "CSS-препроцессор",
+        "Язык базы данных"
+      ],
+      "options_en": [
+        "JavaScript turi",
+        "A modern statically typed programming language for the JVM is the official language of Android",
+        "CSS preprocessor",
+        "Database tili"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Kotlin da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "int x = 5",
+        "var x = 5 yoki val x = 5",
+        "let x = 5",
+        "x := 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в Котлине?",
+      "question_en": "How to declare a variable in Kotlin?",
+      "options_ru": [
+        "интервал х = 5",
+        "вар x = 5 или val x = 5",
+        "пусть х = 5",
+        "х := 5"
+      ],
+      "options_en": [
+        "int x = 5",
+        "var x = 5 or val x = 5",
+        "let x = 5",
+        "x := 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Kotlin da val va var farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "val — o'zgarmas (immutable), var — o'zgaruvchan (mutable)",
+        "var o'zgarmas",
+        "val o'zgaruvchan"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между val и var в Котлине?",
+      "question_en": "What is the difference between val and var in Kotlin?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "val — неизменяемый, var — изменяемый",
+        "var неизменяема",
+        "вал является переменным"
+      ],
+      "options_en": [
+        "There is no difference",
+        "val — o'zgarmas (immutable), var — o'zgaruvchan (mutable)",
+        "var is immutable",
+        "the shaft is variable"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Kotlin da funksiya qanday e'lon qilinadi?",
+      "options": [
+        "function greet() {}",
+        "def greet():",
+        "fun greet() {}",
+        "func greet() {}"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить функцию в Котлине?",
+      "question_en": "How to declare a function in Kotlin?",
+      "options_ru": [
+        "функция приветствия() {}",
+        "защита приветствия():",
+        "веселое приветствие() {}",
+        "функция приветствия() {}"
+      ],
+      "options_en": [
+        "function greet() {}",
+        "def greet():",
+        "fun greet() {}",
+        "func greet() {}"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Kotlin da null safety nima?",
+      "options": [
+        "Null tekshirish",
+        "Kompilyatsiya vaqtida nullable va non-null tiplarni ajratish — NullPointerException oldini olish",
+        "Null pointer",
+        "Optional type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое нулевая безопасность в Котлине?",
+      "question_en": "What is null safety in Kotlin?",
+      "options_ru": [
+        "Нулевая проверка",
+        "Разделяйте типы, допускающие и ненулевые значения, во время компиляции — избегайте исключения NullPointerException.",
+        "Нулевой указатель",
+        "Дополнительный тип"
+      ],
+      "options_en": [
+        "Null check",
+        "Separate nullable and non-null types at compile time — avoid NullPointerException",
+        "Null pointer",
+        "Optional type"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Kotlin da String template qanday?",
+      "options": [
+        "String.format()",
+        "\"Hello $name!\" yoki \"${user.name}\"",
+        "String + concat",
+        "format(name)"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон String в Котлине?",
+      "question_en": "What is String template in Kotlin?",
+      "options_ru": [
+        "Строка.формат()",
+        "«Привет, $имя!» или \"${user.name}\"",
+        "Строка + конкат",
+        "формат (имя)"
+      ],
+      "options_en": [
+        "String.format()",
+        "\"Hello $name!\" or \"${user.name}\"",
+        "String + concat",
+        "format(name)"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Kotlin da data class nima?",
+      "options": [
+        "Ma'lumot klassi",
+        "equals, hashCode, toString, copy avtomatik — qiymat ob'ektlari uchun",
+        "Record class",
+        "Struct class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое класс данных в Котлине?",
+      "question_en": "What is data class in Kotlin?",
+      "options_ru": [
+        "Класс данных",
+        "равно, hashCode, toString, автоматическое копирование — для объектов значений",
+        "Запись класса",
+        "Структурный класс"
+      ],
+      "options_en": [
+        "Data class",
+        "equals, hashCode, toString, copy automatic — for value objects",
+        "Record class",
+        "Struct class"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Kotlin da when nima?",
+      "options": [
+        "When event",
+        "Kuchli switch expression — har tip uchun, qiymat qaytaradi",
+        "Condition",
+        "Match"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое когда в Котлине?",
+      "question_en": "What is when in Kotlin?",
+      "options_ru": [
+        "Когда событие",
+        "Сильное выражение переключения — для каждого типа возвращает значение.",
+        "Состояние",
+        "Матч"
+      ],
+      "options_en": [
+        "When event",
+        "A strong switch expression — for each type, returns a value",
+        "Condition",
+        "Match"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Kotlin da?.  operatori nima?",
+      "options": [
+        "Optional field",
+        "Safe call — null bo'lsa null qaytaradi, istisno bermaydi",
+        "Null check",
+        "Ternary"
+      ],
+      "answer": 1,
+      "question_ru": "В Котлине?  что такое оператор?",
+      "question_en": "In Kotlin?  what is an operator?",
+      "options_ru": [
+        "Необязательное поле",
+        "Безопасный вызов — возвращает значение NULL, если оно равно нулю, не генерирует исключение.",
+        "Нулевая проверка",
+        "тройной"
+      ],
+      "options_en": [
+        "Optional field",
+        "Safe call — returns null if null, does not throw an exception",
+        "Null check",
+        "Ternary"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Kotlin da !! operatori nima?",
+      "options": [
+        "Double negation",
+        "Not-null assertion — null bo'lsa KotlinNullPointerException chiqaradi",
+        "Force unwrap",
+        "Assert non-null"
+      ],
+      "answer": 1,
+      "question_ru": "В Котлине!! что такое оператор?",
+      "question_en": "In Kotlin!! what is an operator?",
+      "options_ru": [
+        "Двойное отрицание",
+        "Ненулевое утверждение — выдает KotlinNullPointerException, если значение равно нулю.",
+        "Принудительное развертывание",
+        "Утверждение не равно нулю"
+      ],
+      "options_en": [
+        "Double negation",
+        "Not-null assertion — throws KotlinNullPointerException if null",
+        "Force unwrap",
+        "Assert is non-null"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Kotlin da List va MutableList farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "List — read-only, MutableList — o'zgartirish mumkin",
+        "MutableList read-only",
+        "List mutable"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между List и MutableList в Котлине?",
+      "question_en": "Difference between List and MutableList in Kotlin?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Список — только для чтения, MutableList — можно изменить",
+        "MutableList только для чтения",
+        "Список изменчив"
+      ],
+      "options_en": [
+        "There is no difference",
+        "List — read-only, MutableList — can be changed",
+        "MutableList read-only",
+        "The list is mutable"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Kotlin da lambda sintaksisi qanday?",
+      "options": [
+        "(x) => x * 2",
+        "{ x -> x * 2 } yoki { it * 2 }",
+        "x -> x * 2",
+        "lambda x: x * 2"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое лямбда-синтаксис в Котлине?",
+      "question_en": "What is lambda syntax in Kotlin?",
+      "options_ru": [
+        "(х) => х * 2",
+        "{ x -> x * 2 } или { it * 2 }",
+        "х -> х * 2",
+        "лямбда х: х * 2"
+      ],
+      "options_en": [
+        "(x) => x * 2",
+        "{ x -> x * 2 } yoki { it * 2 }",
+        "x -> x * 2",
+        "lambda x: x * 2"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Kotlin da object keyword nima uchun?",
+      "options": [
+        "Ob'ekt yaratish",
+        "Singleton, companion object yoki anonymous object yaratish",
+        "Instance",
+        "Struct"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем ключевое слово объекта в Котлине?",
+      "question_en": "Kotlin da object keyword nima uchun?",
+      "options_ru": [
+        "Создать объект",
+        "Создайте синглтон, сопутствующий объект или анонимный объект.",
+        "Экземпляр",
+        "Структура"
+      ],
+      "options_en": [
+        "Create an object",
+        "Create a singleton, companion object, or anonymous object",
+        "Instance",
+        "Struct"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Kotlin da extension function nima?",
+      "options": [
+        "Funksiya kengaytirish",
+        "Mavjud klassga yangi metod qo'shish — klass kodni o'zgartirmasdan",
+        "Mixin",
+        "Trait"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция расширения в Котлине?",
+      "question_en": "What is an extension function in Kotlin?",
+      "options_ru": [
+        "Расширение функции",
+        "Добавьте новый метод в существующий класс, не меняя код класса.",
+        "Миксин",
+        "Черта"
+      ],
+      "options_en": [
+        "Function extension",
+        "Add a new method to an existing class without changing the class code",
+        "Mixin",
+        "Trait"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Kotlin da Elvis operator ?: nima?",
+      "options": [
+        "Rock star operator",
+        "Null bo'lsa standart qiymat qaytarish — name ?: \"Unknown\"",
+        "Ternary operator",
+        "Null coalescing"
+      ],
+      "answer": 1,
+      "question_ru": "Оператор Элвиса в Котлине?: что?",
+      "question_en": "Elvis operator in Kotlin ?: what?",
+      "options_ru": [
+        "Рок-звезда, оператор",
+        "Возвращать значение по умолчанию, если значение равно нулю — имя?: «Неизвестно»",
+        "Тернарный оператор",
+        "Нулевое объединение"
+      ],
+      "options_en": [
+        "Rock star operator",
+        "Return default value if null — name ?: \"Unknown\"",
+        "Ternary operator",
+        "Null coalescing"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Kotlin da sealed class nima?",
+      "options": [
+        "Yopiq klass",
+        "Cheklangan klass ierarxiyasi — when da exhaustive check qilish imkoni",
+        "Final class",
+        "Abstract class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое запечатанный класс в Котлине?",
+      "question_en": "What is a sealed class in Kotlin?",
+      "options_ru": [
+        "Закрытый класс",
+        "Ограниченная иерархия классов — возможность выполнять полную проверку, когда",
+        "Заключительный урок",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "Yopiq klass",
+        "Cheklangan klass ierarxiyasi — when da exhaustive check qilish imkoni",
+        "Final class",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Kotlin da coroutine nima?",
+      "options": [
+        "Ko'p thread",
+        "Yengil asinxron operatsiya — suspend funksiyalar, kotlinx.coroutines",
+        "Async function",
+        "Thread pool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопрограмма в Котлине?",
+      "question_en": "What is a coroutine in Kotlin?",
+      "options_ru": [
+        "Много тем",
+        "Легкая асинхронная операция — функции приостановки, kotlinx.coroutines",
+        "Асинхронная функция",
+        "Пул потоков"
+      ],
+      "options_en": [
+        "Many threads",
+        "Lightweight asynchronous operation — suspend functions, kotlinx.coroutines",
+        "Async function",
+        "Thread pool"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Kotlin da suspend funksiya nima?",
+      "options": [
+        "To'xtatilgan funksiya",
+        "Coroutine ichida chaqiriladigan, to'xtatib-davom ettirilishi mumkin bo'lgan funksiya",
+        "Async function",
+        "Deferred function"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция приостановки в Котлине?",
+      "question_en": "What is the suspend function in Kotlin?",
+      "options_ru": [
+        "Прекращенная функция",
+        "Приостанавливаемая функция, вызываемая внутри сопрограммы",
+        "Асинхронная функция",
+        "Отложенная функция"
+      ],
+      "options_en": [
+        "Discontinued feature",
+        "A suspendable function called within a coroutine",
+        "Async function",
+        "Deferred function"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Kotlin da Flow nima?",
+      "options": [
+        "Network flow",
+        "Asinxron ma'lumotlar oqimi — cold stream, collect bilan subscribe",
+        "RxJava alternativa",
+        "Data stream"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое поток в Котлине?",
+      "question_en": "What is Flow in Kotlin?",
+      "options_ru": [
+        "Сетевой поток",
+        "Асинхронный поток данных — холодный поток, подпишитесь с помощью Collect",
+        "Альтернатива RxJava",
+        "Поток данных"
+      ],
+      "options_en": [
+        "Network flow",
+        "Asynchronous data flow — cold stream, subscribe with collect",
+        "RxJava alternative",
+        "Data stream"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Kotlin da inline function nima uchun?",
+      "options": [
+        "Inline kod",
+        "Lambda overhead ni kamaytirish — funksiya tanasi call site ga kopyalanadi",
+        "Optimization",
+        "Fast function"
+      ],
+      "answer": 1,
+      "question_ru": "Почему встроенная функция в Котлине?",
+      "question_en": "Why inline function in Kotlin?",
+      "options_ru": [
+        "Встроенный код",
+        "Уменьшите накладные расходы на лямбду — тело функции копируется на сайт вызова.",
+        "Оптимизация",
+        "Быстрая функция"
+      ],
+      "options_en": [
+        "Inline code",
+        "Lambda overhead ni kamaytirish — funksiya tanasi call site ga kopyalanadi",
+        "Optimization",
+        "Fast function"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Kotlin da reified type parameter nima?",
+      "options": [
+        "Haqiqiy tip",
+        "Inline funksiyada runtime da tip ma'lumotiga kirish — is T, as T",
+        "Generic type",
+        "Type token"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое параметр типа reified в Котлине?",
+      "question_en": "What is a reified type parameter in Kotlin?",
+      "options_ru": [
+        "Настоящий тип",
+        "Доступ к информации о типе во время выполнения во встроенной функции равен T, поскольку T",
+        "Общий тип",
+        "Тип токена"
+      ],
+      "options_en": [
+        "The real type",
+        "Accessing type information at runtime in an inline function is T, as T",
+        "Generic type",
+        "Type token"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Kotlin da scope functions (let, run, with, apply, also) nima?",
+      "options": [
+        "Scope yaratish",
+        "Ob'ekt bilan ishlash uchun qisqartiruvchi funksiyalar — kontekst va qaytarish tipi farq qiladi",
+        "Block function",
+        "Lambda scope"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функции области видимости (let, run, with, apply) в Котлине?",
+      "question_en": "Kotlin da scope functions (let, run, with, apply, also) nima?",
+      "options_ru": [
+        "Создать область",
+        "Функции быстрого доступа для работы с объектом — контекст и тип возвращаемого значения различаются.",
+        "Функция блокировки",
+        "Лямбда-область"
+      ],
+      "options_en": [
+        "Create a scope",
+        "Shortcut functions for working with an object—context and return type are different",
+        "Block function",
+        "Lambda scope"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Kotlin da operator overloading qanday?",
+      "options": [
+        "Operator ta'riflash",
+        "operator fun plus(other: MyClass) — +, -, *, /, [] kabi operatorlarni qayta ta'riflash",
+        "Custom operator",
+        "Math override"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перегрузка операторов в Котлине?",
+      "question_en": "What is operator overloading in Kotlin?",
+      "options_ru": [
+        "Определение оператора",
+        "оператор fun plus(other: MyClass) — переопределить такие операторы, как +, -, *, /, []",
+        "Пользовательский оператор",
+        "Математическое переопределение"
+      ],
+      "options_en": [
+        "Operator definition",
+        "operator fun plus(other: MyClass) — Redefine operators like +, -, *, /, []",
+        "Custom operator",
+        "Math override"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Kotlin da delegation nima?",
+      "options": [
+        "Delegat",
+        "by kalit so'zi bilan — interface delegation, property delegation (lazy, observable)",
+        "Mixin",
+        "Proxy"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое делегирование в Котлине?",
+      "question_en": "Kotlin da delegation nima?",
+      "options_ru": [
+        "Делегат",
+        "по ключевому слову — делегирование интерфейса, делегирование свойств (ленивое, наблюдаемое)",
+        "Миксин",
+        "Прокси"
+      ],
+      "options_en": [
+        "Delegate",
+        "by keyword — interface delegation, property delegation (lazy, observable)",
+        "Mixin",
+        "Proxy"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Kotlin da lazy delegate nima?",
+      "options": [
+        "Sekin yuklash",
+        "val x by lazy { } — birinchi kirish paytida hisoblanadi, keyin kesh qilinadi",
+        "Deferred init",
+        "Late init"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ленивый делегат в Котлине?",
+      "question_en": "What is lazy delegate in Kotlin?",
+      "options_ru": [
+        "Медленная загрузка",
+        "val x by lazy { } — вычисляется при первом доступе, затем кэшируется",
+        "Отложенная инициализация",
+        "Поздняя инициализация"
+      ],
+      "options_en": [
+        "Slow loading",
+        "val x by lazy { } — birinchi kirish paytida hisoblanadi, keyin kesh qilinadi",
+        "Deferred init",
+        "Late init"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Kotlin da companion object nima?",
+      "options": [
+        "Hamroh ob'ekt",
+        "Java static ga o'xshash — klass darajasida funksiya va xususiyatlar uchun",
+        "Static alternative",
+        "Object method"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое объект-компаньон в Котлине?",
+      "question_en": "What is a companion object in Kotlin?",
+      "options_ru": [
+        "Сопутствующий объект",
+        "Аналогично Java static — для функций и свойств на уровне класса.",
+        "Статическая альтернатива",
+        "Метод объекта"
+      ],
+      "options_en": [
+        "Companion object",
+        "Similar to Java static — for functions and properties at the class level",
+        "Static alternative",
+        "Object method"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Kotlin da higher-order function nima?",
+      "options": [
+        "Yuqori funksiya",
+        "Funksiyani argument sifatida qabul qiladigan yoki qaytaradigan funksiya",
+        "Recursive function",
+        "Generic function"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция высшего порядка в Котлине?",
+      "question_en": "What is a higher-order function in Kotlin?",
+      "options_ru": [
+        "Высокая функция",
+        "Функция, которая принимает или возвращает функцию в качестве аргумента.",
+        "Рекурсивная функция",
+        "Общая функция"
+      ],
+      "options_en": [
+        "High function",
+        "A function that accepts or returns a function as an argument",
+        "Recursive function",
+        "Generic function"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Kotlin da destructuring declaration nima?",
+      "options": [
+        "Destruksiya",
+        "val (x, y) = pair — komponent funksiyalari orqali qiymatlarni ajratish",
+        "Unpack",
+        "Spread"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое декларация деструктуризации в Котлине?",
+      "question_en": "Kotlin da destructuring declaration nima?",
+      "options_ru": [
+        "Разрушение",
+        "val(x,y)=pair — разделение значений по функциям-компонентам",
+        "Распаковать",
+        "Распространение"
+      ],
+      "options_en": [
+        "Destruction",
+        "val (x, y) = pair — separation of values ​​by component functions",
+        "Unpack",
+        "Spread"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Kotlin da StateFlow va SharedFlow farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "StateFlow — har doim qiymatga ega hot stream; SharedFlow — yanroq hot stream, replay configurable",
+        "SharedFlow state",
+        "StateFlow shared"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между StateFlow и SharedFlow в Котлине?",
+      "question_en": "What is the difference between StateFlow and SharedFlow in Kotlin?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "StateFlow — это горячий поток, который всегда имеет значение; SharedFlow — более горячий поток, настраиваемый повтор",
+        "Состояние SharedFlow",
+        "StateFlow общий доступ"
+      ],
+      "options_en": [
+        "There is no difference",
+        "StateFlow is a hot stream that always has a value; SharedFlow — more hot stream, replay configurable",
+        "SharedFlow state",
+        "StateFlow shared"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Kotlin da Dispatchers nima uchun?",
+      "options": [
+        "Event dispatch",
+        "Coroutine qaysi thread da ishlashini belgilash — Main, IO, Default, Unconfined",
+        "Thread select",
+        "Async dispatch"
+      ],
+      "answer": 1,
+      "question_ru": "Почему диспетчеры в Котлине?",
+      "question_en": "Why Dispatchers in Kotlin?",
+      "options_ru": [
+        "Отправка событий",
+        "Укажите, в каком потоке работает сопрограмма — Main, IO, Default, Unconfined.",
+        "Выбор темы",
+        "Асинхронная отправка"
+      ],
+      "options_en": [
+        "Event dispatch",
+        "Specify which thread the coroutine works on — Main, IO, Default, Unconfined",
+        "Thread selection",
+        "Async dispatch"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Kotlin da typealias nima uchun?",
+      "options": [
+        "Tip nomi",
+        "Mavjud tipga alternativ nom berish — typealias Name = String",
+        "Type alias",
+        "New type"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем типалиасы в Котлине?",
+      "question_en": "Why typealias in Kotlin?",
+      "options_ru": [
+        "Введите имя",
+        "Дайте альтернативное имя существующему типу — typealias Name = String.",
+        "Введите псевдоним",
+        "Новый тип"
+      ],
+      "options_en": [
+        "Type name",
+        "Give an alternative name to an existing type — typealias Name = String",
+        "Type alias",
+        "New type"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Kotlin da @JvmStatic nima uchun?",
+      "options": [
+        "JVM static",
+        "Java dan companion object metodini static kabi chaqirish imkonini beradi",
+        "Java compat",
+        "Static annotation"
+      ],
+      "answer": 1,
+      "question_ru": "Почему @JvmStatic в Котлине?",
+      "question_en": "Why @JvmStatic in Kotlin?",
+      "options_ru": [
+        "JVM статический",
+        "Позволяет вызывать метод сопутствующего объекта из Java как статический.",
+        "Совместимость с Java",
+        "Статическая аннотация"
+      ],
+      "options_en": [
+        "JVM static",
+        "Java dan companion object metodini static kabi chaqirish imkonini beradi",
+        "Java compat",
+        "Static annotation"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Kotlin da Nothing tipi nima?",
+      "options": [
+        "Bo'sh tip",
+        "Hech qachon qaytarmaydigan funksiya qaytarish tipi — throw, infinite loop",
+        "Null type",
+        "Void type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое тип Nothing в Котлине?",
+      "question_en": "What is the Nothing type in Kotlin?",
+      "options_ru": [
+        "Пустой тип",
+        "Тип возвращаемого значения функции, которая никогда не возвращает результат, — это throw, бесконечный цикл.",
+        "Нулевой тип",
+        "Тип пустоты"
+      ],
+      "options_en": [
+        "Bo'sh tip",
+        "The return type of a function that never returns is throw, infinite loop",
+        "Null type",
+        "Void type"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Kotlin da Unit tipi nima?",
+      "options": [
+        "O'lchov birligi",
+        "Java void ning Kotlin ekvivalenti — qaytarish qiymati yo'q funksiyalar uchun",
+        "Void type",
+        "Empty return"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое тип единицы в Котлине?",
+      "question_en": "What is Unit type in Kotlin?",
+      "options_ru": [
+        "Единица измерения",
+        "Котлинский эквивалент Java void — для функций без возвращаемого значения.",
+        "Тип пустоты",
+        "Пустой возврат"
+      ],
+      "options_en": [
+        "Unit of measure",
+        "The Kotlin equivalent of Java void — for functions with no return value",
+        "Void type",
+        "Empty return"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Kotlin da lateinit nima uchun?",
+      "options": [
+        "Kech init",
+        "Non-null var ni keyinroq initsializatsiya qilish — null safety dan vaqtincha qochish",
+        "Lazy init",
+        "Deferred property"
+      ],
+      "answer": 1,
+      "question_ru": "Почему lateinit в Котлине?",
+      "question_en": "Why is lateinit in Kotlin?",
+      "options_ru": [
+        "Уже поздно",
+        "Инициализация ненулевой переменной позже является временным выходом из нулевой безопасности.",
+        "Ленивая инициализация",
+        "Отложенное имущество"
+      ],
+      "options_en": [
+        "It's late",
+        "Initializing a non-null var later is a temporary escape from null safety",
+        "Lazy init",
+        "Deferred property"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Kotlin da context receivers nima (Kotlin 1.6+)?",
+      "options": [
+        "Kontekst qabul qilish",
+        "Funksiya uchun qo'shimcha receiver kontekst — multiple receiver funksiyalar",
+        "Extension receiver",
+        "Implicit receiver"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое приемники контекста в Котлине (Kotlin 1.6+)?",
+      "question_en": "What are context receivers in Kotlin (Kotlin 1.6+)?",
+      "options_ru": [
+        "Восприятие контекста",
+        "Дополнительный контекст получателя для функции — несколько функций получателя",
+        "Extension receiver",
+        "Неявный получатель"
+      ],
+      "options_en": [
+        "Context perception",
+        "Additional receiver context for function — multiple receiver functions",
+        "Extension receiver",
+        "Implicit receiver"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Kotlin da value class nima (Kotlin 1.5+)?",
+      "options": [
+        "Qiymat klassi",
+        "Wrapper — runtime da unboxed, overhead yo'q — @JvmInline value class",
+        "Inline class",
+        "Primitive class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое класс стоимости в Котлине (Kotlin 1.5+)?",
+      "question_en": "What is value class in Kotlin (Kotlin 1.5+)?",
+      "options_ru": [
+        "Класс значения",
+        "Оболочка — распаковывается во время выполнения, без накладных расходов — класс значений @JvmInline",
+        "Встроенный класс",
+        "Примитивный класс"
+      ],
+      "options_en": [
+        "Value class",
+        "Wrapper — unboxed at runtime, no overhead — @JvmInline value class",
+        "Inline class",
+        "Primitive class"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Kotlin da structured concurrency nima?",
+      "options": [
+        "Tuzilgan concurrency",
+        "Coroutine scope ierarxiyasi — bola coroutinalar ota scope bilan bog'liq, barchasini bekor qilish",
+        "Thread structure",
+        "Job structure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое структурированный параллелизм в Котлине?",
+      "question_en": "What is structured concurrency in Kotlin?",
+      "options_ru": [
+        "Структурированный параллелизм",
+        "Иерархия областей действия сопрограмм — дочерние сопрограммы связаны с родительской областью, переопределяют все",
+        "Структура резьбы",
+        "Структура должности"
+      ],
+      "options_en": [
+        "Structured concurrency",
+        "Coroutine scope hierarchy — child coroutines are related to the parent scope, override all",
+        "Thread structure",
+        "Job structure"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Kotlin da Channel nima?",
+      "options": [
+        "Network channel",
+        "Coroutinlar o'rtasida ma'lumot almashish — hot stream, send/receive",
+        "Message queue",
+        "Event channel"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое канал в Котлине?",
+      "question_en": "What is Channel in Kotlin?",
+      "options_ru": [
+        "Сетевой канал",
+        "Обмен данными между сопрограммами — горячий поток, отправка/получение",
+        "Очередь сообщений",
+        "Канал событий"
+      ],
+      "options_en": [
+        "Network channel",
+        "Data exchange between coroutines — hot stream, send/receive",
+        "Message queue",
+        "Event channel"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Kotlin da Mutex (kotlinx.coroutines) nima?",
+      "options": [
+        "Mutatsiya",
+        "Coroutine-friendly mutual exclusion — withLock{ } bilan, thread blocking yo'q",
+        "Thread mutex",
+        "Suspend mutex"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое мьютекс (kotlinx.coroutines) в Котлине?",
+      "question_en": "What is Mutex (kotlinx.coroutines) in Kotlin?",
+      "options_ru": [
+        "Мутация",
+        "Взаимное исключение, удобное для сопрограмм — withLock{ }, без блокировки потоков",
+        "Мьютекс потока",
+        "Приостановить мьютекс"
+      ],
+      "options_en": [
+        "Mutation",
+        "Coroutine-friendly mutual exclusion — withLock{ }, no thread blocking",
+        "Thread mutex",
+        "Suspend mutex"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Kotlin da CPS (Continuation Passing Style) coroutine da nima?",
+      "options": [
+        "CPS transform",
+        "Suspend funksiyalar kompilyatsiyada Continuation parametrli callback larga aylanadi",
+        "Async transform",
+        "Callback style"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое CPS (стиль продолжения прохождения) в сопрограмме в Котлине?",
+      "question_en": "What is CPS (Continuation Passing Style) in coroutine in Kotlin?",
+      "options_ru": [
+        "CPS-преобразование",
+        "Функции приостановки преобразуются в обратные вызовы с параметрами продолжения во время компиляции.",
+        "Асинхронное преобразование",
+        "Стиль обратного вызова"
+      ],
+      "options_en": [
+        "CPS transform",
+        "Suspend functions are converted to callbacks with Continuation parameters at compile time",
+        "Async transform",
+        "Callback style"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Kotlin da @DslMarker annotation nima uchun?",
+      "options": [
+        "DSL marker",
+        "DSL da implicit receiver larini cheklash — xatoliklarning oldini olish",
+        "Annotation DSL",
+        "Scope marker"
+      ],
+      "answer": 1,
+      "question_ru": "Почему аннотация @DslMarker в Котлине?",
+      "question_en": "Kotlin da @DslMarker annotation nima uchun?",
+      "options_ru": [
+        "Маркер DSL",
+        "Ограничение неявных получателей в DSL — предотвращение ошибок",
+        "Аннотация DSL",
+        "Маркер области"
+      ],
+      "options_en": [
+        "DSL marker",
+        "Limiting implicit receivers in DSL — error prevention",
+        "Annotation DSL",
+        "Scope marker"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Kotlin da Multiplatform (KMP) nima?",
+      "options": [
+        "Ko'p platforma",
+        "Bitta Kotlin kodi bilan JVM, JS, Native uchun kod ulashish",
+        "Cross platform",
+        "Universal Kotlin"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое мультиплатформенность (KMP) в Котлине?",
+      "question_en": "What is Multiplatform (KMP) in Kotlin?",
+      "options_ru": [
+        "Мультиплатформенность",
+        "Совместное использование кода для JVM, JS, Native с одним кодом Kotlin",
+        "Кросс-платформа",
+        "Универсальный Котлин"
+      ],
+      "options_en": [
+        "Multi-platform",
+        "Bitta Kotlin kodi bilan JVM, JS, Native uchun kod ulashish",
+        "Cross platform",
+        "Universal Kotlin"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Kotlin da @OptIn annotation nima uchun?",
+      "options": [
+        "Optimizatsiya",
+        "Eksperimental yoki opt-in talab qiluvchi API ni ishlatishga ruxsat berish",
+        "API access",
+        "Experimental use"
+      ],
+      "answer": 1,
+      "question_ru": "Почему аннотация @OptIn в Котлине?",
+      "question_en": "Why @OptIn annotation in Kotlin?",
+      "options_ru": [
+        "Оптимизация",
+        "Разрешить использование экспериментальных или добровольных API",
+        "Доступ через API",
+        "Экспериментальное использование"
+      ],
+      "options_en": [
+        "Optimization",
+        "Allow use of experimental or opt-in APIs",
+        "API access",
+        "Experimental use"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Kotlin da Arrow kutubxonasi nima uchun?",
+      "options": [
+        "Arrow funksiyasi",
+        "Funksional dasturlash — Either, Option, IO, typed errors, monad comprehension",
+        "FP library",
+        "Monad library"
+      ],
+      "answer": 1,
+      "question_ru": "Почему библиотека Arrow в Котлине?",
+      "question_en": "Kotlin da Arrow kutubxonasi nima uchun?",
+      "options_ru": [
+        "Стрелочная функция",
+        "Функциональное программирование — либо, Option, IO, типизированные ошибки, понимание монады",
+        "библиотека ФП",
+        "Библиотека монад"
+      ],
+      "options_en": [
+        "Arrow function",
+        "Functional programming — Either, Option, IO, typed errors, monad comprehension",
+        "FP library",
+        "Monad library"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Kotlin da generateSequence nima?",
+      "options": [
+        "Ketma-ketlik generatsiya",
+        "Lazy sequence yaratish — generateSequence(0) { it + 1 } cheksiz ketma-ketlik",
+        "Infinite list",
+        "Lazy range"
+      ],
+      "answer": 1,
+      "question_ru": "Что такоеgenerateSequence в Котлине?",
+      "question_en": "What is generateSequence in Kotlin?",
+      "options_ru": [
+        "Последующее поколение",
+        "Генерация ленивой последовательности —generateSequence(0) { it + 1 } бесконечная последовательность",
+        "Бесконечный список",
+        "Ленивый диапазон"
+      ],
+      "options_en": [
+        "Successive generation",
+        "Lazy sequence generation — generateSequence(0) { it + 1 } infinite sequence",
+        "Infinite list",
+        "Lazy range"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Kotlin da crossinline nima?",
+      "options": [
+        "Ko'ndalang inline",
+        "Lambda inline funksiyadan non-local return qilmasligi uchun — crossinline lambda",
+        "Lambda restrict",
+        "Return restrict"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Crossinline в Котлине?",
+      "question_en": "What is crossinline in Kotlin?",
+      "options_ru": [
+        "Поперечный рядный",
+        "Перекрестная лямбда, чтобы лямбда не возвращалась нелокально из встроенной функции.",
+        "Лямбда-ограничение",
+        "Ограничение возврата"
+      ],
+      "options_en": [
+        "Transverse inline",
+        "Crossinline lambda so that the lambda does not return non-locally from the inline function",
+        "Lambda restrict",
+        "Return restriction"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Kotlin da noinline nima?",
+      "options": [
+        "Inline emas",
+        "Inline funksiyaning ba'zi lambda parametrlarini inline qilmaslik",
+        "No inline",
+        "Skip inline"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое noinline в Котлине?",
+      "question_en": "What is noinline in Kotlin?",
+      "options_ru": [
+        "Не встроенный",
+        "Не встраивайте некоторые лямбда-параметры встроенной функции.",
+        "Нет встроенного",
+        "Пропустить встроенный"
+      ],
+      "options_en": [
+        "Inline emas",
+        "Do not inline some lambda parameters of the inline function",
+        "No inline",
+        "Skip inline"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Kotlin da Deferred nima?",
+      "options": [
+        "Kechiktirilgan",
+        "async{ } natijasi — Job ning qiymat qaytaruvchi versiyasi, await() bilan olish",
+        "Async result",
+        "Future"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое отложенный в Котлине?",
+      "question_en": "What is Deferred in Kotlin?",
+      "options_ru": [
+        "С задержкой",
+        "async{ } result — Возвращаемая версия Job, получаемая с помощью await()",
+        "Асинхронный результат",
+        "Будущее"
+      ],
+      "options_en": [
+        "Delayed",
+        "async{ } natijasi — Job ning qiymat qaytaruvchi versiyasi, await() bilan olish",
+        "Async result",
+        "Future"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Kotlin da SupervisorScope nima?",
+      "options": [
+        "Supervisor pattern",
+        "Bola coroutine xatosi boshqalarini bekor qilmaydi — mustaqil scope",
+        "Error isolation",
+        "Fault tolerance"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое SupervisorScope в Котлине?",
+      "question_en": "What is SupervisorScope in Kotlin?",
+      "options_ru": [
+        "Шаблон супервизора",
+        "Ошибка дочерней сопрограммы не переопределяет другие — независимая область действия",
+        "Изоляция ошибок",
+        "Отказоустойчивость"
+      ],
+      "options_en": [
+        "Supervisor pattern",
+        "A child coroutine error does not override others — independent scope",
+        "Error isolation",
+        "Fault tolerance"
+      ]
+    }
   ]
 }

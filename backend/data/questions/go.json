@@ -2,55 +2,1305 @@
   "technology": "Go",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Go (Golang) nima?","options":["JavaScript turi","Google tomonidan yaratilgan statik tipli, compiled dasturlash tili","CSS preprocessor","Scripting tili"],"answer":1},
-    {"id":2,"level":"easy","question":"Go da o'zgaruvchi qanday e'lon qilinadi?","options":["int x = 5","var x int = 5 yoki x := 5","let x = 5","x: int = 5"],"answer":1},
-    {"id":3,"level":"easy","question":"Go da := operatori nima qiladi?","options":["Tenglik tekshiradi","Qisqacha o'zgaruvchi e'lon qilish va qiymat berish","Kamaytirish","Taqqoslash"],"answer":1},
-    {"id":4,"level":"easy","question":"Go da funksiya qanday e'lon qilinadi?","options":["function myFunc() {}","def myFunc():","func myFunc() {}","fn myFunc() {}"],"answer":2},
-    {"id":5,"level":"easy","question":"Go da goroutine nima?","options":["Dastur turi","Yengil vazn ko'p thread — go kalit so'zi bilan ishga tushiriladi","Klass turi","Paket turi"],"answer":1},
-    {"id":6,"level":"easy","question":"Go da channel nima uchun?","options":["Kommunikatsiya liniyasi","Goroutinlar o'rtasida ma'lumot almashish uchun tip-xavfsiz kanal","Network kanali","Event emitter"],"answer":1},
-    {"id":7,"level":"easy","question":"Go da package nima?","options":["NPM paketi","Kodni tashkil qiluvchi modul — package main main entry point","Kutubxona","Module"],"answer":1},
-    {"id":8,"level":"easy","question":"Go da import qanday yoziladi?","options":["import 'fmt'","using fmt;","#include <fmt>","import \"fmt\""],"answer":3},
-    {"id":9,"level":"easy","question":"Go da fmt.Println() nima qiladi?","options":["Format tekshiradi","Konsolga matn chiqaradi va yangi qator qo'shadi","Fayl yozadi","Log yozadi"],"answer":1},
-    {"id":10,"level":"easy","question":"Go da slice nima?","options":["Array kesimi","Dinamik o'lchamli, aniq tipli array ning moslashuvchan ko'rinishi","Array turi","List"],"answer":1},
-    {"id":11,"level":"easy","question":"Go da map nima?","options":["Xarita","Kalit-qiymat juftliklari uchun built-in ma'lumotlar tuzilmasi","Dictionary","Hash"],"answer":1},
-    {"id":12,"level":"easy","question":"Go da struct nima?","options":["Tuzilma turi","Bir nechta maydon(field)larni birlashtiruvchi ma'lumotlar tuzilmasi — klass o'rniga","Object","Class"],"answer":1},
-    {"id":13,"level":"easy","question":"Go da error handling qanday?","options":["try-catch","Funksiya oxirgi qaytarish qiymati sifatida error qaytaradi — if err != nil tekshiruvi","exception","panic()"],"answer":1},
-    {"id":14,"level":"easy","question":"Go da defer nima uchun?","options":["Kechiktirish","Funksiya qaytishidan oldin bajarilishi kerak bo'lgan amalni belgilaydi — cleanup uchun","Timer","Delay"],"answer":1},
-    {"id":15,"level":"easy","question":"Go da make() nima uchun?","options":["Nusxa yaratish","Slice, map, channel uchun xotirani ajratish va initsializatsiya","Ob'ekt yaratish","Array yaratish"],"answer":1},
-    {"id":16,"level":"medium","question":"Go da interface nima?","options":["Java interface kabi","Metod to'plamini ifodalovchi tip — implicit implementation (implements kerak emas)","Abstract klass","Protocol"],"answer":1},
-    {"id":17,"level":"medium","question":"Go da Goroutine va OS thread farqi nima?","options":["Hech qanday farq yo'q","Goroutine — yengil, Go runtime boshqaradi, kichik stack (2KB); OS thread — OS boshqaradi, katta stack","Goroutine tezroq emas","Bir xil xotira"],"answer":1},
-    {"id":18,"level":"medium","question":"Go da select statement nima?","options":["HTML select","Bir nechta channel operatsiyasini kutib, tayyor bo'lganini bajaradigan switch kabi konstrukt","Switch turi","Event select"],"answer":1},
-    {"id":19,"level":"medium","question":"Go da panic va recover nima uchun?","options":["Error handling","panic — kritik xatoda dasturni to'xtatish; recover — panic ni ushlash (defer ichida)","Exception handling","Fatal error"],"answer":1},
-    {"id":20,"level":"medium","question":"Go da pointer nima?","options":["Ko'rsatgich","Xotira manzilini saqlaydigan o'zgaruvchi — & (manzil) va * (dereference)","Reference","Variable address"],"answer":1},
-    {"id":21,"level":"medium","question":"Go da method nima?","options":["Funksiya turi","Belgilangan receiver tipga bog'langan funksiya — func (r Receiver) Method()","Struct funksiya","OOP method"],"answer":1},
-    {"id":22,"level":"medium","question":"Go da embedding nima?","options":["Media embedding","Struct ichida boshqa struct ni joy qo'yib, uning metodlarini meros olish","Inheritance","Composition"],"answer":1},
-    {"id":23,"level":"medium","question":"Go da context.Context nima uchun?","options":["Dastur konteksti","So'rov doirasidagi ma'lumot, deadline, cancellation signallarni uzatish","Background context","Thread context"],"answer":1},
-    {"id":24,"level":"medium","question":"Go da sync.WaitGroup nima?","options":["Kutish guruhi","Ko'p goroutinelarni kutish — Add, Done, Wait metodlari","Thread sync","Channel sync"],"answer":1},
-    {"id":25,"level":"medium","question":"Go da sync.Mutex nima uchun?","options":["Mutatsiya","Shared ma'lumotlarga bir vaqtda faqat bitta goroutine kirishini ta'minlash","Lock mechanism","Thread safety"],"answer":1},
-    {"id":26,"level":"medium","question":"Go da init() funksiyasi nima?","options":["Initialization","Paket import qilinanda avtomatik chaqiriladigan maxsus funksiya — global initsializatsiya","Constructor","Setup function"],"answer":1},
-    {"id":27,"level":"medium","question":"Go da goroutine leak nima va qanday oldini olish?","options":["Xotira yetishmovchiligi","Goroutine to'xtamasdan ishlash — context cancellation, channel yopish bilan oldini olish","Thread leak","Memory leak"],"answer":1},
-    {"id":28,"level":"medium","question":"Go da buffered channel va unbuffered channel farqi?","options":["Hech qanday farq yo'q","Buffered — N element sig'adi, yuboruvchi to'lguncha kutmaydi; Unbuffered — to'g'ridan-to'g'ri sinxronlashish","Buffered tezroq","Unbuffered xavfsizroq"],"answer":1},
-    {"id":29,"level":"medium","question":"Go da recover() faqat qayerda ishlaydi?","options":["Hamma joyda","Defer funksiyasi ichida chaqirilganda — panic dan chiqa oladi","Main funksiyada","Goroutine ichida"],"answer":1},
-    {"id":30,"level":"medium","question":"Go da iota nima uchun?","options":["Italian raqam","const blokida avtomatik oshuvchi tamsayı — enum kabi konstantalar uchun","Iterator","Index"],"answer":1},
-    {"id":31,"level":"medium","question":"Go da rune nima?","options":["Belgi turi","Unicode code point — int32 alias — UTF-8 to'g'ri ishlash uchun","Char turi","String turi"],"answer":1},
-    {"id":32,"level":"medium","question":"Go da interface{} (yoki any) nima?","options":["Ixtiyoriy tip","Ixtiyoriy tipni qabul qiladigan universal interfeys — Go generics oldida ishlatilgan","Empty type","Null type"],"answer":1},
-    {"id":33,"level":"medium","question":"Go da goroutine safe map qanday yaratiladi?","options":["Oddiy map","sync.RWMutex bilan himoyalangan map yoki sync.Map","Concurrent map","Thread-safe map"],"answer":1},
-    {"id":34,"level":"medium","question":"Go da fmt.Errorf() va errors.New() farqi?","options":["Hech qanday farq yo'q","Errorf — format string bilan xato yaratadi (%w bilan wrap qilish); errors.New — oddiy xato","errors.New tezroq","Errorf wrap qilmaydi"],"answer":1},
-    {"id":35,"level":"medium","question":"Go da type assertion nima?","options":["Tip belgilash","interface{} tipidagi qiymatdan aniq tipni chiqarish: val.(ConcreteType)","Type check","Type cast"],"answer":1},
-    {"id":36,"level":"hard","question":"Go da Generics nima (Go 1.18+)?","options":["Umumiy funksiyalar","Tip parametrlari bilan qayta ishlatiladigan funksiya va tuzilmalar — [T constraint]","Template function","Abstract type"],"answer":1},
-    {"id":37,"level":"hard","question":"Go da escape analysis nima?","options":["Qochish analizi","Kompilyator o'zgaruvchi stack yoki heap da bo'lishini aniqlash — &var escape ni keltirib chiqaradi","Memory analysis","Pointer analysis"],"answer":1},
-    {"id":38,"level":"hard","question":"Go da CGo nima?","options":["Custom Go","Go va C kodini birlashtirish imkoni — C kutubxonalarni Go dan chaqirish","Go extension","C wrapper"],"answer":1},
-    {"id":39,"level":"hard","question":"Go da GOMAXPROCS nima?","options":["Max processes","Bir vaqtda Go kodini bajaradigan OS thread soni — default CPU yadrolari soni","Max goroutines","CPU limit"],"answer":1},
-    {"id":40,"level":"hard","question":"Go da memory model nima?","options":["Xotira tuzilmasi","Goroutinlar o'rtasida ma'lumot ko'rinishi haqidagi spesifikatsiya — happens-before munosabat","RAM model","Heap model"],"answer":1},
-    {"id":41,"level":"hard","question":"Go da sync.atomic nima uchun?","options":["Atom operatsiyalar","Mutex holda lock-free, atom xotira operatsiyalari — counter, flag uchun","Atomic number","Atomic type"],"answer":1},
-    {"id":42,"level":"hard","question":"Go da pprof nima?","options":["Profile tool","CPU, memory, goroutine profilini olish — performance bottleneck aniqlash","Debug tool","Test tool"],"answer":1},
-    {"id":43,"level":"hard","question":"Go da channel directions nima?","options":["Channel yo'nalishi","chan<- (faqat yuborish) va <-chan (faqat olish) — funksiya parametrida xavfsizlik","Channel type","Channel mode"],"answer":1},
-    {"id":44,"level":"hard","question":"Go da build tags nima uchun?","options":["Build nomi","//go:build linux kabi — OS, arch yoki maxsus shartlarga asosida fayl kirituv-chiqaruvini boshqarish","Compile flag","Build config"],"answer":1},
-    {"id":45,"level":"hard","question":"Go da reflect paket nima uchun?","options":["Kodni aks ettirish","Runtime tiplarni tekshirish va boshqarish — marshaling, ORM, testing uchun","Meta-programming","Dynamic type"],"answer":1},
-    {"id":46,"level":"hard","question":"Go da unsafe paket nima?","options":["Xavfsiz paket","Tip xavfsizligini chetlab o'tish imkoni — pointer arifmetikasi, C integratsiya; ehtiyotkorlik bilan","Unsafe operations","Low-level access"],"answer":1},
-    {"id":47,"level":"hard","question":"Go da errgroup nima?","options":["Error group","golang.org/x/sync/errgroup — goroutine guruhini boshqarish va xatolarni yig'ish","Error handling","Wait group"],"answer":1},
-    {"id":48,"level":"hard","question":"Go da wire (dependency injection) nima?","options":["Network wire","Google Wire — compile-time dependency injection generator","DI framework","Service locator"],"answer":1},
-    {"id":49,"level":"hard","question":"Go da fuzzing nima (Go 1.18+)?","options":["Tasodifiy test","Avtomatik tasodifiy input yaratib xatolarni aniqlash — go test -fuzz=FuzzTestName","Load test","Stress test"],"answer":1},
-    {"id":50,"level":"hard","question":"Go da singleflight nima uchun?","options":["Bitta flight","golang.org/x/sync/singleflight — bir xil kalit so'rovlarni birlashtirish — cache stampede oldini olish","Single request","Flight pattern"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Go (Golang) nima?",
+      "options": [
+        "JavaScript turi",
+        "Google tomonidan yaratilgan statik tipli, compiled dasturlash tili",
+        "CSS preprocessor",
+        "Scripting tili"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Го (Голанг)?",
+      "question_en": "What is Go (Golang)?",
+      "options_ru": [
+        "Тип JavaScript",
+        "Статически типизированный компилируемый язык программирования, созданный Google.",
+        "CSS-препроцессор",
+        "Язык сценариев"
+      ],
+      "options_en": [
+        "JavaScript turi",
+        "Google tomonidan yaratilgan statik tipli, compiled dasturlash tili",
+        "CSS preprocessor",
+        "Scripting language"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Go da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "int x = 5",
+        "var x int = 5 yoki x := 5",
+        "let x = 5",
+        "x: int = 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в Go?",
+      "question_en": "Go da o'zgaruvchi qanday e'lon qilinadi?",
+      "options_ru": [
+        "интервал х = 5",
+        "вар x int = 5 или x := 5",
+        "пусть х = 5",
+        "х: целое = 5"
+      ],
+      "options_en": [
+        "int x = 5",
+        "var x int = 5 or x := 5",
+        "let x = 5",
+        "x : int = 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Go da := operatori nima qiladi?",
+      "options": [
+        "Tenglik tekshiradi",
+        "Qisqacha o'zgaruvchi e'lon qilish va qiymat berish",
+        "Kamaytirish",
+        "Taqqoslash"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает оператор := в Go?",
+      "question_en": "What does the := operator do in Go?",
+      "options_ru": [
+        "Проверяет на равенство",
+        "Краткое объявление переменной и присвоение значения",
+        "Уменьшить",
+        "Сравнение"
+      ],
+      "options_en": [
+        "Checks for equality",
+        "Briefly declaring a variable and assigning a value",
+        "Reduce",
+        "Comparison"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Go da funksiya qanday e'lon qilinadi?",
+      "options": [
+        "function myFunc() {}",
+        "def myFunc():",
+        "func myFunc() {}",
+        "fn myFunc() {}"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить функцию в Go?",
+      "question_en": "How to declare a function in Go?",
+      "options_ru": [
+        "функция myFunc() {}",
+        "защита myFunc():",
+        "func myFunc() {}",
+        "фн myFunc() {}"
+      ],
+      "options_en": [
+        "function myFunc() {}",
+        "def myFunc():",
+        "func myFunc() {}",
+        "fn myFunc() {}"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Go da goroutine nima?",
+      "options": [
+        "Dastur turi",
+        "Yengil vazn ko'p thread — go kalit so'zi bilan ishga tushiriladi",
+        "Klass turi",
+        "Paket turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое горутина в Go?",
+      "question_en": "What is a goroutine in Go?",
+      "options_ru": [
+        "Тип программы",
+        "Упрощенная многопоточность запускается с помощью ключевого слова go.",
+        "Тип класса",
+        "Тип упаковки"
+      ],
+      "options_en": [
+        "Dastur turi",
+        "Lightweight multithreading is started with the go keyword",
+        "Klass turi",
+        "Package type"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Go da channel nima uchun?",
+      "options": [
+        "Kommunikatsiya liniyasi",
+        "Goroutinlar o'rtasida ma'lumot almashish uchun tip-xavfsiz kanal",
+        "Network kanali",
+        "Event emitter"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем ченнелинг в Go?",
+      "question_en": "Why channel in Go?",
+      "options_ru": [
+        "Линия связи",
+        "Типобезопасный канал для обмена данными между горутинами.",
+        "Сетевой канал",
+        "Генератор событий"
+      ],
+      "options_en": [
+        "Communication line",
+        "A type-safe channel for exchanging data between goroutines",
+        "Network channel",
+        "Event emitter"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Go da package nima?",
+      "options": [
+        "NPM paketi",
+        "Kodni tashkil qiluvchi modul — package main main entry point",
+        "Kutubxona",
+        "Module"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое пакет в Go?",
+      "question_en": "What is a package in Go?",
+      "options_ru": [
+        "пакет НПМ",
+        "Модуль, который организует код, является основной точкой входа пакета.",
+        "Библиотека",
+        "Модуль"
+      ],
+      "options_en": [
+        "NPM package",
+        "The module that organizes the code is package main main entry point",
+        "Library",
+        "Module"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Go da import qanday yoziladi?",
+      "options": [
+        "import 'fmt'",
+        "using fmt;",
+        "#include <fmt>",
+        "import \"fmt\""
+      ],
+      "answer": 3,
+      "question_ru": "Как написать импорт в Go?",
+      "question_en": "How to write import in Go?",
+      "options_ru": [
+        "импортировать 'fmt'",
+        "ваше здоровье;",
+        "#include <фмт>",
+        "импортировать \"ФМТ\""
+      ],
+      "options_en": [
+        "import 'fmt'",
+        "your fmt;",
+        "#include <fmt>",
+        "import \"fmt\""
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Go da fmt.Println() nima qiladi?",
+      "options": [
+        "Format tekshiradi",
+        "Konsolga matn chiqaradi va yangi qator qo'shadi",
+        "Fayl yozadi",
+        "Log yozadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает fmt.Println() в Go?",
+      "question_en": "What does fmt.Println() do in Go?",
+      "options_ru": [
+        "Проверки формата",
+        "Выводит текст на консоль и добавляет новую строку",
+        "Записывает файл",
+        "Записывает журнал"
+      ],
+      "options_en": [
+        "Format checks",
+        "Outputs text to the console and adds a new line",
+        "Writes a file",
+        "Writes a log"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Go da slice nima?",
+      "options": [
+        "Array kesimi",
+        "Dinamik o'lchamli, aniq tipli array ning moslashuvchan ko'rinishi",
+        "Array turi",
+        "List"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое срез в Go?",
+      "question_en": "What is a slice in Go?",
+      "options_ru": [
+        "Раздел массива",
+        "Dinamik o'lchamli, aniq tipli array ning moslashuvchan ko'rinishi",
+        "Тип массива",
+        "Список"
+      ],
+      "options_en": [
+        "Array section",
+        "Dinamik o'lchamli, aniq tipli array ning moslashuvchan ko'rinishi",
+        "Array type",
+        "List"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Go da map nima?",
+      "options": [
+        "Xarita",
+        "Kalit-qiymat juftliklari uchun built-in ma'lumotlar tuzilmasi",
+        "Dictionary",
+        "Hash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое карта в Go?",
+      "question_en": "What is a map in Go?",
+      "options_ru": [
+        "Карта",
+        "Встроенная структура данных для пар ключ-значение.",
+        "Словарь",
+        "Хэш"
+      ],
+      "options_en": [
+        "Xarita",
+        "Built-in data structure for key-value pairs",
+        "Dictionary",
+        "Hash"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Go da struct nima?",
+      "options": [
+        "Tuzilma turi",
+        "Bir nechta maydon(field)larni birlashtiruvchi ma'lumotlar tuzilmasi — klass o'rniga",
+        "Object",
+        "Class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое структура в Go?",
+      "question_en": "What is a struct in Go?",
+      "options_ru": [
+        "Тип конструкции",
+        "Структура данных, объединяющая несколько полей вместо класса.",
+        "Объект",
+        "Класс"
+      ],
+      "options_en": [
+        "Type of structure",
+        "A data structure that combines multiple fields — instead of a class",
+        "Object",
+        "Class"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Go da error handling qanday?",
+      "options": [
+        "try-catch",
+        "Funksiya oxirgi qaytarish qiymati sifatida error qaytaradi — if err != nil tekshiruvi",
+        "exception",
+        "panic()"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое обработка ошибок в Go?",
+      "question_en": "What is error handling in Go?",
+      "options_ru": [
+        "попробовать поймать",
+        "Функция возвращает ошибку в качестве окончательного возвращаемого значения — если err != nil, проверьте",
+        "исключение",
+        "паника()"
+      ],
+      "options_en": [
+        "try-catch",
+        "Funksiya oxirgi qaytarish qiymati sifatida error qaytaradi — if err != nil tekshiruvi",
+        "exception",
+        "panic()"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Go da defer nima uchun?",
+      "options": [
+        "Kechiktirish",
+        "Funksiya qaytishidan oldin bajarilishi kerak bo'lgan amalni belgilaydi — cleanup uchun",
+        "Timer",
+        "Delay"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем откладывать игру в Го?",
+      "question_en": "Why defer in Go?",
+      "options_ru": [
+        "Задерживать",
+        "Указывает действие, которое должно быть выполнено перед возвратом функции — для очистки.",
+        "Таймер",
+        "Delay"
+      ],
+      "options_en": [
+        "Delay",
+        "Specifies the action to be performed before the function returns — for cleanup",
+        "Timer",
+        "Delay"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Go da make() nima uchun?",
+      "options": [
+        "Nusxa yaratish",
+        "Slice, map, channel uchun xotirani ajratish va initsializatsiya",
+        "Ob'ekt yaratish",
+        "Array yaratish"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать make() в Go?",
+      "question_en": "Why make() in Go?",
+      "options_ru": [
+        "Сделать копию",
+        "Распределение памяти и инициализация для среза, карты, канала",
+        "Создать объект",
+        "Создать массив"
+      ],
+      "options_en": [
+        "Make a copy",
+        "Slice, map, channel uchun xotirani ajratish va initsializatsiya",
+        "Create an object",
+        "Array yaratish"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Go da interface nima?",
+      "options": [
+        "Java interface kabi",
+        "Metod to'plamini ifodalovchi tip — implicit implementation (implements kerak emas)",
+        "Abstract klass",
+        "Protocol"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интерфейс в Go?",
+      "question_en": "What is an interface in Go?",
+      "options_ru": [
+        "Как интерфейс Java",
+        "Тип, представляющий набор методов, является неявной реализацией (реализации не требуются).",
+        "Абстрактный класс",
+        "Протокол"
+      ],
+      "options_en": [
+        "Like the Java interface",
+        "A type representing a set of methods is implicit implementation (implements are not needed)",
+        "Abstract class",
+        "Protocol"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Go da Goroutine va OS thread farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Goroutine — yengil, Go runtime boshqaradi, kichik stack (2KB); OS thread — OS boshqaradi, katta stack",
+        "Goroutine tezroq emas",
+        "Bir xil xotira"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между Goroutine и потоком ОС в Go?",
+      "question_en": "What is the difference between Goroutine and OS thread in Go?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Goroutine — облегченный, запускает среду выполнения Go, небольшой стек (2 КБ); Поток ОС — ОС управляет большим стеком",
+        "Горутина не быстрее",
+        "Та же память"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Goroutine — lightweight, runs Go runtime, small stack (2KB); OS thread — the OS manages the large stack",
+        "A goroutine is not faster",
+        "Same memory"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Go da select statement nima?",
+      "options": [
+        "HTML select",
+        "Bir nechta channel operatsiyasini kutib, tayyor bo'lganini bajaradigan switch kabi konstrukt",
+        "Switch turi",
+        "Event select"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое оператор выбора в Go?",
+      "question_en": "What is a select statement in Go?",
+      "options_ru": [
+        "выберите HTML",
+        "Конструкция, подобная переключателю, которая ожидает нескольких операций канала и выполняет готовую.",
+        "Тип переключателя",
+        "Выбор события"
+      ],
+      "options_en": [
+        "select HTML",
+        "A switch-like construct that waits for multiple channel operations and executes the ready one",
+        "Switch type",
+        "Event selection"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Go da panic va recover nima uchun?",
+      "options": [
+        "Error handling",
+        "panic — kritik xatoda dasturni to'xtatish; recover — panic ni ushlash (defer ichida)",
+        "Exception handling",
+        "Fatal error"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем паниковать и восстанавливаться в Го?",
+      "question_en": "Why panic and recover in Go?",
+      "options_ru": [
+        "Обработка ошибок",
+        "паника — остановить программу в случае критической ошибки; восстановить — поймать панику (в пределах отсрочки)",
+        "Обработка исключений",
+        "Неустранимая ошибка"
+      ],
+      "options_en": [
+        "Error handling",
+        "panic — kritik xatoda dasturni to'xtatish; recover — panic ni ushlash (defer ichida)",
+        "Exception handling",
+        "Fatal error"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Go da pointer nima?",
+      "options": [
+        "Ko'rsatgich",
+        "Xotira manzilini saqlaydigan o'zgaruvchi — & (manzil) va * (dereference)",
+        "Reference",
+        "Variable address"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое указатель в Go?",
+      "question_en": "What is a pointer in Go?",
+      "options_ru": [
+        "Указатель",
+        "Переменная, хранящая адрес памяти — & (адрес) и * (разыменование).",
+        "Ссылка",
+        "Переменный адрес"
+      ],
+      "options_en": [
+        "Pointer",
+        "A variable that stores a memory address — & (address) and * (dereference)",
+        "Reference",
+        "Variable address"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Go da method nima?",
+      "options": [
+        "Funksiya turi",
+        "Belgilangan receiver tipga bog'langan funksiya — func (r Receiver) Method()",
+        "Struct funksiya",
+        "OOP method"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое метод в Go?",
+      "question_en": "What is a method in Go?",
+      "options_ru": [
+        "Тип функции",
+        "Функция, привязанная к указанному типу получателя — метод func (r Receiver)().",
+        "Структура — это функция",
+        "ООП-метод"
+      ],
+      "options_en": [
+        "Function type",
+        "The function bound to the specified receiver type — func (r Receiver) Method()",
+        "A struct is a function",
+        "OOP method"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Go da embedding nima?",
+      "options": [
+        "Media embedding",
+        "Struct ichida boshqa struct ni joy qo'yib, uning metodlarini meros olish",
+        "Inheritance",
+        "Composition"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое встраивание в Go?",
+      "question_en": "Go da embedding nima?",
+      "options_ru": [
+        "Встраивание медиа",
+        "Вложение другой структуры внутрь структуры и наследование ее методов.",
+        "Наследование",
+        "Состав"
+      ],
+      "options_en": [
+        "Media embedding",
+        "Nesting another struct inside a struct and inheriting its methods",
+        "Inheritance",
+        "Composition"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Go da context.Context nima uchun?",
+      "options": [
+        "Dastur konteksti",
+        "So'rov doirasidagi ma'lumot, deadline, cancellation signallarni uzatish",
+        "Background context",
+        "Thread context"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое context.Context в Go?",
+      "question_en": "What is context.Context in Go for?",
+      "options_ru": [
+        "Контекст программы",
+        "Передача информации, сроков, сигналов отмены в рамках запроса",
+        "Фоновый контекст",
+        "Контекст потока"
+      ],
+      "options_en": [
+        "Dastur konteksti",
+        "Transmission of information, deadline, cancellation signals within the scope of the request",
+        "Background context",
+        "Thread context"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Go da sync.WaitGroup nima?",
+      "options": [
+        "Kutish guruhi",
+        "Ko'p goroutinelarni kutish — Add, Done, Wait metodlari",
+        "Thread sync",
+        "Channel sync"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое sync.WaitGroup в Go?",
+      "question_en": "What is sync.WaitGroup in Go?",
+      "options_ru": [
+        "Kutish guruhi",
+        "Ожидание нескольких горутин — методы Add, Done, Wait",
+        "Синхронизация потоков",
+        "Синхронизация каналов"
+      ],
+      "options_en": [
+        "Waiting group",
+        "Waiting for multiple goroutines — Add, Done, Wait methods",
+        "Thread sync",
+        "Channel sync"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Go da sync.Mutex nima uchun?",
+      "options": [
+        "Mutatsiya",
+        "Shared ma'lumotlarga bir vaqtda faqat bitta goroutine kirishini ta'minlash",
+        "Lock mechanism",
+        "Thread safety"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем sync.Mutex в Go?",
+      "question_en": "Why sync.Mutex in Go?",
+      "options_ru": [
+        "Мутация",
+        "Обеспечение того, чтобы только одна горутина могла одновременно получать доступ к общим данным.",
+        "Механизм замка",
+        "Безопасность резьбы"
+      ],
+      "options_en": [
+        "Mutation",
+        "Ensuring that only one goroutine can access shared data at a time",
+        "Lock mechanism",
+        "Thread safety"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Go da init() funksiyasi nima?",
+      "options": [
+        "Initialization",
+        "Paket import qilinanda avtomatik chaqiriladigan maxsus funksiya — global initsializatsiya",
+        "Constructor",
+        "Setup function"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция init() в Go?",
+      "question_en": "What is the init() function in Go?",
+      "options_ru": [
+        "Инициализация",
+        "Специальная функция, вызываемая автоматически при импорте пакета, — это глобальная инициализация.",
+        "Конструктор",
+        "Функция настройки"
+      ],
+      "options_en": [
+        "Initialization",
+        "A special function called automatically when a package is imported is global initialization",
+        "Constructor",
+        "Setup function"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Go da goroutine leak nima va qanday oldini olish?",
+      "options": [
+        "Xotira yetishmovchiligi",
+        "Goroutine to'xtamasdan ishlash — context cancellation, channel yopish bilan oldini olish",
+        "Thread leak",
+        "Memory leak"
+      ],
+      "answer": 1,
+      "question_ru": "Go da goroutine leak nima va qanday oldini olish?",
+      "question_en": "What is a goroutine leak and how to prevent it?",
+      "options_ru": [
+        "Недостаток памяти",
+        "Работа горутины без остановки — предотвращение отменой контекста, закрытием канала",
+        "Утечка резьбы",
+        "Утечка памяти"
+      ],
+      "options_en": [
+        "Lack of memory",
+        "Goroutine operation without stopping — prevention by context cancellation, channel closing",
+        "Thread leak",
+        "Memory leak"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Go da buffered channel va unbuffered channel farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Buffered — N element sig'adi, yuboruvchi to'lguncha kutmaydi; Unbuffered — to'g'ridan-to'g'ri sinxronlashish",
+        "Buffered tezroq",
+        "Unbuffered xavfsizroq"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между буферизованным и небуферизованным каналом в Go?",
+      "question_en": "Difference between buffered channel and unbuffered channel in Go?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Буферизованный — содержит N элементов, не ждет, пока отправитель заполнится; Без буферизации — прямая синхронизация",
+        "Буферизованный быстрее",
+        "Без буферизации безопаснее"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Buffered — holds N elements, does not wait until the sender is full; Unbuffered — direct sync",
+        "Buffered is faster",
+        "Unbuffered is safer"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Go da recover() faqat qayerda ishlaydi?",
+      "options": [
+        "Hamma joyda",
+        "Defer funksiyasi ichida chaqirilganda — panic dan chiqa oladi",
+        "Main funksiyada",
+        "Goroutine ichida"
+      ],
+      "answer": 1,
+      "question_ru": "Где восстановление() работает только в Go?",
+      "question_en": "Where does recover() only work in Go?",
+      "options_ru": [
+        "Везде",
+        "При вызове внутри функции defer — она может выйти из паники",
+        "В основной функции",
+        "Внутри горутины"
+      ],
+      "options_en": [
+        "all over",
+        "When called inside the defer function — it can exit panic",
+        "In the main function",
+        "Inside the goroutine"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Go da iota nima uchun?",
+      "options": [
+        "Italian raqam",
+        "const blokida avtomatik oshuvchi tamsayı — enum kabi konstantalar uchun",
+        "Iterator",
+        "Index"
+      ],
+      "answer": 1,
+      "question_ru": "Почему йота в Go?",
+      "question_en": "Why iota in Go?",
+      "options_ru": [
+        "Итальянский номер",
+        "Автоматически увеличивающееся целое число в константном блоке — для констант, подобных перечислению.",
+        "Итератор",
+        "Индекс"
+      ],
+      "options_en": [
+        "Italian raqam",
+        "An auto-incrementing integer in a const block — for enum-like constants",
+        "Iterator",
+        "Index"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Go da rune nima?",
+      "options": [
+        "Belgi turi",
+        "Unicode code point — int32 alias — UTF-8 to'g'ri ishlash uchun",
+        "Char turi",
+        "String turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое руна в Го?",
+      "question_en": "What is a rune in Go?",
+      "options_ru": [
+        "Belgi turi",
+        "Кодовая точка Unicode — псевдоним int32 — UTF-8 для корректной работы",
+        "Тип символа",
+        "Тип строки"
+      ],
+      "options_en": [
+        "Character type",
+        "Unicode code point — int32 alias — UTF-8 for correct operation",
+        "Char turi",
+        "String type"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Go da interface{} (yoki any) nima?",
+      "options": [
+        "Ixtiyoriy tip",
+        "Ixtiyoriy tipni qabul qiladigan universal interfeys — Go generics oldida ishlatilgan",
+        "Empty type",
+        "Null type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интерфейс {} (или любой другой) в Go?",
+      "question_en": "What is interface{} (or any) in Go?",
+      "options_ru": [
+        "Дополнительный тип",
+        "Универсальный интерфейс, принимающий необязательный тип, используемый перед дженериками Go.",
+        "Пустой тип",
+        "Нулевой тип"
+      ],
+      "options_en": [
+        "Optional type",
+        "A universal interface that accepts an optional type — used before Go generics",
+        "Empty type",
+        "Null type"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Go da goroutine safe map qanday yaratiladi?",
+      "options": [
+        "Oddiy map",
+        "sync.RWMutex bilan himoyalangan map yoki sync.Map",
+        "Concurrent map",
+        "Thread-safe map"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать безопасную карту горутины в Go?",
+      "question_en": "Go da goroutine safe map qanday yaratiladi?",
+      "options_ru": [
+        "Нормальная карта",
+        "Защищенная карта sync.RWMutex или sync.Map",
+        "Параллельная карта",
+        "Потокобезопасная карта"
+      ],
+      "options_en": [
+        "Normal map",
+        "sync.RWMutex protected map or sync.Map",
+        "Concurrent map",
+        "Thread-safe map"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Go da fmt.Errorf() va errors.New() farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Errorf — format string bilan xato yaratadi (%w bilan wrap qilish); errors.New — oddiy xato",
+        "errors.New tezroq",
+        "Errorf wrap qilmaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между fmt.Errorf() и error.New() в Go?",
+      "question_en": "Difference between fmt.Errorf() and errors.New() in Go?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Errorf — генерирует ошибку со строкой формата (обертывается с помощью %w); ошибки.Новое — это простая ошибка.",
+        "ошибки.Новое быстрее",
+        "Errorf не переносится"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Errorf — generates an error with a format string (wrap with %w); errors.New is a simple error",
+        "errors.New faster",
+        "Errorf does not wrap"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Go da type assertion nima?",
+      "options": [
+        "Tip belgilash",
+        "interface{} tipidagi qiymatdan aniq tipni chiqarish: val.(ConcreteType)",
+        "Type check",
+        "Type cast"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое утверждение типа в Go?",
+      "question_en": "What is type assertion in Go?",
+      "options_ru": [
+        "Обозначение типа",
+        "Извлеките конкретный тип из значения типа интерфейса {}: val.(ConcreteType)",
+        "Тип проверки",
+        "Тип актерского состава"
+      ],
+      "options_en": [
+        "Type designation",
+        "Extract the concrete type from a value of type interface{}: val.(ConcreteType)",
+        "Type check",
+        "Type cast"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Go da Generics nima (Go 1.18+)?",
+      "options": [
+        "Umumiy funksiyalar",
+        "Tip parametrlari bilan qayta ishlatiladigan funksiya va tuzilmalar — [T constraint]",
+        "Template function",
+        "Abstract type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое дженерики в Go (Go 1.18+)?",
+      "question_en": "What are Generics in Go (Go 1.18+)?",
+      "options_ru": [
+        "Общие функции",
+        "Функции и структуры, повторно используемые с параметрами типа — [T-ограничение]",
+        "Функция шаблона",
+        "Абстрактный тип"
+      ],
+      "options_en": [
+        "General functions",
+        "Functions and structures reused with type parameters — [T constraint]",
+        "Template function",
+        "Abstract type"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Go da escape analysis nima?",
+      "options": [
+        "Qochish analizi",
+        "Kompilyator o'zgaruvchi stack yoki heap da bo'lishini aniqlash — &var escape ni keltirib chiqaradi",
+        "Memory analysis",
+        "Pointer analysis"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое escape-анализ в Go?",
+      "question_en": "What is escape analysis in Go?",
+      "options_ru": [
+        "Анализ побега",
+        "Компилятор определяет, находится ли переменная в стеке или в куче, что приводит к экранированию &var.",
+        "Анализ памяти",
+        "Анализ указателя"
+      ],
+      "options_en": [
+        "Escape analysis",
+        "The compiler determines whether a variable is on the stack or the heap — causing the &var escape",
+        "Memory analysis",
+        "Pointer analysis"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Go da CGo nima?",
+      "options": [
+        "Custom Go",
+        "Go va C kodini birlashtirish imkoni — C kutubxonalarni Go dan chaqirish",
+        "Go extension",
+        "C wrapper"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое CGo в Go?",
+      "question_en": "What is CGo in Go?",
+      "options_ru": [
+        "Пользовательский переход",
+        "Возможность интеграции кода Go и C — вызов библиотек C из Go.",
+        "Расширение Go",
+        "C-обертка"
+      ],
+      "options_en": [
+        "Custom Go",
+        "Ability to integrate Go and C code — call C libraries from Go",
+        "Go extension",
+        "C wrapper"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Go da GOMAXPROCS nima?",
+      "options": [
+        "Max processes",
+        "Bir vaqtda Go kodini bajaradigan OS thread soni — default CPU yadrolari soni",
+        "Max goroutines",
+        "CPU limit"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GOMAXPROCS в Go?",
+      "question_en": "What is GOMAXPROCS in Go?",
+      "options_ru": [
+        "Макс процессов",
+        "Количество потоков ОС, одновременно выполняющих код Go, — это количество ядер ЦП по умолчанию.",
+        "Max goroutines",
+        "Ограничение ЦП"
+      ],
+      "options_en": [
+        "Max processes",
+        "The number of OS threads executing Go code at the same time is the number of default CPU cores",
+        "Max goroutines",
+        "CPU limit"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Go da memory model nima?",
+      "options": [
+        "Xotira tuzilmasi",
+        "Goroutinlar o'rtasida ma'lumot ko'rinishi haqidagi spesifikatsiya — happens-before munosabat",
+        "RAM model",
+        "Heap model"
+      ],
+      "answer": 1,
+      "question_ru": "Какова модель памяти в Go?",
+      "question_en": "What is the memory model in Go?",
+      "options_ru": [
+        "Структура памяти",
+        "Спецификация того, как информация появляется между горутинами, — это отношение «происходит до».",
+        "Модель оперативной памяти",
+        "Модель кучи"
+      ],
+      "options_en": [
+        "Memory structure",
+        "A specification about how information appears between goroutines is the happens-before relationship",
+        "RAM model",
+        "Heap model"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Go da sync.atomic nima uchun?",
+      "options": [
+        "Atom operatsiyalar",
+        "Mutex holda lock-free, atom xotira operatsiyalari — counter, flag uchun",
+        "Atomic number",
+        "Atomic type"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем sync.atomic в Go?",
+      "question_en": "Why sync.atomic in Go?",
+      "options_ru": [
+        "Атомарные операции",
+        "Безблокировочные, атомарные операции с памятью без мьютекса — для счетчика, флага",
+        "Атомный номер",
+        "Атомный тип"
+      ],
+      "options_en": [
+        "Atomic operations",
+        "Lock-free, atomic memory operations without mutex — for counter, flag",
+        "Atomic number",
+        "Atomic type"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Go da pprof nima?",
+      "options": [
+        "Profile tool",
+        "CPU, memory, goroutine profilini olish — performance bottleneck aniqlash",
+        "Debug tool",
+        "Test tool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое pprof в Go?",
+      "question_en": "What is pprof in Go?",
+      "options_ru": [
+        "Инструмент профиля",
+        "ЦП, память, профилирование горутин — обнаружение узких мест в производительности",
+        "Инструмент отладки",
+        "Инструмент тестирования"
+      ],
+      "options_en": [
+        "Profile tool",
+        "CPU, memory, goroutine profiling — performance bottleneck detection",
+        "Debug tool",
+        "Test tool"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Go da channel directions nima?",
+      "options": [
+        "Channel yo'nalishi",
+        "chan<- (faqat yuborish) va <-chan (faqat olish) — funksiya parametrida xavfsizlik",
+        "Channel type",
+        "Channel mode"
+      ],
+      "answer": 1,
+      "question_ru": "Каковы направления каналов в Go?",
+      "question_en": "What are channel directions in Go?",
+      "options_ru": [
+        "Направление канала",
+        "chan<- (только отправка) и <-chan (только прием) — параметр безопасности в функции",
+        "Тип канала",
+        "Режим канала"
+      ],
+      "options_en": [
+        "Channel yo'nalishi",
+        "chan<- (send only) and <-chan (receive only) — safety in function parameter",
+        "Channel type",
+        "Channel mode"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Go da build tags nima uchun?",
+      "options": [
+        "Build nomi",
+        "//go:build linux kabi — OS, arch yoki maxsus shartlarga asosida fayl kirituv-chiqaruvini boshqarish",
+        "Compile flag",
+        "Build config"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем создавать теги в Go?",
+      "question_en": "Why build tags in Go?",
+      "options_ru": [
+        "Название сборки",
+        "//как go:build linux — управление файловым вводом/выводом в зависимости от ОС, архитектуры или пользовательских условий",
+        "Флаг компиляции",
+        "Конфигурация сборки"
+      ],
+      "options_en": [
+        "The name of the build",
+        "//like go:build linux — control file I/O based on OS, arch, or custom conditions",
+        "Compile flag",
+        "Build config"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Go da reflect paket nima uchun?",
+      "options": [
+        "Kodni aks ettirish",
+        "Runtime tiplarni tekshirish va boshqarish — marshaling, ORM, testing uchun",
+        "Meta-programming",
+        "Dynamic type"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужен пакет отражения в Go?",
+      "question_en": "What is the reflect package in Go for?",
+      "options_ru": [
+        "Зеркальное отображение кода",
+        "Проверка и управление типами во время выполнения — для маршалинга, ORM, тестирования.",
+        "Метапрограммирование",
+        "Динамический тип"
+      ],
+      "options_en": [
+        "Code mirroring",
+        "Runtime type checking and management — for marshaling, ORM, testing",
+        "Meta-programming",
+        "Dynamic type"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Go da unsafe paket nima?",
+      "options": [
+        "Xavfsiz paket",
+        "Tip xavfsizligini chetlab o'tish imkoni — pointer arifmetikasi, C integratsiya; ehtiyotkorlik bilan",
+        "Unsafe operations",
+        "Low-level access"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое небезопасный пакет в Go?",
+      "question_en": "What is an unsafe package in Go?",
+      "options_ru": [
+        "Безопасный пакет",
+        "Возможность обойти безопасность типов — арифметика указателей, интеграция C; тщательно",
+        "Небезопасные операции",
+        "Низкоуровневый доступ"
+      ],
+      "options_en": [
+        "Secure package",
+        "Ability to bypass type safety — pointer arithmetic, C integration; carefully",
+        "Unsafe operations",
+        "Low-level access"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Go da errgroup nima?",
+      "options": [
+        "Error group",
+        "golang.org/x/sync/errgroup — goroutine guruhini boshqarish va xatolarni yig'ish",
+        "Error handling",
+        "Wait group"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое errgroup в Go?",
+      "question_en": "What is errgroup in Go?",
+      "options_ru": [
+        "Группа ошибок",
+        "golang.org/x/sync/errgroup — управление группами горутин и сбор ошибок",
+        "Обработка ошибок",
+        "Группа ожидания"
+      ],
+      "options_en": [
+        "Error group",
+        "golang.org/x/sync/errgroup — goroutine group management and error collection",
+        "Error handling",
+        "Wait group"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Go da wire (dependency injection) nima?",
+      "options": [
+        "Network wire",
+        "Google Wire — compile-time dependency injection generator",
+        "DI framework",
+        "Service locator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Wire (внедрение зависимостей) в Go?",
+      "question_en": "What is wire (dependency injection) in Go?",
+      "options_ru": [
+        "Сетевой провод",
+        "Google Wire — генератор внедрения зависимостей во время компиляции.",
+        "DI-фреймворк",
+        "Поиск сервисов"
+      ],
+      "options_en": [
+        "Network wire",
+        "Google Wire is a compile-time dependency injection generator",
+        "DI framework",
+        "Service locator"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Go da fuzzing nima (Go 1.18+)?",
+      "options": [
+        "Tasodifiy test",
+        "Avtomatik tasodifiy input yaratib xatolarni aniqlash — go test -fuzz=FuzzTestName",
+        "Load test",
+        "Stress test"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое фаззинг в Go (Go 1.18+)?",
+      "question_en": "What is fuzzing in Go (Go 1.18+)?",
+      "options_ru": [
+        "Случайный тест",
+        "Обнаруживайте ошибки, автоматически генерируя случайные входные данные — go test -fuzz=FuzzTestName",
+        "Нагрузочный тест",
+        "Стресс-тест"
+      ],
+      "options_en": [
+        "A random test",
+        "Detect errors by automatically generating random input — go test -fuzz=FuzzTestName",
+        "Load test",
+        "Stress test"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Go da singleflight nima uchun?",
+      "options": [
+        "Bitta flight",
+        "golang.org/x/sync/singleflight — bir xil kalit so'rovlarni birlashtirish — cache stampede oldini olish",
+        "Single request",
+        "Flight pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Почему одиночный полет в Го?",
+      "question_en": "Why singleflight in Go?",
+      "options_ru": [
+        "Один рейс",
+        "golang.org/x/sync/singleflight — объединяйте запросы с одинаковыми ключами — избегайте скопления кэша",
+        "Единый запрос",
+        "Схема полета"
+      ],
+      "options_en": [
+        "One flight",
+        "golang.org/x/sync/singleflight — merge same key requests — avoid cache stampede",
+        "Single request",
+        "Flight pattern"
+      ]
+    }
   ]
 }

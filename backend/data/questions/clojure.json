@@ -2,55 +2,1305 @@
   "technology": "Clojure",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Clojure nima?","options":["JavaScript turi","JVM da ishlaydigan Lisp dialekti — funksional, immutable-first","CSS preprocessor","Database tili"],"answer":1},
-    {"id":2,"level":"easy","question":"Clojure da funksiya chaqirish qanday?","options":["greet(name)","(greet name) — prefix notation","greet name","(greet, name)"],"answer":1},
-    {"id":3,"level":"easy","question":"Clojure da def nima uchun?","options":["Definition","Global o'zgaruvchi e'lon qilish — (def x 42)","Function def","Module def"],"answer":1},
-    {"id":4,"level":"easy","question":"Clojure da defn nima uchun?","options":["Definition","Funksiya e'lon qilish — (defn greet [name] (str \"Hello \" name))","Private def","Method def"],"answer":1},
-    {"id":5,"level":"easy","question":"Clojure da println nima qiladi?","options":["Print line","Konsolga matn va yangi qator chiqaradi","Debug log","Error log"],"answer":1},
-    {"id":6,"level":"easy","question":"Clojure da vector nima?","options":["Matematika vektor","[1 2 3] — indexed, efficient tail add, immutable","Array","List"],"answer":1},
-    {"id":7,"level":"easy","question":"Clojure da list nima?","options":["Array","(1 2 3) yoki '(1 2 3) — linked list, boshidan efficient","Vector","Tuple"],"answer":1},
-    {"id":8,"level":"easy","question":"Clojure da map nima?","options":["Xarita","{:key value} — kalit-qiymat juftliklari, keyword kalit bilan qulay","Dictionary","Hash"],"answer":1},
-    {"id":9,"level":"easy","question":"Clojure da set nima?","options":["O'rnatish","#{1 2 3} — noyob elementlar to'plami","Array","Group"],"answer":1},
-    {"id":10,"level":"easy","question":"Clojure da keyword nima?","options":["Kalit so'z",":keyword — o'ziga-o'zi qiymatli atom — map kalitlari uchun ideal","Symbol","Constant"],"answer":1},
-    {"id":11,"level":"easy","question":"Clojure da let nima uchun?","options":["Lokal o'zgaruvchi","(let [x 5, y 10] (+ x y)) — lokal binding yaratish","Variable","Assignment"],"answer":1},
-    {"id":12,"level":"easy","question":"Clojure da if nima uchun?","options":["If statement","(if condition then else) — ifoda, natija qaytaradi","Condition","Branch"],"answer":1},
-    {"id":13,"level":"easy","question":"Clojure da cond nima?","options":["Condition","Ko'p shart tekshirish — (cond (= x 1) ... :else ...)","Switch","Match"],"answer":1},
-    {"id":14,"level":"easy","question":"Clojure da nil nima?","options":["Null","Qiymat yo'qligi — Java null ga o'xshash","Empty","Nothing"],"answer":1},
-    {"id":15,"level":"easy","question":"Clojure da true va false qanday?","options":["1 va 0","true va false — boolean qiymatlar","yes va no","on va off"],"answer":1},
-    {"id":16,"level":"medium","question":"Clojure da immutability nima?","options":["O'zgaruvchan","Barcha ma'lumotlar o'zgarmas — o'zgartirish yangi qiymat yaratadi","Mutable","Constant"],"answer":1},
-    {"id":17,"level":"medium","question":"Clojure da persistent data structures nima?","options":["Saqlanadigan","Structural sharing orqali o'zgartirishda samarali yangi versiya — O(log n)","Immutable data","Copy data"],"answer":1},
-    {"id":18,"level":"medium","question":"Clojure da atom nima uchun?","options":["Atom element","Mutable state boshqarish — swap!, reset!, compare-and-set!","State variable","Ref type"],"answer":1},
-    {"id":19,"level":"medium","question":"Clojure da ref nima?","options":["Reference","STM (Software Transactional Memory) bilan boshqariladigan mutable state","Atom turi","Var turi"],"answer":1},
-    {"id":20,"level":"medium","question":"Clojure da STM nima?","options":["Static Type Management","Software Transactional Memory — dosync blokida atomik o'zgartirishlar","Concurrent memory","Lock-free"],"answer":1},
-    {"id":21,"level":"medium","question":"Clojure da lazy sequences nima?","options":["Sekin ketma-ketlik","Faqat kerak bo'lganda hisoblanadigan cheksiz ketma-ketliklar — (range) kabi","Infinite list","Deferred list"],"answer":1},
-    {"id":22,"level":"medium","question":"Clojure da macro nima?","options":["Makro","Kompilyatsiya vaqtida kod transformatsiya — defmacro — syntactic abstraction","Code gen","Template"],"answer":1},
-    {"id":23,"level":"medium","question":"Clojure da namespace nima?","options":["Nom maydoni","(ns myapp.core) — nomlar ziddiyatini oldini olish, modullar tashkil qilish","Module","Package"],"answer":1},
-    {"id":24,"level":"medium","question":"Clojure da require va use farqi?","options":["Hech qanday farq yo'q","require — namespace alias bilan import; use — barcha nomlarni import (deprecated)","use yangi","require eski"],"answer":1},
-    {"id":25,"level":"medium","question":"Clojure da protocol nima?","options":["Network protocol","Polimorfizm — defprotocol bilan interfeys, extend-type bilan implementatsiya","Interface","Typeclass"],"answer":1},
-    {"id":26,"level":"medium","question":"Clojure da record nima?","options":["Yozuv","defrecord — optimizatsiyalangan, type hint bilan ma'lumot tipi","Data class","Struct"],"answer":1},
-    {"id":27,"level":"medium","question":"Clojure da reduce nima?","options":["Kamaytirish","(reduce f init coll) — akkumulyator bilan bitta qiymat hosil qilish","Fold","Aggregate"],"answer":1},
-    {"id":28,"level":"medium","question":"Clojure da threading macros (-> va ->>) nima?","options":["Thread yaratish","Funksiya zanjirini o'qilishi oson yozish — -> birinchi, ->> oxirgi argument","Pipe","Chain"],"answer":1},
-    {"id":29,"level":"medium","question":"Clojure da destructuring nima?","options":["Destruksiya","(let [{:keys [name age]} person] ...) — nested ma'lumotlarni ajratish","Unpack","Pattern"],"answer":1},
-    {"id":30,"level":"medium","question":"Clojure da interop Java bilan qanday?","options":["Java import","(.method object args) yoki (ClassName.) — Java sinflari va metodlarini ishlatish","Java bridge","JVM interop"],"answer":1},
-    {"id":31,"level":"medium","question":"Clojure da core.async nima?","options":["Async library","CSP (Communicating Sequential Processes) — go blocks, channels","Async channel","Concurrency"],"answer":1},
-    {"id":32,"level":"medium","question":"Clojure da comp nima?","options":["Component","Funksiyalarni birlashtirib yangi funksiya — (comp f g) = (fn [x] (f (g x)))","Compose","Chain"],"answer":1},
-    {"id":33,"level":"medium","question":"Clojure da partial nima?","options":["Qisman","Funksiyani qisman qo'llash — (partial + 5) = (fn [x] (+ 5 x))","Curry","Lambda"],"answer":1},
-    {"id":34,"level":"medium","question":"Clojure da apply nima?","options":["Qo'llash","(apply + [1 2 3]) — list ni argumentlarga yoyib funksiya chaqirish","Spread","Unpack"],"answer":1},
-    {"id":35,"level":"medium","question":"Clojure da assoc nima?","options":["Association","Map ga kalit-qiymat qo'shish yoki o'zgartirish — yangi map qaytaradi","Map update","Dict set"],"answer":1},
-    {"id":36,"level":"hard","question":"Clojure da Datomic nima?","options":["Database","Immutable, time-based distributed database — Rich Hickey tomonidan","NoSQL","Graph DB"],"answer":1},
-    {"id":37,"level":"hard","question":"Clojure da Ring nima?","options":["Uzuk","Web application middleware protocol — request/response map model","Web framework","HTTP library"],"answer":1},
-    {"id":38,"level":"hard","question":"Clojure da Compojure nima?","options":["Composer","Ring asosidagi routing library — GET, POST, defroutes","Router","Middleware"],"answer":1},
-    {"id":39,"level":"hard","question":"Clojure da transducer nima?","options":["Aylantiruvchi","Composable, kontekstsiz transformatsiya — map, filter dan tuzilgan — no intermediate collection","Transform","Reducer"],"answer":1},
-    {"id":40,"level":"hard","question":"Clojure da multimethods nima?","options":["Ko'p metod","defmulti/defmethod — dispatch funksiyasi asosida polymorphism — istalgan qiymat bo'yicha","Protocol alt","Dynamic dispatch"],"answer":1},
-    {"id":41,"level":"hard","question":"Clojure da agent nima?","options":["Vakil","Asinxron mutable state — send, send-off bilan yangilash — error handling bilan","Async atom","Async state"],"answer":1},
-    {"id":42,"level":"hard","question":"Clojure da var nima?","options":["Variable","Global mutable reference — dynamic binding uchun — def yoki binding bilan","Global var","Thread local"],"answer":1},
-    {"id":43,"level":"hard","question":"Clojure da ClojureScript nima?","options":["Clojure skript","Clojure ni JavaScript ga kompilatsiya qiluvchi — browser va Node.js uchun","JS Clojure","Frontend Clojure"],"answer":1},
-    {"id":44,"level":"hard","question":"Clojure da spec nima?","options":["Spesifikatsiya","clojure.spec — ma'lumot va funksiya validatsiyasi, generative testing","Type system","Contract"],"answer":1},
-    {"id":45,"level":"hard","question":"Clojure da edn nima?","options":["Standart format","Extensible Data Notation — Clojure ma'lumotlar tuzilmasini saqlash formati","JSON alt","Data format"],"answer":1},
-    {"id":46,"level":"hard","question":"Clojure da reducers nima?","options":["Reducer funksiya","clojure.core.reducers — parallel fold uchun — fork-join asosida","Parallel reduce","Transducer"],"answer":1},
-    {"id":47,"level":"hard","question":"Clojure da test.check nima?","options":["Test qilish","Property-based testing — generatorlar bilan avtomatik test ma'lumotlar","QuickCheck","Generative test"],"answer":1},
-    {"id":48,"level":"hard","question":"Clojure da deref (@) nima?","options":["Dereference","Atom, ref, agent, promise qiymatini olish — @atom = (deref atom)","Unwrap","Get value"],"answer":1},
-    {"id":49,"level":"hard","question":"Clojure da promise nima?","options":["Va'da","Bitta yozish, ko'p o'qish — deliver/deref — async coordination","Future","Channel"],"answer":1},
-    {"id":50,"level":"hard","question":"Clojure da reify nima uchun?","options":["Aniqlashtirish","Protocol yoki Java interfeys ni anonim klass sifatida implement qilish","Anonymous class","Interface impl"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Clojure nima?",
+      "options": [
+        "JavaScript turi",
+        "JVM da ishlaydigan Lisp dialekti — funksional, immutable-first",
+        "CSS preprocessor",
+        "Database tili"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure nima?",
+      "question_en": "Clojure nima?",
+      "options_ru": [
+        "JavaScript turi",
+        "JVM da ishlaydigan Lisp dialekti — funksional, immutable-first",
+        "CSS-препроцессор",
+        "Database tili"
+      ],
+      "options_en": [
+        "JavaScript turi",
+        "JVM da ishlaydigan Lisp dialekti — funksional, immutable-first",
+        "CSS preprocessor",
+        "Database tili"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Clojure da funksiya chaqirish qanday?",
+      "options": [
+        "greet(name)",
+        "(greet name) — prefix notation",
+        "greet name",
+        "(greet, name)"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da funksiya chaqirish qanday?",
+      "question_en": "Clojure da funksiya chaqirish qanday?",
+      "options_ru": [
+        "greet(name)",
+        "(greet name) — prefix notation",
+        "greet name",
+        "(greet, name)"
+      ],
+      "options_en": [
+        "greet(name)",
+        "(greet name) — prefix notation",
+        "greet name",
+        "(greet, name)"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Clojure da def nima uchun?",
+      "options": [
+        "Definition",
+        "Global o'zgaruvchi e'lon qilish — (def x 42)",
+        "Function def",
+        "Module def"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da def nima uchun?",
+      "question_en": "Clojure da def nima uchun?",
+      "options_ru": [
+        "Definition",
+        "Global o'zgaruvchi e'lon qilish — (def x 42)",
+        "Function def",
+        "Module def"
+      ],
+      "options_en": [
+        "Definition",
+        "Global o'zgaruvchi e'lon qilish — (def x 42)",
+        "Function def",
+        "Module def"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Clojure da defn nima uchun?",
+      "options": [
+        "Definition",
+        "Funksiya e'lon qilish — (defn greet [name] (str \"Hello \" name))",
+        "Private def",
+        "Method def"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da defn nima uchun?",
+      "question_en": "Clojure da defn nima uchun?",
+      "options_ru": [
+        "Definition",
+        "Funksiya e'lon qilish — (defn greet [name] (str \"Hello \" name))",
+        "Private def",
+        "Method def"
+      ],
+      "options_en": [
+        "Definition",
+        "Funksiya e'lon qilish — (defn greet [name] (str \"Hello \" name))",
+        "Private def",
+        "Method def"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Clojure da println nima qiladi?",
+      "options": [
+        "Print line",
+        "Konsolga matn va yangi qator chiqaradi",
+        "Debug log",
+        "Error log"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da println nima qiladi?",
+      "question_en": "Clojure da println nima qiladi?",
+      "options_ru": [
+        "Print line",
+        "Konsolga matn va yangi qator chiqaradi",
+        "Debug log",
+        "Error log"
+      ],
+      "options_en": [
+        "Print line",
+        "Konsolga matn va yangi qator chiqaradi",
+        "Debug log",
+        "Error log"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Clojure da vector nima?",
+      "options": [
+        "Matematika vektor",
+        "[1 2 3] — indexed, efficient tail add, immutable",
+        "Array",
+        "List"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da vector nima?",
+      "question_en": "Clojure da vector nima?",
+      "options_ru": [
+        "Matematika vektor",
+        "[1 2 3] — indexed, efficient tail add, immutable",
+        "Array",
+        "List"
+      ],
+      "options_en": [
+        "Matematika vektor",
+        "[1 2 3] — indexed, efficient tail add, immutable",
+        "Array",
+        "List"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Clojure da list nima?",
+      "options": [
+        "Array",
+        "(1 2 3) yoki '(1 2 3) — linked list, boshidan efficient",
+        "Vector",
+        "Tuple"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da list nima?",
+      "question_en": "Clojure da list nima?",
+      "options_ru": [
+        "Array",
+        "(1 2 3) yoki '(1 2 3) — linked list, boshidan efficient",
+        "Vector",
+        "Tuple"
+      ],
+      "options_en": [
+        "Array",
+        "(1 2 3) yoki '(1 2 3) — linked list, boshidan efficient",
+        "Vector",
+        "Tuple"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Clojure da map nima?",
+      "options": [
+        "Xarita",
+        "{:key value} — kalit-qiymat juftliklari, keyword kalit bilan qulay",
+        "Dictionary",
+        "Hash"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da map nima?",
+      "question_en": "Clojure da map nima?",
+      "options_ru": [
+        "Xarita",
+        "{:key value} — kalit-qiymat juftliklari, keyword kalit bilan qulay",
+        "Dictionary",
+        "Hash"
+      ],
+      "options_en": [
+        "Xarita",
+        "{:key value} — kalit-qiymat juftliklari, keyword kalit bilan qulay",
+        "Dictionary",
+        "Hash"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Clojure da set nima?",
+      "options": [
+        "O'rnatish",
+        "#{1 2 3} — noyob elementlar to'plami",
+        "Array",
+        "Group"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da set nima?",
+      "question_en": "Clojure da set nima?",
+      "options_ru": [
+        "O'rnatish",
+        "#{1 2 3} — noyob elementlar to'plami",
+        "Array",
+        "Group"
+      ],
+      "options_en": [
+        "O'rnatish",
+        "#{1 2 3} — noyob elementlar to'plami",
+        "Array",
+        "Group"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Clojure da keyword nima?",
+      "options": [
+        "Kalit so'z",
+        ":keyword — o'ziga-o'zi qiymatli atom — map kalitlari uchun ideal",
+        "Symbol",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da keyword nima?",
+      "question_en": "Clojure da keyword nima?",
+      "options_ru": [
+        "Kalit so'z",
+        ":keyword — o'ziga-o'zi qiymatli atom — map kalitlari uchun ideal",
+        "Symbol",
+        "Constant"
+      ],
+      "options_en": [
+        "Kalit so'z",
+        ":keyword — o'ziga-o'zi qiymatli atom — map kalitlari uchun ideal",
+        "Symbol",
+        "Constant"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Clojure da let nima uchun?",
+      "options": [
+        "Lokal o'zgaruvchi",
+        "(let [x 5, y 10] (+ x y)) — lokal binding yaratish",
+        "Variable",
+        "Assignment"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da let nima uchun?",
+      "question_en": "Clojure da let nima uchun?",
+      "options_ru": [
+        "Lokal o'zgaruvchi",
+        "(let [x 5, y 10] (+ x y)) — lokal binding yaratish",
+        "Variable",
+        "Assignment"
+      ],
+      "options_en": [
+        "Lokal o'zgaruvchi",
+        "(let [x 5, y 10] (+ x y)) — lokal binding yaratish",
+        "Variable",
+        "Assignment"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Clojure da if nima uchun?",
+      "options": [
+        "If statement",
+        "(if condition then else) — ifoda, natija qaytaradi",
+        "Condition",
+        "Branch"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da if nima uchun?",
+      "question_en": "Clojure da if nima uchun?",
+      "options_ru": [
+        "If statement",
+        "(if condition then else) — ifoda, natija qaytaradi",
+        "Condition",
+        "Branch"
+      ],
+      "options_en": [
+        "If statement",
+        "(if condition then else) — ifoda, natija qaytaradi",
+        "Condition",
+        "Branch"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Clojure da cond nima?",
+      "options": [
+        "Condition",
+        "Ko'p shart tekshirish — (cond (= x 1) ... :else ...)",
+        "Switch",
+        "Match"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da cond nima?",
+      "question_en": "Clojure da cond nima?",
+      "options_ru": [
+        "Condition",
+        "Ko'p shart tekshirish — (cond (= x 1) ... :else ...)",
+        "Switch",
+        "Match"
+      ],
+      "options_en": [
+        "Condition",
+        "Ko'p shart tekshirish — (cond (= x 1) ... :else ...)",
+        "Switch",
+        "Match"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Clojure da nil nima?",
+      "options": [
+        "Null",
+        "Qiymat yo'qligi — Java null ga o'xshash",
+        "Empty",
+        "Nothing"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da nil nima?",
+      "question_en": "Clojure da nil nima?",
+      "options_ru": [
+        "Null",
+        "Qiymat yo'qligi — Java null ga o'xshash",
+        "Empty",
+        "Nothing"
+      ],
+      "options_en": [
+        "Null",
+        "Qiymat yo'qligi — Java null ga o'xshash",
+        "Empty",
+        "Nothing"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Clojure da true va false qanday?",
+      "options": [
+        "1 va 0",
+        "true va false — boolean qiymatlar",
+        "yes va no",
+        "on va off"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da true va false qanday?",
+      "question_en": "Clojure da true va false qanday?",
+      "options_ru": [
+        "1 va 0",
+        "true va false — boolean qiymatlar",
+        "yes va no",
+        "on va off"
+      ],
+      "options_en": [
+        "1 va 0",
+        "true va false — boolean qiymatlar",
+        "yes va no",
+        "on va off"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Clojure da immutability nima?",
+      "options": [
+        "O'zgaruvchan",
+        "Barcha ma'lumotlar o'zgarmas — o'zgartirish yangi qiymat yaratadi",
+        "Mutable",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da immutability nima?",
+      "question_en": "Clojure da immutability nima?",
+      "options_ru": [
+        "O'zgaruvchan",
+        "Barcha ma'lumotlar o'zgarmas — o'zgartirish yangi qiymat yaratadi",
+        "Mutable",
+        "Constant"
+      ],
+      "options_en": [
+        "O'zgaruvchan",
+        "Barcha ma'lumotlar o'zgarmas — o'zgartirish yangi qiymat yaratadi",
+        "Mutable",
+        "Constant"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Clojure da persistent data structures nima?",
+      "options": [
+        "Saqlanadigan",
+        "Structural sharing orqali o'zgartirishda samarali yangi versiya — O(log n)",
+        "Immutable data",
+        "Copy data"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da persistent data structures nima?",
+      "question_en": "Clojure da persistent data structures nima?",
+      "options_ru": [
+        "Saqlanadigan",
+        "Structural sharing orqali o'zgartirishda samarali yangi versiya — O(log n)",
+        "Immutable data",
+        "Copy data"
+      ],
+      "options_en": [
+        "Saqlanadigan",
+        "Structural sharing orqali o'zgartirishda samarali yangi versiya — O(log n)",
+        "Immutable data",
+        "Copy data"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Clojure da atom nima uchun?",
+      "options": [
+        "Atom element",
+        "Mutable state boshqarish — swap!, reset!, compare-and-set!",
+        "State variable",
+        "Ref type"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da atom nima uchun?",
+      "question_en": "Clojure da atom nima uchun?",
+      "options_ru": [
+        "Atom element",
+        "Mutable state boshqarish — swap!, reset!, compare-and-set!",
+        "State variable",
+        "Ref type"
+      ],
+      "options_en": [
+        "Atom element",
+        "Mutable state boshqarish — swap!, reset!, compare-and-set!",
+        "State variable",
+        "Ref type"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Clojure da ref nima?",
+      "options": [
+        "Reference",
+        "STM (Software Transactional Memory) bilan boshqariladigan mutable state",
+        "Atom turi",
+        "Var turi"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da ref nima?",
+      "question_en": "Clojure da ref nima?",
+      "options_ru": [
+        "Reference",
+        "STM (Software Transactional Memory) bilan boshqariladigan mutable state",
+        "Atom turi",
+        "Var turi"
+      ],
+      "options_en": [
+        "Reference",
+        "STM (Software Transactional Memory) bilan boshqariladigan mutable state",
+        "Atom turi",
+        "Var turi"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Clojure da STM nima?",
+      "options": [
+        "Static Type Management",
+        "Software Transactional Memory — dosync blokida atomik o'zgartirishlar",
+        "Concurrent memory",
+        "Lock-free"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da STM nima?",
+      "question_en": "Clojure da STM nima?",
+      "options_ru": [
+        "Static Type Management",
+        "Software Transactional Memory — dosync blokida atomik o'zgartirishlar",
+        "Concurrent memory",
+        "Lock-free"
+      ],
+      "options_en": [
+        "Static Type Management",
+        "Software Transactional Memory — dosync blokida atomik o'zgartirishlar",
+        "Concurrent memory",
+        "Lock-free"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Clojure da lazy sequences nima?",
+      "options": [
+        "Sekin ketma-ketlik",
+        "Faqat kerak bo'lganda hisoblanadigan cheksiz ketma-ketliklar — (range) kabi",
+        "Infinite list",
+        "Deferred list"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da lazy sequences nima?",
+      "question_en": "Clojure da lazy sequences nima?",
+      "options_ru": [
+        "Sekin ketma-ketlik",
+        "Faqat kerak bo'lganda hisoblanadigan cheksiz ketma-ketliklar — (range) kabi",
+        "Infinite list",
+        "Deferred list"
+      ],
+      "options_en": [
+        "Sekin ketma-ketlik",
+        "Faqat kerak bo'lganda hisoblanadigan cheksiz ketma-ketliklar — (range) kabi",
+        "Infinite list",
+        "Deferred list"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Clojure da macro nima?",
+      "options": [
+        "Makro",
+        "Kompilyatsiya vaqtida kod transformatsiya — defmacro — syntactic abstraction",
+        "Code gen",
+        "Template"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da macro nima?",
+      "question_en": "Clojure da macro nima?",
+      "options_ru": [
+        "Makro",
+        "Kompilyatsiya vaqtida kod transformatsiya — defmacro — syntactic abstraction",
+        "Code gen",
+        "Template"
+      ],
+      "options_en": [
+        "Makro",
+        "Kompilyatsiya vaqtida kod transformatsiya — defmacro — syntactic abstraction",
+        "Code gen",
+        "Template"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Clojure da namespace nima?",
+      "options": [
+        "Nom maydoni",
+        "(ns myapp.core) — nomlar ziddiyatini oldini olish, modullar tashkil qilish",
+        "Module",
+        "Package"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da namespace nima?",
+      "question_en": "Clojure da namespace nima?",
+      "options_ru": [
+        "Nom maydoni",
+        "(ns myapp.core) — nomlar ziddiyatini oldini olish, modullar tashkil qilish",
+        "Модуль",
+        "Package"
+      ],
+      "options_en": [
+        "Nom maydoni",
+        "(ns myapp.core) — nomlar ziddiyatini oldini olish, modullar tashkil qilish",
+        "Module",
+        "Package"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Clojure da require va use farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "require — namespace alias bilan import; use — barcha nomlarni import (deprecated)",
+        "use yangi",
+        "require eski"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da require va use farqi?",
+      "question_en": "Clojure da require va use farqi?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "require — namespace alias bilan import; use — barcha nomlarni import (deprecated)",
+        "use yangi",
+        "require eski"
+      ],
+      "options_en": [
+        "There is no difference",
+        "require — namespace alias bilan import; use — barcha nomlarni import (deprecated)",
+        "use yangi",
+        "require eski"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Clojure da protocol nima?",
+      "options": [
+        "Network protocol",
+        "Polimorfizm — defprotocol bilan interfeys, extend-type bilan implementatsiya",
+        "Interface",
+        "Typeclass"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da protocol nima?",
+      "question_en": "Clojure da protocol nima?",
+      "options_ru": [
+        "Network protocol",
+        "Polimorfizm — defprotocol bilan interfeys, extend-type bilan implementatsiya",
+        "Interface",
+        "Typeclass"
+      ],
+      "options_en": [
+        "Network protocol",
+        "Polimorfizm — defprotocol bilan interfeys, extend-type bilan implementatsiya",
+        "Interface",
+        "Typeclass"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Clojure da record nima?",
+      "options": [
+        "Yozuv",
+        "defrecord — optimizatsiyalangan, type hint bilan ma'lumot tipi",
+        "Data class",
+        "Struct"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da record nima?",
+      "question_en": "Clojure da record nima?",
+      "options_ru": [
+        "Yozuv",
+        "defrecord — optimizatsiyalangan, type hint bilan ma'lumot tipi",
+        "Data class",
+        "Struct"
+      ],
+      "options_en": [
+        "Yozuv",
+        "defrecord — optimizatsiyalangan, type hint bilan ma'lumot tipi",
+        "Data class",
+        "Struct"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Clojure da reduce nima?",
+      "options": [
+        "Kamaytirish",
+        "(reduce f init coll) — akkumulyator bilan bitta qiymat hosil qilish",
+        "Fold",
+        "Aggregate"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da reduce nima?",
+      "question_en": "Clojure da reduce nima?",
+      "options_ru": [
+        "Kamaytirish",
+        "(reduce f init coll) — akkumulyator bilan bitta qiymat hosil qilish",
+        "Fold",
+        "Aggregate"
+      ],
+      "options_en": [
+        "Kamaytirish",
+        "(reduce f init coll) — akkumulyator bilan bitta qiymat hosil qilish",
+        "Fold",
+        "Aggregate"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Clojure da threading macros (-> va ->>) nima?",
+      "options": [
+        "Thread yaratish",
+        "Funksiya zanjirini o'qilishi oson yozish — -> birinchi, ->> oxirgi argument",
+        "Pipe",
+        "Chain"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da threading macros (-> va ->>) nima?",
+      "question_en": "Clojure da threading macros (-> va ->>) nima?",
+      "options_ru": [
+        "Thread yaratish",
+        "Funksiya zanjirini o'qilishi oson yozish — -> birinchi, ->> oxirgi argument",
+        "Pipe",
+        "Chain"
+      ],
+      "options_en": [
+        "Thread yaratish",
+        "Funksiya zanjirini o'qilishi oson yozish — -> birinchi, ->> oxirgi argument",
+        "Pipe",
+        "Chain"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Clojure da destructuring nima?",
+      "options": [
+        "Destruksiya",
+        "(let [{:keys [name age]} person] ...) — nested ma'lumotlarni ajratish",
+        "Unpack",
+        "Pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da destructuring nima?",
+      "question_en": "Clojure da destructuring nima?",
+      "options_ru": [
+        "Destruksiya",
+        "(let [{:keys [name age]} person] ...) — nested ma'lumotlarni ajratish",
+        "Unpack",
+        "Pattern"
+      ],
+      "options_en": [
+        "Destruksiya",
+        "(let [{:keys [name age]} person] ...) — nested ma'lumotlarni ajratish",
+        "Unpack",
+        "Pattern"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Clojure da interop Java bilan qanday?",
+      "options": [
+        "Java import",
+        "(.method object args) yoki (ClassName.) — Java sinflari va metodlarini ishlatish",
+        "Java bridge",
+        "JVM interop"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da interop Java bilan qanday?",
+      "question_en": "Clojure da interop Java bilan qanday?",
+      "options_ru": [
+        "Java import",
+        "(.method object args) yoki (ClassName.) — Java sinflari va metodlarini ishlatish",
+        "Java bridge",
+        "JVM interop"
+      ],
+      "options_en": [
+        "Java import",
+        "(.method object args) yoki (ClassName.) — Java sinflari va metodlarini ishlatish",
+        "Java bridge",
+        "JVM interop"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Clojure da core.async nima?",
+      "options": [
+        "Async library",
+        "CSP (Communicating Sequential Processes) — go blocks, channels",
+        "Async channel",
+        "Concurrency"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da core.async nima?",
+      "question_en": "Clojure da core.async nima?",
+      "options_ru": [
+        "Async library",
+        "CSP (Communicating Sequential Processes) — go blocks, channels",
+        "Async channel",
+        "Concurrency"
+      ],
+      "options_en": [
+        "Async library",
+        "CSP (Communicating Sequential Processes) — go blocks, channels",
+        "Async channel",
+        "Concurrency"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Clojure da comp nima?",
+      "options": [
+        "Component",
+        "Funksiyalarni birlashtirib yangi funksiya — (comp f g) = (fn [x] (f (g x)))",
+        "Compose",
+        "Chain"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da comp nima?",
+      "question_en": "Clojure da comp nima?",
+      "options_ru": [
+        "Component",
+        "Funksiyalarni birlashtirib yangi funksiya — (comp f g) = (fn [x] (f (g x)))",
+        "Compose",
+        "Chain"
+      ],
+      "options_en": [
+        "Component",
+        "Funksiyalarni birlashtirib yangi funksiya — (comp f g) = (fn [x] (f (g x)))",
+        "Compose",
+        "Chain"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Clojure da partial nima?",
+      "options": [
+        "Qisman",
+        "Funksiyani qisman qo'llash — (partial + 5) = (fn [x] (+ 5 x))",
+        "Curry",
+        "Lambda"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da partial nima?",
+      "question_en": "Clojure da partial nima?",
+      "options_ru": [
+        "Qisman",
+        "Funksiyani qisman qo'llash — (partial + 5) = (fn [x] (+ 5 x))",
+        "Curry",
+        "Lambda"
+      ],
+      "options_en": [
+        "Qisman",
+        "Funksiyani qisman qo'llash — (partial + 5) = (fn [x] (+ 5 x))",
+        "Curry",
+        "Lambda"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Clojure da apply nima?",
+      "options": [
+        "Qo'llash",
+        "(apply + [1 2 3]) — list ni argumentlarga yoyib funksiya chaqirish",
+        "Spread",
+        "Unpack"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da apply nima?",
+      "question_en": "Clojure da apply nima?",
+      "options_ru": [
+        "Qo'llash",
+        "(apply + [1 2 3]) — list ni argumentlarga yoyib funksiya chaqirish",
+        "Spread",
+        "Unpack"
+      ],
+      "options_en": [
+        "Qo'llash",
+        "(apply + [1 2 3]) — list ni argumentlarga yoyib funksiya chaqirish",
+        "Spread",
+        "Unpack"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Clojure da assoc nima?",
+      "options": [
+        "Association",
+        "Map ga kalit-qiymat qo'shish yoki o'zgartirish — yangi map qaytaradi",
+        "Map update",
+        "Dict set"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da assoc nima?",
+      "question_en": "Clojure da assoc nima?",
+      "options_ru": [
+        "Association",
+        "Map ga kalit-qiymat qo'shish yoki o'zgartirish — yangi map qaytaradi",
+        "Map update",
+        "Dict set"
+      ],
+      "options_en": [
+        "Association",
+        "Map ga kalit-qiymat qo'shish yoki o'zgartirish — yangi map qaytaradi",
+        "Map update",
+        "Dict set"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Clojure da Datomic nima?",
+      "options": [
+        "Database",
+        "Immutable, time-based distributed database — Rich Hickey tomonidan",
+        "NoSQL",
+        "Graph DB"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da Datomic nima?",
+      "question_en": "Clojure da Datomic nima?",
+      "options_ru": [
+        "Database",
+        "Immutable, time-based distributed database — Rich Hickey tomonidan",
+        "NoSQL",
+        "Graph DB"
+      ],
+      "options_en": [
+        "Database",
+        "Immutable, time-based distributed database — Rich Hickey tomonidan",
+        "NoSQL",
+        "Graph DB"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Clojure da Ring nima?",
+      "options": [
+        "Uzuk",
+        "Web application middleware protocol — request/response map model",
+        "Web framework",
+        "HTTP library"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da Ring nima?",
+      "question_en": "Clojure da Ring nima?",
+      "options_ru": [
+        "Uzuk",
+        "Web application middleware protocol — request/response map model",
+        "Web framework",
+        "HTTP library"
+      ],
+      "options_en": [
+        "Uzuk",
+        "Web application middleware protocol — request/response map model",
+        "Web framework",
+        "HTTP library"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Clojure da Compojure nima?",
+      "options": [
+        "Composer",
+        "Ring asosidagi routing library — GET, POST, defroutes",
+        "Router",
+        "Middleware"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da Compojure nima?",
+      "question_en": "Clojure da Compojure nima?",
+      "options_ru": [
+        "Composer",
+        "Ring asosidagi routing library — GET, POST, defroutes",
+        "Router",
+        "Middleware"
+      ],
+      "options_en": [
+        "Composer",
+        "Ring asosidagi routing library — GET, POST, defroutes",
+        "Router",
+        "Middleware"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Clojure da transducer nima?",
+      "options": [
+        "Aylantiruvchi",
+        "Composable, kontekstsiz transformatsiya — map, filter dan tuzilgan — no intermediate collection",
+        "Transform",
+        "Reducer"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da transducer nima?",
+      "question_en": "Clojure da transducer nima?",
+      "options_ru": [
+        "Aylantiruvchi",
+        "Composable, kontekstsiz transformatsiya — map, filter dan tuzilgan — no intermediate collection",
+        "Transform",
+        "Reducer"
+      ],
+      "options_en": [
+        "Aylantiruvchi",
+        "Composable, kontekstsiz transformatsiya — map, filter dan tuzilgan — no intermediate collection",
+        "Transform",
+        "Reducer"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Clojure da multimethods nima?",
+      "options": [
+        "Ko'p metod",
+        "defmulti/defmethod — dispatch funksiyasi asosida polymorphism — istalgan qiymat bo'yicha",
+        "Protocol alt",
+        "Dynamic dispatch"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da multimethods nima?",
+      "question_en": "Clojure da multimethods nima?",
+      "options_ru": [
+        "Ko'p metod",
+        "defmulti/defmethod — dispatch funksiyasi asosida polymorphism — istalgan qiymat bo'yicha",
+        "Protocol alt",
+        "Dynamic dispatch"
+      ],
+      "options_en": [
+        "Ko'p metod",
+        "defmulti/defmethod — dispatch funksiyasi asosida polymorphism — istalgan qiymat bo'yicha",
+        "Protocol alt",
+        "Dynamic dispatch"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Clojure da agent nima?",
+      "options": [
+        "Vakil",
+        "Asinxron mutable state — send, send-off bilan yangilash — error handling bilan",
+        "Async atom",
+        "Async state"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da agent nima?",
+      "question_en": "Clojure da agent nima?",
+      "options_ru": [
+        "Vakil",
+        "Asinxron mutable state — send, send-off bilan yangilash — error handling bilan",
+        "Async atom",
+        "Async state"
+      ],
+      "options_en": [
+        "Vakil",
+        "Asinxron mutable state — send, send-off bilan yangilash — error handling bilan",
+        "Async atom",
+        "Async state"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Clojure da var nima?",
+      "options": [
+        "Variable",
+        "Global mutable reference — dynamic binding uchun — def yoki binding bilan",
+        "Global var",
+        "Thread local"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da var nima?",
+      "question_en": "Clojure da var nima?",
+      "options_ru": [
+        "Variable",
+        "Global mutable reference — dynamic binding uchun — def yoki binding bilan",
+        "Global var",
+        "Thread local"
+      ],
+      "options_en": [
+        "Variable",
+        "Global mutable reference — dynamic binding uchun — def yoki binding bilan",
+        "Global var",
+        "Thread local"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Clojure da ClojureScript nima?",
+      "options": [
+        "Clojure skript",
+        "Clojure ni JavaScript ga kompilatsiya qiluvchi — browser va Node.js uchun",
+        "JS Clojure",
+        "Frontend Clojure"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da ClojureScript nima?",
+      "question_en": "Clojure da ClojureScript nima?",
+      "options_ru": [
+        "Clojure skript",
+        "Clojure ni JavaScript ga kompilatsiya qiluvchi — browser va Node.js uchun",
+        "JS Clojure",
+        "Frontend Clojure"
+      ],
+      "options_en": [
+        "Clojure skript",
+        "Clojure ni JavaScript ga kompilatsiya qiluvchi — browser va Node.js uchun",
+        "JS Clojure",
+        "Frontend Clojure"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Clojure da spec nima?",
+      "options": [
+        "Spesifikatsiya",
+        "clojure.spec — ma'lumot va funksiya validatsiyasi, generative testing",
+        "Type system",
+        "Contract"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da spec nima?",
+      "question_en": "Clojure da spec nima?",
+      "options_ru": [
+        "Spesifikatsiya",
+        "clojure.spec — ma'lumot va funksiya validatsiyasi, generative testing",
+        "Type system",
+        "Contract"
+      ],
+      "options_en": [
+        "Spesifikatsiya",
+        "clojure.spec — ma'lumot va funksiya validatsiyasi, generative testing",
+        "Type system",
+        "Contract"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Clojure da edn nima?",
+      "options": [
+        "Standart format",
+        "Extensible Data Notation — Clojure ma'lumotlar tuzilmasini saqlash formati",
+        "JSON alt",
+        "Data format"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da edn nima?",
+      "question_en": "Clojure da edn nima?",
+      "options_ru": [
+        "Standart format",
+        "Extensible Data Notation — Clojure ma'lumotlar tuzilmasini saqlash formati",
+        "JSON alt",
+        "Data format"
+      ],
+      "options_en": [
+        "Standart format",
+        "Extensible Data Notation — Clojure ma'lumotlar tuzilmasini saqlash formati",
+        "JSON alt",
+        "Data format"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Clojure da reducers nima?",
+      "options": [
+        "Reducer funksiya",
+        "clojure.core.reducers — parallel fold uchun — fork-join asosida",
+        "Parallel reduce",
+        "Transducer"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da reducers nima?",
+      "question_en": "Clojure da reducers nima?",
+      "options_ru": [
+        "Reducer funksiya",
+        "clojure.core.reducers — parallel fold uchun — fork-join asosida",
+        "Parallel reduce",
+        "Transducer"
+      ],
+      "options_en": [
+        "Reducer funksiya",
+        "clojure.core.reducers — parallel fold uchun — fork-join asosida",
+        "Parallel reduce",
+        "Transducer"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Clojure da test.check nima?",
+      "options": [
+        "Test qilish",
+        "Property-based testing — generatorlar bilan avtomatik test ma'lumotlar",
+        "QuickCheck",
+        "Generative test"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da test.check nima?",
+      "question_en": "Clojure da test.check nima?",
+      "options_ru": [
+        "Test qilish",
+        "Property-based testing — generatorlar bilan avtomatik test ma'lumotlar",
+        "QuickCheck",
+        "Generative test"
+      ],
+      "options_en": [
+        "Test qilish",
+        "Property-based testing — generatorlar bilan avtomatik test ma'lumotlar",
+        "QuickCheck",
+        "Generative test"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Clojure da deref (@) nima?",
+      "options": [
+        "Dereference",
+        "Atom, ref, agent, promise qiymatini olish — @atom = (deref atom)",
+        "Unwrap",
+        "Get value"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da deref (@) nima?",
+      "question_en": "Clojure da deref (@) nima?",
+      "options_ru": [
+        "Dereference",
+        "Atom, ref, agent, promise qiymatini olish — @atom = (deref atom)",
+        "Unwrap",
+        "Get value"
+      ],
+      "options_en": [
+        "Dereference",
+        "Atom, ref, agent, promise qiymatini olish — @atom = (deref atom)",
+        "Unwrap",
+        "Get value"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Clojure da promise nima?",
+      "options": [
+        "Va'da",
+        "Bitta yozish, ko'p o'qish — deliver/deref — async coordination",
+        "Future",
+        "Channel"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da promise nima?",
+      "question_en": "Clojure da promise nima?",
+      "options_ru": [
+        "Va'da",
+        "Bitta yozish, ko'p o'qish — deliver/deref — async coordination",
+        "Future",
+        "Channel"
+      ],
+      "options_en": [
+        "Va'da",
+        "Bitta yozish, ko'p o'qish — deliver/deref — async coordination",
+        "Future",
+        "Channel"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Clojure da reify nima uchun?",
+      "options": [
+        "Aniqlashtirish",
+        "Protocol yoki Java interfeys ni anonim klass sifatida implement qilish",
+        "Anonymous class",
+        "Interface impl"
+      ],
+      "answer": 1,
+      "question_ru": "Clojure da reify nima uchun?",
+      "question_en": "Clojure da reify nima uchun?",
+      "options_ru": [
+        "Aniqlashtirish",
+        "Protocol yoki Java interfeys ni anonim klass sifatida implement qilish",
+        "Anonymous class",
+        "Interface impl"
+      ],
+      "options_en": [
+        "Aniqlashtirish",
+        "Protocol yoki Java interfeys ni anonim klass sifatida implement qilish",
+        "Anonymous class",
+        "Interface impl"
+      ]
+    }
   ]
 }

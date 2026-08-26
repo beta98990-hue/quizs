@@ -2,55 +2,1305 @@
   "technology": "Scala",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Scala nima?","options":["CSS framework","JVM da ishlaydigan funksional va ob'ektga yo'naltirilgan dasturlash tili","JavaScript","Database tili"],"answer":1},
-    {"id":2,"level":"easy","question":"Scala da o'zgaruvchi qanday e'lon qilinadi?","options":["int x = 5","val x = 5 yoki var x = 5","let x = 5","x := 5"],"answer":1},
-    {"id":3,"level":"easy","question":"Scala da val va var farqi?","options":["Hech qanday farq yo'q","val — immutable, var — mutable","var immutable","val mutable"],"answer":1},
-    {"id":4,"level":"easy","question":"Scala da case class nima?","options":["If-case","Immutable ma'lumot tashuvchi — equals, hashCode, toString, copy avtomatik","Data class","Record"],"answer":1},
-    {"id":5,"level":"easy","question":"Scala da object nima?","options":["Ob'ekt yaratish","Singleton — bitta instancea ega klass","Static class","Companion"],"answer":1},
-    {"id":6,"level":"easy","question":"Scala da println nima qiladi?","options":["Print line","Konsolga matn va yangi qator chiqaradi","Log yozadi","Debug"],"answer":1},
-    {"id":7,"level":"easy","question":"Scala da trait nima?","options":["Xususiyat","Interfeys + implementatsiya — mixin uchun, ko'p meros mumkin","Abstract class","Protocol"],"answer":1},
-    {"id":8,"level":"easy","question":"Scala da pattern matching qanday?","options":["match/case — Java switch dan kuchliroq, tiplarga ham match qiladi","switch/case","if/else","when/case"],"answer":0},
-    {"id":9,"level":"easy","question":"Scala da List nima?","options":["Java List","Immutable linked list — :: va Nil bilan","Dynamic list","Array"],"answer":1},
-    {"id":10,"level":"easy","question":"Scala da def nima uchun?","options":["Definition","Metod e'lon qilish","Variable define","Data define"],"answer":1},
-    {"id":11,"level":"easy","question":"Scala da Option nima?","options":["Optional import","Some(value) yoki None — null ga xavfsiz alternativa","Maybe type","Nullable"],"answer":1},
-    {"id":12,"level":"easy","question":"Scala da map nima uchun?","options":["Hash map","Kolleksiya elementlarini transformatsiya qilib yangi kolleksiya qaytaradi","Key-value","Dictionary"],"answer":1},
-    {"id":13,"level":"easy","question":"Scala da flatMap nima?","options":["Flat massiv","map + flatten — monadik zanjir uchun, Option, List, Future bilan","Map variant","Chain map"],"answer":1},
-    {"id":14,"level":"easy","question":"Scala da for comprehension nima?","options":["For tsikl","for { x <- list; y <- ... } yield — flatMap/map zanjirining syntactic sugar","Generator","Yield"],"answer":1},
-    {"id":15,"level":"easy","question":"Scala da String interpolation qanday?","options":["String + concat","s\"Hello $name!\" yoki f\"${price}%.2f\"","String.format()","Template"],"answer":1},
-    {"id":16,"level":"medium","question":"Scala da implicit nima?","options":["Yashirin","Kompilyator tomonidan avtomatik kiritiluvchi parametr yoki konvertatsiya","Default param","Auto import"],"answer":1},
-    {"id":17,"level":"medium","question":"Scala da Future nima?","options":["Kelajak","Asinxron hisoblash natijalari uchun — onComplete, map, flatMap bilan","Async type","Promise"],"answer":1},
-    {"id":18,"level":"medium","question":"Scala da Akka nima?","options":["Java Akka","Actor model asosidagi concurrent va distributed tizimlar uchun toolkit","Framework","Library"],"answer":1},
-    {"id":19,"level":"medium","question":"Scala da sealed trait nima?","options":["Yopiq trait","Faqat bir fayldagi klasslar meros olishi — exhaustive pattern matching","Final trait","Abstract trait"],"answer":1},
-    {"id":20,"level":"medium","question":"Scala da type class nima?","options":["Tip klassi","Ad-hoc polymorphism — implicit parameter orqali funksionallik qo'shish","Generic class","Abstract class"],"answer":1},
-    {"id":21,"level":"medium","question":"Scala da Either nima?","options":["Ikki variant","Left (xato) yoki Right (muvaffaqiyat) — xato boshqarish uchun","Result type","Union type"],"answer":1},
-    {"id":22,"level":"medium","question":"Scala da companion object nima?","options":["Hamroh ob'ekt","Klass bilan bir xil nomli object — factory methods, static members","Static class","Helper object"],"answer":1},
-    {"id":23,"level":"medium","question":"Scala da lazy val nima?","options":["Sekin val","Birinchi kirishda initsializatsiya — thread-safe, bir marta hisoblanadi","Deferred val","Optional val"],"answer":1},
-    {"id":24,"level":"medium","question":"Scala da higher kinded types nima?","options":["Yuqori darajali tip","Tip konstruktorlari uchun tip parametrlari — F[_] kabi","Generic generic","Type lambda"],"answer":1},
-    {"id":25,"level":"medium","question":"Scala da cats kutubxonasi nima uchun?","options":["Mushuk","Funksional dasturlash tiplar va type class lar — Monad, Functor, Applicative","FP library","Type library"],"answer":1},
-    {"id":26,"level":"medium","question":"Scala da Try nima?","options":["Try bloki","Success(value) yoki Failure(exception) — exception handling funksional uslubda","Exception type","Result type"],"answer":1},
-    {"id":27,"level":"medium","question":"Scala da Stream (LazyList) nima?","options":["Data stream","Lazy infinite ketma-ketliklar — faqat kerakli elementlar hisoblanadi","Network stream","Collection"],"answer":1},
-    {"id":28,"level":"medium","question":"Scala da foldLeft nima uchun?","options":["Yig'ish","Akkumulyator bilan chapdan o'ngga aylanib bitta qiymat hosil qilish","Reduce","Fold"],"answer":1},
-    {"id":29,"level":"medium","question":"Scala da apply metodi nima?","options":["Qo'llash","Ob'ektni funksiya kabi chaqirish: MyClass(arg) = MyClass.apply(arg)","Factory method","Constructor"],"answer":1},
-    {"id":30,"level":"medium","question":"Scala da unapply nima uchun?","options":["Ochish","Pattern matching uchun extractor — case class avtomatik beradi","Deconstruct","Unpack"],"answer":1},
-    {"id":31,"level":"medium","question":"Scala da given/using (Scala 3) nima?","options":["Berilgan/ishlatish","Scala 3 da implicit ga yangi nom — given ta'riflash, using ishlatish","Implicit alternative","Context param"],"answer":1},
-    {"id":32,"level":"medium","question":"Scala da extension methods (Scala 3) nima?","options":["Kengaytirish","extension (x: T) def method() — mavjud tipga metod qo'shish","Mixin","Implicit class"],"answer":1},
-    {"id":33,"level":"medium","question":"Scala da opaque types (Scala 3) nima?","options":["Noaniq tip","Wrapper overhead holda yangi tip — type alias lekin tashqariga yashirin","Type alias","Value class"],"answer":1},
-    {"id":34,"level":"medium","question":"Scala da enum (Scala 3) nima?","options":["Raqamlar","Kuchli enum — sealed hierarchy alternativa, parameters, methods","Constant group","Sealed enum"],"answer":1},
-    {"id":35,"level":"medium","question":"Scala da union types (Scala 3) nima?","options":["Birlashma","A | B — qiymat A yoki B tipida bo'lishi mumkin","Either type","Sum type"],"answer":1},
-    {"id":36,"level":"hard","question":"Scala da monad transformer nima?","options":["Monad","Ko'p monad qatlamlarini birlashtirish — OptionT, EitherT — cats kutubxonasi","Functor stack","Nested monad"],"answer":1},
-    {"id":37,"level":"hard","question":"Scala da tagless final nima?","options":["Tag","Algebraic effect lar uchun dizayn namunasi — F[_] type parameter bilan abstraktsiya","Final tag","Effect system"],"answer":1},
-    {"id":38,"level":"hard","question":"Scala da ZIO nima?","options":["Z IO","Pure functional effects library — ZIO[R, E, A] — environment, error, success","IO library","Effect monad"],"answer":1},
-    {"id":39,"level":"hard","question":"Scala da Macro nima?","options":["Makro","Kompilyatsiya vaqtida kod transformatsiya va generatsiya — inline def","Code gen","Template"],"answer":1},
-    {"id":40,"level":"easy","question":"Scala da filter nima?","options":["CSS filter","Shartga mos elementlardan yangi kolleksiya yaratadi","Element selection","Array filter"],"answer":1},
-    {"id":41,"level":"hard","question":"Scala da structural types nima?","options":["Struktura tipi","Nominal emas, struktural mos kelish — { def method(): Type } kabi","Duck typing","Structural subtype"],"answer":1},
-    {"id":42,"level":"hard","question":"Scala da fs2 (Functional Streams for Scala) nima?","options":["File system 2","Pure funksional streaming kutubxona — back-pressure, resource safety","Stream library","IO stream"],"answer":1},
-    {"id":43,"level":"hard","question":"Scala da http4s nima?","options":["HTTP versiya 4","Pure funksional HTTP server va client — cats-effect bilan","HTTP library","Web framework"],"answer":1},
-    {"id":44,"level":"hard","question":"Scala da Doobie nima?","options":["Ixtiro","Pure funksional JDBC layer — SQL so'rovlar type-safe tarzda","ORM","Database library"],"answer":1},
-    {"id":45,"level":"hard","question":"Scala da implicit conversion nima?","options":["Yashirin konvertatsiya","Tip A ni B ga avtomatik aylantirish — implicit def a2b(a: A): B","Type cast","Auto convert"],"answer":1},
-    {"id":46,"level":"hard","question":"Scala da type lambda nima?","options":["Lambda tip","Partial type application — ({type L[x] = Either[String, x]})#L yoki Scala 3 da [x] =>> F[x]","Generic lambda","Type alias"],"answer":1},
-    {"id":47,"level":"hard","question":"Scala da phantom types nima?","options":["Xayoliy tiplar","Tip parametr runtime ma'lumot emas, compile-time constraint uchun — state machine encoding","Type marker","Generic marker"],"answer":1},
-    {"id":48,"level":"hard","question":"Scala da Algebird nima?","options":["Algebra lib","Twitter — abstract algebra: Monoid, Group, Ring — distributed aggregation","Math library","Type algebra"],"answer":1},
-    {"id":49,"level":"hard","question":"Scala da Discipline nima?","options":["Intizom","cats kutubxona uchun algebra qonunlarini test qiluvchi framework","Law testing","Property test"],"answer":1},
-    {"id":50,"level":"hard","question":"Scala da Shapeless nima?","options":["Shakl yo'q","Generic programming — HList, Coproduct, automatic derivation","Generic library","Type utility"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Scala nima?",
+      "options": [
+        "CSS framework",
+        "JVM da ishlaydigan funksional va ob'ektga yo'naltirilgan dasturlash tili",
+        "JavaScript",
+        "Database tili"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Скала?",
+      "question_en": "What is Scala?",
+      "options_ru": [
+        "CSS-фреймворк",
+        "Функциональный и объектно-ориентированный язык программирования, работающий на JVM.",
+        "JavaScript",
+        "Язык базы данных"
+      ],
+      "options_en": [
+        "CSS framework",
+        "A functional and object-oriented programming language that runs on the JVM",
+        "JavaScript",
+        "Database tili"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Scala da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "int x = 5",
+        "val x = 5 yoki var x = 5",
+        "let x = 5",
+        "x := 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в Scala?",
+      "question_en": "How to declare a variable in Scala?",
+      "options_ru": [
+        "интервал х = 5",
+        "val x = 5 или var x = 5",
+        "пусть х = 5",
+        "х := 5"
+      ],
+      "options_en": [
+        "int x = 5",
+        "val x = 5 or var x = 5",
+        "let x = 5",
+        "x := 5"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Scala da val va var farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "val — immutable, var — mutable",
+        "var immutable",
+        "val mutable"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между val и var в Scala?",
+      "question_en": "Difference between val and var in Scala?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "val — неизменяемый, var — изменяемый",
+        "var неизменяема",
+        "вал изменчивый"
+      ],
+      "options_en": [
+        "There is no difference",
+        "val — immutable, var — mutable",
+        "var is immutable",
+        "shaft is mutable"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Scala da case class nima?",
+      "options": [
+        "If-case",
+        "Immutable ma'lumot tashuvchi — equals, hashCode, toString, copy avtomatik",
+        "Data class",
+        "Record"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое кейс-класс в Scala?",
+      "question_en": "Scala da case class nima?",
+      "options_ru": [
+        "Если-случай",
+        "Неизменяемый носитель данных — равно, hashCode, toString, копировать автоматически",
+        "Класс данных",
+        "Запись"
+      ],
+      "options_en": [
+        "If-case",
+        "Immutable data carrier — equals, hashCode, toString, copy automatically",
+        "Data class",
+        "Record"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Scala da object nima?",
+      "options": [
+        "Ob'ekt yaratish",
+        "Singleton — bitta instancea ega klass",
+        "Static class",
+        "Companion"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое объект в Scala?",
+      "question_en": "What is an object in Scala?",
+      "options_ru": [
+        "Создать объект",
+        "Синглтон — это класс с единственным экземпляром.",
+        "Статический класс",
+        "Компаньон"
+      ],
+      "options_en": [
+        "Create an object",
+        "A singleton is a class with a single instance",
+        "Static class",
+        "Companion"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Scala da println nima qiladi?",
+      "options": [
+        "Print line",
+        "Konsolga matn va yangi qator chiqaradi",
+        "Log yozadi",
+        "Debug"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает println в Scala?",
+      "question_en": "What does println do in Scala?",
+      "options_ru": [
+        "Печать строки",
+        "Выводит текст и новую строку на консоль",
+        "Записывает журнал",
+        "Отладка"
+      ],
+      "options_en": [
+        "Print line",
+        "Outputs text and a newline to the console",
+        "Writes a log",
+        "Debug"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Scala da trait nima?",
+      "options": [
+        "Xususiyat",
+        "Interfeys + implementatsiya — mixin uchun, ko'p meros mumkin",
+        "Abstract class",
+        "Protocol"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое черта в Scala?",
+      "question_en": "What is a trait in Scala?",
+      "options_ru": [
+        "Особенность",
+        "Интерфейс + реализация — для миксина возможно множественное наследование",
+        "Абстрактный класс",
+        "Протокол"
+      ],
+      "options_en": [
+        "Feature",
+        "Interface + implementation — for mixin, multiple inheritance is possible",
+        "Abstract class",
+        "Protocol"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Scala da pattern matching qanday?",
+      "options": [
+        "match/case — Java switch dan kuchliroq, tiplarga ham match qiladi",
+        "switch/case",
+        "if/else",
+        "when/case"
+      ],
+      "answer": 0,
+      "question_ru": "Что такое сопоставление с образцом в Scala?",
+      "question_en": "What is pattern matching in Scala?",
+      "options_ru": [
+        "match/case — более мощный, чем переключатель Java, также соответствует типам",
+        "переключатель/корпус",
+        "если/иначе",
+        "когда/случай"
+      ],
+      "options_en": [
+        "match/case — more powerful than Java switch, also matches types",
+        "switch/case",
+        "if/else",
+        "when/case"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Scala da List nima?",
+      "options": [
+        "Java List",
+        "Immutable linked list — :: va Nil bilan",
+        "Dynamic list",
+        "Array"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в Scala?",
+      "question_en": "What is a List in Scala?",
+      "options_ru": [
+        "Список Java",
+        "Неизменяемый связанный список — с :: и Nil",
+        "Динамический список",
+        "Массив"
+      ],
+      "options_en": [
+        "Java List",
+        "Immutable linked list — with :: and Nil",
+        "Dynamic list",
+        "Array"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Scala da def nima uchun?",
+      "options": [
+        "Definition",
+        "Metod e'lon qilish",
+        "Variable define",
+        "Data define"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать def в Scala?",
+      "question_en": "Scala da def nima uchun?",
+      "options_ru": [
+        "Определение",
+        "Объявление метода",
+        "Определить переменные",
+        "Определение данных"
+      ],
+      "options_en": [
+        "Definition",
+        "Method declaration",
+        "Define variables",
+        "Data definition"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Scala da Option nima?",
+      "options": [
+        "Optional import",
+        "Some(value) yoki None — null ga xavfsiz alternativa",
+        "Maybe type",
+        "Nullable"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое опция в Scala?",
+      "question_en": "What is Option in Scala?",
+      "options_ru": [
+        "Необязательный импорт",
+        "Some(value) или None являются безопасной альтернативой нулю.",
+        "Может быть, введите",
+        "Обнуляемый"
+      ],
+      "options_en": [
+        "Optional import",
+        "Some(value) or None are safe alternatives to null",
+        "Maybe type",
+        "Nullable"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Scala da map nima uchun?",
+      "options": [
+        "Hash map",
+        "Kolleksiya elementlarini transformatsiya qilib yangi kolleksiya qaytaradi",
+        "Key-value",
+        "Dictionary"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем создавать карты в Scala?",
+      "question_en": "Why map in Scala?",
+      "options_ru": [
+        "Хэш-карта",
+        "Преобразует элементы коллекции и возвращает новую коллекцию.",
+        "Ключ-значение",
+        "Словарь"
+      ],
+      "options_en": [
+        "Hash map",
+        "Transforms the elements of the collection and returns a new collection",
+        "Key-value",
+        "Dictionary"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Scala da flatMap nima?",
+      "options": [
+        "Flat massiv",
+        "map + flatten — monadik zanjir uchun, Option, List, Future bilan",
+        "Map variant",
+        "Chain map"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое FlatMap в Scala?",
+      "question_en": "What is flatMap in Scala?",
+      "options_ru": [
+        "Плоский массив",
+        "Map + Flatten — для монадической цепочки, с Option, List, Future",
+        "Вариант карты",
+        "Карта сети"
+      ],
+      "options_en": [
+        "Flat array",
+        "map + flatten — for monadic chain, with Option, List, Future",
+        "Map option",
+        "Chain map"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Scala da for comprehension nima?",
+      "options": [
+        "For tsikl",
+        "for { x <- list; y <- ... } yield — flatMap/map zanjirining syntactic sugar",
+        "Generator",
+        "Yield"
+      ],
+      "answer": 1,
+      "question_ru": "Что нужно для понимания в Scala?",
+      "question_en": "What is for comprehension in Scala?",
+      "options_ru": [
+        "Для цикла",
+        "для { х <- список; y <- ... } выход — это синтаксический сахар цепочки FlatMap/map.",
+        "Генератор",
+        "Доходность"
+      ],
+      "options_en": [
+        "For cycle",
+        "for { x <- list; y <- ... } yield is the syntactic sugar of the flatMap/map chain",
+        "Generator",
+        "Yield"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Scala da String interpolation qanday?",
+      "options": [
+        "String + concat",
+        "s\"Hello $name!\" yoki f\"${price}%.2f\"",
+        "String.format()",
+        "Template"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое строковая интерполяция в Scala?",
+      "question_en": "What is String interpolation in Scala?",
+      "options_ru": [
+        "Строка + конкат",
+        "s\"Привет, $name!\" или f\"${price}%.2f\"",
+        "Строка.формат()",
+        "Шаблон"
+      ],
+      "options_en": [
+        "String + concat",
+        "s\"Hello $name!\" yoki f\"${price}%.2f\"",
+        "String.format()",
+        "Template"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Scala da implicit nima?",
+      "options": [
+        "Yashirin",
+        "Kompilyator tomonidan avtomatik kiritiluvchi parametr yoki konvertatsiya",
+        "Default param",
+        "Auto import"
+      ],
+      "answer": 1,
+      "question_ru": "Что неявно в Scala?",
+      "question_en": "Scala da implicit nima?",
+      "options_ru": [
+        "Скрытый",
+        "Параметр или преобразование, автоматически вставленное компилятором.",
+        "Параметр по умолчанию",
+        "Автоматический импорт"
+      ],
+      "options_en": [
+        "Hidden",
+        "A parameter or conversion automatically inserted by the compiler",
+        "Default param",
+        "Auto import"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Scala da Future nima?",
+      "options": [
+        "Kelajak",
+        "Asinxron hisoblash natijalari uchun — onComplete, map, flatMap bilan",
+        "Async type",
+        "Promise"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое будущее в Scala?",
+      "question_en": "Scala da Future nima?",
+      "options_ru": [
+        "Будущее",
+        "Для результатов асинхронных вычислений — с помощью onComplete, карты, FlatMap.",
+        "Асинхронный тип",
+        "Обещание"
+      ],
+      "options_en": [
+        "Kelajak",
+        "For asynchronous calculation results — with onComplete, map, flatMap",
+        "Async type",
+        "Promise"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Scala da Akka nima?",
+      "options": [
+        "Java Akka",
+        "Actor model asosidagi concurrent va distributed tizimlar uchun toolkit",
+        "Framework",
+        "Library"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Akka в Scala?",
+      "question_en": "What is Akka in Scala?",
+      "options_ru": [
+        "Ява Акка",
+        "Инструментарий для параллельных и распределенных систем на основе модели актера",
+        "Рамочная основа",
+        "Библиотека"
+      ],
+      "options_en": [
+        "Java Akka",
+        "Toolkit for concurrent and distributed systems based on actor model",
+        "Framework",
+        "Library"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Scala da sealed trait nima?",
+      "options": [
+        "Yopiq trait",
+        "Faqat bir fayldagi klasslar meros olishi — exhaustive pattern matching",
+        "Final trait",
+        "Abstract trait"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое запечатанная черта в Scala?",
+      "question_en": "What is a sealed trait in Scala?",
+      "options_ru": [
+        "Закрытая черта",
+        "Наследование классов только в одном файле — исчерпывающее сопоставление с образцом",
+        "Последняя черта",
+        "Абстрактная черта"
+      ],
+      "options_en": [
+        "A closed trait",
+        "Inheritance of classes in only one file — exhaustive pattern matching",
+        "Final trait",
+        "Abstract trait"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Scala da type class nima?",
+      "options": [
+        "Tip klassi",
+        "Ad-hoc polymorphism — implicit parameter orqali funksionallik qo'shish",
+        "Generic class",
+        "Abstract class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое класс типа в Scala?",
+      "question_en": "Scala da type class nima?",
+      "options_ru": [
+        "Тип класса",
+        "Специальный полиморфизм — добавление функциональности через неявный параметр.",
+        "Общий класс",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "Tip klassi",
+        "Ad-hoc polymorphism — adding functionality via an implicit parameter",
+        "Generic class",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Scala da Either nima?",
+      "options": [
+        "Ikki variant",
+        "Left (xato) yoki Right (muvaffaqiyat) — xato boshqarish uchun",
+        "Result type",
+        "Union type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое «либо» в Scala?",
+      "question_en": "Scala da Either nima?",
+      "options_ru": [
+        "Два варианта",
+        "Влево (ошибка) или Вправо (успех) — для обработки ошибок.",
+        "Тип результата",
+        "Тип союза"
+      ],
+      "options_en": [
+        "Two options",
+        "Left (error) or Right (success) — for error handling",
+        "Result type",
+        "Union type"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Scala da companion object nima?",
+      "options": [
+        "Hamroh ob'ekt",
+        "Klass bilan bir xil nomli object — factory methods, static members",
+        "Static class",
+        "Helper object"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сопутствующий объект в Scala?",
+      "question_en": "Scala da companion object nima?",
+      "options_ru": [
+        "Сопутствующий объект",
+        "Объект с тем же именем, что и класс — фабричные методы, статические члены.",
+        "Статический класс",
+        "Вспомогательный объект"
+      ],
+      "options_en": [
+        "Companion object",
+        "Object with the same name as the class — factory methods, static members",
+        "Static class",
+        "Helper object"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Scala da lazy val nima?",
+      "options": [
+        "Sekin val",
+        "Birinchi kirishda initsializatsiya — thread-safe, bir marta hisoblanadi",
+        "Deferred val",
+        "Optional val"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое lazy val в Scala?",
+      "question_en": "What is lazy val in Scala?",
+      "options_ru": [
+        "Помедленнее",
+        "Инициализация при первом доступе является потокобезопасной и засчитывается один раз.",
+        "Отложенный вал",
+        "Необязательное значение"
+      ],
+      "options_en": [
+        "Slow down",
+        "Initialization on first access is thread-safe, counted once",
+        "Deferred shaft",
+        "Optional val"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Scala da higher kinded types nima?",
+      "options": [
+        "Yuqori darajali tip",
+        "Tip konstruktorlari uchun tip parametrlari — F[_] kabi",
+        "Generic generic",
+        "Type lambda"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое типы высшего порядка в Scala?",
+      "question_en": "What are higher kinded types in Scala?",
+      "options_ru": [
+        "Тип высокого уровня",
+        "Параметры типа для конструкторов типов похожи на F[_]",
+        "Дженерик Дженерик",
+        "Тип лямбда"
+      ],
+      "options_en": [
+        "High level type",
+        "Type parameters for type constructors are like F[_]",
+        "Generic generic",
+        "Type lambda"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Scala da cats kutubxonasi nima uchun?",
+      "options": [
+        "Mushuk",
+        "Funksional dasturlash tiplar va type class lar — Monad, Functor, Applicative",
+        "FP library",
+        "Type library"
+      ],
+      "answer": 1,
+      "question_ru": "Почему библиотека кошек в Scala?",
+      "question_en": "Why the cats library in Scala?",
+      "options_ru": [
+        "Кот",
+        "Типы функционального программирования и классы типов — монада, функтор, аппликатив.",
+        "библиотека ФП",
+        "Библиотека типов"
+      ],
+      "options_en": [
+        "Cat",
+        "Funksional dasturlash tiplar va type class lar — Monad, Functor, Applicative",
+        "FP library",
+        "Type library"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Scala da Try nima?",
+      "options": [
+        "Try bloki",
+        "Success(value) yoki Failure(exception) — exception handling funksional uslubda",
+        "Exception type",
+        "Result type"
+      ],
+      "answer": 1,
+      "question_ru": "Scala da Try nima?",
+      "question_en": "What is Try in Scala?",
+      "options_ru": [
+        "Попробуйте заблокировать",
+        "Успех(значение) или Ошибка(исключение) — обработка исключений в функциональном стиле.",
+        "Тип исключения",
+        "Тип результата"
+      ],
+      "options_en": [
+        "Try block",
+        "Success(value) or Failure(exception) — exception handling in functional style",
+        "Exception type",
+        "Result type"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Scala da Stream (LazyList) nima?",
+      "options": [
+        "Data stream",
+        "Lazy infinite ketma-ketliklar — faqat kerakli elementlar hisoblanadi",
+        "Network stream",
+        "Collection"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое поток (LazyList) в Scala?",
+      "question_en": "What is a Stream (LazyList) in Scala?",
+      "options_ru": [
+        "Поток данных",
+        "Ленивые бесконечные последовательности — учитываются только необходимые элементы",
+        "Сетевой поток",
+        "Collection"
+      ],
+      "options_en": [
+        "Data stream",
+        "Lazy infinite ketma-ketliklar — faqat kerakli elementlar hisoblanadi",
+        "Network stream",
+        "Collection"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Scala da foldLeft nima uchun?",
+      "options": [
+        "Yig'ish",
+        "Akkumulyator bilan chapdan o'ngga aylanib bitta qiymat hosil qilish",
+        "Reduce",
+        "Fold"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем сгибатьLeft в Scala?",
+      "question_en": "Why foldLeft in Scala?",
+      "options_ru": [
+        "Коллекция",
+        "Создайте одно значение, вращая слева направо с помощью аккумулятора.",
+        "Уменьшить",
+        "Сложить"
+      ],
+      "options_en": [
+        "Collection",
+        "Akkumulyator bilan chapdan o'ngga aylanib bitta qiymat hosil qilish",
+        "Reduce",
+        "Fold"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Scala da apply metodi nima?",
+      "options": [
+        "Qo'llash",
+        "Ob'ektni funksiya kabi chaqirish: MyClass(arg) = MyClass.apply(arg)",
+        "Factory method",
+        "Constructor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое метод apply в Scala?",
+      "question_en": "What is the apply method in Scala?",
+      "options_ru": [
+        "Приложение",
+        "Вызов объекта как функции: MyClass(arg) = MyClass.apply(arg)",
+        "Фабричный метод",
+        "Конструктор"
+      ],
+      "options_en": [
+        "Application",
+        "Calling an object like a function: MyClass(arg) = MyClass.apply(arg)",
+        "Factory method",
+        "Constructor"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Scala da unapply nima uchun?",
+      "options": [
+        "Ochish",
+        "Pattern matching uchun extractor — case class avtomatik beradi",
+        "Deconstruct",
+        "Unpack"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем отменять заявку в Scala?",
+      "question_en": "Why unapply in Scala?",
+      "options_ru": [
+        "Открытие",
+        "Экстрактор для сопоставления с образцом — автоматически предоставляет класс Case",
+        "Деконструировать",
+        "Распаковать"
+      ],
+      "options_en": [
+        "Opening",
+        "Pattern matching uchun extractor — case class avtomatik beradi",
+        "Deconstruct",
+        "Unpack"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Scala da given/using (Scala 3) nima?",
+      "options": [
+        "Berilgan/ishlatish",
+        "Scala 3 da implicit ga yangi nom — given ta'riflash, using ishlatish",
+        "Implicit alternative",
+        "Context param"
+      ],
+      "answer": 1,
+      "question_ru": "Scala da given/using (Scala 3) nima?",
+      "question_en": "What is given/using in Scala (Scala 3)?",
+      "options_ru": [
+        "Учитывая/использовать",
+        "Новое имя для неявного в Scala 3 — определить заданное, использовать с помощью",
+        "Неявная альтернатива",
+        "Параметр контекста"
+      ],
+      "options_en": [
+        "Given/use",
+        "A new name for implicit in Scala 3 is to define given, use using",
+        "Implicit alternative",
+        "Context param"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Scala da extension methods (Scala 3) nima?",
+      "options": [
+        "Kengaytirish",
+        "extension (x: T) def method() — mavjud tipga metod qo'shish",
+        "Mixin",
+        "Implicit class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое методы расширения в Scala (Scala 3)?",
+      "question_en": "What are extension methods in Scala (Scala 3)?",
+      "options_ru": [
+        "Расширение",
+        "Extension (x: T) def метод() — Добавить метод к существующему типу",
+        "Миксин",
+        "Неявный класс"
+      ],
+      "options_en": [
+        "Kengaytirish",
+        "extension (x: T) def method() — Add a method to an existing type",
+        "Mixin",
+        "Implicit class"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Scala da opaque types (Scala 3) nima?",
+      "options": [
+        "Noaniq tip",
+        "Wrapper overhead holda yangi tip — type alias lekin tashqariga yashirin",
+        "Type alias",
+        "Value class"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое непрозрачные типы в Scala (Scala 3)?",
+      "question_en": "What are opaque types in Scala (Scala 3)?",
+      "options_ru": [
+        "Неопределенный тип",
+        "Новый тип без накладных расходов на оболочку — псевдоним типа, но скрыт снаружи",
+        "Введите псевдоним",
+        "Value class"
+      ],
+      "options_en": [
+        "Unspecified type",
+        "New type without wrapper overhead — type alias but hidden outside",
+        "Type alias",
+        "Value class"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Scala da enum (Scala 3) nima?",
+      "options": [
+        "Raqamlar",
+        "Kuchli enum — sealed hierarchy alternativa, parameters, methods",
+        "Constant group",
+        "Sealed enum"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перечисление в Scala (Scala 3)?",
+      "question_en": "Scala da enum (Scala 3) nima?",
+      "options_ru": [
+        "Числа",
+        "Strong enum — альтернатива закрытой иерархии, параметры, методы",
+        "Постоянная группа",
+        "Запечатанное перечисление"
+      ],
+      "options_en": [
+        "Raqamlar",
+        "Strong enum — sealed hierarchy alternative, parameters, methods",
+        "Constant group",
+        "Sealed enum"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Scala da union types (Scala 3) nima?",
+      "options": [
+        "Birlashma",
+        "A | B — qiymat A yoki B tipida bo'lishi mumkin",
+        "Either type",
+        "Sum type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое типы объединения в Scala (Scala 3)?",
+      "question_en": "Scala da union types (Scala 3) nima?",
+      "options_ru": [
+        "Объединение",
+        "А | B — Значение может иметь тип A или B.",
+        "Любой тип",
+        "Тип суммы"
+      ],
+      "options_en": [
+        "Unification",
+        "A | B — The value can be of type A or B",
+        "Either type",
+        "Sum type"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Scala da monad transformer nima?",
+      "options": [
+        "Monad",
+        "Ko'p monad qatlamlarini birlashtirish — OptionT, EitherT — cats kutubxonasi",
+        "Functor stack",
+        "Nested monad"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое монадный преобразователь в Scala?",
+      "question_en": "What is a monad transformer in Scala?",
+      "options_ru": [
+        "Монада",
+        "Объединение нескольких слоев монады — OptionT, DoesT — библиотека кошек",
+        "Стек функторов",
+        "Вложенная монада"
+      ],
+      "options_en": [
+        "Monad",
+        "Ko'p monad qatlamlarini birlashtirish — OptionT, EitherT — cats kutubxonasi",
+        "Functor stack",
+        "A nested monad"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Scala da tagless final nima?",
+      "options": [
+        "Tag",
+        "Algebraic effect lar uchun dizayn namunasi — F[_] type parameter bilan abstraktsiya",
+        "Final tag",
+        "Effect system"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое финал без тегов в Scala?",
+      "question_en": "What is tagless final in Scala?",
+      "options_ru": [
+        "Tag",
+        "Примером реализации алгебраических эффектов является абстракция с параметром типа F[_].",
+        "Последний тег",
+        "Система эффектов"
+      ],
+      "options_en": [
+        "Tag",
+        "A design example for algebraic effects is an abstraction with an F[_] type parameter",
+        "Final tag",
+        "Effect system"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Scala da ZIO nima?",
+      "options": [
+        "Z IO",
+        "Pure functional effects library — ZIO[R, E, A] — environment, error, success",
+        "IO library",
+        "Effect monad"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ZIO в Scala?",
+      "question_en": "What is ZIO in Scala?",
+      "options_ru": [
+        "З ИО",
+        "Библиотека чисто функциональных эффектов — ZIO[R, E, A] — окружающая среда, ошибка, успех",
+        "библиотека ввода-вывода",
+        "Монада эффекта"
+      ],
+      "options_en": [
+        "Z IO",
+        "Pure functional effects library — ZIO[R, E, A] — environment, error, success",
+        "IO library",
+        "Effect monad"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Scala da Macro nima?",
+      "options": [
+        "Makro",
+        "Kompilyatsiya vaqtida kod transformatsiya va generatsiya — inline def",
+        "Code gen",
+        "Template"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое макрос в Scala?",
+      "question_en": "What is Macro in Scala?",
+      "options_ru": [
+        "Макрос",
+        "Преобразование и генерация кода во время компиляции — встроенное определение",
+        "Генерация кода",
+        "Шаблон"
+      ],
+      "options_en": [
+        "Macro",
+        "Compile-time code transformation and generation — inline def",
+        "Code gen",
+        "Template"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "easy",
+      "question": "Scala da filter nima?",
+      "options": [
+        "CSS filter",
+        "Shartga mos elementlardan yangi kolleksiya yaratadi",
+        "Element selection",
+        "Array filter"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое фильтр в Scala?",
+      "question_en": "What is a filter in Scala?",
+      "options_ru": [
+        "CSS-фильтр",
+        "Shartga mos elementlardan yangi kolleksiya yaratadi",
+        "Выбор элемента",
+        "Массивный фильтр"
+      ],
+      "options_en": [
+        "CSS filter",
+        "Creates a new collection of elements that match the condition",
+        "Element selection",
+        "Array filter"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Scala da structural types nima?",
+      "options": [
+        "Struktura tipi",
+        "Nominal emas, struktural mos kelish — { def method(): Type } kabi",
+        "Duck typing",
+        "Structural subtype"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое структурные типы в Scala?",
+      "question_en": "What are structural types in Scala?",
+      "options_ru": [
+        "Тип структуры",
+        "Структурное совпадение, а не номинальное — например, { def метод(): Тип }",
+        "Утка печатает",
+        "Структурный подтип"
+      ],
+      "options_en": [
+        "Struktura tipi",
+        "Nominal emas, struktural mos kelish — { def method(): Type } kabi",
+        "Duck typing",
+        "Structural subtype"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Scala da fs2 (Functional Streams for Scala) nima?",
+      "options": [
+        "File system 2",
+        "Pure funksional streaming kutubxona — back-pressure, resource safety",
+        "Stream library",
+        "IO stream"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое fs2 (функциональные потоки для Scala) в Scala?",
+      "question_en": "What is fs2 (Functional Streams for Scala) in Scala?",
+      "options_ru": [
+        "Файловая система 2",
+        "Чисто функциональная библиотека потоковой передачи — противодавление, безопасность ресурсов",
+        "Библиотека потоков",
+        "поток ввода-вывода"
+      ],
+      "options_en": [
+        "File system 2",
+        "Pure functional streaming library — back-pressure, resource safety",
+        "Stream library",
+        "IO stream"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Scala da http4s nima?",
+      "options": [
+        "HTTP versiya 4",
+        "Pure funksional HTTP server va client — cats-effect bilan",
+        "HTTP library",
+        "Web framework"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое http4s в Scala?",
+      "question_en": "What is http4s in Scala?",
+      "options_ru": [
+        "HTTP версии 4",
+        "Чисто функциональный HTTP-сервер и клиент с кошачьим эффектом",
+        "HTTP-библиотека",
+        "Веб-фреймворк"
+      ],
+      "options_en": [
+        "HTTP version 4",
+        "Pure functional HTTP server and client with cats-effect",
+        "HTTP library",
+        "Web framework"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Scala da Doobie nima?",
+      "options": [
+        "Ixtiro",
+        "Pure funksional JDBC layer — SQL so'rovlar type-safe tarzda",
+        "ORM",
+        "Database library"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Doobie в Scala?",
+      "question_en": "What is Doobie in Scala?",
+      "options_ru": [
+        "изобретение",
+        "Чисто функциональный уровень JDBC — запросы SQL в типобезопасной форме.",
+        "ОРМ",
+        "Библиотека базы данных"
+      ],
+      "options_en": [
+        "Invention",
+        "Pure functional JDBC layer — SQL queries in a type-safe manner",
+        "ORM",
+        "Database library"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Scala da implicit conversion nima?",
+      "options": [
+        "Yashirin konvertatsiya",
+        "Tip A ni B ga avtomatik aylantirish — implicit def a2b(a: A): B",
+        "Type cast",
+        "Auto convert"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое неявное преобразование в Scala?",
+      "question_en": "What is implicit conversion in Scala?",
+      "options_ru": [
+        "Секретное преобразование",
+        "Автоматическое преобразование типа A в B — неявное определение a2b(a:A): B",
+        "Тип актерского состава",
+        "Автоматическое преобразование"
+      ],
+      "options_en": [
+        "Secret conversion",
+        "Automatic conversion of type A to B — implicit def a2b(a: A): B",
+        "Type cast",
+        "Auto convert"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Scala da type lambda nima?",
+      "options": [
+        "Lambda tip",
+        "Partial type application — ({type L[x] = Either[String, x]})#L yoki Scala 3 da [x] =>> F[x]",
+        "Generic lambda",
+        "Type alias"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое лямбда-тип в Scala?",
+      "question_en": "Scala da type lambda nima?",
+      "options_ru": [
+        "Тип лямбда",
+        "Приложение частичного типа — ({type L[x] = Once[String, x]})#L или [x] =>> F[x] в Scala 3",
+        "Общая лямбда",
+        "Введите псевдоним"
+      ],
+      "options_en": [
+        "Lambda type",
+        "Partial type application — ({type L[x] = Either[String, x]})#L yoki Scala 3 da [x] =>> F[x]",
+        "Generic lambda",
+        "Type alias"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Scala da phantom types nima?",
+      "options": [
+        "Xayoliy tiplar",
+        "Tip parametr runtime ma'lumot emas, compile-time constraint uchun — state machine encoding",
+        "Type marker",
+        "Generic marker"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое фантомные типы в Scala?",
+      "question_en": "What are phantom types in Scala?",
+      "options_ru": [
+        "Мнимые типы",
+        "Параметр типа — это не информация времени выполнения, а ограничение времени компиляции — кодирование конечного автомата.",
+        "Тип маркера",
+        "Общий маркер"
+      ],
+      "options_en": [
+        "Imaginary types",
+        "The type parameter is not runtime information, but for a compile-time constraint — state machine encoding",
+        "Type marker",
+        "Generic marker"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Scala da Algebird nima?",
+      "options": [
+        "Algebra lib",
+        "Twitter — abstract algebra: Monoid, Group, Ring — distributed aggregation",
+        "Math library",
+        "Type algebra"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Algebird в Scala?",
+      "question_en": "What is Algebird in Scala?",
+      "options_ru": [
+        "алгебра либ",
+        "Twitter — абстрактная алгебра: Моноид, Группа, Кольцо — распределенная агрегация",
+        "Math library",
+        "Тип алгебры"
+      ],
+      "options_en": [
+        "Algebra lib",
+        "Twitter — abstract algebra: Monoid, Group, Ring — distributed aggregation",
+        "Math library",
+        "Type algebra"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Scala da Discipline nima?",
+      "options": [
+        "Intizom",
+        "cats kutubxona uchun algebra qonunlarini test qiluvchi framework",
+        "Law testing",
+        "Property test"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое дисциплина в Scala?",
+      "question_en": "What is Discipline in Scala?",
+      "options_ru": [
+        "Дисциплина",
+        "cats kutubxona uchun algebra qonunlarini test qiluvchi framework",
+        "Юридическое тестирование",
+        "Проверка свойств"
+      ],
+      "options_en": [
+        "Discipline",
+        "A framework for testing algebra laws for the cats library",
+        "Law testing",
+        "Property test"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Scala da Shapeless nima?",
+      "options": [
+        "Shakl yo'q",
+        "Generic programming — HList, Coproduct, automatic derivation",
+        "Generic library",
+        "Type utility"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Shapeless в Scala?",
+      "question_en": "What is Shapeless in Scala?",
+      "options_ru": [
+        "Нет формы",
+        "Общее программирование — HList, Coproduct, автоматический вывод",
+        "Общая библиотека",
+        "Тип утилиты"
+      ],
+      "options_en": [
+        "There is no form",
+        "Generic programming — HList, Coproduct, automatic derivation",
+        "Generic library",
+        "Type utility"
+      ]
+    }
   ]
 }

@@ -2,55 +2,1305 @@
   "technology": "Vue",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"Vue.js nima?","options":["CSS framework","Backend framework","Progressive JavaScript framework","Database tool"],"answer":2},
-    {"id":2,"level":"easy","question":"Vue da data binding uchun qaysi direktiv ishlatiladi?","options":["v-bind","v-data","v-model","v-value"],"answer":2},
-    {"id":3,"level":"easy","question":"Vue da v-if direktivi nima qiladi?","options":["Elementni stilini o'zgartiradi","Shartga qarab elementni DOM ga qo'shadi yoki olib tashlaydi","Elementni yashiradi","Loop yaratadi"],"answer":1},
-    {"id":4,"level":"easy","question":"Vue da v-for direktivi nima uchun ishlatiladi?","options":["Form validation","Ro'yxatni render qilish uchun tsikl","Shartli rendering","Event handling"],"answer":1},
-    {"id":5,"level":"easy","question":"Vue da event handling uchun qaysi direktiv ishlatiladi?","options":["v-event","v-click","v-on","v-handle"],"answer":2},
-    {"id":6,"level":"easy","question":"Vue 3 da Composition API nima?","options":["Yangi CSS usuli","setup() funksiyasi orqali komponent logikasini tashkil qilish usuli","Yangi router","Yangi store"],"answer":1},
-    {"id":7,"level":"easy","question":"Vue da computed properties nima uchun ishlatiladi?","options":["Ma'lumotlarni serverdan olish","Reaktiv ma'lumotlarga asoslangan hisoblangan qiymatlar (kesh bilan)","Event handling","Lifecycle hooks"],"answer":1},
-    {"id":8,"level":"easy","question":"Vue da props qanday e'lon qilinadi?","options":["data() ichida","props: [] yoki props: {}","methods ichida","computed ichida"],"answer":1},
-    {"id":9,"level":"easy","question":"Vue da $emit nima qiladi?","options":["Ma'lumot import qiladi","Bola komponentdan ota komponentga hodisa yuboradi","API so'rov yuboradi","State yangilaydi"],"answer":1},
-    {"id":10,"level":"easy","question":"Vue da v-show va v-if farqi nima?","options":["Hech qanday farq yo'q","v-show CSS display bilan yashiradi (DOM da qoladi); v-if DOM dan olib tashlaydi","v-if CSS bilan yashiradi","v-show DOM dan olib tashlaydi"],"answer":1},
-    {"id":11,"level":"easy","question":"Vue da methods nima?","options":["Computed xususiyatlar","Komponent ichida e'lon qilingan funksiyalar","Reaktiv ma'lumotlar","Lifecycle hooks"],"answer":1},
-    {"id":12,"level":"easy","question":"Vue da :key direktivi nima uchun?","options":["Styling uchun","v-for da Vue ga elementlarni noyob identifikatsiya qilish uchun","Event uchun","Router uchun"],"answer":1},
-    {"id":13,"level":"easy","question":"Vue 3 da ref() nima uchun ishlatiladi?","options":["DOM elementiga murojaat","Reaktiv qiymat yaratish uchun — .value orqali kirish","Computed yaratish","Event ro'yxatdan o'tkazish"],"answer":1},
-    {"id":14,"level":"easy","question":"Vue da template ichida {{ }} nima uchun?","options":["CSS qo'llash","Ma'lumotni interpolatsiya qilish (ko'rsatish) uchun","Direktiv qo'llash","Comment yozish"],"answer":1},
-    {"id":15,"level":"easy","question":"Vue da watch nima uchun ishlatiladi?","options":["Kuzatuvchi pattern","Ma'lumot o'zgarishlarini kuzatib, yon ta'sir bajarish","Computed alternativa","Router kuzatish"],"answer":1},
-    {"id":16,"level":"medium","question":"Vue 3 da reactive() va ref() farqi nima?","options":["Hech qanday farq yo'q","reactive() ob'ektlar uchun (to'g'ridan-to'g'ri kirish); ref() ixtiyoriy tip uchun (.value orqali kirish)","ref() ob'ektlar uchun","reactive() primitiv uchun"],"answer":1},
-    {"id":17,"level":"medium","question":"Vue da Vuex nima?","options":["Vue router","Umumiy state boshqarish kutubxonasi","UI component kutubxona","Test kutubxona"],"answer":1},
-    {"id":18,"level":"medium","question":"Vue Router da <router-view> nima qiladi?","options":["Link yaratadi","Joriy route ga mos komponentni render qiladi","Router yaratadi","URL boshqaradi"],"answer":1},
-    {"id":19,"level":"medium","question":"Vue da slot nima uchun ishlatiladi?","options":["Ma'lumot uzatish","Komponent shabloniga tashqaridan kontent qo'shish imkonini beradi","Event uzatish","Props uzatish"],"answer":1},
-    {"id":20,"level":"medium","question":"Vue da lifecycle hooks qaysi tartibda chaqiriladi (asosiylar)?","options":["mounted, created, updated","created, mounted, updated, unmounted","mounted, updated, created","updated, created, mounted"],"answer":1},
-    {"id":21,"level":"medium","question":"Vue 3 da Teleport komponenti nima uchun?","options":["Router transition","Komponent kontentini DOM ning boshqa joyida render qilish (modal, tooltip)","Animatsiya","Lazy loading"],"answer":1},
-    {"id":22,"level":"medium","question":"Vue da v-bind:class nima qiladi?","options":["CSS faylini ulaydi","Dinamik CSS klasslari qo'llaydi","Inline stil qo'llaydi","Klass o'chiradi"],"answer":1},
-    {"id":23,"level":"medium","question":"Vue 3 da Pinia Vuex dan farqi nima?","options":["Hech qanday farq yo'q","Pinia — Vue 3 uchun rasmiy, Composition API ni qo'llab-quvvatlaydi, soddaroq API","Vuex yangroq","Pinia faqat Vue 2 uchun"],"answer":1},
-    {"id":24,"level":"medium","question":"Vue da provide/inject nima uchun?","options":["API so'rovlar","Props drilling ni oldini olib, komponentlar daraxtida ma'lumot uzatish","Event system","State management"],"answer":1},
-    {"id":25,"level":"medium","question":"Vue da v-model custom komponenta qanday implementatsiya qilinadi?","options":["props va emit orqali: modelValue prop + update:modelValue emit","Faqat props orqali","Faqat emit orqali","v-model attribute qo'yish"],"answer":0},
-    {"id":26,"level":"medium","question":"Vue da nextTick() nima uchun?","options":["Timer yaratish","DOM yangilanishidan keyin callback ni chaqirish — reaktiv o'zgarishdan so'ng DOM ga kirish","Asynchronous so'rov","State yangilash"],"answer":1},
-    {"id":27,"level":"medium","question":"Vue da <keep-alive> nima qiladi?","options":["Komponentni doimiy ko'rsatadi","Komponent instance ni kesh qilib, unmount qilmaydi — tez switching uchun","Animatsiya qo'shadi","Router kesh"],"answer":1},
-    {"id":28,"level":"medium","question":"Vue da watchEffect va watch farqi?","options":["Hech qanday farq yo'q","watchEffect avtomatik dependency kuzatib darhol ishlaydi; watch aniq source va lazy ishlaydi","watch avtomatik kuzatadi","watchEffect lazy ishlaydi"],"answer":1},
-    {"id":29,"level":"medium","question":"Vue da Transition komponenti nima uchun?","options":["Route o'tish","Element ko'rinib/yashirinayotganda animatsiya qo'shish","Komponent o'tish","Sahifa transition"],"answer":1},
-    {"id":30,"level":"medium","question":"Vue da scoped styles nima?","options":["Global CSS","Faqat joriy komponentga tegishli CSS — boshqa komponentlarga ta'sir qilmaydi","Styled components","CSS modules"],"answer":1},
-    {"id":31,"level":"medium","question":"Vue 3 da defineProps() nima?","options":["Props e'lon qilish","Composition API da props e'lon qilish uchun compiler macro","Props default berish","Props tekshirish"],"answer":1},
-    {"id":32,"level":"medium","question":"Vue da async komponenta nima uchun?","options":["Asinxron event","Komponentni lazy load qilish — kerakli vaqtda yuklab olish","Async method","Async computed"],"answer":1},
-    {"id":33,"level":"medium","question":"Vue da errorCaptured lifecycle hook nima qiladi?","options":["Barcha xatolarni ushlab oladi","Bola komponentdagi xatolarni ushlab oladi va qayta ishlaydi","API xatolarni ushlab oladi","Global xatolar uchun"],"answer":1},
-    {"id":34,"level":"medium","question":"Vue da v-memo direktivi nima qiladi?","options":["Xotira tejash","Belgilangan qiymatlar o'zgarmasa sub-daraxtni re-render qilmaslik","Computed memo","Component memo"],"answer":1},
-    {"id":35,"level":"medium","question":"Vue da custom direktiv qanday yaratiladi?","options":["Faqat global darajada","app.directive() yoki komponent ichida directives: {} orqali","Faqat lokal darajada","Directives fayl orqali"],"answer":1},
-    {"id":36,"level":"hard","question":"Vue 3 da Suspense komponenti nima uchun?","options":["Loading animatsiyasi","Asinxron komponentlar yuklanayotganda fallback kontent ko'rsatish","Error handling","Route transition"],"answer":1},
-    {"id":37,"level":"hard","question":"Vue da reactivity tracking qanday ishlaydi?","options":["Dirty checking","Proxy va track/trigger mexanizmi — dependency grafini avtomatik kuzatish","Virtual DOM solishtirish","Manual kuzatish"],"answer":1},
-    {"id":38,"level":"hard","question":"Vue da shallowRef va shallowReactive nima uchun?","options":["Zaif reaktivlik","Faqat top-level reaktivlik — ichki ob'ektlar reaktiv emas; performance uchun","Deep reaktivlik","Computed alternativa"],"answer":1},
-    {"id":39,"level":"hard","question":"Vue da toRaw() funksiyasi nima qiladi?","options":["Raw string qaytaradi","Reaktiv ob'ektdan original proxy bo'lmagan ob'ektni qaytaradi","Deep klon","Ob'ekt nusxalash"],"answer":1},
-    {"id":40,"level":"hard","question":"Vue da Renderer API nima?","options":["DOM renderer","Custom renderer yaratish imkoni — non-DOM muhitlar uchun (Native, Canvas)","Virtual DOM","SSR renderer"],"answer":1},
-    {"id":41,"level":"hard","question":"Vue SSR (Server-Side Rendering) da hydration nima?","options":["Server render qilish","Server HTML ga event listenerlar va reaktivlik qo'shib, interaktiv qilish","CSS yuklab olish","State restore qilish"],"answer":1},
-    {"id":42,"level":"hard","question":"Vue da defineExpose() nima uchun ishlatiladi?","options":["Props export","<script setup> komponentida ota komponentga ref orqali ochiq bo'ladigan narsalarni belgilash","Methods export","State export"],"answer":1},
-    {"id":43,"level":"hard","question":"Vue da markRaw() nima uchun?","options":["Raw ma'lumot","Ob'ektni reaktiv sistemdan chiqarish — hech qachon proxy bo'lmasligi uchun belgilash","Raw HTML","Reaktivlikni o'chirish"],"answer":1},
-    {"id":44,"level":"hard","question":"Vue da effectScope nima uchun?","options":["Effekt guruhlash","Reaktiv effektlar (watch, computed) ni guruhlab, birgalikda to'xtatish imkoni","Side effect","Lifecycle scope"],"answer":1},
-    {"id":45,"level":"hard","question":"Vue da compile-time transformation nima?","options":["Kod kompilyatsiyasi","<script setup>, v-model kabi sintaksik shakarlarni build vaqtida oddiy kodni aylantirish","Runtime kompilatsiya","Shablonni kompilyatsiya"],"answer":1},
-    {"id":46,"level":"hard","question":"Vue da virtual DOM reconciliation qanday ishlaydi?","options":["To'liq DOM yangilash","VNode daraxtini solishtirish (patch algorithm) va minimal DOM o'zgarishlarni qo'llash","Manual DOM yangilash","Component qayta yuklash"],"answer":1},
-    {"id":47,"level":"hard","question":"Vue da Plugin nima va qanday yaratiladi?","options":["NPM paketi","install(app, options) metodiga ega ob'ekt — global funksionallik qo'shish uchun","Extension","Middleware"],"answer":1},
-    {"id":48,"level":"hard","question":"Vue da app.config.globalProperties nima uchun?","options":["App konfiguratsiyasi","Barcha komponentlarga global xususiyat yoki metod qo'shish","Global state","Plugin konfiguratsiyasi"],"answer":1},
-    {"id":49,"level":"hard","question":"Vue 3 da Fragment nima uchun?","options":["DOM fragment","Komponent bir nechta root elementga ega bo'lishi imkonini beradi — wrapper div kerak emas","Template fragment","Virtual DOM"],"answer":1},
-    {"id":50,"level":"hard","question":"Vue da Tree Shaking qanday qo'llab-quvvatlanadi?","options":["Manual konfiguratsiya","Vue 3 — ES modules va named exports ishlatib, bundler ishlatilmagan kodni olib tashlaydi","Avtomatik webpack","Build vaqtida"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Vue.js nima?",
+      "options": [
+        "CSS framework",
+        "Backend framework",
+        "Progressive JavaScript framework",
+        "Database tool"
+      ],
+      "answer": 2,
+      "question_ru": "Что такое Vue.js?",
+      "question_en": "What is Vue.js?",
+      "options_ru": [
+        "CSS-фреймворк",
+        "Бэкэнд-фреймворк",
+        "Прогрессивная среда JavaScript",
+        "Инструмент базы данных"
+      ],
+      "options_en": [
+        "CSS framework",
+        "Backend framework",
+        "Progressive JavaScript framework",
+        "Database tool"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Vue da data binding uchun qaysi direktiv ishlatiladi?",
+      "options": [
+        "v-bind",
+        "v-data",
+        "v-model",
+        "v-value"
+      ],
+      "answer": 2,
+      "question_ru": "Какая директива используется для привязки данных в Vue?",
+      "question_en": "Which directive is used for data binding in Vue?",
+      "options_ru": [
+        "V-связывание",
+        "v-данные",
+        "v-модель",
+        "v-значение"
+      ],
+      "options_en": [
+        "v-bind",
+        "v-data",
+        "v-model",
+        "v-value"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Vue da v-if direktivi nima qiladi?",
+      "options": [
+        "Elementni stilini o'zgartiradi",
+        "Shartga qarab elementni DOM ga qo'shadi yoki olib tashlaydi",
+        "Elementni yashiradi",
+        "Loop yaratadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает директива v-if в Vue?",
+      "question_en": "What does the v-if directive do in Vue?",
+      "options_ru": [
+        "Изменяет стиль элемента",
+        "Добавляет или удаляет элемент в DOM в зависимости от условия.",
+        "Скрывает элемент",
+        "Создает цикл"
+      ],
+      "options_en": [
+        "Elementni stilini o'zgartiradi",
+        "Adds or removes an element to the DOM depending on the condition",
+        "Hides the element",
+        "Creates a loop"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Vue da v-for direktivi nima uchun ishlatiladi?",
+      "options": [
+        "Form validation",
+        "Ro'yxatni render qilish uchun tsikl",
+        "Shartli rendering",
+        "Event handling"
+      ],
+      "answer": 1,
+      "question_ru": "Почему директива v-for используется в Vue?",
+      "question_en": "Why is the v-for directive used in Vue?",
+      "options_ru": [
+        "Проверка формы",
+        "Цикл для рендеринга списка",
+        "Условный рендеринг",
+        "Обработка событий"
+      ],
+      "options_en": [
+        "Form validation",
+        "A loop to render the list",
+        "Conditional rendering",
+        "Event handling"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Vue da event handling uchun qaysi direktiv ishlatiladi?",
+      "options": [
+        "v-event",
+        "v-click",
+        "v-on",
+        "v-handle"
+      ],
+      "answer": 2,
+      "question_ru": "Какая директива используется для обработки событий в Vue?",
+      "question_en": "Which directive is used for event handling in Vue?",
+      "options_ru": [
+        "v-событие",
+        "v-щелкните",
+        "в-он",
+        "V-образная ручка"
+      ],
+      "options_en": [
+        "v-event",
+        "v-click",
+        "v-on",
+        "v-handle"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Vue 3 da Composition API nima?",
+      "options": [
+        "Yangi CSS usuli",
+        "setup() funksiyasi orqali komponent logikasini tashkil qilish usuli",
+        "Yangi router",
+        "Yangi store"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Composition API в Vue 3?",
+      "question_en": "What is the Composition API in Vue 3?",
+      "options_ru": [
+        "Новый метод CSS",
+        "Метод организации логики компонента через функцию setup().",
+        "Новый роутер",
+        "Новый магазин"
+      ],
+      "options_en": [
+        "A new CSS method",
+        "A method of organizing component logic through the setup() function",
+        "New router",
+        "New store"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Vue da computed properties nima uchun ishlatiladi?",
+      "options": [
+        "Ma'lumotlarni serverdan olish",
+        "Reaktiv ma'lumotlarga asoslangan hisoblangan qiymatlar (kesh bilan)",
+        "Event handling",
+        "Lifecycle hooks"
+      ],
+      "answer": 1,
+      "question_ru": "Почему вычисляемые свойства используются в Vue?",
+      "question_en": "Why are computed properties used in Vue?",
+      "options_ru": [
+        "Получение данных с сервера",
+        "Вычисленные значения на основе реактивных данных (с кешем)",
+        "Обработка событий",
+        "Перехватчики жизненного цикла"
+      ],
+      "options_en": [
+        "Getting data from the server",
+        "Computed values ​​based on reactive data (with cache)",
+        "Event handling",
+        "Lifecycle hooks"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Vue da props qanday e'lon qilinadi?",
+      "options": [
+        "data() ichida",
+        "props: [] yoki props: {}",
+        "methods ichida",
+        "computed ichida"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить реквизиты в Vue?",
+      "question_en": "How to declare props in Vue?",
+      "options_ru": [
+        "в данных()",
+        "реквизит: [] или реквизит: {}",
+        "внутренние методы",
+        "в вычисленном"
+      ],
+      "options_en": [
+        "in data()",
+        "props: [] or props: {}",
+        "inside methods",
+        "in computed"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Vue da $emit nima qiladi?",
+      "options": [
+        "Ma'lumot import qiladi",
+        "Bola komponentdan ota komponentga hodisa yuboradi",
+        "API so'rov yuboradi",
+        "State yangilaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает $emit в Vue?",
+      "question_en": "What does $emit do in Vue?",
+      "options_ru": [
+        "Импортирует данные",
+        "Отправляет событие из дочернего компонента в родительский компонент.",
+        "API отправляет запрос",
+        "Обновления состояния"
+      ],
+      "options_en": [
+        "Ma'lumot import qiladi",
+        "Sends an event from the child component to the parent component",
+        "The API sends a request",
+        "State updates"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Vue da v-show va v-if farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "v-show CSS display bilan yashiradi (DOM da qoladi); v-if DOM dan olib tashlaydi",
+        "v-if CSS bilan yashiradi",
+        "v-show DOM dan olib tashlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между v-show и v-if в Vue?",
+      "question_en": "What is the difference between v-show and v-if in Vue?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "v-show скрывается с отображением CSS (остается в DOM); v-if удаляет из DOM",
+        "v-if скрывается с помощью CSS",
+        "v-show удаляет из DOM"
+      ],
+      "options_en": [
+        "There is no difference",
+        "v-show hides with CSS display (remains in DOM); v-if removes from the DOM",
+        "v-if hides with CSS",
+        "v-show removes from the DOM"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Vue da methods nima?",
+      "options": [
+        "Computed xususiyatlar",
+        "Komponent ichida e'lon qilingan funksiyalar",
+        "Reaktiv ma'lumotlar",
+        "Lifecycle hooks"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое методы в Vue?",
+      "question_en": "What are methods in Vue?",
+      "options_ru": [
+        "Вычисляемые функции",
+        "Функции, объявленные внутри компонента",
+        "Реактивные данные",
+        "Перехватчики жизненного цикла"
+      ],
+      "options_en": [
+        "Computed features",
+        "Functions declared inside a component",
+        "Reactive data",
+        "Lifecycle hooks"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Vue da :key direktivi nima uchun?",
+      "options": [
+        "Styling uchun",
+        "v-for da Vue ga elementlarni noyob identifikatsiya qilish uchun",
+        "Event uchun",
+        "Router uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Почему директива :key в Vue?",
+      "question_en": "Why the :key directive in Vue?",
+      "options_ru": [
+        "Для укладки",
+        "v-for для уникальной идентификации элементов в Vue",
+        "Для мероприятия",
+        "Для маршрутизатора"
+      ],
+      "options_en": [
+        "For styling",
+        "v-for to uniquely identify elements to Vue",
+        "For the event",
+        "For the router"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Vue 3 da ref() nima uchun ishlatiladi?",
+      "options": [
+        "DOM elementiga murojaat",
+        "Reaktiv qiymat yaratish uchun — .value orqali kirish",
+        "Computed yaratish",
+        "Event ro'yxatdan o'tkazish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ref() используется во Vue 3?",
+      "question_en": "Why is ref() used in Vue 3?",
+      "options_ru": [
+        "Ссылка на элемент DOM",
+        "Чтобы создать реактивное значение — доступ через .value",
+        "Создание вычислительных",
+        "Регистрация на мероприятие"
+      ],
+      "options_en": [
+        "A reference to a DOM element",
+        "To create a reactive value — access via .value",
+        "Creating Computed",
+        "Event registration"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Vue da template ichida {{ }} nima uchun?",
+      "options": [
+        "CSS qo'llash",
+        "Ma'lumotni interpolatsiya qilish (ko'rsatish) uchun",
+        "Direktiv qo'llash",
+        "Comment yozish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему {{ }} внутри шаблона в Vue?",
+      "question_en": "Why {{ }} inside a template in Vue?",
+      "options_ru": [
+        "Применить CSS",
+        "Интерполировать (отобразить) информацию",
+        "Применение директивы",
+        "Написать комментарий"
+      ],
+      "options_en": [
+        "Apply CSS",
+        "To interpolate (display) information",
+        "Directive application",
+        "Write a comment"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Vue da watch nima uchun ishlatiladi?",
+      "options": [
+        "Kuzatuvchi pattern",
+        "Ma'lumot o'zgarishlarini kuzatib, yon ta'sir bajarish",
+        "Computed alternativa",
+        "Router kuzatish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используются часы в Vue?",
+      "question_en": "What is watch used for in Vue?",
+      "options_ru": [
+        "Следователь",
+        "Выполнять побочные эффекты, отслеживая изменения данных",
+        "Вычисленная альтернатива",
+        "Мониторинг маршрутизатора"
+      ],
+      "options_en": [
+        "Follower pattern",
+        "Perform side effects by tracking data changes",
+        "Computed alternative",
+        "Router monitoring"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Vue 3 da reactive() va ref() farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "reactive() ob'ektlar uchun (to'g'ridan-to'g'ri kirish); ref() ixtiyoriy tip uchun (.value orqali kirish)",
+        "ref() ob'ektlar uchun",
+        "reactive() primitiv uchun"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между реактивной() и ref() во Vue 3?",
+      "question_en": "What is the difference between reactive() and ref() in Vue 3?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "reactive() для объектов (прямой доступ); ref() для произвольного типа (доступ через .value)",
+        "ref() для объектов",
+        "реактивная() для примитива"
+      ],
+      "options_en": [
+        "There is no difference",
+        "reactive() for objects (direct access); ref() for arbitrary type (access via .value)",
+        "ref() ob'ektlar uchun",
+        "reactive() primitiv uchun"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Vue da Vuex nima?",
+      "options": [
+        "Vue router",
+        "Umumiy state boshqarish kutubxonasi",
+        "UI component kutubxona",
+        "Test kutubxona"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Vue в Vue?",
+      "question_en": "What is Vue in Vue?",
+      "options_ru": [
+        "Маршрутизатор Vue",
+        "Общая библиотека управления состоянием",
+        "библиотека компонентов пользовательского интерфейса",
+        "Тестовая библиотека"
+      ],
+      "options_en": [
+        "Vue router",
+        "Generic state management library",
+        "UI component library",
+        "Test kutubxona"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Vue Router da <router-view> nima qiladi?",
+      "options": [
+        "Link yaratadi",
+        "Joriy route ga mos komponentni render qiladi",
+        "Router yaratadi",
+        "URL boshqaradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает <router-view> в Vue Router?",
+      "question_en": "What does <router-view> do in Vue Router?",
+      "options_ru": [
+        "Создает ссылку",
+        "Отображает компонент, соответствующий текущему маршруту",
+        "Создает маршрутизатор",
+        "Элементы управления URL-адресами"
+      ],
+      "options_en": [
+        "Creates a link",
+        "Renders the component corresponding to the current route",
+        "Creates a router",
+        "URL controls"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Vue da slot nima uchun ishlatiladi?",
+      "options": [
+        "Ma'lumot uzatish",
+        "Komponent shabloniga tashqaridan kontent qo'shish imkonini beradi",
+        "Event uzatish",
+        "Props uzatish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется слот в Vue?",
+      "question_en": "What is a slot used for in Vue?",
+      "options_ru": [
+        "Передача данных",
+        "Позволяет добавлять внешний контент в шаблон компонента.",
+        "Передача событий",
+        "Передача реквизита"
+      ],
+      "options_en": [
+        "Ma'lumot uzatish",
+        "Allows you to add external content to a component template",
+        "Event transmission",
+        "Props transfer"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Vue da lifecycle hooks qaysi tartibda chaqiriladi (asosiylar)?",
+      "options": [
+        "mounted, created, updated",
+        "created, mounted, updated, unmounted",
+        "mounted, updated, created",
+        "updated, created, mounted"
+      ],
+      "answer": 1,
+      "question_ru": "В каком порядке вызываются хуки жизненного цикла во Vue (основные)?",
+      "question_en": "In what order are lifecycle hooks called in Vue (main ones)?",
+      "options_ru": [
+        "смонтирован, создан, обновлен",
+        "создано, смонтировано, обновлено, размонтировано",
+        "смонтирован, обновлен, создан",
+        "обновлено, создано, смонтировано"
+      ],
+      "options_en": [
+        "mounted, created, updated",
+        "created, mounted, updated, unmounted",
+        "mounted, updated, created",
+        "updated, created, mounted"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Vue 3 da Teleport komponenti nima uchun?",
+      "options": [
+        "Router transition",
+        "Komponent kontentini DOM ning boshqa joyida render qilish (modal, tooltip)",
+        "Animatsiya",
+        "Lazy loading"
+      ],
+      "answer": 1,
+      "question_ru": "Почему компонент Teleport в Vue 3?",
+      "question_en": "Why the Teleport component in Vue 3?",
+      "options_ru": [
+        "Переход на маршрутизатор",
+        "Отображение содержимого компонента в другом месте DOM (модальное окно, всплывающая подсказка)",
+        "Анимация",
+        "Ленивая загрузка"
+      ],
+      "options_en": [
+        "Router transition",
+        "Komponent kontentini DOM ning boshqa joyida render qilish (modal, tooltip)",
+        "Animation",
+        "Lazy loading"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Vue da v-bind:class nima qiladi?",
+      "options": [
+        "CSS faylini ulaydi",
+        "Dinamik CSS klasslari qo'llaydi",
+        "Inline stil qo'llaydi",
+        "Klass o'chiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает v-bind:class в Vue?",
+      "question_en": "Vue da v-bind:class nima qiladi?",
+      "options_ru": [
+        "Добавляет CSS-файл",
+        "Использует динамические классы CSS",
+        "Применяет встроенный стиль",
+        "Класс удаляется"
+      ],
+      "options_en": [
+        "Adds a CSS file",
+        "Dinamik CSS klasslari qo'llaydi",
+        "Applies inline style",
+        "The class deletes"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Vue 3 da Pinia Vuex dan farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Pinia — Vue 3 uchun rasmiy, Composition API ni qo'llab-quvvatlaydi, soddaroq API",
+        "Vuex yangroq",
+        "Pinia faqat Vue 2 uchun"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между Pinia в Vue 3 и Vuex?",
+      "question_en": "What is the difference between Pinia in Vue 3 and Vuex?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Pinia является официальной версией Vue 3, поддерживает Composition API, более простой API.",
+        "Vuex ярче",
+        "Пиния предназначена только для Vue 2."
+      ],
+      "options_en": [
+        "There is no difference",
+        "Pinia — Vue 3 uchun rasmiy, Composition API ni qo'llab-quvvatlaydi, soddaroq API",
+        "Vuex is brighter",
+        "Pinia is for Vue 2 only"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Vue da provide/inject nima uchun?",
+      "options": [
+        "API so'rovlar",
+        "Props drilling ni oldini olib, komponentlar daraxtida ma'lumot uzatish",
+        "Event system",
+        "State management"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем предоставлять/внедрять в Vue?",
+      "question_en": "Why provide/inject in Vue?",
+      "options_ru": [
+        "API so'rovlar",
+        "Передавайте информацию в дереве компонентов, избегая сверления реквизита.",
+        "Система событий",
+        "State management"
+      ],
+      "options_en": [
+        "API requests",
+        "Pass information in the component tree, avoiding props drilling",
+        "Event system",
+        "State management"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Vue da v-model custom komponenta qanday implementatsiya qilinadi?",
+      "options": [
+        "props va emit orqali: modelValue prop + update:modelValue emit",
+        "Faqat props orqali",
+        "Faqat emit orqali",
+        "v-model attribute qo'yish"
+      ],
+      "answer": 0,
+      "question_ru": "Как реализовать пользовательский компонент v-модели в Vue?",
+      "question_en": "How to implement v-model custom component in Vue?",
+      "options_ru": [
+        "через реквизит и испускание: modelValue prop + update: modelValue испускают",
+        "Только через реквизит",
+        "Только по трансляции",
+        "набор атрибутов v-модели"
+      ],
+      "options_en": [
+        "via props and emit: modelValue prop + update:modelValue emit",
+        "Only through props",
+        "Only by broadcast",
+        "v-model attribute set"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Vue da nextTick() nima uchun?",
+      "options": [
+        "Timer yaratish",
+        "DOM yangilanishidan keyin callback ni chaqirish — reaktiv o'zgarishdan so'ng DOM ga kirish",
+        "Asynchronous so'rov",
+        "State yangilash"
+      ],
+      "answer": 1,
+      "question_ru": "Почему nextTick() во Vue?",
+      "question_en": "Why nextTick() in Vue?",
+      "options_ru": [
+        "Создать таймер",
+        "Вызов обратного вызова после обновления DOM — доступ к DOM после реактивного изменения",
+        "Асинхронный запрос",
+        "Обновление состояния"
+      ],
+      "options_en": [
+        "Create a timer",
+        "Calling callback after DOM update — access DOM after reactive change",
+        "Asynchronous so'rov",
+        "State update"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Vue da <keep-alive> nima qiladi?",
+      "options": [
+        "Komponentni doimiy ko'rsatadi",
+        "Komponent instance ni kesh qilib, unmount qilmaydi — tez switching uchun",
+        "Animatsiya qo'shadi",
+        "Router kesh"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает <keep-alive> в Vue?",
+      "question_en": "What does <keep-alive> do in Vue?",
+      "options_ru": [
+        "Делает компонент постоянным",
+        "Компонент кэширует экземпляр и не размонтирует его — для быстрого переключения",
+        "Добавляет анимацию",
+        "Кэш маршрутизатора"
+      ],
+      "options_en": [
+        "Makes the component permanent",
+        "The component caches the instance and does not unmount it — for fast switching",
+        "Adds animation",
+        "Router cache"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Vue da watchEffect va watch farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "watchEffect avtomatik dependency kuzatib darhol ishlaydi; watch aniq source va lazy ishlaydi",
+        "watch avtomatik kuzatadi",
+        "watchEffect lazy ishlaydi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между watchEffect и часами в Vue?",
+      "question_en": "Difference between watchEffect and watch in Vue?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "watchEffect срабатывает сразу после автоматического мониторинга зависимостей; часы работают точно исходно и лениво",
+        "смотреть автоматически отслеживает",
+        "watchEffect работает лениво"
+      ],
+      "options_en": [
+        "There is no difference",
+        "watchEffect works immediately after automatic dependency monitoring; watch works exactly source and lazy",
+        "watch avtomatik kuzatadi",
+        "watchEffect works lazy"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Vue da Transition komponenti nima uchun?",
+      "options": [
+        "Route o'tish",
+        "Element ko'rinib/yashirinayotganda animatsiya qo'shish",
+        "Komponent o'tish",
+        "Sahifa transition"
+      ],
+      "answer": 1,
+      "question_ru": "Почему компонент перехода в Vue?",
+      "question_en": "Why Transition component in Vue?",
+      "options_ru": [
+        "Пройти маршрут",
+        "Добавить анимацию, когда элемент виден/скрыт",
+        "Переход компонентов",
+        "Переход страницы"
+      ],
+      "options_en": [
+        "Pass the route",
+        "Element ko'rinib/yashirinayotganda animatsiya qo'shish",
+        "Component transition",
+        "Page transition"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Vue da scoped styles nima?",
+      "options": [
+        "Global CSS",
+        "Faqat joriy komponentga tegishli CSS — boshqa komponentlarga ta'sir qilmaydi",
+        "Styled components",
+        "CSS modules"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое стили с областью действия в Vue?",
+      "question_en": "What is scoped styles in Vue?",
+      "options_ru": [
+        "Глобальный CSS",
+        "CSS, который применяется только к текущему компоненту — не влияет на другие компоненты.",
+        "Стилизованные компоненты",
+        "CSS-модули"
+      ],
+      "options_en": [
+        "Global CSS",
+        "CSS that applies only to the current component — does not affect other components",
+        "Styled components",
+        "CSS modules"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Vue 3 da defineProps() nima?",
+      "options": [
+        "Props e'lon qilish",
+        "Composition API da props e'lon qilish uchun compiler macro",
+        "Props default berish",
+        "Props tekshirish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое defineProps() во Vue 3?",
+      "question_en": "What is defineProps() in Vue 3?",
+      "options_ru": [
+        "Опубликовать реквизит",
+        "Макрос компилятора для объявления реквизита в Composition API",
+        "Дать реквизиты по умолчанию",
+        "Проверьте реквизит"
+      ],
+      "options_en": [
+        "Post props",
+        "Compiler macro for declaring props in the Composition API",
+        "Give props default",
+        "Check props"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Vue da async komponenta nima uchun?",
+      "options": [
+        "Asinxron event",
+        "Komponentni lazy load qilish — kerakli vaqtda yuklab olish",
+        "Async method",
+        "Async computed"
+      ],
+      "answer": 1,
+      "question_ru": "Почему асинхронный компонент в Vue?",
+      "question_en": "Why an async component in Vue?",
+      "options_ru": [
+        "Асинхронное событие",
+        "Ленивая загрузка компонента — загрузка в нужный момент",
+        "Асинхронный метод",
+        "Асинхронное вычисление"
+      ],
+      "options_en": [
+        "Asinxron event",
+        "Lazy loading of the component — loading at the right time",
+        "Async method",
+        "Async computed"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Vue da errorCaptured lifecycle hook nima qiladi?",
+      "options": [
+        "Barcha xatolarni ushlab oladi",
+        "Bola komponentdagi xatolarni ushlab oladi va qayta ishlaydi",
+        "API xatolarni ushlab oladi",
+        "Global xatolar uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает крючок жизненного цикла errorCaptured в Vue?",
+      "question_en": "What does the errorCaptured lifecycle hook do in Vue?",
+      "options_ru": [
+        "Перехватывает все ошибки",
+        "Дочерний элемент улавливает и обрабатывает ошибки в компоненте.",
+        "API ловит ошибки",
+        "Для глобальных ошибок"
+      ],
+      "options_en": [
+        "Catches all errors",
+        "The child catches and handles errors in the component",
+        "The API catches errors",
+        "For global errors"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Vue da v-memo direktivi nima qiladi?",
+      "options": [
+        "Xotira tejash",
+        "Belgilangan qiymatlar o'zgarmasa sub-daraxtni re-render qilmaslik",
+        "Computed memo",
+        "Component memo"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает директива v-memo в Vue?",
+      "question_en": "What does the v-memo directive do in Vue?",
+      "options_ru": [
+        "Экономьте память",
+        "Не перерисовывать поддерево, если указанные значения не изменяются.",
+        "Вычисленная памятка",
+        "Памятка по компонентам"
+      ],
+      "options_en": [
+        "Save memory",
+        "Do not re-render the sub-tree if the specified values ​​do not change",
+        "Computed memo",
+        "Component memo"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Vue da custom direktiv qanday yaratiladi?",
+      "options": [
+        "Faqat global darajada",
+        "app.directive() yoki komponent ichida directives: {} orqali",
+        "Faqat lokal darajada",
+        "Directives fayl orqali"
+      ],
+      "answer": 1,
+      "question_ru": "Как создать пользовательскую директиву в Vue?",
+      "question_en": "How to create a custom directive in Vue?",
+      "options_ru": [
+        "Только на глобальном уровне",
+        "app.directive() или через директивы: {} внутри компонента",
+        "Только на местном уровне",
+        "Через файл директив"
+      ],
+      "options_en": [
+        "Only at the global level",
+        "app.directive() or via directives: {} inside the component",
+        "Only at the local level",
+        "Through the directives file"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Vue 3 da Suspense komponenti nima uchun?",
+      "options": [
+        "Loading animatsiyasi",
+        "Asinxron komponentlar yuklanayotganda fallback kontent ko'rsatish",
+        "Error handling",
+        "Route transition"
+      ],
+      "answer": 1,
+      "question_ru": "Почему компонент Suspense в Vue 3?",
+      "question_en": "Why the Suspense component in Vue 3?",
+      "options_ru": [
+        "Loading animatsiyasi",
+        "Отображение резервного содержимого при загрузке асинхронных компонентов.",
+        "Обработка ошибок",
+        "Переход маршрута"
+      ],
+      "options_en": [
+        "Loading animation",
+        "Display fallback content when asynchronous components are loaded",
+        "Error handling",
+        "Route transition"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Vue da reactivity tracking qanday ishlaydi?",
+      "options": [
+        "Dirty checking",
+        "Proxy va track/trigger mexanizmi — dependency grafini avtomatik kuzatish",
+        "Virtual DOM solishtirish",
+        "Manual kuzatish"
+      ],
+      "answer": 1,
+      "question_ru": "Как отслеживание реактивности работает в Vue?",
+      "question_en": "How does reactivity tracking work in Vue?",
+      "options_ru": [
+        "Dirty checking",
+        "Механизм прокси и отслеживания/триггера — автоматический мониторинг графа зависимостей",
+        "Сравнить виртуальный DOM",
+        "Ручное отслеживание"
+      ],
+      "options_en": [
+        "Dirty checking",
+        "Proxy and track/trigger mechanism — automatic monitoring of the dependency graph",
+        "Compare virtual DOM",
+        "Manual tracking"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Vue da shallowRef va shallowReactive nima uchun?",
+      "options": [
+        "Zaif reaktivlik",
+        "Faqat top-level reaktivlik — ichki ob'ektlar reaktiv emas; performance uchun",
+        "Deep reaktivlik",
+        "Computed alternativa"
+      ],
+      "answer": 1,
+      "question_ru": "Почему «мелкийRef» и «мелкореактивный» в Vue?",
+      "question_en": "Why shallowRef and shallowReactive in Vue?",
+      "options_ru": [
+        "Слабая реактивность",
+        "Только реактивность верхнего уровня — внутренние объекты не реактивны; для производительности",
+        "Глубокая реактивность",
+        "Вычисленная альтернатива"
+      ],
+      "options_en": [
+        "Weak reactivity",
+        "Only top-level reactivity — internal objects are not reactive; for performance",
+        "Deep reactivity",
+        "Computed alternative"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Vue da toRaw() funksiyasi nima qiladi?",
+      "options": [
+        "Raw string qaytaradi",
+        "Reaktiv ob'ektdan original proxy bo'lmagan ob'ektni qaytaradi",
+        "Deep klon",
+        "Ob'ekt nusxalash"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция toRaw() в Vue?",
+      "question_en": "What does the toRaw() function do in Vue?",
+      "options_ru": [
+        "Возвращает необработанную строку",
+        "Возвращает исходный непрокси-объект из реактивного объекта.",
+        "Глубокий клон",
+        "Копировать объект"
+      ],
+      "options_en": [
+        "Returns a raw string",
+        "Returns the original non-proxy object from the reactive object",
+        "Deep clone",
+        "Copy object"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Vue da Renderer API nima?",
+      "options": [
+        "DOM renderer",
+        "Custom renderer yaratish imkoni — non-DOM muhitlar uchun (Native, Canvas)",
+        "Virtual DOM",
+        "SSR renderer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое API рендеринга в Vue?",
+      "question_en": "What is the Renderer API in Vue?",
+      "options_ru": [
+        "DOM-рендерер",
+        "Возможность создания собственного средства визуализации — для сред, отличных от DOM (Native, Canvas).",
+        "Виртуальный DOM",
+        "SSR-рендерер"
+      ],
+      "options_en": [
+        "DOM renderer",
+        "Ability to create custom renderer — for non-DOM environments (Native, Canvas)",
+        "Virtual DOM",
+        "SSR renderer"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Vue SSR (Server-Side Rendering) da hydration nima?",
+      "options": [
+        "Server render qilish",
+        "Server HTML ga event listenerlar va reaktivlik qo'shib, interaktiv qilish",
+        "CSS yuklab olish",
+        "State restore qilish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое гидратация в Vue SSR (серверный рендеринг)?",
+      "question_en": "What is hydration in Vue SSR (Server-Side Rendering)?",
+      "options_ru": [
+        "Серверный рендеринг",
+        "Сделайте серверный HTML интерактивным, добавив прослушиватели событий и реактивность.",
+        "CSS скачать",
+        "Восстановление состояния"
+      ],
+      "options_en": [
+        "Server rendering",
+        "Make server HTML interactive by adding event listeners and reactivity",
+        "CSS download",
+        "State restore"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Vue da defineExpose() nima uchun ishlatiladi?",
+      "options": [
+        "Props export",
+        "<script setup> komponentida ota komponentga ref orqali ochiq bo'ladigan narsalarni belgilash",
+        "Methods export",
+        "State export"
+      ],
+      "answer": 1,
+      "question_ru": "Почему defineExpose() используется во Vue?",
+      "question_en": "Why is defineExpose() used in Vue?",
+      "options_ru": [
+        "Экспорт реквизита",
+        "Указание объектов в компоненте <script setup>, которые доступны по ссылке на родительский компонент.",
+        "Экспорт методов",
+        "Государственный экспорт"
+      ],
+      "options_en": [
+        "Props export",
+        "Specifying objects in the <script setup> component that are accessible by ref to the parent component",
+        "Methods export",
+        "State export"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Vue da markRaw() nima uchun?",
+      "options": [
+        "Raw ma'lumot",
+        "Ob'ektni reaktiv sistemdan chiqarish — hech qachon proxy bo'lmasligi uchun belgilash",
+        "Raw HTML",
+        "Reaktivlikni o'chirish"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем использовать markRaw() во Vue?",
+      "question_en": "Why markRaw() in Vue?",
+      "options_ru": [
+        "Необработанные данные",
+        "Исключите объект из реактивной системы — установите, чтобы он никогда не был прокси",
+        "Необработанный HTML",
+        "Отключить реактивность"
+      ],
+      "options_en": [
+        "Raw data",
+        "Exclude an object from the reactive system — set it to never be a proxy",
+        "Raw HTML",
+        "Turn off reactivity"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Vue da effectScope nima uchun?",
+      "options": [
+        "Effekt guruhlash",
+        "Reaktiv effektlar (watch, computed) ni guruhlab, birgalikda to'xtatish imkoni",
+        "Side effect",
+        "Lifecycle scope"
+      ],
+      "answer": 1,
+      "question_ru": "Почему effectScope в Vue?",
+      "question_en": "Why effectScope in Vue?",
+      "options_ru": [
+        "Группировка эффектов",
+        "Способность группировать и останавливать реактивные эффекты (наблюдение, расчет) вместе.",
+        "Побочный эффект",
+        "Объем жизненного цикла"
+      ],
+      "options_en": [
+        "Effect grouping",
+        "Ability to group and stop reactive effects (watch, computed) together",
+        "Side effect",
+        "Lifecycle scope"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Vue da compile-time transformation nima?",
+      "options": [
+        "Kod kompilyatsiyasi",
+        "<script setup>, v-model kabi sintaksik shakarlarni build vaqtida oddiy kodni aylantirish",
+        "Runtime kompilatsiya",
+        "Shablonni kompilyatsiya"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое преобразование во время компиляции в Vue?",
+      "question_en": "What is compile-time transformation in Vue?",
+      "options_ru": [
+        "Компиляция кода",
+        "Синтаксические сахара, такие как <script setup>, v-model, простое преобразование кода во время сборки.",
+        "Компиляция времени выполнения",
+        "Скомпилируйте шаблон"
+      ],
+      "options_en": [
+        "Code compilation",
+        "Syntax sugars like <script setup>, v-model, simple code conversion at build time",
+        "Runtime compilation",
+        "Compile the template"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Vue da virtual DOM reconciliation qanday ishlaydi?",
+      "options": [
+        "To'liq DOM yangilash",
+        "VNode daraxtini solishtirish (patch algorithm) va minimal DOM o'zgarishlarni qo'llash",
+        "Manual DOM yangilash",
+        "Component qayta yuklash"
+      ],
+      "answer": 1,
+      "question_ru": "Как работает виртуальное согласование DOM в Vue?",
+      "question_en": "Vue da virtual DOM reconciliation qanday ishlaydi?",
+      "options_ru": [
+        "Полное обновление DOM",
+        "Сравните дерево VNode (алгоритм исправления) и примените минимальные изменения DOM.",
+        "Обновление DOM вручную",
+        "Перезагрузка компонента"
+      ],
+      "options_en": [
+        "Full DOM update",
+        "Compare VNode tree (patch algorithm) and apply minimal DOM changes",
+        "Manual DOM update",
+        "Component reload"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Vue da Plugin nima va qanday yaratiladi?",
+      "options": [
+        "NPM paketi",
+        "install(app, options) metodiga ega ob'ekt — global funksionallik qo'shish uchun",
+        "Extension",
+        "Middleware"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое и как создать плагин в Vue?",
+      "question_en": "What is and how to create a Plugin in Vue?",
+      "options_ru": [
+        "пакет НПМ",
+        "Объект с методом install(app, options) — для добавления глобальной функциональности.",
+        "Расширение",
+        "Промежуточное ПО"
+      ],
+      "options_en": [
+        "NPM package",
+        "install(app, options) metodiga ega ob'ekt — global funksionallik qo'shish uchun",
+        "Extension",
+        "Middleware"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Vue da app.config.globalProperties nima uchun?",
+      "options": [
+        "App konfiguratsiyasi",
+        "Barcha komponentlarga global xususiyat yoki metod qo'shish",
+        "Global state",
+        "Plugin konfiguratsiyasi"
+      ],
+      "answer": 1,
+      "question_ru": "Почему app.config.globalProperties в Vue?",
+      "question_en": "Why app.config.globalProperties in Vue?",
+      "options_ru": [
+        "Конфигурация приложения",
+        "Barcha komponentlarga global xususiyat yoki metod qo'shish",
+        "Глобальное состояние",
+        "Конфигурация плагина"
+      ],
+      "options_en": [
+        "App configuration",
+        "Add a global property or method to all components",
+        "Global state",
+        "Plugin configuration"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Vue 3 da Fragment nima uchun?",
+      "options": [
+        "DOM fragment",
+        "Komponent bir nechta root elementga ega bo'lishi imkonini beradi — wrapper div kerak emas",
+        "Template fragment",
+        "Virtual DOM"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем фрагментировать во Vue 3?",
+      "question_en": "Why Fragment in Vue 3?",
+      "options_ru": [
+        "DOM fragment",
+        "Позволяет компоненту иметь несколько корневых элементов — обертка div не требуется.",
+        "Фрагмент шаблона",
+        "Виртуальный DOM"
+      ],
+      "options_en": [
+        "DOM fragment",
+        "Allows a component to have multiple root elements — no wrapper div required",
+        "Template fragment",
+        "Virtual DOM"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Vue da Tree Shaking qanday qo'llab-quvvatlanadi?",
+      "options": [
+        "Manual konfiguratsiya",
+        "Vue 3 — ES modules va named exports ishlatib, bundler ishlatilmagan kodni olib tashlaydi",
+        "Avtomatik webpack",
+        "Build vaqtida"
+      ],
+      "answer": 1,
+      "question_ru": "Как Tree Shaking поддерживается в Vue?",
+      "question_en": "How is Tree Shaking supported in Vue?",
+      "options_ru": [
+        "Ручная настройка",
+        "Vue 3 — используя модули ES и именованный экспорт, сборщик удаляет неиспользуемый код.",
+        "Автоматический веб-пакет",
+        "Во время сборки"
+      ],
+      "options_en": [
+        "Manual configuration",
+        "Vue 3 — ES modules va named exports ishlatib, bundler ishlatilmagan kodni olib tashlaydi",
+        "Automatic webpack",
+        "At build time"
+      ]
+    }
   ]
 }

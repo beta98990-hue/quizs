@@ -2,55 +2,1305 @@
   "technology": "Angular",
   "category": "frontend",
   "questions": [
-    {"id":1,"level":"easy","question":"Angular nima?","options":["CSS framework","JavaScript kutubxona","TypeScript asosidagi to'liq web framework","Backend framework"],"answer":2},
-    {"id":2,"level":"easy","question":"Angular da Component nima?","options":["CSS fayli","Template, klass va metadata bilan UI qurilish bloki","Service","Module"],"answer":1},
-    {"id":3,"level":"easy","question":"Angular da NgModule nima uchun?","options":["Node module","Komponentlar, direktivlar, pipe va servislarni guruhlovchi konteyner","Modul import","Angular versiya"],"answer":1},
-    {"id":4,"level":"easy","question":"Angular da directive nima?","options":["HTML instruction","DOM xatti-harakatini o'zgartiruvchi klass","Component turi","CSS direktiv"],"answer":1},
-    {"id":5,"level":"easy","question":"Angular da [(ngModel)] nima uchun?","options":["Bir tomonlama binding","Two-way data binding — model va view ni sinxronlashtiradi","Event binding","Property binding"],"answer":1},
-    {"id":6,"level":"easy","question":"Angular da *ngFor direktivi nima qiladi?","options":["Shartli rendering","Ro'yxat bo'yicha elementlarni takrorlaydi","Event handler","Transformatsiya"],"answer":1},
-    {"id":7,"level":"easy","question":"Angular da *ngIf direktivi nima qiladi?","options":["Loop yaratadi","Shartga qarab DOM ga qo'shadi/olib tashlaydi","Stil qo'llaydi","Event yuboradi"],"answer":1},
-    {"id":8,"level":"easy","question":"Angular da Service nima?","options":["HTTP servisi","Komponentlar o'rtasida ulashiladigan business logic va ma'lumot","Server","API endpointi"],"answer":1},
-    {"id":9,"level":"easy","question":"Angular da Dependency Injection (DI) nima?","options":["Kod in'ektsiyasi","Komponent yoki servisga kerakli ob'ektlarni tashqaridan kiritish mexanizmi","SQL injection","Code injection"],"answer":1},
-    {"id":10,"level":"easy","question":"Angular da @Component decorator nima?","options":["Komponentni bezash","Klassni Angular komponent sifatida belgilovchi metadata qo'shadigan decorator","Mixin","HOC"],"answer":1},
-    {"id":11,"level":"easy","question":"Angular da interpolation qanday yoziladi?","options":["${expression}","[expression]","{{expression}}","(expression)"],"answer":2},
-    {"id":12,"level":"easy","question":"Angular da property binding qanday yoziladi?","options":["{{property}}","[property]='value'","(property)='value'","property='value'"],"answer":1},
-    {"id":13,"level":"easy","question":"Angular da event binding qanday yoziladi?","options":["[event]='handler'","{{event}}='handler'","(event)='handler()'","on-event='handler'"],"answer":2},
-    {"id":14,"level":"easy","question":"Angular da Pipe nima?","options":["Network pipe","Template da ma'lumotni transformatsiya qiluvchi (| date, | uppercase kabi)","CSS pipe","Event pipe"],"answer":1},
-    {"id":15,"level":"easy","question":"Angular CLI da yangi komponent yaratish buyrug'i?","options":["ng generate component name","ng create component name","ng new component name","ng add component name"],"answer":0},
-    {"id":16,"level":"medium","question":"Angular da ChangeDetectionStrategy.OnPush nima uchun?","options":["Doim yangilash","Faqat Input o'zgarsa, event bo'lsa yoki Observable emit qilsa tekshirish — performance optimallashtirish","Manual yangilash","Avtomatik yangilash"],"answer":1},
-    {"id":17,"level":"medium","question":"Angular da RxJS Observable nima?","options":["Promise turi","Vaqt o'tishi bilan ma'lumotlar oqimini ifodalovchi ob'ekt — subscribe orqali qabul qilinadi","Array turi","Event emitter"],"answer":1},
-    {"id":18,"level":"medium","question":"Angular da Router nima uchun?","options":["Yo'naltirgich","Sahifalar o'rtasida navigatsiya boshqarish — URL va komponentlarni moslashtirish","Network router","URL generator"],"answer":1},
-    {"id":19,"level":"medium","question":"Angular da lazy loading nima?","options":["Sekin yuklash","Modul faqat kerak bo'lganda yuklanadi — boshlang'ich bundle hajmini kamaytiradi","Rasm yuklash","HTTP lazy"],"answer":1},
-    {"id":20,"level":"medium","question":"Angular da HttpClient nima uchun?","options":["HTTP server yaratish","Backend API bilan HTTP so'rovlar uchun — Observable qaytaradi","HTTP parser","WebSocket"],"answer":1},
-    {"id":21,"level":"medium","question":"Angular da ViewChild nima?","options":["View uchun child element","Template dan DOM element yoki komponentga reference olish","Child komponent","View model"],"answer":1},
-    {"id":22,"level":"medium","question":"Angular da ContentChild nima?","options":["Kontent bolasi","Komponentga ng-content orqali proektsiya qilingan elementga reference olish","Child kontent","View child"],"answer":1},
-    {"id":23,"level":"medium","question":"Angular da ngOnInit lifecycle hook nima uchun?","options":["Komponent yaratish","Komponent input lari tayyor bo'lgandan keyin dastlabki initializatsiya uchun","View tayyor bo'lgach","Komponent yo'q bo'lgach"],"answer":1},
-    {"id":24,"level":"medium","question":"Angular da ngOnDestroy lifecycle hook nima uchun?","options":["Komponent o'chirish","Komponent yo'q bo'lishidan oldin cleanup (unsubscribe, listener olib tashlash) uchun","Memory clear","Event clear"],"answer":1},
-    {"id":25,"level":"medium","question":"Angular da FormGroup va FormControl nima?","options":["CSS formatlash","Reactive Forms da forma va alohida input elementlarini boshqarish ob'ektlari","HTML form","Form validation"],"answer":1},
-    {"id":26,"level":"medium","question":"Angular da Reactive Forms va Template-driven Forms farqi?","options":["Hech qanday farq yo'q","Reactive — komponent klassda boshqarish, test qulayroq; Template-driven — HTML da ngModel bilan","Template-driven professional","Reactive eski"],"answer":1},
-    {"id":27,"level":"medium","question":"Angular da Guard nima uchun?","options":["Xavfsizlik guard","Route ga kirish yoki chiqishni nazorat qiluvchi — CanActivate, CanDeactivate","Router middleware","Auth middleware"],"answer":1},
-    {"id":28,"level":"medium","question":"Angular da Resolver nima?","options":["Error resolver","Route aktivatsiyasidan oldin ma'lumot yuklab, komponentga tayyor holda beruvchi","URL resolver","Promise resolver"],"answer":1},
-    {"id":29,"level":"medium","question":"Angular da Interceptor nima uchun?","options":["Error interceptor","HTTP so'rov va javoblarni ushlab, o'zgartirish (token qo'shish, xato handling)","Network interceptor","Event interceptor"],"answer":1},
-    {"id":30,"level":"medium","question":"Angular da trackBy nima uchun?","options":["Track event","*ngFor da elementlarni noyob identifikatsiya qilib, DOM yangilanishini optimizatsiya qilish","Track user","Performance monitor"],"answer":1},
-    {"id":31,"level":"medium","question":"Angular da ng-content nima uchun?","options":["Kontent generator","Content projection — ota komponentdan bola komponentga kontent qo'yish","Slot alternativa","View kontent"],"answer":1},
-    {"id":32,"level":"medium","question":"Angular da @Input() va @Output() decoratorlari nima uchun?","options":["Kirish/chiqish","@Input — ota dan bola ga ma'lumot; @Output — bola dan ota ga hodisa (EventEmitter bilan)","Prop uzatish","Event uzatish"],"answer":1},
-    {"id":33,"level":"medium","question":"Angular da async pipe nima qiladi?","options":["Asinxron pipe","Observable/Promise ni subscribe qilib, template da to'g'ridan-to'g'ri ishlatish imkoni; auto unsubscribe","Async funksiya","Promise wrapper"],"answer":1},
-    {"id":34,"level":"medium","question":"Angular da zone.js nima uchun?","options":["Time zone","Asinxron operatsiyalarni kuzatib, Angular change detection ni avtomatik ishga tushirish","Browser zone","Angular zone"],"answer":1},
-    {"id":35,"level":"medium","question":"Angular da Standalone Components nima?","options":["Mustaqil komponent","NgModule dan mustaqil ishlaydi — imports arrayida boshqa komponent import qiladi","Single component","Isolated component"],"answer":1},
-    {"id":36,"level":"hard","question":"Angular da Ivy renderer nima?","options":["Angular versiya","Angular 9 dan standart renderer — tree shaking, faster compile, smaller bundle","CSS renderer","JavaScript renderer"],"answer":1},
-    {"id":37,"level":"hard","question":"Angular da ngrx/store nima?","options":["Angular store","Redux pattern — global state management, reducers, effects, selectors","Local state","Service state"],"answer":1},
-    {"id":38,"level":"hard","question":"Angular da signal nima (Angular 17+)?","options":["Signal kutubxona","Reaktiv qiymat — getter va setter bilan, zone.js ga ehtiyojsiz fine-grained reactivity","WebSocket signal","Event signal"],"answer":1},
-    {"id":39,"level":"hard","question":"Angular da Hierarchical Dependency Injection nima?","options":["DI ierarxiyasi","Root, module, element injector — har biri o'z scope da servis instance yaratadi","Flat DI","Global DI"],"answer":1},
-    {"id":40,"level":"hard","question":"Angular da forRoot() va forChild() nima farq qiladi?","options":["Hech qanday farq yo'q","forRoot — singleton servislar bilan root da; forChild — faqat feature modul uchun, servis yaratmaydi","forChild global","forRoot lokal"],"answer":1},
-    {"id":41,"level":"hard","question":"Angular da AOT (Ahead-of-Time) vs JIT (Just-in-Time) compilation farqi?","options":["Hech qanday farq yo'q","AOT — build vaqtida kompilyatsiya (production, tez, kichik bundle); JIT — runtime kompilyatsiya (dev)","JIT tezroq","AOT faqat dev uchun"],"answer":1},
-    {"id":42,"level":"hard","question":"Angular da RxJS shareReplay operator nima uchun?","options":["Observable ulashish","Observable ni share qilib, yangi subscriber larga oxirgi N qiymatlarni replay qilish","Cache operator","Replay operator"],"answer":1},
-    {"id":43,"level":"hard","question":"Angular da ApplicationRef.tick() nima qiladi?","options":["Timer tick","Manuel change detection cycle ishga tushirish","Application update","Angular tick"],"answer":1},
-    {"id":44,"level":"hard","question":"Angular da Multi-provider tokens nima?","options":["Ko'p provider","Bitta token uchun ko'p providerlarga ruxsat berish — plugin tizimi, interceptors","Multiple services","Provider array"],"answer":1},
-    {"id":45,"level":"hard","question":"Angular da NgZone.runOutsideAngular() nima uchun?","options":["Zone dan chiqish","Zone.js kuzatuvidan tashqarida kod ishlatish — change detection ni ishga tushirmaydi (performance)","Background run","External run"],"answer":1},
-    {"id":46,"level":"hard","question":"Angular da ComponentFactoryResolver nima uchun ishlatilgan?","options":["Factory pattern","Dinamik komponent yaratish (deprecated Ivy da — endi ViewContainerRef ishlatiladi)","Komponent cache","Service factory"],"answer":1},
-    {"id":47,"level":"hard","question":"Angular da hydration (SSR bilan) nima?","options":["HTML yuklash","Server-rendered HTML ga Angular event va reaktivlikni qo'shib, interaktiv qilish","State yuklash","DOM yuklash"],"answer":1},
-    {"id":48,"level":"hard","question":"Angular da Workspace configuration (angular.json) nima boshqaradi?","options":["Loyiha metadata","Build, test, serve konfiguratsiyasi — budget, assets, styles, environments va boshqalar","Package konfiguratsiyasi","TypeScript konfiguratsiyasi"],"answer":1},
-    {"id":49,"level":"hard","question":"Angular da Schematic nima uchun?","options":["Kod sxemasi","Kodni avtomatik generatsiya va transformatsiya qiluvchi tool — ng generate ortida","CLI buyruq","Code template"],"answer":1},
-    {"id":50,"level":"hard","question":"Angular da Zoneless change detection (Angular 18+) nima?","options":["Zona yo'q","Zone.js ni olib tashlab, Signal asosida fine-grained reactivity — better performance","Manual detection","No detection"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Angular nima?",
+      "options": [
+        "CSS framework",
+        "JavaScript kutubxona",
+        "TypeScript asosidagi to'liq web framework",
+        "Backend framework"
+      ],
+      "answer": 2,
+      "question_ru": "Что такое угловой?",
+      "question_en": "What is Angular?",
+      "options_ru": [
+        "CSS-фреймворк",
+        "библиотека JavaScript",
+        "Полноценный веб-фреймворк на основе TypeScript.",
+        "Бэкэнд-фреймворк"
+      ],
+      "options_en": [
+        "CSS framework",
+        "JavaScript library",
+        "A complete web framework based on TypeScript",
+        "Backend framework"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Angular da Component nima?",
+      "options": [
+        "CSS fayli",
+        "Template, klass va metadata bilan UI qurilish bloki",
+        "Service",
+        "Module"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое компонент в Angular?",
+      "question_en": "What is Component in Angular?",
+      "options_ru": [
+        "CSS-файл",
+        "Строительный блок пользовательского интерфейса с шаблоном, классом и метаданными",
+        "Услуга",
+        "Модуль"
+      ],
+      "options_en": [
+        "css file",
+        "UI building block with template, class and metadata",
+        "Service",
+        "Module"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Angular da NgModule nima uchun?",
+      "options": [
+        "Node module",
+        "Komponentlar, direktivlar, pipe va servislarni guruhlovchi konteyner",
+        "Modul import",
+        "Angular versiya"
+      ],
+      "answer": 1,
+      "question_ru": "Почему NgModule в Angular?",
+      "question_en": "Why NgModule in Angular?",
+      "options_ru": [
+        "Узловой модуль",
+        "Контейнер, группирующий компоненты, директивы, каналы и сервисы.",
+        "Импорт модуля",
+        "Угловая версия"
+      ],
+      "options_en": [
+        "Node module",
+        "A container that groups components, directives, pipes, and services",
+        "Module import",
+        "Angular version"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Angular da directive nima?",
+      "options": [
+        "HTML instruction",
+        "DOM xatti-harakatini o'zgartiruvchi klass",
+        "Component turi",
+        "CSS direktiv"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое директива в Angular?",
+      "question_en": "What is a directive in Angular?",
+      "options_ru": [
+        "HTML-инструкции",
+        "Класс, который изменяет поведение DOM.",
+        "Тип компонента",
+        "CSS-директива"
+      ],
+      "options_en": [
+        "HTML instructions",
+        "A class that modifies the behavior of the DOM",
+        "Component type",
+        "CSS directive"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Angular da [(ngModel)] nima uchun?",
+      "options": [
+        "Bir tomonlama binding",
+        "Two-way data binding — model va view ni sinxronlashtiradi",
+        "Event binding",
+        "Property binding"
+      ],
+      "answer": 1,
+      "question_ru": "Почему [(ngModel)] в Angular?",
+      "question_en": "Why [(ngModel)] in Angular?",
+      "options_ru": [
+        "Односторонняя привязка",
+        "Двусторонняя привязка данных — синхронизирует модель и представление.",
+        "Привязка событий",
+        "Привязка свойств"
+      ],
+      "options_en": [
+        "One-way binding",
+        "Two-way data binding — synchronizes the model and view",
+        "Event binding",
+        "Property binding"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Angular da *ngFor direktivi nima qiladi?",
+      "options": [
+        "Shartli rendering",
+        "Ro'yxat bo'yicha elementlarni takrorlaydi",
+        "Event handler",
+        "Transformatsiya"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает директива *ngFor в Angular?",
+      "question_en": "What does the *ngFor directive do in Angular?",
+      "options_ru": [
+        "Условный рендеринг",
+        "Перебирает элементы списка",
+        "Обработчик событий",
+        "Трансформация"
+      ],
+      "options_en": [
+        "Conditional rendering",
+        "Iterates through the elements of a list",
+        "Event handler",
+        "Transformation"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Angular da *ngIf direktivi nima qiladi?",
+      "options": [
+        "Loop yaratadi",
+        "Shartga qarab DOM ga qo'shadi/olib tashlaydi",
+        "Stil qo'llaydi",
+        "Event yuboradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает директива *ngIf в Angular?",
+      "question_en": "What does the *ngIf directive do in Angular?",
+      "options_ru": [
+        "Создает цикл",
+        "Добавляет/удаляет в DOM в зависимости от условия.",
+        "Использует стиль",
+        "Отправляет событие"
+      ],
+      "options_en": [
+        "Creates a loop",
+        "Adds/removes to the DOM depending on the condition",
+        "Uses a style",
+        "Sends an event"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Angular da Service nima?",
+      "options": [
+        "HTTP servisi",
+        "Komponentlar o'rtasida ulashiladigan business logic va ma'lumot",
+        "Server",
+        "API endpointi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сервис в Angular?",
+      "question_en": "What is a Service in Angular?",
+      "options_ru": [
+        "HTTP-сервис",
+        "Бизнес-логика и информация, разделяемая между компонентами",
+        "Сервер",
+        "конечная точка API"
+      ],
+      "options_en": [
+        "HTTP service",
+        "Business logic and information shared between components",
+        "Server",
+        "API endpoint"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Angular da Dependency Injection (DI) nima?",
+      "options": [
+        "Kod in'ektsiyasi",
+        "Komponent yoki servisga kerakli ob'ektlarni tashqaridan kiritish mexanizmi",
+        "SQL injection",
+        "Code injection"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое внедрение зависимостей (DI) в Angular?",
+      "question_en": "What is Dependency Injection (DI) in Angular?",
+      "options_ru": [
+        "Внедрение кода",
+        "Механизм добавления необходимых объектов в компонент или сервис извне.",
+        "SQL-инъекция",
+        "Внедрение кода"
+      ],
+      "options_en": [
+        "Code injection",
+        "A mechanism for adding required objects to a component or service from the outside",
+        "SQL injection",
+        "Code injection"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Angular da @Component decorator nima?",
+      "options": [
+        "Komponentni bezash",
+        "Klassni Angular komponent sifatida belgilovchi metadata qo'shadigan decorator",
+        "Mixin",
+        "HOC"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое декоратор @Component в Angular?",
+      "question_en": "What is @Component decorator in Angular?",
+      "options_ru": [
+        "Украсьте компонент",
+        "Декоратор, добавляющий метаданные, определяющие класс как компонент Angular.",
+        "Миксин",
+        "ХОК"
+      ],
+      "options_en": [
+        "Decorate the component",
+        "A decorator that adds metadata that defines the class as an Angular component",
+        "Mixin",
+        "HOC"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Angular da interpolation qanday yoziladi?",
+      "options": [
+        "${expression}",
+        "[expression]",
+        "{{expression}}",
+        "(expression)"
+      ],
+      "answer": 2,
+      "question_ru": "Как написать интерполяцию в Angular?",
+      "question_en": "How to write interpolation in Angular?",
+      "options_ru": [
+        "${выражение}",
+        "[выражение]",
+        "{{выражение}}",
+        "(выражение)"
+      ],
+      "options_en": [
+        "${expression}",
+        "[expression]",
+        "{{expression}}",
+        "(expression)"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Angular da property binding qanday yoziladi?",
+      "options": [
+        "{{property}}",
+        "[property]='value'",
+        "(property)='value'",
+        "property='value'"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать привязку свойств в Angular?",
+      "question_en": "How to write property binding in Angular?",
+      "options_ru": [
+        "{{свойство}}",
+        "[свойство]='значение'",
+        "(свойство) = 'значение'",
+        "свойство = 'значение'"
+      ],
+      "options_en": [
+        "{{property}}",
+        "[property]='value'",
+        "(property)='value'",
+        "property='value'"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Angular da event binding qanday yoziladi?",
+      "options": [
+        "[event]='handler'",
+        "{{event}}='handler'",
+        "(event)='handler()'",
+        "on-event='handler'"
+      ],
+      "answer": 2,
+      "question_ru": "Как написать привязку событий в Angular?",
+      "question_en": "How to write event binding in Angular?",
+      "options_ru": [
+        "[событие]='обработчик'",
+        "{{event}}='обработчик'",
+        "(событие)='обработчик()'",
+        "on-event='обработчик'"
+      ],
+      "options_en": [
+        "[event]='handler'",
+        "{{event}}='handler'",
+        "(event)='handler()'",
+        "on-event='handler'"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Angular da Pipe nima?",
+      "options": [
+        "Network pipe",
+        "Template da ma'lumotni transformatsiya qiluvchi (| date, | uppercase kabi)",
+        "CSS pipe",
+        "Event pipe"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Pipe в Angular?",
+      "question_en": "What is Pipe in Angular?",
+      "options_ru": [
+        "Сетевая труба",
+        "Преобразование данных в шаблоне (например, | дата, | верхний регистр)",
+        "CSS-канал",
+        "Канал событий"
+      ],
+      "options_en": [
+        "Network pipe",
+        "Data transforms in the template (such as | date, | uppercase)",
+        "CSS pipe",
+        "Event pipe"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Angular CLI da yangi komponent yaratish buyrug'i?",
+      "options": [
+        "ng generate component name",
+        "ng create component name",
+        "ng new component name",
+        "ng add component name"
+      ],
+      "answer": 0,
+      "question_ru": "Команда для создания нового компонента в Angular CLI?",
+      "question_en": "Command to create new component in Angular CLI?",
+      "options_ru": [
+        "ng генерировать имя компонента",
+        "ng создать имя компонента",
+        "ng новое имя компонента",
+        "ng добавить имя компонента"
+      ],
+      "options_en": [
+        "ng generate component name",
+        "ng create component name",
+        "ng new component name",
+        "ng add component name"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Angular da ChangeDetectionStrategy.OnPush nima uchun?",
+      "options": [
+        "Doim yangilash",
+        "Faqat Input o'zgarsa, event bo'lsa yoki Observable emit qilsa tekshirish — performance optimallashtirish",
+        "Manual yangilash",
+        "Avtomatik yangilash"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ChangeDetectionStrategy.OnPush в Angular?",
+      "question_en": "Why ChangeDetectionStrategy.OnPush in Angular?",
+      "options_ru": [
+        "Всегда обновлять",
+        "Проверка только того, изменяется ли вход, есть ли событие или испускается Observable — оптимизация производительности",
+        "Обновление вручную",
+        "Автоматическое обновление"
+      ],
+      "options_en": [
+        "Always update",
+        "Checking only if the Input changes, if there is an event or if the Observable emits - performance optimization",
+        "Manual update",
+        "Automatic update"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Angular da RxJS Observable nima?",
+      "options": [
+        "Promise turi",
+        "Vaqt o'tishi bilan ma'lumotlar oqimini ifodalovchi ob'ekt — subscribe orqali qabul qilinadi",
+        "Array turi",
+        "Event emitter"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое RxJS Observable в Angular?",
+      "question_en": "What is RxJS Observable in Angular?",
+      "options_ru": [
+        "Тип обещания",
+        "Объект, представляющий поток данных во времени, получен через подписку.",
+        "Тип массива",
+        "Генератор событий"
+      ],
+      "options_en": [
+        "Promise type",
+        "An object representing the flow of data over time is received via subscribe",
+        "Array type",
+        "Event emitter"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Angular da Router nima uchun?",
+      "options": [
+        "Yo'naltirgich",
+        "Sahifalar o'rtasida navigatsiya boshqarish — URL va komponentlarni moslashtirish",
+        "Network router",
+        "URL generator"
+      ],
+      "answer": 1,
+      "question_ru": "Почему маршрутизатор в Angular?",
+      "question_en": "Why Router in Angular?",
+      "options_ru": [
+        "реферер",
+        "Управляйте навигацией между страницами — настраивайте URL-адреса и компоненты.",
+        "Сетевой маршрутизатор",
+        "Генератор URL-адресов"
+      ],
+      "options_en": [
+        "Referrer",
+        "Manage navigation between pages — Customize URLs and components",
+        "Network router",
+        "URL generator"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Angular da lazy loading nima?",
+      "options": [
+        "Sekin yuklash",
+        "Modul faqat kerak bo'lganda yuklanadi — boshlang'ich bundle hajmini kamaytiradi",
+        "Rasm yuklash",
+        "HTTP lazy"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ленивая загрузка в Angular?",
+      "question_en": "What is lazy loading in Angular?",
+      "options_ru": [
+        "Медленная загрузка",
+        "Модуль загружается только при необходимости — уменьшая размер исходного бандла",
+        "Загрузить изображение",
+        "HTTP ленив"
+      ],
+      "options_en": [
+        "Slow loading",
+        "The module is loaded only when needed — reducing the size of the initial bundle",
+        "Upload a picture",
+        "HTTP is lazy"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Angular da HttpClient nima uchun?",
+      "options": [
+        "HTTP server yaratish",
+        "Backend API bilan HTTP so'rovlar uchun — Observable qaytaradi",
+        "HTTP parser",
+        "WebSocket"
+      ],
+      "answer": 1,
+      "question_ru": "Почему HttpClient в Angular?",
+      "question_en": "Why HttpClient in Angular?",
+      "options_ru": [
+        "Создать HTTP-сервер",
+        "Для HTTP-запросов с серверным API — возвращает Observable.",
+        "HTTP-парсер",
+        "Вебсокет"
+      ],
+      "options_en": [
+        "Create an HTTP server",
+        "For HTTP requests with the backend API — Returns an Observable",
+        "HTTP parser",
+        "WebSocket"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Angular da ViewChild nima?",
+      "options": [
+        "View uchun child element",
+        "Template dan DOM element yoki komponentga reference olish",
+        "Child komponent",
+        "View model"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ViewChild в Angular?",
+      "question_en": "What is ViewChild in Angular?",
+      "options_ru": [
+        "Дочерний элемент для View",
+        "Получение ссылки на элемент или компонент DOM из шаблона",
+        "Дочерний компонент",
+        "Посмотреть модель"
+      ],
+      "options_en": [
+        "A child element for View",
+        "Getting a reference to a DOM element or component from a template",
+        "A child component",
+        "View model"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Angular da ContentChild nima?",
+      "options": [
+        "Kontent bolasi",
+        "Komponentga ng-content orqali proektsiya qilingan elementga reference olish",
+        "Child kontent",
+        "View child"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ContentChild в Angular?",
+      "question_en": "What is ContentChild in Angular?",
+      "options_ru": [
+        "Дочерний ребенок",
+        "Получите ссылку на элемент, проецируемый на компонент, через ng-content.",
+        "Детский контент",
+        "Посмотреть ребенка"
+      ],
+      "options_en": [
+        "Content child",
+        "Get a reference to the element projected to the component via ng-content",
+        "Child content",
+        "View child"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Angular da ngOnInit lifecycle hook nima uchun?",
+      "options": [
+        "Komponent yaratish",
+        "Komponent input lari tayyor bo'lgandan keyin dastlabki initializatsiya uchun",
+        "View tayyor bo'lgach",
+        "Komponent yo'q bo'lgach"
+      ],
+      "answer": 1,
+      "question_ru": "Почему перехват жизненного цикла ngOnInit в Angular?",
+      "question_en": "Why ngOnInit lifecycle hook in Angular?",
+      "options_ru": [
+        "Создать компонент",
+        "Для первоначальной инициализации после того, как входы компонентов готовы.",
+        "Когда вид готов",
+        "Когда компонент отсутствует"
+      ],
+      "options_en": [
+        "Create a component",
+        "For initial initialization after component inputs are ready",
+        "When the view is ready",
+        "When a component is missing"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Angular da ngOnDestroy lifecycle hook nima uchun?",
+      "options": [
+        "Komponent o'chirish",
+        "Komponent yo'q bo'lishidan oldin cleanup (unsubscribe, listener olib tashlash) uchun",
+        "Memory clear",
+        "Event clear"
+      ],
+      "answer": 1,
+      "question_ru": "Почему крючок жизненного цикла ngOnDestroy в Angular?",
+      "question_en": "Why ngOnDestroy lifecycle hook in Angular?",
+      "options_ru": [
+        "Удалить компонент",
+        "Для очистки (отписки, удаления прослушивателя) перед уничтожением компонента",
+        "Очистка памяти",
+        "Событие очищено"
+      ],
+      "options_en": [
+        "Remove the component",
+        "To cleanup (unsubscribe, remove listener) before the component is destroyed",
+        "Memory clear",
+        "Event clear"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Angular da FormGroup va FormControl nima?",
+      "options": [
+        "CSS formatlash",
+        "Reactive Forms da forma va alohida input elementlarini boshqarish ob'ektlari",
+        "HTML form",
+        "Form validation"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое FormGroup и FormControl в Angular?",
+      "question_en": "What is FormGroup and FormControl in Angular?",
+      "options_ru": [
+        "CSS-форматирование",
+        "Форма и отдельные объекты управления вводом в Reactive Forms",
+        "HTML-форма",
+        "Проверка формы"
+      ],
+      "options_en": [
+        "CSS formatting",
+        "Form and individual input control objects in Reactive Forms",
+        "HTML form",
+        "Form validation"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Angular da Reactive Forms va Template-driven Forms farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Reactive — komponent klassda boshqarish, test qulayroq; Template-driven — HTML da ngModel bilan",
+        "Template-driven professional",
+        "Reactive eski"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между реактивными формами и формами на основе шаблонов в Angular?",
+      "question_en": "Difference between Reactive Forms and Template-driven Forms in Angular?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Реактивный — управление классами компонентов, тестирование удобнее; На основе шаблонов — с ngModel в HTML.",
+        "Профессионал, работающий с шаблонами",
+        "Реактивный уже старый"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Reactive — component class management, testing is more convenient; Template-driven — with ngModel in HTML",
+        "Template-driven professional",
+        "Reactive is old"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Angular da Guard nima uchun?",
+      "options": [
+        "Xavfsizlik guard",
+        "Route ga kirish yoki chiqishni nazorat qiluvchi — CanActivate, CanDeactivate",
+        "Router middleware",
+        "Auth middleware"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем Guard в Angular?",
+      "question_en": "Why Guard in Angular?",
+      "options_ru": [
+        "Охранник",
+        "Контроль входа или выхода на маршрут — CanActivate, CanDeactivate",
+        "Промежуточное ПО маршрутизатора",
+        "Промежуточное программное обеспечение аутентификации"
+      ],
+      "options_en": [
+        "Security guard",
+        "Route entry or exit control — CanActivate, CanDeactivate",
+        "Router middleware",
+        "Auth middleware"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Angular da Resolver nima?",
+      "options": [
+        "Error resolver",
+        "Route aktivatsiyasidan oldin ma'lumot yuklab, komponentga tayyor holda beruvchi",
+        "URL resolver",
+        "Promise resolver"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое резольвер в Angular?",
+      "question_en": "What is Resolver in Angular?",
+      "options_ru": [
+        "Устранитель ошибок",
+        "Перед активацией маршрута данные загружаются и готовы для компонента.",
+        "преобразователь URL-адресов",
+        "Решатель обещаний"
+      ],
+      "options_en": [
+        "Error resolver",
+        "Before the activation of the route, the data is loaded and ready for the component",
+        "URL resolver",
+        "Promise resolver"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Angular da Interceptor nima uchun?",
+      "options": [
+        "Error interceptor",
+        "HTTP so'rov va javoblarni ushlab, o'zgartirish (token qo'shish, xato handling)",
+        "Network interceptor",
+        "Event interceptor"
+      ],
+      "answer": 1,
+      "question_ru": "Почему перехватчик в Angular?",
+      "question_en": "Why Interceptor in Angular?",
+      "options_ru": [
+        "Перехватчик ошибок",
+        "Перехват и изменение HTTP-запросов и ответов (добавление токенов, обработка ошибок)",
+        "Сетевой перехватчик",
+        "Перехватчик событий"
+      ],
+      "options_en": [
+        "Error interceptor",
+        "Intercepting and modifying HTTP requests and responses (adding tokens, error handling)",
+        "Network interceptor",
+        "Event interceptor"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Angular da trackBy nima uchun?",
+      "options": [
+        "Track event",
+        "*ngFor da elementlarni noyob identifikatsiya qilib, DOM yangilanishini optimizatsiya qilish",
+        "Track user",
+        "Performance monitor"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем trackBy в Angular?",
+      "question_en": "Why trackBy in Angular?",
+      "options_ru": [
+        "Отслеживать событие",
+        "*Оптимизация обновления DOM за счет уникальной идентификации элементов в ngFor.",
+        "Отследить пользователя",
+        "Монитор производительности"
+      ],
+      "options_en": [
+        "Track event",
+        "*Optimize DOM update by uniquely identifying elements in ngFor",
+        "Track user",
+        "Performance monitor"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Angular da ng-content nima uchun?",
+      "options": [
+        "Kontent generator",
+        "Content projection — ota komponentdan bola komponentga kontent qo'yish",
+        "Slot alternativa",
+        "View kontent"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ng-content в Angular?",
+      "question_en": "Why ng-content in Angular?",
+      "options_ru": [
+        "Генератор контента",
+        "Проекция контента — размещение контента из родительского компонента в дочерний компонент.",
+        "Альтернативный слот",
+        "Посмотреть контент"
+      ],
+      "options_en": [
+        "Content generator",
+        "Content projection — putting content from a parent component to a child component",
+        "Slot alternative",
+        "View content"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Angular da @Input() va @Output() decoratorlari nima uchun?",
+      "options": [
+        "Kirish/chiqish",
+        "@Input — ota dan bola ga ma'lumot; @Output — bola dan ota ga hodisa (EventEmitter bilan)",
+        "Prop uzatish",
+        "Event uzatish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему декораторы @Input() и @Output() в Angular?",
+      "question_en": "Why @Input() and @Output() decorators in Angular?",
+      "options_ru": [
+        "Заезд/выезд",
+        "@Input — информация от родителя к дочернему элементу; @Output — событие от дочернего элемента к родительскому (с помощью EventEmitter)",
+        "Пропеллерная трансмиссия",
+        "Передача событий"
+      ],
+      "options_en": [
+        "Check in/out",
+        "@Input — information from parent to child; @Output — event from child to parent (with EventEmitter)",
+        "Prop transmission",
+        "Event transmission"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Angular da async pipe nima qiladi?",
+      "options": [
+        "Asinxron pipe",
+        "Observable/Promise ni subscribe qilib, template da to'g'ridan-to'g'ri ishlatish imkoni; auto unsubscribe",
+        "Async funksiya",
+        "Promise wrapper"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает асинхронный канал в Angular?",
+      "question_en": "What does an async pipe do in Angular?",
+      "options_ru": [
+        "Асинхронная труба",
+        "Возможность подписаться на Observable/Promise и использовать его прямо в шаблоне; автоматическая отписка",
+        "Асинхронная функция",
+        "Обертка обещаний"
+      ],
+      "options_en": [
+        "Asynchronous pipe",
+        "Ability to subscribe to Observable/Promise and use it directly in the template; auto unsubscribe",
+        "Async function",
+        "Promise wrapper"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Angular da zone.js nima uchun?",
+      "options": [
+        "Time zone",
+        "Asinxron operatsiyalarni kuzatib, Angular change detection ni avtomatik ishga tushirish",
+        "Browser zone",
+        "Angular zone"
+      ],
+      "answer": 1,
+      "question_ru": "Почему Zone.js в Angular?",
+      "question_en": "Why zone.js in Angular?",
+      "options_ru": [
+        "Часовой пояс",
+        "Автоматическое обнаружение изменений Angular путем мониторинга асинхронных операций.",
+        "Зона браузера",
+        "Угловая зона"
+      ],
+      "options_en": [
+        "Time zone",
+        "Auto-initiate Angular change detection by monitoring asynchronous operations",
+        "Browser zone",
+        "Angular zone"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Angular da Standalone Components nima?",
+      "options": [
+        "Mustaqil komponent",
+        "NgModule dan mustaqil ishlaydi — imports arrayida boshqa komponent import qiladi",
+        "Single component",
+        "Isolated component"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое автономные компоненты в Angular?",
+      "question_en": "What is Standalone Components in Angular?",
+      "options_ru": [
+        "Независимый компонент",
+        "Работает независимо от NgModule — импортирует другой компонент в массив импорта.",
+        "Однокомпонентный",
+        "Изолированный компонент"
+      ],
+      "options_en": [
+        "Independent component",
+        "Works independently of NgModule — imports another component in the imports array",
+        "Single component",
+        "Isolated component"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Angular da Ivy renderer nima?",
+      "options": [
+        "Angular versiya",
+        "Angular 9 dan standart renderer — tree shaking, faster compile, smaller bundle",
+        "CSS renderer",
+        "JavaScript renderer"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое рендерер Ivy в Angular?",
+      "question_en": "What is Ivy renderer in Angular?",
+      "options_ru": [
+        "Угловая версия",
+        "Средство рендеринга по умолчанию из Angular 9 — встряхивание дерева, более быстрая компиляция, меньший пакет",
+        "CSS-рендерер",
+        "JavaScript-рендерер"
+      ],
+      "options_en": [
+        "Angular version",
+        "Default renderer from Angular 9 — tree shaking, faster compile, smaller bundle",
+        "CSS renderer",
+        "JavaScript renderer"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Angular da ngrx/store nima?",
+      "options": [
+        "Angular store",
+        "Redux pattern — global state management, reducers, effects, selectors",
+        "Local state",
+        "Service state"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ngrx/store в Angular?",
+      "question_en": "What is ngrx/store in Angular?",
+      "options_ru": [
+        "Угловой магазин",
+        "Шаблон Redux — глобальное управление состоянием, редукторы, эффекты, селекторы",
+        "Местный штат",
+        "Состояние службы"
+      ],
+      "options_en": [
+        "Angular store",
+        "Redux pattern — global state management, reducers, effects, selectors",
+        "Local state",
+        "Service state"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Angular da signal nima (Angular 17+)?",
+      "options": [
+        "Signal kutubxona",
+        "Reaktiv qiymat — getter va setter bilan, zone.js ga ehtiyojsiz fine-grained reactivity",
+        "WebSocket signal",
+        "Event signal"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое сигнал в Angular (Angular 17+)?",
+      "question_en": "What is signal in Angular (Angular 17+)?",
+      "options_ru": [
+        "Библиотека сигналов",
+        "Реактивное значение — детальная реактивность с геттерами и сеттерами без необходимости использования Zone.js.",
+        "Сигнал веб-сокета",
+        "Сигнал события"
+      ],
+      "options_en": [
+        "Signal library",
+        "Reactive value — fine-grained reactivity with getters and setters, without the need for zone.js",
+        "WebSocket signal",
+        "Event signal"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Angular da Hierarchical Dependency Injection nima?",
+      "options": [
+        "DI ierarxiyasi",
+        "Root, module, element injector — har biri o'z scope da servis instance yaratadi",
+        "Flat DI",
+        "Global DI"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое иерархическое внедрение зависимостей в Angular?",
+      "question_en": "What is Hierarchical Dependency Injection in Angular?",
+      "options_ru": [
+        "Иерархия DI",
+        "Корень, модуль, инжектор элемента — каждый создает экземпляр службы в своей области действия.",
+        "Плоский ДИ",
+        "Глобальный DI"
+      ],
+      "options_en": [
+        "DI Hierarchy",
+        "Root, module, element injector — each creates a service instance in its own scope",
+        "Flat DI",
+        "Global DI"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Angular da forRoot() va forChild() nima farq qiladi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "forRoot — singleton servislar bilan root da; forChild — faqat feature modul uchun, servis yaratmaydi",
+        "forChild global",
+        "forRoot lokal"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между forRoot() и forChild() в Angular?",
+      "question_en": "What is the difference between forRoot() and forChild() in Angular?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "forRoot — root с одноэлементными сервисами; forChild — только для функционального модуля, не создает сервис",
+        "forChild является глобальным",
+        "для корневой локали"
+      ],
+      "options_en": [
+        "There is no difference",
+        "forRoot — at root with singleton services; forChild — only for the feature module, does not create a service",
+        "forChild is global",
+        "forRoot locale"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Angular da AOT (Ahead-of-Time) vs JIT (Just-in-Time) compilation farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "AOT — build vaqtida kompilyatsiya (production, tez, kichik bundle); JIT — runtime kompilyatsiya (dev)",
+        "JIT tezroq",
+        "AOT faqat dev uchun"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между компиляцией AOT (заранее) и JIT (точно в срок) в Angular?",
+      "question_en": "Difference between AOT (Ahead-of-Time) vs JIT (Just-in-Time) compilation in Angular?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "AOT — компиляция во время сборки (продакшн, быстрая, малый бандл); JIT — компиляция во время выполнения (dev)",
+        "JIT быстрее",
+        "AOT предназначен только для разработчиков"
+      ],
+      "options_en": [
+        "There is no difference",
+        "AOT — compilation during build (production, fast, small bundle); JIT — runtime compilation (dev)",
+        "JIT is faster",
+        "AOT is for dev only"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Angular da RxJS shareReplay operator nima uchun?",
+      "options": [
+        "Observable ulashish",
+        "Observable ni share qilib, yangi subscriber larga oxirgi N qiymatlarni replay qilish",
+        "Cache operator",
+        "Replay operator"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем RxJS оператор ShareReplay в Angular?",
+      "question_en": "Why RxJS shareReplay operator in Angular?",
+      "options_ru": [
+        "Наблюдаемый обмен",
+        "Поделитесь Observable и воспроизведите последние N значений новым подписчикам",
+        "Оператор кэша",
+        "Оператор повтора"
+      ],
+      "options_en": [
+        "Observable sharing",
+        "Share the Observable and replay the last N values to new subscribers",
+        "Cache operator",
+        "Replay operator"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Angular da ApplicationRef.tick() nima qiladi?",
+      "options": [
+        "Timer tick",
+        "Manuel change detection cycle ishga tushirish",
+        "Application update",
+        "Angular tick"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает ApplicationRef.tick() в Angular?",
+      "question_en": "What does ApplicationRef.tick() do in Angular?",
+      "options_ru": [
+        "Таймер тикает",
+        "Запуск цикла обнаружения изменений вручную",
+        "Обновление приложения",
+        "Угловая галочка"
+      ],
+      "options_en": [
+        "The timer is ticking",
+        "Start a manual change detection cycle",
+        "Application update",
+        "Angular tick"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Angular da Multi-provider tokens nima?",
+      "options": [
+        "Ko'p provider",
+        "Bitta token uchun ko'p providerlarga ruxsat berish — plugin tizimi, interceptors",
+        "Multiple services",
+        "Provider array"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое токены нескольких поставщиков в Angular?",
+      "question_en": "What are Multi-provider tokens in Angular?",
+      "options_ru": [
+        "Многие провайдеры",
+        "Разрешить использование нескольких провайдеров для одного токена — система плагинов, перехватчики",
+        "Несколько услуг",
+        "Массив поставщиков"
+      ],
+      "options_en": [
+        "Many providers",
+        "Allow multiple providers for one token — plugin system, interceptors",
+        "Multiple services",
+        "Provider array"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Angular da NgZone.runOutsideAngular() nima uchun?",
+      "options": [
+        "Zone dan chiqish",
+        "Zone.js kuzatuvidan tashqarida kod ishlatish — change detection ni ishga tushirmaydi (performance)",
+        "Background run",
+        "External run"
+      ],
+      "answer": 1,
+      "question_ru": "Почему NgZone.runOutsideAngular() в Angular?",
+      "question_en": "Why NgZone.runOutsideAngular() in Angular?",
+      "options_ru": [
+        "Выход из зоны",
+        "Использование кода вне отслеживания Zone.js не приводит к обнаружению изменений (производительности)",
+        "Фоновый запуск",
+        "Внешний запуск"
+      ],
+      "options_en": [
+        "Exit Zone",
+        "Using code outside of Zone.js tracking does not trigger change detection (performance)",
+        "Background run",
+        "External run"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Angular da ComponentFactoryResolver nima uchun ishlatilgan?",
+      "options": [
+        "Factory pattern",
+        "Dinamik komponent yaratish (deprecated Ivy da — endi ViewContainerRef ishlatiladi)",
+        "Komponent cache",
+        "Service factory"
+      ],
+      "answer": 1,
+      "question_ru": "Почему ComponentFactoryResolver используется в Angular?",
+      "question_en": "Why is ComponentFactoryResolver used in Angular?",
+      "options_ru": [
+        "Заводской образец",
+        "Создание динамических компонентов (в устаревшей версии Ivy — теперь используется ViewContainerRef)",
+        "Кэш компонентов",
+        "Сервисный завод"
+      ],
+      "options_en": [
+        "Factory pattern",
+        "Dynamic component creation (in deprecated Ivy — now uses ViewContainerRef)",
+        "Component cache",
+        "Service factory"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Angular da hydration (SSR bilan) nima?",
+      "options": [
+        "HTML yuklash",
+        "Server-rendered HTML ga Angular event va reaktivlikni qo'shib, interaktiv qilish",
+        "State yuklash",
+        "DOM yuklash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое гидратация (с SSR) в Angular?",
+      "question_en": "What is hydration (with SSR) in Angular?",
+      "options_ru": [
+        "HTML-загрузка",
+        "Сделайте HTML-код, отображаемый на сервере, интерактивным, добавив события Angular и реактивность.",
+        "Скачать состояние",
+        "Загрузка DOM"
+      ],
+      "options_en": [
+        "HTML loading",
+        "Make server-rendered HTML interactive by adding Angular events and reactivity",
+        "Download state",
+        "DOM loading"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Angular da Workspace configuration (angular.json) nima boshqaradi?",
+      "options": [
+        "Loyiha metadata",
+        "Build, test, serve konfiguratsiyasi — budget, assets, styles, environments va boshqalar",
+        "Package konfiguratsiyasi",
+        "TypeScript konfiguratsiyasi"
+      ],
+      "answer": 1,
+      "question_ru": "Что контролирует конфигурацию рабочей области (angular.json) в Angular?",
+      "question_en": "What controls Workspace configuration (angular.json) in Angular?",
+      "options_ru": [
+        "Метаданные проекта",
+        "Создавайте, тестируйте, обслуживайте конфигурации — бюджет, ресурсы, стили, среды и т. д.",
+        "Конфигурация пакета",
+        "Конфигурация TypeScript"
+      ],
+      "options_en": [
+        "Project metadata",
+        "Build, test, serve configuration — budget, assets, styles, environments, etc",
+        "Package configuration",
+        "TypeScript configuration"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Angular da Schematic nima uchun?",
+      "options": [
+        "Kod sxemasi",
+        "Kodni avtomatik generatsiya va transformatsiya qiluvchi tool — ng generate ortida",
+        "CLI buyruq",
+        "Code template"
+      ],
+      "answer": 1,
+      "question_ru": "Почему схема в Angular?",
+      "question_en": "Why Schematic in Angular?",
+      "options_ru": [
+        "Схема кода",
+        "Инструмент автоматической генерации и преобразования кода лежит в основе nggenerate.",
+        "команда CLI",
+        "Шаблон кода"
+      ],
+      "options_en": [
+        "Code scheme",
+        "The automatic code generation and transformation tool is behind ng generate",
+        "CLI command",
+        "Code template"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Angular da Zoneless change detection (Angular 18+) nima?",
+      "options": [
+        "Zona yo'q",
+        "Zone.js ni olib tashlab, Signal asosida fine-grained reactivity — better performance",
+        "Manual detection",
+        "No detection"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое бесзональное обнаружение изменений в Angular (Angular 18+)?",
+      "question_en": "What is Zoneless change detection in Angular (Angular 18+)?",
+      "options_ru": [
+        "Там нет зоны",
+        "Детализированная реактивность — повышение производительности на основе Signal за счет удаления Zone.js.",
+        "Ручное обнаружение",
+        "Нет обнаружения"
+      ],
+      "options_en": [
+        "There is no zone",
+        "Fine-grained reactivity — better performance based on Signal by removing Zone.js",
+        "Manual detection",
+        "No detection"
+      ]
+    }
   ]
 }

@@ -2,55 +2,1305 @@
   "technology": "Haskell",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Haskell nima?","options":["JavaScript turi","Sof funksional, statik tipli, lazily evaluated dasturlash tili","Database tili","OOP tili"],"answer":1},
-    {"id":2,"level":"easy","question":"Haskell da funksiya qanday e'lon qilinadi?","options":["function greet name = ...","def greet(name):","greet name = \"Hello \" ++ name","func greet() {}"],"answer":2},
-    {"id":3,"level":"easy","question":"Haskell da main funksiya qanday?","options":["main() {}","main :: IO ()\nmain = putStrLn \"Hello\"","def main():","int main() {}"],"answer":1},
-    {"id":4,"level":"easy","question":"Haskell da tip signaturasi qanday yoziladi?","options":["greet: String -> String","greet :: String -> String","greet(String) -> String","String greet(String)"],"answer":1},
-    {"id":5,"level":"easy","question":"Haskell da immutability nima anglatadi?","options":["O'zgaruvchilar doim o'zgaradi","Barcha qiymatlar o'zgarmas — bir marta belgilanib o'zgarmaydi","Side effects mavjud","Mutable state"],"answer":1},
-    {"id":6,"level":"easy","question":"Haskell da list nima?","options":["Array","Homogeneous linked list — [1,2,3]","Tuple","Vector"],"answer":1},
-    {"id":7,"level":"easy","question":"Haskell da : (cons) operator nima qiladi?","options":["Taqqoslash","Element va list ga qo'shish — 1 : [2,3] = [1,2,3]","Concatenation","Division"],"answer":1},
-    {"id":8,"level":"easy","question":"Haskell da ++ nima?","options":["Increment","List birlashtirish — [1,2] ++ [3,4] = [1,2,3,4]","String concat","Add"],"answer":1},
-    {"id":9,"level":"easy","question":"Haskell da tuple nima?","options":["List turi","Belgilangan sondagi, turli tipli elementlar — (1, 'a', True)","Fixed array","Record"],"answer":1},
-    {"id":10,"level":"easy","question":"Haskell da if-then-else nima?","options":["Statement","Ifoda (expression) — natija har ikki branch da ham kerak","Condition","Flow control"],"answer":1},
-    {"id":11,"level":"easy","question":"Haskell da lazy evaluation nima?","options":["Sekin","Qiymat faqat kerak bo'lganda hisoblanadi — cheksiz listlar mumkin","Deferred","Lazy load"],"answer":1},
-    {"id":12,"level":"easy","question":"Haskell da data nima uchun?","options":["Ma'lumot","Algebraic data type e'lon qilish — data Color = Red | Green | Blue","Type define","Enum"],"answer":1},
-    {"id":13,"level":"easy","question":"Haskell da case nima uchun?","options":["Switch","Pattern matching ifodasi — case x of ...","Match","Condition"],"answer":1},
-    {"id":14,"level":"easy","question":"Haskell da where nima uchun?","options":["Where clause","Funksiya ichida lokal ta'riflar — helper funksiyalar","Let in","Local def"],"answer":1},
-    {"id":15,"level":"easy","question":"Haskell da let...in nima uchun?","options":["Let statement","Ifoda ichida lokal ta'riflar — let x = 5 in x + 1","Where alternative","Variable"],"answer":1},
-    {"id":16,"level":"medium","question":"Haskell da Maybe nima?","options":["Balki","Just a yoki Nothing — null ga xavfsiz alternativa","Option type","Optional"],"answer":1},
-    {"id":17,"level":"medium","question":"Haskell da Either nima?","options":["Ikkinchisi","Left a yoki Right b — xato boshqarish uchun","Result type","Or type"],"answer":1},
-    {"id":18,"level":"medium","question":"Haskell da typeclass nima?","options":["Tip klassi","Ad-hoc polymorphism interfeysi — Eq, Ord, Show, Functor","Class","Interface"],"answer":1},
-    {"id":19,"level":"medium","question":"Haskell da Functor nima?","options":["Funksiya turi","fmap funksiyasi bilan ta'minlangan tip — f a dan f b ga transformatsiya","Container","Map type"],"answer":1},
-    {"id":20,"level":"medium","question":"Haskell da Monad nima?","options":["Matematik tushuncha",">>= (bind) va return bilan ta'minlangan — IO, Maybe, List kabi","Effect system","Chain type"],"answer":1},
-    {"id":21,"level":"medium","question":"Haskell da do notation nima?","options":["Do loop","Monadik bog'lash uchun sintatik shakar — IO dan chiqish imkoni","Block notation","Sequential"],"answer":1},
-    {"id":22,"level":"medium","question":"Haskell da IO monad nima uchun?","options":["Input/Output","Yon ta'sirlarni tip darajasida izolyatsiya qilish — sof funksional muhitda IO","Side effects","IO type"],"answer":1},
-    {"id":23,"level":"medium","question":"Haskell da type synonym nima?","options":["Sinonim","type Name = String — mavjud tipga yangi nom","Type alias","New type"],"answer":1},
-    {"id":24,"level":"medium","question":"Haskell da newtype nima?","options":["Yangi tip","Bitta maydonli wrapper — type dan farqli, zero runtime overhead","Type wrapper","Data wrapper"],"answer":1},
-    {"id":25,"level":"medium","question":"Haskell da record syntax nima?","options":["Yozuv","data Person = Person { name :: String, age :: Int } — nomlangan maydonlar","Field names","Named tuple"],"answer":1},
-    {"id":26,"level":"medium","question":"Haskell da guards nima?","options":["Himoya","| shart = ifoda — pattern matching + condition","Condition","Predicate"],"answer":1},
-    {"id":27,"level":"medium","question":"Haskell da map funksiyasi nima?","options":["Xarita","Funksiyani list har elementiga qo'llash — map (* 2) [1,2,3]","Transform","Apply"],"answer":1},
-    {"id":28,"level":"medium","question":"Haskell da filter nima?","options":["CSS filter","Predicate bo'yicha list elementlarini filterlash","Select","Find"],"answer":1},
-    {"id":29,"level":"medium","question":"Haskell da fold nima uchun?","options":["Yig'ish","foldl va foldr — akkumulyator bilan listni bitta qiymatga aylantirish","Reduce","Aggregate"],"answer":1},
-    {"id":30,"level":"medium","question":"Haskell da function composition (.) nima?","options":["Tashqil etish","(f . g) x = f (g x) — funksiyalar zanjiri","Pipe","Chain"],"answer":1},
-    {"id":31,"level":"medium","question":"Haskell da $ operatori nima uchun?","options":["Dollar","Qavslarni kamaytirish — f $ g x = f (g x), past prioritet function application","Apply","Paren"],"answer":1},
-    {"id":32,"level":"medium","question":"Haskell da curry nima?","options":["Ovqat","Ko'p argumentli funksiyani bir argumentli funksiyalar zanjiriga aylantirish — Haskell da default","Partial app","Lambda"],"answer":1},
-    {"id":33,"level":"medium","question":"Haskell da Applicative nima?","options":["Applikativ","<*> — wrapped funksiyani wrapped qiymatga qo'llash — Functor va Monad orasida","Effect apply","Monad lite"],"answer":1},
-    {"id":34,"level":"medium","question":"Haskell da cabal va stack farqi?","options":["Hech qanday farq yo'q","cabal — eski build tool; stack — reproducible build, curated Stackage snapshot","Stack eski","cabal yangi"],"answer":1},
-    {"id":35,"level":"medium","question":"Haskell da Show typeclass nima?","options":["Ko'rsatish","Tipni string ga aylantirish — show 42 = \"42\"","Print type","Display"],"answer":1},
-    {"id":36,"level":"hard","question":"Haskell da GADTs nima?","options":["Generalized ADT","Generalized Algebraic Data Types — konstruktor qaytarish tipini belgilash imkoni","Generic data","Type safe"],"answer":1},
-    {"id":37,"level":"hard","question":"Haskell da type families nima?","options":["Tip oilasi","Tip darajasidagi funksiyalar — associated type families, closed type families","Type function","Type lambda"],"answer":1},
-    {"id":38,"level":"hard","question":"Haskell da STM (Software Transactional Memory) nima?","options":["Memory model","Atomik xotira operatsiyalari — concurrent code uchun lock-free alternativa","Thread memory","Atomic type"],"answer":1},
-    {"id":39,"level":"hard","question":"Haskell da RankNTypes nima?","options":["Rank n tip","Yuqori darajali tip — forall bilan polimorfik funksiyalar argument sifatida","Higher rank","Poly type"],"answer":1},
-    {"id":40,"level":"hard","question":"Haskell da Template Haskell nima?","options":["Shablon","Kompilyatsiya vaqtida kod generatsiya — metaprogramming, macro","Code gen","Macro system"],"answer":1},
-    {"id":41,"level":"hard","question":"Haskell da Lens library nima uchun?","options":["Ko'zoynagi","Immutable ma'lumotlar tuzilmasiga get/set/modify — composable","Data access","Getter setter"],"answer":1},
-    {"id":42,"level":"hard","question":"Haskell da free monad nima?","options":["Bepul","Algebraic effects — interpreterdan ajratilgan DSL yaratish","Effect type","Monad pattern"],"answer":1},
-    {"id":43,"level":"hard","question":"Haskell da contravariant functor nima?","options":["Aksincha funktor","fmap emas contramap — funksiya argumenti uchun mapping","Reverse functor","Anti functor"],"answer":1},
-    {"id":44,"level":"hard","question":"Haskell da concatMap nima?","options":["Birlashtirish map","map va concat birlashtirilgan — monomorphic bind, >>= listlar uchun","FlatMap","Chain map"],"answer":1},
-    {"id":45,"level":"hard","question":"Haskell da seq va deepseq farqi?","options":["Hech qanday farq yo'q","seq — WHNF ga to'liq hisoblash; deepseq — to'liq (deep) hisoblash","deepseq tezroq","seq deep"],"answer":1},
-    {"id":46,"level":"hard","question":"Haskell da profunctor nima?","options":["Pro funksiya","Covariant va contravariant bo'lgan bifunctor — Arrow, Star kabi","Bi-functor","Dual functor"],"answer":1},
-    {"id":47,"level":"hard","question":"Haskell da Data.Map.Strict va Data.Map.Lazy farqi?","options":["Hech qanday farq yo'q","Strict — qiymatlar darhol baholanadi (memory), Lazy — thunk saqlanadi","Lazy tezroq","Strict xotira yaxshi"],"answer":1},
-    {"id":48,"level":"hard","question":"Haskell da Yesod web framework nima?","options":["Web server","Type-safe, high performance Haskell web framework — compile-time routing","Haskell web","REST framework"],"answer":1},
-    {"id":49,"level":"hard","question":"Haskell da Aeson nima?","options":["JSON library","JSON encode/decode kutubxona — FromJSON, ToJSON instance","JSON parser","Data format"],"answer":1},
-    {"id":50,"level":"hard","question":"Haskell da Servant nima?","options":["Xizmatchi","Tip darajasida API ta'riflash va server/client kod generatsiya frameworki","REST API","Web service"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Haskell nima?",
+      "options": [
+        "JavaScript turi",
+        "Sof funksional, statik tipli, lazily evaluated dasturlash tili",
+        "Database tili",
+        "OOP tili"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Хаскель?",
+      "question_en": "What is Haskell?",
+      "options_ru": [
+        "Тип JavaScript",
+        "Чисто функциональный, статически типизированный, лениво вычисляемый язык программирования.",
+        "Язык базы данных",
+        "ООП-язык"
+      ],
+      "options_en": [
+        "JavaScript turi",
+        "A purely functional, statically typed, lazily evaluated programming language",
+        "Database tili",
+        "OOP language"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Haskell da funksiya qanday e'lon qilinadi?",
+      "options": [
+        "function greet name = ...",
+        "def greet(name):",
+        "greet name = \"Hello \" ++ name",
+        "func greet() {}"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявляется функция в Haskell?",
+      "question_en": "Haskell da funksiya qanday e'lon qilinadi?",
+      "options_ru": [
+        "имя функции приветствия = ...",
+        "защита приветствие(имя):",
+        "приветствие name = \"Привет\" ++ имя",
+        "функция приветствия() {}"
+      ],
+      "options_en": [
+        "function greet name = ...",
+        "def greet(name):",
+        "greet name = \"Hello \" ++ name",
+        "func greet() {}"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Haskell da main funksiya qanday?",
+      "options": [
+        "main() {}",
+        "main :: IO ()\nmain = putStrLn \"Hello\"",
+        "def main():",
+        "int main() {}"
+      ],
+      "answer": 1,
+      "question_ru": "Какая основная функция в Haskell?",
+      "question_en": "What is the main function in Haskell?",
+      "options_ru": [
+        "основной() {}",
+        "main::IO() main = putStrLn \"Привет\"",
+        "защита основной():",
+        "интервал основной() {}"
+      ],
+      "options_en": [
+        "main() {}",
+        "main::IO()\nmain = putStrLn \"Hello\"",
+        "def main():",
+        "int main() {}"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Haskell da tip signaturasi qanday yoziladi?",
+      "options": [
+        "greet: String -> String",
+        "greet :: String -> String",
+        "greet(String) -> String",
+        "String greet(String)"
+      ],
+      "answer": 1,
+      "question_ru": "Haskell da tip signaturasi qanday yoziladi?",
+      "question_en": "How to write type signature in Haskell?",
+      "options_ru": [
+        "приветствие: Строка -> Строка",
+        "приветствие :: Строка -> Строка",
+        "приветствие (Строка) → Строка",
+        "Строковое приветствие(Строка)"
+      ],
+      "options_en": [
+        "greet : String -> String",
+        "greet :: String -> String",
+        "greet(String) -> String",
+        "String greet(String)"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Haskell da immutability nima anglatadi?",
+      "options": [
+        "O'zgaruvchilar doim o'zgaradi",
+        "Barcha qiymatlar o'zgarmas — bir marta belgilanib o'zgarmaydi",
+        "Side effects mavjud",
+        "Mutable state"
+      ],
+      "answer": 1,
+      "question_ru": "Что означает неизменность в Haskell?",
+      "question_en": "Haskell da immutability nima anglatadi?",
+      "options_ru": [
+        "Переменные всегда меняются",
+        "Все значения неизменяемы — однажды установленные, они не меняются.",
+        "Есть побочные эффекты",
+        "Изменчивое состояние"
+      ],
+      "options_en": [
+        "Variables are always changing",
+        "All values ​​are immutable — once set, they don't change",
+        "There are side effects",
+        "Mutable state"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Haskell da list nima?",
+      "options": [
+        "Array",
+        "Homogeneous linked list — [1,2,3]",
+        "Tuple",
+        "Vector"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в Haskell?",
+      "question_en": "What is a list in Haskell?",
+      "options_ru": [
+        "Массив",
+        "Однородный связанный список — [1,2,3]",
+        "Кортеж",
+        "Вектор"
+      ],
+      "options_en": [
+        "Array",
+        "Homogeneous linked list — [1,2,3]",
+        "A tuple",
+        "Vector"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Haskell da : (cons) operator nima qiladi?",
+      "options": [
+        "Taqqoslash",
+        "Element va list ga qo'shish — 1 : [2,3] = [1,2,3]",
+        "Concatenation",
+        "Division"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает оператор : (cons) в Haskell?",
+      "question_en": "Haskell da : (cons) operator nima qiladi?",
+      "options_ru": [
+        "Сравнение",
+        "Добавить элемент в список — 1: [2,3] = [1,2,3]",
+        "Конкатенация",
+        "Отдел"
+      ],
+      "options_en": [
+        "Comparison",
+        "Add element to list — 1 : [2,3] = [1,2,3]",
+        "Concatenation",
+        "Division"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Haskell da ++ nima?",
+      "options": [
+        "Increment",
+        "List birlashtirish — [1,2] ++ [3,4] = [1,2,3,4]",
+        "String concat",
+        "Add"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ++ в Haskell?",
+      "question_en": "What is ++ in Haskell?",
+      "options_ru": [
+        "Приращение",
+        "Объединение списка — [1,2] ++ [3,4] = [1,2,3,4]",
+        "Конкат строк",
+        "Добавить"
+      ],
+      "options_en": [
+        "Increment",
+        "List merge — [1,2] ++ [3,4] = [1,2,3,4]",
+        "String concat",
+        "Add"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Haskell da tuple nima?",
+      "options": [
+        "List turi",
+        "Belgilangan sondagi, turli tipli elementlar — (1, 'a', True)",
+        "Fixed array",
+        "Record"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое кортеж в Haskell?",
+      "question_en": "What is a tuple in Haskell?",
+      "options_ru": [
+        "Тип списка",
+        "Указанное количество элементов разных типов — (1, 'a', True)",
+        "Фиксированный массив",
+        "Запись"
+      ],
+      "options_en": [
+        "List type",
+        "A specified number of elements of different types — (1, 'a', True)",
+        "Fixed array",
+        "Record"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Haskell da if-then-else nima?",
+      "options": [
+        "Statement",
+        "Ifoda (expression) — natija har ikki branch da ham kerak",
+        "Condition",
+        "Flow control"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое if-then-else в Haskell?",
+      "question_en": "What is if-then-else in Haskell?",
+      "options_ru": [
+        "Заявление",
+        "Expression (выражение) — результат нужен в обеих ветках",
+        "Состояние",
+        "Управление потоком"
+      ],
+      "options_en": [
+        "Statement",
+        "Expression (expression) — the result is needed in both branches",
+        "Condition",
+        "Flow control"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Haskell da lazy evaluation nima?",
+      "options": [
+        "Sekin",
+        "Qiymat faqat kerak bo'lganda hisoblanadi — cheksiz listlar mumkin",
+        "Deferred",
+        "Lazy load"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ленивые вычисления в Haskell?",
+      "question_en": "What is lazy evaluation in Haskell?",
+      "options_ru": [
+        "Помедленнее",
+        "Значение рассчитывается только при необходимости — возможны бесконечные списки.",
+        "Отложенный",
+        "Ленивая загрузка"
+      ],
+      "options_en": [
+        "Slow down",
+        "The value is calculated only when needed — infinite lists are possible",
+        "Deferred",
+        "Lazy load"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Haskell da data nima uchun?",
+      "options": [
+        "Ma'lumot",
+        "Algebraic data type e'lon qilish — data Color = Red | Green | Blue",
+        "Type define",
+        "Enum"
+      ],
+      "answer": 1,
+      "question_ru": "Почему данные в Haskell?",
+      "question_en": "Why data in Haskell?",
+      "options_ru": [
+        "Информация",
+        "Объявление алгебраического типа данных — Цвет данных = Красный | Зеленый | Синий",
+        "Тип определения",
+        "Перечисление"
+      ],
+      "options_en": [
+        "Ma'lumot",
+        "Algebraic data type declaration — data Color = Red | Green | Blue",
+        "Type define",
+        "Enum"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Haskell da case nima uchun?",
+      "options": [
+        "Switch",
+        "Pattern matching ifodasi — case x of ...",
+        "Match",
+        "Condition"
+      ],
+      "answer": 1,
+      "question_ru": "Почему в Haskell регистр?",
+      "question_en": "Why is case in Haskell?",
+      "options_ru": [
+        "Переключатель",
+        "Выражение сопоставления с образцом — случай x из...",
+        "Матч",
+        "Состояние"
+      ],
+      "options_en": [
+        "Switch",
+        "Pattern matching expression — case x of ...",
+        "Match",
+        "Condition"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Haskell da where nima uchun?",
+      "options": [
+        "Where clause",
+        "Funksiya ichida lokal ta'riflar — helper funksiyalar",
+        "Let in",
+        "Local def"
+      ],
+      "answer": 1,
+      "question_ru": "Почему где в Хаскеле?",
+      "question_en": "Why where in Haskell?",
+      "options_ru": [
+        "Где пункт",
+        "Локальные определения внутри функции являются вспомогательными функциями.",
+        "Впусти",
+        "Локальная защита"
+      ],
+      "options_en": [
+        "Where clause",
+        "Local definitions within a function are helper functions",
+        "Let in",
+        "Local def"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Haskell da let...in nima uchun?",
+      "options": [
+        "Let statement",
+        "Ifoda ichida lokal ta'riflar — let x = 5 in x + 1",
+        "Where alternative",
+        "Variable"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем впускать... в Haskell?",
+      "question_en": "Why let...in in Haskell?",
+      "options_ru": [
+        "Пусть заявление",
+        "Локальные определения в выражении — пусть x = 5 в x + 1",
+        "Где альтернатива",
+        "Переменная"
+      ],
+      "options_en": [
+        "Let statement",
+        "Local definitions in the expression — let x = 5 in x + 1",
+        "Where alternative",
+        "Variable"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Haskell da Maybe nima?",
+      "options": [
+        "Balki",
+        "Just a yoki Nothing — null ga xavfsiz alternativa",
+        "Option type",
+        "Optional"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Maybe в Haskell?",
+      "question_en": "What is Maybe in Haskell?",
+      "options_ru": [
+        "Может быть",
+        "Just a or Nothing — безопасная альтернатива нулю.",
+        "Тип опции",
+        "Необязательно"
+      ],
+      "options_en": [
+        "Maybe",
+        "Just a yoki Nothing — null ga xavfsiz alternativa",
+        "Option type",
+        "Optional"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Haskell da Either nima?",
+      "options": [
+        "Ikkinchisi",
+        "Left a yoki Right b — xato boshqarish uchun",
+        "Result type",
+        "Or type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое «либо» в Haskell?",
+      "question_en": "What is Either in Haskell?",
+      "options_ru": [
+        "Второй",
+        "Слева a или справа b — для контроля ошибок",
+        "Тип результата",
+        "Или введите"
+      ],
+      "options_en": [
+        "The second",
+        "Left a or Right b — for error control",
+        "Result type",
+        "Or type"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Haskell da typeclass nima?",
+      "options": [
+        "Tip klassi",
+        "Ad-hoc polymorphism interfeysi — Eq, Ord, Show, Functor",
+        "Class",
+        "Interface"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое класс типов в Haskell?",
+      "question_en": "What is a typeclass in Haskell?",
+      "options_ru": [
+        "Тип класса",
+        "Интерфейс специального полиморфизма — Eq, Ord, Show, Functor",
+        "Класс",
+        "Интерфейс"
+      ],
+      "options_en": [
+        "Tip klassi",
+        "Ad-hoc polymorphism interface — Eq, Ord, Show, Functor",
+        "Class",
+        "Interface"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Haskell da Functor nima?",
+      "options": [
+        "Funksiya turi",
+        "fmap funksiyasi bilan ta'minlangan tip — f a dan f b ga transformatsiya",
+        "Container",
+        "Map type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функтор в Haskell?",
+      "question_en": "What is a Functor in Haskell?",
+      "options_ru": [
+        "Тип функции",
+        "Тип, предоставляемый функцией fmap, представляет собой преобразование из f a в f b",
+        "Контейнер",
+        "Тип карты"
+      ],
+      "options_en": [
+        "Function type",
+        "The type provided by the fmap function is the transformation from f a to f b",
+        "Container",
+        "Map type"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Haskell da Monad nima?",
+      "options": [
+        "Matematik tushuncha",
+        ">>= (bind) va return bilan ta'minlangan — IO, Maybe, List kabi",
+        "Effect system",
+        "Chain type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Монада в Хаскеле?",
+      "question_en": "Haskell da Monad nima?",
+      "options_ru": [
+        "Математическая концепция",
+        "Предоставляется с помощью >>= (привязка) и возврата — например, IO, Maybe, List",
+        "Система эффектов",
+        "Тип цепи"
+      ],
+      "options_en": [
+        "Mathematical concept",
+        "Provided with >>= (bind) and return — like IO, Maybe, List",
+        "Effect system",
+        "Chain type"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Haskell da do notation nima?",
+      "options": [
+        "Do loop",
+        "Monadik bog'lash uchun sintatik shakar — IO dan chiqish imkoni",
+        "Block notation",
+        "Sequential"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое нотация do в Haskell?",
+      "question_en": "Haskell da do notation nima?",
+      "options_ru": [
+        "Сделать цикл",
+        "Синтетический сахар для монадического связывания — выход IO",
+        "Обозначение блока",
+        "Последовательный"
+      ],
+      "options_en": [
+        "Do loop",
+        "A synthetic sugar for monadic binding — an IO exit",
+        "Block notation",
+        "Sequential"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Haskell da IO monad nima uchun?",
+      "options": [
+        "Input/Output",
+        "Yon ta'sirlarni tip darajasida izolyatsiya qilish — sof funksional muhitda IO",
+        "Side effects",
+        "IO type"
+      ],
+      "answer": 1,
+      "question_ru": "Почему монада IO в Haskell?",
+      "question_en": "Why is IO monad in Haskell?",
+      "options_ru": [
+        "Ввод/вывод",
+        "Изоляция побочных эффектов на уровне типа — ввод-вывод в чисто функциональной среде",
+        "Побочные эффекты",
+        "Тип ввода-вывода"
+      ],
+      "options_en": [
+        "Input/Output",
+        "Type-level isolation of side effects — IO in a pure functional environment",
+        "Side effects",
+        "IO type"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Haskell da type synonym nima?",
+      "options": [
+        "Sinonim",
+        "type Name = String — mavjud tipga yangi nom",
+        "Type alias",
+        "New type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое синоним типа в Haskell?",
+      "question_en": "What is a type synonym in Haskell?",
+      "options_ru": [
+        "Синоним",
+        "type Name = String — новое имя для существующего типа",
+        "Введите псевдоним",
+        "Новый тип"
+      ],
+      "options_en": [
+        "Synonym",
+        "type Name = String — a new name for an existing type",
+        "Type alias",
+        "New type"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Haskell da newtype nima?",
+      "options": [
+        "Yangi tip",
+        "Bitta maydonli wrapper — type dan farqli, zero runtime overhead",
+        "Type wrapper",
+        "Data wrapper"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое newtype в Haskell?",
+      "question_en": "Haskell da newtype nima?",
+      "options_ru": [
+        "Новый тип",
+        "Оболочка с одним полем — в отличие от типа, нулевые накладные расходы во время выполнения",
+        "Тип обертка",
+        "Обертка данных"
+      ],
+      "options_en": [
+        "New type",
+        "One-field wrapper — unlike type, zero runtime overhead",
+        "Type wrapper",
+        "Data wrapper"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Haskell da record syntax nima?",
+      "options": [
+        "Yozuv",
+        "data Person = Person { name :: String, age :: Int } — nomlangan maydonlar",
+        "Field names",
+        "Named tuple"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое синтаксис записи в Haskell?",
+      "question_en": "What is record syntax in Haskell?",
+      "options_ru": [
+        "Написание",
+        "data Person = Person { name :: String, age :: Int } — именованные поля",
+        "Имена полей",
+        "Именованный кортеж"
+      ],
+      "options_en": [
+        "Writing",
+        "data Person = Person { name :: String, age :: Int } — named fields",
+        "Field names",
+        "Named tuple"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Haskell da guards nima?",
+      "options": [
+        "Himoya",
+        "| shart = ifoda — pattern matching + condition",
+        "Condition",
+        "Predicate"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое охранники в Haskell?",
+      "question_en": "Haskell da guards nima?",
+      "options_ru": [
+        "Защита",
+        "| условие = выражение — сопоставление с образцом + условие",
+        "Состояние",
+        "Предикат"
+      ],
+      "options_en": [
+        "Protection",
+        "| condition = expression — pattern matching + condition",
+        "Condition",
+        "Predicate"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Haskell da map funksiyasi nima?",
+      "options": [
+        "Xarita",
+        "Funksiyani list har elementiga qo'llash — map (* 2) [1,2,3]",
+        "Transform",
+        "Apply"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое функция карты в Haskell?",
+      "question_en": "What is the map function in Haskell?",
+      "options_ru": [
+        "Карта",
+        "Применение функции к каждому элементу списка — карта (*2)[1,2,3]",
+        "Трансформировать",
+        "Применить"
+      ],
+      "options_en": [
+        "Xarita",
+        "Applying a function to each element of a list — map (* 2) [1,2,3]",
+        "Transform",
+        "Apply"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Haskell da filter nima?",
+      "options": [
+        "CSS filter",
+        "Predicate bo'yicha list elementlarini filterlash",
+        "Select",
+        "Find"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое фильтр в Haskell?",
+      "question_en": "What is a filter in Haskell?",
+      "options_ru": [
+        "CSS-фильтр",
+        "Фильтрация элементов списка по предикату",
+        "Выбрать",
+        "Найти"
+      ],
+      "options_en": [
+        "CSS filter",
+        "Filtering list elements by predicate",
+        "Select",
+        "Find"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Haskell da fold nima uchun?",
+      "options": [
+        "Yig'ish",
+        "foldl va foldr — akkumulyator bilan listni bitta qiymatga aylantirish",
+        "Reduce",
+        "Aggregate"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем сбрасывать Haskell?",
+      "question_en": "Why fold in Haskell?",
+      "options_ru": [
+        "Коллекция",
+        "foldl иfoldr — преобразуют список в одно значение с помощью аккумулятора",
+        "Уменьшить",
+        "Совокупный"
+      ],
+      "options_en": [
+        "Collection",
+        "foldl and foldr — convert a list to a single value with an accumulator",
+        "Reduce",
+        "Aggregate"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Haskell da function composition (.) nima?",
+      "options": [
+        "Tashqil etish",
+        "(f . g) x = f (g x) — funksiyalar zanjiri",
+        "Pipe",
+        "Chain"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое композиция функций (.) в Haskell?",
+      "question_en": "What is function composition (.) in Haskell?",
+      "options_ru": [
+        "Экстернализация",
+        "(f . g) x = f (g x) — цепочка функций",
+        "Труба",
+        "Цепь"
+      ],
+      "options_en": [
+        "Externalization",
+        "(f . g) x = f (g x) is a chain of functions",
+        "Pipe",
+        "Chain"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Haskell da $ operatori nima uchun?",
+      "options": [
+        "Dollar",
+        "Qavslarni kamaytirish — f $ g x = f (g x), past prioritet function application",
+        "Apply",
+        "Paren"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужен оператор $ в Haskell?",
+      "question_en": "What is the $ operator for in Haskell?",
+      "options_ru": [
+        "Доллар",
+        "Сократить круглые скобки — f$g x = f(g x), применение функции с низким приоритетом",
+        "Применить",
+        "Парен"
+      ],
+      "options_en": [
+        "Dollar",
+        "Reduce parentheses — f $ g x = f (g x), low priority function application",
+        "Apply",
+        "Paren"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Haskell da curry nima?",
+      "options": [
+        "Ovqat",
+        "Ko'p argumentli funksiyani bir argumentli funksiyalar zanjiriga aylantirish — Haskell da default",
+        "Partial app",
+        "Lambda"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое карри в Haskell?",
+      "question_en": "What is curry in Haskell?",
+      "options_ru": [
+        "Еда",
+        "Преобразование функции с несколькими аргументами в цепочку функций с одним аргументом является стандартным в Haskell.",
+        "Частичное приложение",
+        "Лямбда"
+      ],
+      "options_en": [
+        "Food",
+        "Converting a multi-argument function to a chain of one-argument functions is the default in Haskell",
+        "Partial app",
+        "Lambda"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Haskell da Applicative nima?",
+      "options": [
+        "Applikativ",
+        "<*> — wrapped funksiyani wrapped qiymatga qo'llash — Functor va Monad orasida",
+        "Effect apply",
+        "Monad lite"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое аппликативность в Haskell?",
+      "question_en": "Haskell da Applicative nima?",
+      "options_ru": [
+        "аппликативный",
+        "<*> — применить обернутую функцию к обернутому значению — между Functor и Monad",
+        "Эффект применить",
+        "Монада облегченная"
+      ],
+      "options_en": [
+        "Applicative",
+        "<*> — apply wrapped function to wrapped value — between Functor and Monad",
+        "Effect apply",
+        "Monad lite"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Haskell da cabal va stack farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "cabal — eski build tool; stack — reproducible build, curated Stackage snapshot",
+        "Stack eski",
+        "cabal yangi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между кабалом и стеком в Haskell?",
+      "question_en": "Difference between cabal and stack in Haskell?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "cabal — старый инструмент сборки; stack — воспроизводимая сборка, кураторский снимок Stackage",
+        "Стек старый",
+        "Кабал новый"
+      ],
+      "options_en": [
+        "There is no difference",
+        "cabal is an old build tool; stack — reproducible build, curated Stackage snapshot",
+        "Stack is old",
+        "Cabal is new"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Haskell da Show typeclass nima?",
+      "options": [
+        "Ko'rsatish",
+        "Tipni string ga aylantirish — show 42 = \"42\"",
+        "Print type",
+        "Display"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое класс типов Show в Haskell?",
+      "question_en": "What is the Show typeclass in Haskell?",
+      "options_ru": [
+        "Показать",
+        "Преобразовать тип в строку — показать 42 = «42»",
+        "Тип печати",
+        "Дисплей"
+      ],
+      "options_en": [
+        "Show",
+        "Tipni string ga aylantirish — show 42 = \"42\"",
+        "Print type",
+        "Display"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Haskell da GADTs nima?",
+      "options": [
+        "Generalized ADT",
+        "Generalized Algebraic Data Types — konstruktor qaytarish tipini belgilash imkoni",
+        "Generic data",
+        "Type safe"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое GADT в Haskell?",
+      "question_en": "What are GADTs in Haskell?",
+      "options_ru": [
+        "Обобщенный АТД",
+        "Generalized Algebraic Data Types — konstruktor qaytarish tipini belgilash imkoni",
+        "Общие данные",
+        "Тип безопасный"
+      ],
+      "options_en": [
+        "Generalized ADT",
+        "Generalized Algebraic Data Types — ability to specify constructor return type",
+        "Generic data",
+        "Type safe"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Haskell da type families nima?",
+      "options": [
+        "Tip oilasi",
+        "Tip darajasidagi funksiyalar — associated type families, closed type families",
+        "Type function",
+        "Type lambda"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое семейства типов в Haskell?",
+      "question_en": "What are type families in Haskell?",
+      "options_ru": [
+        "Тип семейства",
+        "Функции уровня типа — связанные семейства типов, семейства закрытых типов.",
+        "Тип функции",
+        "Тип лямбда"
+      ],
+      "options_en": [
+        "Type family",
+        "Type-level functions — associated type families, closed type families",
+        "Type function",
+        "Type lambda"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Haskell da STM (Software Transactional Memory) nima?",
+      "options": [
+        "Memory model",
+        "Atomik xotira operatsiyalari — concurrent code uchun lock-free alternativa",
+        "Thread memory",
+        "Atomic type"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое STM (программная транзакционная память) в Haskell?",
+      "question_en": "What is STM (Software Transactional Memory) in Haskell?",
+      "options_ru": [
+        "Модель памяти",
+        "Операции с атомарной памятью являются альтернативой параллельному коду без блокировок.",
+        "Память потоков",
+        "Атомный тип"
+      ],
+      "options_en": [
+        "Memory model",
+        "Atomic memory operations are a lock-free alternative to concurrent code",
+        "Thread memory",
+        "Atomic type"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Haskell da RankNTypes nima?",
+      "options": [
+        "Rank n tip",
+        "Yuqori darajali tip — forall bilan polimorfik funksiyalar argument sifatida",
+        "Higher rank",
+        "Poly type"
+      ],
+      "answer": 1,
+      "question_ru": "Haskell da RankNTypes nima?",
+      "question_en": "What is RankNTypes in Haskell?",
+      "options_ru": [
+        "Тип ранга n",
+        "Тип высокого уровня — это полиморфная функция с аргументом forall.",
+        "Высший ранг",
+        "Тип поли"
+      ],
+      "options_en": [
+        "Rank n type",
+        "A high-level type is a polymorphic function with forall as an argument",
+        "Higher rank",
+        "Poly type"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Haskell da Template Haskell nima?",
+      "options": [
+        "Shablon",
+        "Kompilyatsiya vaqtida kod generatsiya — metaprogramming, macro",
+        "Code gen",
+        "Macro system"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое шаблон Haskell в Haskell?",
+      "question_en": "What is Template Haskell in Haskell?",
+      "options_ru": [
+        "Шаблон",
+        "Генерация кода при компиляции — метапрограммирование, макрос",
+        "Генерация кода",
+        "Макросистема"
+      ],
+      "options_en": [
+        "Template",
+        "Code generation during compilation — metaprogramming, macro",
+        "Code gen",
+        "Macro system"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Haskell da Lens library nima uchun?",
+      "options": [
+        "Ko'zoynagi",
+        "Immutable ma'lumotlar tuzilmasiga get/set/modify — composable",
+        "Data access",
+        "Getter setter"
+      ],
+      "answer": 1,
+      "question_ru": "Почему библиотека Lens в Haskell?",
+      "question_en": "Why Lens library in Haskell?",
+      "options_ru": [
+        "Очки",
+        "Получить/установить/изменить неизменяемую структуру данных — составную",
+        "Доступ к данным",
+        "Геттер-сеттер"
+      ],
+      "options_en": [
+        "Glasses",
+        "Get/set/modify an immutable data structure — composable",
+        "Data access",
+        "Getter setter"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Haskell da free monad nima?",
+      "options": [
+        "Bepul",
+        "Algebraic effects — interpreterdan ajratilgan DSL yaratish",
+        "Effect type",
+        "Monad pattern"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое свободная монада в Haskell?",
+      "question_en": "Haskell da free monad nima?",
+      "options_ru": [
+        "Бесплатно",
+        "Алгебраические эффекты — создание DSL отдельно от интерпретатора",
+        "Тип эффекта",
+        "Шаблон монады"
+      ],
+      "options_en": [
+        "Free",
+        "Algebraic effects — creating a DSL separated from the interpreter",
+        "Effect type",
+        "Monad pattern"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Haskell da contravariant functor nima?",
+      "options": [
+        "Aksincha funktor",
+        "fmap emas contramap — funksiya argumenti uchun mapping",
+        "Reverse functor",
+        "Anti functor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое контравариантный функтор в Haskell?",
+      "question_en": "What is a contravariant functor in Haskell?",
+      "options_ru": [
+        "Обратный функтор",
+        "Contramap, а не fmap, является отображением аргумента функции.",
+        "Обратный функтор",
+        "Антифунктор"
+      ],
+      "options_en": [
+        "The converse functor",
+        "Contramap, not fmap, is a mapping for a function argument",
+        "Reverse functor",
+        "Antifunctor"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Haskell da concatMap nima?",
+      "options": [
+        "Birlashtirish map",
+        "map va concat birlashtirilgan — monomorphic bind, >>= listlar uchun",
+        "FlatMap",
+        "Chain map"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое concatMap в Haskell?",
+      "question_en": "What is concatMap in Haskell?",
+      "options_ru": [
+        "Объединить карту",
+        "объединение карты и конката — мономорфная привязка, >>= для списков",
+        "КвартираКарта",
+        "Карта сети"
+      ],
+      "options_en": [
+        "Merge map",
+        "map and concat combined — monomorphic bind, >>= for lists",
+        "FlatMap",
+        "Chain map"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Haskell da seq va deepseq farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "seq — WHNF ga to'liq hisoblash; deepseq — to'liq (deep) hisoblash",
+        "deepseq tezroq",
+        "seq deep"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между seq и deepseq в Haskell?",
+      "question_en": "Difference between seq and deepseq in Haskell?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "seq — полный счетчик до WHNF; deepseq — полный (глубокий) расчет",
+        "DeepSeq быстрее",
+        "глубокая последовательность"
+      ],
+      "options_en": [
+        "There is no difference",
+        "seq — full count to WHNF; deepseq — full (deep) calculation",
+        "deepseq tezroq",
+        "seq deep"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Haskell da profunctor nima?",
+      "options": [
+        "Pro funksiya",
+        "Covariant va contravariant bo'lgan bifunctor — Arrow, Star kabi",
+        "Bi-functor",
+        "Dual functor"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое профунктор в Haskell?",
+      "question_en": "Haskell da profunctor nima?",
+      "options_ru": [
+        "Профессиональная функция",
+        "Ковариантные и контравариантные бифункторы, такие как Arrow и Star.",
+        "Би-функтор",
+        "Двойной функтор"
+      ],
+      "options_en": [
+        "Pro feature",
+        "Covariant and contravariant bifunctors like Arrow and Star",
+        "Bi-functor",
+        "Dual functor"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Haskell da Data.Map.Strict va Data.Map.Lazy farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "Strict — qiymatlar darhol baholanadi (memory), Lazy — thunk saqlanadi",
+        "Lazy tezroq",
+        "Strict xotira yaxshi"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между Data.Map.Strict и Data.Map.Lazy в Haskell?",
+      "question_en": "Difference between Data.Map.Strict and Data.Map.Lazy in Haskell?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "Строгий — значения оцениваются немедленно (память), Ленивый — значение сохраняется.",
+        "Ленивый быстрее",
+        "Строгая память – это хорошо"
+      ],
+      "options_en": [
+        "There is no difference",
+        "Strict — values ​​are evaluated immediately (memory), Lazy — thunk is saved",
+        "Lazy is faster",
+        "Strict memory is good"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Haskell da Yesod web framework nima?",
+      "options": [
+        "Web server",
+        "Type-safe, high performance Haskell web framework — compile-time routing",
+        "Haskell web",
+        "REST framework"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое веб-фреймворк Yesod в Haskell?",
+      "question_en": "What is Yesod web framework in Haskell?",
+      "options_ru": [
+        "Веб-сервер",
+        "Типобезопасная, высокопроизводительная веб-инфраструктура Haskell — маршрутизация во время компиляции",
+        "Хаскелл веб",
+        "REST-фреймворк"
+      ],
+      "options_en": [
+        "Web server",
+        "Type-safe, high-performance Haskell web framework — compile-time routing",
+        "Haskell web",
+        "REST framework"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Haskell da Aeson nima?",
+      "options": [
+        "JSON library",
+        "JSON encode/decode kutubxona — FromJSON, ToJSON instance",
+        "JSON parser",
+        "Data format"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Aeson в Haskell?",
+      "question_en": "What is Aeson in Haskell?",
+      "options_ru": [
+        "JSON-библиотека",
+        "Библиотека кодирования/декодирования JSON — FromJSON, экземпляр ToJSON",
+        "JSON-парсер",
+        "Формат данных"
+      ],
+      "options_en": [
+        "JSON library",
+        "JSON encode/decode library — FromJSON, ToJSON instance",
+        "JSON parser",
+        "Data format"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Haskell da Servant nima?",
+      "options": [
+        "Xizmatchi",
+        "Tip darajasida API ta'riflash va server/client kod generatsiya frameworki",
+        "REST API",
+        "Web service"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое слуга в Haskell?",
+      "question_en": "What is a Servant in Haskell?",
+      "options_ru": [
+        "Слуга",
+        "Определение API на уровне типа и структура генерации кода сервера/клиента.",
+        "ОТДЫХ API",
+        "Веб-сервис"
+      ],
+      "options_en": [
+        "Xizmatchi",
+        "A type-level API definition and server/client code generation framework",
+        "REST API",
+        "Web service"
+      ]
+    }
   ]
 }

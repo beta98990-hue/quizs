@@ -2,55 +2,1305 @@
   "technology": "Erlang",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"Erlang qaysi sohada kuchli?","options":["Web dizayn","Telecom — massiv concurrency, fault tolerance, distributed tizimlar","Database","Mobile"],"answer":1},
-    {"id":2,"level":"easy","question":"Erlang da io:format nima qiladi?","options":["Format fayl","Konsolga formatlangan matn chiqaradi — io:format(\"Hello~n\")","Debug","Log"],"answer":1},
-    {"id":3,"level":"easy","question":"Erlang da o'zgaruvchi qanday e'lon qilinadi?","options":["var X = 5","X = 5 (katta harf bilan boshlanishi shart)","let X = 5","int X = 5"],"answer":1},
-    {"id":4,"level":"easy","question":"Erlang da atom nima?","options":["Atom element","Kichik harf yoki qo'shtirnoq bilan — ok, error, 'hello world'","Symbol","Constant"],"answer":1},
-    {"id":5,"level":"easy","question":"Erlang da tuple nima?","options":["Ro'yxat","{ok, Value} yoki {error, Reason} — belgilangan elementlar to'plami","Array","Fixed list"],"answer":1},
-    {"id":6,"level":"easy","question":"Erlang da list nima?","options":["Array","[1, 2, 3] — linked list, [H|T] pattern bilan","Tuple","Stack"],"answer":1},
-    {"id":7,"level":"easy","question":"Erlang da pattern matching qanday?","options":["Regex match","= operatori — {ok, X} = {ok, 42} — X ga 42 o'rnatiladi","Assignment","Bind"],"answer":1},
-    {"id":8,"level":"easy","question":"Erlang da function qanday e'lon qilinadi?","options":["fun greet(X) -> ...","def greet(X):","greet(X) -> ...","function greet(X) {}"],"answer":2},
-    {"id":9,"level":"easy","question":"Erlang da module nima uchun?","options":["Modul","Kodni tashkil qilish birlig — -module(mymod). -export([foo/1]).","Namespace","Package"],"answer":1},
-    {"id":10,"level":"easy","question":"Erlang da spawn nima?","options":["Hosil qilish","Yangi process yaratish — Pid = spawn(fun() -> ... end)","Thread create","Fork"],"answer":1},
-    {"id":11,"level":"easy","question":"Erlang da ! operatori nima uchun?","options":["Negation","Process ga message yuborish — Pid ! Message","Send","Signal"],"answer":1},
-    {"id":12,"level":"easy","question":"Erlang da receive nima uchun?","options":["Qabul qilish","Processga kelgan xabarlarni pattern match bilan qabul qilish","Message receive","Event"],"answer":1},
-    {"id":13,"level":"easy","question":"Erlang da immutable variables nima?","options":["O'zgaruvchan","O'zgaruvchiga bir marta qiymat beriladi — Erlang single assignment","Constant","Freeze"],"answer":1},
-    {"id":14,"level":"easy","question":"Erlang da rebar3 nima?","options":["Rebar tool","Erlang build va package management tool — yangi loyiha, kompilatsiya, test","Build tool","Package manager"],"answer":1},
-    {"id":15,"level":"easy","question":"Erlang da lists:map nima?","options":["Map yaratish","List elementlarini funksiya bilan transformatsiya qiladi","List filter","Array map"],"answer":1},
-    {"id":16,"level":"medium","question":"Erlang da process isolation nima?","options":["Izolyatsiya","Processlar xotirani ulashmaydi — message passing — biri ishlamasa boshqalarga ta'sir yo'q","Thread isolation","Sandbox"],"answer":1},
-    {"id":17,"level":"medium","question":"Erlang da OTP nima?","options":["One Time Password","Open Telecom Platform — gen_server, supervisor, application — fault-tolerant tizimlar","Platform","Framework"],"answer":1},
-    {"id":18,"level":"medium","question":"Erlang da gen_server nima?","options":["Generic server","Generic server behaviour — handle_call, handle_cast, init, handle_info","Web server","State machine"],"answer":1},
-    {"id":19,"level":"medium","question":"Erlang da supervisor nima?","options":["Nazoratchi","Bola processlarni kuzatib, ishlamasa qayta ishga tushiruvchi process","Process manager","Watchdog"],"answer":1},
-    {"id":20,"level":"medium","question":"Erlang da one_for_one supervisor strategy nima?","options":["Barcha qayta tiklash","Faqat ishlamay qolgan process qayta tiklash — boshqalarga ta'sir yo'q","One restart","Single strategy"],"answer":1},
-    {"id":21,"level":"medium","question":"Erlang da ETS nima?","options":["External table storage","Erlang Term Storage — tez, in-memory table, concurrent read/write","Cache","Database"],"answer":1},
-    {"id":22,"level":"medium","question":"Erlang da Mnesia nima?","options":["Amneziya","Distributed, in-memory/disk database — ACID, table replication","Distributed DB","BEAM database"],"answer":1},
-    {"id":23,"level":"medium","question":"Erlang da hot code loading nima?","options":["Issiq yuklash","Tizimni to'xtatmasdan yangi kod versiyasini yuklash — 9 nines availability uchun","Live reload","Runtime update"],"answer":1},
-    {"id":24,"level":"medium","question":"Erlang da binary nima?","options":["Ikkilik","Binary ma'lumotlar — <<1, 2, 3>> — network protocol uchun qulay","Bit string","Byte array"],"answer":1},
-    {"id":25,"level":"medium","question":"Erlang da bit syntax nima uchun?","options":["Bit operatsiya","Binary dan ma'lumot ajratish — <<H:8, T/binary>> kabi pattern matching","Binary parse","Bitwise"],"answer":1},
-    {"id":26,"level":"medium","question":"Erlang da fun (anonymous function) qanday?","options":["Fun kalit so'zi","fun(X) -> X * 2 end — anonim funksiya","Lambda","Closure"],"answer":1},
-    {"id":27,"level":"medium","question":"Erlang da lists:foldl nima?","options":["List fold","Akkumulyator bilan chapdan o'ngga aylanish — lists:foldl(fun(E, Acc) -> ... end, Init, List)","Reduce","Aggregate"],"answer":1},
-    {"id":28,"level":"medium","question":"Erlang da error handling qanday?","options":["try-catch","try Expr catch Error:Reason -> ... end yoki exit, throw, error","Exception","Pattern match"],"answer":1},
-    {"id":29,"level":"medium","question":"Erlang da node() nima qaytaradi?","options":["Tugun nomi","Joriy Erlang node nomi — nodename@hostname","Node ID","Process ID"],"answer":1},
-    {"id":30,"level":"medium","question":"Erlang da link va monitor farqi?","options":["Hech qanday farq yo'q","link — bidirectional exit propagation; monitor — unidirectional, DOWN message","monitor bidirectional","link unidirectional"],"answer":1},
-    {"id":31,"level":"medium","question":"Erlang da registered process nima?","options":["Ro'yxatdan o'tgan","Pid o'rniga atom nom bilan process — register(Name, Pid), whereis(Name)","Named process","Global process"],"answer":1},
-    {"id":32,"level":"medium","question":"Erlang da application nima (OTP)?","options":["App yaratish","To'liq OTP application — start, stop funksiyalari, supervisor tree","OTP app","Module group"],"answer":1},
-    {"id":33,"level":"medium","question":"Erlang da maps (Erlang 17+) nima?","options":["Geografik xarita","#{key => value} — yangi kalit-qiymat ma'lumotlar tuzilmasi, dict dan farqli","Dictionary","Hash"],"answer":1},
-    {"id":34,"level":"medium","question":"Erlang da list comprehension nima?","options":["List gen","[X*2 || X <- List, X > 0] — filterlash va transformatsiya birgalikda","Generator","Map filter"],"answer":1},
-    {"id":35,"level":"medium","question":"Erlang da timer module nima uchun?","options":["Taymer","timer:send_after, timer:sleep — vaqt asosida xabar yuborish","Scheduler","Delay"],"answer":1},
-    {"id":36,"level":"hard","question":"Erlang da process dictionary nima?","options":["Process lug'at","Har process o'zining local key-value storage — get/put — global shared emas","Thread local","Process state"],"answer":1},
-    {"id":37,"level":"hard","question":"Erlang da BEAM scheduler nima?","options":["Jadval","Reductions asosida preemptive scheduling — har process teng vaqt oladi","CPU scheduler","Thread scheduler"],"answer":1},
-    {"id":38,"level":"hard","question":"Erlang da dirty NIF nima?","options":["Dirty code","C funksiyani BEAM schedulerini bloklamsdan chaqirish — CPU intensive C kod","Native function","FFI"],"answer":1},
-    {"id":39,"level":"hard","question":"Erlang da code:load_file qanday?","options":["Fayl yuklash","Module ni runtime da yuklash — hot code upgrade uchun","Dynamic load","Module load"],"answer":1},
-    {"id":40,"level":"hard","question":"Erlang da release nima?","options":["Chiqarish","To'liq, mustaqil, deployable Erlang tizim — BEAM + modules + config","OTP release","Deploy package"],"answer":1},
-    {"id":41,"level":"hard","question":"Erlang da appmon yoki observer nima?","options":["Kuzatish","Grafik monitoring tool — processlar, xotira, ETS jadvallari ko'rish","Debug tool","Profile tool"],"answer":1},
-    {"id":42,"level":"hard","question":"Erlang da sys module nima uchun?","options":["System module","OTP process debug uchun — sys:get_state, sys:trace, sys:statistics","System control","Debug OTP"],"answer":1},
-    {"id":43,"level":"hard","question":"Erlang da gen_statem nima?","options":["State machine","Generic state machine behaviour — gen_fsm ning yangi versiyasi","FSM","State server"],"answer":1},
-    {"id":44,"level":"hard","question":"Erlang da dialyzer nima?","options":["Dial analyzer","Static type analysis tool — type spec va discrepancies aniqlash","Type checker","Code analyzer"],"answer":1},
-    {"id":45,"level":"hard","question":"Erlang da -spec nima uchun?","options":["Specification","Funksiya tip spesifikatsiyasi — Dialyzer va dokumentatsiya uchun","Type annotation","Function spec"],"answer":1},
-    {"id":46,"level":"hard","question":"Erlang da global module nima?","options":["Global o'zgaruvchi","Distributed Erlang da global process registration — global:register_name","Distributed reg","Cluster registry"],"answer":1},
-    {"id":47,"level":"hard","question":"Erlang da pg (process groups) nima?","options":["Process guruh","Distributed process grouping — pub/sub uchun, pg2 dan yangi","PubSub","Group message"],"answer":1},
-    {"id":48,"level":"hard","question":"Erlang da inet module nima?","options":["Internet module","Network (TCP/UDP) ishlash uchun — gen_tcp, gen_udp asosi","Network lib","Socket"],"answer":1},
-    {"id":49,"level":"hard","question":"Erlang da cowboy nima?","options":["Kovboy","Kichik, tez HTTP server — WebSocket, REST API uchun","Web server","HTTP lib"],"answer":1},
-    {"id":50,"level":"hard","question":"Erlang da SASL nima?","options":["Autentifikatsiya","System Architecture Support Libraries — progress, error, crash reporting","OTP logging","System log"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "Erlang qaysi sohada kuchli?",
+      "options": [
+        "Web dizayn",
+        "Telecom — massiv concurrency, fault tolerance, distributed tizimlar",
+        "Database",
+        "Mobile"
+      ],
+      "answer": 1,
+      "question_ru": "В какой области силен Erlang?",
+      "question_en": "In which field is Erlang strong?",
+      "options_ru": [
+        "Веб-дизайн",
+        "Телеком — массовый параллелизм, отказоустойчивость, распределенные системы",
+        "База данных",
+        "мобильный"
+      ],
+      "options_en": [
+        "Web dizayn",
+        "Telecom — massive concurrency, fault tolerance, distributed systems",
+        "Database",
+        "Mobile"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "Erlang da io:format nima qiladi?",
+      "options": [
+        "Format fayl",
+        "Konsolga formatlangan matn chiqaradi — io:format(\"Hello~n\")",
+        "Debug",
+        "Log"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает io:format в Erlang?",
+      "question_en": "What does io:format do in Erlang?",
+      "options_ru": [
+        "Формат файла",
+        "Выводит форматированный текст на консоль — io:format(\"Hello~n\")",
+        "Отладка",
+        "Журнал"
+      ],
+      "options_en": [
+        "Format file",
+        "Outputs formatted text to the console — io:format(\"Hello~n\")",
+        "Debug",
+        "Log"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "Erlang da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "var X = 5",
+        "X = 5 (katta harf bilan boshlanishi shart)",
+        "let X = 5",
+        "int X = 5"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить переменную в Эрланге?",
+      "question_en": "How to declare a variable in Erlang?",
+      "options_ru": [
+        "вар X = 5",
+        "X = 5 (должно начинаться с заглавной буквы)",
+        "пусть Х = 5",
+        "целое число X = 5"
+      ],
+      "options_en": [
+        "var X = 5",
+        "X = 5 (must start with a capital letter)",
+        "let X = 5",
+        "int X = 5"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "Erlang da atom nima?",
+      "options": [
+        "Atom element",
+        "Kichik harf yoki qo'shtirnoq bilan — ok, error, 'hello world'",
+        "Symbol",
+        "Constant"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое атом в Эрланге?",
+      "question_en": "Erlang da atom nima?",
+      "options_ru": [
+        "Атомный элемент",
+        "Со строчными буквами или кавычками — ок, ошибка, «привет, мир»",
+        "Символ",
+        "Константа"
+      ],
+      "options_en": [
+        "Atomic element",
+        "With lowercase letters or quotes — ok, error, 'hello world'",
+        "Symbol",
+        "Constant"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "Erlang da tuple nima?",
+      "options": [
+        "Ro'yxat",
+        "{ok, Value} yoki {error, Reason} — belgilangan elementlar to'plami",
+        "Array",
+        "Fixed list"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое кортеж в Эрланге?",
+      "question_en": "What is a tuple in Erlang?",
+      "options_ru": [
+        "Список",
+        "{ok, Value} или {error, Reason} — указанный набор элементов.",
+        "Массив",
+        "Фиксированный список"
+      ],
+      "options_en": [
+        "List",
+        "{ok, Value} or {error, Reason} is a specified set of elements",
+        "Array",
+        "Fixed list"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "Erlang da list nima?",
+      "options": [
+        "Array",
+        "[1, 2, 3] — linked list, [H|T] pattern bilan",
+        "Tuple",
+        "Stack"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое список в Эрланге?",
+      "question_en": "What is a list in Erlang?",
+      "options_ru": [
+        "Массив",
+        "[1, 2, 3] — связанный список с шаблоном [H|T]",
+        "Кортеж",
+        "Стек"
+      ],
+      "options_en": [
+        "Array",
+        "[1, 2, 3] — linked list, with [H|T] pattern",
+        "A tuple",
+        "Stack"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "Erlang da pattern matching qanday?",
+      "options": [
+        "Regex match",
+        "= operatori — {ok, X} = {ok, 42} — X ga 42 o'rnatiladi",
+        "Assignment",
+        "Bind"
+      ],
+      "answer": 1,
+      "question_ru": "Как происходит сопоставление с образцом в Erlang?",
+      "question_en": "How is pattern matching in Erlang?",
+      "options_ru": [
+        "Соответствие регулярному выражению",
+        "Оператор = — {ok, X} = {ok, 42} — устанавливает X равным 42.",
+        "Назначение",
+        "Связать"
+      ],
+      "options_en": [
+        "Regex match",
+        "= operatori — {ok, X} = {ok, 42} — X ga 42 o'rnatiladi",
+        "Assignment",
+        "Bind"
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "Erlang da function qanday e'lon qilinadi?",
+      "options": [
+        "fun greet(X) -> ...",
+        "def greet(X):",
+        "greet(X) -> ...",
+        "function greet(X) {}"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить функцию в Эрланге?",
+      "question_en": "Erlang da function qanday e'lon qilinadi?",
+      "options_ru": [
+        "веселое приветствие(X) -> ...",
+        "защита приветствия (X):",
+        "приветствие(X) -> ...",
+        "функция приветствие(X) {}"
+      ],
+      "options_en": [
+        "fun greet(X) -> ...",
+        "def greet(X):",
+        "greet(X) -> ...",
+        "function greet(X) {}"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "Erlang da module nima uchun?",
+      "options": [
+        "Modul",
+        "Kodni tashkil qilish birlig — -module(mymod). -export([foo/1]).",
+        "Namespace",
+        "Package"
+      ],
+      "answer": 1,
+      "question_ru": "Почему модуль в Эрланге?",
+      "question_en": "Why module in Erlang?",
+      "options_ru": [
+        "Модуль",
+        "Модуль организации кода — -module(mymod). -экспорт([фу/1]).",
+        "Пространство имен",
+        "Пакет"
+      ],
+      "options_en": [
+        "Modul",
+        "Code organization module — -module(mymod). -export([foo/1]).",
+        "Namespace",
+        "Package"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "Erlang da spawn nima?",
+      "options": [
+        "Hosil qilish",
+        "Yangi process yaratish — Pid = spawn(fun() -> ... end)",
+        "Thread create",
+        "Fork"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое спавн в Эрланге?",
+      "question_en": "What is spawn in Erlang?",
+      "options_ru": [
+        "Изготовление",
+        "Создайте новый процесс — Pid = spawn(fun() -> ... end)",
+        "Создание темы",
+        "Вилка"
+      ],
+      "options_en": [
+        "Making",
+        "Create a new process — Pid = spawn(fun() -> ... end)",
+        "Thread creation",
+        "Fork"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "Erlang da ! operatori nima uchun?",
+      "options": [
+        "Negation",
+        "Process ga message yuborish — Pid ! Message",
+        "Send",
+        "Signal"
+      ],
+      "answer": 1,
+      "question_ru": "Эрланг да! для чего нужен оператор?",
+      "question_en": "Erlang da ! operatori nima uchun?",
+      "options_ru": [
+        "Отрицание",
+        "Отправить сообщение процессу — Pid! Сообщение",
+        "Отправить",
+        "Сигнал"
+      ],
+      "options_en": [
+        "Negation",
+        "Send message to Process — Pid ! Message",
+        "Send",
+        "Signal"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "Erlang da receive nima uchun?",
+      "options": [
+        "Qabul qilish",
+        "Processga kelgan xabarlarni pattern match bilan qabul qilish",
+        "Message receive",
+        "Event"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем получать в Erlang?",
+      "question_en": "Erlang da receive nima uchun?",
+      "options_ru": [
+        "Принятие",
+        "Получение сообщений процессу с совпадением по шаблону",
+        "Сообщение получено",
+        "Событие"
+      ],
+      "options_en": [
+        "Acceptance",
+        "Receiving messages to the process with a pattern match",
+        "Message received",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "Erlang da immutable variables nima?",
+      "options": [
+        "O'zgaruvchan",
+        "O'zgaruvchiga bir marta qiymat beriladi — Erlang single assignment",
+        "Constant",
+        "Freeze"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое неизменяемые переменные в Erlang?",
+      "question_en": "What are immutable variables in Erlang?",
+      "options_ru": [
+        "Сменный",
+        "Переменной присваивается значение один раз — однократное присвоение Erlang.",
+        "Константа",
+        "Заморозить"
+      ],
+      "options_en": [
+        "Changeable",
+        "A variable is assigned a value once — Erlang single assignment",
+        "Constant",
+        "Freeze"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "Erlang da rebar3 nima?",
+      "options": [
+        "Rebar tool",
+        "Erlang build va package management tool — yangi loyiha, kompilatsiya, test",
+        "Build tool",
+        "Package manager"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое rebar3 в Эрланге?",
+      "question_en": "What is rebar3 in Erlang?",
+      "options_ru": [
+        "Инструмент для арматуры",
+        "Инструмент сборки и управления пакетами Erlang — новый проект, компиляция, тестирование",
+        "Инструмент сборки",
+        "Менеджер пакетов"
+      ],
+      "options_en": [
+        "Rebar tool",
+        "Erlang build va package management tool — yangi loyiha, kompilatsiya, test",
+        "Build tool",
+        "Package manager"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "Erlang da lists:map nima?",
+      "options": [
+        "Map yaratish",
+        "List elementlarini funksiya bilan transformatsiya qiladi",
+        "List filter",
+        "Array map"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое списки: карта в Эрланге?",
+      "question_en": "What is lists:map in Erlang?",
+      "options_ru": [
+        "Создать карту",
+        "Преобразует элементы списка с помощью функции",
+        "Фильтр списка",
+        "Карта массива"
+      ],
+      "options_en": [
+        "Create a map",
+        "Transforms the elements of a list with a function",
+        "List filter",
+        "Array map"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "Erlang da process isolation nima?",
+      "options": [
+        "Izolyatsiya",
+        "Processlar xotirani ulashmaydi — message passing — biri ishlamasa boshqalarga ta'sir yo'q",
+        "Thread isolation",
+        "Sandbox"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое изоляция процесса в Erlang?",
+      "question_en": "What is process isolation in Erlang?",
+      "options_ru": [
+        "Izolyatsiya",
+        "Процессы не используют общую память — передача сообщений — сбой одного не влияет на другие",
+        "Изоляция резьбы",
+        "Песочница"
+      ],
+      "options_en": [
+        "Insulation",
+        "Processes do not share memory — message passing — failure of one does not affect others",
+        "Thread isolation",
+        "Sandbox"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "Erlang da OTP nima?",
+      "options": [
+        "One Time Password",
+        "Open Telecom Platform — gen_server, supervisor, application — fault-tolerant tizimlar",
+        "Platform",
+        "Framework"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое OTP в Эрланге?",
+      "question_en": "What is OTP in Erlang?",
+      "options_ru": [
+        "Одноразовый пароль",
+        "Открытая телекоммуникационная платформа — gen_server, супервизор, приложение — отказоустойчивые системы",
+        "Платформа",
+        "Рамочная основа"
+      ],
+      "options_en": [
+        "One Time Password",
+        "Open Telecom Platform — gen_server, supervisor, application — fault-tolerant systems",
+        "Platform",
+        "Framework"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "Erlang da gen_server nima?",
+      "options": [
+        "Generic server",
+        "Generic server behaviour — handle_call, handle_cast, init, handle_info",
+        "Web server",
+        "State machine"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое gen_server в Эрланге?",
+      "question_en": "What is gen_server in Erlang?",
+      "options_ru": [
+        "Общий сервер",
+        "Общее поведение сервера — handle_call, handle_cast, init, handle_info.",
+        "Веб-сервер",
+        "Государственная машина"
+      ],
+      "options_en": [
+        "Generic server",
+        "Generic server behavior — handle_call, handle_cast, init, handle_info",
+        "Web server",
+        "State machine"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "Erlang da supervisor nima?",
+      "options": [
+        "Nazoratchi",
+        "Bola processlarni kuzatib, ishlamasa qayta ishga tushiruvchi process",
+        "Process manager",
+        "Watchdog"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое супервайзер в Erlang?",
+      "question_en": "What is a supervisor at Erlang?",
+      "options_ru": [
+        "супервайзер",
+        "Процесс, который контролирует дочерние процессы и перезапускает их, если они не работают.",
+        "Менеджер процессов",
+        "Сторожевой пес"
+      ],
+      "options_en": [
+        "Nazoratchi",
+        "A process that monitors child processes and restarts them if they don't work",
+        "Process manager",
+        "Watchdog"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "Erlang da one_for_one supervisor strategy nima?",
+      "options": [
+        "Barcha qayta tiklash",
+        "Faqat ishlamay qolgan process qayta tiklash — boshqalarga ta'sir yo'q",
+        "One restart",
+        "Single strategy"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое стратегия супервизора one_for_one в Erlang?",
+      "question_en": "What is one_for_one supervisor strategy in Erlang?",
+      "options_ru": [
+        "Все восстановление",
+        "Восстановите только сбойный процесс — никакого влияния на другие",
+        "Один перезапуск",
+        "Единая стратегия"
+      ],
+      "options_en": [
+        "All recovery",
+        "Restore only the failed process — no effect on others",
+        "One restart",
+        "Single strategy"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "Erlang da ETS nima?",
+      "options": [
+        "External table storage",
+        "Erlang Term Storage — tez, in-memory table, concurrent read/write",
+        "Cache",
+        "Database"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ETS в Эрланге?",
+      "question_en": "What is ETS in Erlang?",
+      "options_ru": [
+        "Внешнее хранилище таблиц",
+        "Erlang Term Storage — быстрая таблица в памяти, одновременное чтение/запись.",
+        "Кэш",
+        "База данных"
+      ],
+      "options_en": [
+        "External table storage",
+        "Erlang Term Storage — fast, in-memory table, concurrent read/write",
+        "Cache",
+        "Database"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "Erlang da Mnesia nima?",
+      "options": [
+        "Amneziya",
+        "Distributed, in-memory/disk database — ACID, table replication",
+        "Distributed DB",
+        "BEAM database"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Мнезия в Эрланге?",
+      "question_en": "What is Mnesia in Erlang?",
+      "options_ru": [
+        "Амнезия",
+        "Распределенная база данных в памяти/на диске — ACID, репликация таблиц",
+        "Распределенная БД",
+        "База данных BEAM"
+      ],
+      "options_en": [
+        "Amnesia",
+        "Distributed, in-memory/disk database — ACID, table replication",
+        "Distributed DB",
+        "BEAM database"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "Erlang da hot code loading nima?",
+      "options": [
+        "Issiq yuklash",
+        "Tizimni to'xtatmasdan yangi kod versiyasini yuklash — 9 nines availability uchun",
+        "Live reload",
+        "Runtime update"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое загрузка горячего кода в Erlang?",
+      "question_en": "Erlang da hot code loading nima?",
+      "options_ru": [
+        "Горячая загрузка",
+        "Загрузка новой версии кода без остановки системы — для доступности 9 девяток",
+        "Живая перезагрузка",
+        "Обновление среды выполнения"
+      ],
+      "options_en": [
+        "Hot boot",
+        "Downloading a new code version without stopping the system — for 9 nines availability",
+        "Live reload",
+        "Runtime update"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "Erlang da binary nima?",
+      "options": [
+        "Ikkilik",
+        "Binary ma'lumotlar — <<1, 2, 3>> — network protocol uchun qulay",
+        "Bit string",
+        "Byte array"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое двоичный код в Эрланге?",
+      "question_en": "What is binary in Erlang?",
+      "options_ru": [
+        "Двоичный",
+        "Двоичные данные — <<1, 2, 3>> – удобны для сетевого протокола.",
+        "Немного строки",
+        "Байтовый массив"
+      ],
+      "options_en": [
+        "Binary",
+        "Binary data — <<1, 2, 3>> — is convenient for network protocol",
+        "A bit string",
+        "Byte array"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "Erlang da bit syntax nima uchun?",
+      "options": [
+        "Bit operatsiya",
+        "Binary dan ma'lumot ajratish — <<H:8, T/binary>> kabi pattern matching",
+        "Binary parse",
+        "Bitwise"
+      ],
+      "answer": 1,
+      "question_ru": "Почему битовый синтаксис в Erlang?",
+      "question_en": "Why bit syntax in Erlang?",
+      "options_ru": [
+        "Bit operatsiya",
+        "Извлечение информации из двоичного файла — сопоставление с образцом, например <<H:8, T/binary>>",
+        "Binary parse",
+        "Побитовый"
+      ],
+      "options_en": [
+        "Bit operation",
+        "Extract information from binary — pattern matching such as <<H:8, T/binary>>",
+        "Binary parse",
+        "Bitwise"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "Erlang da fun (anonymous function) qanday?",
+      "options": [
+        "Fun kalit so'zi",
+        "fun(X) -> X * 2 end — anonim funksiya",
+        "Lambda",
+        "Closure"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое развлечение (анонимная функция) в Эрланге?",
+      "question_en": "What is fun (anonymous function) in Erlang?",
+      "options_ru": [
+        "Веселье – это ключевое слово",
+        "fun(X) -> X * 2 end — анонимная функция",
+        "Лямбда",
+        "Закрытие"
+      ],
+      "options_en": [
+        "Fun is the keyword",
+        "fun(X) -> X * 2 end is an anonymous function",
+        "Lambda",
+        "Closure"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "Erlang da lists:foldl nima?",
+      "options": [
+        "List fold",
+        "Akkumulyator bilan chapdan o'ngga aylanish — lists:foldl(fun(E, Acc) -> ... end, Init, List)",
+        "Reduce",
+        "Aggregate"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое lists:foldl в Erlang?",
+      "question_en": "What is lists:foldl in Erlang?",
+      "options_ru": [
+        "Свернуть список",
+        "Цикл слева направо с аккумулятором — списки:foldl(fun(E, Acc) -> ... end, Init, List)",
+        "Уменьшить",
+        "Совокупный"
+      ],
+      "options_en": [
+        "List fold",
+        "Looping from left to right with accumulator — lists:foldl(fun(E, Acc) -> ... end, Init, List)",
+        "Reduce",
+        "Aggregate"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "Erlang da error handling qanday?",
+      "options": [
+        "try-catch",
+        "try Expr catch Error:Reason -> ... end yoki exit, throw, error",
+        "Exception",
+        "Pattern match"
+      ],
+      "answer": 1,
+      "question_ru": "Как обрабатывается ошибка в Erlang?",
+      "question_en": "How is error handling in Erlang?",
+      "options_ru": [
+        "попробовать поймать",
+        "попробуйте Expr catch Ошибка: Причина → ... конец или выход, бросок, ошибка",
+        "Исключение",
+        "Соответствие шаблону"
+      ],
+      "options_en": [
+        "try-catch",
+        "try Expr catch Error:Reason -> ... end or exit, throw, error",
+        "Exception",
+        "Pattern match"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "Erlang da node() nima qaytaradi?",
+      "options": [
+        "Tugun nomi",
+        "Joriy Erlang node nomi — nodename@hostname",
+        "Node ID",
+        "Process ID"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает node() в Эрланге?",
+      "question_en": "What does node() return in Erlang?",
+      "options_ru": [
+        "Имя узла",
+        "Текущее имя узла Erlang — имя_узла@имя_хоста.",
+        "Идентификатор узла",
+        "Идентификатор процесса"
+      ],
+      "options_en": [
+        "The name of the node",
+        "The current Erlang node name is nodename@hostname",
+        "Node ID",
+        "Process ID"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "Erlang da link va monitor farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "link — bidirectional exit propagation; monitor — unidirectional, DOWN message",
+        "monitor bidirectional",
+        "link unidirectional"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между ссылкой и монитором в Эрланге?",
+      "question_en": "Difference between link and monitor in Erlang?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "link — двунаправленное выходное распространение; монитор — однонаправленное, сообщение ВНИЗ",
+        "монитор двунаправленный",
+        "ссылка однонаправленная"
+      ],
+      "options_en": [
+        "There is no difference",
+        "link — bidirectional exit propagation; monitor — unidirectional, DOWN message",
+        "the monitor is bidirectional",
+        "link unidirectional"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "Erlang da registered process nima?",
+      "options": [
+        "Ro'yxatdan o'tgan",
+        "Pid o'rniga atom nom bilan process — register(Name, Pid), whereis(Name)",
+        "Named process",
+        "Global process"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое зарегистрированный процесс в Erlang?",
+      "question_en": "What is registered process in Erlang?",
+      "options_ru": [
+        "Зарегистрирован",
+        "Процесс с атомарным именем вместо pid — Register(Name, Pid), где(Name)",
+        "Именованный процесс",
+        "Глобальный процесс"
+      ],
+      "options_en": [
+        "Registered",
+        "Process with atomic name instead of pid — register(Name, Pid), whereis(Name)",
+        "Named process",
+        "Global process"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "Erlang da application nima (OTP)?",
+      "options": [
+        "App yaratish",
+        "To'liq OTP application — start, stop funksiyalari, supervisor tree",
+        "OTP app",
+        "Module group"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое приложение Erlang (OTP)?",
+      "question_en": "What is Erlang application (OTP)?",
+      "options_ru": [
+        "Создать приложение",
+        "Полное приложение OTP — функции запуска, остановки, дерево супервизора",
+        "OTP-приложение",
+        "Группа модулей"
+      ],
+      "options_en": [
+        "Create an app",
+        "Complete OTP application — start, stop functions, supervisor tree",
+        "OTP app",
+        "Module group"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "Erlang da maps (Erlang 17+) nima?",
+      "options": [
+        "Geografik xarita",
+        "#{key => value} — yangi kalit-qiymat ma'lumotlar tuzilmasi, dict dan farqli",
+        "Dictionary",
+        "Hash"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое карты в Эрланге (Эрланг 17+)?",
+      "question_en": "What is maps in Erlang (Erlang 17+)?",
+      "options_ru": [
+        "Географическая карта",
+        "#{key => value} — новая структура данных «ключ-значение», отличная от dict",
+        "Словарь",
+        "Хэш"
+      ],
+      "options_en": [
+        "Geographic map",
+        "#{key => value} is a new key-value data structure, different from dict",
+        "Dictionary",
+        "Hash"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "Erlang da list comprehension nima?",
+      "options": [
+        "List gen",
+        "[X*2 || X <- List, X > 0] — filterlash va transformatsiya birgalikda",
+        "Generator",
+        "Map filter"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое понимание списков в Erlang?",
+      "question_en": "What is list comprehension in Erlang?",
+      "options_ru": [
+        "Генерация списка",
+        "[Х*2 || X<- List, X > 0] — фильтрация и преобразование вместе",
+        "Генератор",
+        "Фильтр карты"
+      ],
+      "options_en": [
+        "List gen",
+        "[X*2 || X <- List, X > 0] — filtering and transformation together",
+        "Generator",
+        "Map filter"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "Erlang da timer module nima uchun?",
+      "options": [
+        "Taymer",
+        "timer:send_after, timer:sleep — vaqt asosida xabar yuborish",
+        "Scheduler",
+        "Delay"
+      ],
+      "answer": 1,
+      "question_ru": "Почему модуль таймера в Erlang?",
+      "question_en": "Why timer module in Erlang?",
+      "options_ru": [
+        "Таймер",
+        "timer:send_after, timer:sleep — отправка сообщений по времени",
+        "Планировщик",
+        "Delay"
+      ],
+      "options_en": [
+        "Timer",
+        "timer:send_after, timer:sleep — sending messages based on time",
+        "Scheduler",
+        "Delay"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "Erlang da process dictionary nima?",
+      "options": [
+        "Process lug'at",
+        "Har process o'zining local key-value storage — get/put — global shared emas",
+        "Thread local",
+        "Process state"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое словарь процессов в Erlang?",
+      "question_en": "What is process dictionary in Erlang?",
+      "options_ru": [
+        "Словарь процесса",
+        "Каждый процесс имеет собственное локальное хранилище значений ключа — get/put — не общедоступное.",
+        "Местная тема",
+        "Состояние процесса"
+      ],
+      "options_en": [
+        "Process dictionary",
+        "Each process has its own local key-value storage — get/put — not globally shared",
+        "Thread local",
+        "Process state"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "Erlang da BEAM scheduler nima?",
+      "options": [
+        "Jadval",
+        "Reductions asosida preemptive scheduling — har process teng vaqt oladi",
+        "CPU scheduler",
+        "Thread scheduler"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое планировщик BEAM в Erlang?",
+      "question_en": "What is BEAM scheduler in Erlang?",
+      "options_ru": [
+        "Таблица",
+        "Упреждающее планирование на основе сокращений — каждый процесс занимает одинаковое время",
+        "планировщик процессора",
+        "Планировщик потоков"
+      ],
+      "options_en": [
+        "Jadval",
+        "Preemptive scheduling based on reductions — every process takes equal time",
+        "CPU scheduler",
+        "Thread scheduler"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "Erlang da dirty NIF nima?",
+      "options": [
+        "Dirty code",
+        "C funksiyani BEAM schedulerini bloklamsdan chaqirish — CPU intensive C kod",
+        "Native function",
+        "FFI"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое грязный NIF в Эрланге?",
+      "question_en": "What is dirty NIF in Erlang?",
+      "options_ru": [
+        "Грязный код",
+        "Вызов функции C из блока планировщика BEAM требует интенсивного использования процессора C-кодом.",
+        "Собственная функция",
+        "ИФИ"
+      ],
+      "options_en": [
+        "Dirty code",
+        "Calling a C function from a BEAM scheduler block is CPU intensive C code",
+        "Native function",
+        "FFI"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "Erlang da code:load_file qanday?",
+      "options": [
+        "Fayl yuklash",
+        "Module ni runtime da yuklash — hot code upgrade uchun",
+        "Dynamic load",
+        "Module load"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое код:load_file в Эрланге?",
+      "question_en": "What is code:load_file in Erlang?",
+      "options_ru": [
+        "Загрузка файла",
+        "Загрузка модуля во время выполнения — для горячего обновления кода.",
+        "Динамическая нагрузка",
+        "Загрузка модуля"
+      ],
+      "options_en": [
+        "File upload",
+        "Loading the module at runtime — for hot code upgrade",
+        "Dynamic load",
+        "Module load"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "Erlang da release nima?",
+      "options": [
+        "Chiqarish",
+        "To'liq, mustaqil, deployable Erlang tizim — BEAM + modules + config",
+        "OTP release",
+        "Deploy package"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое релиз в Erlang?",
+      "question_en": "Erlang da release nima?",
+      "options_ru": [
+        "Выпускать",
+        "Полная, независимая, развертываемая система Erlang — BEAM + модули + конфигурация.",
+        "OTP-релиз",
+        "Развернуть пакет"
+      ],
+      "options_en": [
+        "Release",
+        "Complete, independent, deployable Erlang system — BEAM + modules + config",
+        "OTP release",
+        "Deploy package"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "Erlang da appmon yoki observer nima?",
+      "options": [
+        "Kuzatish",
+        "Grafik monitoring tool — processlar, xotira, ETS jadvallari ko'rish",
+        "Debug tool",
+        "Profile tool"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое appmon или наблюдатель в Эрланге?",
+      "question_en": "What is appmon or observer in Erlang?",
+      "options_ru": [
+        "Последующие действия",
+        "Инструмент графического мониторинга — просмотр процессов, памяти, диаграмм ETS",
+        "Инструмент отладки",
+        "Инструмент профиля"
+      ],
+      "options_en": [
+        "Follow up",
+        "Grafik monitoring tool — processlar, xotira, ETS jadvallari ko'rish",
+        "Debug tool",
+        "Profile tool"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "Erlang da sys module nima uchun?",
+      "options": [
+        "System module",
+        "OTP process debug uchun — sys:get_state, sys:trace, sys:statistics",
+        "System control",
+        "Debug OTP"
+      ],
+      "answer": 1,
+      "question_ru": "Почему модуль sys в Erlang?",
+      "question_en": "Why the sys module in Erlang?",
+      "options_ru": [
+        "Системный модуль",
+        "Для отладки процесса OTP — sys:get_state, sys:trace, sys:statistics.",
+        "Управление системой",
+        "Отладка OTP"
+      ],
+      "options_en": [
+        "System module",
+        "For OTP process debug — sys:get_state, sys:trace, sys:statistics",
+        "System control",
+        "Debug OTP"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "Erlang da gen_statem nima?",
+      "options": [
+        "State machine",
+        "Generic state machine behaviour — gen_fsm ning yangi versiyasi",
+        "FSM",
+        "State server"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое gen_statem в Эрланге?",
+      "question_en": "Erlang da gen_statem nima?",
+      "options_ru": [
+        "Государственная машина",
+        "Общее поведение конечного автомата — это новая версия gen_fsm.",
+        "ФСМ",
+        "Государственный сервер"
+      ],
+      "options_en": [
+        "State machine",
+        "Generic state machine behavior is a new version of gen_fsm",
+        "FSM",
+        "State server"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "Erlang da dialyzer nima?",
+      "options": [
+        "Dial analyzer",
+        "Static type analysis tool — type spec va discrepancies aniqlash",
+        "Type checker",
+        "Code analyzer"
+      ],
+      "answer": 1,
+      "question_ru": "Erlang da dialyzer nima?",
+      "question_en": "What is a dialyzer at Erlang?",
+      "options_ru": [
+        "Анализатор циферблата",
+        "Инструмент статического анализа типов — для определения спецификации типа и расхождений.",
+        "Тип проверки",
+        "Анализатор кода"
+      ],
+      "options_en": [
+        "Dial analyzer",
+        "Static type analysis tool — to determine type spec and discrepancies",
+        "Type checker",
+        "Code analyzer"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "Erlang da -spec nima uchun?",
+      "options": [
+        "Specification",
+        "Funksiya tip spesifikatsiyasi — Dialyzer va dokumentatsiya uchun",
+        "Type annotation",
+        "Function spec"
+      ],
+      "answer": 1,
+      "question_ru": "Почему -spec в Эрланге?",
+      "question_en": "Why -spec in Erlang?",
+      "options_ru": [
+        "Спецификация",
+        "Спецификация типа функции — для диализатора и документации",
+        "Введите аннотацию",
+        "Спецификация функции"
+      ],
+      "options_en": [
+        "Specification",
+        "Funksiya tip spesifikatsiyasi — Dialyzer va dokumentatsiya uchun",
+        "Type annotation",
+        "Function spec"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "Erlang da global module nima?",
+      "options": [
+        "Global o'zgaruvchi",
+        "Distributed Erlang da global process registration — global:register_name",
+        "Distributed reg",
+        "Cluster registry"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое глобальный модуль в Erlang?",
+      "question_en": "What is a global module in Erlang?",
+      "options_ru": [
+        "Глобальная переменная",
+        "Глобальная регистрация процесса в Distributed Erlang является глобальной: имя_регистра.",
+        "Распределенная регистрация",
+        "Реестр кластеров"
+      ],
+      "options_en": [
+        "A global variable",
+        "The global process registration in Distributed Erlang is global:register_name",
+        "Distributed reg",
+        "Cluster registry"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "Erlang da pg (process groups) nima?",
+      "options": [
+        "Process guruh",
+        "Distributed process grouping — pub/sub uchun, pg2 dan yangi",
+        "PubSub",
+        "Group message"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое pg (группы процессов) в Erlang?",
+      "question_en": "Erlang da pg (process groups) nima?",
+      "options_ru": [
+        "Группа процессов",
+        "Распределенная группировка процессов — для публикации/подписки, новинка со стр.2.",
+        "ПабСаб",
+        "Групповое сообщение"
+      ],
+      "options_en": [
+        "Process group",
+        "Distributed process grouping — for pub/sub, new from pg2",
+        "PubSub",
+        "Group message"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "Erlang da inet module nima?",
+      "options": [
+        "Internet module",
+        "Network (TCP/UDP) ishlash uchun — gen_tcp, gen_udp asosi",
+        "Network lib",
+        "Socket"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое inet-модуль в Erlang?",
+      "question_en": "What is the inet module in Erlang?",
+      "options_ru": [
+        "Интернет-модуль",
+        "Сеть (TCP/UDP) — базовые gen_tcp, gen_udp",
+        "Сетевая библиотека",
+        "Розетка"
+      ],
+      "options_en": [
+        "Internet module",
+        "Network (TCP/UDP) — base gen_tcp, gen_udp",
+        "Network lib",
+        "Socket"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "Erlang da cowboy nima?",
+      "options": [
+        "Kovboy",
+        "Kichik, tez HTTP server — WebSocket, REST API uchun",
+        "Web server",
+        "HTTP lib"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое ковбой в Эрланге?",
+      "question_en": "What is a cowboy at Erlang?",
+      "options_ru": [
+        "Ковбой",
+        "Небольшой быстрый HTTP-сервер для WebSocket, REST API.",
+        "Веб-сервер",
+        "HTTP-библиотека"
+      ],
+      "options_en": [
+        "Cowboy",
+        "A small, fast HTTP server for WebSocket, REST API",
+        "Web server",
+        "HTTP lib"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "Erlang da SASL nima?",
+      "options": [
+        "Autentifikatsiya",
+        "System Architecture Support Libraries — progress, error, crash reporting",
+        "OTP logging",
+        "System log"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое SASL в Эрланге?",
+      "question_en": "What is SASL in Erlang?",
+      "options_ru": [
+        "Аутентификация",
+        "Библиотеки поддержки системной архитектуры — отчеты о прогрессе, ошибках, сбоях",
+        "регистрация OTP",
+        "Системный журнал"
+      ],
+      "options_en": [
+        "Authentication",
+        "System Architecture Support Libraries — progress, error, crash reporting",
+        "OTP logging",
+        "System log"
+      ]
+    }
   ]
 }

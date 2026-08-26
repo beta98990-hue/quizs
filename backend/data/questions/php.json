@@ -2,55 +2,1305 @@
   "technology": "PHP",
   "category": "backend",
   "questions": [
-    {"id":1,"level":"easy","question":"PHP nima uchun ishlatiladi?","options":["Mobile ilovalar","Server-side web dasturlash","Frontend styling","Database yaratish"],"answer":1},
-    {"id":2,"level":"easy","question":"PHP kodi qanday teglar bilan boshlanadi?","options":["<php>","<script>","<?php","<%"],"answer":2},
-    {"id":3,"level":"easy","question":"PHP da o'zgaruvchi qanday e'lon qilinadi?","options":["var name = 'John';","let name = 'John';","$name = 'John';","name = 'John';"],"answer":2},
-    {"id":4,"level":"easy","question":"PHP da echo nima qiladi?","options":["Ma'lumot o'qiydi","Matnni ekranga chiqaradi","O'zgaruvchi yaratadi","Fayl yozadi"],"answer":1},
-    {"id":5,"level":"easy","question":"PHP da massiv qanday yaratiladi?","options":["array = []","$arr = array() yoki $arr = []","arr = []","list = []"],"answer":1},
-    {"id":6,"level":"easy","question":"PHP da funksiya qanday e'lon qilinadi?","options":["def myFunc() {}","function myFunc() {}","func myFunc() {}","method myFunc() {}"],"answer":1},
-    {"id":7,"level":"easy","question":"PHP da string birlashtirish uchun qaysi operator?","options":["+","&","~","."],"answer":3},
-    {"id":8,"level":"easy","question":"PHP da if-else qanday yoziladi?","options":["if condition: ... elif:","if ($cond) { } elseif { } else { }","if $cond { } elif { }","when ($cond) { } otherwise { }"],"answer":1},
-    {"id":9,"level":"easy","question":"PHP da $_GET va $_POST farqi nima?","options":["Hech qanday farq yo'q","$_GET — URL dan ma'lumot; $_POST — forma body dan xavfsiz ma'lumot","$_POST URL dan","$_GET xavfsizroq"],"answer":1},
-    {"id":10,"level":"easy","question":"PHP da strlen() funksiyasi nima qaytaradi?","options":["Stringni","String uzunligini","String tipini","String boshini"],"answer":1},
-    {"id":11,"level":"easy","question":"PHP da foreach qanday yoziladi?","options":["foreach $arr as $item","foreach ($arr as $item)","for each ($arr) as $item","loop ($arr as $item)"],"answer":1},
-    {"id":12,"level":"easy","question":"PHP da include va require farqi?","options":["Hech qanday farq yo'q","include — topilmasa warning; require — topilmasa fatal error","require — warning","include — fatal error"],"answer":1},
-    {"id":13,"level":"easy","question":"PHP da $_SESSION nima uchun?","options":["Session yaratish","Foydalanuvchi sessiyasi ma'lumotlarini saqlash","Cookie management","URL parameter"],"answer":1},
-    {"id":14,"level":"easy","question":"PHP da isset() nima qiladi?","options":["Qiymat belgilaydi","O'zgaruvchi mavjud va null emasligini tekshiradi","Qiymatni null qiladi","Tip tekshiradi"],"answer":1},
-    {"id":15,"level":"easy","question":"PHP da class qanday e'lon qilinadi?","options":["object MyClass {}","class MyClass {}","type MyClass {}","struct MyClass {}"],"answer":1},
-    {"id":16,"level":"medium","question":"PHP da PDO nima?","options":["PHP DOM Object","PHP Data Objects — ma'lumotlar bazasi bilan abstraktsiya qatlamli ishlash","Python Data Operations","PHP Debug Output"],"answer":1},
-    {"id":17,"level":"medium","question":"PHP da prepared statements nima uchun?","options":["Tezroq so'rovlar","SQL injection dan himoya qiluvchi parametrlangan SQL so'rovlar","Cached queries","Stored procedures"],"answer":1},
-    {"id":18,"level":"medium","question":"PHP da namespace nima uchun?","options":["Fayl nomi","Klass, funksiya va konstantalar nomlar ziddiyatini oldini olish","URL namespace","Module namespace"],"answer":1},
-    {"id":19,"level":"medium","question":"PHP da trait nima?","options":["Klass atributi","Ko'p klasslar o'rtasida metod ulashish mexanizmi — multiple inheritance alternativa","Interface turi","Abstract klass"],"answer":1},
-    {"id":20,"level":"medium","question":"PHP da interface nima?","options":["Grafik interfeys","Klasslar bajarishi kerak bo'lgan metodlar kontrakti","Abstract klass","Trait turi"],"answer":1},
-    {"id":21,"level":"medium","question":"PHP da abstract class nima?","options":["Klass turi","Ob'ekt yaratib bo'lmaydigan, implement bo'lmagan metodlari bo'lishi mumkin bo'lgan klass","Interface turi","Trait turi"],"answer":1},
-    {"id":22,"level":"medium","question":"PHP da static nima uchun?","options":["Doimiy qiymat","Klass darajasida — ob'ekt yaratmasdan kirish mumkin; late static binding uchun","Freeze qilish","Memory optimallashtirish"],"answer":1},
-    {"id":23,"level":"medium","question":"PHP da Composer nima?","options":["PHP kompilyator","PHP kutubxonalari va dependency boshqarish vositasi","Build tool","Code generator"],"answer":1},
-    {"id":24,"level":"medium","question":"PHP da exception handling nima?","options":["Error ignore","try-catch-finally bloki bilan xatolarni tutib boshqarish","Error log","die() ishlatish"],"answer":1},
-    {"id":25,"level":"medium","question":"PHP da array_map() nima qiladi?","options":["Array filter","Callback funksiyani massiv elementlariga qo'llab yangi massiv yaratadi","Array sort","Array search"],"answer":1},
-    {"id":26,"level":"medium","question":"PHP da array_filter() nima qiladi?","options":["Array map","Callback shart bo'yicha massiv elementlarini filterlaydi","Array sort","Array merge"],"answer":1},
-    {"id":27,"level":"medium","question":"PHP da $_FILES nima uchun?","options":["Fayl ro'yxati","Yuklangan fayllar haqida ma'lumot — name, type, size, tmp_name, error","File manager","Upload array"],"answer":1},
-    {"id":28,"level":"medium","question":"PHP da OOP da __construct nima?","options":["Ob'ekt o'chirish","Ob'ekt yaratilganda chaqiriladigan konstruktor metod","Statik metod","Magic metod"],"answer":1},
-    {"id":29,"level":"medium","question":"PHP da final kalit so'zi nima qiladi?","options":["Funksiya tugaydi","final class — meros olinmaydi; final method — override qilinmaydi","Statik qiladi","Doimiy qiladi"],"answer":1},
-    {"id":30,"level":"medium","question":"PHP da magic methods (__get, __set, __call) nima uchun?","options":["Magic funksiyalar","Mavjud bo'lmagan xususiyat/metod ga murojaatda maxsus xatti-harakat","Override qilish","Event handling"],"answer":1},
-    {"id":31,"level":"medium","question":"PHP da str_contains() funksiyasi nima qiladi (PHP 8)?","options":["String yaratadi","String ichida boshqa string borligini tekshiradi","String kesadi","String topadi"],"answer":1},
-    {"id":32,"level":"medium","question":"PHP da match expression nima (PHP 8)?","options":["Switch-case","Strict comparison bilan switch ga o'xshash ixcham sintaksis — qiymat qaytaradi","Ternary operator","If-else"],"answer":1},
-    {"id":33,"level":"medium","question":"PHP da named arguments nima (PHP 8)?","options":["Nomlangan o'zgaruvchilar","Funksiya argumentlarini nomi bilan uzatish — tartib muhim emas","Default arguments","Optional args"],"answer":1},
-    {"id":34,"level":"medium","question":"PHP da union types nima (PHP 8)?","options":["Tip birlashtirish","Bir nechta tipdan biri bo'lishi mumkin: function foo(int|string $val)","Multiple types","Type alias"],"answer":1},
-    {"id":35,"level":"medium","question":"PHP da nullsafe operator (?->) nima?","options":["Null tekshirish","Null bo'lsa zanjirni to'xtatib null qaytaradi — $user?->getAddress()?->getCity()","Optional chaining","Null coalescing"],"answer":1},
-    {"id":36,"level":"hard","question":"PHP da Fibers nima (PHP 8.1)?","options":["Thread turi","Cooperative multitasking uchun coroutine — to'xtatib davom ettirish imkoni","Async function","Generator turi"],"answer":1},
-    {"id":37,"level":"hard","question":"PHP da Enums nima (PHP 8.1)?","options":["Raqamlar to'plami","Belgilangan konstantalar to'plami — backed (string/int) va pure enums","Constant group","Type union"],"answer":1},
-    {"id":38,"level":"hard","question":"PHP da readonly properties nima (PHP 8.1)?","options":["Read-only fayl","Bir marta yoziladigan xususiyat — konstruktorda belgilanadi, keyin o'zgartirib bo'lmaydi","Immutable value","Const property"],"answer":1},
-    {"id":39,"level":"hard","question":"PHP da JIT compilation nima (PHP 8)?","options":["Java JIT","Bytecode ni runtime da mahalliy mashin kodiga aylantirish — CPU intensive ilovalar uchun","PHP compile","Zend JIT"],"answer":1},
-    {"id":40,"level":"hard","question":"PHP da Opcache nima?","options":["Op keshi","PHP skriptlar bytecode ni kesh qilib, har so'rovda qayta parse qilishdan qochish","Cache module","Output cache"],"answer":1},
-    {"id":41,"level":"hard","question":"PHP da Dependency Injection Container nima?","options":["DI konteyner","Ob'ektlar va bog'liqliklarini avtomatik boshqaruvchi — Laravel ServiceContainer kabi","Injection tool","Service locator"],"answer":1},
-    {"id":42,"level":"hard","question":"PHP da PSR standartlari nima uchun?","options":["PHP Security Rules","PHP-FIG tomonidan tasdiqlangan kod yozish standarti — autoloading, logging, HTTP kabi","PHP coding style","PHP framework"],"answer":1},
-    {"id":43,"level":"hard","question":"PHP da Generators nima?","options":["Kod generator","yield bilan katta ma'lumot to'plamlarini xotirani tejab ketma-ket qaytaruvchi funksiya","Random generator","Data generator"],"answer":1},
-    {"id":44,"level":"hard","question":"PHP da SPL (Standard PHP Library) nima?","options":["Standard library","Ma'lumotlar tuzilmasi, iteratorlar, interfeyslari — SplStack, SplQueue, SplHeap va boshqalar","PHP utility","Extension"],"answer":1},
-    {"id":45,"level":"hard","question":"PHP da Reflection API nima?","options":["Kodni aks ettirish","Runtime da klass, metod, xususiyat haqida ma'lumot olish va o'zgartirish","Meta-programming","Code analysis"],"answer":1},
-    {"id":46,"level":"hard","question":"PHP da Intersection types nima (PHP 8.1)?","options":["Tip kesishish","Bir vaqtda bir nechta interfeysni implement qilgan tip: TypeA&TypeB","Union type","Multiple interface"],"answer":1},
-    {"id":47,"level":"hard","question":"PHP da never return type nima (PHP 8.1)?","options":["Hech nima qaytarmaydi","Funksiya hech qachon normal tugamasligini bildiradi — exit() yoki exception chiqaradi","Null return","Void return"],"answer":1},
-    {"id":48,"level":"hard","question":"PHP da array unpacking with string keys nima (PHP 8.1)?","options":["Array spread","[...$array1, ...$array2] — string kalitli massivlarni ham spread qilish imkoni","Array merge","Spread operator"],"answer":1},
-    {"id":49,"level":"hard","question":"PHP da first class callable syntax nima (PHP 8.1)?","options":["Callable type","strlen(...) — funksiya yoki metoddan closure yaratish — array_map(strlen(...), $arr)","Lambda syntax","Function reference"],"answer":1},
-    {"id":50,"level":"hard","question":"PHP da Weak references nima?","options":["Zaif referens","Ob'ektga zaif havola — garbage collection uchun to'siq bo'lmaydi","Soft reference","Object reference"],"answer":1}
+    {
+      "id": 1,
+      "level": "easy",
+      "question": "PHP nima uchun ishlatiladi?",
+      "options": [
+        "Mobile ilovalar",
+        "Server-side web dasturlash",
+        "Frontend styling",
+        "Database yaratish"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего используется PHP?",
+      "question_en": "What is PHP used for?",
+      "options_ru": [
+        "Мобильные приложения",
+        "Серверное веб-программирование",
+        "Стиль интерфейса",
+        "Создание базы данных"
+      ],
+      "options_en": [
+        "Mobile ilovalar",
+        "Server-side web programming",
+        "Frontend styling",
+        "Database creation"
+      ]
+    },
+    {
+      "id": 2,
+      "level": "easy",
+      "question": "PHP kodi qanday teglar bilan boshlanadi?",
+      "options": [
+        "<php>",
+        "<script>",
+        "<?php",
+        "<%"
+      ],
+      "answer": 2,
+      "question_ru": "PHP kodi qanday teglar bilan boshlanadi?",
+      "question_en": "What tags does PHP code start with?",
+      "options_ru": [
+        "<php>",
+        "<script>",
+        "<?php",
+        "<%"
+      ],
+      "options_en": [
+        "<php>",
+        "<script>",
+        "<?php",
+        "<%"
+      ]
+    },
+    {
+      "id": 3,
+      "level": "easy",
+      "question": "PHP da o'zgaruvchi qanday e'lon qilinadi?",
+      "options": [
+        "var name = 'John';",
+        "let name = 'John';",
+        "$name = 'John';",
+        "name = 'John';"
+      ],
+      "answer": 2,
+      "question_ru": "Как объявить переменную в PHP?",
+      "question_en": "How to declare a variable in PHP?",
+      "options_ru": [
+        "var name = 'Джон';",
+        "пусть имя = 'Джон';",
+        "$name = 'Джон';",
+        "имя = 'Джон';"
+      ],
+      "options_en": [
+        "var name = 'John';",
+        "let name = 'John';",
+        "$name = 'John';",
+        "name = 'John';"
+      ]
+    },
+    {
+      "id": 4,
+      "level": "easy",
+      "question": "PHP da echo nima qiladi?",
+      "options": [
+        "Ma'lumot o'qiydi",
+        "Matnni ekranga chiqaradi",
+        "O'zgaruvchi yaratadi",
+        "Fayl yozadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает echo в PHP?",
+      "question_en": "What does echo do in PHP?",
+      "options_ru": [
+        "Считывает информацию",
+        "Отображает текст",
+        "Создает переменную",
+        "Записывает файл"
+      ],
+      "options_en": [
+        "Ma'lumot o'qiydi",
+        "Displays the text",
+        "Creates a variable",
+        "Writes a file"
+      ]
+    },
+    {
+      "id": 5,
+      "level": "easy",
+      "question": "PHP da massiv qanday yaratiladi?",
+      "options": [
+        "array = []",
+        "$arr = array() yoki $arr = []",
+        "arr = []",
+        "list = []"
+      ],
+      "answer": 1,
+      "question_ru": "PHP da massiv qanday yaratiladi?",
+      "question_en": "PHP da massiv qanday yaratiladi?",
+      "options_ru": [
+        "массив = []",
+        "$arr = array() yoki $arr = []",
+        "арр = []",
+        "список = []"
+      ],
+      "options_en": [
+        "array = []",
+        "$arr = array() or $arr = []",
+        "arr = []",
+        "list = []"
+      ]
+    },
+    {
+      "id": 6,
+      "level": "easy",
+      "question": "PHP da funksiya qanday e'lon qilinadi?",
+      "options": [
+        "def myFunc() {}",
+        "function myFunc() {}",
+        "func myFunc() {}",
+        "method myFunc() {}"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить функцию в PHP?",
+      "question_en": "How to declare a function in PHP?",
+      "options_ru": [
+        "защита myFunc() {}",
+        "функция myFunc() {}",
+        "func myFunc() {}",
+        "метод myFunc() {}"
+      ],
+      "options_en": [
+        "def myFunc() {}",
+        "function myFunc() {}",
+        "func myFunc() {}",
+        "method myFunc() {}"
+      ]
+    },
+    {
+      "id": 7,
+      "level": "easy",
+      "question": "PHP da string birlashtirish uchun qaysi operator?",
+      "options": [
+        "+",
+        "&",
+        "~",
+        "."
+      ],
+      "answer": 3,
+      "question_ru": "Какой оператор для объединения строк в PHP?",
+      "question_en": "Which operator for string concatenation in PHP?",
+      "options_ru": [
+        "+",
+        "&",
+        "~",
+        "."
+      ],
+      "options_en": [
+        "+",
+        "&",
+        "~",
+        "."
+      ]
+    },
+    {
+      "id": 8,
+      "level": "easy",
+      "question": "PHP da if-else qanday yoziladi?",
+      "options": [
+        "if condition: ... elif:",
+        "if ($cond) { } elseif { } else { }",
+        "if $cond { } elif { }",
+        "when ($cond) { } otherwise { }"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать if-else на PHP?",
+      "question_en": "How to write if-else in PHP?",
+      "options_ru": [
+        "если условие: ... elif:",
+        "если ($cond) { } elseif { } else { }",
+        "если $cond { } elif { }",
+        "когда ($cond) { } иначе { }"
+      ],
+      "options_en": [
+        "if condition: ... elif:",
+        "if ($cond) { } elseif { } else { }",
+        "if $cond { } elif { }",
+        "when ($cond) { } otherwise { }"
+      ]
+    },
+    {
+      "id": 9,
+      "level": "easy",
+      "question": "PHP da $_GET va $_POST farqi nima?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "$_GET — URL dan ma'lumot; $_POST — forma body dan xavfsiz ma'lumot",
+        "$_POST URL dan",
+        "$_GET xavfsizroq"
+      ],
+      "answer": 1,
+      "question_ru": "В чем разница между $_GET и $_POST в PHP?",
+      "question_en": "What is the difference between $_GET and $_POST in PHP?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "$_GET — информация из URL; $_POST — это защищенные данные из тела формы.",
+        "$_POST из URL",
+        "$_GET безопаснее"
+      ],
+      "options_en": [
+        "There is no difference",
+        "$_GET — information from URL; $_POST is secure data from the form body",
+        "$_POST URL dan",
+        "$_GET is safer"
+      ]
+    },
+    {
+      "id": 10,
+      "level": "easy",
+      "question": "PHP da strlen() funksiyasi nima qaytaradi?",
+      "options": [
+        "Stringni",
+        "String uzunligini",
+        "String tipini",
+        "String boshini"
+      ],
+      "answer": 1,
+      "question_ru": "Что возвращает функция strlen() в PHP?",
+      "question_en": "What does the strlen() function return in PHP?",
+      "options_ru": [
+        "Строка",
+        "Длина строки",
+        "Тип строки",
+        "Начало строки"
+      ],
+      "options_en": [
+        "String",
+        "The length of the string",
+        "String tipini",
+        "The beginning of the string"
+      ]
+    },
+    {
+      "id": 11,
+      "level": "easy",
+      "question": "PHP da foreach qanday yoziladi?",
+      "options": [
+        "foreach $arr as $item",
+        "foreach ($arr as $item)",
+        "for each ($arr) as $item",
+        "loop ($arr as $item)"
+      ],
+      "answer": 1,
+      "question_ru": "Как написать foreach в PHP?",
+      "question_en": "How to write foreach in PHP?",
+      "options_ru": [
+        "foreach $arr as $item",
+        "foreach ($arr как $item)",
+        "за каждый ($arr) как $item",
+        "цикл ($arr как $item)"
+      ],
+      "options_en": [
+        "foreach $arr as $item",
+        "foreach ($arr as $item)",
+        "for each ($arr) as $item",
+        "loop ($arr as $item)"
+      ]
+    },
+    {
+      "id": 12,
+      "level": "easy",
+      "question": "PHP da include va require farqi?",
+      "options": [
+        "Hech qanday farq yo'q",
+        "include — topilmasa warning; require — topilmasa fatal error",
+        "require — warning",
+        "include — fatal error"
+      ],
+      "answer": 1,
+      "question_ru": "Разница между включением и требованием в PHP?",
+      "question_en": "Difference between include and require in PHP?",
+      "options_ru": [
+        "Нет никакой разницы",
+        "include — предупреждение, если не найден; require — фатальная ошибка, если не найдена",
+        "требовать — предупреждение",
+        "включить — фатальная ошибка"
+      ],
+      "options_en": [
+        "There is no difference",
+        "include — warning if not found; require — fatal error if not found",
+        "require — warning",
+        "include — fatal error"
+      ]
+    },
+    {
+      "id": 13,
+      "level": "easy",
+      "question": "PHP da $_SESSION nima uchun?",
+      "options": [
+        "Session yaratish",
+        "Foydalanuvchi sessiyasi ma'lumotlarini saqlash",
+        "Cookie management",
+        "URL parameter"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужна $_SESSION в PHP?",
+      "question_en": "What is $_SESSION in PHP for?",
+      "options_ru": [
+        "Создать сеанс",
+        "Хранение данных сеанса пользователя",
+        "Управление файлами cookie",
+        "URL-параметр"
+      ],
+      "options_en": [
+        "Create a session",
+        "Storing user session data",
+        "Cookie management",
+        "URL parameter"
+      ]
+    },
+    {
+      "id": 14,
+      "level": "easy",
+      "question": "PHP da isset() nima qiladi?",
+      "options": [
+        "Qiymat belgilaydi",
+        "O'zgaruvchi mavjud va null emasligini tekshiradi",
+        "Qiymatni null qiladi",
+        "Tip tekshiradi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает isset() в PHP?",
+      "question_en": "What does isset() do in PHP?",
+      "options_ru": [
+        "Ценность определяет",
+        "Проверяет, что переменная существует и не равна нулю.",
+        "Делает значение нулевым",
+        "Тип проверки"
+      ],
+      "options_en": [
+        "Value determines",
+        "Checks that the variable exists and is not null",
+        "Makes the value null",
+        "Type checks"
+      ]
+    },
+    {
+      "id": 15,
+      "level": "easy",
+      "question": "PHP da class qanday e'lon qilinadi?",
+      "options": [
+        "object MyClass {}",
+        "class MyClass {}",
+        "type MyClass {}",
+        "struct MyClass {}"
+      ],
+      "answer": 1,
+      "question_ru": "Как объявить класс в PHP?",
+      "question_en": "How to declare a class in PHP?",
+      "options_ru": [
+        "объект MyClass {}",
+        "класс МойКласс {}",
+        "введите MyClass {}",
+        "структура MyClass {}"
+      ],
+      "options_en": [
+        "object MyClass {}",
+        "class MyClass {}",
+        "type MyClass {}",
+        "struct MyClass {}"
+      ]
+    },
+    {
+      "id": 16,
+      "level": "medium",
+      "question": "PHP da PDO nima?",
+      "options": [
+        "PHP DOM Object",
+        "PHP Data Objects — ma'lumotlar bazasi bilan abstraktsiya qatlamli ishlash",
+        "Python Data Operations",
+        "PHP Debug Output"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое PDO в PHP?",
+      "question_en": "What is PDO in PHP?",
+      "options_ru": [
+        "PHP-объект DOM",
+        "Объекты данных PHP — это уровень абстракции для работы с базами данных.",
+        "Операции с данными Python",
+        "Вывод отладки PHP"
+      ],
+      "options_en": [
+        "PHP DOM Object",
+        "PHP Data Objects — ma'lumotlar bazasi bilan abstraktsiya qatlamli ishlash",
+        "Python Data Operations",
+        "PHP Debug Output"
+      ]
+    },
+    {
+      "id": 17,
+      "level": "medium",
+      "question": "PHP da prepared statements nima uchun?",
+      "options": [
+        "Tezroq so'rovlar",
+        "SQL injection dan himoya qiluvchi parametrlangan SQL so'rovlar",
+        "Cached queries",
+        "Stored procedures"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем готовить операторы в PHP?",
+      "question_en": "PHP da prepared statements nima uchun?",
+      "options_ru": [
+        "Более быстрые запросы",
+        "Параметризованные SQL-запросы, защищающие от SQL-инъекций.",
+        "Кэшированные запросы",
+        "Хранимые процедуры"
+      ],
+      "options_en": [
+        "Faster requests",
+        "SQL injection dan himoya qiluvchi parametrlangan SQL so'rovlar",
+        "Cached queries",
+        "Stored procedures"
+      ]
+    },
+    {
+      "id": 18,
+      "level": "medium",
+      "question": "PHP da namespace nima uchun?",
+      "options": [
+        "Fayl nomi",
+        "Klass, funksiya va konstantalar nomlar ziddiyatini oldini olish",
+        "URL namespace",
+        "Module namespace"
+      ],
+      "answer": 1,
+      "question_ru": "Почему пространство имен в PHP?",
+      "question_en": "Why namespace in PHP?",
+      "options_ru": [
+        "Имя файла",
+        "Избегайте конфликтов имен классов, функций и констант.",
+        "пространство имен URL",
+        "Пространство имен модуля"
+      ],
+      "options_en": [
+        "Fayl nomi",
+        "Avoid name conflicts of classes, functions and constants",
+        "URL namespace",
+        "Module namespace"
+      ]
+    },
+    {
+      "id": 19,
+      "level": "medium",
+      "question": "PHP da trait nima?",
+      "options": [
+        "Klass atributi",
+        "Ko'p klasslar o'rtasida metod ulashish mexanizmi — multiple inheritance alternativa",
+        "Interface turi",
+        "Abstract klass"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое черта в PHP?",
+      "question_en": "What is a trait in PHP?",
+      "options_ru": [
+        "Атрибут класса",
+        "Механизм совместного использования методов между несколькими классами является альтернативой множественному наследованию.",
+        "Тип интерфейса",
+        "Абстрактный класс"
+      ],
+      "options_en": [
+        "A class attribute",
+        "A method sharing mechanism between multiple classes is an alternative to multiple inheritance",
+        "Interface type",
+        "Abstract class"
+      ]
+    },
+    {
+      "id": 20,
+      "level": "medium",
+      "question": "PHP da interface nima?",
+      "options": [
+        "Grafik interfeys",
+        "Klasslar bajarishi kerak bo'lgan metodlar kontrakti",
+        "Abstract klass",
+        "Trait turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое интерфейс в PHP?",
+      "question_en": "What is an interface in PHP?",
+      "options_ru": [
+        "Графический интерфейс",
+        "Контракт для методов, которые должны реализовать классы",
+        "Абстрактный класс",
+        "Тип черты"
+      ],
+      "options_en": [
+        "Graphical interface",
+        "A contract for methods that classes must implement",
+        "Abstract class",
+        "Trait type"
+      ]
+    },
+    {
+      "id": 21,
+      "level": "medium",
+      "question": "PHP da abstract class nima?",
+      "options": [
+        "Klass turi",
+        "Ob'ekt yaratib bo'lmaydigan, implement bo'lmagan metodlari bo'lishi mumkin bo'lgan klass",
+        "Interface turi",
+        "Trait turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое абстрактный класс в PHP?",
+      "question_en": "What is an abstract class in PHP?",
+      "options_ru": [
+        "Тип класса",
+        "Класс, который может иметь нереализующие методы, которые не могут создать объект.",
+        "Тип интерфейса",
+        "Тип черты"
+      ],
+      "options_en": [
+        "Klass turi",
+        "A class that can have non-implementing methods that cannot create an object",
+        "Interface type",
+        "Trait type"
+      ]
+    },
+    {
+      "id": 22,
+      "level": "medium",
+      "question": "PHP da static nima uchun?",
+      "options": [
+        "Doimiy qiymat",
+        "Klass darajasida — ob'ekt yaratmasdan kirish mumkin; late static binding uchun",
+        "Freeze qilish",
+        "Memory optimallashtirish"
+      ],
+      "answer": 1,
+      "question_ru": "Почему статический в PHP?",
+      "question_en": "Why static in PHP?",
+      "options_ru": [
+        "Постоянное значение",
+        "На уровне класса — доступ возможен без создания объекта; для поздней статической привязки",
+        "Заморозить",
+        "Оптимизация памяти"
+      ],
+      "options_en": [
+        "Constant value",
+        "At the class level — can be accessed without creating an object; for late static binding",
+        "Freeze",
+        "Memory optimization"
+      ]
+    },
+    {
+      "id": 23,
+      "level": "medium",
+      "question": "PHP da Composer nima?",
+      "options": [
+        "PHP kompilyator",
+        "PHP kutubxonalari va dependency boshqarish vositasi",
+        "Build tool",
+        "Code generator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Composer в PHP?",
+      "question_en": "What is Composer in PHP?",
+      "options_ru": [
+        "PHP-компилятор",
+        "Библиотеки PHP и инструмент управления зависимостями",
+        "Инструмент сборки",
+        "Генератор кода"
+      ],
+      "options_en": [
+        "PHP compiler",
+        "PHP kutubxonalari va dependency boshqarish vositasi",
+        "Build tool",
+        "Code generator"
+      ]
+    },
+    {
+      "id": 24,
+      "level": "medium",
+      "question": "PHP da exception handling nima?",
+      "options": [
+        "Error ignore",
+        "try-catch-finally bloki bilan xatolarni tutib boshqarish",
+        "Error log",
+        "die() ishlatish"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое обработка исключений в PHP?",
+      "question_en": "What is exception handling in PHP?",
+      "options_ru": [
+        "Ошибка игнорировать",
+        "Обработка ошибок с помощью блока try-catch-finally.",
+        "Журнал ошибок",
+        "использование кубика()"
+      ],
+      "options_en": [
+        "Error ignore",
+        "Handle errors with a try-catch-finally block",
+        "Error log",
+        "using die()"
+      ]
+    },
+    {
+      "id": 25,
+      "level": "medium",
+      "question": "PHP da array_map() nima qiladi?",
+      "options": [
+        "Array filter",
+        "Callback funksiyani massiv elementlariga qo'llab yangi massiv yaratadi",
+        "Array sort",
+        "Array search"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает array_map() в PHP?",
+      "question_en": "What does array_map() do in PHP?",
+      "options_ru": [
+        "Массивный фильтр",
+        "Обратный вызов создает новый массив, применяя функцию к элементам массива.",
+        "Сортировка массива",
+        "Поиск по массиву"
+      ],
+      "options_en": [
+        "Array filter",
+        "Callback funksiyani massiv elementlariga qo'llab yangi massiv yaratadi",
+        "Array sort",
+        "Array search"
+      ]
+    },
+    {
+      "id": 26,
+      "level": "medium",
+      "question": "PHP da array_filter() nima qiladi?",
+      "options": [
+        "Array map",
+        "Callback shart bo'yicha massiv elementlarini filterlaydi",
+        "Array sort",
+        "Array merge"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает array_filter() в PHP?",
+      "question_en": "What does array_filter() do in PHP?",
+      "options_ru": [
+        "Карта массива",
+        "Обратный вызов фильтрует элементы массива по условию",
+        "Сортировка массива",
+        "Объединение массива"
+      ],
+      "options_en": [
+        "Array map",
+        "The callback filters the elements of the array according to the condition",
+        "Array sort",
+        "Array merge"
+      ]
+    },
+    {
+      "id": 27,
+      "level": "medium",
+      "question": "PHP da $_FILES nima uchun?",
+      "options": [
+        "Fayl ro'yxati",
+        "Yuklangan fayllar haqida ma'lumot — name, type, size, tmp_name, error",
+        "File manager",
+        "Upload array"
+      ],
+      "answer": 1,
+      "question_ru": "Для чего нужна $_FILES в PHP?",
+      "question_en": "What is $_FILES for in PHP?",
+      "options_ru": [
+        "Список файлов",
+        "Информация о загруженных файлах — имя, тип, размер, tmp_name, ошибка.",
+        "Файловый менеджер",
+        "Загрузить массив"
+      ],
+      "options_en": [
+        "File list",
+        "Information about downloaded files — name, type, size, tmp_name, error",
+        "File manager",
+        "Upload array"
+      ]
+    },
+    {
+      "id": 28,
+      "level": "medium",
+      "question": "PHP da OOP da __construct nima?",
+      "options": [
+        "Ob'ekt o'chirish",
+        "Ob'ekt yaratilganda chaqiriladigan konstruktor metod",
+        "Statik metod",
+        "Magic metod"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое __construct в ООП в PHP?",
+      "question_en": "What is __construct in OOP in PHP?",
+      "options_ru": [
+        "Удалить объект",
+        "Метод конструктора, который вызывается при создании объекта.",
+        "Статический метод",
+        "Магический метод"
+      ],
+      "options_en": [
+        "Delete object",
+        "A constructor method that is called when an object is created",
+        "Static method",
+        "Magic method"
+      ]
+    },
+    {
+      "id": 29,
+      "level": "medium",
+      "question": "PHP da final kalit so'zi nima qiladi?",
+      "options": [
+        "Funksiya tugaydi",
+        "final class — meros olinmaydi; final method — override qilinmaydi",
+        "Statik qiladi",
+        "Doimiy qiladi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает последнее ключевое слово в PHP?",
+      "question_en": "What does the final keyword do in PHP?",
+      "options_ru": [
+        "Функция завершается",
+        "финальный класс — без наследования; последний метод — не переопределяется",
+        "Statik qiladi",
+        "Делает это постоянным"
+      ],
+      "options_en": [
+        "The function ends",
+        "final class — no inheritance; final method — not overridden",
+        "Makes it static",
+        "Makes it permanent"
+      ]
+    },
+    {
+      "id": 30,
+      "level": "medium",
+      "question": "PHP da magic methods (__get, __set, __call) nima uchun?",
+      "options": [
+        "Magic funksiyalar",
+        "Mavjud bo'lmagan xususiyat/metod ga murojaatda maxsus xatti-harakat",
+        "Override qilish",
+        "Event handling"
+      ],
+      "answer": 1,
+      "question_ru": "Зачем нужны магические методы (__get, __set, __call) в PHP?",
+      "question_en": "Why magic methods (__get, __set, __call) in PHP?",
+      "options_ru": [
+        "Волшебные функции",
+        "Особое поведение при вызове несуществующего свойства/метода",
+        "Переопределить",
+        "Обработка событий"
+      ],
+      "options_en": [
+        "Magic funksiyalar",
+        "Special behavior when calling a non-existent property/method",
+        "Override",
+        "Event handling"
+      ]
+    },
+    {
+      "id": 31,
+      "level": "medium",
+      "question": "PHP da str_contains() funksiyasi nima qiladi (PHP 8)?",
+      "options": [
+        "String yaratadi",
+        "String ichida boshqa string borligini tekshiradi",
+        "String kesadi",
+        "String topadi"
+      ],
+      "answer": 1,
+      "question_ru": "Что делает функция str_contains() в PHP (PHP 8)?",
+      "question_en": "What does the str_contains() function do in PHP (PHP 8)?",
+      "options_ru": [
+        "Создает строку",
+        "Проверяет, содержит ли строка другую строку",
+        "Обрезка струн",
+        "Находит строку"
+      ],
+      "options_en": [
+        "Creates a string",
+        "Checks if a string contains another string",
+        "String cuts",
+        "Finds a string"
+      ]
+    },
+    {
+      "id": 32,
+      "level": "medium",
+      "question": "PHP da match expression nima (PHP 8)?",
+      "options": [
+        "Switch-case",
+        "Strict comparison bilan switch ga o'xshash ixcham sintaksis — qiymat qaytaradi",
+        "Ternary operator",
+        "If-else"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое выражение соответствия в PHP (PHP 8)?",
+      "question_en": "What is match expression in PHP (PHP 8)?",
+      "options_ru": [
+        "Корпус переключателя",
+        "Компактный синтаксис, аналогичный переключателю со строгим сравнением — возвращает значение.",
+        "Тернарный оператор",
+        "Если-иначе"
+      ],
+      "options_en": [
+        "Switch-case",
+        "A compact syntax similar to switch with strict comparison — returns a value",
+        "Ternary operator",
+        "If-else"
+      ]
+    },
+    {
+      "id": 33,
+      "level": "medium",
+      "question": "PHP da named arguments nima (PHP 8)?",
+      "options": [
+        "Nomlangan o'zgaruvchilar",
+        "Funksiya argumentlarini nomi bilan uzatish — tartib muhim emas",
+        "Default arguments",
+        "Optional args"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое именованные аргументы в PHP (PHP 8)?",
+      "question_en": "What are named arguments in PHP (PHP 8)?",
+      "options_ru": [
+        "Именованные переменные",
+        "Передача аргументов функции по имени — порядок не имеет значения",
+        "Аргументы по умолчанию",
+        "Необязательные аргументы"
+      ],
+      "options_en": [
+        "Named variables",
+        "Passing function arguments by name — the order does not matter",
+        "Default arguments",
+        "Optional args"
+      ]
+    },
+    {
+      "id": 34,
+      "level": "medium",
+      "question": "PHP da union types nima (PHP 8)?",
+      "options": [
+        "Tip birlashtirish",
+        "Bir nechta tipdan biri bo'lishi mumkin: function foo(int|string $val)",
+        "Multiple types",
+        "Type alias"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое типы объединения в PHP (PHP 8)?",
+      "question_en": "What are union types in PHP (PHP 8)?",
+      "options_ru": [
+        "Тип объединения",
+        "Может быть одним из нескольких типов: function foo(int|string $val)",
+        "Несколько типов",
+        "Введите псевдоним"
+      ],
+      "options_en": [
+        "Merge type",
+        "Can be one of several types: function foo(int|string $val)",
+        "Multiple types",
+        "Type alias"
+      ]
+    },
+    {
+      "id": 35,
+      "level": "medium",
+      "question": "PHP da nullsafe operator (?->) nima?",
+      "options": [
+        "Null tekshirish",
+        "Null bo'lsa zanjirni to'xtatib null qaytaradi — $user?->getAddress()?->getCity()",
+        "Optional chaining",
+        "Null coalescing"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое нулевой оператор (?->) в PHP?",
+      "question_en": "PHP da nullsafe operator (?->) nima?",
+      "options_ru": [
+        "Нулевая проверка",
+        "Если оно равно нулю, цепочка останавливается и возвращается значение null — $user?->getAddress()?->getCity().",
+        "Дополнительное связывание",
+        "Нулевое объединение"
+      ],
+      "options_en": [
+        "Null check",
+        "If it is null, it stops the chain and returns null — $user?->getAddress()?->getCity()",
+        "Optional chaining",
+        "Null coalescing"
+      ]
+    },
+    {
+      "id": 36,
+      "level": "hard",
+      "question": "PHP da Fibers nima (PHP 8.1)?",
+      "options": [
+        "Thread turi",
+        "Cooperative multitasking uchun coroutine — to'xtatib davom ettirish imkoni",
+        "Async function",
+        "Generator turi"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое волокна в PHP (PHP 8.1)?",
+      "question_en": "What is Fibers in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Тип резьбы",
+        "Сопрограмма для совместной многозадачности — возможность приостанавливать и возобновлять работу.",
+        "Асинхронная функция",
+        "Тип генератора"
+      ],
+      "options_en": [
+        "Thread type",
+        "A coroutine for cooperative multitasking — the ability to pause and resume",
+        "Async function",
+        "Generator type"
+      ]
+    },
+    {
+      "id": 37,
+      "level": "hard",
+      "question": "PHP da Enums nima (PHP 8.1)?",
+      "options": [
+        "Raqamlar to'plami",
+        "Belgilangan konstantalar to'plami — backed (string/int) va pure enums",
+        "Constant group",
+        "Type union"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое перечисления в PHP (PHP 8.1)?",
+      "question_en": "What are Enums in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Набор цифр",
+        "Набор определенных констант — поддерживаемые (строка/целое) и чистые перечисления",
+        "Постоянная группа",
+        "Тип объединения"
+      ],
+      "options_en": [
+        "A set of numbers",
+        "Set of defined constants — backed (string/int) and pure enums",
+        "Constant group",
+        "Type union"
+      ]
+    },
+    {
+      "id": 38,
+      "level": "hard",
+      "question": "PHP da readonly properties nima (PHP 8.1)?",
+      "options": [
+        "Read-only fayl",
+        "Bir marta yoziladigan xususiyat — konstruktorda belgilanadi, keyin o'zgartirib bo'lmaydi",
+        "Immutable value",
+        "Const property"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое свойства только для чтения в PHP (PHP 8.1)?",
+      "question_en": "What is readonly properties in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Файл только для чтения",
+        "Свойство однократной записи определяется в конструкторе и не может быть изменено позже.",
+        "Неизменяемое значение",
+        "Константное свойство"
+      ],
+      "options_en": [
+        "Read-only file",
+        "A write-once property is defined in the constructor and cannot be changed later",
+        "Immutable value",
+        "Const property"
+      ]
+    },
+    {
+      "id": 39,
+      "level": "hard",
+      "question": "PHP da JIT compilation nima (PHP 8)?",
+      "options": [
+        "Java JIT",
+        "Bytecode ni runtime da mahalliy mashin kodiga aylantirish — CPU intensive ilovalar uchun",
+        "PHP compile",
+        "Zend JIT"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое JIT-компиляция в PHP (PHP 8)?",
+      "question_en": "PHP da JIT compilation nima (PHP 8)?",
+      "options_ru": [
+        "Java JIT-компиляция",
+        "Преобразование байт-кода в собственный машинный код во время выполнения — для приложений с интенсивным использованием ЦП.",
+        "Скомпилировать PHP",
+        "Зенд JIT"
+      ],
+      "options_en": [
+        "Java JIT",
+        "Convert bytecode to native machine code at runtime — for CPU intensive applications",
+        "Compile PHP",
+        "Zend JIT"
+      ]
+    },
+    {
+      "id": 40,
+      "level": "hard",
+      "question": "PHP da Opcache nima?",
+      "options": [
+        "Op keshi",
+        "PHP skriptlar bytecode ni kesh qilib, har so'rovda qayta parse qilishdan qochish",
+        "Cache module",
+        "Output cache"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое Opcache в PHP?",
+      "question_en": "What is Opcache in PHP?",
+      "options_ru": [
+        "Операционный кеш",
+        "PHP-скрипты кэшируют байт-код, чтобы избежать повторного анализа при каждом запросе.",
+        "Модуль кэша",
+        "Выходной кэш"
+      ],
+      "options_en": [
+        "Op keshi",
+        "PHP scripts cache bytecode to avoid re-parsing on every request",
+        "Cache module",
+        "Output cache"
+      ]
+    },
+    {
+      "id": 41,
+      "level": "hard",
+      "question": "PHP da Dependency Injection Container nima?",
+      "options": [
+        "DI konteyner",
+        "Ob'ektlar va bog'liqliklarini avtomatik boshqaruvchi — Laravel ServiceContainer kabi",
+        "Injection tool",
+        "Service locator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое контейнер внедрения зависимостей в PHP?",
+      "question_en": "What is Dependency Injection Container in PHP?",
+      "options_ru": [
+        "DI-контейнер",
+        "Автоматический менеджер объектов и зависимостей — например, ServiceContainer в Laravel.",
+        "Инструмент для инъекций",
+        "Поиск сервисов"
+      ],
+      "options_en": [
+        "DI container",
+        "An automatic manager of objects and dependencies — like Laravel's ServiceContainer",
+        "Injection tool",
+        "Service locator"
+      ]
+    },
+    {
+      "id": 42,
+      "level": "hard",
+      "question": "PHP da PSR standartlari nima uchun?",
+      "options": [
+        "PHP Security Rules",
+        "PHP-FIG tomonidan tasdiqlangan kod yozish standarti — autoloading, logging, HTTP kabi",
+        "PHP coding style",
+        "PHP framework"
+      ],
+      "answer": 1,
+      "question_ru": "Почему стандарты PSR в PHP?",
+      "question_en": "Why PSR standards in PHP?",
+      "options_ru": [
+        "Правила безопасности PHP",
+        "Стандарт написания кода, одобренный PHP-FIG, например автозагрузка, ведение журнала, HTTP.",
+        "Стиль кодирования PHP",
+        "PHP-фреймворк"
+      ],
+      "options_en": [
+        "PHP Security Rules",
+        "Code writing standard approved by PHP-FIG — such as autoloading, logging, HTTP",
+        "PHP coding style",
+        "PHP framework"
+      ]
+    },
+    {
+      "id": 43,
+      "level": "hard",
+      "question": "PHP da Generators nima?",
+      "options": [
+        "Kod generator",
+        "yield bilan katta ma'lumot to'plamlarini xotirani tejab ketma-ket qaytaruvchi funksiya",
+        "Random generator",
+        "Data generator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое генераторы в PHP?",
+      "question_en": "What are Generators in PHP?",
+      "options_ru": [
+        "Генератор кода",
+        "выход — это функция, которая последовательно возвращает большие наборы данных с эффективным использованием памяти.",
+        "Случайный генератор",
+        "Генератор данных"
+      ],
+      "options_en": [
+        "Code generator",
+        "yield is a function that sequentially returns large data sets in a memory-efficient fashion",
+        "Random generator",
+        "Data generator"
+      ]
+    },
+    {
+      "id": 44,
+      "level": "hard",
+      "question": "PHP da SPL (Standard PHP Library) nima?",
+      "options": [
+        "Standard library",
+        "Ma'lumotlar tuzilmasi, iteratorlar, interfeyslari — SplStack, SplQueue, SplHeap va boshqalar",
+        "PHP utility",
+        "Extension"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое SPL (стандартная библиотека PHP) в PHP?",
+      "question_en": "What is SPL (Standard PHP Library) in PHP?",
+      "options_ru": [
+        "Стандартная библиотека",
+        "Структуры данных, итераторы, интерфейсы — SplStack, SplQueue, SplHeap и т. д.",
+        "PHP-утилита",
+        "Расширение"
+      ],
+      "options_en": [
+        "Standard library",
+        "Data structures, iterators, interfaces — SplStack, SplQueue, SplHeap, etc.",
+        "PHP utility",
+        "Extension"
+      ]
+    },
+    {
+      "id": 45,
+      "level": "hard",
+      "question": "PHP da Reflection API nima?",
+      "options": [
+        "Kodni aks ettirish",
+        "Runtime da klass, metod, xususiyat haqida ma'lumot olish va o'zgartirish",
+        "Meta-programming",
+        "Code analysis"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое API отражения в PHP?",
+      "question_en": "What is Reflection API in PHP?",
+      "options_ru": [
+        "Зеркальное отображение кода",
+        "Получайте и изменяйте информацию о классе, методе, свойстве во время выполнения.",
+        "Метапрограммирование",
+        "Анализ кода"
+      ],
+      "options_en": [
+        "Code mirroring",
+        "Get and change information about a class, method, property at runtime",
+        "Meta-programming",
+        "Code analysis"
+      ]
+    },
+    {
+      "id": 46,
+      "level": "hard",
+      "question": "PHP da Intersection types nima (PHP 8.1)?",
+      "options": [
+        "Tip kesishish",
+        "Bir vaqtda bir nechta interfeysni implement qilgan tip: TypeA&TypeB",
+        "Union type",
+        "Multiple interface"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое типы пересечений в PHP (PHP 8.1)?",
+      "question_en": "What are Intersection types in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Тип пересечения",
+        "Тип, реализующий несколько интерфейсов одновременно: TypeA&TypeB.",
+        "Тип союза",
+        "Несколько интерфейсов"
+      ],
+      "options_en": [
+        "Type crossing",
+        "A type that implements several interfaces simultaneously: TypeA&TypeB",
+        "Union type",
+        "Multiple interface"
+      ]
+    },
+    {
+      "id": 47,
+      "level": "hard",
+      "question": "PHP da never return type nima (PHP 8.1)?",
+      "options": [
+        "Hech nima qaytarmaydi",
+        "Funksiya hech qachon normal tugamasligini bildiradi — exit() yoki exception chiqaradi",
+        "Null return",
+        "Void return"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое никогда не возвращаемый тип в PHP (PHP 8.1)?",
+      "question_en": "What is never return type in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Ничего не возвращается",
+        "Указывает, что функция никогда не завершается нормально — exit() или выдает исключение.",
+        "Нулевой возврат",
+        "Пустое возвращение"
+      ],
+      "options_en": [
+        "Nothing returns",
+        "Indicates that the function never terminates normally — exit() or throws an exception",
+        "Null return",
+        "Void return"
+      ]
+    },
+    {
+      "id": 48,
+      "level": "hard",
+      "question": "PHP da array unpacking with string keys nima (PHP 8.1)?",
+      "options": [
+        "Array spread",
+        "[...$array1, ...$array2] — string kalitli massivlarni ham spread qilish imkoni",
+        "Array merge",
+        "Spread operator"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое распаковка массива с помощью строковых ключей в PHP (PHP 8.1)?",
+      "question_en": "What is array unpacking with string keys in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Распространение массива",
+        "[...$array1, ...$array2] — возможность распространения массивов строковыми ключами",
+        "Объединение массива",
+        "Оператор распространения"
+      ],
+      "options_en": [
+        "Array spread",
+        "[...$array1, ...$array2] — possibility to spread arrays with string keys",
+        "Array merge",
+        "Spread operator"
+      ]
+    },
+    {
+      "id": 49,
+      "level": "hard",
+      "question": "PHP da first class callable syntax nima (PHP 8.1)?",
+      "options": [
+        "Callable type",
+        "strlen(...) — funksiya yoki metoddan closure yaratish — array_map(strlen(...), $arr)",
+        "Lambda syntax",
+        "Function reference"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое вызываемый синтаксис первого класса в PHP (PHP 8.1)?",
+      "question_en": "What is first class callable syntax in PHP (PHP 8.1)?",
+      "options_ru": [
+        "Вызываемый тип",
+        "strlen(...) — создать замыкание из функции или метода — array_map(strlen(...), $arr)",
+        "Лямбда-синтаксис",
+        "Справочник по функциям"
+      ],
+      "options_en": [
+        "Callable type",
+        "strlen(...) — create a closure from a function or method — array_map(strlen(...), $arr)",
+        "Lambda syntax",
+        "Function reference"
+      ]
+    },
+    {
+      "id": 50,
+      "level": "hard",
+      "question": "PHP da Weak references nima?",
+      "options": [
+        "Zaif referens",
+        "Ob'ektga zaif havola — garbage collection uchun to'siq bo'lmaydi",
+        "Soft reference",
+        "Object reference"
+      ],
+      "answer": 1,
+      "question_ru": "Что такое слабые ссылки в PHP?",
+      "question_en": "What are Weak references in PHP?",
+      "options_ru": [
+        "Слабая ссылка",
+        "Слабая ссылка на объект не препятствует сборке мусора.",
+        "Мягкая ссылка",
+        "Ссылка на объект"
+      ],
+      "options_en": [
+        "Weak reference",
+        "A weak reference to an object does not prevent garbage collection",
+        "Soft reference",
+        "Object reference"
+      ]
+    }
   ]
 }
