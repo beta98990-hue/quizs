@@ -13,13 +13,13 @@
         "Colorful Style Sheets"
       ],
       "answer": 0,
-      "question_ru": "Что означает CSS?",
-      "question_en": "What does CSS mean?",
+      "question_ru": "CSS qisqartmasi nimani anglatadi?",
+      "question_en": "CSS qisqartmasi nimani anglatadi?",
       "options_ru": [
-        "Каскадные таблицы стилей",
-        "Компьютерные таблицы стилей",
-        "Система креативного стиля",
-        "Красочные таблицы стилей"
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style System",
+        "Colorful Style Sheets"
       ],
       "options_en": [
         "Cascading Style Sheets",
@@ -39,13 +39,13 @@
         "bg-color: red;"
       ],
       "answer": 2,
-      "question_ru": "Как установить цвет фона в CSS?",
-      "question_en": "How do you set a background color in CSS?",
+      "question_ru": "CSS da fon rangini qanday belgilaysiz?",
+      "question_en": "CSS da fon rangini qanday belgilaysiz?",
       "options_ru": [
-        "цвет: красный;",
-        "цвет шрифта: красный;",
-        "цвет фона: красный;",
-        "bg-цвет: красный;"
+        "color: red;",
+        "font-color: red;",
+        "background-color: red;",
+        "bg-color: red;"
       ],
       "options_en": [
         "color: red;",
@@ -65,13 +65,13 @@
         "foreground: blue;"
       ],
       "answer": 1,
-      "question_ru": "Как изменить цвет текста в CSS?",
-      "question_en": "How to change text color in CSS?",
+      "question_ru": "CSS da matn rangini qanday o'zgartirish mumkin?",
+      "question_en": "CSS da matn rangini qanday o'zgartirish mumkin?",
       "options_ru": [
-        "цвет текста: синий;",
-        "цвет: синий;",
-        "цвет шрифта: синий;",
-        "передний план: синий;"
+        "text-color: blue;",
+        "color: blue;",
+        "font-color: blue;",
+        "foreground: blue;"
       ],
       "options_en": [
         "text-color: blue;",
@@ -91,13 +91,13 @@
         "font: 16px;"
       ],
       "answer": 1,
-      "question_ru": "Как установить размер шрифта в CSS?",
-      "question_en": "How do you set the font size in CSS?",
+      "question_ru": "CSS da shrift o'lchamini qanday belgilaysiz?",
+      "question_en": "CSS da shrift o'lchamini qanday belgilaysiz?",
       "options_ru": [
-        "размер текста: 16 пикселей;",
-        "размер шрифта: 16 пикселей;",
-        "размер: 16 пикселей;",
-        "шрифт: 16 пикселей;"
+        "text-size: 16px;",
+        "font-size: 16px;",
+        "size: 16px;",
+        "font: 16px;"
       ],
       "options_en": [
         "text-size: 16px;",
@@ -117,13 +117,13 @@
         "expand: 100px;"
       ],
       "answer": 2,
-      "question_ru": "Как определить ширину элемента в CSS?",
-      "question_en": "How to determine the width of an element in CSS?",
+      "question_ru": "CSS da elementning kengligi qanday belgilanadi?",
+      "question_en": "CSS da elementning kengligi qanday belgilanadi?",
       "options_ru": [
-        "размер: 100 пикселей;",
-        "длина: 100 пикселей;",
-        "ширина: 100 пикселей;",
-        "развернуть: 100 пикселей;"
+        "size: 100px;",
+        "length: 100px;",
+        "width: 100px;",
+        "expand: 100px;"
       ],
       "options_en": [
         "size: 100px;",
@@ -143,16 +143,16 @@
         "height: 100px;"
       ],
       "answer": 3,
-      "question_ru": "Как определить высоту элемента в CSS?",
-      "question_en": "How to determine the height of an element in CSS?",
+      "question_ru": "CSS da elementning balandligi qanday belgilanadi?",
+      "question_en": "CSS da elementning balandligi qanday belgilanadi?",
       "options_ru": [
-        "высота: 100 пикселей;",
-        "высота: 100 пикселей;",
-        "глубина: 100 пикселей;",
-        "высота: 100 пикселей;"
+        "high: 100px;",
+        "tall: 100px;",
+        "depth: 100px;",
+        "height: 100px;"
       ],
       "options_en": [
-        "height: 100px;",
+        "high: 100px;",
         "tall: 100px;",
         "depth: 100px;",
         "height: 100px;"
@@ -169,13 +169,13 @@
         "edge: 1px solid black;"
       ],
       "answer": 1,
-      "question_ru": "Как добавить границу в CSS?",
-      "question_en": "How to add a border in CSS?",
+      "question_ru": "CSS da border (chegara) qanday qo'shiladi?",
+      "question_en": "CSS da border (chegara) qanday qo'shiladi?",
       "options_ru": [
-        "контур: сплошной черный толщиной 1 пиксель;",
-        "граница: 1 пиксель, сплошная черная;",
-        "рамка: 1 пиксель, сплошной черный;",
-        "край: 1 пиксель, сплошной черный;"
+        "outline: 1px solid black;",
+        "border: 1px solid black;",
+        "frame: 1px solid black;",
+        "edge: 1px solid black;"
       ],
       "options_en": [
         "outline: 1px solid black;",
@@ -195,13 +195,13 @@
         "center: text;"
       ],
       "answer": 2,
-      "question_ru": "Как центрировать текст в CSS?",
-      "question_en": "How do you center text in CSS?",
+      "question_ru": "CSS da matnni markazga qanday hizalaysiz?",
+      "question_en": "CSS da matnni markazga qanday hizalaysiz?",
       "options_ru": [
-        "текстовая позиция: центр;",
-        "выровнять: по центру;",
-        "выравнивание текста: по центру;",
-        "центр: текст;"
+        "text-position: center;",
+        "align: center;",
+        "text-align: center;",
+        "center: text;"
       ],
       "options_en": [
         "text-position: center;",
@@ -221,13 +221,13 @@
         "show: false;"
       ],
       "answer": 2,
-      "question_ru": "Какое свойство используется для скрытия элемента в CSS?",
-      "question_en": "Which property is used to hide an element in CSS?",
+      "question_ru": "CSS da elementni yashirish uchun qaysi xususiyat ishlatiladi?",
+      "question_en": "CSS da elementni yashirish uchun qaysi xususiyat ishlatiladi?",
       "options_ru": [
-        "скрыть: правда;",
-        "видимый: ложь;",
-        "дисплей: нет;",
-        "показать: ложь;"
+        "hide: true;",
+        "visible: false;",
+        "display: none;",
+        "show: false;"
       ],
       "options_en": [
         "hide: true;",
@@ -247,13 +247,13 @@
         ".classname"
       ],
       "answer": 3,
-      "question_ru": "Как написать селектор классов в CSS?",
-      "question_en": "How to write a class selector in CSS?",
+      "question_ru": "CSS da class selektori qanday yoziladi?",
+      "question_en": "CSS da class selektori qanday yoziladi?",
       "options_ru": [
         "#classname",
-        "имя класса",
-        "*имя класса",
-        ".имякласса"
+        "classname",
+        "*classname",
+        ".classname"
       ],
       "options_en": [
         "#classname",
@@ -273,12 +273,12 @@
         "@idname"
       ],
       "answer": 1,
-      "question_ru": "Как написать селектор идентификатора в CSS?",
-      "question_en": "How to write an ID selector in CSS?",
+      "question_ru": "CSS da ID selektori qanday yoziladi?",
+      "question_en": "CSS da ID selektori qanday yoziladi?",
       "options_ru": [
         ".idname",
         "#idname",
-        "*идентификатор",
+        "*idname",
         "@idname"
       ],
       "options_en": [
@@ -299,13 +299,13 @@
         "weight: bold;"
       ],
       "answer": 0,
-      "question_ru": "Как установить вес шрифта в CSS?",
+      "question_ru": "CSS da shrift qalinligini qanday belgilaysiz?",
       "question_en": "CSS da shrift qalinligini qanday belgilaysiz?",
       "options_ru": [
-        "начертание шрифта: жирный;",
-        "текст жирным шрифтом: правда;",
-        "стиль шрифта: жирный;",
-        "вес: жирный;"
+        "font-weight: bold;",
+        "text-bold: true;",
+        "font-style: bold;",
+        "weight: bold;"
       ],
       "options_en": [
         "font-weight: bold;",
@@ -325,19 +325,19 @@
         "Ikkalasi ham bir xil ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между заполнением и полем в CSS?",
-      "question_en": "What is the difference between padding and margin in CSS?",
+      "question_ru": "CSS da padding va margin farqi nima?",
+      "question_en": "CSS da padding va margin farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "отступ — внутреннее пространство, маржа — внешнее пространство",
-        "поле — внутреннее, отступ — внешнее",
-        "Оба работают одинаково"
+        "padding — ichki bo'shliq, margin — tashqi bo'shliq",
+        "margin — ichki, padding — tashqi",
+        "Ikkalasi ham bir xil ishlaydi"
       ],
       "options_en": [
         "There is no difference",
-        "padding — internal space, margin — external space",
-        "margin — internal, padding — external",
-        "Both work the same"
+        "padding — ichki bo'shliq, margin — tashqi bo'shliq",
+        "margin — ichki, padding — tashqi",
+        "Ikkalasi ham bir xil ishlaydi"
       ]
     },
     {
@@ -351,19 +351,19 @@
         "Chegarani rangini o'zgartiradi"
       ],
       "answer": 2,
-      "question_ru": "Что делает border-radius в CSS?",
-      "question_en": "What does border-radius do in CSS?",
+      "question_ru": "CSS da border-radius nima qiladi?",
+      "question_en": "CSS da border-radius nima qiladi?",
       "options_ru": [
-        "Удаляет границу",
-        "Делает границу толще",
-        "Закругляет углы элемента",
-        "Изменяет цвет границы"
+        "Chegarani yo'q qiladi",
+        "Chegarani qalinroq qiladi",
+        "Elementning burchaklarini yumaloqlaydi",
+        "Chegarani rangini o'zgartiradi"
       ],
       "options_en": [
-        "Removes the border",
-        "Makes the border thicker",
-        "Rounds the corners of the element",
-        "Changes the color of the border"
+        "Chegarani yo'q qiladi",
+        "Chegarani qalinroq qiladi",
+        "Elementning burchaklarini yumaloqlaydi",
+        "Chegarani rangini o'zgartiradi"
       ]
     },
     {
@@ -377,19 +377,19 @@
         "Scroll bar qo'shadi"
       ],
       "answer": 1,
-      "question_ru": "Что делает overflow:hidden в CSS?",
-      "question_en": "What does overflow:hidden do in CSS?",
+      "question_ru": "CSS da overflow: hidden nima qiladi?",
+      "question_en": "CSS da overflow: hidden nima qiladi?",
       "options_ru": [
-        "Скрывает элемент",
-        "Если содержимое выходит за пределы элемента, оно будет обрезано.",
-        "Увеличивает элемент",
-        "Добавляет полосу прокрутки"
+        "Elementni yashiradi",
+        "Kontent elementdan chiqib ketsa, kesib tashlaydi",
+        "Elementni kattalashtiradi",
+        "Scroll bar qo'shadi"
       ],
       "options_en": [
-        "Hides the element",
-        "If the content goes outside the element, it will truncate",
-        "Magnifies the element",
-        "Adds a scroll bar"
+        "Elementni yashiradi",
+        "Kontent elementdan chiqib ketsa, kesib tashlaydi",
+        "Elementni kattalashtiradi",
+        "Scroll bar qo'shadi"
       ]
     },
     {
@@ -403,13 +403,13 @@
         "padding, content, margin, border"
       ],
       "answer": 1,
-      "question_ru": "Как устроена блочная модель CSS (наизнанку)?",
-      "question_en": "How is the CSS Box Model arranged (inside out)?",
+      "question_ru": "CSS Box Model qanday tartibda joylashgan (ichidan tashqariga)?",
+      "question_en": "CSS Box Model qanday tartibda joylashgan (ichidan tashqariga)?",
       "options_ru": [
-        "поле, граница, отступы, содержимое",
-        "содержимое, отступы, граница, поля",
-        "граница, содержимое, отступ, поле",
-        "отступы, содержимое, поля, границы"
+        "margin, border, padding, content",
+        "content, padding, border, margin",
+        "border, content, padding, margin",
+        "padding, content, margin, border"
       ],
       "options_en": [
         "margin, border, padding, content",
@@ -429,19 +429,19 @@
         "<body> ga"
       ],
       "answer": 1,
-      "question_ru": "Какова позиция: абсолютный элемент, расположенный относительно CSS?",
+      "question_ru": "CSS da position: absolute elementi nima ga nisbatan joylashadi?",
       "question_en": "CSS da position: absolute elementi nima ga nisbatan joylashadi?",
       "options_ru": [
-        "К первому элементу страницы",
-        "Ближайшая позиция: относительная/абсолютная/фиксированная к родительскому элементу.",
-        "Всегда вверху страницы",
-        "в <тело>"
+        "Sahifaning birinchi elementiga",
+        "Eng yaqin position: relative/absolute/fixed ota elementiga",
+        "Har doim sahifaning boshiga",
+        "<body> ga"
       ],
       "options_en": [
-        "To the first element of the page",
-        "Closest position: relative/absolute/fixed to the parent element",
-        "Always to the top of the page",
-        "to <body>"
+        "Sahifaning birinchi elementiga",
+        "Eng yaqin position: relative/absolute/fixed ota elementiga",
+        "Har doim sahifaning boshiga",
+        "<body> ga"
       ]
     },
     {
@@ -455,19 +455,19 @@
         "Elementni aylantiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает z-index в CSS?",
-      "question_en": "What does z-index do in CSS?",
+      "question_ru": "CSS da z-index nima qiladi?",
+      "question_en": "CSS da z-index nima qiladi?",
       "options_ru": [
         "Elementni gorizontal harakatlantiradi",
-        "Указывает порядок (слой) элемента на вертикальной оси.",
-        "Определяет прозрачность элемента",
-        "Вращает элемент"
+        "Elementning vertikal o'qda tartibini (qatlamini) belgilaydi",
+        "Elementning shaffofligini belgilaydi",
+        "Elementni aylantiradi"
       ],
       "options_en": [
-        "Moves the element horizontally",
+        "Elementni gorizontal harakatlantiradi",
         "Elementning vertikal o'qda tartibini (qatlamini) belgilaydi",
-        "Specifies the element's transparency",
-        "Rotates an element"
+        "Elementning shaffofligini belgilaydi",
+        "Elementni aylantiradi"
       ]
     },
     {
@@ -481,19 +481,19 @@
         "Elementlarni teng kengliklarda joylashtiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает justify-content: space-between в CSS Flexbox?",
+      "question_ru": "CSS Flexbox da justify-content: space-between nima qiladi?",
       "question_en": "CSS Flexbox da justify-content: space-between nima qiladi?",
       "options_ru": [
-        "Центрирует элементы",
-        "Размещает первый и последний элементы по краю, а остальные — на равном расстоянии друг от друга.",
-        "Добавляет равное расстояние между элементами",
-        "Размещает элементы на одинаковой ширине"
+        "Elementlarni markazga joylashtiradi",
+        "Birinchi va oxirgi elementlarni chekkaga, qolganlarni teng oralikda joylashtiradi",
+        "Elementlar orasiga teng bo'shliq qo'shadi",
+        "Elementlarni teng kengliklarda joylashtiradi"
       ],
       "options_en": [
-        "Centers elements",
-        "Places the first and last elements at the edge, and the rest evenly spaced",
-        "Adds equal spacing between elements",
-        "Places elements at equal widths"
+        "Elementlarni markazga joylashtiradi",
+        "Birinchi va oxirgi elementlarni chekkaga, qolganlarni teng oralikda joylashtiradi",
+        "Elementlar orasiga teng bo'shliq qo'shadi",
+        "Elementlarni teng kengliklarda joylashtiradi"
       ]
     },
     {
@@ -507,19 +507,19 @@
         "Element yuklanayotganda stil qo'llash"
       ],
       "answer": 0,
-      "question_ru": "Почему в CSS используется псевдокласс :hover?",
-      "question_en": "Why is the :hover pseudo-class used in CSS?",
+      "question_ru": "CSS da :hover pseudo-class nima uchun ishlatiladi?",
+      "question_en": "CSS da :hover pseudo-class nima uchun ishlatiladi?",
       "options_ru": [
-        "Применение стиля при наведении указателя мыши на элемент",
-        "Применить стиль при щелчке по элементу",
-        "Применить стиль, когда элемент находится в фокусе",
-        "Применить стиль при загрузке элемента"
+        "Element ustiga sichqoncha olib kelinganda stil qo'llash",
+        "Element bosilganda stil qo'llash",
+        "Element fokusga olganda stil qo'llash",
+        "Element yuklanayotganda stil qo'llash"
       ],
       "options_en": [
-        "Apply a style when the mouse is hovered over an element",
-        "Apply a style when an element is clicked",
-        "Apply a style when an element has focus",
-        "Apply styling when an element is loaded"
+        "Element ustiga sichqoncha olib kelinganda stil qo'llash",
+        "Element bosilganda stil qo'llash",
+        "Element fokusga olganda stil qo'llash",
+        "Element yuklanayotganda stil qo'llash"
       ]
     },
     {
@@ -533,19 +533,19 @@
         "JavaScript funksiyalarini chaqirish uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему запрос @media используется в CSS?",
+      "question_ru": "CSS da @media query nima uchun ishlatiladi?",
       "question_en": "CSS da @media query nima uchun ishlatiladi?",
       "options_ru": [
-        "Для создания анимации",
-        "Применение разных стилей для разных размеров экрана",
-        "Чтобы загрузить фотографии",
-        "Чтобы вызвать функции JavaScript"
+        "Animatsiyalar yaratish uchun",
+        "Turli ekran o'lchamlari uchun har xil stillar qo'llash uchun",
+        "Rasmlarni yuklash uchun",
+        "JavaScript funksiyalarini chaqirish uchun"
       ],
       "options_en": [
-        "To create animations",
-        "To apply different styles for different screen sizes",
-        "To upload pictures",
-        "To call JavaScript functions"
+        "Animatsiyalar yaratish uchun",
+        "Turli ekran o'lchamlari uchun har xil stillar qo'llash uchun",
+        "Rasmlarni yuklash uchun",
+        "JavaScript funksiyalarini chaqirish uchun"
       ]
     },
     {
@@ -559,18 +559,18 @@
         "Ikkalasi ham piksellarga bog'liq emas"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между единицами rem и em в CSS?",
-      "question_en": "What is the difference between rem and em units in CSS?",
+      "question_ru": "CSS da rem va em o'lchov birliklari farqi nima?",
+      "question_en": "CSS da rem va em o'lchov birliklari farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "rem относится к размеру шрифта корневого элемента, em относится к размеру шрифта родительского элемента.",
-        "em — корневой элемент, rem — родительский элемент",
-        "Ни один из пикселей не зависит"
+        "rem — root element font hajmiga nisbatan, em — ota element font hajmiga nisbatan",
+        "em — root element, rem — ota element",
+        "Ikkalasi ham piksellarga bog'liq emas"
       ],
       "options_en": [
         "There is no difference",
-        "rem is relative to the font size of the root element, em is relative to the font size of the parent element",
-        "em — root element, rem — parent element",
+        "rem — root element font hajmiga nisbatan, em — ota element font hajmiga nisbatan",
+        "em — root element, rem — ota element",
         "Ikkalasi ham piksellarga bog'liq emas"
       ]
     },
@@ -585,19 +585,19 @@
         "Elementni kattalashtirish/kichraytirish"
       ],
       "answer": 1,
-      "question_ru": "Почему переход используется в CSS?",
-      "question_en": "Why is transition used in CSS?",
+      "question_ru": "CSS da transition nima uchun ishlatiladi?",
+      "question_en": "CSS da transition nima uchun ishlatiladi?",
       "options_ru": [
-        "Изменить положение элемента",
-        "Плавная анимация изменения свойств",
-        "Поворот элемента",
+        "Elementni joyini o'zgartirish",
+        "Xususiyat o'zgarishlarini silliq animatsiya qilish",
+        "Elementni aylantirish",
         "Elementni kattalashtirish/kichraytirish"
       ],
       "options_en": [
-        "Change the position of the element",
-        "Smooth animation of property changes",
-        "Rotate an element",
-        "Zoom in/out on an item"
+        "Elementni joyini o'zgartirish",
+        "Xususiyat o'zgarishlarini silliq animatsiya qilish",
+        "Elementni aylantirish",
+        "Elementni kattalashtirish/kichraytirish"
       ]
     },
     {
@@ -611,19 +611,19 @@
         "3 ta element joylaydi"
       ],
       "answer": 0,
-      "question_ru": "Что делает Grid-template-columns: повторение(3, 1fr) в CSS Grid?",
-      "question_en": "What does grid-template-columns: repeat(3, 1fr) do in CSS Grid?",
+      "question_ru": "CSS Grid da grid-template-columns: repeat(3, 1fr) nima qiladi?",
+      "question_en": "CSS Grid da grid-template-columns: repeat(3, 1fr) nima qiladi?",
       "options_ru": [
-        "Создает 3 столбца одинаковой ширины.",
-        "Создает 3 строки одинаковой высоты.",
-        "Делит сетку на 3",
-        "Размещает 3 предмета"
+        "3 ta teng kenglikdagi ustun yaratadi",
+        "3 ta teng balandlikdagi qator yaratadi",
+        "Gridni 3 ga bo'ladi",
+        "3 ta element joylaydi"
       ],
       "options_en": [
-        "Creates 3 columns of equal width",
-        "Creates 3 rows of equal height",
-        "Divides the grid into 3",
-        "Places 3 items"
+        "3 ta teng kenglikdagi ustun yaratadi",
+        "3 ta teng balandlikdagi qator yaratadi",
+        "Gridni 3 ga bo'ladi",
+        "3 ta element joylaydi"
       ]
     },
     {
@@ -637,19 +637,19 @@
         "visibility:hidden elementni DOM dan butunlay o'chiradi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между непрозрачностью: 0 и видимостью: скрыто в CSS?",
+      "question_ru": "CSS da opacity: 0 va visibility: hidden farqi nima?",
       "question_en": "CSS da opacity: 0 va visibility: hidden farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "opacity:0 сохраняет положение элемента и делает его прозрачным; видимость:скрытый также скрывается на месте; ни один из них не будет кликабельным",
-        "opacity:0 тоже не занимает места",
-        "Visibility:hidden полностью удаляет элемент из DOM."
+        "opacity:0 element joyini saqlab qoladi va shaffof qiladi; visibility:hidden ham joyini saqlab yashiradi; ikkalasi ham bosiladigan bo'lmaydi",
+        "opacity:0 joyni ham olmaydi",
+        "visibility:hidden elementni DOM dan butunlay o'chiradi"
       ],
       "options_en": [
         "There is no difference",
-        "opacity:0 keeps the element position and makes it transparent; visibility:hidden also hides in place; neither will be clickable",
-        "opacity:0 doesn't take up space either",
-        "visibility:hidden completely removes the element from the DOM"
+        "opacity:0 element joyini saqlab qoladi va shaffof qiladi; visibility:hidden ham joyini saqlab yashiradi; ikkalasi ham bosiladigan bo'lmaydi",
+        "opacity:0 joyni ham olmaydi",
+        "visibility:hidden elementni DOM dan butunlay o'chiradi"
       ]
     },
     {
@@ -663,19 +663,19 @@
         "Barcha bolalarni tanlash uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему в CSS используется псевдокласс :nth-child()?",
+      "question_ru": "CSS da :nth-child() pseudo-class nima uchun ishlatiladi?",
       "question_en": "CSS da :nth-child() pseudo-class nima uchun ishlatiladi?",
       "options_ru": [
-        "Чтобы выбрать первого ребенка",
-        "Чтобы выбрать дочерний элемент определенного порядкового номера",
-        "Чтобы выбрать последнего ребенка",
-        "Чтобы выбрать всех детей"
+        "Birinchi bolani tanlash uchun",
+        "Muayyan tartib raqamidagi bolani tanlash uchun",
+        "Oxirgi bolani tanlash uchun",
+        "Barcha bolalarni tanlash uchun"
       ],
       "options_en": [
-        "To select the first child",
-        "To select a child of a specific sequence number",
-        "To select the last child",
-        "To select all children"
+        "Birinchi bolani tanlash uchun",
+        "Muayyan tartib raqamidagi bolani tanlash uchun",
+        "Oxirgi bolani tanlash uchun",
+        "Barcha bolalarni tanlash uchun"
       ]
     },
     {
@@ -689,19 +689,19 @@
         "Box shadow qo'shadi"
       ],
       "answer": 1,
-      "question_ru": "Размер окна в CSS: что делает border-box?",
-      "question_en": "box-sizing in CSS: what does border-box do?",
+      "question_ru": "CSS da box-sizing: border-box nima qiladi?",
+      "question_en": "CSS da box-sizing: border-box nima qiladi?",
       "options_ru": [
-        "Добавляет границу к элементу",
-        "Он также включает отступы и границы при расчете ширины и высоты.",
-        "Граница разрушает",
-        "Добавляет тень блока"
+        "Elementga border qo'shadi",
+        "Width va height hisoblashida padding va border ni ham kiritadi",
+        "Border yo'q qiladi",
+        "Box shadow qo'shadi"
       ],
       "options_en": [
-        "Adds a border to the element",
-        "It also includes padding and border when calculating width and height",
-        "Border destroys",
-        "Adds a box shadow"
+        "Elementga border qo'shadi",
+        "Width va height hisoblashida padding va border ni ham kiritadi",
+        "Border yo'q qiladi",
+        "Box shadow qo'shadi"
       ]
     },
     {
@@ -715,19 +715,19 @@
         "Elementlar sonini hisoblash uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему функция Calc() используется в CSS?",
-      "question_en": "Why is the calc() function used in CSS?",
+      "question_ru": "CSS da calc() funksiyasi nima uchun ishlatiladi?",
+      "question_en": "CSS da calc() funksiyasi nima uchun ishlatiladi?",
       "options_ru": [
-        "Для расчета цветов",
-        "Чтобы присвоить значения CSS с помощью математических вычислений",
-        "Автоматический расчет размера шрифта",
-        "Чтобы подсчитать количество элементов"
+        "Ranglarni hisoblash uchun",
+        "Matematik hisoblar bilan CSS qiymatlari belgilash uchun",
+        "Font o'lchamini avtomatik hisoblash uchun",
+        "Elementlar sonini hisoblash uchun"
       ],
       "options_en": [
-        "To calculate colors",
-        "To assign CSS values ​​with mathematical calculations",
-        "To automatically calculate the font size",
-        "To count the number of elements"
+        "Ranglarni hisoblash uchun",
+        "Matematik hisoblar bilan CSS qiymatlari belgilash uchun",
+        "Font o'lchamini avtomatik hisoblash uchun",
+        "Elementlar sonini hisoblash uchun"
       ]
     },
     {
@@ -741,19 +741,19 @@
         "position: fixed bilan bir xil"
       ],
       "answer": 1,
-      "question_ru": "Что делает позиция:sticky в CSS?",
-      "question_en": "What does position:sticky do in CSS?",
+      "question_ru": "CSS da position: sticky nima qiladi?",
+      "question_en": "CSS da position: sticky nima qiladi?",
       "options_ru": [
-        "Держит предмет всегда сверху",
-        "Нормально, пока не будет достигнута указанная позиция прокрутки, затем фиксируется",
-        "Удерживает элемент внизу",
-        "положение: такое же, как фиксированное"
+        "Elementni doim yuqorida ushlab turadi",
+        "Belgilangan scroll holatiga yetguncha normal, undan keyin fixed bo'lib qoladi",
+        "Elementni pastda ushlab turadi",
+        "position: fixed bilan bir xil"
       ],
       "options_en": [
-        "Keeps the item always on top",
-        "Normal until the specified scroll position is reached, then fixed",
-        "Holds the element down",
-        "position: same as fixed"
+        "Elementni doim yuqorida ushlab turadi",
+        "Belgilangan scroll holatiga yetguncha normal, undan keyin fixed bo'lib qoladi",
+        "Elementni pastda ushlab turadi",
+        "position: fixed bilan bir xil"
       ]
     },
     {
@@ -767,19 +767,19 @@
         "Faqat nomlari har xil xolos"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между align-items и justify-content во Flexbox в CSS?",
-      "question_en": "What is the difference between align-items and justify-content in Flexbox in CSS?",
+      "question_ru": "CSS da Flexbox da align-items va justify-content farqi nima?",
+      "question_en": "CSS da Flexbox da align-items va justify-content farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "justify-content — выравнивает по главной оси, align-items — по поперечной оси",
-        "выравнивание элементов — по горизонтали, выравнивание содержимого — по вертикали",
-        "Только имена разные"
+        "justify-content — asosiy o'q bo'yicha, align-items — ko'ndalang o'q bo'yicha hizalaydi",
+        "align-items — gorizontal, justify-content — vertikal",
+        "Faqat nomlari har xil xolos"
       ],
       "options_en": [
         "There is no difference",
-        "justify-content — aligns along the main axis, align-items — along the cross axis",
-        "align-items — horizontal, justify-content — vertical",
-        "Only the names are different"
+        "justify-content — asosiy o'q bo'yicha, align-items — ko'ndalang o'q bo'yicha hizalaydi",
+        "align-items — gorizontal, justify-content — vertikal",
+        "Faqat nomlari har xil xolos"
       ]
     },
     {
@@ -793,19 +793,19 @@
         "Form elementlari uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему в CSS используются псевдоэлементы ::before и ::after?",
-      "question_en": "Why are ::before and ::after pseudo-elements used in CSS?",
+      "question_ru": "CSS da ::before va ::after pseudo-elementlari nima uchun ishlatiladi?",
+      "question_en": "CSS da ::before va ::after pseudo-elementlari nima uchun ishlatiladi?",
       "options_ru": [
-        "Чтобы изменить HTML",
-        "Чтобы добавить контент до или после элемента с помощью CSS",
-        "Для событий JavaScript",
-        "Для элементов формы"
+        "HTML ni o'zgartirish uchun",
+        "Elementning oldiga yoki keyin CSS orqali kontent qo'shish uchun",
+        "JavaScript hodisalari uchun",
+        "Form elementlari uchun"
       ],
       "options_en": [
-        "To change the HTML",
-        "To add content before or after an element via CSS",
-        "For JavaScript events",
-        "For form elements"
+        "HTML ni o'zgartirish uchun",
+        "Elementning oldiga yoki keyin CSS orqali kontent qo'shish uchun",
+        "JavaScript hodisalari uchun",
+        "Form elementlari uchun"
       ]
     },
     {
@@ -819,19 +819,19 @@
         "Kursorni o'ng tomonga siljitadi"
       ],
       "answer": 1,
-      "question_ru": "Что делает курсор: указатель в CSS?",
-      "question_en": "What does cursor: pointer do in CSS?",
+      "question_ru": "CSS da cursor: pointer nima qiladi?",
+      "question_en": "CSS da cursor: pointer nima qiladi?",
       "options_ru": [
-        "Скрывает курсор на странице",
-        "Курсор мыши принимает форму руки",
-        "Увеличивает курсор",
-        "Перемещает курсор вправо"
+        "Sahifada kursorni yashiradi",
+        "Sichqoncha kursori qo'l shakliga o'zgaradi",
+        "Kursorni kattalashtiradi",
+        "Kursorni o'ng tomonga siljitadi"
       ],
       "options_en": [
-        "Hides the cursor on the page",
-        "The mouse cursor changes to a hand shape",
-        "Zooms the cursor",
-        "Moves the cursor to the right"
+        "Sahifada kursorni yashiradi",
+        "Sichqoncha kursori qo'l shakliga o'zgaradi",
+        "Kursorni kattalashtiradi",
+        "Kursorni o'ng tomonga siljitadi"
       ]
     },
     {
@@ -845,19 +845,19 @@
         "Matnni hizalaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает перенос слов: разрыв слова в CSS?",
+      "question_ru": "CSS da word-wrap: break-word nima qiladi?",
       "question_en": "CSS da word-wrap: break-word nima qiladi?",
       "options_ru": [
-        "Добавляет пробелы между словами",
-        "Разбивает длинные слова там, где необходимо уместить их в строку.",
-        "Удаляет текст",
-        "Выравнивает текст"
+        "So'zlar orasiga bo'shliq qo'shadi",
+        "Uzun so'zlarni qatorga sig'dirish uchun kerakli joyda sindiradi",
+        "Matnni o'chiradi",
+        "Matnni hizalaydi"
       ],
       "options_en": [
-        "Adds spaces between words",
+        "So'zlar orasiga bo'shliq qo'shadi",
         "Uzun so'zlarni qatorga sig'dirish uchun kerakli joyda sindiradi",
-        "Deletes the text",
-        "Aligns text"
+        "Matnni o'chiradi",
+        "Matnni hizalaydi"
       ]
     },
     {
@@ -872,18 +872,18 @@
       ],
       "answer": 1,
       "question_ru": "CSS da Flexbox da flex-grow: 1 nima qiladi?",
-      "question_en": "What does flex-grow:1 do in Flexbox in CSS?",
+      "question_en": "CSS da Flexbox da flex-grow: 1 nima qiladi?",
       "options_ru": [
-        "Скрывает элемент",
-        "Элемент расширяется, чтобы заполнить доступное пространство.",
-        "Укорачивает элемент",
-        "Указывает базовый размер элемента"
+        "Elementni yashiradi",
+        "Element mavjud bo'sh joyni to'ldirish uchun kengayadi",
+        "Elementni qisqartiradi",
+        "Elementning asosiy o'lchamini belgilaydi"
       ],
       "options_en": [
-        "Hides the element",
-        "The element expands to fill the available space",
-        "Shortens the element",
-        "Specifies the base size of the element"
+        "Elementni yashiradi",
+        "Element mavjud bo'sh joyni to'ldirish uchun kengayadi",
+        "Elementni qisqartiradi",
+        "Elementning asosiy o'lchamini belgilaydi"
       ]
     },
     {
@@ -897,19 +897,19 @@
         "Rang o'zgarishlarini belgilash uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему @keyframes используются в CSS?",
-      "question_en": "Why are @keyframes used in CSS?",
+      "question_ru": "CSS da @keyframes nima uchun ishlatiladi?",
+      "question_en": "CSS da @keyframes nima uchun ishlatiladi?",
       "options_ru": [
-        "Для медиа-запросов",
-        "Шаг за шагом определить CSS-анимацию",
-        "Чтобы импортировать шрифт",
-        "Чтобы указать варианты цвета"
+        "Media querylar uchun",
+        "CSS animatsiyalari qadam-qadamini belgilash uchun",
+        "Shrift import qilish uchun",
+        "Rang o'zgarishlarini belgilash uchun"
       ],
       "options_en": [
-        "For media queries",
-        "To define CSS animations step by step",
-        "To import the font",
-        "To specify color variations"
+        "Media querylar uchun",
+        "CSS animatsiyalari qadam-qadamini belgilash uchun",
+        "Shrift import qilish uchun",
+        "Rang o'zgarishlarini belgilash uchun"
       ]
     },
     {
@@ -923,13 +923,13 @@
         "ID, class, element, inline"
       ],
       "answer": 1,
-      "question_ru": "Покажите порядок расчета специфичности CSS (от самого сильного к самому слабому):",
+      "question_ru": "CSS Specificity hisoblash tartibini ko'rsating (eng kuchliidan eng zaifiga):",
       "question_en": "CSS Specificity hisoblash tartibini ko'rsating (eng kuchliidan eng zaifiga):",
       "options_ru": [
-        "элемент, класс, идентификатор, встроенный",
-        "встроенный, идентификатор, класс, элемент",
-        "класс, элемент, идентификатор, встроенный",
-        "Идентификатор, класс, элемент, встроенный"
+        "element, class, ID, inline",
+        "inline, ID, class, element",
+        "class, element, ID, inline",
+        "ID, class, element, inline"
       ],
       "options_en": [
         "element, class, ID, inline",
@@ -949,13 +949,13 @@
         "var-name: value;"
       ],
       "answer": 2,
-      "question_ru": "Как объявить пользовательские свойства (переменные CSS) в CSS?",
-      "question_en": "How to declare Custom Properties (CSS Variables) in CSS?",
+      "question_ru": "CSS da Custom Properties (CSS Variables) qanday e'lon qilinadi?",
+      "question_en": "CSS da Custom Properties (CSS Variables) qanday e'lon qilinadi?",
       "options_ru": [
-        "$var-name: значение;",
-        "@var-name: значение;",
-        "--var-name: значение;",
-        "имя-вар: значение;"
+        "$var-name: value;",
+        "@var-name: value;",
+        "--var-name: value;",
+        "var-name: value;"
       ],
       "options_en": [
         "$var-name: value;",
@@ -975,19 +975,19 @@
         "Animatsiya yaratish uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему свойство will-change используется в CSS?",
-      "question_en": "Why is the will-change property used in CSS?",
+      "question_ru": "CSS da will-change xususiyati nima uchun ishlatiladi?",
+      "question_en": "CSS da will-change xususiyati nima uchun ishlatiladi?",
       "options_ru": [
-        "Чтобы изменить элемент",
-        "Обеспечить оптимизацию графического процессора, заранее сообщив браузеру, какие функции изменятся.",
-        "Чтобы скрыть элемент",
-        "Чтобы создать анимацию"
+        "Elementni o'zgartirish uchun",
+        "Brauzerga qaysi xususiyatlar o'zgarishini oldindan aytib, GPU optimallashtirishni ta'minlash uchun",
+        "Elementni yashirish uchun",
+        "Animatsiya yaratish uchun"
       ],
       "options_en": [
-        "To modify an item",
-        "To provide GPU optimization by telling the browser in advance which features will change",
+        "Elementni o'zgartirish uchun",
+        "Brauzerga qaysi xususiyatlar o'zgarishini oldindan aytib, GPU optimallashtirishni ta'minlash uchun",
         "Elementni yashirish uchun",
-        "To create an animation"
+        "Animatsiya yaratish uchun"
       ]
     },
     {
@@ -1001,19 +1001,19 @@
         "Har doim ID selektor"
       ],
       "answer": 2,
-      "question_ru": "Какой селектор имеет приоритет в CSS Cascade?",
-      "question_en": "Which selector takes precedence in CSS Cascade?",
+      "question_ru": "CSS Cascade da qaysi selektor ustuvor bo'ladi?",
+      "question_en": "CSS Cascade da qaysi selektor ustuvor bo'ladi?",
       "options_ru": [
-        "Первое письменное",
-        "Последнее написанное",
-        "Имеет высочайшую специфичность",
-        "Всегда выбор идентификатора"
+        "Eng birinchi yozilgan",
+        "Eng oxirgi yozilgan",
+        "Eng yuqori specificity ga ega bo'lgan",
+        "Har doim ID selektor"
       ],
       "options_en": [
-        "The first written",
-        "Last written",
-        "It has the highest specificity",
-        "Always an ID selector"
+        "Eng birinchi yozilgan",
+        "Eng oxirgi yozilgan",
+        "Eng yuqori specificity ga ega bo'lgan",
+        "Har doim ID selektor"
       ]
     },
     {
@@ -1027,18 +1027,18 @@
         "CSS Grid orqali yaratiladi"
       ],
       "answer": 0,
-      "question_ru": "Что такое контекст стека в CSS и как он создается?",
-      "question_en": "What is Stacking Context in CSS and how is it created?",
+      "question_ru": "CSS da Stacking Context nima va qanday yaratiladi?",
+      "question_en": "CSS da Stacking Context nima va qanday yaratiladi?",
       "options_ru": [
-        "Метод определения порядка элементов; Он создается такими свойствами, как z-index, непрозрачность, преобразование.",
-        "Генерируется только по z-index",
-        "Каждый элемент создает свой собственный контекст стекирования.",
-        "Создано CSS Grid"
+        "Elementlar tartibini belgilash usuli; z-index, opacity, transform kabi xususiyatlar orqali yaratiladi",
+        "Faqat z-index orqali yaratiladi",
+        "Har bir element o'z stacking context ini yaratadi",
+        "CSS Grid orqali yaratiladi"
       ],
       "options_en": [
-        "The method of determining the order of elements; It is created by properties such as z-index, opacity, transform",
+        "Elementlar tartibini belgilash usuli; z-index, opacity, transform kabi xususiyatlar orqali yaratiladi",
         "Faqat z-index orqali yaratiladi",
-        "Each element creates its own stacking context",
+        "Har bir element o'z stacking context ini yaratadi",
         "CSS Grid orqali yaratiladi"
       ]
     },
@@ -1053,19 +1053,19 @@
         "Overflow ni boshqarish uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему свойство contains используется в CSS?",
-      "question_en": "Why is the contain property used in CSS?",
+      "question_ru": "CSS da contain xususiyati nima uchun ishlatiladi?",
+      "question_en": "CSS da contain xususiyati nima uchun ishlatiladi?",
       "options_ru": [
-        "Чтобы разграничить элемент",
-        "Ограничение влияния изменений элемента на другие части страницы — для повышения производительности рендеринга.",
-        "Чтобы скрыть контент",
-        "Чтобы справиться с переполнением"
+        "Elementni chegaralash uchun",
+        "Elementning o'zgarishlari sahifaning boshqa qismlariga ta'sir qilishini cheklash — rendering performance uchun",
+        "Kontentni yashirish uchun",
+        "Overflow ni boshqarish uchun"
       ],
       "options_en": [
-        "To delimit an element",
-        "Limiting how element changes affect other parts of the page — for rendering performance",
-        "To hide content",
-        "To handle overflow"
+        "Elementni chegaralash uchun",
+        "Elementning o'zgarishlari sahifaning boshqa qismlariga ta'sir qilishini cheklash — rendering performance uchun",
+        "Kontentni yashirish uchun",
+        "Overflow ni boshqarish uchun"
       ]
     },
     {
@@ -1079,19 +1079,19 @@
         "CSS animatsiya kutubxonasi"
       ],
       "answer": 2,
-      "question_ru": "Что такое CSS Гудини?",
-      "question_en": "What is CSS Houdini?",
+      "question_ru": "CSS Houdini nima?",
+      "question_en": "CSS Houdini nima?",
       "options_ru": [
         "CSS-препроцессор",
         "CSS-фреймворк",
-        "Набор API, которые обеспечивают доступ к процессу рендеринга CSS браузера.",
-        "CSS-анимационная библиотека"
+        "Brauzerning CSS rendering jarayoniga kirish imkonini beradigan API to'plami",
+        "CSS animatsiya kutubxonasi"
       ],
       "options_en": [
         "CSS preprocessor",
         "CSS framework",
-        "A set of APIs that allow access to the browser's CSS rendering process",
-        "CSS animation library"
+        "Brauzerning CSS rendering jarayoniga kirish imkonini beradigan API to'plami",
+        "CSS animatsiya kutubxonasi"
       ]
     },
     {
@@ -1105,19 +1105,19 @@
         "Grid nisbatini belgilash"
       ],
       "answer": 1,
-      "question_ru": "Почему свойство пропорций используется в CSS?",
-      "question_en": "Why is the aspect-ratio property used in CSS?",
+      "question_ru": "CSS da aspect-ratio xususiyati nima uchun ishlatiladi?",
+      "question_en": "CSS da aspect-ratio xususiyati nima uchun ishlatiladi?",
       "options_ru": [
-        "Определите соотношение сторон",
-        "Чтобы указать соотношение ширины и высоты элемента",
-        "Установка соотношения шрифтов",
-        "Настройка соотношения сетки"
+        "Rasm nisbatini aniqlash",
+        "Elementning kenglik va balandlik nisbatini belgilash uchun",
+        "Font nisbatini belgilash",
+        "Grid nisbatini belgilash"
       ],
       "options_en": [
-        "Determine the aspect ratio",
-        "To specify the element's width-to-height ratio",
-        "Setting the font ratio",
-        "Setting the grid ratio"
+        "Rasm nisbatini aniqlash",
+        "Elementning kenglik va balandlik nisbatini belgilash uchun",
+        "Font nisbatini belgilash",
+        "Grid nisbatini belgilash"
       ]
     },
     {
@@ -1131,19 +1131,19 @@
         "Faqat raqam qiymatlar uchun ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "Как функция зажима() работает в CSS?",
-      "question_en": "How does the clamp() function work in CSS?",
+      "question_ru": "CSS da clamp() funksiyasi qanday ishlaydi?",
+      "question_en": "CSS da clamp() funksiyasi qanday ishlaydi?",
       "options_ru": [
-        "Возвращает одно значение",
-        "min, предпочтительно, max принимает три значения и используется для адаптивных размеров.",
-        "Возвращает только минимальное значение",
-        "Работает только для числовых значений"
+        "Bitta qiymat qaytaradi",
+        "min, preferred, max uchta qiymat olib, responsive o'lchamlar uchun ishlatiladi",
+        "Faqat minimum qiymatni qaytaradi",
+        "Faqat raqam qiymatlar uchun ishlaydi"
       ],
       "options_en": [
-        "Returns a single value",
-        "min, preferred, max takes three values ​​and is used for responsive sizes",
-        "Returns only the minimum value",
-        "Only works for numeric values"
+        "Bitta qiymat qaytaradi",
+        "min, preferred, max uchta qiymat olib, responsive o'lchamlar uchun ishlatiladi",
+        "Faqat minimum qiymatni qaytaradi",
+        "Faqat raqam qiymatlar uchun ishlaydi"
       ]
     },
     {
@@ -1157,19 +1157,19 @@
         "Faqat matn rangini belgilaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает свойство цветовой схемы в CSS?",
-      "question_en": "What does the color-scheme property do in CSS?",
+      "question_ru": "CSS da color-scheme xususiyati nima qiladi?",
+      "question_en": "CSS da color-scheme xususiyati nima qiladi?",
       "options_ru": [
-        "Определяет цветовую схему страницы",
-        "Сообщает браузеру, какую цветовую схему использовать для компонентов системного пользовательского интерфейса (полоса прокрутки, ввод).",
-        "Только для темного режима",
-        "Определяет только цвет текста"
+        "Sahifa rang sxemasini belgilaydi",
+        "Brauzerga tizim UI komponentlari (scrollbar, input) uchun qaysi rang sxemasini qo'llashni bildiradi",
+        "Faqat dark mode uchun",
+        "Faqat matn rangini belgilaydi"
       ],
       "options_en": [
-        "Specifies the color scheme of the page",
+        "Sahifa rang sxemasini belgilaydi",
         "Brauzerga tizim UI komponentlari (scrollbar, input) uchun qaysi rang sxemasini qo'llashni bildiradi",
-        "Only for dark mode",
-        "Specifies the text color only"
+        "Faqat dark mode uchun",
+        "Faqat matn rangini belgilaydi"
       ]
     },
     {
@@ -1183,19 +1183,19 @@
         "Grid elementlarini saralash"
       ],
       "answer": 1,
-      "question_ru": "Почему функция minmax() используется в CSS Grid?",
-      "question_en": "Why is the minmax() function used in CSS Grid?",
+      "question_ru": "CSS Grid da minmax() funksiyasi nima uchun ishlatiladi?",
+      "question_en": "CSS Grid da minmax() funksiyasi nima uchun ishlatiladi?",
       "options_ru": [
-        "Указание количества элементов сетки",
-        "Установка минимального и максимального размера трека",
-        "Определить расположение сетки",
-        "Сортировка элементов сетки"
+        "Grid elementlar sonini belgilash",
+        "Track uchun minimum va maksimum o'lchamni belgilash",
+        "Grid joylanishini aniqlash",
+        "Grid elementlarini saralash"
       ],
       "options_en": [
-        "Specifying the number of grid elements",
-        "Setting the minimum and maximum size for a track",
-        "Determine grid location",
-        "Sort grid elements"
+        "Grid elementlar sonini belgilash",
+        "Track uchun minimum va maksimum o'lchamni belgilash",
+        "Grid joylanishini aniqlash",
+        "Grid elementlarini saralash"
       ]
     },
     {
@@ -1209,18 +1209,18 @@
         "Z-index ni boshqarish"
       ],
       "answer": 1,
-      "question_ru": "Почему @layer используется в CSS?",
-      "question_en": "Why is @layer used in CSS?",
+      "question_ru": "CSS da @layer nima uchun ishlatiladi?",
+      "question_en": "CSS da @layer nima uchun ishlatiladi?",
       "options_ru": [
-        "Разделите страницу на слои",
-        "Улучшенный контроль и определение приоритетов каскадных слоев фотографий.",
-        "Создание слоев анимации",
-        "Управление Z-индексом"
+        "Sahifani layerlarga bo'lish",
+        "Stilllar cascade qatlamlarini boshqarish va prioritetni aniqroq belgilash",
+        "Animatsiya layerlari yaratish",
+        "Z-index ni boshqarish"
       ],
       "options_en": [
-        "Divide the page into layers",
+        "Sahifani layerlarga bo'lish",
         "Stilllar cascade qatlamlarini boshqarish va prioritetni aniqroq belgilash",
-        "Create animation layers",
+        "Animatsiya layerlari yaratish",
         "Z-index ni boshqarish"
       ]
     },
@@ -1235,19 +1235,19 @@
         "Specificity ni 0 qiladi"
       ],
       "answer": 1,
-      "question_ru": "Что делает псевдокласс :is() в CSS?",
-      "question_en": "What does the :is() pseudo-class do in CSS?",
+      "question_ru": "CSS da :is() pseudo-class nima qiladi?",
+      "question_en": "CSS da :is() pseudo-class nima qiladi?",
       "options_ru": [
-        "Выбирает элемент",
-        "Группирует несколько селекторов и использует их максимальную специфичность.",
-        "Выбирает только первый элемент",
-        "Делает Специфика 0"
+        "Elementni tanlaydi",
+        "Bir nechta selektorlarni guruhlab, ularning eng yuqori specificity sini ishlatadi",
+        "Faqat birinchi elementni tanlaydi",
+        "Specificity ni 0 qiladi"
       ],
       "options_en": [
         "Elementni tanlaydi",
-        "Groups multiple selectors and uses their highest specificity",
-        "Selects only the first element",
-        "Makes Specificity 0"
+        "Bir nechta selektorlarni guruhlab, ularning eng yuqori specificity sini ishlatadi",
+        "Faqat birinchi elementni tanlaydi",
+        "Specificity ni 0 qiladi"
       ]
     },
     {
@@ -1261,19 +1261,19 @@
         "Matnni kattalashtiradi"
       ],
       "answer": 0,
-      "question_ru": "Что делает свойство write-mode в CSS?",
-      "question_en": "What does the writing-mode property do in CSS?",
+      "question_ru": "CSS da writing-mode xususiyati nima qiladi?",
+      "question_en": "CSS da writing-mode xususiyati nima qiladi?",
       "options_ru": [
-        "Изменяет ориентацию текста (горизонтальная/вертикальная)",
-        "Изменяет цвет текста",
-        "Изменяет тип шрифта",
-        "Увеличивает текст"
+        "Matn yo'nalishini o'zgartiradi (gorizontal/vertikal)",
+        "Matn rangini o'zgartiradi",
+        "Shrift turini o'zgartiradi",
+        "Matnni kattalashtiradi"
       ],
       "options_en": [
-        "Changes text orientation (horizontal/vertical)",
-        "Changes the text color",
-        "Changes the font type",
-        "Makes text larger"
+        "Matn yo'nalishini o'zgartiradi (gorizontal/vertikal)",
+        "Matn rangini o'zgartiradi",
+        "Shrift turini o'zgartiradi",
+        "Matnni kattalashtiradi"
       ]
     },
     {
@@ -1287,19 +1287,19 @@
         "Grid elementlarni saralash"
       ],
       "answer": 1,
-      "question_ru": "Что такое подсетка в CSS и зачем она нужна?",
-      "question_en": "What is a subgrid in CSS and why is it needed?",
+      "question_ru": "CSS da subgrid nima va nima uchun kerak?",
+      "question_en": "CSS da subgrid nima va nima uchun kerak?",
       "options_ru": [
-        "Разделить сетку",
-        "Дочерний элемент наследует дорожки сетки родительского элемента — для сложного выравнивания макета.",
-        "Создать новую сетку",
-        "Сортировка элементов сетки"
+        "Grid ni bo'lish",
+        "Bola element ota elementning grid track larini meros olishi — murakkab layout hizalanish uchun",
+        "Yangi grid yaratish",
+        "Grid elementlarni saralash"
       ],
       "options_en": [
         "Grid ni bo'lish",
-        "Child element inherits parent element's grid tracks — for complex layout alignment",
-        "Create a new grid",
-        "Sort grid elements"
+        "Bola element ota elementning grid track larini meros olishi — murakkab layout hizalanish uchun",
+        "Yangi grid yaratish",
+        "Grid elementlarni saralash"
       ]
     }
   ]

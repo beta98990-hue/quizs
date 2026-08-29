@@ -13,18 +13,18 @@
         "Database"
       ],
       "answer": 1,
-      "question_ru": "Почему Perl знаменит?",
-      "question_en": "Perl nima uchun mashhur?",
+      "question_ru": "Perl nima uchun mashhur?",
+      "question_en": "Why is Perl famous?",
       "options_ru": [
         "Веб-дизайн",
-        "Манипулирование текстом, регулярные выражения и системное администрирование",
-        "Мобильные приложения",
+        "Matn manipulyatsiyasi, regex va tizim administratsiyasi",
+        "Mobile ilovalar",
         "База данных"
       ],
       "options_en": [
-        "Web dizayn",
+        "Web design",
         "Text manipulation, regex and system administration",
-        "Mobile ilovalar",
+        "Mobile applications",
         "Database"
       ]
     },
@@ -39,13 +39,13 @@
         "let name = 'Ali';"
       ],
       "answer": 1,
-      "question_ru": "Как объявить скалярную переменную в Perl?",
+      "question_ru": "Perl da skalar o'zgaruvchi qanday e'lon qilinadi?",
       "question_en": "How to declare a scalar variable in Perl?",
       "options_ru": [
-        "имя вар = 'Али';",
-        "$name = 'Али';",
-        "имя = 'Али';",
-        "пусть имя = 'Али';"
+        "var name = 'Ali';",
+        "$name = 'Ali';",
+        "name = 'Ali';",
+        "let name = 'Ali';"
       ],
       "options_en": [
         "var name = 'Ali';",
@@ -65,13 +65,13 @@
         "array arr = (1, 2, 3);"
       ],
       "answer": 1,
-      "question_ru": "Как объявить массив в Perl?",
+      "question_ru": "Perl da massiv qanday e'lon qilinadi?",
       "question_en": "How to declare an array in Perl?",
       "options_ru": [
-        "$арр = [];",
+        "$arr = [];",
         "@arr = (1, 2, 3);",
-        "обр = [1, 2, 3];",
-        "массив arr = (1, 2, 3);"
+        "arr = [1, 2, 3];",
+        "array arr = (1, 2, 3);"
       ],
       "options_en": [
         "$arr = [];",
@@ -91,13 +91,13 @@
         "dict hash = {};"
       ],
       "answer": 1,
-      "question_ru": "Как объявить хеш в Perl?",
+      "question_ru": "Perl da hash qanday e'lon qilinadi?",
       "question_en": "How to declare a hash in Perl?",
       "options_ru": [
-        "$хэш = {};",
-        "%hash = (ключ => 'значение');",
-        "хеш = {};",
-        "dict хэш = {};"
+        "$hash = {};",
+        "%hash = (key => 'value');",
+        "hash = {};",
+        "dict hash = {};"
       ],
       "options_en": [
         "$hash = {};",
@@ -117,13 +117,13 @@
         "Debug"
       ],
       "answer": 1,
-      "question_ru": "Что делает печать в Perl?",
+      "question_ru": "Perl da print nima qiladi?",
       "question_en": "What does print do in Perl?",
       "options_ru": [
-        "Принтер",
-        "Выводит текст на консоль",
-        "Записывает файл",
-        "Отладка"
+        "Printer",
+        "Konsolga matn chiqaradi",
+        "Fayl yozadi",
+        "Отлаживать"
       ],
       "options_en": [
         "Printer",
@@ -143,19 +143,19 @@
         "say tezroq"
       ],
       "answer": 1,
-      "question_ru": "Разница между сказать и распечатать в Perl?",
+      "question_ru": "Perl da say va print farqi?",
       "question_en": "Difference between say and print in Perl?",
       "options_ru": [
         "Нет никакой разницы",
-        "сказать — автоматически добавляет новую строку; распечатать — не добавляет",
-        "print добавляет новую строку",
-        "намного быстрее"
+        "say — avtomatik yangi qator qo'shadi; print — qo'shmaydi",
+        "print yangi qator qo'shadi",
+        "say tezroq"
       ],
       "options_en": [
         "There is no difference",
         "say — automatically adds a new line; print — does not add",
         "print adds a new line",
-        "say tezroq"
+        "much faster"
       ]
     },
     {
@@ -169,13 +169,13 @@
         "$str.match(pattern)"
       ],
       "answer": 1,
-      "question_ru": "Как использовать регулярное выражение в Perl?",
+      "question_ru": "Perl da regex qanday ishlatiladi?",
       "question_en": "How to use regex in Perl?",
       "options_ru": [
-        "регулярное выражение()",
-        "$str =~ /шаблон/",
-        "совпадение($str, шаблон)",
-        "$str.match(шаблон)"
+        "regex()",
+        "$str =~ /pattern/",
+        "match($str, pattern)",
+        "$str.match(pattern)"
       ],
       "options_en": [
         "regex()",
@@ -195,13 +195,13 @@
         "Each loop"
       ],
       "answer": 1,
-      "question_ru": "Зачем foreach в Perl?",
+      "question_ru": "Perl da foreach nima uchun?",
       "question_en": "Why foreach in Perl?",
       "options_ru": [
         "Для цикла",
-        "Перебор списка — foreach my $item (@list)",
-        "Цикл списка",
-        "Каждая петля"
+        "Ro'yxat bo'yicha iteratsiya — foreach my $item (@list)",
+        "List loop",
+        "Each loop"
       ],
       "options_en": [
         "For cycle",
@@ -221,18 +221,18 @@
         "if unless emas"
       ],
       "answer": 1,
-      "question_ru": "Разница между «если-если» в Perl?",
+      "question_ru": "Perl da if-unless farqi?",
       "question_en": "Difference between if-unless in Perl?",
       "options_ru": [
         "Нет никакой разницы",
-        "if — выполняется, если условие ложно (в противоположность if)",
-        "если только если сам",
-        "если нет, если только"
+        "unless — agar shart yolg'on bo'lsa bajaradi (if ning aksi)",
+        "unless if ning o'zi",
+        "if unless emas"
       ],
       "options_en": [
         "There is no difference",
-        "unless — agar shart yolg'on bo'lsa bajaradi (if ning aksi)",
-        "unless if ning o'zi",
+        "unless — executes if the condition is false (opposite of if)",
+        "unless if itself",
         "if not unless"
       ]
     },
@@ -247,13 +247,13 @@
         "func greet() {}"
       ],
       "answer": 1,
-      "question_ru": "Как объявить подпрограмму в Perl?",
+      "question_ru": "Perl da subroutine qanday e'lon qilinadi?",
       "question_en": "How to declare a subroutine in Perl?",
       "options_ru": [
-        "функция приветствия() {}",
-        "субприветствие { ... }",
-        "защита приветствия():",
-        "функция приветствия() {}"
+        "function greet() {}",
+        "sub greet { ... }",
+        "def greet():",
+        "func greet() {}"
       ],
       "options_en": [
         "function greet() {}",
@@ -273,17 +273,17 @@
         "Default array"
       ],
       "answer": 1,
-      "question_ru": "Что такое @_ в Perl?",
+      "question_ru": "Perl da @_ nima?",
       "question_en": "What is @_ in Perl?",
       "options_ru": [
-        "Частный массив",
-        "Список аргументов подпрограммы",
-        "Глобальный массив",
-        "Массив по умолчанию"
+        "Private array",
+        "Subroutine argumentlari ro'yxati",
+        "Global array",
+        "Default array"
       ],
       "options_en": [
         "Private array",
-        "Subroutine argumentlari ro'yxati",
+        "List of subroutine arguments",
         "Global array",
         "Default array"
       ]
@@ -299,17 +299,17 @@
         "String tozalaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает chomp в Perl?",
+      "question_ru": "Perl da chomp nima qiladi?",
       "question_en": "What does chomp do in Perl?",
       "options_ru": [
-        "Обрезает текст",
-        "Удаляет символ новой строки из конца строки",
-        "Объединение строк",
-        "Очищает строку"
+        "Matnni kesadi",
+        "String oxiridagi yangi qator belgisini olib tashlaydi",
+        "String birlashtiradi",
+        "String tozalaydi"
       ],
       "options_en": [
         "Cuts the text",
-        "String oxiridagi yangi qator belgisini olib tashlaydi",
+        "Removes the newline character from the end of the string",
         "String concatenates",
         "Clears the string"
       ]
@@ -325,11 +325,11 @@
         "Module import"
       ],
       "answer": 1,
-      "question_ru": "Зачем использовать строгий подход в Perl?",
+      "question_ru": "Perl da use strict nima uchun?",
       "question_en": "Why use strict in Perl?",
       "options_ru": [
-        "Сложный режим",
-        "Предотвратите скрытые глобальные переменные и другие опасные функции",
+        "Qattiq rejim",
+        "Yashirin global o'zgaruvchilar va boshqa xavfli funksiyalarni man qilish",
         "Обработка ошибок",
         "Module import"
       ],
@@ -351,13 +351,13 @@
         "Strict mode"
       ],
       "answer": 1,
-      "question_ru": "Зачем использовать предупреждения в Perl?",
+      "question_ru": "Perl da use warnings nima uchun?",
       "question_en": "Why use warnings in Perl?",
       "options_ru": [
-        "Включить уведомление",
-        "Включить расширенные предупреждающие сообщения — для отладки",
+        "Ogohlantirish yoqish",
+        "Keng ogohlantirish xabarlarini yoqish — debugging uchun",
         "Журнал ошибок",
-        "Строгий режим"
+        "Strict mode"
       ],
       "options_en": [
         "Enable notification",
@@ -377,13 +377,13 @@
         "Private variable"
       ],
       "answer": 1,
-      "question_ru": "Почему я в Perl?",
+      "question_ru": "Perl da my nima uchun?",
       "question_en": "Why my in Perl?",
       "options_ru": [
-        "Мой",
-        "Объявление лексической переменной является обязательным при использовании strict",
-        "Локальная переменная",
-        "Частная переменная"
+        "Mening",
+        "Leksik o'zgaruvchi e'lon qilish — use strict bilan majburiy",
+        "Local variable",
+        "Private variable"
       ],
       "options_en": [
         "My",
@@ -403,13 +403,13 @@
         "Return type check"
       ],
       "answer": 1,
-      "question_ru": "Что делает Wantarray в Perl?",
+      "question_ru": "Perl da wantarray nima qiladi?",
       "question_en": "What does wantarray do in Perl?",
       "options_ru": [
-        "Проверка массива",
-        "Проверьте, вызывается ли список подпрограмм в контексте",
-        "Проверка контекста",
-        "Проверка типа возврата"
+        "Array tekshirish",
+        "Subroutine list kontekstda chaqirilganmi tekshirish",
+        "Context check",
+        "Return type check"
       ],
       "options_en": [
         "Array check",
@@ -429,13 +429,13 @@
         "Alias"
       ],
       "answer": 1,
-      "question_ru": "Зачем ссылки в Perl?",
+      "question_ru": "Perl da references nima uchun?",
       "question_en": "Why references in Perl?",
       "options_ru": [
-        "Источник информации",
-        "Создание сложной структуры данных — \\@arr, \\%hash, \\&sub",
-        "Указатель",
-        "Псевдоним"
+        "Ma'lumot manba",
+        "Murakkab ma'lumotlar tuzilmasi yaratish — \\@arr, \\%hash, \\&sub",
+        "Pointer",
+        "Alias"
       ],
       "options_en": [
         "Source of information",
@@ -455,13 +455,13 @@
         "Arrow deref"
       ],
       "answer": 1,
-      "question_ru": "Что такое разыменование в Perl?",
-      "question_en": "Perl da dereference qanday?",
+      "question_ru": "Perl da dereference qanday?",
+      "question_en": "What is dereference in Perl?",
       "options_ru": [
-        "Автоматическое разыменование",
-        "@{$arrayref}, %{$hashref}, &{$coderef} — или постфикс ->",
-        "Разыменование указателя",
-        "Стрелка разыменовывается"
+        "Auto dereference",
+        "@{$arrayref}, %{$hashref}, &{$coderef} — yoki postfix ->",
+        "Pointer deref",
+        "Arrow deref"
       ],
       "options_en": [
         "Auto dereference",
@@ -481,12 +481,12 @@
         "Object module"
       ],
       "answer": 1,
-      "question_ru": "Что такое ООП в Perl?",
+      "question_ru": "Perl da OOP qanday?",
       "question_en": "What is OOP in Perl?",
       "options_ru": [
-        "Простое ООП",
-        "с функцией bless — преобразование хеша в объект класса — предпочтительнее Moose/Moo",
-        "Ключевое слово класса",
+        "Oddiy OOP",
+        "bless funksiyasi bilan — hashni klass ob'ektiga aylantirish — Moose/Moo dan afzal",
+        "Class keyword",
         "Object module"
       ],
       "options_en": [
@@ -507,13 +507,13 @@
         "Class framework"
       ],
       "answer": 1,
-      "question_ru": "Что такое Moose в Perl?",
+      "question_ru": "Perl da Moose nima?",
       "question_en": "What is Moose in Perl?",
       "options_ru": [
-        "Мышь",
-        "Современная структура ООП — имеет, расширяет, переопределяет ограничения типов.",
-        "ООП-модуль",
-        "Структура класса"
+        "Sichqon",
+        "Zamonaviy OOP framework — has, extends, override, type constraints",
+        "OOP module",
+        "Class framework"
       ],
       "options_en": [
         "Mouse",
@@ -533,17 +533,17 @@
         "Replace"
       ],
       "answer": 1,
-      "question_ru": "Что такое регулярное выражение s/// в Perl?",
-      "question_en": "Perl da Regular expression s/// nima?",
+      "question_ru": "Perl da Regular expression s/// nima?",
+      "question_en": "What is the regular expression s/// in Perl?",
       "options_ru": [
-        "Поиск",
-        "Замена — например s/pattern/replacement/g — глобальная замена флага g",
+        "Search",
+        "Substitution — s/pattern/replacement/g kabi — g flag global almashtirish",
         "Соответствие регулярному выражению",
-        "Заменить"
+        "Replace"
       ],
       "options_en": [
         "Search",
-        "Substitution — s/pattern/replacement/g kabi — g flag global almashtirish",
+        "Substitution — like s/pattern/replacement/g — g flag global substitution",
         "Regex match",
         "Replace"
       ]
@@ -559,13 +559,13 @@
         "Array split"
       ],
       "answer": 1,
-      "question_ru": "Что такое разделение в Perl?",
+      "question_ru": "Perl da split nima?",
       "question_en": "What is split in Perl?",
       "options_ru": [
-        "Разделение",
-        "Разбить строку на массив по разделителю — Split(/,/, $str)",
-        "Разделение регулярных выражений",
-        "Разделение массива"
+        "Ajratish",
+        "String ni delimiter bo'yicha massivga bo'lish — split(/,/, $str)",
+        "Regex split",
+        "Array split"
       ],
       "options_en": [
         "Separation",
@@ -585,13 +585,13 @@
         "String join"
       ],
       "answer": 1,
-      "question_ru": "Что такое соединение в Perl?",
+      "question_ru": "Perl da join nima?",
       "question_en": "What is a join in Perl?",
       "options_ru": [
-        "Добавить",
-        "Соединение элементов массива с помощью разделителя — join(', ', @arr)",
-        "Объединение массива",
-        "Соединение строк"
+        "Qo'shish",
+        "Massiv elementlarini delimiter bilan birlashtirish — join(', ', @arr)",
+        "Array join",
+        "String join"
       ],
       "options_en": [
         "Add",
@@ -611,13 +611,13 @@
         "Array sort"
       ],
       "answer": 1,
-      "question_ru": "Как работает сортировка в Perl?",
+      "question_ru": "Perl da sort qanday ishlaydi?",
       "question_en": "How does sort work in Perl?",
       "options_ru": [
-        "Автосортировка",
-        "сортировка со специальными переменными $a и $b { $a <=> $b } @arr",
-        "Сортировка списка",
-        "Сортировка массива"
+        "Auto sort",
+        "$a va $b special o'zgaruvchilar bilan sort { $a <=> $b } @arr",
+        "List sort",
+        "Array sort"
       ],
       "options_en": [
         "Auto sort",
@@ -637,13 +637,13 @@
         "Search"
       ],
       "answer": 1,
-      "question_ru": "Зачем grep в Perl?",
+      "question_ru": "Perl da grep nima uchun?",
       "question_en": "Why grep in Perl?",
       "options_ru": [
-        "Поиск файлов",
-        "Отфильтровать элементы из списка, соответствующие условию — grep { условие } @list",
-        "Фильтр",
-        "Поиск"
+        "Fayl qidirish",
+        "Ro'yxatdan shartga mos elementlarni filterlash — grep { condition } @list",
+        "Filter",
+        "Search"
       ],
       "options_en": [
         "File search",
@@ -663,16 +663,16 @@
         "Each"
       ],
       "answer": 1,
-      "question_ru": "Что делает карта в Perl?",
+      "question_ru": "Perl da map nima qiladi?",
       "question_en": "What does a map do in Perl?",
       "options_ru": [
         "Карта",
-        "Преобразование элементов списка — map { $_ * 2 } @list",
-        "Трансформировать",
-        "Каждый"
+        "Ro'yxat elementlarini transformatsiya qilish — map { $_ * 2 } @list",
+        "Transform",
+        "Each"
       ],
       "options_en": [
-        "Xarita",
+        "Map",
         "Transform list elements — map { $_ * 2 } @list",
         "Transform",
         "Each"
@@ -689,13 +689,13 @@
         "Loop variable"
       ],
       "answer": 1,
-      "question_ru": "Что такое $_ в Perl?",
+      "question_ru": "Perl da $_ nima?",
       "question_en": "What is $_ in Perl?",
       "options_ru": [
-        "Частная переменная",
-        "Переменная по умолчанию — большинство функций работают с ней по умолчанию.",
-        "Глобальное значение по умолчанию",
-        "Переменная цикла"
+        "Private variable",
+        "Default o'zgaruvchi — ko'p funksiyalar default bo'yicha shu bilan ishlaydi",
+        "Global default",
+        "Loop variable"
       ],
       "options_en": [
         "Private variable",
@@ -715,13 +715,13 @@
         "Module init"
       ],
       "answer": 1,
-      "question_ru": "Зачем в Perl блоки BEGIN и END?",
+      "question_ru": "Perl da BEGIN va END bloklari nima uchun?",
       "question_en": "Why are BEGIN and END blocks in Perl?",
       "options_ru": [
-        "Начало/окончание",
-        "BEGIN — во время компиляции; END — блоки, которые запускаются в конце программы",
-        "Крючок жизненного цикла",
-        "Инициализация модуля"
+        "Start/end",
+        "BEGIN — kompilyatsiya vaqtida; END — dastur tugashida ishlaydigan bloklar",
+        "Lifecycle hook",
+        "Module init"
       ],
       "options_en": [
         "Start/end",
@@ -741,12 +741,12 @@
         "Dynamic dispatch"
       ],
       "answer": 1,
-      "question_ru": "Что такое АВТОЗАГРУЗКА в Perl?",
+      "question_ru": "Perl da AUTOLOAD nima?",
       "question_en": "What is AUTOLOAD in Perl?",
       "options_ru": [
-        "Автоматическая загрузка",
-        "Пользовательская подпрограмма, которая вызывается при вызове несуществующей подпрограммы.",
-        "Отсутствует метод",
+        "Auto yuklash",
+        "Mavjud bo'lmagan sub chaqirilganda ishga tushadigan maxsus sub",
+        "Missing method",
         "Dynamic dispatch"
       ],
       "options_en": [
@@ -767,13 +767,13 @@
         "Dynamic scope"
       ],
       "answer": 1,
-      "question_ru": "Что такое локальный в Perl?",
+      "question_ru": "Perl da local nima?",
       "question_en": "What is local in Perl?",
       "options_ru": [
-        "Местный",
-        "Изменение временного значения глобальной переменной — возвращается после завершения области действия.",
-        "Переменная температуры",
-        "Динамическая область видимости"
+        "Mahalliy",
+        "Global o'zgaruvchining vaqtinchalik qiymatini o'zgartirish — scope tugaganda qaytadi",
+        "Temp variable",
+        "Dynamic scope"
       ],
       "options_en": [
         "Local",
@@ -796,10 +796,10 @@
       "question_ru": "Perl da qw() nima?",
       "question_en": "What is qw() in Perl?",
       "options_ru": [
-        "Довольно слова",
-        "Создайте текстовый список — qw(один два три) = («один», «два», «три»)",
-        "Цитировать слова",
-        "Список строк"
+        "Quite words",
+        "Matnlar ro'yxati yaratish — qw(one two three) = ('one', 'two', 'three')",
+        "Quote words",
+        "String list"
       ],
       "options_en": [
         "Quite words",
@@ -819,16 +819,16 @@
         "Block string"
       ],
       "answer": 1,
-      "question_ru": "Что такое здесь-док в Perl?",
-      "question_en": "Perl da here-doc nima?",
+      "question_ru": "Perl da here-doc nima?",
+      "question_en": "What is here-doc in Perl?",
       "options_ru": [
-        "Вот документ",
-        "Многострочная строка <<END ... END",
-        "Многострочная строка",
-        "Строка блока"
+        "Bu yerda doc",
+        "Ko'p qatorli string — <<END ... END",
+        "Multiline string",
+        "Block string"
       ],
       "options_en": [
-        "Bu yerda doc",
+        "Here is the doc",
         "A multiline string is <<END ... END",
         "Multiline string",
         "Block string"
@@ -845,13 +845,13 @@
         "Return context"
       ],
       "answer": 1,
-      "question_ru": "Что такое контекст Wantarray в Perl?",
-      "question_en": "Perl da wantarray kontekst nima?",
+      "question_ru": "Perl da wantarray kontekst nima?",
+      "question_en": "What is wantarray context in Perl?",
       "options_ru": [
-        "Хотите массив",
-        "Список против скалярного контекста — определение контекста, в котором вызывается функция.",
-        "Проверка контекста",
-        "Возвращаемый контекст"
+        "Want array",
+        "List vs scalar kontekst — funksiya qaysi kontekstda chaqirilganini aniqlash",
+        "Context check",
+        "Return context"
       ],
       "options_en": [
         "Want array",
@@ -871,13 +871,13 @@
         "SQL module"
       ],
       "answer": 1,
-      "question_ru": "Что такое DBI в Perl?",
+      "question_ru": "Perl da DBI nima?",
       "question_en": "What is DBI in Perl?",
       "options_ru": [
-        "Отладочный интерфейс",
-        "DataBase Interface — стандартный модуль для работы с базой данных.",
-        "Модуль базы данных",
-        "SQL-модуль"
+        "Debug interface",
+        "DataBase Interface — ma'lumotlar bazasi bilan ishlash uchun standart modul",
+        "Database module",
+        "SQL module"
       ],
       "options_en": [
         "Debug interface",
@@ -897,13 +897,13 @@
         "Print format"
       ],
       "answer": 1,
-      "question_ru": "Что делает sprintf в Perl?",
+      "question_ru": "Perl da sprintf nima qiladi?",
       "question_en": "What does sprintf do in Perl?",
       "options_ru": [
-        "Строковая печать",
-        "Возвращает отформатированную строку, не отображая ее.",
-        "Строковый формат",
-        "Формат печати"
+        "String print",
+        "Formatlangan stringni ekranga chiqarmasdan qaytaradi",
+        "String format",
+        "Print format"
       ],
       "options_en": [
         "String print",
@@ -923,13 +923,13 @@
         "Custom variable"
       ],
       "answer": 1,
-      "question_ru": "Что такое связанные переменные в Perl?",
+      "question_ru": "Perl da tied variables nima?",
       "question_en": "What are tied variables in Perl?",
       "options_ru": [
-        "Подключено",
-        "Назначьте поведение простой переменной через специальный класс (TIESCALAR, FETCH, STORE).",
-        "Привязка переменной",
-        "Пользовательская переменная"
+        "Bog'langan",
+        "Oddiy o'zgaruvchiga maxsus klass (TIESCALAR, FETCH, STORE) orqali xatti-harakat berish",
+        "Variable bind",
+        "Custom variable"
       ],
       "options_en": [
         "Connected",
@@ -949,13 +949,13 @@
         "Performance module"
       ],
       "answer": 1,
-      "question_ru": "Что такое XS в Perl?",
+      "question_ru": "Perl da XS nima?",
       "question_en": "What is XS in Perl?",
       "options_ru": [
-        "Дополнительная скорость",
-        "Расширение Perl, написанное на C/C++ для повышения скорости или интеграции библиотеки C.",
-        "Расширение C",
-        "Модуль производительности"
+        "Extra speed",
+        "C/C++ da yozilgan Perl extension — tezlik uchun yoki C kutubxona integratsiyasi",
+        "C extension",
+        "Performance module"
       ],
       "options_en": [
         "Extra speed",
@@ -975,13 +975,13 @@
         "Type check"
       ],
       "answer": 1,
-      "question_ru": "Что Scalar::Util предоставляет в Perl?",
-      "question_en": "Perl da Scalar::Util nima beradi?",
+      "question_ru": "Perl da Scalar::Util nima beradi?",
+      "question_en": "What does Scalar::Util provide in Perl?",
       "options_ru": [
-        "Скалярные инструменты",
-        "благословенный, reftype, ослабление, выглядит_подобный_номер — служебные функции",
-        "Полезный модуль",
-        "Тип проверки"
+        "Scalar tools",
+        "blessed, reftype, weaken, looks_like_number — utility funksiyalari",
+        "Util module",
+        "Type check"
       ],
       "options_en": [
         "Scalar tools",
@@ -1001,13 +1001,13 @@
         "Class operator"
       ],
       "answer": 1,
-      "question_ru": "Зачем перегружать модуль в Perl?",
+      "question_ru": "Perl da overload module nima uchun?",
       "question_en": "Why overload module in Perl?",
       "options_ru": [
-        "Переопределить",
-        "Перегрузка операторов для объектов — используйте перегрузку '+' => \\&add",
-        "Операторский модуль",
-        "Оператор класса"
+        "Override",
+        "Ob'ektlarga operator overloading — use overload '+' => \\&add",
+        "Operator module",
+        "Class operator"
       ],
       "options_en": [
         "Override",
@@ -1027,13 +1027,13 @@
         "Function export"
       ],
       "answer": 1,
-      "question_ru": "Что такое экспортер в Perl?",
+      "question_ru": "Perl da Exporter nima?",
       "question_en": "What is Exporter in Perl?",
       "options_ru": [
-        "Инструмент экспорта",
-        "Экспорт функций из модуля — @EXPORT, @EXPORT_OK",
-        "Экспорт модуля",
-        "Экспорт функций"
+        "Export tool",
+        "Moduldan funksiyalarni export qilish — @EXPORT, @EXPORT_OK",
+        "Module export",
+        "Function export"
       ],
       "options_en": [
         "Export tool",
@@ -1053,12 +1053,12 @@
         "Template"
       ],
       "answer": 1,
-      "question_ru": "Что такое генерация тайм-кода BEGIN в Perl?",
+      "question_ru": "Perl da BEGIN time code generation nima?",
       "question_en": "What is BEGIN time code generation in Perl?",
       "options_ru": [
-        "Время сборки",
-        "Генерация кода во время компиляции — это метапрограммирование.",
-        "Макросистема",
+        "Build time",
+        "Kompilyatsiya vaqtida kod yaratish — metaprogramming",
+        "Macro system",
         "Шаблон"
       ],
       "options_en": [
@@ -1079,13 +1079,13 @@
         "Moo eski"
       ],
       "answer": 1,
-      "question_ru": "Разница между Moo и Moose в Perl?",
+      "question_ru": "Perl da Moo va Moose farqi?",
       "question_en": "Difference between Moo and Moose in Perl?",
       "options_ru": [
         "Нет никакой разницы",
-        "Moo — облегченная версия Moose, менее зависимая, совместимая с Moose.",
-        "Лось спереди",
-        "Му старый"
+        "Moo — Moose ning yengil versiyasi, kamroq dependency, Moose bilan mos",
+        "Moose old",
+        "Moo eski"
       ],
       "options_en": [
         "There is no difference",
@@ -1105,16 +1105,16 @@
         "Event loop"
       ],
       "answer": 1,
-      "question_ru": "Что такое AnyEvent в Perl?",
+      "question_ru": "Perl da AnyEvent nima?",
       "question_en": "What is AnyEvent in Perl?",
       "options_ru": [
-        "Любое событие",
-        "Фреймворк асинхронного программирования, управляемый событиями — альтернатива IO::Async",
-        "Асинхронный модуль",
-        "Цикл событий"
+        "Har qanday hodisa",
+        "Event-driven asynchronous programming framework — IO::Async alternativa",
+        "Async module",
+        "Event loop"
       ],
       "options_en": [
-        "Har qanday hodisa",
+        "Any event",
         "Event-driven asynchronous programming framework — IO::Async alternative",
         "Async module",
         "Event loop"
@@ -1131,13 +1131,13 @@
         "Module hub"
       ],
       "answer": 1,
-      "question_ru": "Что такое CPAN в Perl?",
+      "question_ru": "Perl da CPAN nima?",
       "question_en": "What is CPAN in Perl?",
       "options_ru": [
-        "Центральная сеть архивов Perl",
-        "Репозиторий модулей Perl — более 200 000 модулей.",
+        "Central Perl Archive Network",
+        "Perl module repositorysi — 200,000+ modullar",
         "Менеджер пакетов",
-        "Модуль-концентратор"
+        "Module hub"
       ],
       "options_en": [
         "Central Perl Archive Network",
@@ -1157,17 +1157,17 @@
         "Data format"
       ],
       "answer": 1,
-      "question_ru": "Зачем упаковывать/распаковывать в Perl?",
+      "question_ru": "Perl da pack/unpack nima uchun?",
       "question_en": "Why pack/unpack in Perl?",
       "options_ru": [
-        "Упаковка",
-        "Хранение и чтение двоичных данных — сетевой протокол, двоичный формат.",
-        "Двоичный ввод-вывод",
-        "Формат данных"
+        "Packaging",
+        "Binary ma'lumotlarni saqlash va o'qish — network protocol, binary format",
+        "Binary IO",
+        "Data format"
       ],
       "options_en": [
         "Packaging",
-        "Binary ma'lumotlarni saqlash va o'qish — network protocol, binary format",
+        "Storage and reading of binary data — network protocol, binary format",
         "Binary IO",
         "Data format"
       ]
@@ -1183,17 +1183,17 @@
         "Data store"
       ],
       "answer": 1,
-      "question_ru": "Что такое сохраняемое в Perl?",
+      "question_ru": "Perl da Storable nima?",
       "question_en": "What is Storable in Perl?",
       "options_ru": [
-        "Сохранить",
-        "Сериализация структур данных Perl — заморозка/оттаивание",
-        "Сериализация",
-        "Хранилище данных"
+        "Saqlash",
+        "Perl ma'lumotlar tuzilmalarini serializatsiya qilish — freeze/thaw",
+        "Serialize",
+        "Data store"
       ],
       "options_en": [
         "Save",
-        "Perl ma'lumotlar tuzilmalarini serializatsiya qilish — freeze/thaw",
+        "Serializing Perl data structures — freeze/thaw",
         "Serialize",
         "Data store"
       ]
@@ -1209,17 +1209,17 @@
         "Zero-width assertion"
       ],
       "answer": 1,
-      "question_ru": "Что такое просмотр вперед/назад регулярных выражений в Perl?",
+      "question_ru": "Perl da Regular expression lookahead/lookbehind nima?",
       "question_en": "What is Regular expression lookahead/lookbehind in Perl?",
       "options_ru": [
-        "Смотри вперед",
-        "(?=...) положительный просмотр вперед, (?<=...) просмотр назад — проверка без сопоставления",
-        "Регулярное выражение утверждает",
-        "Утверждение нулевой ширины"
+        "Look ahead",
+        "(?=...) pozitiv lookahead, (?<=...) lookbehind — match qilmasdan tekshirish",
+        "Regex assert",
+        "Zero-width assertion"
       ],
       "options_en": [
         "Look ahead",
-        "(?=...) pozitiv lookahead, (?<=...) lookbehind — match qilmasdan tekshirish",
+        "(?=...) positive lookahead, (?<=...) lookbehind — checking without matching",
         "Regex assert",
         "Zero-width assertion"
       ]
@@ -1235,13 +1235,13 @@
         "Parallel"
       ],
       "answer": 1,
-      "question_ru": "Что такое потоки в Perl?",
+      "question_ru": "Perl da threads nima?",
       "question_en": "What are threads in Perl?",
       "options_ru": [
-        "Тип резьбы",
+        "Thread turi",
         "use threads — Perl da ko'p thread (shared state bilan, lekin GIL yo'q)",
-        "Параллельно",
-        "Параллельно"
+        "Concurrent",
+        "Parallel"
       ],
       "options_en": [
         "Thread type",
@@ -1261,13 +1261,13 @@
         "Math"
       ],
       "answer": 1,
-      "question_ru": "Что List::Util предоставляет в Perl?",
-      "question_en": "Perl da List::Util nima beradi?",
+      "question_ru": "Perl da List::Util nima beradi?",
+      "question_en": "What does List::Util provide in Perl?",
       "options_ru": [
-        "Список инструментов",
-        "сумма, макс, мин, первый, любой, все, нет, уменьшение — операции со списком функциональных",
-        "Утилита",
-        "Математика"
+        "List tools",
+        "sum, max, min, first, any, all, none, reduce — funksional list operatsiyalari",
+        "Utility",
+        "Math"
       ],
       "options_en": [
         "List tools",
@@ -1287,13 +1287,13 @@
         "Safe mode"
       ],
       "answer": 1,
-      "question_ru": "Что такое запретный режим в Perl?",
+      "question_ru": "Perl da taint mode nima?",
       "question_en": "What is taint mode in Perl?",
       "options_ru": [
-        "Проверка на наличие загрязнений",
-        "Безопасность — пометку внешних данных как «загрязненных» нельзя использовать без проверки.",
-        "Режим безопасности",
-        "Безопасный режим"
+        "Taint check",
+        "Xavfsizlik — tashqi ma'lumotlarni 'taint' deb belgilash, tekshiruvsiz ishlatilmaydi",
+        "Security mode",
+        "Safe mode"
       ],
       "options_en": [
         "Taint check",

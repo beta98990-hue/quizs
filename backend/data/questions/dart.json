@@ -13,17 +13,17 @@
         "Database tili"
       ],
       "answer": 1,
-      "question_ru": "Что такое дротик?",
-      "question_en": "What is a dart?",
+      "question_ru": "Dart nima?",
+      "question_en": "Dart nima?",
       "options_ru": [
-        "Тип JavaScript",
-        "Создано Google — основной язык Flutter.",
+        "JavaScript turi",
+        "Google tomonidan yaratilgan — Flutter uchun asosiy til",
         "CSS-препроцессор",
-        "Язык базы данных"
+        "Database tili"
       ],
       "options_en": [
         "JavaScript turi",
-        "Created by Google — The core language for Flutter",
+        "Google tomonidan yaratilgan — Flutter uchun asosiy til",
         "CSS preprocessor",
         "Database tili"
       ]
@@ -39,18 +39,18 @@
         "x := 5"
       ],
       "answer": 0,
-      "question_ru": "Как объявить переменную в Dart?",
-      "question_en": "How to declare a variable in Dart?",
+      "question_ru": "Dart da o'zgaruvchi qanday e'lon qilinadi?",
+      "question_en": "Dart da o'zgaruvchi qanday e'lon qilinadi?",
       "options_ru": [
-        "интервал х = 5; или вар х = 5;",
-        "пусть х = 5;",
-        "вал х = 5;",
-        "х := 5"
+        "int x = 5; yoki var x = 5;",
+        "let x = 5;",
+        "val x = 5;",
+        "x := 5"
       ],
       "options_en": [
-        "int x = 5; or var x = 5;",
+        "int x = 5; yoki var x = 5;",
         "let x = 5;",
-        "shaft x = 5;",
+        "val x = 5;",
         "x := 5"
       ]
     },
@@ -65,18 +65,18 @@
         "Debug log"
       ],
       "answer": 1,
-      "question_ru": "Что делает print() в Dart?",
-      "question_en": "What does print() do in Dart?",
+      "question_ru": "Dart da print() nima qiladi?",
+      "question_en": "Dart da print() nima qiladi?",
       "options_ru": [
-        "Распечатать файл",
-        "Выводит текст на консоль",
-        "Записывает файл",
-        "Журнал отладки"
+        "Print file",
+        "Konsolga matn chiqaradi",
+        "Fayl yozadi",
+        "Debug log"
       ],
       "options_en": [
         "Print file",
-        "Outputs text to the console",
-        "Writes a file",
+        "Konsolga matn chiqaradi",
+        "Fayl yozadi",
         "Debug log"
       ]
     },
@@ -91,17 +91,17 @@
         "Tuple"
       ],
       "answer": 1,
-      "question_ru": "Что такое Дарт да Лист?",
-      "question_en": "What is Dart da List?",
+      "question_ru": "Dart da List nima?",
+      "question_en": "Dart da List nima?",
       "options_ru": [
-        "HTML-список",
-        "Динамический или фиксированный список — [1, 2, 3]",
-        "Статический массив",
-        "Кортеж"
+        "HTML list",
+        "Dinamik yoki fixed tipli ro'yxat — [1, 2, 3]",
+        "Static array",
+        "Tuple"
       ],
       "options_en": [
         "HTML list",
-        "Dynamic or fixed list — [1, 2, 3]",
+        "Dinamik yoki fixed tipli ro'yxat — [1, 2, 3]",
         "Static array",
         "A tuple"
       ]
@@ -117,13 +117,13 @@
         "Hash"
       ],
       "answer": 1,
-      "question_ru": "Что такое карта в Dart?",
+      "question_ru": "Dart da Map nima?",
       "question_en": "What is Map in Dart?",
       "options_ru": [
-        "Географическая карта",
-        "Пары ключ-значение — {'ключ': 'значение'}",
-        "Словарь",
-        "Хэш"
+        "Geografik xarita",
+        "Kalit-qiymat juftliklari — {'key': 'value'}",
+        "Dictionary",
+        "Hash"
       ],
       "options_en": [
         "Geographic map",
@@ -143,13 +143,13 @@
         "Null pointer"
       ],
       "answer": 1,
-      "question_ru": "Что такое нулевая безопасность в Dart?",
+      "question_ru": "Dart da null safety nima?",
       "question_en": "What is null safety in Dart?",
       "options_ru": [
-        "Нулевая проверка",
-        "Строка против строки? — различать типы, допускающие и не допускающие значения NULL — ключевое слово late",
-        "Дополнительный тип",
-        "Нулевой указатель"
+        "Null tekshirish",
+        "String vs String? — nullable va non-nullable tiplarni ajratish — late kalit so'zi",
+        "Optional type",
+        "Null pointer"
       ],
       "options_en": [
         "Null check",
@@ -169,13 +169,13 @@
         "Deferred"
       ],
       "answer": 1,
-      "question_ru": "Почему Дарт опаздывает?",
+      "question_ru": "Dart da late nima uchun?",
       "question_en": "Why is Dart late?",
       "options_ru": [
-        "Уже поздно",
-        "Инициализация переменной, не допускающей значения NULL, позже",
-        "Ленивое свойство",
-        "Отложенный"
+        "Kech init",
+        "Non-nullable o'zgaruvchini keyinroq initsializatsiya qilish",
+        "Lazy property",
+        "Deferred"
       ],
       "options_en": [
         "It's late",
@@ -195,13 +195,13 @@
         "Lambda arrow"
       ],
       "answer": 1,
-      "question_ru": "В Дарте => почему?",
-      "question_en": "Dart da => nima uchun?",
+      "question_ru": "Dart da => nima uchun?",
+      "question_en": "At Dart => why?",
       "options_ru": [
-        "Стрелочная функция",
-        "Сокращенный синтаксис для функции с одним выражением",
-        "Больше или равно",
-        "Лямбда-стрелка"
+        "Arrow function",
+        "Bir ifodali funksiya uchun qisqartma sintaksis",
+        "Greater than or equal",
+        "Lambda arrow"
       ],
       "options_en": [
         "Arrow function",
@@ -221,16 +221,16 @@
         "Deferred"
       ],
       "answer": 1,
-      "question_ru": "Что такое будущее в дартсе?",
-      "question_en": "Dart da Future nima?",
+      "question_ru": "Dart da Future nima?",
+      "question_en": "What is Future at Darts?",
       "options_ru": [
-        "Будущее",
-        "Результатом асинхронной операции является работа с async/await.",
-        "Обещание",
-        "Отложенный"
+        "Kelajak",
+        "Asinxron operatsiya natijasi — async/await bilan ishlash",
+        "Promise",
+        "Deferred"
       ],
       "options_en": [
-        "Kelajak",
+        "The future",
         "The result of an asynchronous operation is working with async/await",
         "Promise",
         "Deferred"
@@ -247,17 +247,17 @@
         "Async list"
       ],
       "answer": 1,
-      "question_ru": "Что такое стрим в Dart?",
+      "question_ru": "Dart da Stream nima?",
       "question_en": "What is Stream in Dart?",
       "options_ru": [
-        "Поток данных",
-        "Последовательный асинхронный поток событий — подписка с прослушиванием",
-        "Трансляция событий",
-        "Асинхронный список"
+        "Data stream",
+        "Ketma-ket asinxron voqealar oqimi — listen bilan subscribe",
+        "Event stream",
+        "Async list"
       ],
       "options_en": [
         "Data stream",
-        "Ketma-ket asinxron voqealar oqimi — listen bilan subscribe",
+        "Sequential asynchronous event stream — subscribe with listen",
         "Event stream",
         "Async list"
       ]
@@ -273,13 +273,13 @@
         "struct MyClass { }"
       ],
       "answer": 0,
-      "question_ru": "Как объявить класс в Dart?",
+      "question_ru": "Dart da class qanday e'lon qilinadi?",
       "question_en": "How to declare a class in Dart?",
       "options_ru": [
-        "класс МойКласс { }",
-        "объект MyClass { }",
-        "введите MyClass { }",
-        "структура MyClass { }"
+        "class MyClass { }",
+        "object MyClass { }",
+        "type MyClass { }",
+        "struct MyClass { }"
       ],
       "options_en": [
         "class MyClass { }",
@@ -299,13 +299,13 @@
         "Interface"
       ],
       "answer": 1,
-      "question_ru": "Что такое миксин в дартсе?",
+      "question_ru": "Dart da mixin nima?",
       "question_en": "What is mixin in darts?",
       "options_ru": [
-        "CSS-миксин",
-        "с ключевым словом — получить функциональность от нескольких классов",
-        "Черта",
-        "Интерфейс"
+        "CSS mixin",
+        "with kalit so'zi bilan — ko'p klass dan funksionallik olish",
+        "Trait",
+        "Interface"
       ],
       "options_en": [
         "CSS mixin",
@@ -325,13 +325,13 @@
         "Constraint"
       ],
       "answer": 1,
-      "question_ru": "Зачем нужен Дарт?",
+      "question_ru": "Dart da required nima uchun?",
       "question_en": "Why is Dart required?",
       "options_ru": [
-        "Обязательный",
-        "Сделайте параметр Named обязательным — обязательное имя строки.",
-        "Аннотация",
-        "Ограничение"
+        "Majburiy",
+        "Named parameter ni majburiy qilish — required String name",
+        "Annotation",
+        "Constraint"
       ],
       "options_en": [
         "Mandatory",
@@ -351,13 +351,13 @@
         "const runtime"
       ],
       "answer": 1,
-      "question_ru": "Разница между const и Final в Dart?",
+      "question_ru": "Dart da const va final farqi?",
       "question_en": "Difference between const and final in Dart?",
       "options_ru": [
         "Нет никакой разницы",
-        "const — константа времени компиляции; Final — определяется один раз во время выполнения",
-        "окончательное время компиляции",
-        "константное время выполнения"
+        "const — compile-time constant; final — runtime da bir marta belgilanadi",
+        "final compile-time",
+        "const runtime"
       ],
       "options_en": [
         "There is no difference",
@@ -377,13 +377,13 @@
         "\"Hello #{name}\""
       ],
       "answer": 1,
-      "question_ru": "Что такое строковая интерполяция в Dart?",
+      "question_ru": "Dart da String interpolation qanday?",
       "question_en": "What is String interpolation in Dart?",
       "options_ru": [
-        "Строка + конкат",
-        "'Привет, $имя!' или «Привет, ${user.name}!»",
-        "f\"Привет, {имя}\"",
-        "«Привет, #{имя}»"
+        "String + concat",
+        "'Hello $name!' yoki 'Hello ${user.name}!'",
+        "f\"Hello {name}\"",
+        "\"Hello #{name}\""
       ],
       "options_en": [
         "String + concat",
@@ -403,16 +403,16 @@
         "Trait"
       ],
       "answer": 1,
-      "question_ru": "Что такое методы расширения в Dart?",
-      "question_en": "Dart da extension methods nima?",
+      "question_ru": "Dart da extension methods nima?",
+      "question_en": "What are extension methods in Dart?",
       "options_ru": [
-        "Расширение",
-        "расширение MyClass — добавление новых методов к существующему типу",
+        "Kengaytirish",
+        "extension on MyClass — mavjud tipga yangi metodlar qo'shish",
         "Миксин",
-        "Черта"
+        "Trait"
       ],
       "options_en": [
-        "Kengaytirish",
+        "Expansion",
         "extension on MyClass — adding new methods to an existing type",
         "Mixin",
         "Trait"
@@ -429,13 +429,13 @@
         "Process"
       ],
       "answer": 1,
-      "question_ru": "Что такое изоляция в Дартсе?",
+      "question_ru": "Dart da Isolate nima?",
       "question_en": "What is Isolate at Dart?",
       "options_ru": [
         "Izolyatsiya",
-        "Работает с отдельной памятью и циклом событий — аналогично Web Workers, настоящий параллелизм.",
-        "Нить",
-        "Процесс"
+        "Alohida xotira va event loop bilan ishlaydi — Web Workers ga o'xshash, true parallelism",
+        "Thread",
+        "Process"
       ],
       "options_en": [
         "Insulation",
@@ -455,13 +455,13 @@
         "Stream gen"
       ],
       "answer": 1,
-      "question_ru": "Почему в Dart асинхронность* и выход?",
+      "question_ru": "Dart da async* va yield nima uchun?",
       "question_en": "Why async* and yield in Dart?",
       "options_ru": [
-        "Асинхронный генератор",
-        "Функция асинхронного генератора, возвращающая поток.",
-        "Асинхронный возврат",
-        "Генерация потока"
+        "Async generator",
+        "Stream qaytaruvchi asinxron generator funksiya",
+        "Async return",
+        "Stream gen"
       ],
       "options_en": [
         "Async generator",
@@ -481,19 +481,19 @@
         "Iterator"
       ],
       "answer": 1,
-      "question_ru": "Зачем синхронизировать* и получать доход в Dart?",
+      "question_ru": "Dart da sync* va yield nima uchun?",
       "question_en": "Why sync* and yield in Dart?",
       "options_ru": [
-        "Генератор синхронизации",
-        "Функция синхронного генератора, возвращающая Iterable",
-        "Ленивый список",
-        "Итератор"
+        "Sync generator",
+        "Iterable qaytaruvchi sinxron generator funksiya",
+        "Lazy list",
+        "Iterator"
       ],
       "options_en": [
         "Sync generator",
         "A synchronous generator function that returns an Iterable",
         "Lazy list",
-        "Iterator"
+        "An iterator"
       ]
     },
     {
@@ -507,16 +507,16 @@
         "Fluent API"
       ],
       "answer": 1,
-      "question_ru": "Что такое каскадная запись (..) в Dart?",
+      "question_ru": "Dart da cascade notation (..) nima?",
       "question_en": "What is cascade notation (..) in Dart?",
       "options_ru": [
-        "Каскад",
-        "Вызов последовательных методов одного объекта — шаблон построения",
-        "Цепочка методов",
-        "Свободный API"
+        "Kaskad",
+        "Bir ob'ektda ketma-ket metodlar chaqirish — builder pattern",
+        "Method chain",
+        "Fluent API"
       ],
       "options_en": [
-        "Kaskad",
+        "Cascade",
         "Calling successive methods on one object — builder pattern",
         "Method chain",
         "Fluent API"
@@ -533,13 +533,13 @@
         "Class method"
       ],
       "answer": 1,
-      "question_ru": "Что такое конструктор фабрики в Dart?",
+      "question_ru": "Dart da factory constructor nima?",
       "question_en": "What is a factory constructor in Dart?",
       "options_ru": [
-        "Фабрика",
-        "Конструктор, который не всегда возвращает новый экземпляр — для синглтона или кеша.",
-        "Статический метод",
-        "Метод класса"
+        "Fabrika",
+        "Doim yangi instancea qaytarmaydigan konstruktor — singleton yoki cache uchun",
+        "Static method",
+        "Class method"
       ],
       "options_en": [
         "Factory",
@@ -559,13 +559,13 @@
         "Mixin base"
       ],
       "answer": 1,
-      "question_ru": "Что такое абстрактный класс в Dart?",
+      "question_ru": "Dart da abstract class nima?",
       "question_en": "What is an abstract class in Dart?",
       "options_ru": [
-        "Абстрактный",
-        "Класс, экземпляр которого невозможно создать и который должен быть реализован с помощью подклассов.",
-        "Интерфейс",
-        "Миксиновая база"
+        "Abstract",
+        "Instancea yaratib bo'lmaydigan, subklasslar implement qilishi kerak bo'lgan klass",
+        "Interface",
+        "Mixin base"
       ],
       "options_en": [
         "Abstract",
@@ -585,12 +585,12 @@
         "Mixin"
       ],
       "answer": 1,
-      "question_ru": "Почему реализуется в Dart?",
+      "question_ru": "Dart da implements nima uchun?",
       "question_en": "Why implements in Dart?",
       "options_ru": [
-        "Внедрить",
-        "В качестве интерфейса — все методы должны быть переопределены.",
-        "Продлить",
+        "Implement",
+        "Interface sifatida — barcha metodlarni qayta implementatsiya qilish majburiy",
+        "Extend",
         "Миксин"
       ],
       "options_en": [
@@ -611,17 +611,17 @@
         "Math operator"
       ],
       "answer": 1,
-      "question_ru": "Что такое перегрузка операторов в Dart?",
+      "question_ru": "Dart da operator overloading qanday?",
       "question_en": "What is operator overloading in Dart?",
       "options_ru": [
-        "Определение оператора",
-        "оператор + (MyClass другой) — дает новое определение операторам",
-        "Пользовательский оператор",
-        "Математический оператор"
+        "Operator ta'riflash",
+        "operator + (MyClass other) — operatorlarga yangi ta'rif berish",
+        "Custom operator",
+        "Math operator"
       ],
       "options_en": [
         "Operator definition",
-        "operator + (MyClass other) — operatorlarga yangi ta'rif berish",
+        "operator + (MyClass other) — giving a new definition to operators",
         "Custom operator",
         "Math operator"
       ]
@@ -637,13 +637,13 @@
         "Function type"
       ],
       "answer": 1,
-      "question_ru": "Почему typedef в Dart?",
+      "question_ru": "Dart da typedef nima uchun?",
       "question_en": "Why typedef in Dart?",
       "options_ru": [
-        "Описание типа",
-        "Именование типа функции или сложного типа — typedef Predicate = bool Function(int)",
-        "Введите псевдоним",
-        "Тип функции"
+        "Tip ta'riflash",
+        "Funksiya tipi yoki murakkab tip uchun nom berish — typedef Predicate = bool Function(int)",
+        "Type alias",
+        "Function type"
       ],
       "options_en": [
         "Type description",
@@ -663,13 +663,13 @@
         "Elvis"
       ],
       "answer": 1,
-      "question_ru": "Дарт в ?? что такое оператор?",
-      "question_en": "Dart da ?? operatori nima?",
+      "question_ru": "Dart da ?? operatori nima?",
+      "question_en": "Dart at ?? what is an operator?",
       "options_ru": [
-        "Нулевая проверка",
-        "Вернуть true, если null — имя ?? «Неизвестно»",
-        "тройной",
-        "Элвис"
+        "Null check",
+        "Null bo'lsa o'ng qiymat qaytarish — name ?? 'Unknown'",
+        "Ternary",
+        "Elvis"
       ],
       "options_en": [
         "Null check",
@@ -689,17 +689,17 @@
         "Null chain"
       ],
       "answer": 1,
-      "question_ru": "В дартс?  что такое оператор?",
+      "question_ru": "Dart da ?.  operatori nima?",
       "question_en": "At darts?  what is an operator?",
       "options_ru": [
-        "Необязательное поле",
-        "Вернуть ноль, если ноль — пользователь?.имя",
-        "Безопасный вызов",
-        "Нулевая цепочка"
+        "Optional field",
+        "Null bo'lsa null qaytarish — user?.name",
+        "Safe call",
+        "Null chain"
       ],
       "options_en": [
         "Optional field",
-        "Null bo'lsa null qaytarish — user?.name",
+        "Return null if null — user?.name",
         "Safe call",
         "Null chain"
       ]
@@ -715,12 +715,12 @@
         "Future builder"
       ],
       "answer": 1,
-      "question_ru": "Почему Completer в Dart?",
+      "question_ru": "Dart da Completer nima uchun?",
       "question_en": "Why Completer at Dart?",
       "options_ru": [
-        "Прекращение действия",
-        "Создайте и заполните Future вручную",
-        "Обещание решить",
+        "Tugatish",
+        "Future ni qo'lda yaratish va complete qilish",
+        "Promise resolve",
         "Future builder"
       ],
       "options_en": [
@@ -741,12 +741,12 @@
         "Override param"
       ],
       "answer": 1,
-      "question_ru": "Почему ковариантный в Dart?",
-      "question_en": "Dart da covariant nima uchun?",
+      "question_ru": "Dart da covariant nima uchun?",
+      "question_en": "Why covariant in Dart?",
       "options_ru": [
-        "Вместе",
-        "Расширить тип параметра в Override — ковариантный параметр MyClass",
-        "Тип ковариации",
+        "Birgalikda",
+        "Override da parameter tipini kengaytirish — covariant MyClass param",
+        "Type covariance",
         "Override param"
       ],
       "options_en": [
@@ -767,13 +767,13 @@
         "Extend method"
       ],
       "answer": 1,
-      "question_ru": "Что такое аннотация @override в Dart?",
+      "question_ru": "Dart da @override annotation nima?",
       "question_en": "What is @override annotation in Dart?",
       "options_ru": [
-        "Переопределение может сделать",
-        "Указание переопределения метода — компилятор проверяет",
+        "Override bajara oladi",
+        "Metod override qilinayotganini belgilash — kompilyator tekshiradi",
         "Interface method",
-        "Расширить метод"
+        "Extend method"
       ],
       "options_en": [
         "Override can do",
@@ -793,17 +793,17 @@
         "VM production uchun"
       ],
       "answer": 1,
-      "question_ru": "Разница между Dart VM и компиляцией AOT в Dart?",
+      "question_ru": "Dart da Dart VM va AOT compilation farqi?",
       "question_en": "Difference between Dart VM and AOT compilation in Dart?",
       "options_ru": [
         "Нет никакой разницы",
-        "Dart VM — для JIT-отладки; AOT — собственный код для выпуска, быстрый запуск",
-        "AOT для отладки",
-        "Для производства ВМ"
+        "Dart VM — JIT debug uchun; AOT — release uchun mahalliy kod, tez startup",
+        "AOT debug uchun",
+        "VM production uchun"
       ],
       "options_en": [
         "There is no difference",
-        "Dart VM — JIT debug uchun; AOT — release uchun mahalliy kod, tez startup",
+        "Dart VM — for JIT debugging; AOT — native code for release, fast startup",
         "AOT for debugging",
         "For VM production"
       ]
@@ -819,13 +819,13 @@
         "Build config"
       ],
       "answer": 1,
-      "question_ru": "Почему pubspec.yaml в Dart?",
-      "question_en": "Dart da pubspec.yaml nima uchun?",
+      "question_ru": "Dart da pubspec.yaml nima uchun?",
+      "question_en": "Why pubspec.yaml in Dart?",
       "options_ru": [
-        "Конфигурация YAML",
-        "Конфигурация метаданных пакета, зависимостей и ресурсов",
-        "Конфигурация проекта",
-        "Конфигурация сборки"
+        "YAML config",
+        "Paket metadata, dependencies va assets konfiguratsiyasi",
+        "Project config",
+        "Build config"
       ],
       "options_en": [
         "YAML config",
@@ -845,13 +845,13 @@
         "Library import"
       ],
       "answer": 1,
-      "question_ru": "Что такое импорт «пакета:» в Dart?",
+      "question_ru": "Dart da import 'package:' nima?",
       "question_en": "What is import 'package:' in Dart?",
       "options_ru": [
-        "Импорт пакетов",
-        "Импортировать пакеты, загруженные с pub.dev.",
-        "Импорт файла",
-        "Импорт библиотеки"
+        "Package import",
+        "pub.dev dan yuklab olingan paketlarni import qilish",
+        "File import",
+        "Library import"
       ],
       "options_en": [
         "Package import",
@@ -871,13 +871,13 @@
         "Merge"
       ],
       "answer": 1,
-      "question_ru": "Что такое оператор распространения (...) в List<T> в Dart?",
+      "question_ru": "Dart da List<T> da spread operator (...) nima?",
       "question_en": "What is spread operator (...) in List<T> in Dart?",
       "options_ru": [
-        "Распространение",
-        "Распространение элементов списка в другой список — [...list1, ...list2]",
-        "Распаковать",
-        "Объединить"
+        "Spread",
+        "List elementlarini boshqa list ga yoyib qo'shish — [...list1, ...list2]",
+        "Unpack",
+        "Merge"
       ],
       "options_en": [
         "Spread",
@@ -897,13 +897,13 @@
         "Generator"
       ],
       "answer": 1,
-      "question_ru": "Что такое if и for в литерале коллекции в Dart?",
+      "question_ru": "Dart da if va for in collection literal nima?",
       "question_en": "What is if and for in collection literal in Dart?",
       "options_ru": [
-        "Контроль сбора",
-        "[элемент if (условие), for (x в списке) x*2] — декларативное построение коллекции",
-        "Понимание списка",
-        "Генератор"
+        "Collection control",
+        "[if (condition) element, for (x in list) x*2] — declarative collection building",
+        "List comprehension",
+        "Generator"
       ],
       "options_en": [
         "Collection control",
@@ -923,13 +923,13 @@
         "Optional null"
       ],
       "answer": 1,
-      "question_ru": "Что такое нулевая безопасность в Dart?",
+      "question_ru": "Dart da sound null safety nima?",
       "question_en": "What is sound null safety on Dart?",
       "options_ru": [
-        "Нулевая безопасность",
-        "Гарантированное обнаружение нулевых ошибок во время компиляции — используйте с уверенностью без проверки на ноль.",
-        "Проверка нуля во время выполнения",
-        "Необязательный ноль"
+        "Null safety",
+        "Kompilyatsiya vaqtida null xatolarni kafolatli aniqlash — null check olmay ishonch bilan ishlatish",
+        "Runtime null check",
+        "Optional null"
       ],
       "options_en": [
         "Zero safety",
@@ -949,17 +949,17 @@
         "Named tuple"
       ],
       "answer": 1,
-      "question_ru": "Что такое типы записей в Dart (Dart 3)?",
+      "question_ru": "Dart da Record types (Dart 3) nima?",
       "question_en": "What are Record types in Dart (Dart 3)?",
       "options_ru": [
-        "Написание",
-        "(String, int) — анонимный, неизменяемый, структурированный тип значения — например, кортеж.",
-        "Кортеж",
-        "Именованный кортеж"
+        "Yozuv",
+        "(String, int) — anonim, immutable, struktural qiymat tipi — tuple kabi",
+        "Tuple",
+        "Named tuple"
       ],
       "options_en": [
         "Writing",
-        "(String, int) — anonim, immutable, struktural qiymat tipi — tuple kabi",
+        "(String, int) — anonymous, immutable, structured value type — like a tuple",
         "A tuple",
         "Named tuple"
       ]
@@ -975,13 +975,13 @@
         "Case pattern"
       ],
       "answer": 1,
-      "question_ru": "Что такое сопоставление с образцом в Dart (Dart 3)?",
+      "question_ru": "Dart da Pattern matching (Dart 3) nima?",
       "question_en": "What is Pattern matching in Dart (Dart 3)?",
       "options_ru": [
-        "Узор",
-        "в переключателе/регистре — Объект, запись, шаблон списка, деструктуризация",
-        "Матч",
-        "Модель корпуса"
+        "Pattern",
+        "switch/case da — Object, record, list pattern, destructuring",
+        "Match",
+        "Case pattern"
       ],
       "options_en": [
         "Pattern",
@@ -1001,16 +1001,16 @@
         "Abstract sealed"
       ],
       "answer": 1,
-      "question_ru": "Что такое запечатанный класс в Дарт (Дарт 3)?",
+      "question_ru": "Dart da sealed class (Dart 3) nima?",
       "question_en": "What is a sealed class in Dart (Dart 3)?",
       "options_ru": [
-        "Закрытый класс",
-        "Ограниченная иерархия подтипов — исчерпывающие возможности переключения",
-        "Заключительный урок",
-        "Аннотация запечатана"
+        "Yopiq klass",
+        "Cheklangan subtype ierarxiyasi — exhaustive switch imkoni",
+        "Final class",
+        "Abstract sealed"
       ],
       "options_en": [
-        "Yopiq klass",
+        "Closed class",
         "Limited subtype hierarchy — exhaustive switch capability",
         "Final class",
         "Abstract sealed"
@@ -1027,13 +1027,13 @@
         "Inheritance control"
       ],
       "answer": 1,
-      "question_ru": "Модификатор класса в Dart: Final, Base, Interface (Dart 3)?",
+      "question_ru": "Dart da class modifier: final, base, interface (Dart 3)?",
       "question_en": "Class modifier in Dart: final, base, interface (Dart 3)?",
       "options_ru": [
-        "Тип класса",
-        "Final — без наследования и реализации; base — только расширять; интерфейс - это всего лишь реализация",
-        "Модификатор доступа",
-        "Контроль наследования"
+        "Class type",
+        "final — meros va implement yo'q; base — faqat extend; interface — faqat implement",
+        "Access modifier",
+        "Inheritance control"
       ],
       "options_en": [
         "Class type",
@@ -1053,17 +1053,17 @@
         "Thread port"
       ],
       "answer": 1,
-      "question_ru": "Почему SendPort и ReceivePort в Dart?",
+      "question_ru": "Dart da SendPort va ReceivePort nima uchun?",
       "question_en": "Why SendPort and ReceivePort in Dart?",
       "options_ru": [
-        "Портовое сообщение",
-        "Передача сообщений между изолятами используется вместе",
-        "Сетевой порт",
-        "Резьбовой порт"
+        "Port communication",
+        "Isolate lar o'rtasida message passing — birga qo'llaniladi",
+        "Network port",
+        "Thread port"
       ],
       "options_en": [
         "Port communication",
-        "Isolate lar o'rtasida message passing — birga qo'llaniladi",
+        "Message passing between isolates is used together",
         "Network port",
         "Thread port"
       ]
@@ -1079,13 +1079,13 @@
         "Low level"
       ],
       "answer": 1,
-      "question_ru": "Почему dart:ffi в дартсе?",
+      "question_ru": "Dart da dart:ffi nima uchun?",
       "question_en": "Why dart:ffi in dart?",
       "options_ru": [
-        "Внешняя функция",
-        "Вызов библиотек C из Dart — интерфейс внешних функций",
-        "Собственный код",
-        "Низкий уровень"
+        "Foreign function",
+        "C kutubxonalarni Dart dan chaqirish — Foreign Function Interface",
+        "Native code",
+        "Low level"
       ],
       "options_en": [
         "Foreign function",
@@ -1105,13 +1105,13 @@
         "Type alias"
       ],
       "answer": 1,
-      "question_ru": "Что такое тип расширения (Dart 3) в Dart?",
+      "question_ru": "Dart da extension type (Dart 3) nima?",
       "question_en": "What is extension type (Dart 3) in Dart?",
       "options_ru": [
-        "Тип расширения",
-        "Оболочка с нулевой стоимостью — это новый тип интерфейса без накладных расходов во время выполнения.",
-        "Тип упаковки",
-        "Введите псевдоним"
+        "Kengaytirish tip",
+        "Zero-cost wrapper — runtime overhead holda yangi interfeysli tip",
+        "Wrapper type",
+        "Type alias"
       ],
       "options_en": [
         "Extension type",
@@ -1131,16 +1131,16 @@
         "Meta programming"
       ],
       "answer": 1,
-      "question_ru": "Что такое dart:mirrors в Dart?",
+      "question_ru": "Dart da dart:mirrors nima?",
       "question_en": "What is dart:mirrors in Dart?",
       "options_ru": [
-        "Зеркало",
-        "Отражение во время выполнения — получение информации о классе, методе (отключено во Flutter)",
-        "API отражения",
+        "Ko'zgu",
+        "Runtime reflection — klass, metod haqida ma'lumot olish (Flutter da disabled)",
+        "Reflection API",
         "Meta programming"
       ],
       "options_en": [
-        "Ko'zgu",
+        "Mirror",
         "Runtime reflection — getting information about a class, method (disabled in Flutter)",
         "Reflection API",
         "Meta programming"
@@ -1157,13 +1157,13 @@
         "Future generator"
       ],
       "answer": 1,
-      "question_ru": "Разница между Completer и асинхронным генератором в Dart?",
+      "question_ru": "Dart da Completer vs async generator farqi?",
       "question_en": "Difference between Completer vs async generator in Dart?",
       "options_ru": [
         "Нет никакой разницы",
-        "Completer — Императивное создание Будущего; генератор async* — декларативный поток",
-        "Генератор комплектующий",
-        "Генератор будущего"
+        "Completer — Future ni imperativ yaratish; async* generator — deklarativ Stream",
+        "Generator completer",
+        "Future generator"
       ],
       "options_en": [
         "There is no difference",
@@ -1183,13 +1183,13 @@
         "Build optimize"
       ],
       "answer": 1,
-      "question_ru": "Что такое тряска дерева в дартсе?",
+      "question_ru": "Dart da Tree shaking nima?",
       "question_en": "What is Tree Shaking at Dart?",
       "options_ru": [
-        "Дерево",
-        "Неиспользуемый код в Dart2JS и Flutter удаляется при компиляции AOT.",
-        "Удаление мертвого кода",
-        "Оптимизация сборки"
+        "Daraxt",
+        "Dart2JS va Flutter da ishlatilmagan kod AOT kompilyatsiyada olib tashlanadi",
+        "Dead code removal",
+        "Build optimize"
       ],
       "options_en": [
         "A tree",
@@ -1209,13 +1209,13 @@
         "Message channel"
       ],
       "answer": 1,
-      "question_ru": "Что такое канал dart:isolate в Dart?",
+      "question_ru": "Dart da dart:isolate Channel nima?",
       "question_en": "What is dart:isolate Channel in Dart?",
       "options_ru": [
-        "Изолировать канал",
-        "Изолировать закрытое, более сильное общение (Dart 2.15+)",
-        "Канал резьбы",
-        "Канал сообщений"
+        "Isolate channel",
+        "Isolate lararo yopiq, kuchliroq communication (Dart 2.15+)",
+        "Thread channel",
+        "Message channel"
       ],
       "options_en": [
         "Isolate channel",
@@ -1235,13 +1235,13 @@
         "Compile hint"
       ],
       "answer": 1,
-      "question_ru": "Почему @pragma('vm:prefer-inline') в Dart?",
+      "question_ru": "Dart da @pragma('vm:prefer-inline') nima uchun?",
       "question_en": "Why @pragma('vm:prefer-inline') in Dart?",
       "options_ru": [
-        "Прагма-аннотация",
-        "Совет виртуальной машине встроить функцию — это код, критичный к производительности.",
-        "JIT Индийский",
-        "Собрать хинди"
+        "Pragma annotation",
+        "VM ga funksiyani inline qilishni tavsiya qilish — performance critical kod",
+        "JIT hint",
+        "Compile hint"
       ],
       "options_en": [
         "Pragma annotation",
@@ -1261,16 +1261,16 @@
         "Buffer"
       ],
       "answer": 1,
-      "question_ru": "Что такое dart:typed_data в Dart?",
-      "question_en": "Dart da dart:typed_data nima?",
+      "question_ru": "Dart da dart:typed_data nima?",
+      "question_en": "What is dart:typed_data in Dart?",
       "options_ru": [
-        "Введите информацию",
-        "Как и Uint8List, Float32List — примитивные массивы с эффективным использованием памяти, двоичные данные.",
+        "Tipli ma'lumot",
+        "Uint8List, Float32List kabi — memory-efficient primitive arrays, binary data",
         "Binary data",
-        "Буфер"
+        "Buffer"
       ],
       "options_en": [
-        "Tipli ma'lumot",
+        "Type information",
         "Like Uint8List, Float32List — memory-efficient primitive arrays, binary data",
         "Binary data",
         "Buffer"
@@ -1287,17 +1287,17 @@
         "Annotation processor"
       ],
       "answer": 1,
-      "question_ru": "Что такое система макросов (экспериментальная) в Dart?",
-      "question_en": "What is the Macro system (experimental) in Dart?",
+      "question_ru": "Dart da Macro system (experimental) nima?",
+      "question_en": "Dart da Macro system (experimental) nima?",
       "options_ru": [
-        "Макросистема",
-        "Генерация и преобразование кода во время компиляции — замена встроенного_значения",
-        "Генерация кода",
-        "Обработчик аннотаций"
+        "Makro tizim",
+        "Kompilyatsiya vaqtida kod generatsiya va transformation — built_value ni almashtirish",
+        "Code gen",
+        "Annotation processor"
       ],
       "options_en": [
-        "Macro system",
-        "Code generation and transformation at compile time — replacement of built_value",
+        "Makro tizim",
+        "Kompilyatsiya vaqtida kod generatsiya va transformation — built_value ni almashtirish",
         "Code gen",
         "Annotation processor"
       ]

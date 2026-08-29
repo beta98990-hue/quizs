@@ -13,19 +13,19 @@
         "Faqat game dev"
       ],
       "answer": 1,
-      "question_ru": "Для чего используется C#?",
-      "question_en": "What is C# used for?",
+      "question_ru": "C# nima uchun ishlatiladi?",
+      "question_en": "C# nima uchun ishlatiladi?",
       "options_ru": [
-        "Только для Интернета",
-        "Универсальный язык программирования для платформ Microsoft — .NET, Windows, Azure, Unity.",
-        "Только для мобильных устройств",
-        "Только геймдев"
+        "Faqat web uchun",
+        "Microsoft platformalari — .NET, Windows, Azure, Unity uchun universal dasturlash tili",
+        "Faqat mobile",
+        "Faqat game dev"
       ],
       "options_en": [
-        "For web only",
-        "Universal programming language for Microsoft platforms — .NET, Windows, Azure, Unity",
-        "Mobile only",
-        "Only game dev"
+        "Faqat web uchun",
+        "Microsoft platformalari — .NET, Windows, Azure, Unity uchun universal dasturlash tili",
+        "Faqat mobile",
+        "Faqat game dev"
       ]
     },
     {
@@ -39,16 +39,16 @@
         "dim x = 5"
       ],
       "answer": 0,
-      "question_ru": "Как объявить переменную в C#?",
-      "question_en": "How to declare a variable in C#?",
+      "question_ru": "C# da o'zgaruvchi qanday e'lon qilinadi?",
+      "question_en": "C# da o'zgaruvchi qanday e'lon qilinadi?",
       "options_ru": [
-        "вар х = 5; или int х = 5;",
-        "$х = 5;",
-        "пусть х = 5;",
-        "тусклый х = 5"
+        "var x = 5; yoki int x = 5;",
+        "$x = 5;",
+        "let x = 5;",
+        "dim x = 5"
       ],
       "options_en": [
-        "var x = 5; or int x = 5;",
+        "var x = 5; yoki int x = 5;",
         "$x = 5;",
         "let x = 5;",
         "dim x = 5"
@@ -65,19 +65,19 @@
         "Log yozadi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Console.WriteLine() в C#?",
+      "question_ru": "C# da Console.WriteLine() nima qiladi?",
       "question_en": "C# da Console.WriteLine() nima qiladi?",
       "options_ru": [
-        "Записывает файл",
-        "Выводит текст на консоль и переносит на новую строку.",
-        "База данных пишет",
-        "Записывает журнал"
+        "Fayl yozadi",
+        "Konsolga matn chiqaradi va yangi qatorga o'tadi",
+        "Database yozadi",
+        "Log yozadi"
       ],
       "options_en": [
-        "Writes a file",
-        "Outputs text to the console and wraps to a new line",
-        "Database writes",
-        "Writes a log"
+        "Fayl yozadi",
+        "Konsolga matn chiqaradi va yangi qatorga o'tadi",
+        "Database yozadi",
+        "Log yozadi"
       ]
     },
     {
@@ -91,13 +91,13 @@
         "struct MyClass {}"
       ],
       "answer": 0,
-      "question_ru": "Как объявить класс в C#?",
-      "question_en": "How to declare a class in C#?",
+      "question_ru": "C# da class qanday e'lon qilinadi?",
+      "question_en": "C# da class qanday e'lon qilinadi?",
       "options_ru": [
-        "класс МойКласс {}",
-        "объект MyClass {}",
-        "введите MyClass {}",
-        "структура MyClass {}"
+        "class MyClass {}",
+        "object MyClass {}",
+        "type MyClass {}",
+        "struct MyClass {}"
       ],
       "options_en": [
         "class MyClass {}",
@@ -117,13 +117,13 @@
         "contract IFoo {}"
       ],
       "answer": 1,
-      "question_ru": "Как объявить интерфейс в C#?",
-      "question_en": "How to declare an interface in C#?",
+      "question_ru": "C# da interface qanday e'lon qilinadi?",
+      "question_en": "C# da interface qanday e'lon qilinadi?",
       "options_ru": [
-        "абстрактный класс IFoo {}",
-        "интерфейс IFoo {}",
-        "протокол IFoo {}",
-        "контракт IFoo {}"
+        "abstract class IFoo {}",
+        "interface IFoo {}",
+        "protocol IFoo {}",
+        "contract IFoo {}"
       ],
       "options_en": [
         "abstract class IFoo {}",
@@ -143,17 +143,17 @@
         "Fixed list"
       ],
       "answer": 1,
-      "question_ru": "Что такое List<T> в C#?",
-      "question_en": "What is List<T> in C#?",
+      "question_ru": "C# da List<T> nima?",
+      "question_en": "C# da List<T> nima?",
       "options_ru": [
         "Тип массива",
-        "Общий динамический список — автоматически увеличивается в размерах.",
-        "Статический массив",
-        "Фиксированный список"
+        "Generic dinamik ro'yxat — hajmi avtomatik kengayadi",
+        "Static array",
+        "Fixed list"
       ],
       "options_en": [
         "Array type",
-        "Generic dynamic list — automatically expands in size",
+        "Generic dinamik ro'yxat — hajmi avtomatik kengayadi",
         "Static array",
         "Fixed list"
       ]
@@ -169,17 +169,17 @@
         "format(name)"
       ],
       "answer": 1,
-      "question_ru": "Что такое интерполяция строк в C#?",
-      "question_en": "What is string interpolation in C#?",
+      "question_ru": "C# da string interpolation qanday?",
+      "question_en": "C# da string interpolation qanday?",
       "options_ru": [
-        "Строка.формат()",
-        "$\"Привет, {имя}!\" — с префиксом $",
-        "Строка + конкат",
-        "формат (имя)"
+        "String.format()",
+        "$\"Hello, {name}!\" — $ prefiksi bilan",
+        "String + concat",
+        "format(name)"
       ],
       "options_en": [
         "String.format()",
-        "$\"Hello, {name}!\" — with the $ prefix",
+        "$\"Hello, {name}!\" — $ prefiksi bilan",
         "String + concat",
         "format(name)"
       ]
@@ -195,17 +195,17 @@
         "Assembly"
       ],
       "answer": 1,
-      "question_ru": "Почему пространство имен в C#?",
-      "question_en": "Why namespace in C#?",
+      "question_ru": "C# da namespace nima uchun?",
+      "question_en": "C# da namespace nima uchun?",
       "options_ru": [
-        "Файловая система",
-        "Логическая группировка классов и типов — избегайте конфликтов имен.",
-        "URL-адрес",
-        "Сборка"
+        "Fayl tizimi",
+        "Klasslar va tiplar uchun mantiqiy guruh — nom ziddiyatini oldini olish",
+        "URL",
+        "Assembly"
       ],
       "options_en": [
-        "File system",
-        "Logical grouping for classes and types — avoid name conflicts",
+        "Fayl tizimi",
+        "Klasslar va tiplar uchun mantiqiy guruh — nom ziddiyatini oldini olish",
         "URL",
         "Assembly"
       ]
@@ -221,17 +221,17 @@
         "Resource management"
       ],
       "answer": 1,
-      "question_ru": "Зачем пытаться-поймать-наконец-то в C#?",
-      "question_en": "Why try-catch-finally in C#?",
+      "question_ru": "C# da try-catch-finally nima uchun?",
+      "question_en": "C# da try-catch-finally nima uchun?",
       "options_ru": [
-        "Ошибка игнорировать",
-        "Обработка исключений — наконец-то всегда работает",
-        "Безопасность резьбы",
-        "Управление ресурсами"
+        "Error ignore",
+        "Istisno (exception) larni boshqarish — finally har doim ishlaydi",
+        "Thread safety",
+        "Resource management"
       ],
       "options_en": [
         "Error ignore",
-        "Exception handling — finally always works",
+        "Istisno (exception) larni boshqarish — finally har doim ishlaydi",
         "Thread safety",
         "Resource management"
       ]
@@ -247,19 +247,19 @@
         "New metod"
       ],
       "answer": 1,
-      "question_ru": "Что такое ключевое слово override в C#?",
-      "question_en": "What is the override keyword in C#?",
+      "question_ru": "C# da override kalit so'zi nima?",
+      "question_en": "C# da override kalit so'zi nima?",
       "options_ru": [
-        "Новый метод",
-        "Переопределить виртуальный/абстрактный метод из родительского класса",
-        "Статический метод",
-        "Новый метод"
+        "Yangi metod",
+        "Ota klassdan virtual/abstract metodini qayta implement qilish",
+        "Static metod",
+        "New metod"
       ],
       "options_en": [
-        "A new method",
-        "Reimplement virtual/abstract method from parent class",
-        "Static method",
-        "New method"
+        "Yangi metod",
+        "Ota klassdan virtual/abstract metodini qayta implement qilish",
+        "Static metod",
+        "New metod"
       ]
     },
     {
@@ -273,19 +273,19 @@
         "Field turi"
       ],
       "answer": 1,
-      "question_ru": "Что такое свойства в C#?",
-      "question_en": "What is properties in C#?",
+      "question_ru": "C# da properties nima?",
+      "question_en": "C# da properties nima?",
       "options_ru": [
-        "CSS-свойства",
-        "Устройство, допускающее проверку, используемое как поле с аксессором get/set.",
-        "Тип метода",
-        "Тип поля"
+        "CSS xususiyatlari",
+        "Get/set accessor bilan maydon kabi ishlatiladigan, validatsiyaga imkon beruvchi qurilma",
+        "Method turi",
+        "Field turi"
       ],
       "options_en": [
         "CSS xususiyatlari",
         "Get/set accessor bilan maydon kabi ishlatiladigan, validatsiyaga imkon beruvchi qurilma",
-        "Method type",
-        "Field type"
+        "Method turi",
+        "Field turi"
       ]
     },
     {
@@ -299,17 +299,17 @@
         "Alias yaratish"
       ],
       "answer": 1,
-      "question_ru": "Что такое оператор using в C#?",
-      "question_en": "What is using statement in C#?",
+      "question_ru": "C# da using statement nima uchun?",
+      "question_en": "C# da using statement nima uchun?",
       "options_ru": [
-        "Для импорта",
-        "Автоматическое закрытие ресурсов IDisposable — файла, подключения к БД",
-        "Импорт пространства имен",
-        "Создать псевдоним"
+        "Import uchun",
+        "IDisposable resurslarni avtomatik yopish — fayl, DB ulanish",
+        "Namespace import",
+        "Alias yaratish"
       ],
       "options_en": [
-        "For import",
-        "Automatic closing of IDisposable resources — file, DB connection",
+        "Import uchun",
+        "IDisposable resurslarni avtomatik yopish — fayl, DB ulanish",
         "Namespace import",
         "Alias yaratish"
       ]
@@ -325,18 +325,18 @@
         "Type union"
       ],
       "answer": 1,
-      "question_ru": "Что такое перечисление в C#?",
-      "question_en": "What is an enum in C#?",
+      "question_ru": "C# da enum nima?",
+      "question_en": "C# da enum nima?",
       "options_ru": [
-        "Перечисление",
-        "Коллекция именованных констант, например DayOfWeek.Monday.",
-        "Список номеров",
-        "Тип объединения"
+        "Sanab o'tish",
+        "Nomlangan konstantalar to'plami — DayOfWeek.Monday kabi",
+        "Raqamlar ro'yxati",
+        "Type union"
       ],
       "options_en": [
-        "Enumerating",
-        "A collection of named constants — such as DayOfWeek.Monday",
-        "List of numbers",
+        "Sanab o'tish",
+        "Nomlangan konstantalar to'plami — DayOfWeek.Monday kabi",
+        "Raqamlar ro'yxati",
         "Type union"
       ]
     },
@@ -351,19 +351,19 @@
         "class stack da"
       ],
       "answer": 1,
-      "question_ru": "Разница между структурой и классом в С#?",
-      "question_en": "Difference between struct and class in C#?",
+      "question_ru": "C# da struct va class farqi?",
+      "question_en": "C# da struct va class farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "struct — тип значения (стек); класс — ссылочный тип (куча); структура не наследует",
-        "наследует от структуры",
-        "класс в стеке"
+        "struct — value type (stack); class — reference type (heap); struct meros olmaydi",
+        "struct meros oladi",
+        "class stack da"
       ],
       "options_en": [
         "There is no difference",
-        "struct — value type (stack); class — reference type (heap); struct does not inherit",
-        "inherits from struct",
-        "class on the stack"
+        "struct — value type (stack); class — reference type (heap); struct meros olmaydi",
+        "struct meros oladi",
+        "class stack da"
       ]
     },
     {
@@ -377,19 +377,19 @@
         "Generic klass"
       ],
       "answer": 1,
-      "question_ru": "Что такое абстрактный класс в C#?",
-      "question_en": "What is an abstract class in C#?",
+      "question_ru": "C# da abstract class nima?",
+      "question_en": "C# da abstract class nima?",
       "options_ru": [
-        "Тип класса",
-        "Класс, который может иметь абстрактные методы, экземпляры которых невозможно создать напрямую.",
-        "Тип интерфейса",
-        "Общий класс"
+        "Klass turi",
+        "To'g'ridan-to'g'ri instantiate bo'lmaydigan, abstract metodlari bo'lishi mumkin bo'lgan klass",
+        "Interface turi",
+        "Generic klass"
       ],
       "options_en": [
         "Klass turi",
-        "A class that can have abstract methods that cannot be directly instantiated",
-        "Interface type",
-        "Generic class"
+        "To'g'ridan-to'g'ri instantiate bo'lmaydigan, abstract metodlari bo'lishi mumkin bo'lgan klass",
+        "Interface turi",
+        "Generic klass"
       ]
     },
     {
@@ -403,13 +403,13 @@
         "List In Query"
       ],
       "answer": 1,
-      "question_ru": "Что такое LINQ в C#?",
-      "question_en": "What is LINQ in C#?",
+      "question_ru": "C# da LINQ nima?",
+      "question_en": "C# da LINQ nima?",
       "options_ru": [
-        "Линейный запрос",
-        "Языковой интегрированный запрос — SQL-подобные запросы к коллекциям и данным.",
-        "Ссылка на библиотеку",
-        "Список в запросе"
+        "Linear query",
+        "Language Integrated Query — kollektsiyalar va ma'lumotlarga SQL-like so'rovlar",
+        "Link library",
+        "List In Query"
       ],
       "options_en": [
         "Linear query",
@@ -429,18 +429,18 @@
         "Async event"
       ],
       "answer": 1,
-      "question_ru": "Почему асинхронность/ожидание в C#?",
-      "question_en": "Why async/await in C#?",
+      "question_ru": "C# da async/await nima uchun?",
+      "question_en": "C# da async/await nima uchun?",
       "options_ru": [
-        "Асинхронный цикл",
-        "Написание асинхронных операций в синхронном представлении — не блокирует пользовательский интерфейс.",
-        "Создать тему",
-        "Асинхронное событие"
+        "Asinxron loop",
+        "Asinxron operatsiyalarni sinxron ko'rinishda yozish — UI ni bloklamas",
+        "Thread yaratish",
+        "Async event"
       ],
       "options_en": [
-        "Asynchronous loop",
-        "Writing asynchronous operations in synchronous view — does not block the UI",
-        "Create a thread",
+        "Asinxron loop",
+        "Asinxron operatsiyalarni sinxron ko'rinishda yozish — UI ni bloklamas",
+        "Thread yaratish",
         "Async event"
       ]
     },
@@ -455,18 +455,18 @@
         "Callback type"
       ],
       "answer": 1,
-      "question_ru": "Что такое делегат в C#?",
-      "question_en": "What is a delegate in C#?",
+      "question_ru": "C# da delegate nima?",
+      "question_en": "C# da delegate nima?",
       "options_ru": [
-        "попечитель",
-        "Тип, представляющий тип функции, предназначен для ссылок на методы.",
-        "Тип события",
-        "Тип обратного вызова"
+        "Ishonchli vakil",
+        "Funksiya tipini ifodalovchi tip — metod referencelari uchun",
+        "Event turi",
+        "Callback type"
       ],
       "options_en": [
-        "Trustee",
-        "A type representing a function type is for method references",
-        "Event type",
+        "Ishonchli vakil",
+        "Funksiya tipini ifodalovchi tip — metod referencelari uchun",
+        "Event turi",
         "Callback type"
       ]
     },
@@ -481,17 +481,17 @@
         "Timer event"
       ],
       "answer": 1,
-      "question_ru": "Что такое событие в C#?",
-      "question_en": "What is an event in C#?",
+      "question_ru": "C# da event nima?",
+      "question_en": "C# da event nima?",
       "options_ru": [
-        "событие пользовательского интерфейса",
-        "Шаблон наблюдателя на основе модели «делегат — издатель/подписчик»",
-        "Нажмите событие",
-        "Событие таймера"
+        "UI hodisa",
+        "Delegate asosida observer pattern — publisher/subscriber model",
+        "Click event",
+        "Timer event"
       ],
       "options_en": [
-        "UI event",
-        "Observer pattern based on delegate — publisher/subscriber model",
+        "UI hodisa",
+        "Delegate asosida observer pattern — publisher/subscriber model",
         "Click event",
         "Timer event"
       ]
@@ -507,17 +507,17 @@
         "Abstract type"
       ],
       "answer": 1,
-      "question_ru": "Что такое дженерики в C#?",
-      "question_en": "What are Generics in C#?",
+      "question_ru": "C# da Generics nima?",
+      "question_en": "C# da Generics nima?",
       "options_ru": [
-        "Общий код",
-        "Многоразовые классы и методы с параметрами типа — List<T>, Dictionary<K,V>",
-        "Шаблон",
-        "Абстрактный тип"
+        "Umumiy kod",
+        "Tip parametrlari bilan qayta ishlatiladigan klass va metodlar — List<T>, Dictionary<K,V>",
+        "Template",
+        "Abstract type"
       ],
       "options_en": [
-        "General code",
-        "Reusable classes and methods with type parameters — List<T>, Dictionary<K,V>",
+        "Umumiy kod",
+        "Tip parametrlari bilan qayta ishlatiladigan klass va metodlar — List<T>, Dictionary<K,V>",
         "Template",
         "Abstract type"
       ]
@@ -533,18 +533,18 @@
         "Trait pattern"
       ],
       "answer": 1,
-      "question_ru": "Что такое методы расширения в C#?",
-      "question_en": "What are Extension methods in C#?",
+      "question_ru": "C# da Extension methods nima?",
+      "question_en": "C# da Extension methods nima?",
       "options_ru": [
-        "Расширение класса",
-        "Добавляйте новые методы к существующему типу — в статическом методе с ключевым словом this.",
-        "Смешать шаблон",
-        "Характеристика"
+        "Klass kengaytirish",
+        "Mavjud tipga yangi metodlar qo'shish — this kalit so'zi bilan static metodda",
+        "Mixin pattern",
+        "Trait pattern"
       ],
       "options_en": [
-        "Class extension",
-        "Add new methods to an existing type — in a static method with the this keyword",
-        "Mix pattern",
+        "Klass kengaytirish",
+        "Mavjud tipga yangi metodlar qo'shish — this kalit so'zi bilan static metodda",
+        "Mixin pattern",
         "Trait pattern"
       ]
     },
@@ -559,17 +559,17 @@
         "Maybe type"
       ],
       "answer": 1,
-      "question_ru": "Что такое типы, допускающие значение Null, в C#?",
-      "question_en": "What are Nullable types in C#?",
+      "question_ru": "C# da Nullable types nima?",
+      "question_en": "C# da Nullable types nima?",
       "options_ru": [
-        "Нулевой тип",
-        "Разрешение типа значения быть нулевым — int? или Nullable<int>",
-        "Дополнительный тип",
-        "Может быть, введите"
+        "Null tip",
+        "Value type ga null qiymatni ruxsat berish — int? yoki Nullable<int>",
+        "Optional type",
+        "Maybe type"
       ],
       "options_en": [
-        "Null type",
-        "Allowing value type to be null — int? or Nullable<int>",
+        "Null tip",
+        "Value type ga null qiymatni ruxsat berish — int? yoki Nullable<int>",
         "Optional type",
         "Maybe type"
       ]
@@ -585,19 +585,19 @@
         "Struct turi"
       ],
       "answer": 1,
-      "question_ru": "What is a record in C# (C# 9)?",
-      "question_en": "What is a record in C# (C# 9)?",
+      "question_ru": "C# da record nima (C# 9)?",
+      "question_en": "C# da record nima (C# 9)?",
       "options_ru": [
-        "Написание",
-        "Неизменяемый носитель данных — с выражением, равенством, автоматическим ToString",
-        "Класс данных",
-        "Тип структуры"
+        "Yozuv",
+        "Immutable ma'lumot tashuvchi — with expression, equality, ToString avtomatik",
+        "Data class",
+        "Struct turi"
       ],
       "options_en": [
-        "Writing",
-        "Immutable data carrier — with expression, equality, ToString automatic",
+        "Yozuv",
+        "Immutable ma'lumot tashuvchi — with expression, equality, ToString avtomatik",
         "Data class",
-        "Struct type"
+        "Struct turi"
       ]
     },
     {
@@ -611,17 +611,17 @@
         "Value match"
       ],
       "answer": 1,
-      "question_ru": "Что такое сопоставление шаблонов в C#?",
-      "question_en": "What is pattern matching in C#?",
+      "question_ru": "C# da pattern matching nima?",
+      "question_en": "C# da pattern matching nima?",
       "options_ru": [
-        "Сопоставление регулярных выражений",
-        "проверка типа и значения с помощью выражения переключателя, оператор is — строка s",
-        "Тип проверки",
-        "Соответствие значений"
+        "Regex matching",
+        "switch expression, is operator bilan tip va qiymat tekshirish — is string s",
+        "Type check",
+        "Value match"
       ],
       "options_en": [
         "Regex matching",
-        "type and value checking with switch expression, is operator — is string s",
+        "switch expression, is operator bilan tip va qiymat tekshirish — is string s",
         "Type check",
         "Value match"
       ]
@@ -637,19 +637,19 @@
         "IEnumerable DB uchun"
       ],
       "answer": 1,
-      "question_ru": "Разница между IEnumerable и IQueryable в С#?",
-      "question_en": "Difference between IEnumerable and IQueryable in C#?",
+      "question_ru": "C# da IEnumerable va IQueryable farqi?",
+      "question_en": "C# da IEnumerable va IQueryable farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "IEnumerable — в памяти; IQueryable — дерево выражений, отложенное выполнение (для БД)",
-        "IQueryable в памяти",
-        "IEnumerable для БД"
+        "IEnumerable — xotirada; IQueryable — expression tree, deferred execution (DB uchun)",
+        "IQueryable xotirada",
+        "IEnumerable DB uchun"
       ],
       "options_en": [
         "There is no difference",
-        "IEnumerable — in memory; IQueryable — expression tree, deferred execution (for DB)",
-        "IQueryable in memory",
-        "IEnumerable for DB"
+        "IEnumerable — xotirada; IQueryable — expression tree, deferred execution (DB uchun)",
+        "IQueryable xotirada",
+        "IEnumerable DB uchun"
       ]
     },
     {
@@ -663,19 +663,19 @@
         "Task ko'p xotira oladi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между Task и Thread в C#?",
-      "question_en": "What is the difference between Task and Thread in C#?",
+      "question_ru": "C# da Task va Thread farqi nima?",
+      "question_en": "C# da Task va Thread farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "Задача — облегченная, использует пул потоков, с async/await; Thread — поток ОС, более тяжелый",
-        "Тема быстрее",
-        "Задача занимает много памяти"
+        "Task — yengil, thread pool ishlatadi, async/await bilan; Thread — OS thread, og'irroq",
+        "Thread tezroq",
+        "Task ko'p xotira oladi"
       ],
       "options_en": [
         "There is no difference",
-        "Task — lightweight, uses thread pool, with async/await; Thread — OS thread, heavier",
-        "Thread is faster",
-        "A task takes up a lot of memory"
+        "Task — yengil, thread pool ishlatadi, async/await bilan; Thread — OS thread, og'irroq",
+        "Thread tezroq",
+        "Task ko'p xotira oladi"
       ]
     },
     {
@@ -689,17 +689,17 @@
         "Service locator"
       ],
       "answer": 1,
-      "question_ru": "Что такое внедрение зависимостей в C#?",
-      "question_en": "What is Dependency Injection in C#?",
+      "question_ru": "C# da Dependency Injection nima?",
+      "question_en": "C# da Dependency Injection nima?",
       "options_ru": [
         "Внедрение кода",
-        "Внедрение зависимостей объекта извне — контейнер .NET DI (IServiceCollection)",
-        "инструмент внедрения внедрения",
-        "Поиск сервисов"
+        "Ob'ekt bog'liqliklarini tashqaridan kiritish — .NET DI Container (IServiceCollection)",
+        "DI tool",
+        "Service locator"
       ],
       "options_en": [
         "Code injection",
-        "Injecting object dependencies externally — .NET DI Container (IServiceCollection)",
+        "Ob'ekt bog'liqliklarini tashqaridan kiritish — .NET DI Container (IServiceCollection)",
         "DI tool",
         "Service locator"
       ]
@@ -715,17 +715,17 @@
         "Any type"
       ],
       "answer": 1,
-      "question_ru": "Что такое ключевое слово var в C#?",
-      "question_en": "What is the var keyword in C#?",
+      "question_ru": "C# da var kalit so'zi nima?",
+      "question_en": "C# da var kalit so'zi nima?",
       "options_ru": [
-        "Вариант переменной",
-        "Вывод типа — компилятор выводит тип сам (не динамически во время выполнения).",
-        "Динамический тип",
-        "Любой тип"
+        "Variant o'zgaruvchi",
+        "Tip inference — kompilyator tipni o'zi aniqlaydi (runtime dinamik emas)",
+        "Dynamic type",
+        "Any type"
       ],
       "options_en": [
-        "Variant variable",
-        "Type inference — the compiler infers the type itself (not dynamically at runtime)",
+        "Variant o'zgaruvchi",
+        "Tip inference — kompilyator tipni o'zi aniqlaydi (runtime dinamik emas)",
         "Dynamic type",
         "Any type"
       ]
@@ -741,13 +741,13 @@
         "Const property"
       ],
       "answer": 1,
-      "question_ru": "Что такое метод доступа к свойству init в C# (C# 9)?",
-      "question_en": "What is an init property accessor in C# (C# 9)?",
+      "question_ru": "C# da init property accessor nima (C# 9)?",
+      "question_en": "C# da init property accessor nima (C# 9)?",
       "options_ru": [
-        "Инициализировать",
-        "Может быть указано только в конструкторе или инициализаторе объекта — например, только для чтения.",
-        "Установить один раз",
-        "Константное свойство"
+        "Initialize",
+        "Faqat konstruktorda yoki ob'ekt initializer da belgilanishi mumkin — readonly kabi",
+        "Set once",
+        "Const property"
       ],
       "options_en": [
         "Initialize",
@@ -767,18 +767,18 @@
         "Memory free"
       ],
       "answer": 1,
-      "question_ru": "Why IDisposable in C#?",
-      "question_en": "Why IDisposable in C#?",
+      "question_ru": "C# da IDisposable nima uchun?",
+      "question_en": "C# da IDisposable nima uchun?",
       "options_ru": [
-        "Отказ",
-        "Интерфейс освобождения неуправляемых ресурсов — метод Dispose()",
-        "Сбор мусора",
-        "Память свободна"
+        "Tashlash",
+        "Boshqarilmagan resurslarni bo'shatish uchun interfeys — Dispose() metodi",
+        "Garbage collect",
+        "Memory free"
       ],
       "options_en": [
-        "Abandonment",
-        "Interface for freeing unmanaged resources — Dispose() method",
-        "Garbage collection",
+        "Tashlash",
+        "Boshqarilmagan resurslarni bo'shatish uchun interfeys — Dispose() metodi",
+        "Garbage collect",
         "Memory free"
       ]
     },
@@ -793,17 +793,17 @@
         "Array slice"
       ],
       "answer": 1,
-      "question_ru": "Почему Span<T> в C#?",
-      "question_en": "Why Span<T> in C#?",
+      "question_ru": "C# da Span<T> nima uchun?",
+      "question_en": "C# da Span<T> nima uchun?",
       "options_ru": [
-        "Элемент пролета",
-        "Нарезка стека без выделения кучи — для кода, критичного к производительности.",
-        "Объем памяти",
-        "Срез массива"
+        "Span element",
+        "Stack da turuvchi, heap allocationsiz slicing — performance critical kod uchun",
+        "Memory span",
+        "Array slice"
       ],
       "options_en": [
         "Span element",
-        "Slicing on the stack without heap allocation — for performance-critical code",
+        "Stack da turuvchi, heap allocationsiz slicing — performance critical kod uchun",
         "Memory span",
         "Array slice"
       ]
@@ -819,17 +819,17 @@
         "Mutex"
       ],
       "answer": 1,
-      "question_ru": "Что делает оператор блокировки в C#?",
-      "question_en": "What does a lock statement do in C#?",
+      "question_ru": "C# da lock statement nima qiladi?",
+      "question_en": "C# da lock statement nima qiladi?",
       "options_ru": [
-        "Блокировка файла",
-        "Взаимное исключение для доступа к общему ресурсу в многопоточной среде — сокращение Monitor.Enter/Exit",
-        "Замок резьбы",
-        "Мьютекс"
+        "Fayl lock",
+        "Ko'p thread muhitida shared resursga kirish uchun mutual exclusion — Monitor.Enter/Exit shorthand",
+        "Thread lock",
+        "Mutex"
       ],
       "options_en": [
-        "File lock",
-        "Mutual exclusion for access to a shared resource in a multi-threaded environment — Monitor.Enter/Exit shorthand",
+        "Fayl lock",
+        "Ko'p thread muhitida shared resursga kirish uchun mutual exclusion — Monitor.Enter/Exit shorthand",
         "Thread lock",
         "Mutex"
       ]
@@ -845,17 +845,17 @@
         "Closed class"
       ],
       "answer": 1,
-      "question_ru": "Что такое запечатанный класс в C#?",
-      "question_en": "What is a sealed class in C#?",
+      "question_ru": "C# da sealed class nima?",
+      "question_en": "C# da sealed class nima?",
       "options_ru": [
-        "Закрытый класс",
-        "Наследование запрещено классом — также обеспечивает оптимизацию производительности.",
-        "Заключительный урок",
-        "Закрытый класс"
+        "Yopiq klass",
+        "Meros olinishi man qilingan klass — performance optimallashtirish ham beradi",
+        "Final class",
+        "Closed class"
       ],
       "options_en": [
         "Yopiq klass",
-        "Inheritance is prohibited class - also provides performance optimization",
+        "Meros olinishi man qilingan klass — performance optimallashtirish ham beradi",
         "Final class",
         "Closed class"
       ]
@@ -871,17 +871,17 @@
         "readonly compile-time"
       ],
       "answer": 1,
-      "question_ru": "Разница между readonly и const в С#?",
-      "question_en": "Difference between readonly and const in C#?",
+      "question_ru": "C# da readonly va const farqi?",
+      "question_en": "C# da readonly va const farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "только для чтения — определяется один раз во время выполнения; const — время компиляции, статическое неявное",
-        "константное время выполнения",
-        "только чтение во время компиляции"
+        "readonly — runtime da bir marta belgilanadi; const — compile-time, static implicit",
+        "const runtime",
+        "readonly compile-time"
       ],
       "options_en": [
         "There is no difference",
-        "readonly — defined once at runtime; const — compile-time, static implicit",
+        "readonly — runtime da bir marta belgilanadi; const — compile-time, static implicit",
         "const runtime",
         "readonly compile-time"
       ]
@@ -897,17 +897,17 @@
         "Factory method"
       ],
       "answer": 1,
-      "question_ru": "Что такое инициализатор объекта в C#?",
+      "question_ru": "C# da object initializer nima?",
       "question_en": "C# da object initializer nima?",
       "options_ru": [
-        "Инициализация объекта",
-        "Указание свойств при создании объекта: новый Person { Name='Ali', Age=25 }",
-        "Конструктор",
-        "Фабричный метод"
+        "Ob'ekt boshlash",
+        "Ob'ekt yaratishda xususiyatlarni belgilash: new Person { Name='Ali', Age=25 }",
+        "Constructor",
+        "Factory method"
       ],
       "options_en": [
-        "Object initialization",
-        "Specifying properties when creating an object: new Person { Name='Ali', Age=25 }",
+        "Ob'ekt boshlash",
+        "Ob'ekt yaratishda xususiyatlarni belgilash: new Person { Name='Ali', Age=25 }",
         "Constructor",
         "Factory method"
       ]
@@ -923,17 +923,17 @@
         "AST"
       ],
       "answer": 1,
-      "question_ru": "Что такое деревья выражений в C#?",
-      "question_en": "What are Expression trees in C#?",
+      "question_ru": "C# da Expression trees nima?",
+      "question_en": "C# da Expression trees nima?",
       "options_ru": [
-        "Дерево кодов",
-        "Дерево, представляющее код как данные — динамическое создание запросов для LINQ to SQL, ORM",
-        "Синтаксическое дерево",
-        "АСТ"
+        "Kod daraxt",
+        "Kodni ma'lumot sifatida ifodalovchi daraxt — LINQ to SQL, ORM uchun dinamik so'rov yaratish",
+        "Syntax tree",
+        "AST"
       ],
       "options_en": [
-        "Code tree",
-        "A tree that represents code as data — dynamic query generation for LINQ to SQL, ORM",
+        "Kod daraxt",
+        "Kodni ma'lumot sifatida ifodalovchi daraxt — LINQ to SQL, ORM uchun dinamik so'rov yaratish",
         "Syntax tree",
         "AST"
       ]
@@ -949,19 +949,19 @@
         "Span async uchun"
       ],
       "answer": 1,
-      "question_ru": "Разница между Memory<T> и Span<T> в C#?",
-      "question_en": "Difference between Memory<T> and Span<T> in C#?",
+      "question_ru": "C# da Memory<T> va Span<T> farqi?",
+      "question_en": "C# da Memory<T> va Span<T> farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "Span<T> только стек(синхронизация); Память<T> хранится в куче, может использоваться асинхронно.",
-        "Память больше",
-        "Для асинхронного диапазона"
+        "Span<T> faqat stack (sync); Memory<T> heap da saqlanadi, async da ishlatish mumkin",
+        "Memory kattaroq",
+        "Span async uchun"
       ],
       "options_en": [
         "There is no difference",
-        "Span<T> only stack(sync); Memory<T> is stored in heap, can be used in async",
-        "Memory is bigger",
-        "For span async"
+        "Span<T> faqat stack (sync); Memory<T> heap da saqlanadi, async da ishlatish mumkin",
+        "Memory kattaroq",
+        "Span async uchun"
       ]
     },
     {
@@ -975,17 +975,17 @@
         "Code gen tool"
       ],
       "answer": 1,
-      "question_ru": "Что такое генераторы исходного кода в C#?",
+      "question_ru": "C# da Source Generators nima?",
       "question_en": "C# da Source Generators nima?",
       "options_ru": [
-        "Генератор кода",
-        "Расширение Roslyn, генерирующее код во время компиляции — сокращение шаблона",
-        "Шаблонизатор",
-        "Инструмент генерации кода"
+        "Kod generator",
+        "Kompilyatsiya vaqtida kod yaratuvchi Roslyn extensioni — boilerplate kamaytirish",
+        "Template engine",
+        "Code gen tool"
       ],
       "options_en": [
-        "Code generator",
-        "Roslyn extension that generates code at compile time — boilerplate reduction",
+        "Kod generator",
+        "Kompilyatsiya vaqtida kod yaratuvchi Roslyn extensioni — boilerplate kamaytirish",
         "Template engine",
         "Code gen tool"
       ]
@@ -1001,19 +1001,19 @@
         "Task tezroq"
       ],
       "answer": 1,
-      "question_ru": "Разница между ValueTask и Task в C#?",
-      "question_en": "Difference between ValueTask and Task in C#?",
+      "question_ru": "C# da ValueTask va Task farqi?",
+      "question_en": "C# da ValueTask va Task farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "ValueTask — тип значения, не выделяется, не ожидает многократного ожидания; Задача — справочная, универсальная",
-        "ValueTask универсален",
-        "Задача выполняется быстрее"
+        "ValueTask — value type, allocation yo'q, ko'p marta await uchun emas; Task — reference, universal",
+        "ValueTask universal",
+        "Task tezroq"
       ],
       "options_en": [
         "There is no difference",
         "ValueTask — value type, allocation yo'q, ko'p marta await uchun emas; Task — reference, universal",
-        "ValueTask is universal",
-        "Task is faster"
+        "ValueTask universal",
+        "Task tezroq"
       ]
     },
     {
@@ -1027,18 +1027,18 @@
         "Stream type"
       ],
       "answer": 1,
-      "question_ru": "Что такое IAsyncEnumerable<T> в C#?",
-      "question_en": "What is IAsyncEnumerable<T> in C#?",
+      "question_ru": "C# da IAsyncEnumerable<T> nima?",
+      "question_en": "C# da IAsyncEnumerable<T> nima?",
       "options_ru": [
-        "Асинхронный список",
-        "Асинхронный поток — возвращает асинхронные последовательные элементы с выходом. Возврат — ожидание foreach.",
+        "Async list",
+        "Asinxron stream — yield return bilan asinxron ketma-ket elementlar qaytarish — await foreach",
         "Async iterator",
-        "Тип потока"
+        "Stream type"
       ],
       "options_en": [
         "Async list",
-        "Asynchronous stream — return asynchronous sequential elements with yield return — await foreach",
-        "An async iterator",
+        "Asinxron stream — yield return bilan asinxron ketma-ket elementlar qaytarish — await foreach",
+        "Async iterator",
         "Stream type"
       ]
     },
@@ -1053,17 +1053,17 @@
         "Event channel"
       ],
       "answer": 1,
-      "question_ru": "Что такое каналы (System.Threading.Channels) в C#?",
-      "question_en": "What is Channels (System.Threading.Channels) in C#?",
+      "question_ru": "C# da Channels (System.Threading.Channels) nima?",
+      "question_en": "C# da Channels (System.Threading.Channels) nima?",
       "options_ru": [
-        "Сетевой канал",
-        "Шаблон производитель-потребитель — асинхронный поток данных, Channel.CreateUnbounded/Bounded",
-        "Канал резьбы",
-        "Канал событий"
+        "Network channel",
+        "Producer-consumer pattern — async ma'lumot oqimi, Channel.CreateUnbounded/Bounded",
+        "Thread channel",
+        "Event channel"
       ],
       "options_en": [
         "Network channel",
-        "Producer-consumer pattern — async data flow, Channel.CreateUnbounded/Bounded",
+        "Producer-consumer pattern — async ma'lumot oqimi, Channel.CreateUnbounded/Bounded",
         "Thread channel",
         "Event channel"
       ]
@@ -1079,17 +1079,17 @@
         "Debug SDK"
       ],
       "answer": 1,
-      "question_ru": "Что такое Roslyn SDK в C#?",
-      "question_en": "What is Roslyn SDK in C#?",
+      "question_ru": "C# da Roslyn SDK nima?",
+      "question_en": "C# da Roslyn SDK nima?",
       "options_ru": [
-        "Программный SDK",
-        "API компиляторов C# и VB.NET — анализ кода, рефакторинг, генерация исходного кода",
-        "Сборка SDK",
-        "Отладочный SDK"
+        "Programming SDK",
+        "C# va VB.NET kompilyatorlar API — code analysis, refactoring, source generation",
+        "Build SDK",
+        "Debug SDK"
       ],
       "options_en": [
         "Programming SDK",
-        "C# and VB.NET compilers API — code analysis, refactoring, source generation",
+        "C# va VB.NET kompilyatorlar API — code analysis, refactoring, source generation",
         "Build SDK",
         "Debug SDK"
       ]
@@ -1105,17 +1105,17 @@
         "Lambda type"
       ],
       "answer": 1,
-      "question_ru": "Что такое естественные типы для лямбды в C# (C# 10)?",
-      "question_en": "What is Natural types for lambda in C# (C# 10)?",
+      "question_ru": "C# da Natural types for lambda (C# 10) nima?",
+      "question_en": "C# da Natural types for lambda (C# 10) nima?",
       "options_ru": [
-        "Тип лямбда",
-        "Назначение типа Func/Action лямбда-выражению компилятором — это вывод var.",
-        "Вывод типа",
-        "Тип лямбда"
+        "Lambda tip",
+        "Lambda ifodaga compiler tomonidan Func/Action tipi belgilanishi — var inference",
+        "Type inference",
+        "Lambda type"
       ],
       "options_en": [
-        "Lambda type",
-        "Assigning the Func/Action type to the lambda expression by the compiler is var inference",
+        "Lambda tip",
+        "Lambda ifodaga compiler tomonidan Func/Action tipi belgilanishi — var inference",
         "Type inference",
         "Lambda type"
       ]
@@ -1131,17 +1131,17 @@
         "Struct ref"
       ],
       "answer": 1,
-      "question_ru": "Зачем ссылаться на структуру в C#?",
-      "question_en": "Why ref struct in C#?",
+      "question_ru": "C# da ref struct nima uchun?",
+      "question_en": "C# da ref struct nima uchun?",
       "options_ru": [
-        "Ссылочная структура",
-        "Структура — это управляемый указатель, хранящийся только в стеке, он не используется в асинхронном режиме.",
-        "Тип значения",
-        "Ссылка на структуру"
+        "Reference struct",
+        "Faqat stack da turadigan struct — managed pointer saqlash, async da ishlatilmaydi",
+        "Value type",
+        "Struct ref"
       ],
       "options_en": [
         "Reference struct",
-        "A struct is a managed pointer stored only on the stack, it is not used in async",
+        "Faqat stack da turadigan struct — managed pointer saqlash, async da ishlatilmaydi",
         "Value type",
         "Struct ref"
       ]
@@ -1157,17 +1157,17 @@
         "Generic constraint"
       ],
       "answer": 1,
-      "question_ru": "Что такое ковариация и контравариация в C#?",
+      "question_ru": "C# da Covariance va Contravariance nima?",
       "question_en": "C# da Covariance va Contravariance nima?",
       "options_ru": [
-        "Соответствие типов",
-        "Родовое отношение наследования — параметр out (ковариантный), in (контравариантный)",
-        "Тип литья",
-        "Общее ограничение"
+        "Tip mos kelishi",
+        "Generic tipdagi meros munosabati — out (covariant), in (contravariant) parameter",
+        "Type casting",
+        "Generic constraint"
       ],
       "options_en": [
-        "Type matching",
-        "Generic inheritance relation — out (covariant), in (contravariant) parameter",
+        "Tip mos kelishi",
+        "Generic tipdagi meros munosabati — out (covariant), in (contravariant) parameter",
         "Type casting",
         "Generic constraint"
       ]
@@ -1183,17 +1183,17 @@
         "Namespace alias"
       ],
       "answer": 1,
-      "question_ru": "Что такое глобальное использование в C# (C# 10)?",
-      "question_en": "What is global using in C# (C# 10)?",
+      "question_ru": "C# da global using (C# 10) nima?",
+      "question_en": "C# da global using (C# 10) nima?",
       "options_ru": [
-        "Глобальная область действия",
-        "глобальное использование пространства имен — автоматический импорт для всех файлов",
-        "Использование директивы",
-        "Псевдоним пространства имен"
+        "Global scope",
+        "global using namespace — barcha fayllarda avtomatik import",
+        "Using directive",
+        "Namespace alias"
       ],
       "options_en": [
         "Global scope",
-        "global using namespace — auto import on all files",
+        "global using namespace — barcha fayllarda avtomatik import",
         "Using directive",
         "Namespace alias"
       ]
@@ -1209,17 +1209,17 @@
         "File scope"
       ],
       "answer": 1,
-      "question_ru": "Что такое пространство имен в области файлов в C# (C# 10)?",
-      "question_en": "What is a file-scoped namespace in C# (C# 10)?",
+      "question_ru": "C# da file-scoped namespace (C# 10) nima?",
+      "question_en": "C# da file-scoped namespace (C# 10) nima?",
       "options_ru": [
-        "Пространство имен файлов",
-        "пространство имен MyNs; — весь файл в этом пространстве имен — уменьшает отступ",
-        "Класс файла",
-        "Область действия файла"
+        "Fayl namespace",
+        "namespace MyNs; — butun fayl shu namespace da — inden kamaytiradi",
+        "File class",
+        "File scope"
       ],
       "options_en": [
-        "File namespace",
-        "namespace MyNs; — entire file in this namespace — reduces inden",
+        "Fayl namespace",
+        "namespace MyNs; — butun fayl shu namespace da — inden kamaytiradi",
         "File class",
         "File scope"
       ]
@@ -1235,17 +1235,17 @@
         "Required property"
       ],
       "answer": 1,
-      "question_ru": "Какие члены требуются в C# (C# 11)?",
-      "question_en": "What is required members in C# (C# 11)?",
+      "question_ru": "C# da required members (C# 11) nima?",
+      "question_en": "C# da required members (C# 11) nima?",
       "options_ru": [
-        "Обязательное членство",
-        "Требуемое ключевое слово — обязательный атрибут, который необходимо указать при создании объекта.",
-        "Обязательное поле",
+        "Majburiy member",
+        "required kalit so'zi — ob'ekt yaratishda belgilanishi majburiy xususiyat",
+        "Mandatory field",
         "Required property"
       ],
       "options_en": [
-        "Mandatory membership",
-        "The required keyword is a mandatory attribute that must be specified when creating an object",
+        "Majburiy member",
+        "required kalit so'zi — ob'ekt yaratishda belgilanishi majburiy xususiyat",
         "Mandatory field",
         "Required property"
       ]
@@ -1261,17 +1261,17 @@
         "Record constructor"
       ],
       "answer": 1,
-      "question_ru": "Что такое первичный конструктор в C# (C# 12)?",
-      "question_en": "What is primary constructor in C# (C# 12)?",
+      "question_ru": "C# da primary constructor (C# 12) nima?",
+      "question_en": "C# da primary constructor (C# 12) nima?",
       "options_ru": [
-        "Главный конструктор",
-        "Прямой параметр в объявлении класса — уменьшает шаблонность.",
-        "Сокращение конструктора",
-        "Конструктор записей"
+        "Asosiy konstruktor",
+        "Klass deklaratsiyasida to'g'ridan-to'g'ri parametr — boilerplate kamaytiradi",
+        "Constructor shorthand",
+        "Record constructor"
       ],
       "options_en": [
         "Asosiy konstruktor",
-        "A direct parameter in a class declaration—reduces boilerplate",
+        "Klass deklaratsiyasida to'g'ridan-to'g'ri parametr — boilerplate kamaytiradi",
         "Constructor shorthand",
         "Record constructor"
       ]
@@ -1287,17 +1287,17 @@
         "AOP pattern"
       ],
       "answer": 1,
-      "question_ru": "Что такое перехватчики в C# (экспериментальная версия C# 12)?",
-      "question_en": "What are Interceptors in C# (C# 12 experimental)?",
+      "question_ru": "C# da Interceptors (C# 12 experimental) nima?",
+      "question_en": "C# da Interceptors (C# 12 experimental) nima?",
       "options_ru": [
         "Перехватчик событий",
-        "Замена вызова метода другим методом с помощью генератора исходного кода",
-        "Промежуточное ПО",
-        "Шаблон АОП"
+        "Source generator yordamida metod chaqiruvini boshqa metod bilan almashtirish",
+        "Middleware",
+        "AOP pattern"
       ],
       "options_en": [
         "Event interceptor",
-        "Replacing a method call with another method using the Source generator",
+        "Source generator yordamida metod chaqiruvini boshqa metod bilan almashtirish",
         "Middleware",
         "AOP pattern"
       ]

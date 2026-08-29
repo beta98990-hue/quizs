@@ -51,7 +51,7 @@
         "Writes text to a file",
         "Outputs information to the console",
         "Creates a variable",
-        "Dasturni to'xtatadi"
+        "Stops the program"
       ]
     },
     {
@@ -146,9 +146,9 @@
       "question_ru": "Как написать комментарий на Python?",
       "question_en": "How to write a comment in Python?",
       "options_ru": [
-        "// comment",
+        "// комментарий",
         "/* комментарий */",
-        "# comment",
+        "# комментарий",
         "-- комментарий"
       ],
       "options_en": [
@@ -200,7 +200,7 @@
       "options_ru": [
         "конец, если",
         "конец",
-        "} yoki )",
+        "} или )",
         "Используется углубление, а не сильфон или конец."
       ],
       "options_en": [
@@ -248,11 +248,11 @@
       ],
       "answer": 2,
       "question_ru": "Какой метод используется для разделения строки в Python?",
-      "question_en": "Python da string bo'lish (split) uchun qaysi metod ishlatiladi?",
+      "question_en": "What method is used to split a string in Python?",
       "options_ru": [
-        "разделить()",
+        "разделять()",
         "перерыв()",
-        "split()",
+        "расколоть()",
         "отдельный()"
       ],
       "options_en": [
@@ -413,7 +413,7 @@
       ],
       "options_en": [
         "A loop inside a list",
-        "Ixcham sintaksis bilan yangi ro'yxat yaratish: [x*2 for x in items]",
+        "Create a new list with compact syntax: [x*2 for x in items]",
         "List filtering",
         "Copy list"
       ]
@@ -438,7 +438,7 @@
         "Обязательные аргументы"
       ],
       "options_en": [
-        "Maxsus o'zgaruvchilar",
+        "Special variables",
         "*args — arbitrary number of positional arguments; **kwargs — an arbitrary number of keyword arguments",
         "Only keyword arguments",
         "Mandatory arguments"
@@ -519,7 +519,7 @@
         "Delete the class",
         "A constructor method that is automatically called when an object of the class is created",
         "Import the class",
-        "Klass nusxalash"
+        "Class copy"
       ]
     },
     {
@@ -571,7 +571,7 @@
         "Random number generator",
         "A function that creates a memory-efficient iterator with the yield keyword",
         "List generator",
-        "Ko'p thread li funksiya"
+        "Multi-threaded functionality"
       ]
     },
     {
@@ -595,7 +595,7 @@
       ],
       "options_en": [
         "Abbreviation for if-else",
-        "Context manager — resurs boshqarish (fayl, ulanish) va avtomatik yopish uchun",
+        "Context manager — for resource management (file, connection) and automatic closing",
         "Create a cycle",
         "Create an object"
       ]
@@ -623,7 +623,7 @@
         "A collection of repeating elements",
         "A collection of unique, unordered elements",
         "Type of Dict",
-        "Tuple ning turi"
+        "A type of tuple"
       ]
     },
     {
@@ -647,7 +647,7 @@
       ],
       "options_en": [
         "Creates a dict",
-        "Funksiyani iterable ning har bir elementiga qo'llaydi",
+        "Applies the function to each element of the iterable",
         "Filters items",
         "Sorts the elements"
       ]
@@ -721,7 +721,7 @@
         "Проверяет идентификатор объекта",
         "Проверяет, принадлежит ли объект данному классу или типу.",
         "Проверяет существование объекта",
-        "Checks the value of an object"
+        "Проверяет ценность объекта"
       ],
       "options_en": [
         "Checks the object id",
@@ -804,7 +804,7 @@
       "options_en": [
         "There is no difference",
         "staticmethod — accepts neither self nor cls; classmethod — accepts cls (class).",
-        "classmethod — self qabul qiladi",
+        "classmethod — accepts self",
         "staticmethod — accepts cls"
       ]
     },
@@ -856,7 +856,7 @@
       "options_en": [
         "Global initial density",
         "A mutex that allows only one thread to use Python bytecode at a time",
-        "Global import kutubxonasi",
+        "Global import library",
         "Memory blocking mechanism"
       ]
     },
@@ -901,7 +901,7 @@
       "question_en": "Difference between dict.get() and dict[] in Python?",
       "options_ru": [
         "Нет никакой разницы",
-        "get() kalit topilmasa None (yoki default) qaytaradi; [] KeyError chiqaradi",
+        "get() возвращает None (или значение по умолчанию), если ключ не найден; [] выдает ошибку KeyError",
         "[] безопаснее",
         "get() работает быстрее"
       ],
@@ -960,8 +960,8 @@
       "options_en": [
         "Blocking class methods",
         "Save memory by explicitly defining instance variables and removing __dict__",
-        "Klass atributlarini yashirish",
-        "Meros olishni cheklash"
+        "Hide class attributes",
+        "Restriction of inheritance"
       ]
     },
     {
@@ -980,14 +980,14 @@
       "options_ru": [
         "Библиотека потоков",
         "Стандартная библиотека Python для асинхронного ввода-вывода, циклов событий и сопрограмм.",
-        "Async/await sintaksisi",
+        "Синтаксис асинхронности/ожидания",
         "Многопроцессорная библиотека"
       ],
       "options_en": [
         "Thread library",
         "A Python standard library for asynchronous I/O, event loops, and coroutines",
         "Async/await syntax",
-        "Multiprocessing kutubxonasi"
+        "Multiprocessing library"
       ]
     },
     {
@@ -1005,7 +1005,7 @@
       "question_en": "What is a coroutine in Python?",
       "options_ru": [
         "Простая функция",
-        "async def bilan e'lon qilingan, await bilan to'xtab-davom etadigan funksiya",
+        "Async — это функция, объявленная с помощью def и приостановленная с помощью await.",
         "Функция генератора",
         "Лямбда-функция"
       ],
@@ -1089,7 +1089,7 @@
       ],
       "options_en": [
         "There is no difference",
-        "__new__ ob'ektni xotirada yaratadi; __init__ yaratilgan ob'ektni boshlang'ich holatga keltiradi",
+        "__new__ creates an object in memory; __init__ initializes the created object",
         "__init__ creates an object",
         "Both work the same"
       ]
@@ -1141,8 +1141,8 @@
       ],
       "options_en": [
         "Function call",
-        "Ob'ektni funksiya kabi chaqirish imkonini beradi: obj()",
-        "Klass yaratish",
+        "Lets you call an object like a function: obj()",
+        "Create a class",
         "Method invocation"
       ]
     },
@@ -1195,7 +1195,7 @@
         "Only for inheritance",
         "Defining an interface is defining the methods that subclasses must implement",
         "Class isolation",
-        "Klass yaratish"
+        "Create a class"
       ]
     },
     {
@@ -1210,7 +1210,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему методы __enter__ и __exit__ в Python?",
-      "question_en": "Python da __enter__ va __exit__ metodlari nima uchun?",
+      "question_en": "Why __enter__ and __exit__ methods in Python?",
       "options_ru": [
         "Вход и выход из программы",
         "Реализация протокола диспетчера контекста для оператора with",
@@ -1221,7 +1221,7 @@
         "Entering and exiting the program",
         "Implementing the Context Manager protocol for the with statement",
         "Enter the function",
-        "Klass metodlari"
+        "Class methods"
       ]
     },
     {
@@ -1288,7 +1288,7 @@
       ],
       "answer": 1,
       "question_ru": "В чем разница между __getattr__ и __getattribute__ в Python?",
-      "question_en": "Python da __getattr__ va __getattribute__ farqi nima?",
+      "question_en": "What is the difference between __getattr__ and __getattribute__ in Python?",
       "options_ru": [
         "Нет никакой разницы",
         "__getattr__ вызывается только в том случае, если атрибут не найден; __getattribute__ всегда вызывается",

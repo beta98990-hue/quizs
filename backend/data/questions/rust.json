@@ -14,7 +14,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему Rust популярен?",
-      "question_en": "Rust nima uchun mashhur?",
+      "question_en": "Why is Rust popular?",
       "options_ru": [
         "Веб-дизайн",
         "Безопасность и скорость памяти — без сборщика мусора",
@@ -22,7 +22,7 @@
         "ИИ/МО"
       ],
       "options_en": [
-        "Web dizayn",
+        "Web design",
         "Memory safety and speed — without a garbage collector",
         "Database",
         "AI/ML"
@@ -76,7 +76,7 @@
       "options_en": [
         "var keyword",
         "let mut keyword",
-        "const o'rniga",
+        "instead of const",
         "simple with let"
       ]
     },
@@ -94,7 +94,7 @@
       "question_ru": "Что такое право собственности в Rust?",
       "question_en": "What is ownership in Rust?",
       "options_ru": [
-        "Наследие",
+        "Наследство",
         "У каждого значения есть один владелец — память освобождается по истечении срока действия области действия.",
         "Ссылка",
         "Память"
@@ -118,7 +118,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое заимствование в Rust?",
-      "question_en": "Rust da borrowing nima?",
+      "question_en": "What is Borrowing in Rust?",
       "options_ru": [
         "Заимствование",
         "Использование значения по ссылке без его владения — с помощью &",
@@ -126,7 +126,7 @@
         "Копировать"
       ],
       "options_en": [
-        "Qarz olish",
+        "Borrowing",
         "Using a value by reference without owning it — with &",
         "Pointer",
         "Copy"
@@ -146,14 +146,14 @@
       "question_ru": "Для чего нужна fn в Rust?",
       "question_en": "What is fn in Rust for?",
       "options_ru": [
-        "Готово",
+        "Заканчивать",
         "Объявление функции: fn my_func() { }",
         "Финал",
         "Пространство имен функций"
       ],
       "options_en": [
         "Finish",
-        "Funksiya e'lon qilish: fn my_func() { }",
+        "Function declaration: fn my_func() { }",
         "Final",
         "Function namespace"
       ]
@@ -253,7 +253,7 @@
         "Строковое совпадение",
         "Сопоставление шаблонов — как и при исчерпывающем переключении, необходимо охватить все случаи.",
         "Соответствие регулярному выражению",
-        "Сравнить"
+        "Сравнивать"
       ],
       "options_en": [
         "String match",
@@ -380,7 +380,7 @@
       "question_ru": "Что такое груз в Rust?",
       "question_en": "What is cargo in Rust?",
       "options_ru": [
-        "Загрузить",
+        "Нагрузка",
         "Менеджер пакетов и инструмент сборки Rust — новый проект, тестирование, сборка, запуск",
         "Менеджер пакетов",
         "Компилятор"
@@ -404,12 +404,12 @@
       ],
       "answer": 1,
       "question_ru": "Что такое время жизни в Rust?",
-      "question_en": "Rust da lifetime nima?",
+      "question_en": "What is lifetime in Rust?",
       "options_ru": [
         "Срок действия программы",
         "Компилятор проверяет правильность ссылки — такие символы, как «a», «b».",
         "Срок службы памяти",
-        "Область применения"
+        "Объем"
       ],
       "options_en": [
         "Program lifetime",
@@ -491,7 +491,7 @@
       ],
       "options_en": [
         "General code",
-        "Tip parametrlari bilan qayta ishlatiladigan funksiya/tip — fn foo<T>(x: T)",
+        "A reusable function/type with type parameters is fn foo<T>(x: T)",
         "Template",
         "Abstract type"
       ]
@@ -511,7 +511,7 @@
       "question_en": "In Rust ? What does the operator do?",
       "options_ru": [
         "Нулевая проверка",
-        "Немедленный возврат, если результат или опция — Err/None — распространение ошибки.",
+        "Немедленный возврат, если результат или опция — Err/None — распространение ошибки",
         "Дополнительная цепочка",
         "тройной"
       ],
@@ -742,7 +742,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое деструктуризация шаблонов в Rust?",
-      "question_en": "Rust da pattern destructuring nima?",
+      "question_en": "What is pattern destructuring in Rust?",
       "options_ru": [
         "Разрушение",
         "пусть (x, y) = точка; совпадение, также в функции args — разделение значений",
@@ -820,7 +820,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем вводить псевдоним в Rust?",
-      "question_en": "Rust da type alias nima uchun?",
+      "question_en": "Why type alias in Rust?",
       "options_ru": [
         "Введите имя",
         "тип Km = u32 — короткое имя сложного типа",
@@ -829,7 +829,7 @@
       ],
       "options_en": [
         "Type name",
-        "type Km = u32 — murakkab tipga qisqa nom berish",
+        "type Km = u32 is a short name for a complex type",
         "New type",
         "Typedef"
       ]
@@ -903,7 +903,7 @@
         "Конверсия",
         "Преобразование между типами. Если вы реализуете From<T> , Into<T> предоставляется бесплатно.",
         "Тип актерского состава",
-        "Conversion trait"
+        "Характеристика конверсии"
       ],
       "options_en": [
         "Conversion",
@@ -985,7 +985,7 @@
       ],
       "options_en": [
         "Pin element",
-        "Future uchun — ob'ektning xotira manzili o'zgarmasligini kafolatlash (self-referential struct)",
+        "For Future — guarantee that the memory address of the object will not change (self-referential struct)",
         "Memory pin",
         "Pointer pin"
       ]
@@ -1002,7 +1002,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое абстракция с нулевой стоимостью в Rust?",
-      "question_en": "Rust da zero-cost abstraction nima?",
+      "question_en": "What is zero-cost abstraction in Rust?",
       "options_ru": [
         "Бесплатная абстракция",
         "Конструкции высокого уровня (итератор, замыкание) компилируются как обычный код — без накладных расходов.",
@@ -1011,7 +1011,7 @@
       ],
       "options_en": [
         "Free abstraction",
-        "High-level constructs (iterator, closure) compile like normal code — no overhead",
+        "High-level constructions (iterator, closure) compile like normal code — no overhead",
         "No overhead",
         "Compile optimization"
       ]
@@ -1063,7 +1063,7 @@
       ],
       "options_en": [
         "Resource acquisition",
-        "Resurs yutilishi va bo'shatilishi scope bilan bog'liq — Drop trait avtomatik chaqiriladi",
+        "Resource ingestion and release are scope dependent — the Drop trait is automatically invoked",
         "Memory management",
         "Destructor"
       ]
@@ -1084,7 +1084,7 @@
       "options_ru": [
         "Разница",
         "Как общие параметры и время жизни связаны с другими типами — ковариантными, инвариантными, контравариантными.",
-        "Type relation",
+        "Тип отношения",
         "Родовое отношение"
       ],
       "options_en": [
@@ -1106,7 +1106,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое функция «Отправка и синхронизация» в Rust?",
-      "question_en": "Rust da Send va Sync trait nima?",
+      "question_en": "What is Send and Sync trait in Rust?",
       "options_ru": [
         "Отправить и синхронизировать",
         "Отправить — тип можно отправить в другой поток; Синхронизация — ссылка может быть в нескольких потоках",
@@ -1141,7 +1141,7 @@
       ],
       "options_en": [
         "Fictitious information",
-        "Generic parametrni 'ishlatgan' kabi ko'rsatish — type erasure, variance belgilash",
+        "Specifying a generic parameter as 'used' — type erasure, variance",
         "Phantom type",
         "Type marker"
       ]
@@ -1218,7 +1218,7 @@
         "Абстрактная черта"
       ],
       "options_en": [
-        "Dinamik dispatch",
+        "Dynamic dispatch",
         "Runtime dispatch via vtable — dynamic polymorphism, like Box<dyn Error>",
         "Dynamic type",
         "Abstract trait"
@@ -1265,7 +1265,7 @@
       "question_en": "What is no_std in Rust?",
       "options_ru": [
         "Нет стандарта",
-        "Работа без стандартной библиотеки — среды с ограниченными ресурсами, такие как встроенное ядро ОС",
+        "Работа без стандартной библиотеки — среды с ограниченными ресурсами, такие как встроенное ядро ​​ОС",
         "Минимальная ржавчина",
         "Только ядро"
       ],
@@ -1288,7 +1288,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое MIR (промежуточное представление среднего уровня) в Rust?",
-      "question_en": "Rust da MIR (Mid-level Intermediate Representation) nima?",
+      "question_en": "What is MIR (Mid-level Intermediate Representation) in Rust?",
       "options_ru": [
         "Средний уровень",
         "Внутреннее представление среднего уровня Rust для оптимизации и проверки заимствований.",
@@ -1296,7 +1296,7 @@
         "Байт-код"
       ],
       "options_en": [
-        "Oʻrta daraja",
+        "Intermediate level",
         "Rust's internal middle-level representation for optimization and borrow checking",
         "AST type",
         "Bytecode"

@@ -13,18 +13,18 @@
         "Database"
       ],
       "answer": 2,
-      "question_ru": "Что такое Node.js?",
+      "question_ru": "Node.js nima?",
       "question_en": "Node.js nima?",
       "options_ru": [
         "CSS-фреймворк",
-        "Веб-браузер",
-        "Серверная среда выполнения JavaScript (на V8)",
+        "Web browser",
+        "JavaScript server-side runtime environment (V8 ustida)",
         "База данных"
       ],
       "options_en": [
         "CSS framework",
         "Web browser",
-        "JavaScript server-side runtime environment (on V8)",
+        "JavaScript server-side runtime environment (V8 ustida)",
         "Database"
       ]
     },
@@ -39,13 +39,13 @@
         "load()"
       ],
       "answer": 2,
-      "question_ru": "Какая функция используется для импорта модуля в Node.js?",
-      "question_en": "Which function is used to import a module in Node.js?",
+      "question_ru": "Node.js da modul import qilish uchun qaysi funksiya ishlatiladi?",
+      "question_en": "Node.js da modul import qilish uchun qaysi funksiya ishlatiladi?",
       "options_ru": [
-        "импорт()",
-        "включить()",
-        "требуется()",
-        "загрузить()"
+        "import()",
+        "include()",
+        "require()",
+        "load()"
       ],
       "options_en": [
         "import()",
@@ -65,13 +65,13 @@
         "web"
       ],
       "answer": 2,
-      "question_ru": "Какой модуль используется для создания HTTP-сервера в Node.js?",
-      "question_en": "Which module is used to create an HTTP server in Node.js?",
+      "question_ru": "Node.js da HTTP server yaratish uchun qaysi modul ishlatiladi?",
+      "question_en": "Node.js da HTTP server yaratish uchun qaysi modul ishlatiladi?",
       "options_ru": [
-        "сеть",
-        "сервер",
+        "net",
+        "server",
         "http",
-        "сеть"
+        "web"
       ],
       "options_en": [
         "net",
@@ -91,19 +91,19 @@
         "Ma'lumotlar bazasiga"
       ],
       "answer": 1,
-      "question_ru": "Где вывод console.log() в Node.js?",
-      "question_en": "Where does console.log() output in Node.js?",
+      "question_ru": "Node.js da console.log() qayerga chiqaradi?",
+      "question_en": "Node.js da console.log() qayerga chiqaradi?",
       "options_ru": [
-        "В консоль браузера",
-        "в терминал (стандартный вывод).",
-        "В файл",
-        "В базу данных"
+        "Brauzer konsoliga",
+        "Terminal (stdout) ga",
+        "Faylga",
+        "Ma'lumotlar bazasiga"
       ],
       "options_en": [
-        "To the browser console",
-        "to Terminal (stdout).",
-        "To file",
-        "To the database"
+        "Brauzer konsoliga",
+        "Terminal (stdout) ga",
+        "Faylga",
+        "Ma'lumotlar bazasiga"
       ]
     },
     {
@@ -117,16 +117,16 @@
         "Node Programming Module"
       ],
       "answer": 0,
-      "question_ru": "что такое нпм?",
-      "question_en": "what is npm?",
+      "question_ru": "npm nima?",
+      "question_en": "npm nima?",
       "options_ru": [
-        "Диспетчер пакетов Node — управление пакетами Node.js",
-        "Менеджер протоколов узла",
-        "Новый пакетный модуль",
-        "Модуль программирования узла"
+        "Node Package Manager — Node.js paketlarini boshqarish",
+        "Node Protocol Manager",
+        "New Package Module",
+        "Node Programming Module"
       ],
       "options_en": [
-        "Node Package Manager — Manage Node.js packages",
+        "Node Package Manager — Node.js paketlarini boshqarish",
         "Node Protocol Manager",
         "New Package Module",
         "Node Programming Module"
@@ -143,19 +143,19 @@
         "Sinxron jarayon"
       ],
       "answer": 1,
-      "question_ru": "Что такое асинхронный ввод-вывод в Node.js?",
-      "question_en": "What is asynchronous I/O in Node.js?",
+      "question_ru": "Node.js da asinxron I/O nima degani?",
+      "question_en": "Node.js da asinxron I/O nima degani?",
       "options_ru": [
-        "Только одна операция за раз",
-        "Операции ввода-вывода работают без ожидания — результат возвращается через обратный вызов/промис.",
-        "Много тем",
-        "Синхронный процесс"
+        "Bir vaqtda faqat bitta operatsiya",
+        "I/O operatsiyalar to'xtab kutmasdan ishlaydi — callback/promise orqali natija qaytariladi",
+        "Ko'p thread",
+        "Sinxron jarayon"
       ],
       "options_en": [
         "Bir vaqtda faqat bitta operatsiya",
-        "I/O operations work without waiting — the result is returned via callback/promise",
-        "Many threads",
-        "Synchronous process"
+        "I/O operatsiyalar to'xtab kutmasdan ishlaydi — callback/promise orqali natija qaytariladi",
+        "Ko'p thread",
+        "Sinxron jarayon"
       ]
     },
     {
@@ -169,19 +169,19 @@
         "Server konfiguratsiyasi"
       ],
       "answer": 1,
-      "question_ru": "Почему package.json в Node.js?",
-      "question_en": "Why package.json in Node.js?",
+      "question_ru": "Node.js da package.json nima uchun?",
+      "question_en": "Node.js da package.json nima uchun?",
       "options_ru": [
-        "JavaScript-файл",
-        "Файл управления метаданными проекта, зависимостями и скриптами.",
-        "Конфигурация узла",
-        "Конфигурация сервера"
+        "JavaScript fayl",
+        "Loyiha metadata, dependencies va scripts boshqarish fayli",
+        "Node konfiguratsiyasi",
+        "Server konfiguratsiyasi"
       ],
       "options_en": [
-        "JavaScript file",
-        "Project metadata, dependencies and scripts control file",
-        "Node configuration",
-        "Server configuration"
+        "JavaScript fayl",
+        "Loyiha metadata, dependencies va scripts boshqarish fayli",
+        "Node konfiguratsiyasi",
+        "Server konfiguratsiyasi"
       ]
     },
     {
@@ -195,19 +195,19 @@
         "Root papka yo'li"
       ],
       "answer": 1,
-      "question_ru": "Что возвращает __dirname в Node.js?",
-      "question_en": "What does __dirname return in Node.js?",
+      "question_ru": "Node.js da __dirname nima qaytaradi?",
+      "question_en": "Node.js da __dirname nima qaytaradi?",
       "options_ru": [
-        "Путь текущего файла",
-        "Абсолютный путь к текущей папке",
-        "Имя файла",
-        "Путь к корневой папке"
+        "Joriy faylning yo'li",
+        "Joriy papkaning absolut yo'li",
+        "Fayl nomi",
+        "Root papka yo'li"
       ],
       "options_en": [
-        "The path of the current file",
-        "The absolute path of the current folder",
+        "Joriy faylning yo'li",
+        "Joriy papkaning absolut yo'li",
         "Fayl nomi",
-        "Root folder path"
+        "Root papka yo'li"
       ]
     },
     {
@@ -221,19 +221,19 @@
         "Server o'zgaruvchilari"
       ],
       "answer": 0,
-      "question_ru": "Что такое Process.env в Node.js?",
-      "question_en": "What is process.env in Node.js?",
+      "question_ru": "Node.js da process.env nima?",
+      "question_en": "Node.js da process.env nima?",
       "options_ru": [
-        "Переменные среды процесса",
-        "Конфигурация среды",
-        "Глобальные переменные",
-        "Переменные сервера"
+        "Jarayon muhit o'zgaruvchilari",
+        "Muhit konfiguratsiyasi",
+        "Global o'zgaruvchilar",
+        "Server o'zgaruvchilari"
       ],
       "options_en": [
-        "Process environment variables",
-        "Environment configuration",
-        "Global variables",
-        "Server variables"
+        "Jarayon muhit o'zgaruvchilari",
+        "Muhit konfiguratsiyasi",
+        "Global o'zgaruvchilar",
+        "Server o'zgaruvchilari"
       ]
     },
     {
@@ -247,17 +247,17 @@
         "Function system"
       ],
       "answer": 1,
-      "question_ru": "Почему модуль fs в Node.js?",
-      "question_en": "Why fs module in Node.js?",
+      "question_ru": "Node.js da fs moduli nima uchun?",
+      "question_en": "Node.js da fs moduli nima uchun?",
       "options_ru": [
-        "Рамочная система",
-        "Файловая система — работа с файлами и папками.",
-        "Фронтенд-сервер",
-        "Функциональная система"
+        "Framework system",
+        "File System — fayl va papkalar bilan ishlash",
+        "Frontend server",
+        "Function system"
       ],
       "options_en": [
         "Framework system",
-        "File System — working with files and folders",
+        "File System — fayl va papkalar bilan ishlash",
         "Frontend server",
         "Function system"
       ]
@@ -273,13 +273,13 @@
         "Timer"
       ],
       "answer": 1,
-      "question_ru": "Что такое EventEmitter в Node.js?",
-      "question_en": "What is EventEmitter in Node.js?",
+      "question_ru": "Node.js da EventEmitter nima?",
+      "question_en": "Node.js da EventEmitter nima?",
       "options_ru": [
-        "Прослушиватель событий",
-        "Базовый класс для генерации и мониторинга событий.",
-        "Диспетчер событий",
-        "Таймер"
+        "Event listener",
+        "Hodisalar chiqarish va kuzatish uchun asosiy klass",
+        "Event dispatcher",
+        "Timer"
       ],
       "options_en": [
         "Event listener",
@@ -299,19 +299,19 @@
         "Katalog yaratish"
       ],
       "answer": 1,
-      "question_ru": "Почему path.join() в Node.js?",
-      "question_en": "Why path.join() in Node.js?",
+      "question_ru": "Node.js da path.join() nima uchun?",
+      "question_en": "Node.js da path.join() nima uchun?",
       "options_ru": [
         "Yo'llarni qo'shish",
-        "Объединение частей пути к файлу в соответствии с ОС",
-        "Получить имя файла",
-        "Создать каталог"
+        "Fayl yo'l qismlarini OS ga mos birlashtirish",
+        "Fayl nomini olish",
+        "Katalog yaratish"
       ],
       "options_en": [
-        "Add paths",
-        "Concatenate file path parts according to OS",
-        "Get the filename",
-        "Create a directory"
+        "Yo'llarni qo'shish",
+        "Fayl yo'l qismlarini OS ga mos birlashtirish",
+        "Fayl nomini olish",
+        "Katalog yaratish"
       ]
     },
     {
@@ -325,17 +325,17 @@
         "Database ORM"
       ],
       "answer": 1,
-      "question_ru": "Что такое Express.js?",
-      "question_en": "What is Express.js?",
+      "question_ru": "Express.js nima?",
+      "question_en": "Express.js nima?",
       "options_ru": [
         "библиотека JavaScript",
-        "Минимальный и гибкий веб-фреймворк для Node.js.",
+        "Node.js uchun minimal va moslashuvchan web framework",
         "CSS-фреймворк",
-        "База данных ОРМ"
+        "Database ORM"
       ],
       "options_en": [
         "JavaScript library",
-        "A minimal and flexible web framework for Node.js",
+        "Node.js uchun minimal va moslashuvchan web framework",
         "CSS framework",
         "Database ORM"
       ]
@@ -351,17 +351,17 @@
         "Promise"
       ],
       "answer": 1,
-      "question_ru": "Что такое обратный вызов в Node.js?",
-      "question_en": "What is a callback in Node.js?",
+      "question_ru": "Node.js da callback nima?",
+      "question_en": "Node.js da callback nima?",
       "options_ru": [
-        "Имя функции",
+        "Funksiya nomi",
         "Asinxron operatsiya tugaganda chaqiriladigan funksiya",
-        "Оператор возврата",
-        "Обещание"
+        "Return statement",
+        "Promise"
       ],
       "options_en": [
         "Funksiya nomi",
-        "A function that is called when an asynchronous operation completes",
+        "Asinxron operatsiya tugaganda chaqiriladigan funksiya",
         "Return statement",
         "Promise"
       ]
@@ -377,19 +377,19 @@
         "Modul o'chirish"
       ],
       "answer": 1,
-      "question_ru": "Почему модуль.exports в Node.js?",
-      "question_en": "Why module.exports in Node.js?",
+      "question_ru": "Node.js da module.exports nima uchun?",
+      "question_en": "Node.js da module.exports nima uchun?",
       "options_ru": [
         "Импорт модуля",
-        "Указание API, который будет доступен за пределами модуля",
-        "Создать модуль",
-        "Удалить модуль"
+        "Moduldan tashqariga ko'rsatiladigan API ni belgilash",
+        "Modul yaratish",
+        "Modul o'chirish"
       ],
       "options_en": [
         "Module import",
-        "Specifying the API to be exposed outside the module",
-        "Create a module",
-        "Delete the module"
+        "Moduldan tashqariga ko'rsatiladigan API ni belgilash",
+        "Modul yaratish",
+        "Modul o'chirish"
       ]
     },
     {
@@ -403,19 +403,19 @@
         "Brauzer event loop bilan bir xil"
       ],
       "answer": 1,
-      "question_ru": "Как работает цикл событий в Node.js?",
-      "question_en": "How does Event Loop work in Node.js?",
+      "question_ru": "Node.js da Event Loop qanday ishlaydi?",
+      "question_en": "Node.js da Event Loop qanday ishlaydi?",
       "options_ru": [
-        "Работает в нескольких потоках",
-        "В одном потоке запускается: стек вызовов, libuv (I/O), очередь таймеров, очередь обратных вызовов по очереди.",
-        "Только для асинхронного кода",
-        "Браузер аналогичен циклу событий"
+        "Ko'p thread da ishlaydi",
+        "Bitta thread da: call stack, libuv (I/O), timer queue, callback queue larni navbat bilan ishga tushiradi",
+        "Faqat asinxron kod uchun",
+        "Brauzer event loop bilan bir xil"
       ],
       "options_en": [
-        "Works on multiple threads",
-        "In one thread, it starts: call stack, libuv (I/O), timer queue, callback queue in turn",
-        "For asynchronous code only",
-        "The browser is the same as the event loop"
+        "Ko'p thread da ishlaydi",
+        "Bitta thread da: call stack, libuv (I/O), timer queue, callback queue larni navbat bilan ishga tushiradi",
+        "Faqat asinxron kod uchun",
+        "Brauzer event loop bilan bir xil"
       ]
     },
     {
@@ -429,18 +429,18 @@
         "HTTP stream"
       ],
       "answer": 1,
-      "question_ru": "Что такое поток в Node.js и в чем его преимущество?",
-      "question_en": "What is stream in Node.js and what is its advantage?",
+      "question_ru": "Node.js da stream nima va qanday afzalligi bor?",
+      "question_en": "Node.js da stream nima va qanday afzalligi bor?",
       "options_ru": [
-        "Загрузите данные полностью и затем запустите",
-        "Последовательная обработка данных порциями экономит память и работает быстрее.",
-        "Файл только для чтения",
-        "HTTP-поток"
+        "Ma'lumotlarni to'liq yuklab, keyin ishlash",
+        "Ma'lumotlarni bo'laklarga bo'lib, ketma-ket ishlash — xotirani tejaydi va tezroq ishlaydi",
+        "Faqat fayl o'qish uchun",
+        "HTTP stream"
       ],
       "options_en": [
-        "Download the data completely and then run",
+        "Ma'lumotlarni to'liq yuklab, keyin ishlash",
         "Ma'lumotlarni bo'laklarga bo'lib, ketma-ket ishlash — xotirani tejaydi va tezroq ishlaydi",
-        "A read-only file",
+        "Faqat fayl o'qish uchun",
         "HTTP stream"
       ]
     },
@@ -455,17 +455,17 @@
         "Thread cluster"
       ],
       "answer": 1,
-      "question_ru": "Почему модуль Cluster в Node.js?",
-      "question_en": "Why Cluster module in Node.js?",
+      "question_ru": "Node.js da Cluster module nima uchun?",
+      "question_en": "Node.js da Cluster module nima uchun?",
       "options_ru": [
-        "Кластер базы данных",
-        "Балансировка нагрузки путем создания дочерних процессов для нескольких ядер ЦП.",
-        "Кластер серверов",
-        "Кластер потоков"
+        "Database cluster",
+        "Ko'p CPU yadrolari uchun child process lar yaratib, load balance qilish",
+        "Server cluster",
+        "Thread cluster"
       ],
       "options_en": [
         "Database cluster",
-        "Load balancing by creating child processes for multiple CPU cores",
+        "Ko'p CPU yadrolari uchun child process lar yaratib, load balance qilish",
         "Server cluster",
         "Thread cluster"
       ]
@@ -481,17 +481,17 @@
         "Child process"
       ],
       "answer": 1,
-      "question_ru": "Что такое рабочие потоки в Node.js?",
-      "question_en": "What are Worker Threads in Node.js?",
+      "question_ru": "Node.js da Worker Threads nima?",
+      "question_en": "Node.js da Worker Threads nima?",
       "options_ru": [
-        "HTTP-работники",
-        "Настоящая многопоточность для задач с интенсивным использованием процессора",
-        "Фоновый процесс",
-        "Дочерний процесс"
+        "HTTP ishchilar",
+        "CPU-intensive vazifalar uchun haqiqiy ko'p thread ishlash imkoni",
+        "Background process",
+        "Child process"
       ],
       "options_en": [
-        "HTTP workers",
-        "True multithreading for CPU-intensive tasks",
+        "HTTP ishchilar",
+        "CPU-intensive vazifalar uchun haqiqiy ko'p thread ishlash imkoni",
         "Background process",
         "Child process"
       ]
@@ -507,19 +507,19 @@
         "Router funksiyasi"
       ],
       "answer": 1,
-      "question_ru": "Что такое промежуточное программное обеспечение в Node.js (в контексте Express)?",
-      "question_en": "What is middleware in Node.js (in the context of Express)?",
+      "question_ru": "Node.js da middleware nima (Express kontekstida)?",
+      "question_en": "Node.js da middleware nima (Express kontekstida)?",
       "options_ru": [
-        "Промежуточное ПО",
-        "Функция, которая выполняется между запросом и ответом — с параметрами req, res, next.",
-        "Функция фильтра",
-        "Функция маршрутизатора"
+        "O'rta dastur",
+        "So'rov va javob o'rtasida ishlaydigan funksiya — req, res, next parametrlari bilan",
+        "Filter funksiyasi",
+        "Router funksiyasi"
       ],
       "options_en": [
-        "Middleware",
-        "A function that runs between a request and a response — with parameters req, res, next",
-        "Filter function",
-        "Router function"
+        "O'rta dastur",
+        "So'rov va javob o'rtasida ishlaydigan funksiya — req, res, next parametrlari bilan",
+        "Filter funksiyasi",
+        "Router funksiyasi"
       ]
     },
     {
@@ -533,19 +533,19 @@
         "Promise larni navbat bilan bajaradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Promise.all() в Node.js?",
-      "question_en": "What does Promise.all() do in Node.js?",
+      "question_ru": "Node.js da Promise.all() nima qiladi?",
+      "question_en": "Node.js da Promise.all() nima qiladi?",
       "options_ru": [
         "Birinchi promise ni qaytaradi",
-        "Выполняет несколько обещаний параллельно и возвращает массив результатов, когда все они завершены.",
-        "Возвращает первое завершенное обещание",
-        "Выполняет обещания по очереди"
+        "Ko'p promise larni parallel bajarilib, barchasi tugaganda natijalar massivini qaytaradi",
+        "Birinchi tugagan promise ni qaytaradi",
+        "Promise larni navbat bilan bajaradi"
       ],
       "options_en": [
-        "Returns the first promise",
-        "Executes multiple promises in parallel and returns an array of results when all have finished",
-        "Returns the first completed promise",
-        "Executes promises in turn"
+        "Birinchi promise ni qaytaradi",
+        "Ko'p promise larni parallel bajarilib, barchasi tugaganda natijalar massivini qaytaradi",
+        "Birinchi tugagan promise ni qaytaradi",
+        "Promise larni navbat bilan bajaradi"
       ]
     },
     {
@@ -559,19 +559,19 @@
         "Xotira bufer"
       ],
       "answer": 1,
-      "question_ru": "Зачем буфер в Node.js?",
-      "question_en": "Why Buffer in Node.js?",
+      "question_ru": "Node.js da Buffer nima uchun?",
+      "question_en": "Node.js da Buffer nima uchun?",
       "options_ru": [
         "Ma'lumotlar to'planishi",
-        "Для работы с двоичными данными (сырыми байтами) — поток, файл, сеть.",
-        "Кэш-память",
-        "Буфер памяти"
+        "Binary ma'lumotlar (raw bytes) bilan ishlash uchun — stream, fayl, network",
+        "Cache memory",
+        "Xotira bufer"
       ],
       "options_en": [
-        "Data collection",
-        "To work with binary data (raw bytes) — stream, file, network",
+        "Ma'lumotlar to'planishi",
+        "Binary ma'lumotlar (raw bytes) bilan ishlash uchun — stream, fayl, network",
         "Cache memory",
-        "Memory buffer"
+        "Xotira bufer"
       ]
     },
     {
@@ -585,17 +585,17 @@
         "Recursive Event Processing Loop"
       ],
       "answer": 1,
-      "question_ru": "Что такое REPL в Node.js?",
-      "question_en": "What is a REPL in Node.js?",
+      "question_ru": "Node.js da REPL nima?",
+      "question_en": "Node.js da REPL nima?",
       "options_ru": [
-        "Журнал ошибок процессора во время выполнения",
-        "Цикл Read-Eval-Print — это интерактивная среда Node.js.",
-        "Уровень процесса удаленного выполнения",
-        "Рекурсивный цикл обработки событий"
+        "Runtime Error Processor Log",
+        "Read-Eval-Print Loop — interaktiv Node.js muhiti",
+        "Remote Execution Process Layer",
+        "Recursive Event Processing Loop"
       ],
       "options_en": [
         "Runtime Error Processor Log",
-        "Read-Eval-Print Loop is an interactive Node.js environment",
+        "Read-Eval-Print Loop — interaktiv Node.js muhiti",
         "Remote Execution Process Layer",
         "Recursive Event Processing Loop"
       ]
@@ -611,19 +611,19 @@
         "Asinxron operatsiya"
       ],
       "answer": 1,
-      "question_ru": "Что делает Process.nextTick() в Node.js?",
-      "question_en": "What does process.nextTick() do in Node.js?",
+      "question_ru": "Node.js da process.nextTick() nima qiladi?",
+      "question_en": "Node.js da process.nextTick() nima qiladi?",
       "options_ru": [
-        "Добавляет таймер",
-        "Когда текущая операция завершается, цикл событий вызывает обратный вызов, прежде чем продолжить.",
-        "Следующая итерация цикла событий",
-        "Асинхронная работа"
+        "Timer qo'shadi",
+        "Joriy operatsiya tugaganda, event loop davom etishidan oldin callback ni chaqiradi",
+        "Next event loop iteratsiyasi",
+        "Asinxron operatsiya"
       ],
       "options_en": [
-        "Adds a timer",
+        "Timer qo'shadi",
         "Joriy operatsiya tugaganda, event loop davom etishidan oldin callback ni chaqiradi",
-        "Next event loop iteration",
-        "Asynchronous operation"
+        "Next event loop iteratsiyasi",
+        "Asinxron operatsiya"
       ]
     },
     {
@@ -637,17 +637,17 @@
         "Middleware"
       ],
       "answer": 1,
-      "question_ru": "Почему маршрутизатор в Express?",
-      "question_en": "Why router in Express?",
+      "question_ru": "Express da router nima uchun?",
+      "question_en": "Express da router nima uchun?",
       "options_ru": [
-        "URL-маршрутизация",
-        "Разделение маршрутов на модули и создание мини-приложений",
-        "HTTP-метод",
-        "Промежуточное ПО"
+        "URL routing",
+        "Route larni modullarga ajratish va mini-app larni yaratish",
+        "HTTP method",
+        "Middleware"
       ],
       "options_en": [
         "URL routing",
-        "Dividing routes into modules and creating mini-apps",
+        "Route larni modullarga ajratish va mini-app larni yaratish",
         "HTTP method",
         "Middleware"
       ]
@@ -663,17 +663,17 @@
         "Central Origin Request Service"
       ],
       "answer": 1,
-      "question_ru": "Что такое CORS в Node.js и почему?",
+      "question_ru": "Node.js da CORS nima va nima uchun kerak?",
       "question_en": "Node.js da CORS nima va nima uchun kerak?",
       "options_ru": [
-        "Система ресурсов организации кода",
-        "Совместное использование ресурсов между источниками — это механизм разрешения междоменных запросов.",
-        "Система запросов происхождения клиента",
-        "Центральная служба запроса источника"
+        "Code Organization Resource System",
+        "Cross-Origin Resource Sharing — boshqa domen so'rovlariga ruxsat berish mexanizmi",
+        "Client-Origin Request System",
+        "Central Origin Request Service"
       ],
       "options_en": [
         "Code Organization Resource System",
-        "Cross-Origin Resource Sharing is a mechanism for allowing cross-domain requests",
+        "Cross-Origin Resource Sharing — boshqa domen so'rovlariga ruxsat berish mexanizmi",
         "Client-Origin Request System",
         "Central Origin Request Service"
       ]
@@ -689,17 +689,17 @@
         "JSON Worker Thread"
       ],
       "answer": 1,
-      "question_ru": "Что такое JWT в Node.js?",
-      "question_en": "What is JWT in Node.js?",
+      "question_ru": "Node.js da JWT nima?",
+      "question_en": "Node.js da JWT nima?",
       "options_ru": [
-        "Веб-токен JavaScript",
-        "JSON Web Token — это токен аутентификации без сохранения состояния.",
-        "Веб-токен Java",
-        "Рабочий поток JSON"
+        "JavaScript Web Token",
+        "JSON Web Token — stateless autentifikatsiya tokeni",
+        "Java Web Token",
+        "JSON Worker Thread"
       ],
       "options_en": [
         "JavaScript Web Token",
-        "JSON Web Token is a stateless authentication token",
+        "JSON Web Token — stateless autentifikatsiya tokeni",
         "Java Web Token",
         "JSON Worker Thread"
       ]
@@ -715,19 +715,19 @@
         "SSL sertifikat"
       ],
       "answer": 1,
-      "question_ru": "Зачем использовать bcrypt в Node.js?",
+      "question_ru": "Node.js da bcrypt nima uchun?",
       "question_en": "Node.js da bcrypt nima uchun?",
       "options_ru": [
-        "Шифрование файлов",
-        "Библиотека для хеширования и проверки паролей.",
-        "Генерация токенов",
-        "SSL-сертификат"
+        "Fayl shifrlash",
+        "Parollarni xeshlash va tekshirish kutubxonasi",
+        "Token yaratish",
+        "SSL sertifikat"
       ],
       "options_en": [
-        "File encryption",
-        "A library for hashing and validating passwords",
-        "Token generation",
-        "SSL certificate"
+        "Fayl shifrlash",
+        "Parollarni xeshlash va tekshirish kutubxonasi",
+        "Token yaratish",
+        "SSL sertifikat"
       ]
     },
     {
@@ -741,18 +741,18 @@
         "Load balancing"
       ],
       "answer": 1,
-      "question_ru": "Почему в Node.js используется ограничение скорости?",
-      "question_en": "Why is rate limiting used in Node.js?",
+      "question_ru": "Node.js da rate limiting nima uchun ishlatiladi?",
+      "question_en": "Node.js da rate limiting nima uchun ishlatiladi?",
       "options_ru": [
-        "Ускориться",
-        "Ограничение количества запросов с одного IP за период времени — защита от DDoS и перебора",
-        "Управление кэшем",
-        "Балансировка нагрузки"
+        "Tezlikni oshirish",
+        "Bir vaqt oralig'ida bir IP dan kelgan so'rovlar sonini cheklash — DDoS va brute force dan himoya",
+        "Cache boshqarish",
+        "Load balancing"
       ],
       "options_en": [
         "Tezlikni oshirish",
-        "Limiting the number of requests from one IP per time period — DDoS and brute force protection",
-        "Cache management",
+        "Bir vaqt oralig'ida bir IP dan kelgan so'rovlar sonini cheklash — DDoS va brute force dan himoya",
+        "Cache boshqarish",
         "Load balancing"
       ]
     },
@@ -767,19 +767,19 @@
         "Server o'zgaruvchilari"
       ],
       "answer": 1,
-      "question_ru": "Почему переменные среды в Node.js?",
-      "question_en": "Why environment variables in Node.js?",
+      "question_ru": "Node.js da environment variables nima uchun?",
+      "question_en": "Node.js da environment variables nima uchun?",
       "options_ru": [
-        "Переменные",
-        "Надежно храните конфигурацию (секретные ключи, URI БД) отдельно от кода.",
-        "Настройки среды",
-        "Переменные сервера"
+        "O'zgaruvchilar",
+        "Konfiguratsiya (secret keys, DB URI) ni koddan ajratib, xavfsiz saqlash",
+        "Muhit sozlamalari",
+        "Server o'zgaruvchilari"
       ],
       "options_en": [
-        "Variables",
-        "Securely store configuration (secret keys, DB URI) separately from code",
-        "Environment settings",
-        "Server variables"
+        "O'zgaruvchilar",
+        "Konfiguratsiya (secret keys, DB URI) ni koddan ajratib, xavfsiz saqlash",
+        "Muhit sozlamalari",
+        "Server o'zgaruvchilari"
       ]
     },
     {
@@ -793,19 +793,19 @@
         "app.use() faqat middleware"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между app.use() и app.get() в Express?",
-      "question_en": "What is the difference between app.use() and app.get() in Express?",
+      "question_ru": "Express da app.use() va app.get() farqi nima?",
+      "question_en": "Express da app.use() va app.get() farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "app.use() для всех методов и путей HTTP; app.get() предназначен только для GET и определенного пути.",
-        "app.get() является универсальным",
-        "app.use() — это всего лишь промежуточное программное обеспечение"
+        "app.use() barcha HTTP methodlari va path lar uchun; app.get() faqat GET va aniq path uchun",
+        "app.get() universal",
+        "app.use() faqat middleware"
       ],
       "options_en": [
         "There is no difference",
-        "app.use() for all HTTP methods and paths; app.get() is only for GET and specific path",
-        "app.get() is universal",
-        "app.use() is only middleware"
+        "app.use() barcha HTTP methodlari va path lar uchun; app.get() faqat GET va aniq path uchun",
+        "app.get() universal",
+        "app.use() faqat middleware"
       ]
     },
     {
@@ -819,19 +819,19 @@
         "Subprocess boshqarish"
       ],
       "answer": 1,
-      "question_ru": "Для чего нужен модуль child_process в Node.js?",
-      "question_en": "What is the child_process module in Node.js for?",
+      "question_ru": "Node.js da child_process module nima uchun?",
+      "question_en": "Node.js da child_process module nima uchun?",
       "options_ru": [
-        "Дочерний элемент",
-        "Запускайте системные команды или другие процессы",
-        "Создать дочерний класс",
-        "Управление подпроцессами"
+        "Bola element",
+        "Tizim buyruqlarini yoki boshqa jarayonlarni ishga tushirish",
+        "Child class yaratish",
+        "Subprocess boshqarish"
       ],
       "options_en": [
-        "A child element",
-        "Run system commands or other processes",
-        "Create a child class",
-        "Subprocess management"
+        "Bola element",
+        "Tizim buyruqlarini yoki boshqa jarayonlarni ishga tushirish",
+        "Child class yaratish",
+        "Subprocess boshqarish"
       ]
     },
     {
@@ -845,18 +845,18 @@
         "Firewall"
       ],
       "answer": 1,
-      "question_ru": "Что делает промежуточное программное обеспечение шлема в Node.js?",
-      "question_en": "What does helmet middleware do in Node.js?",
+      "question_ru": "Node.js da helmet middleware nima qiladi?",
+      "question_en": "Node.js da helmet middleware nima qiladi?",
       "options_ru": [
-        "Конфигурация HTTPS",
-        "Защищает от распространенных уязвимостей путем добавления безопасных заголовков HTTP.",
-        "Шифрование пароля",
-        "Брандмауэр"
+        "HTTPS sozlash",
+        "Xavfsiz HTTP sarlavhalar qo'shib, umumiy zaifliklardan himoya qiladi",
+        "Parol shifrlash",
+        "Firewall"
       ],
       "options_en": [
         "HTTPS sozlash",
-        "Protects against common vulnerabilities by adding secure HTTP headers",
-        "Password encryption",
+        "Xavfsiz HTTP sarlavhalar qo'shib, umumiy zaifliklardan himoya qiladi",
+        "Parol shifrlash",
         "Firewall"
       ]
     },
@@ -871,18 +871,18 @@
         "Rate limiting"
       ],
       "answer": 1,
-      "question_ru": "Что такое промежуточное программное обеспечение Morgan в Node.js?",
-      "question_en": "What is Morgan middleware in Node.js?",
+      "question_ru": "Node.js da Morgan middleware nima?",
+      "question_en": "Node.js da Morgan middleware nima?",
       "options_ru": [
-        "Промежуточное программное обеспечение безопасности",
-        "Промежуточное программное обеспечение для регистрации HTTP-запросов (журналирование)",
-        "Аутентификация",
-        "Ограничение скорости"
+        "Xavfsizlik middleware",
+        "HTTP so'rovlarni loglash (logging) middleware",
+        "Autentifikatsiya",
+        "Rate limiting"
       ],
       "options_en": [
-        "Security middleware",
-        "HTTP request logging (logging) middleware",
-        "Authentication",
+        "Xavfsizlik middleware",
+        "HTTP so'rovlarni loglash (logging) middleware",
+        "Autentifikatsiya",
         "Rate limiting"
       ]
     },
@@ -897,17 +897,17 @@
         "Media player"
       ],
       "answer": 1,
-      "question_ru": "Зачем заниматься Node.js?",
-      "question_en": "Why multer in Node.js?",
+      "question_ru": "Node.js da multer nima uchun?",
+      "question_en": "Node.js da multer nima uchun?",
       "options_ru": [
-        "Много процесса",
-        "Промежуточное программное обеспечение для управления загрузкой файлов",
-        "Мультиплексор",
-        "Медиаплеер"
+        "Ko'p jarayon",
+        "Fayl yuklash (file upload) ni boshqarish middleware",
+        "Multiplexer",
+        "Media player"
       ],
       "options_en": [
-        "A lot of process",
-        "File upload management middleware",
+        "Ko'p jarayon",
+        "Fayl yuklash (file upload) ni boshqarish middleware",
         "Multiplexer",
         "Media player"
       ]
@@ -923,19 +923,19 @@
         "Network kutubxona"
       ],
       "answer": 1,
-      "question_ru": "Что такое libuv в Node.js?",
-      "question_en": "What is libuv in Node.js?",
+      "question_ru": "Node.js da libuv nima?",
+      "question_en": "Node.js da libuv nima?",
       "options_ru": [
-        "библиотека Linux",
-        "Библиотека C, которая управляет асинхронным вводом-выводом, циклом событий и пулом потоков, является основой Node.js.",
-        "УФ-фильтрация",
-        "Сетевая библиотека"
+        "Linux kutubxona",
+        "Asinxron I/O, event loop, thread pool boshqaradigan C kutubxonasi — Node.js asosi",
+        "UV filtratsiya",
+        "Network kutubxona"
       ],
       "options_en": [
-        "Linux library",
+        "Linux kutubxona",
         "Asinxron I/O, event loop, thread pool boshqaradigan C kutubxonasi — Node.js asosi",
-        "UV filtration",
-        "Network library"
+        "UV filtratsiya",
+        "Network kutubxona"
       ]
     },
     {
@@ -949,16 +949,16 @@
         "Version 8"
       ],
       "answer": 1,
-      "question_ru": "Что такое движок V8 в Node.js?",
-      "question_en": "What is the V8 engine in Node.js?",
+      "question_ru": "Node.js da V8 engine nima?",
+      "question_en": "Node.js da V8 engine nima?",
       "options_ru": [
-        "Узел версии 8",
-        "Интерпретатор JavaScript, написанный на C++ компанией Google с JIT-компиляцией.",
-        "Виртуальный 8 ядерный",
-        "Версия 8"
+        "8-versiya Node",
+        "Google tomonidan C++ da yozilgan JavaScript interpretatori — JIT kompilyatsiya bilan",
+        "Virtual 8 core",
+        "Version 8"
       ],
       "options_en": [
-        "Version 8 Node",
+        "8-versiya Node",
         "Google tomonidan C++ da yozilgan JavaScript interpretatori — JIT kompilyatsiya bilan",
         "Virtual 8 core",
         "Version 8"
@@ -975,17 +975,17 @@
         "Manual check"
       ],
       "answer": 1,
-      "question_ru": "Как обнаружить и предотвратить утечку памяти в Node.js?",
-      "question_en": "How to detect and prevent memory leak in Node.js?",
+      "question_ru": "Node.js da memory leak qanday aniqlanadi va oldini olinadi?",
+      "question_en": "Node.js da memory leak qanday aniqlanadi va oldini olinadi?",
       "options_ru": [
-        "Через перезапуск",
-        "--обнаружение с помощью таких инструментов, как флаг проверки, снимок кучи, Clinic.js; очистить глобальную переменную, прослушиватель событий",
-        "Автоматическое обнаружение",
-        "Ручная проверка"
+        "Restart orqali",
+        "--inspect flag, Heap snapshot, clinic.js kabi toollar bilan aniqlash; global var, event listener tozalash",
+        "Auto detect",
+        "Manual check"
       ],
       "options_en": [
-        "Through restart",
-        "--detection with tools such as inspect flag, Heap snapshot, clinic.js; clear the global var, event listener",
+        "Restart orqali",
+        "--inspect flag, Heap snapshot, clinic.js kabi toollar bilan aniqlash; global var, event listener tozalash",
         "Auto detect",
         "Manual check"
       ]
@@ -1001,19 +1001,19 @@
         "Ikkalasi bir xil"
       ],
       "answer": 1,
-      "question_ru": "Разница между потоком для чтения и записи в Node.js?",
-      "question_en": "Difference between Readable and Writable stream in Node.js?",
+      "question_ru": "Node.js da Readable va Writable stream farqi?",
+      "question_en": "Node.js da Readable va Writable stream farqi?",
       "options_ru": [
         "Нет никакой разницы",
         "Readable — ma'lumot o'qish uchun (source); Writable — ma'lumot yozish uchun (destination)",
-        "Для чтения",
-        "Оба одинаковы"
+        "Writable o'qish uchun",
+        "Ikkalasi bir xil"
       ],
       "options_en": [
         "There is no difference",
-        "Readable — for reading information (source); Writable — to write information (destination)",
-        "For reading Writable",
-        "Both are the same"
+        "Readable — ma'lumot o'qish uchun (source); Writable — ma'lumot yozish uchun (destination)",
+        "Writable o'qish uchun",
+        "Ikkalasi bir xil"
       ]
     },
     {
@@ -1027,16 +1027,16 @@
         "Promise hooks"
       ],
       "answer": 1,
-      "question_ru": "Что такое async_hooks в Node.js?",
-      "question_en": "What is async_hooks in Node.js?",
+      "question_ru": "Node.js da async_hooks nima?",
+      "question_en": "Node.js da async_hooks nima?",
       "options_ru": [
-        "Асинхронные функции",
-        "Для мониторинга жизненного цикла асинхронных операций (APM, трассировка)",
-        "Перехватчики событий",
-        "Крючки обещаний"
+        "Async funksiyalar",
+        "Asinxron operatsiyalar lifecycle ini kuzatish uchun (APM, tracing)",
+        "Event hooks",
+        "Promise hooks"
       ],
       "options_en": [
-        "Async functions",
+        "Async funksiyalar",
         "Asinxron operatsiyalar lifecycle ini kuzatish uchun (APM, tracing)",
         "Event hooks",
         "Promise hooks"
@@ -1053,17 +1053,17 @@
         "New API"
       ],
       "answer": 1,
-      "question_ru": "Что такое N-API в Node.js?",
-      "question_en": "What is N-API in Node.js?",
+      "question_ru": "Node.js da N-API nima?",
+      "question_en": "Node.js da N-API nima?",
       "options_ru": [
-        "Сетевой API",
-        "Стабильный, независимый от версии API C/C++ для собственных надстроек Node.js.",
-        "API версии узла",
-        "Новый API"
+        "Network API",
+        "Node.js native addon lar uchun stabil, versiyadan mustaqil C/C++ API",
+        "Node version API",
+        "New API"
       ],
       "options_en": [
         "Network API",
-        "A stable, version-independent C/C++ API for Node.js native addons",
+        "Node.js native addon lar uchun stabil, versiyadan mustaqil C/C++ API",
         "Node version API",
         "New API"
       ]
@@ -1079,13 +1079,13 @@
         "Protocol manager"
       ],
       "answer": 1,
-      "question_ru": "Почему pm2 в Node.js?",
-      "question_en": "Why pm2 in Node.js?",
+      "question_ru": "Node.js da pm2 nima uchun?",
+      "question_en": "Node.js da pm2 nima uchun?",
       "options_ru": [
         "Менеджер пакетов",
-        "Менеджер производственного процесса — кластеризация, автоперезапуск, мониторинг, логи",
+        "Production process manager — clustering, auto-restart, monitoring, logs",
         "Монитор производительности",
-        "Менеджер протоколов"
+        "Protocol manager"
       ],
       "options_en": [
         "Package manager",
@@ -1105,17 +1105,17 @@
         "Cache pressure"
       ],
       "answer": 1,
-      "question_ru": "Что такое противодавление в Node.js?",
-      "question_en": "What is back-pressure in Node.js?",
+      "question_ru": "Node.js da back-pressure nima?",
+      "question_en": "Node.js da back-pressure nima?",
       "options_ru": [
-        "Давление сервера",
-        "Механизм, который замедляет вывод ресурсов, если потребитель потока не может обработать данные.",
-        "Балансировка нагрузки",
-        "Давление на кэш"
+        "Server bosimi",
+        "Stream iste'molchisi ma'lumotni qayta ishlay olmasa, manba chiqarishni sekinlashtiradigan mexanizm",
+        "Load balancing",
+        "Cache pressure"
       ],
       "options_en": [
-        "Server pressure",
-        "A mechanism that slows down resource output if the Stream consumer cannot process the data",
+        "Server bosimi",
+        "Stream iste'molchisi ma'lumotni qayta ishlay olmasa, manba chiqarishni sekinlashtiradigan mexanizm",
         "Load balancing",
         "Cache pressure"
       ]
@@ -1131,17 +1131,17 @@
         "Remote debugging"
       ],
       "answer": 1,
-      "question_ru": "Почему OpenTelemetry в Node.js?",
-      "question_en": "Why OpenTelemetry in Node.js?",
+      "question_ru": "Node.js da OpenTelemetry nima uchun?",
+      "question_en": "Node.js da OpenTelemetry nima uchun?",
       "options_ru": [
-        "Телефония с открытым исходным кодом",
-        "Распределенная трассировка, метрики, журналы — стандартная структура наблюдаемости",
-        "Данные телеметрии",
-        "Удаленная отладка"
+        "Open source telefoniya",
+        "Distributed tracing, metrics, logs — observability standart framework",
+        "Telemetry data",
+        "Remote debugging"
       ],
       "options_en": [
-        "Open source telephony",
-        "Distributed tracing, metrics, logs — observability standard framework",
+        "Open source telefoniya",
+        "Distributed tracing, metrics, logs — observability standart framework",
         "Telemetry data",
         "Remote debugging"
       ]
@@ -1157,17 +1157,17 @@
         "Force close"
       ],
       "answer": 1,
-      "question_ru": "Как выполнить плавное завершение работы в Node.js?",
+      "question_ru": "Node.js da graceful shutdown qanday amalga oshiriladi?",
       "question_en": "Node.js da graceful shutdown qanday amalga oshiriladi?",
       "options_ru": [
-        "процесс.exit() немедленно",
-        "Перехват сигнала SIGTERM/SIGINT, завершение существующих запросов и закрытие соединений с БД.",
-        "Перезагрузите сервер",
-        "Принудительно закрыть"
+        "process.exit() darhol",
+        "SIGTERM/SIGINT signal ushlab, mavjud so'rovlarni tugatiб, DB ulanishlarni yopib chiqish",
+        "Server restart",
+        "Force close"
       ],
       "options_en": [
         "process.exit() darhol",
-        "Catch a SIGTERM/SIGINT signal, terminate existing requests, and close DB connections",
+        "SIGTERM/SIGINT signal ushlab, mavjud so'rovlarni tugatiб, DB ulanishlarni yopib chiqish",
         "Server restart",
         "Force close"
       ]
@@ -1183,19 +1183,19 @@
         "Plugin tizimi"
       ],
       "answer": 1,
-      "question_ru": "Почему внедрение зависимостей в Node.js?",
-      "question_en": "Why Dependency Injection in Node.js?",
+      "question_ru": "Node.js da Dependency Injection nima uchun?",
+      "question_en": "Node.js da Dependency Injection nima uchun?",
       "options_ru": [
-        "Загрузка библиотек",
-        "Внешний ввод зависимостей модуля — упрощает тестирование, ослабляет связь.",
+        "Kutubxonalarni yuklash",
+        "Modullar bog'liqligini tashqaridan kiritish — test qilishni osonlashtiradi, loose coupling",
         "Module import",
-        "Система плагинов"
+        "Plugin tizimi"
       ],
       "options_en": [
-        "Loading libraries",
-        "External input of module dependencies — makes testing easier, loose coupling",
+        "Kutubxonalarni yuklash",
+        "Modullar bog'liqligini tashqaridan kiritish — test qilishni osonlashtiradi, loose coupling",
         "Module import",
-        "Plugin system"
+        "Plugin tizimi"
       ]
     },
     {
@@ -1209,19 +1209,19 @@
         "ESM eski"
       ],
       "answer": 1,
-      "question_ru": "Разница между модулями NativeES и CommonJS в Node.js?",
-      "question_en": "Difference between nativeES modules and CommonJS in Node.js?",
+      "question_ru": "Node.js da nativeES modules va CommonJS farqi?",
+      "question_en": "Node.js da nativeES modules va CommonJS farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "ESM — статический импорт/экспорт, асинхронная загрузка, .mjs; CJS — загрузить require/module.exports, синхронизировать",
-        "CJS ярче",
-        "ЕСМ старый"
+        "ESM — static import/export, async yuklash, .mjs; CJS — require/module.exports, sync yuklash",
+        "CJS yangroq",
+        "ESM eski"
       ],
       "options_en": [
         "There is no difference",
-        "ESM — static import/export, async loading, .mjs; CJS — load require/module.exports, sync",
-        "CJS is brighter",
-        "ESM is old"
+        "ESM — static import/export, async yuklash, .mjs; CJS — require/module.exports, sync yuklash",
+        "CJS yangroq",
+        "ESM eski"
       ]
     },
     {
@@ -1235,19 +1235,19 @@
         "Lint konfiguratsiyasi"
       ],
       "answer": 1,
-      "question_ru": "Что контролирует tsconfig.json в TypeScript в Node.js?",
+      "question_ru": "Node.js da tsconfig.json TypeScript da nima boshqaradi?",
       "question_en": "Node.js da tsconfig.json TypeScript da nima boshqaradi?",
       "options_ru": [
-        "Тестовая конфигурация",
-        "Параметры компиляции TypeScript — цель, модуль, строгий, пути и т. д.",
-        "Конфигурация пакета",
-        "Конфигурация ворса"
+        "Test konfiguratsiyasi",
+        "TypeScript kompilyatsiyasi opsiyalari — target, module, strict, paths va boshqalar",
+        "Bundle konfiguratsiya",
+        "Lint konfiguratsiyasi"
       ],
       "options_en": [
         "Test konfiguratsiyasi",
-        "TypeScript compilation options — target, module, strict, paths, etc",
-        "Bundle configuration",
-        "Lint configuration"
+        "TypeScript kompilyatsiyasi opsiyalari — target, module, strict, paths va boshqalar",
+        "Bundle konfiguratsiya",
+        "Lint konfiguratsiyasi"
       ]
     },
     {
@@ -1261,17 +1261,17 @@
         "Security patch"
       ],
       "answer": 1,
-      "question_ru": "Что такое исправление Monkey в Node.js и когда оно опасно?",
-      "question_en": "What is Monkey patching in Node.js and when is it dangerous?",
+      "question_ru": "Node.js da Monkey patching nima va qachon xavfli?",
+      "question_en": "Node.js da Monkey patching nima va qachon xavfli?",
       "options_ru": [
-        "Исправление ошибки",
-        "Исправление существующих объектов/модулей в Runtime — есть риск побочного эффекта, сложность отладки.",
-        "Исправление кода",
-        "Патч безопасности"
+        "Bug fix",
+        "Runtime da mavjud ob'ekt/modullarga patch qo'yish — side effect, debugging qiyinligi xavfi bor",
+        "Code patching",
+        "Security patch"
       ],
       "options_en": [
         "Bug fix",
-        "Patching existing objects/modules in Runtime — there is a risk of side effect, debugging difficulty",
+        "Runtime da mavjud ob'ekt/modullarga patch qo'yish — side effect, debugging qiyinligi xavfi bor",
         "Code patching",
         "Security patch"
       ]
@@ -1287,19 +1287,19 @@
         "Log yig'ish"
       ],
       "answer": 1,
-      "question_ru": "Зачем распределенная трассировка в Node.js?",
-      "question_en": "Why distributed tracing in Node.js?",
+      "question_ru": "Node.js da distributed tracing nima uchun?",
+      "question_en": "Node.js da distributed tracing nima uchun?",
       "options_ru": [
-        "Распределенная система",
-        "Мониторинг потока запросов между микросервисами — выявление узких мест и ошибок",
-        "Трассировка сети",
-        "Сбор журналов"
-      ],
-      "options_en": [
-        "Distributed system",
+        "Taqsimlangan tizim",
         "Microservice lar orasida so'rov oqimini kuzatish — bottleneck va xatolarni aniqlash",
         "Network tracing",
-        "Log collection"
+        "Log yig'ish"
+      ],
+      "options_en": [
+        "Taqsimlangan tizim",
+        "Microservice lar orasida so'rov oqimini kuzatish — bottleneck va xatolarni aniqlash",
+        "Network tracing",
+        "Log yig'ish"
       ]
     }
   ]

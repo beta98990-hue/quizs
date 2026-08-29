@@ -22,9 +22,9 @@
         "CSS-препроцессор"
       ],
       "options_en": [
-        "JavaScript turi",
+        "JavaScript type",
         "Erlang is a functional, concurrent programming language that runs on the VM (BEAM).",
-        "Database tili",
+        "Database language",
         "CSS preprocessor"
       ]
     },
@@ -97,7 +97,7 @@
         "Атомный элемент",
         "Имя константы — :ok, :error, :hello — является само значением.",
         "Символ",
-        "Константа"
+        "Постоянный"
       ],
       "options_en": [
         "Atomic element",
@@ -118,11 +118,11 @@
       ],
       "answer": 1,
       "question_ru": "Что такое кортеж в Эликсире?",
-      "question_en": "Elixir da tuple nima?",
+      "question_en": "What is a tuple in Elixir?",
       "options_ru": [
         "Список",
         "Набор указанных элементов — {:ok, значение}, {:ошибка, причина}",
-        "Массив",
+        "Множество",
         "Фиксированный список"
       ],
       "options_en": [
@@ -146,7 +146,7 @@
       "question_ru": "Что такое список в Elixir?",
       "question_en": "What is a list in Elixir?",
       "options_ru": [
-        "Массив",
+        "Множество",
         "Связанный список — [1, 2, 3], заголовок | с рисунком хвоста",
         "Динамический массив",
         "Кортеж"
@@ -175,7 +175,7 @@
         "Строковое совпадение",
         "Сопоставление левой и правой части с помощью оператора = — {:ok, val} = результат",
         "Назначение",
-        "Связать"
+        "Связывать"
       ],
       "options_en": [
         "String match",
@@ -196,7 +196,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему защита в Эликсире?",
-      "question_en": "Elixir da def nima uchun?",
+      "question_en": "Why def in Elixir?",
       "options_ru": [
         "Определение",
         "Декларация публичной функции",
@@ -231,7 +231,7 @@
       ],
       "options_en": [
         "Default private",
-        "Private funksiya — faqat modul ichida kirish mumkin",
+        "Private function — accessible only within the module",
         "Private def",
         "Module private"
       ]
@@ -250,7 +250,7 @@
       "question_ru": "Что делает оператор |> (pipe) в Elixir?",
       "question_en": "What does the |> (pipe) operator do in Elixir?",
       "options_ru": [
-        "Труба",
+        "Трубка",
         "Передает левое значение в первый аргумент правой функции — создавая цепочку",
         "Перенаправление",
         "Стрелка"
@@ -282,7 +282,7 @@
         "Хэш"
       ],
       "options_en": [
-        "Xarita",
+        "Map",
         "Key-value pairs — %{key: value} or %{\"key\" => value}",
         "Dictionary",
         "Hash"
@@ -300,7 +300,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем демодулировать в Эликсире?",
-      "question_en": "Elixir da defmodule nima uchun?",
+      "question_en": "Why defmodule in Elixir?",
       "options_ru": [
         "Определить модуль",
         "Объявление модуля — это единица организации кода.",
@@ -308,7 +308,7 @@
         "Пространство имен"
       ],
       "options_en": [
-        "Module define",
+        "Define module",
         "A module declaration is a unit of code organization",
         "Module keyword",
         "Namespace"
@@ -331,7 +331,7 @@
         "Сменный",
         "Все данные неизменяемы: новое значение — это новая переменная.",
         "Изменяемый",
-        "Константа"
+        "Постоянный"
       ],
       "options_en": [
         "Changeable",
@@ -465,7 +465,7 @@
       ],
       "options_en": [
         "Network send/receive",
-        "Processlar o'rtasida message passing — send(pid, message)",
+        "Message passing between processes — send(pid, message)",
         "Message queue",
         "IPC"
       ]
@@ -507,7 +507,7 @@
         "Error handler"
       ],
       "answer": 1,
-      "question_ru": "Elixir da Supervisor nima?",
+      "question_ru": "Что такое Супервайзер в Elixir?",
       "question_en": "What is Supervisor in Elixir?",
       "options_ru": [
         "супервайзер",
@@ -516,7 +516,7 @@
         "Обработчик ошибок"
       ],
       "options_en": [
-        "Nazoratchi",
+        "Supervisor",
         "Process monitoring — restarting processes that have stopped working",
         "Process manager",
         "Error handler"
@@ -594,8 +594,8 @@
         "Фоновое задание"
       ],
       "options_en": [
-        "Vazifa",
-        "Bir martalik asinxron hisoblash — Task.async/Task.await",
+        "Task",
+        "One-time asynchronous computation — Task.async/Task.await",
         "Async process",
         "Background job"
       ]
@@ -643,7 +643,7 @@
         "Поведение",
         "Коллекция функций обратного вызова — GenServer, Supervisor и т. д.",
         "Интерфейс",
-        "Контракт"
+        "Договор"
       ],
       "options_en": [
         "Behavior",
@@ -666,13 +666,13 @@
       "question_ru": "Зачем использовать Эликсир?",
       "question_en": "Why use Elixir?",
       "options_ru": [
-        "Использование",
+        "Использовать",
         "Импортируйте функциональность модуля и запустите макрос __using__.",
         "Импорт",
-        "Включить"
+        "Включать"
       ],
       "options_en": [
-        "Ishlatish",
+        "Use",
         "Import the module functionality and run the __using__ macro",
         "Import",
         "Include"
@@ -725,7 +725,7 @@
       ],
       "options_en": [
         "External storage",
-        "In-memory table — tez, concurrent, process dan mustaqil xotira",
+        "In-memory table — fast, concurrent, process-independent memory",
         "Cache",
         "Database"
       ]
@@ -768,7 +768,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое Феникс в Эликсире?",
-      "question_en": "Elixir da Phoenix nima?",
+      "question_en": "What is Phoenix in Elixir?",
       "options_ru": [
         "Изумрудная птица",
         "Высокопроизводительная веб-платформа с LiveView и каналами",
@@ -794,7 +794,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему в Эликсире?",
-      "question_en": "Elixir da with nima uchun?",
+      "question_en": "Why with in Elixir?",
       "options_ru": [
         "С",
         "Множественные цепочки совпадений шаблонов — в случае неудачи возвращается ошибка.",
@@ -900,10 +900,10 @@
       "question_ru": "Что делает Kernel.inspect в Elixir?",
       "question_en": "What does Kernel.inspect do in Elixir?",
       "options_ru": [
-        "Проверить",
+        "Проверять",
         "Преобразует любое значение в строковое представление для отладки.",
         "Распечатать",
-        "Отладка"
+        "Отлаживать"
       ],
       "options_en": [
         "Check",
@@ -976,11 +976,11 @@
       ],
       "answer": 1,
       "question_ru": "Что такое распределенные вычисления в Elixir?",
-      "question_en": "Elixir da distributed computing qanday?",
+      "question_en": "What is distributed computing in Elixir?",
       "options_ru": [
         "Облачные вычисления",
         "Соединение узлов друг с другом — Node.connect, :rpc, pg — процесс на нескольких серверах",
-        "Multi node",
+        "Многоузловой",
         "Сетевые вычисления"
       ],
       "options_en": [
@@ -1002,7 +1002,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое DynamicSupervisor в Elixir?",
-      "question_en": "Elixir da DynamicSupervisor nima?",
+      "question_en": "What is DynamicSupervisor in Elixir?",
       "options_ru": [
         "Динамический контроллер",
         "Динамическое создание и управление дочерними процессами во время выполнения.",
@@ -1053,7 +1053,7 @@
         "Server rendering"
       ],
       "answer": 1,
-      "question_ru": "Elixir da LiveView nima?",
+      "question_ru": "Что такое LiveView в Elixir?",
       "question_en": "What is LiveView in Elixir?",
       "options_ru": [
         "Живое видео",
@@ -1082,7 +1082,7 @@
       "question_ru": "Зачем цитировать и снимать кавычки в Elixir?",
       "question_en": "Why quote and unquote in Elixir?",
       "options_ru": [
-        "Цитата",
+        "Цитировать",
         "Работа с AST в макросе — кавычка — создать AST, снять кавычки — установить значение",
         "Код АСТ",
         "Макрос шаблона"
@@ -1162,7 +1162,7 @@
       "options_ru": [
         "расширение N",
         "Библиотека тензорных и числовых вычислений — для ML",
-        "Math library",
+        "Математическая библиотека",
         "Научные вычисления"
       ],
       "options_en": [

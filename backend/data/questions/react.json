@@ -14,7 +14,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое Реакт?",
-      "question_en": "What is React?",
+      "question_en": "React nima?",
       "options_ru": [
         "CSS-фреймворк",
         "Библиотека JavaScript — для создания компонентов пользовательского интерфейса.",
@@ -23,7 +23,7 @@
       ],
       "options_en": [
         "CSS framework",
-        "JavaScript library — for creating UI components",
+        "JavaScript kutubxonasi — UI komponentlarini yaratish uchun",
         "Backend framework",
         "Database tool"
       ]
@@ -40,7 +40,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое JSX в React?",
-      "question_en": "What is JSX in React?",
+      "question_en": "React da JSX nima?",
       "options_ru": [
         "JavaScript экстремальный",
         "JavaScript XML — написание пользовательского интерфейса с синтаксисом, подобным HTML.",
@@ -49,9 +49,9 @@
       ],
       "options_en": [
         "JavaScript eXtreme",
-        "JavaScript XML — Writing UI with HTML-like syntax",
-        "Java Syntax extension",
-        "JSON eExtension"
+        "JavaScript XML — HTML o'xshash sintaksis bilan UI yozish",
+        "Java Syntax eXtension",
+        "JSON eXtension"
       ]
     },
     {
@@ -66,7 +66,7 @@
       ],
       "answer": 1,
       "question_ru": "Что возвращает хук useState в React?",
-      "question_en": "What does the useState hook return in React?",
+      "question_en": "React da useState hook nima qaytaradi?",
       "options_ru": [
         "Одно значение",
         "Текущее значение состояния и его функция обновления",
@@ -74,9 +74,9 @@
         "Государственный объект"
       ],
       "options_en": [
-        "A single value",
-        "The current state value and its update function",
-        "Change function only",
+        "Bitta qiymat",
+        "Joriy holat qiymati va uni yangilash funksiyasi",
+        "Faqat o'zgartirish funksiyasi",
         "Holat ob'ekti"
       ]
     },
@@ -94,15 +94,15 @@
       "question_ru": "Что такое реквизиты в компоненте React?",
       "question_en": "React komponentda props nima?",
       "options_ru": [
-        "Ichki holat",
+        "Внутреннее состояние",
         "Данные передаются из родительского компонента в дочерний компонент",
         "Глобальные переменные",
         "CSS-свойства"
       ],
       "options_en": [
-        "Internal state",
-        "Data passed from a parent component to a child component",
-        "Global variables",
+        "Ichki holat",
+        "Ota komponentdan bola komponentga uzatiladigan ma'lumotlar",
+        "Global o'zgaruvchilar",
         "CSS xususiyatlari"
       ]
     },
@@ -118,7 +118,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем мне свойство key при рендеринге списка в React?",
-      "question_en": "Why do I need the key property when rendering a list in React?",
+      "question_en": "React da ro'yxatni render qilganda nima uchun key xususiyati kerak?",
       "options_ru": [
         "Для внешнего вида",
         "Уникальный идентификатор для эффективного обновления элементов до React.",
@@ -126,10 +126,10 @@
         "Для мероприятия"
       ],
       "options_en": [
-        "For appearance",
-        "A unique identifier to efficiently update elements to React",
-        "For CSS class",
-        "For the event"
+        "Ko'rinish uchun",
+        "React ga elementlarni samarali yangilash uchun noyob identifikator",
+        "CSS class uchun",
+        "Event uchun"
       ]
     },
     {
@@ -144,7 +144,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое виртуальный DOM в React?",
-      "question_en": "What is virtual DOM in React?",
+      "question_en": "React da virtual DOM nima?",
       "options_ru": [
         "Серверный DOM",
         "Копия фактического DOM в памяти — для эффективного обновления.",
@@ -153,9 +153,9 @@
       ],
       "options_en": [
         "Server-side DOM",
-        "An in-memory copy of the actual DOM—for efficient updates",
+        "Haqiqiy DOM ning xotira ichidagi nusxasi — samarali yangilash uchun",
         "Browser DOM",
-        "CSS object model"
+        "CSS ob'ekt modeli"
       ]
     },
     {
@@ -170,7 +170,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему крючок useEffect используется в React?",
-      "question_en": "Why useEffect hook is used in React?",
+      "question_en": "React da useEffect hook nima uchun ishlatiladi?",
       "options_ru": [
         "Чтобы изменить статус",
         "Побочные эффекты (запросы API, изменения DOM, подписки).",
@@ -178,10 +178,10 @@
         "Чтобы получить реквизит"
       ],
       "options_en": [
-        "To change the status",
-        "For side effects (API requests, DOM changes, subscriptions).",
+        "Holat o'zgartirish uchun",
+        "Side effectlar (API so'rovlar, DOM o'zgarishlar, subscriptions) uchun",
         "Komponent yaratish uchun",
-        "To get props"
+        "Props olish uchun"
       ]
     },
     {
@@ -196,7 +196,7 @@
       ],
       "answer": 0,
       "question_ru": "Как компонент объявляется как функция в React?",
-      "question_en": "How is a component declared as a function in React?",
+      "question_en": "React da komponent qanday function sifatida e'lon qilinadi?",
       "options_ru": [
         "функция MyComponent() { return <div>; }",
         "def MyComponent(): вернуть div",
@@ -222,7 +222,7 @@
       ],
       "answer": 1,
       "question_ru": "Как написать обработчик события onClick в React?",
-      "question_en": "How to write an onClick event handler in React?",
+      "question_en": "React da onClick event handler qanday yoziladi?",
       "options_ru": [
         "onclick='handleClick()'",
         "onClick={handleClick}",
@@ -248,7 +248,7 @@
       ],
       "answer": 1,
       "question_ru": "Какой метод используется для условного рендеринга в React?",
-      "question_en": "Which method is used for conditional rendering in React?",
+      "question_en": "React da conditional rendering uchun qaysi usul ishlatiladi?",
       "options_ru": [
         "Только если-иначе",
         "Тернарный оператор, &&, if-else — все",
@@ -256,10 +256,10 @@
         "Только оператор &&"
       ],
       "options_en": [
-        "Only if-else",
-        "Ternary operator, &&, if-else — all",
-        "Switch-case only",
-        "Only the && operator"
+        "Faqat if-else",
+        "Ternary operator, &&, if-else — barchasi",
+        "Faqat switch-case",
+        "Faqat && operator"
       ]
     },
     {
@@ -274,7 +274,7 @@
       ],
       "answer": 1,
       "question_ru": "Для чего используется фрагмент в React?",
-      "question_en": "What is Fragment used for in React?",
+      "question_en": "React da Fragment nima uchun ishlatiladi?",
       "options_ru": [
         "Для анимации",
         "Чтобы вернуть несколько элементов без добавления дополнительного элемента DOM",
@@ -282,10 +282,10 @@
         "Чтобы управлять государством"
       ],
       "options_en": [
-        "For animation",
-        "To return multiple elements without adding an extra DOM element",
-        "For styling",
-        "To manage the State"
+        "Animatsiya uchun",
+        "Qo'shimcha DOM element qo'shmasdan bir nechta element qaytarish uchun",
+        "Styling uchun",
+        "State boshqarish uchun"
       ]
     },
     {
@@ -300,7 +300,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое props.children в React?",
-      "question_en": "What is props.children in React?",
+      "question_en": "React da props.children nima?",
       "options_ru": [
         "Дочерние компоненты",
         "Содержимое между тегами компонентов",
@@ -308,10 +308,10 @@
         "Ссылка на объект"
       ],
       "options_en": [
-        "Child components",
-        "Content between component tags",
+        "Bola komponentlar",
+        "Komponent tag lari orasidagi kontent",
         "Holat ob'ekti",
-        "Object Ref"
+        "Ref ob'ekti"
       ]
     },
     {
@@ -326,7 +326,7 @@
       ],
       "answer": 1,
       "question_ru": "Для чего используются defaultProps в React?",
-      "question_en": "What is defaultProps used for in React?",
+      "question_en": "React da defaultProps nima uchun ishlatiladi?",
       "options_ru": [
         "Сделайте реквизит обязательным",
         "Установка значений по умолчанию для реквизита",
@@ -334,10 +334,10 @@
         "Удалить реквизит"
       ],
       "options_en": [
-        "Make props mandatory",
-        "Setting default values ​​for props",
-        "Checking the type of props",
-        "Delete props"
+        "Props ni majburiy qilish",
+        "Props uchun standart qiymatlar belgilash",
+        "Props tipini tekshirish",
+        "Props ni o'chirish"
       ]
     },
     {
@@ -352,7 +352,7 @@
       ],
       "answer": 1,
       "question_ru": "Что возвращает хук useRef в React?",
-      "question_en": "What does the useRef hook return in React?",
+      "question_en": "React da useRef hook nima qaytaradi?",
       "options_ru": [
         "Государственный объект",
         "Статическая ссылка на элемент или значение DOM (объект ref).",
@@ -360,9 +360,9 @@
         "логическое значение"
       ],
       "options_en": [
-        "State object",
-        "A static reference to a DOM element or value (a ref object)",
-        "Function",
+        "State ob'ekti",
+        "DOM elementga yoki qiymatga o'zgarmaydigan murojaat (ref ob'ekti)",
+        "Funksiya",
         "Boolean"
       ]
     },
@@ -378,7 +378,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает event.preventDefault() в React?",
-      "question_en": "What does event.preventDefault() do in React?",
+      "question_en": "React da event.preventDefault() nima qiladi?",
       "options_ru": [
         "Останавливает событие",
         "Останавливает поведение браузера по умолчанию (отправка формы, переход по ссылке).",
@@ -386,10 +386,10 @@
         "Перезапускает событие"
       ],
       "options_en": [
-        "Stops the event",
-        "Stops default browser behavior (form submit, link navigate).",
-        "Passes the event to the parent element",
-        "Retriggers the event"
+        "Eventni to'xtatadi",
+        "Brauzerning standart xatti-harakatini (form submit, link navigate) to'xtatadi",
+        "Eventni ota elementga o'tkazadi",
+        "Eventni qayta ishga tushiradi"
       ]
     },
     {
@@ -404,7 +404,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему в React используется хук useCallback?",
-      "question_en": "Why is the useCallback hook used in React?",
+      "question_en": "React da useCallback hook nima uchun ishlatiladi?",
       "options_ru": [
         "Запомните состояние",
         "Чтобы избежать создания новой функции при каждом рендеринге, запомнив функцию",
@@ -412,10 +412,10 @@
         "Использование контекста"
       ],
       "options_en": [
-        "Memoize the state",
+        "State memoize qilish",
         "Funksiyani memoize qilib, har render da yangi funksiya yaratamaslik uchun",
-        "Create a ref",
-        "Using context"
+        "Ref yaratish",
+        "Context ishlatish"
       ]
     },
     {
@@ -430,7 +430,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает хук useMemo в React?",
-      "question_en": "What does the useMemo hook do in React?",
+      "question_en": "React da useMemo hook nima qiladi?",
       "options_ru": [
         "Запоминает функцию",
         "Предотвращает пересчет путем запоминания результата расчета.",
@@ -439,9 +439,9 @@
       ],
       "options_en": [
         "Funksiyani memoize qiladi",
-        "Prevents recalculation by memoizing the calculation result",
-        "Returns state",
-        "Returns the ref"
+        "Hisoblash natijasini memoize qilib, qayta hisoblashning oldini oladi",
+        "State qaytaradi",
+        "Ref qaytaradi"
       ]
     },
     {
@@ -456,7 +456,7 @@
       ],
       "answer": 1,
       "question_ru": "Для чего используется Context API в React?",
-      "question_en": "What is the Context API used for in React?",
+      "question_en": "React da Context API nima uchun ishlatiladi?",
       "options_ru": [
         "API для запросов",
         "Чтобы поделиться глобальными данными в дереве компонентов, избегая детализации реквизита.",
@@ -464,10 +464,10 @@
         "Для манипуляций с DOM"
       ],
       "options_en": [
-        "API for requests",
-        "To share global data in the component tree, avoiding props drilling",
-        "To control the router",
-        "For DOM manipulation"
+        "API so'rovlar uchun",
+        "Props drilling ni oldini olib, global ma'lumotlarni komponentlar daraxtida ulashish uchun",
+        "Router boshqarish uchun",
+        "DOM manipulyatsiyasi uchun"
       ]
     },
     {
@@ -482,7 +482,7 @@
       ],
       "answer": 1,
       "question_ru": "Когда хук useReducer предпочтительнее в React?",
-      "question_en": "When is useReducer hook preferable in React?",
+      "question_en": "React da useReducer hook qachon afzalroq?",
       "options_ru": [
         "Всегда вместо useState",
         "Для сложной логики состояния или состояния с несколькими переменными",
@@ -490,10 +490,10 @@
         "Всегда за производительность"
       ],
       "options_en": [
-        "Always instead of useState",
-        "For complex state logic or multi-variable state",
-        "Only when working with the backend",
-        "Always for performance"
+        "Har doim useState o'rniga",
+        "Murakkab holat logikasi yoki ko'p o'zgaruvchili holat uchun",
+        "Faqat backend bilan ishlashda",
+        "Performance uchun har doim"
       ]
     },
     {
@@ -508,7 +508,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает React.memo() в React?",
-      "question_en": "What does React.memo() do in React?",
+      "question_en": "React da React.memo() nima qiladi?",
       "options_ru": [
         "Государство запоминает",
         "Запоминая компонент, он предотвращает повторный рендеринг, если реквизиты не меняются.",
@@ -516,10 +516,10 @@
         "Редуктор запоминает"
       ],
       "options_en": [
-        "State memoizes",
-        "By memoizing the component, it prevents re-rendering if the props don't change",
-        "Ref will memoize",
-        "Reducer memoizes"
+        "State memoize qiladi",
+        "Komponentni memoize qilib, props o'zgarmasa re-render ni oldini oladi",
+        "Ref memoize qiladi",
+        "Reducer memoize qiladi"
       ]
     },
     {
@@ -534,7 +534,7 @@
       ],
       "answer": 1,
       "question_ru": "В чем разница между контролируемыми и неконтролируемыми компонентами в React?",
-      "question_en": "What is the difference between Controlled and Uncontrolled components in React?",
+      "question_en": "React da Controlled va Uncontrolled komponentlar farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
         "Controlled — контролирует состояние React; Неконтролируемый — DOM контролирует себя (через ссылку)",
@@ -543,9 +543,9 @@
       ],
       "options_en": [
         "There is no difference",
-        "Controlled — controls React state; Uncontrolled — DOM controls itself (via ref)",
-        "Uncontrolled is preferable",
-        "Controlled is only for class components"
+        "Controlled — React state boshqaradi; Uncontrolled — DOM o'zi boshqaradi (ref orqali)",
+        "Uncontrolled afzalroq",
+        "Controlled faqat class komponentlar uchun"
       ]
     },
     {
@@ -560,7 +560,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает хук useNavigate в React Router?",
-      "question_en": "What does the useNavigate hook do in React Router?",
+      "question_en": "React Router da useNavigate hook nima qiladi?",
       "options_ru": [
         "Обновляет страницу",
         "Позволяет программно переключиться на другой маршрут",
@@ -568,9 +568,9 @@
         "Возвращает данные о местоположении"
       ],
       "options_en": [
-        "Refreshes the page",
-        "Allows programmatically switching to another route",
-        "Gets URL parameters",
+        "Sahifani yangilaydi",
+        "Dasturiy ravishda boshqa route ga o'tish imkonini beradi",
+        "URL parametrlarini oladi",
         "Location ma'lumotlarini qaytaradi"
       ]
     },
@@ -589,13 +589,13 @@
       "question_en": "React da Error Boundary nima?",
       "options_ru": [
         "Блок Try-Catch",
-        "Компонент класса, который улавливает ошибки JavaScript в дочерних компонентах и отображает резервный пользовательский интерфейс.",
+        "Компонент класса, который улавливает ошибки JavaScript в дочерних компонентах и ​​отображает резервный пользовательский интерфейс.",
         "Сообщение об ошибке",
         "Обработчик событий"
       ],
       "options_en": [
-        "Try-catch block",
-        "A class component that catches JavaScript errors in child components and displays a fallback UI",
+        "Try-catch bloki",
+        "Bola komponentlardagi JavaScript xatolarini tutib, fallback UI ko'rsatadigan class komponent",
         "Error message",
         "Event handler"
       ]
@@ -612,18 +612,18 @@
       ],
       "answer": 1,
       "question_ru": "Как использовать отложенную загрузку и приостановку вместе в React?",
-      "question_en": "How to use lazy loading and Suspense together in React?",
+      "question_en": "React da lazy loading va Suspense qanday birgalikda ishlatiladi?",
       "options_ru": [
         "Всегда вместе",
         "Приостановка показывает резервный вариант при загрузке компонента, импортированного с помощью React.lazy().",
-        "Faqat rasm yuklash uchun",
+        "Просто чтобы загрузить картинку",
         "При работе с роутером"
       ],
       "options_en": [
-        "Always together",
-        "Suspense shows a fallback when a component imported with React.lazy() is loaded",
-        "Just to upload a picture",
-        "When working with a router"
+        "Har doim birgalikda",
+        "React.lazy() bilan import qilingan komponent yuklanganda Suspense fallback ko'rsatadi",
+        "Faqat rasm yuklash uchun",
+        "Router bilan ishlashda"
       ]
     },
     {
@@ -638,7 +638,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое согласование в React?",
-      "question_en": "What is reconciliation in React?",
+      "question_en": "React da reconciliation nima?",
       "options_ru": [
         "Объедините компоненты",
         "React — это процесс сравнения виртуального DOM и реального DOM для определения необходимых изменений.",
@@ -646,9 +646,9 @@
         "Государственное управление"
       ],
       "options_en": [
-        "Combine components",
-        "React is the process of comparing the virtual DOM and the real DOM to determine the necessary changes",
-        "Check props",
+        "Komponentlarni birlashtirish",
+        "React virtual DOM va haqiqiy DOM ni solishtirb, kerakli o'zgarishlarni aniqlash jarayoni",
+        "Props tekshirish",
         "State management"
       ]
     },
@@ -664,7 +664,7 @@
       ],
       "answer": 1,
       "question_ru": "В чем разница между useLayoutEffect и useEffect в React?",
-      "question_en": "What is the difference between useLayoutEffect and useEffect in React?",
+      "question_en": "React da useLayoutEffect va useEffect farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
         "useLayoutEffect работает синхронно после обновления DOM; useEffect работает асинхронно",
@@ -673,9 +673,9 @@
       ],
       "options_en": [
         "There is no difference",
-        "useLayoutEffect works synchronously after DOM update; useEffect works asynchronously",
-        "useEffect is synchronous",
-        "useLayoutEffect is server-only"
+        "useLayoutEffect DOM yangilanishidan keyin sinxron ishlaydi; useEffect asinxron ishlaydi",
+        "useEffect sinxron",
+        "useLayoutEffect faqat server uchun"
       ]
     },
     {
@@ -690,7 +690,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему PropTypes используются в React?",
-      "question_en": "Why are PropTypes used in React?",
+      "question_en": "React da PropTypes nima uchun ishlatiladi?",
       "options_ru": [
         "Возврат реквизита",
         "Проверка типа реквизита во время выполнения и предупреждение об ошибках",
@@ -698,10 +698,10 @@
         "Фильтрация реквизита"
       ],
       "options_en": [
-        "Props return",
-        "Props type checking at runtime and error warning",
-        "Memoize props",
-        "Props filtering"
+        "Props qaytarish",
+        "Props tipini runtime da tekshirish va xatolik haqida ogohlantirish",
+        "Props memoize qilish",
+        "Props filterlash"
       ]
     },
     {
@@ -724,9 +724,9 @@
         "Государственный портал"
       ],
       "options_en": [
-        "API connection point",
-        "Ability to render the component elsewhere in the DOM tree (for modal, tooltip).",
-        "Router portal",
+        "API ulanish nuqtasi",
+        "Komponentni DOM daraxtining boshqa joyida (modal, tooltip uchun) render qilish imkoni",
+        "Router portali",
         "State portali"
       ]
     },
@@ -742,7 +742,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему в React используется frontRef?",
-      "question_en": "Why is forwardRef used in React?",
+      "question_en": "React da forwardRef nima uchun ishlatiladi?",
       "options_ru": [
         "Передача реквизита",
         "Позволяет передавать ссылку из родительского компонента в элемент DOM дочернего компонента.",
@@ -750,10 +750,10 @@
         "Государственная передача"
       ],
       "options_en": [
-        "Props transfer",
-        "Allows passing a ref from a parent component to a child component's DOM element",
+        "Props uzatish",
+        "Ota komponentdan bola komponentning DOM elementiga ref uzatish imkonini beradi",
         "Event transmission",
-        "State transfer"
+        "State uzatish"
       ]
     },
     {
@@ -776,10 +776,10 @@
         "Параллельный рендеринг компонентов"
       ],
       "options_en": [
-        "Grouping of components",
-        "Combine multiple state updates into a single re-render — both in event handlers and asyncs",
-        "Batch import",
-        "Parallel rendering of components"
+        "Komponentlarni guruhlash",
+        "Bir nechta state yangilanishlarini bitta re-render ga birlashtirish — event handlerlarda va async larda ham",
+        "Batch import qilish",
+        "Komponentlarni parallel render qilish"
       ]
     },
     {
@@ -794,7 +794,7 @@
       ],
       "answer": 1,
       "question_ru": "Как назвать пользовательский хук в React?",
-      "question_en": "How to name a custom hook in React?",
+      "question_en": "React da custom hook qanday nomlash kerak?",
       "options_ru": [
         "с префиксом «hook_»",
         "с префиксом использования (например: useMyHook)",
@@ -802,10 +802,10 @@
         "С любым именем"
       ],
       "options_en": [
-        "with hook_ prefix",
-        "with use prefix (eg: useMyHook)",
-        "with the my_ prefix",
-        "With any name"
+        "hook_ prefiksi bilan",
+        "use prefiksi bilan (masalan: useMyHook)",
+        "my_ prefiksi bilan",
+        "Istalgan nom bilan"
       ]
     },
     {
@@ -820,7 +820,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему неизменность состояния важна в React?",
-      "question_en": "Why is state immutability important in React?",
+      "question_en": "React da state immutability nima uchun muhim?",
       "options_ru": [
         "Минимизация кода",
         "React использует сравнение ссылок для обнаружения изменений состояния; если мутировать, изменение невозможно обнаружить",
@@ -828,10 +828,10 @@
         "Только для массивов"
       ],
       "options_en": [
-        "Code minification",
-        "React uses reference comparison to detect state changes; if mutated, the change is undetectable",
-        "Not for performance",
-        "Only for arrays"
+        "Kodni qisqartirish",
+        "React state o'zgarishini aniqlash uchun referens taqqoslash ishlatadi; mutatsiya qilinsa o'zgarish aniqlanmaydi",
+        "Performance uchun emas",
+        "Faqat array lar uchun"
       ]
     },
     {
@@ -846,7 +846,7 @@
       ],
       "answer": 0,
       "question_ru": "Что такое getDerivedStateFromProps в React?",
-      "question_en": "What is getDerivedStateFromProps in React?",
+      "question_en": "React da getDerivedStateFromProps nima?",
       "options_ru": [
         "Класс — это статический метод жизненного цикла для создания состояния из реквизитов в компоненте.",
         "Метод крючков",
@@ -854,8 +854,8 @@
         "Обработчик событий"
       ],
       "options_en": [
-        "Class is a static lifecycle method for creating state from props in a component",
-        "Hooks method",
+        "Class komponentda props dan state hosil qilish uchun statik lifecycle metod",
+        "Hooks metodi",
         "Router metodi",
         "Event handler"
       ]
@@ -903,13 +903,13 @@
         "Делает код жестким",
         "Разработчики проведут дополнительные проверки и выявят потенциальные проблемы",
         "Делает производство плотным",
-        "Har doim double render qiladi"
+        "Всегда визуализировать дважды"
       ],
       "options_en": [
         "Makes the code rigid",
         "Development will perform additional checks and identify potential problems",
         "Makes Production tight",
-        "Har doim double render qiladi"
+        "Always render double"
       ]
     },
     {
@@ -981,7 +981,7 @@
         "Управление переходами CSS",
         "Обновите состояние в фоновом режиме, не блокируя пользовательский интерфейс, установив для обновления состояния несрочное значение.",
         "Создать анимацию",
-        "Переход маршрута"
+        "Route transition"
       ],
       "options_en": [
         "CSS transition management",
@@ -1028,7 +1028,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое гидратация в React?",
-      "question_en": "React da Hydration nima?",
+      "question_en": "What is Hydration in React?",
       "options_ru": [
         "Загрузка CSS",
         "Процесс создания интерактивного HTML-кода, отображаемого на сервере, путем добавления прослушивателей событий.",
@@ -1037,7 +1037,7 @@
       ],
       "options_en": [
         "Loading CSS",
-        "Server-rendered HTML ga event listener lar qo'shib, interaktiv qilish jarayoni",
+        "The process of making server-rendered HTML interactive by adding event listeners",
         "Download state",
         "Bundle loading"
       ]
@@ -1056,7 +1056,7 @@
       "question_ru": "Как в React поддерживается встряхивание деревьев?",
       "question_en": "How is tree shaking supported in React?",
       "options_ru": [
-        "Daraxt tuzilmasini optimizatsiya qilish",
+        "Оптимизация древовидной структуры",
         "Бандлер исключает неиспользуемый код через синтаксис импорта/экспорта модулей ES.",
         "React делает это сам",
         "Webpack делает это автоматически"
@@ -1115,7 +1115,7 @@
       ],
       "options_en": [
         "A high-level component",
-        "Komponentni argument sifatida qabul qilib, yangi kengaytirilgan komponent qaytaradigan funksiya",
+        "A function that takes a component as an argument and returns a new extended component",
         "Parent component",
         "Class component"
       ]
@@ -1163,10 +1163,10 @@
         "Отсрочка стоимости",
         "Обеспечение оперативности пользовательского интерфейса за счет задержки обновления значений — например, для ввода при поиске.",
         "Государственная задержка",
-        "API so'rovlarni kechiktirish"
+        "Отсрочка запросов API"
       ],
       "options_en": [
-        "Qiymatni kechiktirish",
+        "Deferral of value",
         "Keeping the UI responsive by delaying the value update — for example, for search input",
         "State delay",
         "Deferring API requests"
@@ -1188,8 +1188,8 @@
       "options_ru": [
         "Разделить код",
         "Разделите компоненты на отдельные пакеты, используя React.lazy() и динамический импорт().",
-        "Только через конфигурацию веб-пакета",
-        "Разделите компоненты"
+        "Webpack konfiguratsiyasi orqali faqat",
+        "Komponentlarni bo'lish"
       ],
       "options_en": [
         "Split the code",
@@ -1209,13 +1209,13 @@
         "API holati"
       ],
       "answer": 1,
-      "question_ru": "Что такое приостановка выборки данных в React?",
-      "question_en": "React da Suspense for Data Fetching nima?",
+      "question_ru": "React da Suspense for Data Fetching nima?",
+      "question_en": "What is Suspense for Data Fetching in React?",
       "options_ru": [
         "Ma'lumot yuklash UI",
-        "Отображение резервного режима приостановки, когда компонент ожидает данных — поддерживается такими библиотеками, как Relay, React Query.",
-        "Состояние загрузки",
-        "Статус API"
+        "Komponent ma'lumot kutayotganda Suspense fallback ko'rsatish — Relay, React Query kabi kutubxonalar qo'llab-quvvatlaydi",
+        "Loading state",
+        "API holati"
       ],
       "options_en": [
         "Data upload UI",
@@ -1235,13 +1235,13 @@
         "State transition"
       ],
       "answer": 1,
-      "question_ru": "Что делает startTransition в React?",
+      "question_ru": "React da startTransition nima qiladi?",
       "question_en": "What does startTransition do in React?",
       "options_ru": [
-        "Анимация начинается",
-        "Устанавливает обновлению статуса низкий приоритет — предотвращает блокировку рендеринга пользовательского интерфейса.",
-        "Переход маршрута",
-        "Государственный переход"
+        "Animatsiya boshlaydi",
+        "Holat yangilanishini past prioritetli deb belgilaydi — UI ko'rsatishni bloklashdan oldini oladi",
+        "Route transition",
+        "State transition"
       ],
       "options_en": [
         "The animation starts",
@@ -1261,13 +1261,13 @@
         "Context pattern"
       ],
       "answer": 1,
-      "question_ru": "Что такое шаблон составных компонентов в React?",
+      "question_ru": "React da Compound Components pattern nima?",
       "question_en": "What is the Compound Components pattern in React?",
       "options_ru": [
-        "Сложные компоненты",
-        "Группа компонентов, которые имеют общее внутреннее состояние друг с другом (например, Select + Option).",
-        "шаблон HOC",
-        "Шаблон контекста"
+        "Murakkab komponentlar",
+        "Bir-biri bilan ichki state ulashgan komponentlar guruhi (masalan Select + Option)",
+        "HOC pattern",
+        "Context pattern"
       ],
       "options_en": [
         "Complex components",
@@ -1287,18 +1287,18 @@
         "Parallel solishtirish"
       ],
       "answer": 1,
-      "question_ru": "Как работает алгоритм различия во время согласования в React?",
+      "question_ru": "React da Reconciliation jarayonida Diffing algorithm qanday ishlaydi?",
       "question_en": "How does the Diffing algorithm work during Reconciliation in React?",
       "options_ru": [
-        "Сравнивает весь DOM",
-        "Полный ререндер при изменении типа; рекурсивное сравнение одного и того же типа; использует ключ для списков",
-        "Находит только измененный элемент",
-        "Параллельное сравнение"
+        "To'liq DOM ni solishtiradi",
+        "Tip o'zgarganda to'liq qayta render; bir tip bo'lganda rekursiv solishtirish; ro'yxatlar uchun key ishlatadi",
+        "Faqat o'zgargan elementni topadi",
+        "Parallel solishtirish"
       ],
       "options_en": [
         "Compares the entire DOM",
         "Full re-render when type changes; recursive comparison when same type; uses key for lists",
-        "Faqat o'zgargan elementni topadi",
+        "Finds only the changed element",
         "Parallel comparison"
       ]
     }

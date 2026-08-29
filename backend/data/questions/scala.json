@@ -25,7 +25,7 @@
         "CSS framework",
         "A functional and object-oriented programming language that runs on the JVM",
         "JavaScript",
-        "Database tili"
+        "Database language"
       ]
     },
     {
@@ -92,12 +92,12 @@
       ],
       "answer": 1,
       "question_ru": "Что такое кейс-класс в Scala?",
-      "question_en": "Scala da case class nima?",
+      "question_en": "What is case class in Scala?",
       "options_ru": [
         "Если-случай",
         "Неизменяемый носитель данных — равно, hashCode, toString, копировать автоматически",
         "Класс данных",
-        "Запись"
+        "Записывать"
       ],
       "options_en": [
         "If-case",
@@ -149,7 +149,7 @@
         "Печать строки",
         "Выводит текст и новую строку на консоль",
         "Записывает журнал",
-        "Отладка"
+        "Отлаживать"
       ],
       "options_en": [
         "Print line",
@@ -227,7 +227,7 @@
         "Список Java",
         "Неизменяемый связанный список — с :: и Nil",
         "Динамический список",
-        "Массив"
+        "Множество"
       ],
       "options_en": [
         "Java List",
@@ -248,7 +248,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем использовать def в Scala?",
-      "question_en": "Scala da def nima uchun?",
+      "question_en": "Why def in Scala?",
       "options_ru": [
         "Определение",
         "Объявление метода",
@@ -357,7 +357,7 @@
         "Для цикла",
         "для { х <- список; y <- ... } выход — это синтаксический сахар цепочки FlatMap/map.",
         "Генератор",
-        "Доходность"
+        "Урожай"
       ],
       "options_en": [
         "For cycle",
@@ -387,7 +387,7 @@
       ],
       "options_en": [
         "String + concat",
-        "s\"Hello $name!\" yoki f\"${price}%.2f\"",
+        "s\"Hello $name!\" or f\"${price}%.2f\"",
         "String.format()",
         "Template"
       ]
@@ -404,7 +404,7 @@
       ],
       "answer": 1,
       "question_ru": "Что неявно в Scala?",
-      "question_en": "Scala da implicit nima?",
+      "question_en": "What is implicit in Scala?",
       "options_ru": [
         "Скрытый",
         "Параметр или преобразование, автоматически вставленное компилятором.",
@@ -430,15 +430,15 @@
       ],
       "answer": 1,
       "question_ru": "Что такое будущее в Scala?",
-      "question_en": "Scala da Future nima?",
+      "question_en": "What is Future in Scala?",
       "options_ru": [
         "Будущее",
         "Для результатов асинхронных вычислений — с помощью onComplete, карты, FlatMap.",
         "Асинхронный тип",
-        "Обещание"
+        "Обещать"
       ],
       "options_en": [
-        "Kelajak",
+        "The future",
         "For asynchronous calculation results — with onComplete, map, flatMap",
         "Async type",
         "Promise"
@@ -460,7 +460,7 @@
       "options_ru": [
         "Ява Акка",
         "Инструментарий для параллельных и распределенных систем на основе модели актера",
-        "Рамочная основа",
+        "Рамки",
         "Библиотека"
       ],
       "options_en": [
@@ -508,7 +508,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое класс типа в Scala?",
-      "question_en": "Scala da type class nima?",
+      "question_en": "What is a type class in Scala?",
       "options_ru": [
         "Тип класса",
         "Специальный полиморфизм — добавление функциональности через неявный параметр.",
@@ -516,7 +516,7 @@
         "Абстрактный класс"
       ],
       "options_en": [
-        "Tip klassi",
+        "Type class",
         "Ad-hoc polymorphism — adding functionality via an implicit parameter",
         "Generic class",
         "Abstract class"
@@ -534,7 +534,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое «либо» в Scala?",
-      "question_en": "Scala da Either nima?",
+      "question_en": "What is Either in Scala?",
       "options_ru": [
         "Два варианта",
         "Влево (ошибка) или Вправо (успех) — для обработки ошибок.",
@@ -560,7 +560,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое сопутствующий объект в Scala?",
-      "question_en": "Scala da companion object nima?",
+      "question_en": "What is a companion object in Scala?",
       "options_ru": [
         "Сопутствующий объект",
         "Объект с тем же именем, что и класс — фабричные методы, статические члены.",
@@ -588,7 +588,7 @@
       "question_ru": "Что такое lazy val в Scala?",
       "question_en": "What is lazy val in Scala?",
       "options_ru": [
-        "Помедленнее",
+        "Замедлять",
         "Инициализация при первом доступе является потокобезопасной и засчитывается один раз.",
         "Отложенный вал",
         "Необязательное значение"
@@ -647,7 +647,7 @@
       ],
       "options_en": [
         "Cat",
-        "Funksional dasturlash tiplar va type class lar — Monad, Functor, Applicative",
+        "Functional programming types and type classes — Monad, Functor, Applicative",
         "FP library",
         "Type library"
       ]
@@ -663,7 +663,7 @@
         "Result type"
       ],
       "answer": 1,
-      "question_ru": "Scala da Try nima?",
+      "question_ru": "Что такое Try в Scala?",
       "question_en": "What is Try in Scala?",
       "options_ru": [
         "Попробуйте заблокировать",
@@ -695,11 +695,11 @@
         "Поток данных",
         "Ленивые бесконечные последовательности — учитываются только необходимые элементы",
         "Сетевой поток",
-        "Collection"
+        "Коллекция"
       ],
       "options_en": [
         "Data stream",
-        "Lazy infinite ketma-ketliklar — faqat kerakli elementlar hisoblanadi",
+        "Lazy infinite sequences — only necessary elements are counted",
         "Network stream",
         "Collection"
       ]
@@ -720,12 +720,12 @@
       "options_ru": [
         "Коллекция",
         "Создайте одно значение, вращая слева направо с помощью аккумулятора.",
-        "Уменьшить",
-        "Сложить"
+        "Уменьшать",
+        "Складывать"
       ],
       "options_en": [
         "Collection",
-        "Akkumulyator bilan chapdan o'ngga aylanib bitta qiymat hosil qilish",
+        "Create a single value by rotating from left to right with an accumulator",
         "Reduce",
         "Fold"
       ]
@@ -777,7 +777,7 @@
       ],
       "options_en": [
         "Opening",
-        "Pattern matching uchun extractor — case class avtomatik beradi",
+        "Extractor for pattern matching — provides case class automatically",
         "Deconstruct",
         "Unpack"
       ]
@@ -793,7 +793,7 @@
         "Context param"
       ],
       "answer": 1,
-      "question_ru": "Scala da given/using (Scala 3) nima?",
+      "question_ru": "Что дается/используется в Scala (Scala 3)?",
       "question_en": "What is given/using in Scala (Scala 3)?",
       "options_ru": [
         "Учитывая/использовать",
@@ -828,7 +828,7 @@
         "Неявный класс"
       ],
       "options_en": [
-        "Kengaytirish",
+        "Expansion",
         "extension (x: T) def method() — Add a method to an existing type",
         "Mixin",
         "Implicit class"
@@ -851,7 +851,7 @@
         "Неопределенный тип",
         "Новый тип без накладных расходов на оболочку — псевдоним типа, но скрыт снаружи",
         "Введите псевдоним",
-        "Value class"
+        "Класс значения"
       ],
       "options_en": [
         "Unspecified type",
@@ -872,7 +872,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое перечисление в Scala (Scala 3)?",
-      "question_en": "Scala da enum (Scala 3) nima?",
+      "question_en": "What is an enum in Scala (Scala 3)?",
       "options_ru": [
         "Числа",
         "Strong enum — альтернатива закрытой иерархии, параметры, методы",
@@ -880,7 +880,7 @@
         "Запечатанное перечисление"
       ],
       "options_en": [
-        "Raqamlar",
+        "Numbers",
         "Strong enum — sealed hierarchy alternative, parameters, methods",
         "Constant group",
         "Sealed enum"
@@ -898,7 +898,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое типы объединения в Scala (Scala 3)?",
-      "question_en": "Scala da union types (Scala 3) nima?",
+      "question_en": "What are union types in Scala (Scala 3)?",
       "options_ru": [
         "Объединение",
         "А | B — Значение может иметь тип A или B.",
@@ -933,7 +933,7 @@
       ],
       "options_en": [
         "Monad",
-        "Ko'p monad qatlamlarini birlashtirish — OptionT, EitherT — cats kutubxonasi",
+        "Combining multiple monad layers — OptionT, EitherT — cats library",
         "Functor stack",
         "A nested monad"
       ]
@@ -952,7 +952,7 @@
       "question_ru": "Что такое финал без тегов в Scala?",
       "question_en": "What is tagless final in Scala?",
       "options_ru": [
-        "Tag",
+        "Ярлык",
         "Примером реализации алгебраических эффектов является абстракция с параметром типа F[_].",
         "Последний тег",
         "Система эффектов"
@@ -961,7 +961,7 @@
         "Tag",
         "A design example for algebraic effects is an abstraction with an F[_] type parameter",
         "Final tag",
-        "Effect system"
+        "Effects system"
       ]
     },
     {
@@ -1031,7 +1031,7 @@
       "question_en": "What is a filter in Scala?",
       "options_ru": [
         "CSS-фильтр",
-        "Shartga mos elementlardan yangi kolleksiya yaratadi",
+        "Создает новую коллекцию элементов, соответствующих условию.",
         "Выбор элемента",
         "Массивный фильтр"
       ],
@@ -1062,8 +1062,8 @@
         "Структурный подтип"
       ],
       "options_en": [
-        "Struktura tipi",
-        "Nominal emas, struktural mos kelish — { def method(): Type } kabi",
+        "Structure type",
+        "A structural match, not a nominal one — like { def method(): Type }",
         "Duck typing",
         "Structural subtype"
       ]
@@ -1134,7 +1134,7 @@
       "question_ru": "Что такое Doobie в Scala?",
       "question_en": "What is Doobie in Scala?",
       "options_ru": [
-        "изобретение",
+        "Изобретение",
         "Чисто функциональный уровень JDBC — запросы SQL в типобезопасной форме.",
         "ОРМ",
         "Библиотека базы данных"
@@ -1184,7 +1184,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое лямбда-тип в Scala?",
-      "question_en": "Scala da type lambda nima?",
+      "question_en": "What is type lambda in Scala?",
       "options_ru": [
         "Тип лямбда",
         "Приложение частичного типа — ({type L[x] = Once[String, x]})#L или [x] =>> F[x] в Scala 3",
@@ -1193,7 +1193,7 @@
       ],
       "options_en": [
         "Lambda type",
-        "Partial type application — ({type L[x] = Either[String, x]})#L yoki Scala 3 da [x] =>> F[x]",
+        "Partial type application — ({type L[x] = Either[String, x]})#L or [x] =>> F[x] in Scala 3",
         "Generic lambda",
         "Type alias"
       ]
@@ -1240,7 +1240,7 @@
       "options_ru": [
         "алгебра либ",
         "Twitter — абстрактная алгебра: Моноид, Группа, Кольцо — распределенная агрегация",
-        "Math library",
+        "Математическая библиотека",
         "Тип алгебры"
       ],
       "options_en": [
@@ -1265,7 +1265,7 @@
       "question_en": "What is Discipline in Scala?",
       "options_ru": [
         "Дисциплина",
-        "cats kutubxona uchun algebra qonunlarini test qiluvchi framework",
+        "Платформа для тестирования законов алгебры для библиотеки кошек",
         "Юридическое тестирование",
         "Проверка свойств"
       ],

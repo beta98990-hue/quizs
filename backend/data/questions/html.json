@@ -13,13 +13,13 @@
         "Home Tool Markup Language"
       ],
       "answer": 0,
-      "question_ru": "Что означает аббревиатура HTML?",
-      "question_en": "What does the acronym HTML stand for?",
+      "question_ru": "HTML qisqartmasi nimani anglatadi?",
+      "question_en": "HTML qisqartmasi nimani anglatadi?",
       "options_ru": [
-        "Язык разметки гипертекста",
-        "Современный язык высоких технологий",
-        "Гипертекстовые современные ссылки",
-        "Главная Язык разметки инструментов"
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "HyperText Modern Links",
+        "Home Tool Markup Language"
       ],
       "options_en": [
         "HyperText Markup Language",
@@ -39,8 +39,8 @@
         "<html DOCTYPE>"
       ],
       "answer": 0,
-      "question_ru": "Как написать DOCTYPE в HTML5?",
-      "question_en": "How to write DOCTYPE in HTML5?",
+      "question_ru": "HTML5 da DOCTYPE qanday yoziladi?",
+      "question_en": "HTML5 da DOCTYPE qanday yoziladi?",
       "options_ru": [
         "<!DOCTYPE html>",
         "<!DOCTYPE HTML5>",
@@ -65,8 +65,8 @@
         "<heading>"
       ],
       "answer": 2,
-      "question_ru": "Какой тег создает самый большой заголовок на веб-странице?",
-      "question_en": "Which tag creates the largest title on a web page?",
+      "question_ru": "Qaysi teg web sahifada eng katta sarlavhani yaratadi?",
+      "question_en": "Qaysi teg web sahifada eng katta sarlavhani yaratadi?",
       "options_ru": [
         "<h6>",
         "<header>",
@@ -91,8 +91,8 @@
         "<url>"
       ],
       "answer": 1,
-      "question_ru": "Какой тег используется для создания гиперссылки?",
-      "question_en": "Which tag is used to create a hyperlink?",
+      "question_ru": "Qaysi teg giperhavolani yaratish uchun ishlatiladi?",
+      "question_en": "Qaysi teg giperhavolani yaratish uchun ishlatiladi?",
       "options_ru": [
         "<link>",
         "<a>",
@@ -117,7 +117,7 @@
         "<img>"
       ],
       "answer": 3,
-      "question_ru": "Какой тег используется для отображения изображения в HTML?",
+      "question_ru": "HTML da rasm ko'rsatish uchun qaysi teg ishlatiladi?",
       "question_en": "HTML da rasm ko'rsatish uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<picture>",
@@ -143,8 +143,8 @@
         "<text>"
       ],
       "answer": 2,
-      "question_ru": "Какой тег используется для создания абзаца в HTML?",
-      "question_en": "Which tag is used to create a paragraph in HTML?",
+      "question_ru": "HTML da paragraf yaratish uchun qaysi teg ishlatiladi?",
+      "question_en": "HTML da paragraf yaratish uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<para>",
         "<pg>",
@@ -169,8 +169,8 @@
         "<li>"
       ],
       "answer": 2,
-      "question_ru": "Какой тег используется для неупорядоченного списка в HTML?",
-      "question_en": "Which tag is used for an unordered list in HTML?",
+      "question_ru": "HTML da tartibsiz ro'yxat uchun qaysi teg ishlatiladi?",
+      "question_en": "HTML da tartibsiz ro'yxat uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<ol>",
         "<list>",
@@ -195,8 +195,8 @@
         "<dl>"
       ],
       "answer": 1,
-      "question_ru": "Какой тег используется для нумерованного списка в HTML?",
-      "question_en": "Which tag is used for a numbered list in HTML?",
+      "question_ru": "HTML da tartibli (numbered) ro'yxat uchun qaysi teg ishlatiladi?",
+      "question_en": "HTML da tartibli (numbered) ro'yxat uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<ul>",
         "<ol>",
@@ -221,8 +221,8 @@
         "<input>"
       ],
       "answer": 3,
-      "question_ru": "Какой тег используется для создания поля ввода в HTML?",
-      "question_en": "Which tag is used to create an input field in HTML?",
+      "question_ru": "HTML da input maydoni yaratish uchun qaysi teg ishlatiladi?",
+      "question_en": "HTML da input maydoni yaratish uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<textbox>",
         "<field>",
@@ -247,12 +247,12 @@
         "# comment"
       ],
       "answer": 2,
-      "question_ru": "Как написать HTML-комментарий?",
-      "question_en": "How to write an HTML comment?",
+      "question_ru": "HTML comment qanday yoziladi?",
+      "question_en": "HTML comment qanday yoziladi?",
       "options_ru": [
         "// comment",
-        "/* комментарий */",
-        "<!-- комментарий -->",
+        "/* comment */",
+        "<!-- comment -->",
         "# comment"
       ],
       "options_en": [
@@ -273,19 +273,19 @@
         "Sahifani yangilaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает тег <br>?",
-      "question_en": "What does the <br> tag do?",
+      "question_ru": "<br> tegi nima qiladi?",
+      "question_en": "<br> tegi nima qiladi?",
       "options_ru": [
-        "Создает жирный текст",
-        "Добавляет новую строку",
-        "Рисует горизонтальную линию",
-        "Обновляет страницу"
+        "Qalin matn yaratadi",
+        "Yangi qator qo'shadi",
+        "Gorizontal chiziq chizadi",
+        "Sahifani yangilaydi"
       ],
       "options_en": [
-        "Creates bold text",
-        "Adds a new row",
-        "Draws a horizontal line",
-        "Refreshes the page"
+        "Qalin matn yaratadi",
+        "Yangi qator qo'shadi",
+        "Gorizontal chiziq chizadi",
+        "Sahifani yangilaydi"
       ]
     },
     {
@@ -299,19 +299,19 @@
         "Havola yaratadi"
       ],
       "answer": 2,
-      "question_ru": "Что делает тег <hr>?",
+      "question_ru": "<hr> tegi nima qiladi?",
       "question_en": "<hr> tegi nima qiladi?",
       "options_ru": [
-        "Создает заголовок",
-        "Добавляет картинку",
-        "Создает горизонтальную линию",
-        "Создает ссылку"
+        "Sarlavha yaratadi",
+        "Rasm qo'shadi",
+        "Gorizontal chiziq yaratadi",
+        "Havola yaratadi"
       ],
       "options_en": [
-        "Creates a title",
-        "Adds a picture",
-        "Creates a horizontal line",
-        "Creates a link"
+        "Sarlavha yaratadi",
+        "Rasm qo'shadi",
+        "Gorizontal chiziq yaratadi",
+        "Havola yaratadi"
       ]
     },
     {
@@ -325,19 +325,19 @@
         "O'chirilgan"
       ],
       "answer": 1,
-      "question_ru": "Как тег <b> отображает текст?",
-      "question_en": "How does the <b> tag display text?",
+      "question_ru": "<b> tegi matnni qanday ko'rsatadi?",
+      "question_en": "<b> tegi matnni qanday ko'rsatadi?",
       "options_ru": [
-        "Курсив",
-        "смелый",
-        "Подчеркнуто",
-        "Выкл."
-      ],
-      "options_en": [
-        "Italic",
+        "Kursiv",
         "Qalin (bold)",
         "Tagiga chizilgan",
-        "Off"
+        "O'chirilgan"
+      ],
+      "options_en": [
+        "Kursiv",
+        "Qalin (bold)",
+        "Tagiga chizilgan",
+        "O'chirilgan"
       ]
     },
     {
@@ -351,19 +351,19 @@
         "Kattaroq"
       ],
       "answer": 1,
-      "question_ru": "Как тег <i> отображает текст?",
-      "question_en": "How does the <i> tag display text?",
+      "question_ru": "<i> tegi matnni qanday ko'rsatadi?",
+      "question_en": "<i> tegi matnni qanday ko'rsatadi?",
       "options_ru": [
-        "Толстый",
-        "курсив",
-        "Подчеркнуто",
-        "Больше"
+        "Qalin",
+        "Kursiv (italic)",
+        "Tagiga chizilgan",
+        "Kattaroq"
       ],
       "options_en": [
-        "Thick",
-        "italic",
+        "Qalin",
+        "Kursiv (italic)",
         "Tagiga chizilgan",
-        "Bigger"
+        "Kattaroq"
       ]
     },
     {
@@ -377,7 +377,7 @@
         "<tab>"
       ],
       "answer": 2,
-      "question_ru": "Какой тег используется для создания таблицы в HTML?",
+      "question_ru": "HTML da jadval yaratish uchun qaysi teg ishlatiladi?",
       "question_en": "HTML da jadval yaratish uchun qaysi teg ishlatiladi?",
       "options_ru": [
         "<grid>",
@@ -403,19 +403,19 @@
         "CSS faylini ulaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает <meta charset='UTF-8'>?",
-      "question_en": "What does <meta charset='UTF-8'> do?",
+      "question_ru": "<meta charset='UTF-8'> nima vazifasini bajaradi?",
+      "question_en": "<meta charset='UTF-8'> nima vazifasini bajaradi?",
       "options_ru": [
-        "Добавляет ключевые слова на страницу",
-        "Указывает кодировку символов страницы.",
-        "Сохраняет информацию об авторе",
-        "Добавляет CSS-файл"
+        "Sahifaga kalit so'zlar qo'shadi",
+        "Sahifaning belgilar kodlashini belgilaydi",
+        "Muallif ma'lumotini saqlaydi",
+        "CSS faylini ulaydi"
       ],
       "options_en": [
-        "Adds keywords to the page",
-        "Specifies the character encoding of the page",
-        "Saves author information",
-        "Adds a CSS file"
+        "Sahifaga kalit so'zlar qo'shadi",
+        "Sahifaning belgilar kodlashini belgilaydi",
+        "Muallif ma'lumotini saqlaydi",
+        "CSS faylini ulaydi"
       ]
     },
     {
@@ -429,8 +429,8 @@
         "<root>"
       ],
       "answer": 0,
-      "question_ru": "Внутри какого тега в HTML находятся теги <head> и <body>?",
-      "question_en": "In HTML, <head> and <body> tags are inside which tag?",
+      "question_ru": "HTML da <head> va <body> teglari qaysi teg ichida bo'ladi?",
+      "question_en": "HTML da <head> va <body> teglari qaysi teg ichida bo'ladi?",
       "options_ru": [
         "<html>",
         "<document>",
@@ -455,19 +455,19 @@
         "Faqat GET so'rovini yuboradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает метод ='POST' в <form action='/submit' метод='POST'>?",
-      "question_en": "What does method='POST' do in <form action='/submit' method='POST'>?",
+      "question_ru": "<form action='/submit' method='POST'> da method='POST' nima qiladi?",
+      "question_en": "<form action='/submit' method='POST'> da method='POST' nima qiladi?",
       "options_ru": [
-        "Отправляет данные через URL",
-        "Отправляет данные в виде безопасного запроса POST.",
-        "Обновляет страницу",
-        "Просто отправляет запрос GET"
+        "Ma'lumotni URL orqali yuboradi",
+        "Ma'lumotni xavfsiz POST so'rov sifatida yuboradi",
+        "Sahifani yangilaydi",
+        "Faqat GET so'rovini yuboradi"
       ],
       "options_en": [
-        "Sends data via URL",
-        "Sends data as a secure POST request",
-        "Refreshes the page",
-        "Just sends a GET request"
+        "Ma'lumotni URL orqali yuboradi",
+        "Ma'lumotni xavfsiz POST so'rov sifatida yuboradi",
+        "Sahifani yangilaydi",
+        "Faqat GET so'rovini yuboradi"
       ]
     },
     {
@@ -481,19 +481,19 @@
         "Raqam maydoni"
       ],
       "answer": 1,
-      "question_ru": "Какой элемент создает <input type='checkbox'>?",
+      "question_ru": "<input type='checkbox'> qanday element yaratadi?",
       "question_en": "<input type='checkbox'> qanday element yaratadi?",
       "options_ru": [
-        "Радиокнопка",
-        "Флажок",
-        "Текстовое поле",
-        "Числовое поле"
+        "Radio tugma",
+        "Belgilash katakchasi",
+        "Matn maydoni",
+        "Raqam maydoni"
       ],
       "options_en": [
-        "Radio button",
-        "Check box",
+        "Radio tugma",
+        "Belgilash katakchasi",
         "Matn maydoni",
-        "Number field"
+        "Raqam maydoni"
       ]
     },
     {
@@ -507,19 +507,19 @@
         "Sarlavha uchun"
       ],
       "answer": 0,
-      "question_ru": "Для чего используется тег <article> в HTML5?",
+      "question_ru": "HTML5 da <article> tegi nima uchun ishlatiladi?",
       "question_en": "HTML5 da <article> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Для статей и независимого контента",
-        "Для навигации",
-        "Для боковой панели",
-        "Для названия"
+        "Maqolalar va mustaqil kontent uchun",
+        "Navigatsiya uchun",
+        "Yon panel uchun",
+        "Sarlavha uchun"
       ],
       "options_en": [
-        "For articles and independent content",
-        "For navigation",
-        "For the sidebar",
-        "For the title"
+        "Maqolalar va mustaqil kontent uchun",
+        "Navigatsiya uchun",
+        "Yon panel uchun",
+        "Sarlavha uchun"
       ]
     },
     {
@@ -533,19 +533,19 @@
         "Radio tugma"
       ],
       "answer": 2,
-      "question_ru": "Что создает тег <select>?",
-      "question_en": "What does the <select> tag create?",
+      "question_ru": "<select> tegi nima yaratadi?",
+      "question_en": "<select> tegi nima yaratadi?",
       "options_ru": [
-        "Текстовое поле",
-        "Флажок",
-        "Раскрывающийся список",
-        "Радиокнопка"
+        "Matn maydoni",
+        "Belgilash katakchasi",
+        "Dropdown ro'yxat",
+        "Radio tugma"
       ],
       "options_en": [
         "Matn maydoni",
-        "Check box",
-        "Dropdown list",
-        "Radio button"
+        "Belgilash katakchasi",
+        "Dropdown ro'yxat",
+        "Radio tugma"
       ]
     },
     {
@@ -559,19 +559,19 @@
         "Havola yaratish"
       ],
       "answer": 0,
-      "question_ru": "Почему тег <label> используется в HTML?",
-      "question_en": "Why is the <label> tag used in HTML?",
+      "question_ru": "HTML da <label> tegi nima uchun ishlatiladi?",
+      "question_en": "HTML da <label> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Создайте метку для поля ввода",
-        "Добавить подпись к фотографии",
-        "Создайте заголовок таблицы",
-        "Создать ссылку"
+        "Input maydoni uchun yorliq yaratish",
+        "Rasm izohini qo'shish",
+        "Jadval sarlavhasi yaratish",
+        "Havola yaratish"
       ],
       "options_en": [
-        "Create a label for the input field",
-        "Add a photo caption",
-        "Create a table header",
-        "Create a link"
+        "Input maydoni uchun yorliq yaratish",
+        "Rasm izohini qo'shish",
+        "Jadval sarlavhasi yaratish",
+        "Havola yaratish"
       ]
     },
     {
@@ -585,19 +585,19 @@
         "Rasmni markazga qo'yadi"
       ],
       "answer": 1,
-      "question_ru": "Почему атрибут alt в <img src='img.jpg' alt='Image'>?",
-      "question_en": "Why the alt attribute in <img src='img.jpg' alt='Image'>?",
+      "question_ru": "<img src='img.jpg' alt='Rasm'> da alt atributi nima uchun?",
+      "question_en": "<img src='img.jpg' alt='Rasm'> da alt atributi nima uchun?",
       "options_ru": [
-        "Определяет размер изображения",
-        "Если изображение не загружается, будет отображаться текст и для доступности.",
-        "Создает ссылку на изображение",
-        "Центрирует изображение"
+        "Rasm hajmini belgilaydi",
+        "Rasm yuklanmasa matn ko'rsatadi va accessibility uchun",
+        "Rasmga link yaratadi",
+        "Rasmni markazga qo'yadi"
       ],
       "options_en": [
-        "Specifies the image size",
-        "If the image does not load, the text will show and for accessibility",
-        "Creates a link to the image",
-        "Centers the image"
+        "Rasm hajmini belgilaydi",
+        "Rasm yuklanmasa matn ko'rsatadi va accessibility uchun",
+        "Rasmga link yaratadi",
+        "Rasmni markazga qo'yadi"
       ]
     },
     {
@@ -611,19 +611,19 @@
         "<section> faqat sarlavha uchun"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между <section> и <div> в HTML?",
-      "question_en": "What is the difference between <section> and <div> in HTML?",
+      "question_ru": "HTML da <section> va <div> farqi nima?",
+      "question_en": "HTML da <section> va <div> farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "Семантический тег <section> для тематических групп; <div> универсальный контейнер",
-        "<div> только для текста",
-        "<section> предназначен только для заголовка"
+        "<section> semantic teg, tematik guruhlar uchun; <div> generic container",
+        "<div> faqat matn uchun",
+        "<section> faqat sarlavha uchun"
       ],
       "options_en": [
         "There is no difference",
-        "<section> semantic tag, for thematic groups; <div> generic container",
+        "<section> semantic teg, tematik guruhlar uchun; <div> generic container",
         "<div> faqat matn uchun",
-        "<section> is for the header only"
+        "<section> faqat sarlavha uchun"
       ]
     },
     {
@@ -637,19 +637,19 @@
         "<meta> ichiga"
       ],
       "answer": 2,
-      "question_ru": "Где лучше всего разместить тег <script src='app.js'>?",
+      "question_ru": "<script src='app.js'> tegi qaerga qo'yilishi eng yaxshi?",
       "question_en": "<script src='app.js'> tegi qaerga qo'yilishi eng yaxshi?",
       "options_ru": [
-        "в <голову>",
-        "в тег <html>",
-        "перед </body>",
-        "в <мета>"
+        "<head> ichiga",
+        "<html> teggacha",
+        "</body> oldiga",
+        "<meta> ichiga"
       ],
       "options_en": [
-        "into <head>",
-        "to the <html> tag",
-        "before </body>",
-        "into <meta>"
+        "<head> ichiga",
+        "<html> teggacha",
+        "</body> oldiga",
+        "<meta> ichiga"
       ]
     },
     {
@@ -663,19 +663,19 @@
         "Form elementlari uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему тег <nav> используется в HTML?",
-      "question_en": "Why is the <nav> tag used in HTML?",
+      "question_ru": "HTML da <nav> tegi nima uchun ishlatiladi?",
+      "question_en": "HTML da <nav> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Чтобы перейти на новую страницу",
-        "Чтобы определить группу навигационных ссылок",
-        "Для табличной навигации",
-        "Для элементов формы"
+        "Yangi sahifaga o'tish uchun",
+        "Navigatsiya havolalari guruhini belgilash uchun",
+        "Jadval navigatsiyasi uchun",
+        "Form elementlari uchun"
       ],
       "options_en": [
         "Yangi sahifaga o'tish uchun",
-        "To define a group of navigation links",
+        "Navigatsiya havolalari guruhini belgilash uchun",
         "Jadval navigatsiyasi uchun",
-        "For form elements"
+        "Form elementlari uchun"
       ]
     },
     {
@@ -689,19 +689,19 @@
         "Radio matn kiritadi"
       ],
       "answer": 1,
-      "question_ru": "Разница между <input type='radio'> и <input type='checkbox'>?",
-      "question_en": "Difference between <input type='radio'> and <input type='checkbox'>?",
+      "question_ru": "<input type='radio'> va <input type='checkbox'> farqi?",
+      "question_en": "<input type='radio'> va <input type='checkbox'> farqi?",
       "options_ru": [
-        "Нет никакой разницы",
-        "Радио — это только один вариант, флажок позволяет выбрать несколько вариантов.",
-        "Флажок позволяет выбрать только один вариант",
-        "Радио вводит текст"
+        "Farq yo'q",
+        "Radio faqat bitta tanlov, checkbox ko'p tanlov imkonini beradi",
+        "Checkbox faqat bitta tanlov imkonini beradi",
+        "Radio matn kiritadi"
       ],
       "options_en": [
-        "There is no difference",
-        "A radio is only one choice, a checkbox allows multiple choices",
-        "Checkbox allows only one choice",
-        "The radio enters the text"
+        "Farq yo'q",
+        "Radio faqat bitta tanlov, checkbox ko'p tanlov imkonini beradi",
+        "Checkbox faqat bitta tanlov imkonini beradi",
+        "Radio matn kiritadi"
       ]
     },
     {
@@ -715,19 +715,19 @@
         "Footer uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему тег <aside> используется в HTML?",
+      "question_ru": "HTML da <aside> tegi nima uchun ishlatiladi?",
       "question_en": "HTML da <aside> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Для основного контента",
-        "Сайдбар (сайдбар) для контента",
-        "Для статьи",
-        "Для нижнего колонтитула"
+        "Asosiy kontent uchun",
+        "Yon panel (sidebar) kontent uchun",
+        "Maqola uchun",
+        "Footer uchun"
       ],
       "options_en": [
-        "For main content",
-        "Sidebar (sidebar) for content",
+        "Asosiy kontent uchun",
+        "Yon panel (sidebar) kontent uchun",
         "Maqola uchun",
-        "For footer"
+        "Footer uchun"
       ]
     },
     {
@@ -741,19 +741,19 @@
         "<th> faqat birinchi qator uchun"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между <th> и <td> в <table>?",
-      "question_en": "What is the difference between <th> and <td> in <table>?",
+      "question_ru": "<table> ichida <th> va <td> farqi nima?",
+      "question_en": "<table> ichida <th> va <td> farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "Ячейка заголовка таблицы <th> (жирный шрифт), обычная ячейка <td>",
-        "<td> заголовок таблицы",
-        "<th> предназначен только для первой строки"
+        "<th> jadval sarlavha hujayra (qalin), <td> oddiy hujayra",
+        "<td> jadval sarlavhasi",
+        "<th> faqat birinchi qator uchun"
       ],
       "options_en": [
         "There is no difference",
-        "<th> table title cell (bold), <td> plain cell",
-        "<td> table header",
-        "<th> is only for the first line"
+        "<th> jadval sarlavha hujayra (qalin), <td> oddiy hujayra",
+        "<td> jadval sarlavhasi",
+        "<th> faqat birinchi qator uchun"
       ]
     },
     {
@@ -767,18 +767,18 @@
         "Hujayra chegarasini o'chiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает атрибут colspan в HTML?",
-      "question_en": "What does the colspan attribute do in HTML?",
+      "question_ru": "HTML da colspan atributi nima qiladi?",
+      "question_en": "HTML da colspan atributi nima qiladi?",
       "options_ru": [
-        "Объединяет строки вертикально",
-        "Соединяет ячейки горизонтально",
-        "Определяет ширину столбца",
-        "Удаляет границу ячейки"
+        "Qatorlarni vertikal birlashtiradi",
+        "Hujayralarni gorizontal birlashtiradi",
+        "Ustun kengligini belgilaydi",
+        "Hujayra chegarasini o'chiradi"
       ],
       "options_en": [
-        "Merges rows vertically",
-        "Connects cells horizontally",
-        "Specifies the column width",
+        "Qatorlarni vertikal birlashtiradi",
+        "Hujayralarni gorizontal birlashtiradi",
+        "Ustun kengligini belgilaydi",
         "Hujayra chegarasini o'chiradi"
       ]
     },
@@ -793,19 +793,19 @@
         "Shrift faylini ulaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает <link rel='stylesheet' href='style.css'>?",
-      "question_en": "What does <link rel='stylesheet' href='style.css'> do?",
+      "question_ru": "<link rel='stylesheet' href='style.css'> nima qiladi?",
+      "question_en": "<link rel='stylesheet' href='style.css'> nima qiladi?",
       "options_ru": [
-        "Создает ссылку на другую страницу",
-        "Связывает файл CSS с HTML-страницей.",
-        "Добавляет файл JavaScript",
-        "Прикрепляет файл шрифта"
+        "Boshqa sahifaga havola yaratadi",
+        "CSS faylini HTML sahifaga ulaydi",
+        "JavaScript faylini ulaydi",
+        "Shrift faylini ulaydi"
       ],
       "options_en": [
-        "Creates a link to another page",
-        "Links a CSS file to an HTML page",
+        "Boshqa sahifaga havola yaratadi",
+        "CSS faylini HTML sahifaga ulaydi",
         "JavaScript faylini ulaydi",
-        "Attaches a font file"
+        "Shrift faylini ulaydi"
       ]
     },
     {
@@ -819,19 +819,19 @@
         "Jadval uchun"
       ],
       "answer": 0,
-      "question_ru": "Почему тег <figure> используется в HTML?",
-      "question_en": "Why is the <figure> tag used in HTML?",
+      "question_ru": "HTML da <figure> tegi nima uchun ishlatiladi?",
+      "question_en": "HTML da <figure> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Семантический контейнер для изображений, диаграмм, кода",
-        "Только для фотографий",
-        "Для элементов формы",
-        "Для стола"
+        "Rasmlar, diagrammalar, kod uchun semantik container",
+        "Faqat rasmlar uchun",
+        "Forma elementlari uchun",
+        "Jadval uchun"
       ],
       "options_en": [
-        "Semantic container for images, diagrams, code",
-        "For pictures only",
-        "For form elements",
-        "For the table"
+        "Rasmlar, diagrammalar, kod uchun semantik container",
+        "Faqat rasmlar uchun",
+        "Forma elementlari uchun",
+        "Jadval uchun"
       ]
     },
     {
@@ -846,18 +846,18 @@
       ],
       "answer": 1,
       "question_ru": "<input required> atributi nima qiladi?",
-      "question_en": "What does the <input required> attribute do?",
+      "question_en": "<input required> atributi nima qiladi?",
       "options_ru": [
-        "Определяет размер поля ввода",
-        "Делает заполнение полей обязательным",
-        "Дает полю значение по умолчанию",
-        "Делает поле читабельным"
+        "Input maydoni hajmini belgilaydi",
+        "Maydonni to'ldirish majburiy qiladi",
+        "Maydonga default qiymat beradi",
+        "Maydonni o'qish uchun qiladi"
       ],
       "options_en": [
-        "Specifies the size of the input field",
-        "Makes field completion mandatory",
-        "Gives the field a default value",
-        "Makes the field readable"
+        "Input maydoni hajmini belgilaydi",
+        "Maydonni to'ldirish majburiy qiladi",
+        "Maydonga default qiymat beradi",
+        "Maydonni o'qish uchun qiladi"
       ]
     },
     {
@@ -871,13 +871,13 @@
         "auto"
       ],
       "answer": 2,
-      "question_ru": "Какой атрибут обеспечивает автозапуск тега <video> в HTML5?",
-      "question_en": "Which attribute provides autoplay for the <video> tag in HTML5?",
+      "question_ru": "HTML5 da <video> tegi uchun qaysi atribut avtomatik ijro etishni ta'minlaydi?",
+      "question_en": "HTML5 da <video> tegi uchun qaysi atribut avtomatik ijro etishni ta'minlaydi?",
       "options_ru": [
-        "играть",
-        "начать",
-        "автозапуск",
-        "авто"
+        "play",
+        "start",
+        "autoplay",
+        "auto"
       ],
       "options_en": [
         "play",
@@ -897,19 +897,19 @@
         "Database ulanishi uchun"
       ],
       "answer": 2,
-      "question_ru": "Почему атрибуты data-* используются в HTML?",
-      "question_en": "Why are data-* attributes used in HTML?",
+      "question_ru": "HTML da data-* atributlari nima uchun ishlatiladi?",
+      "question_en": "HTML da data-* atributlari nima uchun ishlatiladi?",
       "options_ru": [
-        "Для стилей CSS",
-        "Отправка пользовательских данных на сервер",
-        "Чтобы сохранить пользовательские данные в элементе HTML",
-        "Для подключения к базе данных"
+        "CSS styling uchun",
+        "Foydalanuvchi ma'lumotlarini serverga yuborish uchun",
+        "Custom ma'lumotlarni HTML elementda saqlash uchun",
+        "Database ulanishi uchun"
       ],
       "options_en": [
-        "For CSS styling",
-        "To send user data to the server",
-        "To store custom data in an HTML element",
-        "For database connection"
+        "CSS styling uchun",
+        "Foydalanuvchi ma'lumotlarini serverga yuborish uchun",
+        "Custom ma'lumotlarni HTML elementda saqlash uchun",
+        "Database ulanishi uchun"
       ]
     },
     {
@@ -923,19 +923,19 @@
         "localStorage faqat bir sahifa uchun ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между localStorage и sessionStorage в API веб-хранилища HTML5?",
-      "question_en": "What is the difference between localStorage and sessionStorage in HTML5 Web Storage API?",
+      "question_ru": "HTML5 Web Storage API da localStorage va sessionStorage farqi nima?",
+      "question_en": "HTML5 Web Storage API da localStorage va sessionStorage farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "localStorage хранится постоянно, sessionStorage удаляется при закрытии браузера.",
-        "sessionStorage является постоянным",
-        "localStorage работает только для одной страницы"
+        "localStorage doimiy saqlanadi, sessionStorage brauzer yopilganda o'chadi",
+        "sessionStorage doimiy saqlanadi",
+        "localStorage faqat bir sahifa uchun ishlaydi"
       ],
       "options_en": [
         "There is no difference",
         "localStorage doimiy saqlanadi, sessionStorage brauzer yopilganda o'chadi",
         "sessionStorage doimiy saqlanadi",
-        "localStorage only works for one page"
+        "localStorage faqat bir sahifa uchun ishlaydi"
       ]
     },
     {
@@ -949,19 +949,19 @@
         "async faqat external skriptlar uchun ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между <script async> и <script defer>?",
-      "question_en": "What is the difference between <script async> and <script defer>?",
+      "question_ru": "<script async> va <script defer> farqi nima?",
+      "question_en": "<script async> va <script defer> farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "async запускает сценарий сразу после его загрузки; defer запустится, когда DOM будет готов",
-        "defer немедленно запустит скрипт",
-        "async работает только для внешних скриптов"
+        "async skriptni yuklab bo'lishi bilan darhol ishga tushiradi; defer DOM tayyor bo'lgach ishga tushiradi",
+        "defer skriptni darhol ishga tushiradi",
+        "async faqat external skriptlar uchun ishlaydi"
       ],
       "options_en": [
         "There is no difference",
-        "async runs the script as soon as it is downloaded; defer will run when the DOM is ready",
-        "defer will run the script immediately",
-        "async only works for external scripts"
+        "async skriptni yuklab bo'lishi bilan darhol ishga tushiradi; defer DOM tayyor bo'lgach ishga tushiradi",
+        "defer skriptni darhol ishga tushiradi",
+        "async faqat external skriptlar uchun ishlaydi"
       ]
     },
     {
@@ -975,11 +975,11 @@
         "location.getCoords()"
       ],
       "answer": 2,
-      "question_ru": "Как использовать API геолокации в HTML5?",
-      "question_en": "How to use Geolocation API in HTML5?",
+      "question_ru": "HTML5 da Geolocation API qanday foydalaniladi?",
+      "question_en": "HTML5 da Geolocation API qanday foydalaniladi?",
       "options_ru": [
-        "навигатор.location.get()",
-        "окно.geo.getPosition()",
+        "navigator.location.get()",
+        "window.geo.getPosition()",
         "navigator.geolocation.getCurrentPosition()",
         "location.getCoords()"
       ],
@@ -1001,19 +1001,19 @@
         "Server bilan aloqa uchun"
       ],
       "answer": 1,
-      "question_ru": "Для чего используется ARIA (доступные многофункциональные интернет-приложения)?",
-      "question_en": "What is ARIA (Accessible Rich Internet Applications) used for?",
+      "question_ru": "ARIA (Accessible Rich Internet Applications) nima uchun ishlatiladi?",
+      "question_en": "ARIA (Accessible Rich Internet Applications) nima uchun ishlatiladi?",
       "options_ru": [
-        "Для CSS-анимации",
-        "Повысить доступность веб-страниц для людей с ограниченными возможностями.",
-        "Для оптимизации JavaScript",
-        "Для связи с сервером"
+        "CSS animatsiyalari uchun",
+        "Web sahifalarni nogironlar uchun foydalanish imkoniyatini oshirish",
+        "JavaScript optimallashtirish uchun",
+        "Server bilan aloqa uchun"
       ],
       "options_en": [
-        "For CSS animations",
-        "Increase the accessibility of web pages for people with disabilities",
-        "For JavaScript optimization",
-        "For communication with the server"
+        "CSS animatsiyalari uchun",
+        "Web sahifalarni nogironlar uchun foydalanish imkoniyatini oshirish",
+        "JavaScript optimallashtirish uchun",
+        "Server bilan aloqa uchun"
       ]
     },
     {
@@ -1027,19 +1027,19 @@
         "Server konfiguratsiyasi uchun"
       ],
       "answer": 1,
-      "question_ru": "Какова цель политики безопасности контента (CSP) в HTML?",
-      "question_en": "What is the purpose of Content Security Policy (CSP) in HTML?",
+      "question_ru": "HTML da Content Security Policy (CSP) nima maqsadda ishlatiladi?",
+      "question_en": "HTML da Content Security Policy (CSP) nima maqsadda ishlatiladi?",
       "options_ru": [
-        "Чтобы ускорить страницу",
-        "Для защиты от XSS и атак с внедрением данных.",
-        "Чтобы скомпилировать CSS-файлы",
-        "Для настройки сервера"
+        "Sahifani tezlashtirish uchun",
+        "XSS va ma'lumot in'ektsiyasi hujumlaridan himoya uchun",
+        "CSS fayllarini yig'ish uchun",
+        "Server konfiguratsiyasi uchun"
       ],
       "options_en": [
-        "To speed up the page",
-        "For protection against XSS and data injection attacks",
-        "To compile CSS files",
-        "For server configuration"
+        "Sahifani tezlashtirish uchun",
+        "XSS va ma'lumot in'ektsiyasi hujumlaridan himoya uchun",
+        "CSS fayllarini yig'ish uchun",
+        "Server konfiguratsiyasi uchun"
       ]
     },
     {
@@ -1053,19 +1053,19 @@
         "Sahifani chop etish uchun sozlaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает <meta name='viewport' content='width=device-width, Initial-scale=1'>?",
-      "question_en": "What does <meta name='viewport' content='width=device-width, initial-scale=1'> do?",
+      "question_ru": "<meta name='viewport' content='width=device-width, initial-scale=1'> nima qiladi?",
+      "question_en": "<meta name='viewport' content='width=device-width, initial-scale=1'> nima qiladi?",
       "options_ru": [
-        "Увеличивает страницу",
-        "Настраивает область просмотра для отображения страницы адаптивной и корректной для мобильных устройств.",
-        "Определяет метаданные",
-        "Устанавливает страницу для печати"
+        "Sahifani kattalashtiradi",
+        "Sahifani responsive va to'g'ri mobile ko'rsatish uchun viewport ni sozlaydi",
+        "Meta ma'lumotlarni belgilaydi",
+        "Sahifani chop etish uchun sozlaydi"
       ],
       "options_en": [
-        "Enlarges the page",
-        "Configures the viewport to render the page responsive and mobile-correct",
-        "Defines meta data",
-        "Sets the page for printing"
+        "Sahifani kattalashtiradi",
+        "Sahifani responsive va to'g'ri mobile ko'rsatish uchun viewport ni sozlaydi",
+        "Meta ma'lumotlarni belgilaydi",
+        "Sahifani chop etish uchun sozlaydi"
       ]
     },
     {
@@ -1079,19 +1079,19 @@
         "JavaScript funksiyalari uchun"
       ],
       "answer": 1,
-      "question_ru": "Для чего используется тег <template> в HTML5?",
-      "question_en": "What is the <template> tag used for in HTML5?",
+      "question_ru": "HTML5 da <template> tegi nima uchun ishlatiladi?",
+      "question_en": "HTML5 da <template> tegi nima uchun ishlatiladi?",
       "options_ru": [
-        "Для шаблонов CSS",
-        "Для многократно используемых HTML-шаблонов, которые не отображаются в браузере.",
-        "Для рендеринга на стороне сервера",
-        "Для функций JavaScript"
+        "CSS shablonlari uchun",
+        "Brauzerda ko'rsatilmaydigan qayta ishlatiladigan HTML shablonlari uchun",
+        "Server-side rendering uchun",
+        "JavaScript funksiyalari uchun"
       ],
       "options_en": [
-        "For CSS templates",
+        "CSS shablonlari uchun",
         "Brauzerda ko'rsatilmaydigan qayta ishlatiladigan HTML shablonlari uchun",
-        "For server-side rendering",
-        "For JavaScript functions"
+        "Server-side rendering uchun",
+        "JavaScript funksiyalari uchun"
       ]
     },
     {
@@ -1105,19 +1105,19 @@
         "Virtual DOM ning bir turi"
       ],
       "answer": 1,
-      "question_ru": "Что такое Shadow DOM в технологии веб-компонентов?",
-      "question_en": "What is Shadow DOM in Web Components technology?",
+      "question_ru": "Web Components texnologiyasida Shadow DOM nima?",
+      "question_en": "Web Components texnologiyasida Shadow DOM nima?",
       "options_ru": [
-        "Скрытый элемент страницы",
-        "Инкапсулированное (изолированное) дерево DOM — внешний CSS и JS не затрагиваются.",
-        "Серверный DOM",
-        "Тип виртуального DOM"
+        "Yashirin sahifa elementi",
+        "Encapsulated (izolyatsiyalangan) DOM daraxti — tashqi CSS va JS ta'sir qilmaydi",
+        "Server-side DOM",
+        "Virtual DOM ning bir turi"
       ],
       "options_en": [
         "Yashirin sahifa elementi",
-        "Encapsulated (isolated) DOM tree — external CSS and JS are not affected",
+        "Encapsulated (izolyatsiyalangan) DOM daraxti — tashqi CSS va JS ta'sir qilmaydi",
         "Server-side DOM",
-        "A type of virtual DOM"
+        "Virtual DOM ning bir turi"
       ]
     },
     {
@@ -1131,18 +1131,18 @@
         "preload faqat JavaScript uchun"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между <link rel='preload'> и <link rel='prefetch'>?",
-      "question_en": "What is the difference between <link rel='preload'> and <link rel='prefetch'>?",
+      "question_ru": "<link rel='preload'> va <link rel='prefetch'> farqi nima?",
+      "question_en": "<link rel='preload'> va <link rel='prefetch'> farqi nima?",
       "options_ru": [
-        "Нет никакой разницы",
-        "preload предварительно загружает критические ресурсы для текущей страницы; предварительная загрузка следующей страницы",
-        "предварительная выборка происходит быстрее",
-        "предварительная загрузка предназначена только для JavaScript"
+        "Farq yo'q",
+        "preload joriy sahifa uchun kritik resurslarni oldindan yuklaydi; prefetch keyingi sahifa uchun",
+        "prefetch tezroq ishlaydi",
+        "preload faqat JavaScript uchun"
       ],
       "options_en": [
-        "There is no difference",
-        "preload preloads critical resources for the current page; prefetch for next page",
-        "prefetch is faster",
+        "Farq yo'q",
+        "preload joriy sahifa uchun kritik resurslarni oldindan yuklaydi; prefetch keyingi sahifa uchun",
+        "prefetch tezroq ishlaydi",
         "preload faqat JavaScript uchun"
       ]
     },
@@ -1157,19 +1157,19 @@
         "Canvas ni tozalash uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему requestAnimationFrame используется в HTML5 Canvas API?",
-      "question_en": "Why is requestAnimationFrame used in HTML5 Canvas API?",
+      "question_ru": "HTML5 Canvas API da requestAnimationFrame nima uchun ishlatiladi?",
+      "question_en": "HTML5 Canvas API da requestAnimationFrame nima uchun ishlatiladi?",
       "options_ru": [
-        "Изменение размера холста",
-        "Для анимации, синхронизированной с частотой обновления браузера",
-        "Чтобы сохранить изображение",
-        "Чтобы очистить холст"
+        "Canvas o'lchamini o'zgartirish uchun",
+        "Brauzer refresh rate bilan sinxronlashtirilgan animatsiyalar uchun",
+        "Rasmni saqlash uchun",
+        "Canvas ni tozalash uchun"
       ],
       "options_en": [
-        "To resize the Canvas",
-        "For animations synchronized with the browser refresh rate",
-        "To save the image",
-        "To clear the canvas"
+        "Canvas o'lchamini o'zgartirish uchun",
+        "Brauzer refresh rate bilan sinxronlashtirilgan animatsiyalar uchun",
+        "Rasmni saqlash uchun",
+        "Canvas ni tozalash uchun"
       ]
     },
     {
@@ -1183,19 +1183,19 @@
         "Brauzer uyg'unligini ta'minlash uchun"
       ],
       "answer": 1,
-      "question_ru": "Для чего используются метатеги Open Graph?",
+      "question_ru": "Open Graph meta teglari nima uchun ishlatiladi?",
       "question_en": "Open Graph meta teglari nima uchun ishlatiladi?",
       "options_ru": [
-        "Для Google SEO",
-        "Для отображения информации о странице на платформах социальных сетей",
-        "Настройка стиля страницы",
-        "Чтобы обеспечить совместимость браузера"
+        "Google SEO uchun",
+        "Social media platformalarida sahifa ma'lumotlarini ko'rsatish uchun",
+        "Sahifa stilini sozlash uchun",
+        "Brauzer uyg'unligini ta'minlash uchun"
       ],
       "options_en": [
-        "For Google SEO",
-        "To display page information on social media platforms",
-        "To customize the page style",
-        "To ensure browser compatibility"
+        "Google SEO uchun",
+        "Social media platformalarida sahifa ma'lumotlarini ko'rsatish uchun",
+        "Sahifa stilini sozlash uchun",
+        "Brauzer uyg'unligini ta'minlash uchun"
       ]
     },
     {
@@ -1209,19 +1209,19 @@
         "Form ma'lumotlarini saqlaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает History.pushState() в HTML5?",
-      "question_en": "What does history.pushState() do in HTML5?",
+      "question_ru": "HTML5 da history.pushState() nima qiladi?",
+      "question_en": "HTML5 da history.pushState() nima qiladi?",
       "options_ru": [
-        "Перезагружает страницу",
-        "Изменяет URL-адрес и добавляет запись в историю без перезагрузки страницы.",
-        "Очищает историю браузера",
-        "Сохраняет данные формы"
+        "Sahifani qayta yuklaydi",
+        "Sahifani qayta yuklamasdan URL ni o'zgartiradi va tarix yozuvini qo'shadi",
+        "Brauzer tarixini o'chiradi",
+        "Form ma'lumotlarini saqlaydi"
       ],
       "options_en": [
-        "Reloads the page",
-        "Changes the URL and adds a history entry without reloading the page",
-        "Clears browser history",
-        "Stores form data"
+        "Sahifani qayta yuklaydi",
+        "Sahifani qayta yuklamasdan URL ni o'zgartiradi va tarix yozuvini qo'shadi",
+        "Brauzer tarixini o'chiradi",
+        "Form ma'lumotlarini saqlaydi"
       ]
     },
     {
@@ -1235,19 +1235,19 @@
         "Rasm hajmini o'zgartiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает атрибут <img loading='lazy'>?",
-      "question_en": "What does the <img loading='lazy'> attribute do?",
+      "question_ru": "<img loading='lazy'> atributi nima qiladi?",
+      "question_en": "<img loading='lazy'> atributi nima qiladi?",
       "options_ru": [
-        "Загружает изображение быстрее",
-        "Задерживает загрузку изображения до входа в область просмотра.",
-        "Снижает качество изображения",
-        "Изменяет размер изображения"
+        "Rasmni tezroq yuklaydi",
+        "Viewport ga kirgunga qadar rasmni yuklashni kechiktiradi",
+        "Rasmni sifatini kamaytiradi",
+        "Rasm hajmini o'zgartiradi"
       ],
       "options_en": [
-        "Loads the image faster",
-        "Delays loading the image until entering the viewport",
-        "Reduces image quality",
-        "Changes the image size"
+        "Rasmni tezroq yuklaydi",
+        "Viewport ga kirgunga qadar rasmni yuklashni kechiktiradi",
+        "Rasmni sifatini kamaytiradi",
+        "Rasm hajmini o'zgartiradi"
       ]
     },
     {
@@ -1261,19 +1261,19 @@
         "JavaScript ob'ektlari uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему микроданные и Schema.org используются вместе?",
+      "question_ru": "Microdata va schema.org nima uchun birgalikda ishlatiladi?",
       "question_en": "Microdata va schema.org nima uchun birgalikda ishlatiladi?",
       "options_ru": [
-        "Чтобы ускорить страницу",
-        "Для предоставления структурированной информации (Rich Snippets) для поисковых систем.",
-        "Создание классов CSS",
-        "Для объектов JavaScript"
+        "Sahifani tezlashtirish uchun",
+        "Qidiruv tizimlari uchun strukturali ma'lumot ta'minlash (Rich Snippets) uchun",
+        "CSS klasslari yaratish uchun",
+        "JavaScript ob'ektlari uchun"
       ],
       "options_en": [
-        "To speed up the page",
-        "For providing structured information (Rich Snippets) for search engines",
-        "To create CSS classes",
-        "For JavaScript objects"
+        "Sahifani tezlashtirish uchun",
+        "Qidiruv tizimlari uchun strukturali ma'lumot ta'minlash (Rich Snippets) uchun",
+        "CSS klasslari yaratish uchun",
+        "JavaScript ob'ektlari uchun"
       ]
     },
     {
@@ -1287,18 +1287,18 @@
         "Klaviatura hodisalarini kuzatish"
       ],
       "answer": 1,
-      "question_ru": "Почему API Intersection Observer используется в HTML?",
-      "question_en": "Why is the Intersection Observer API used in HTML?",
+      "question_ru": "HTML da Intersection Observer API nima uchun ishlatiladi?",
+      "question_en": "HTML da Intersection Observer API nima uchun ishlatiladi?",
       "options_ru": [
-        "Отслеживание размера страницы",
-        "Для контроля пересечения элемента с областью просмотра (внешний вид) — ленивая загрузка, анимация прокрутки",
-        "Отслеживайте движения мыши",
-        "Мониторинг событий клавиатуры"
+        "Sahifa o'lchamini kuzatish",
+        "Elementning viewport bilan kesishishini (ko'rinishini) kuzatish uchun — lazy loading, scroll animatsiyalari",
+        "Mouse harakatini kuzatish",
+        "Klaviatura hodisalarini kuzatish"
       ],
       "options_en": [
-        "Page size tracking",
-        "To monitor the intersection of the element with the viewport (appearance) — lazy loading, scroll animations",
-        "Track mouse movements",
+        "Sahifa o'lchamini kuzatish",
+        "Elementning viewport bilan kesishishini (ko'rinishini) kuzatish uchun — lazy loading, scroll animatsiyalari",
+        "Mouse harakatini kuzatish",
         "Klaviatura hodisalarini kuzatish"
       ]
     }

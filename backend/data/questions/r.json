@@ -24,7 +24,7 @@
       "options_en": [
         "Web programming",
         "Statistical computing, data analysis and graphics",
-        "Mobile ilovalar",
+        "Mobile applications",
         "Server programming"
       ]
     },
@@ -144,11 +144,11 @@
       ],
       "answer": 1,
       "question_ru": "Что такое data.frame в R?",
-      "question_en": "R da data.frame nima?",
+      "question_en": "What is data.frame in R?",
       "options_ru": [
         "Кадр данных",
         "Таблица на основе столбцов — каждый столбец должен быть одного типа.",
-        "Таблица",
+        "Стол",
         "Матрица"
       ],
       "options_en": [
@@ -227,7 +227,7 @@
         "Длина строки",
         "Возвращает количество элементов в векторе или списке",
         "Размер объекта",
-        "НОЛЬ"
+        "НУЛЕВОЙ"
       ],
       "options_en": [
         "The length of the string",
@@ -276,7 +276,7 @@
       "question_ru": "Что такое NA в R?",
       "question_en": "What is NA in R?",
       "options_ru": [
-        "Не применимо",
+        "Непригодный",
         "Недоступно — отсутствующее или недоступное значение.",
         "НУЛЕВОЙ тип",
         "Тип NaN"
@@ -308,7 +308,7 @@
         "Потому что"
       ],
       "options_en": [
-        "Nol qiymat",
+        "Zero value",
         "An empty object or no value",
         "Type NA",
         "Because"
@@ -354,10 +354,10 @@
       "question_ru": "Что делает sqrt() в R?",
       "question_en": "What does sqrt() do in R?",
       "options_ru": [
-        "Площадь",
+        "Квадрат",
         "Вычисляет квадратный корень",
         "Логарифм",
-        "Мощность"
+        "Власть"
       ],
       "options_en": [
         "Square",
@@ -378,7 +378,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему библиотека() в R?",
-      "question_en": "R da library() nima uchun?",
+      "question_en": "Why library() in R?",
       "options_ru": [
         "Библиотека",
         "Импортировать пакет — библиотека (ggplot2)",
@@ -429,8 +429,8 @@
         "SQL R"
       ],
       "answer": 1,
-      "question_ru": "R da dplyr nima uchun?",
-      "question_en": "R da dplyr nima uchun?",
+      "question_ru": "Почему dplyr в R?",
+      "question_en": "Why dplyr in R?",
       "options_ru": [
         "Проигрыватель данных",
         "Манипулирование данными — фильтрация, выбор, изменение, группировка, суммирование",
@@ -536,13 +536,13 @@
       "question_ru": "Что такое коэффициент R?",
       "question_en": "What is factor in R?",
       "options_ru": [
-        "Увеличение",
+        "Увеличивать",
         "Категориальная переменная — с определенными уровнями для статистического анализа.",
         "Тип категории",
         "Перечисление"
       ],
       "options_en": [
-        "Ko'paytirish",
+        "Increase",
         "Categorical variable — with defined levels, for statistical analysis",
         "Category type",
         "Enum"
@@ -588,14 +588,14 @@
       "question_ru": "Что такое окружающая среда в R?",
       "question_en": "What is environment in R?",
       "options_ru": [
-        "Окружающая среда",
-        "Контейнер для хранения переменных и значений — для лексической области видимости.",
-        "Область применения",
+        "Среда",
+        "Контейнер для хранения переменных и значений — для лексической области видимости",
+        "Объем",
         "Пространство имен"
       ],
       "options_en": [
-        "Muhit",
-        "A container for storing variables and values ​​— for lexical scoping",
+        "Environment",
+        "A container for storing variables and values — for lexical scoping",
         "Scope",
         "Namespace"
       ]
@@ -692,9 +692,9 @@
       "question_ru": "Что делает уменьшает() в R?",
       "question_en": "What does Reduce() do in R?",
       "options_ru": [
-        "Уменьшить",
+        "Уменьшать",
         "Возвращает одно значение, применяя функцию к списку с аккумулятором.",
-        "Сложить",
+        "Складывать",
         "Совокупный"
       ],
       "options_en": [
@@ -719,7 +719,7 @@
       "question_en": "How does environment scoping work in R?",
       "options_ru": [
         "Глобальная область действия",
-        "Лексическая область видимости — поиск в среде, в которой объявлена функция (не динамическая).",
+        "Лексическая область видимости — поиск в среде, в которой объявлена ​​функция (не динамическая).",
         "Динамическая область видимости",
         "Локальная область действия"
       ],
@@ -751,7 +751,7 @@
       ],
       "options_en": [
         "R C++ package",
-        "C++ kod ni R dan chaqirish — performance uchun",
+        "Calling C++ code from R is for performance",
         "C++ wrapper",
         "Native code"
       ]
@@ -777,7 +777,7 @@
       ],
       "options_en": [
         "HTML table",
-        "Katta ma'lumotlar uchun tez, xotirani tejovchi data.frame kengaytmasi",
+        "A fast, memory-efficient data.frame extension for big data",
         "Fast table",
         "Data frame 2"
       ]
@@ -819,7 +819,7 @@
         "Filter index"
       ],
       "answer": 1,
-      "question_ru": "R da which() nima qiladi?",
+      "question_ru": "Что делает that() в R?",
       "question_en": "What does which() do in R?",
       "options_ru": [
         "Какой элемент",
@@ -850,7 +850,7 @@
       "options_ru": [
         "Консолидация",
         "Объединение двух data.frames по общему столбцу — SQL JOIN",
-        "Присоединяйтесь",
+        "Присоединиться",
         "Объединить"
       ],
       "options_en": [
@@ -1030,14 +1030,14 @@
       "question_ru": "Что такое обещание и ленивая оценка в R?",
       "question_en": "What is promise and lazy evaluation in R?",
       "options_ru": [
-        "Обещание",
+        "Обещать",
         "В R аргумент оценивается при первом использовании — как thunk",
         "Ленивая загрузка",
         "Отложенная оценка"
       ],
       "options_en": [
         "Promise",
-        "R da argument birinchi foydalanishda baholanadi — thunk kabi",
+        "In R, an argument is evaluated on first use — like a thunk",
         "Lazy load",
         "Deferred eval"
       ]
@@ -1059,7 +1059,7 @@
         "Активная привязка",
         "При обращении к переменной вызывается функция — makeActiveBinding",
         "Динамическая переменная",
-        "Недвижимость"
+        "Свойство"
       ],
       "options_en": [
         "Active binding",
@@ -1080,7 +1080,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое биокондуктор в R?",
-      "question_en": "R da Bioconductor nima?",
+      "question_en": "What is Bioconductor in R?",
       "options_ru": [
         "Биопроводник",
         "Репозиторий пакетов для биоинформатики — анализа геномных данных",
@@ -1183,11 +1183,11 @@
         "Sys CPU"
       ],
       "answer": 1,
-      "question_ru": "R da Sys.time() va proc.time() farqi?",
+      "question_ru": "Разница между Sys.time() и proc.time() в R?",
       "question_en": "Difference between Sys.time() and proc.time() in R?",
       "options_ru": [
         "Нет никакой разницы",
-        "Sys.time() — wall clock time; proc.time() — CPU time (user, system, elapsed)",
+        "Sys.time() — время настенных часов; proc.time() — время процессора (пользовательское, системное, прошедшее)",
         "Процесс происходит быстрее",
         "Системный процессор"
       ],
@@ -1244,7 +1244,7 @@
         "Параллельная оценка"
       ],
       "options_en": [
-        "Kelajak",
+        "The future",
         "Asynchronous and parallel evaluation — future(), value(), %<-% assignment",
         "Async R",
         "Parallel eval"
@@ -1293,10 +1293,10 @@
         "Тестирование",
         "Фреймворк модульного тестирования — ожидаемый_равный, ожидаемый_ошибка, описание/ит",
         "Тестовый пакет",
-        "R test"
+        "R-тест"
       ],
       "options_en": [
-        "Test qilish",
+        "Testing",
         "Unit testing framework — expect_equal, expect_error, describe/it",
         "Testing package",
         "R test"

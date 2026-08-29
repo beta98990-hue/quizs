@@ -13,17 +13,17 @@
         "Database"
       ],
       "answer": 1,
-      "question_ru": "Что меньше?",
+      "question_ru": "Less nima?",
       "question_en": "Less nima?",
       "options_ru": [
         "Фреймворк JavaScript",
-        "Препроцессор CSS — работает на JavaScript.",
+        "CSS preprocessor — JavaScript da ishlaydi",
         "Серверный инструмент",
         "База данных"
       ],
       "options_en": [
         "JavaScript framework",
-        "CSS preprocessor — runs on JavaScript",
+        "CSS preprocessor — JavaScript da ishlaydi",
         "Backend tool",
         "Database"
       ]
@@ -39,13 +39,13 @@
         "var color: red;"
       ],
       "answer": 2,
-      "question_ru": "Как объявить переменную в Less?",
-      "question_en": "How to declare a variable in Less?",
+      "question_ru": "Less da o'zgaruvchi qanday e'lon qilinadi?",
+      "question_en": "Less da o'zgaruvchi qanday e'lon qilinadi?",
       "options_ru": [
-        "$цвет: красный;",
-        "--цвет: красный;",
-        "@color: красный;",
-        "цвет вар: красный;"
+        "$color: red;",
+        "--color: red;",
+        "@color: red;",
+        "var color: red;"
       ],
       "options_en": [
         "$color: red;",
@@ -65,13 +65,13 @@
         ".less"
       ],
       "answer": 3,
-      "question_ru": "Какое расширение у файлов Less?",
-      "question_en": "What is the extension of Less files?",
+      "question_ru": "Less fayllarining kengaytmasi nima?",
+      "question_en": "Less fayllarining kengaytmasi nima?",
       "options_ru": [
         ".css",
-        ".дерзость",
+        ".sass",
         ".scss",
-        ".меньше"
+        ".less"
       ],
       "options_en": [
         ".css",
@@ -91,13 +91,13 @@
         "mixin() { }"
       ],
       "answer": 0,
-      "question_ru": "Как опубликовать миксин в Less?",
-      "question_en": "How to publish mixin in Less?",
+      "question_ru": "Less da mixin qanday e'lon qilinadi?",
+      "question_en": "Less da mixin qanday e'lon qilinadi?",
       "options_ru": [
         ".mixin() { }",
         "@mixin() { }",
-        "#миксин() { }",
-        "миксин() { }"
+        "#mixin() { }",
+        "mixin() { }"
       ],
       "options_en": [
         ".mixin() { }",
@@ -117,13 +117,13 @@
         ".mixin();"
       ],
       "answer": 3,
-      "question_ru": "Как произносится Mixin на языке Less?",
-      "question_en": "How to pronounce mixin in Less?",
+      "question_ru": "Less da mixin qanday chaqiriladi?",
+      "question_en": "Less da mixin qanday chaqiriladi?",
       "options_ru": [
         "@include .mixin()",
         "@apply .mixin()",
         "@use .mixin()",
-        ".миксин();"
+        ".mixin();"
       ],
       "options_en": [
         "@include .mixin()",
@@ -143,19 +143,19 @@
         "Directive bilan"
       ],
       "answer": 1,
-      "question_ru": "Как работает вложение в Less?",
-      "question_en": "How does nesting work in Less?",
+      "question_ru": "Less da nesting qanday ishlaydi?",
+      "question_en": "Less da nesting qanday ishlaydi?",
       "options_ru": [
-        "Правило @nest",
-        "Он вложен внутри { }, как CSS.",
-        "Отдельный файл",
-        "с директивой"
+        "@nest qoidasi bilan",
+        "CSS kabi { } ichida ichma-ich yoziladi",
+        "Alohida fayl",
+        "Directive bilan"
       ],
       "options_en": [
-        "@nest rule",
-        "It is nested inside { } like CSS",
-        "A separate file",
-        "with Directive"
+        "@nest qoidasi bilan",
+        "CSS kabi { } ichida ichma-ich yoziladi",
+        "Alohida fayl",
+        "Directive bilan"
       ]
     },
     {
@@ -169,13 +169,13 @@
         "ID selector"
       ],
       "answer": 1,
-      "question_ru": "Что означает & в меньшем?",
-      "question_en": "What does & mean in less?",
+      "question_ru": "Less da & nima anglatadi?",
+      "question_en": "Less da & nima anglatadi?",
       "options_ru": [
-        "И оператор",
-        "Родительский селектор — &:hover",
-        "Подстановочный знак",
-        "Селектор идентификатора"
+        "Va operatori",
+        "Ota selektor — &:hover",
+        "Wildcard",
+        "ID selector"
       ],
       "options_en": [
         "Va operatori",
@@ -195,19 +195,19 @@
         "Faqat qo'shish"
       ],
       "answer": 1,
-      "question_ru": "Возможны ли математические операции в Less?",
-      "question_en": "Are mathematical operations possible in Less?",
+      "question_ru": "Less da matematik operatsiyalar mumkinmi?",
+      "question_en": "Less da matematik operatsiyalar mumkinmi?",
       "options_ru": [
         "Yo'q",
-        "Да, с операторами +, -, *, /",
-        "Только CSS Calc()",
-        "Просто добавьте"
+        "Ha, +, -, *, / operatorlari bilan",
+        "Faqat CSS calc()",
+        "Faqat qo'shish"
       ],
       "options_en": [
-        "No",
-        "Yes, with +, -, *, / operators",
-        "CSS only calc()",
-        "Just add"
+        "Yo'q",
+        "Ha, +, -, *, / operatorlari bilan",
+        "Faqat CSS calc()",
+        "Faqat qo'shish"
       ]
     },
     {
@@ -221,18 +221,18 @@
         "Module import"
       ],
       "answer": 1,
-      "question_ru": "Как @import работает в Less?",
-      "question_en": "How does @import work in Less?",
+      "question_ru": "Less da @import qanday ishlaydi?",
+      "question_en": "Less da @import qanday ishlaydi?",
       "options_ru": [
-        "Импортировать как CSS",
-        "Импортирует другие файлы Less — не записывайте расширение .less.",
-        "Импортировать только CSS",
+        "CSS kabi import",
+        "Boshqa Less fayllarni import qiladi — .less kengaytmani yozmaslik mumkin",
+        "Faqat CSS import",
         "Module import"
       ],
       "options_en": [
-        "Import as CSS",
-        "Imports other Less files — do not write the .less extension",
-        "Import CSS only",
+        "CSS kabi import",
+        "Boshqa Less fayllarni import qiladi — .less kengaytmani yozmaslik mumkin",
+        "Faqat CSS import",
         "Module import"
       ]
     },
@@ -247,19 +247,19 @@
         "Rangni o'zgartirmaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция darken() в Less?",
-      "question_en": "What does the darken() function do in Less?",
+      "question_ru": "Less da darken() funksiyasi nima qiladi?",
+      "question_en": "Less da darken() funksiyasi nima qiladi?",
       "options_ru": [
-        "Осветляет цвет",
-        "Затемняет цвет",
-        "Снижает прозрачность",
-        "Не меняет цвет"
+        "Rangni yoritadi",
+        "Rangni qoraytiradi",
+        "Shaffoflikni kamaytiradi",
+        "Rangni o'zgartirmaydi"
       ],
       "options_en": [
-        "Brightens the color",
-        "Darkens the color",
-        "Reduces transparency",
-        "Does not change color"
+        "Rangni yoritadi",
+        "Rangni qoraytiradi",
+        "Shaffoflikni kamaytiradi",
+        "Rangni o'zgartirmaydi"
       ]
     },
     {
@@ -273,19 +273,19 @@
         "Shaffoflikni oshiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция Lighten() в Less?",
-      "question_en": "What does the lighten() function do in Less?",
+      "question_ru": "Less da lighten() funksiyasi nima qiladi?",
+      "question_en": "Less da lighten() funksiyasi nima qiladi?",
       "options_ru": [
-        "Затемняет цвет",
-        "Осветляет цвет",
-        "Цветовые сочетания",
-        "Повышает прозрачность"
+        "Rangni qoraytiradi",
+        "Rangni yoritadi",
+        "Rang aralashtiradi",
+        "Shaffoflikni oshiradi"
       ],
       "options_en": [
-        "Darkens the color",
-        "Brightens the color",
-        "Color mixes",
-        "Increases transparency"
+        "Rangni qoraytiradi",
+        "Rangni yoritadi",
+        "Rang aralashtiradi",
+        "Shaffoflikni oshiradi"
       ]
     },
     {
@@ -299,17 +299,17 @@
         "Event guard"
       ],
       "answer": 1,
-      "question_ru": "Почему охранники When() в Less?",
-      "question_en": "Why the when() guards in Less?",
+      "question_ru": "Less da when() guards nima uchun?",
+      "question_en": "Less da when() guards nima uchun?",
       "options_ru": [
-        "CSS, когда",
-        "Условное применение миксина",
-        "Таймер",
-        "Охранник событий"
+        "CSS when",
+        "Shartga asosida mixin qo'llash",
+        "Timer",
+        "Event guard"
       ],
       "options_en": [
         "CSS when",
-        "Conditional application of mixin",
+        "Shartga asosida mixin qo'llash",
         "Timer",
         "Event guard"
       ]
@@ -325,17 +325,17 @@
         "Module namespace"
       ],
       "answer": 1,
-      "question_ru": "Что такое миксин пространства имен в Less?",
-      "question_en": "What is the namespace mixin in Less?",
+      "question_ru": "Less da namespace mixin qanday?",
+      "question_en": "Less da namespace mixin qanday?",
       "options_ru": [
-        "пространство имен CSS",
-        "Группируйте миксины через #namespace > .mixin().",
-        "@ пространство имен",
-        "Пространство имен модуля"
+        "CSS namespace",
+        "#namespace > .mixin() orqali mixin larni guruhlash",
+        "@ namespace",
+        "Module namespace"
       ],
       "options_en": [
         "CSS namespace",
-        "Group mixins via #namespace > .mixin()",
+        "#namespace > .mixin() orqali mixin larni guruhlash",
         "@ namespace",
         "Module namespace"
       ]
@@ -351,19 +351,19 @@
         "Ixtiyoriy"
       ],
       "answer": 1,
-      "question_ru": "Компилируется ли //комментарий в Less?",
+      "question_ru": "Less da // comment kompilyatsiyaga kiradimi?",
       "question_en": "Less da // comment kompilyatsiyaga kiradimi?",
       "options_ru": [
-        "Да",
-        "Нет, включено только /* */",
-        "Всегда",
+        "Ha",
+        "Yo'q, faqat /* */ kiradi",
+        "Har doim",
         "Ixtiyoriy"
       ],
       "options_en": [
-        "Yes",
-        "No, only /* */ is included",
-        "Always",
-        "Optional"
+        "Ha",
+        "Yo'q, faqat /* */ kiradi",
+        "Har doim",
+        "Ixtiyoriy"
       ]
     },
     {
@@ -377,19 +377,19 @@
         "Gradient yaratadi"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция mix() в Less?",
-      "question_en": "What does the mix() function do in Less?",
+      "question_ru": "Less da mix() funksiyasi nima qiladi?",
+      "question_en": "Less da mix() funksiyasi nima qiladi?",
       "options_ru": [
-        "Определяет цвет",
+        "Rangni aniqlaydi",
         "Ikkita rangni aralashtiradi",
-        "Цвет меняется",
-        "Создает градиент"
+        "Rang o'zgartiradi",
+        "Gradient yaratadi"
       ],
       "options_en": [
-        "Determines the color",
-        "Mixes two colors",
-        "The color changes",
-        "Creates a gradient"
+        "Rangni aniqlaydi",
+        "Ikkita rangni aralashtiradi",
+        "Rang o'zgartiradi",
+        "Gradient yaratadi"
       ]
     },
     {
@@ -403,18 +403,18 @@
         "Overloaded mixin"
       ],
       "answer": 1,
-      "question_ru": "Что такое миксин параметров в Less?",
-      "question_en": "What is a parameter mixin in Less?",
+      "question_ru": "Less da parametrli mixin nima?",
+      "question_en": "Less da parametrli mixin nima?",
       "options_ru": [
-        "Миксин по умолчанию",
-        "Миксин, принимающий аргументы, — .mixin(@color: red, @size: 10px).",
-        "Статический миксер",
-        "Перегруженный миксин"
+        "Default mixin",
+        "Argumentlar qabul qiladigan mixin — .mixin(@color: red, @size: 10px)",
+        "Static mixin",
+        "Overloaded mixin"
       ],
       "options_en": [
         "Default mixin",
-        "A mixin that accepts arguments is .mixin(@color: red, @size: 10px)",
-        "Static mixer",
+        "Argumentlar qabul qiladigan mixin — .mixin(@color: red, @size: 10px)",
+        "Static mixin",
         "Overloaded mixin"
       ]
     },
@@ -429,17 +429,17 @@
         "List loop"
       ],
       "answer": 1,
-      "question_ru": "Что такое циклeach() в Less?",
-      "question_en": "What is the each() loop in Less?",
+      "question_ru": "Less da each() loop qanday?",
+      "question_en": "Less da each() loop qanday?",
       "options_ru": [
-        "CSS каждый",
-        "each(@list, { .() { ... } }) — Перебор списка",
-        "Для каждого",
-        "Цикл списка"
+        "CSS each",
+        "each(@list, { .() { ... } }) — List bo'yicha iteratsiya",
+        "For each",
+        "List loop"
       ],
       "options_en": [
         "CSS each",
-        "each(@list, { .() { ... } }) — Iterate over List",
+        "each(@list, { .() { ... } }) — List bo'yicha iteratsiya",
         "For each",
         "List loop"
       ]
@@ -455,19 +455,19 @@
         "Stil qo'shish"
       ],
       "answer": 1,
-      "question_ru": "Что делает !important в Less?",
-      "question_en": "What does !important do in Less?",
+      "question_ru": "Less da !important nima qiladi?",
+      "question_en": "Less da !important nima qiladi?",
       "options_ru": [
-        "Отметить как самое важное",
-        "CSS повышает специфичность, добавляя !important к свойству.",
-        "Переопределить",
-        "Добавить стиль"
+        "Eng muhim deb belgilash",
+        "CSS xususiyatga !important qo'shib, specificity ni oshiradi",
+        "Override",
+        "Stil qo'shish"
       ],
       "options_en": [
-        "Mark as most important",
-        "CSS increases specificity by adding !important to the property",
+        "Eng muhim deb belgilash",
+        "CSS xususiyatga !important qo'shib, specificity ni oshiradi",
         "Override",
-        "Add style"
+        "Stil qo'shish"
       ]
     },
     {
@@ -481,17 +481,17 @@
         "CSS block"
       ],
       "answer": 1,
-      "question_ru": "Что такое отдельный набор правил в Less?",
-      "question_en": "What is a detached ruleset in Less?",
+      "question_ru": "Less da detached ruleset nima?",
+      "question_en": "Less da detached ruleset nima?",
       "options_ru": [
-        "Отдельный CSS",
-        "Сохранение блока CSS в переменной, которую можно использовать позже.",
-        "Отсоединить миксин",
-        "CSS-блок"
+        "Alohida CSS",
+        "Keyinroq qo'llanishi mumkin bo'lgan CSS blokini o'zgaruvchida saqlash",
+        "Detach mixin",
+        "CSS block"
       ],
       "options_en": [
-        "Separate CSS",
-        "Storing a block of CSS in a variable that can be used later",
+        "Alohida CSS",
+        "Keyinroq qo'llanishi mumkin bo'lgan CSS blokini o'zgaruvchida saqlash",
         "Detach mixin",
         "CSS block"
       ]
@@ -507,17 +507,17 @@
         "Mixin filter"
       ],
       "answer": 1,
-      "question_ru": "Меньше охранников с логическими выражениями?",
+      "question_ru": "Less da guards with boolean expressions?",
       "question_en": "Less da guards with boolean expressions?",
       "options_ru": [
-        "Булева операция",
-        "Условное тестирование с логическими операторами, например, когда (@a = true) и (@b > 0).",
-        "CSS логическое значение",
-        "Миксин-фильтр"
+        "Boolean operatsiya",
+        "when (@a = true) and (@b > 0) kabi mantiqiy operatorlar bilan shart tekshirish",
+        "CSS boolean",
+        "Mixin filter"
       ],
       "options_en": [
-        "Boolean operation",
-        "Conditional testing with logical operators such as when (@a = true) and (@b > 0).",
+        "Boolean operatsiya",
+        "when (@a = true) and (@b > 0) kabi mantiqiy operatorlar bilan shart tekshirish",
         "CSS boolean",
         "Mixin filter"
       ]
@@ -533,17 +533,17 @@
         "Extension"
       ],
       "answer": 1,
-      "question_ru": "Почему @plugin в Less?",
-      "question_en": "Why @plugin in Less?",
+      "question_ru": "Less da @plugin nima uchun?",
+      "question_en": "Less da @plugin nima uchun?",
       "options_ru": [
-        "Создать плагин",
-        "Добавьте сторонние функции JavaScript в Less",
-        "Плагин NPM",
-        "Расширение"
+        "Plugin yaratish",
+        "Uchinchi tomon JavaScript funksiyalarini Less ga qo'shish",
+        "NPM plugin",
+        "Extension"
       ],
       "options_en": [
-        "Create a plugin",
-        "Add third-party JavaScript functionality to Less",
+        "Plugin yaratish",
+        "Uchinchi tomon JavaScript funksiyalarini Less ga qo'shish",
         "NPM plugin",
         "Extension"
       ]
@@ -559,17 +559,17 @@
         "Type reference"
       ],
       "answer": 1,
-      "question_ru": "Что делает импорт ссылок (@import(reference)) в Less?",
-      "question_en": "What does reference import (@import(reference)) do in Less?",
+      "question_ru": "Less da reference import (@import (reference)) nima qiladi?",
+      "question_en": "Less da reference import (@import (reference)) nima qiladi?",
       "options_ru": [
-        "Справочник CSS",
-        "Импорт файла и использование его только для @extend не выводит CSS.",
-        "Импорт только для чтения",
-        "Тип ссылки"
+        "CSS reference",
+        "Faylni import qilib, faqat @extend uchun ishlatish — CSS chiqarmaydi",
+        "Readonly import",
+        "Type reference"
       ],
       "options_en": [
         "CSS reference",
-        "Importing the file and using it only for @extend does not output the CSS",
+        "Faylni import qilib, faqat @extend uchun ishlatish — CSS chiqarmaydi",
         "Readonly import",
         "Type reference"
       ]
@@ -585,19 +585,19 @@
         "Call funksiya"
       ],
       "answer": 1,
-      "question_ru": "Почему @detach и @call в Less?",
-      "question_en": "Why @detach and @call in Less?",
+      "question_ru": "Less da @detach va @call nima uchun?",
+      "question_en": "Less da @detach va @call nima uchun?",
       "options_ru": [
-        "Разделение кода",
-        "Сохранение набора правил в переменную и последующий вызов ее",
-        "Функция отсоединения",
-        "Функция вызова"
+        "Kod ajratish",
+        "Ruleset ni o'zgaruvchiga saqlash va keyin chaqirish",
+        "Detach funksiya",
+        "Call funksiya"
       ],
       "options_en": [
         "Kod ajratish",
-        "Saving the ruleset to a variable and then calling it",
-        "Detach function",
-        "Call function"
+        "Ruleset ni o'zgaruvchiga saqlash va keyin chaqirish",
+        "Detach funksiya",
+        "Call funksiya"
       ]
     },
     {
@@ -611,19 +611,19 @@
         "Rotate qiladi"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция spin() в Less?",
-      "question_en": "What does the spin() function do in Less?",
+      "question_ru": "Less da spin() funksiyasi nima qiladi?",
+      "question_en": "Less da spin() funksiyasi nima qiladi?",
       "options_ru": [
-        "Анимация",
-        "Преобразует значение оттенка HSL цвета в указанное значение.",
-        "Цвет меняется",
-        "Вращается"
+        "Animatsiya",
+        "Rangning HSL hue qiymatini belgilangan miqdorga aylantiradi",
+        "Rang o'zgartiradi",
+        "Rotate qiladi"
       ],
       "options_en": [
-        "Animation",
-        "Converts the HSL hue value of a color to the specified amount",
-        "The color changes",
-        "Rotates"
+        "Animatsiya",
+        "Rangning HSL hue qiymatini belgilangan miqdorga aylantiradi",
+        "Rang o'zgartiradi",
+        "Rotate qiladi"
       ]
     },
     {
@@ -637,17 +637,17 @@
         "Placeholder"
       ],
       "answer": 1,
-      "question_ru": "Что такое интерполяция @{variable} в Less?",
-      "question_en": "What is @{variable} interpolation in Less?",
+      "question_ru": "Less da @{variable} interpolation nima?",
+      "question_en": "Less da @{variable} interpolation nima?",
       "options_ru": [
-        "CSS-переменные",
-        "Установите значение переменной в селекторе, свойстве или URL-адресе.",
-        "Строковый формат",
-        "Заполнитель"
+        "CSS variable",
+        "Selektor, xususiyat yoki URL da o'zgaruvchi qiymatini qo'yish",
+        "String format",
+        "Placeholder"
       ],
       "options_en": [
-        "CSS variables",
-        "Set the value of a variable in a selector, property, or URL",
+        "CSS variable",
+        "Selektor, xususiyat yoki URL da o'zgaruvchi qiymatini qo'yish",
         "String format",
         "Placeholder"
       ]
@@ -663,19 +663,19 @@
         "fade() tezroq"
       ],
       "answer": 1,
-      "question_ru": "Разница между функциями rgba() и Fade() в Less?",
-      "question_en": "Difference between rgba() and fade() functions in Less?",
+      "question_ru": "Less da rgba() va fade() funksiyalari farqi?",
+      "question_en": "Less da rgba() va fade() funksiyalari farqi?",
       "options_ru": [
         "Нет никакой разницы",
-        "rgba() — красный, зеленый, синий и альфа; Fade() — делает цвет прозрачным с помощью альфа-канала.",
-        "Оба одинаковы",
-        "Fade() работает быстрее"
+        "rgba() — qizil, yashil, ko'k va alpha; fade() — rangni alpha bilan shaffoflashtiradi",
+        "Ikkalasi bir xil",
+        "fade() tezroq"
       ],
       "options_en": [
         "There is no difference",
-        "rgba() — red, green, blue and alpha; fade() — makes the color transparent with alpha",
-        "Both are the same",
-        "fade() is faster"
+        "rgba() — qizil, yashil, ko'k va alpha; fade() — rangni alpha bilan shaffoflashtiradi",
+        "Ikkalasi bir xil",
+        "fade() tezroq"
       ]
     },
     {
@@ -689,17 +689,17 @@
         "Value extract"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция Extract() в Less?",
-      "question_en": "What does the extract() function do in Less?",
+      "question_ru": "Less da extract() funksiyasi nima qiladi?",
+      "question_en": "Less da extract() funksiyasi nima qiladi?",
       "options_ru": [
-        "Извлечение CSS",
-        "Получает элемент из списка по индексу",
-        "Выдержка из карты",
-        "Извлечение значения"
+        "CSS extract",
+        "Listdan indeks bo'yicha element oladi",
+        "Map extract",
+        "Value extract"
       ],
       "options_en": [
         "CSS extract",
-        "Gets an element from the list by index",
+        "Listdan indeks bo'yicha element oladi",
         "Map extract",
         "Value extract"
       ]
@@ -715,19 +715,19 @@
         "Ob'ekt uzunligi"
       ],
       "answer": 1,
-      "question_ru": "Что возвращает функция length() в Less?",
+      "question_ru": "Less da length() funksiyasi nima qaytaradi?",
       "question_en": "Less da length() funksiyasi nima qaytaradi?",
       "options_ru": [
-        "Длина строки",
-        "Список возвращает количество элементов",
-        "Ключевой номер",
-        "Длина объекта"
+        "String uzunligi",
+        "List elementlar sonini qaytaradi",
+        "Kalit soni",
+        "Ob'ekt uzunligi"
       ],
       "options_en": [
-        "The length of the string",
-        "List returns the number of elements",
-        "Key number",
-        "Object length"
+        "String uzunligi",
+        "List elementlar sonini qaytaradi",
+        "Kalit soni",
+        "Ob'ekt uzunligi"
       ]
     },
     {
@@ -741,17 +741,17 @@
         "Mixin extend"
       ],
       "answer": 1,
-      "question_ru": "Что такое перегрузка миксинов в Less?",
-      "question_en": "What is mixin overloading in Less?",
+      "question_ru": "Less da mixin overloading nima?",
+      "question_en": "Less da mixin overloading nima?",
       "options_ru": [
-        "Расширение миксина",
-        "Миксины с одинаковым именем, но разным количеством/типом аргументов — отбор с охраной",
-        "Копия миксина",
-        "Миксин расширяет"
+        "Mixin kengaytirish",
+        "Bir xil nomli lekin turli argument soni/tipiga ega mixinlar — guards bilan tanlash",
+        "Mixin copy",
+        "Mixin extend"
       ],
       "options_en": [
-        "Mixin expansion",
-        "Mixins with the same name but different number/type of arguments — selection with guards",
+        "Mixin kengaytirish",
+        "Bir xil nomli lekin turli argument soni/tipiga ega mixinlar — guards bilan tanlash",
         "Mixin copy",
         "Mixin extend"
       ]
@@ -767,19 +767,19 @@
         "CSS tip"
       ],
       "answer": 1,
-      "question_ru": "Зачем вводить такие функции, как iscolor(), isnumber() в Less?",
+      "question_ru": "Less da iscolor(), isnumber() kabi type functions nima uchun?",
       "question_en": "Less da iscolor(), isnumber() kabi type functions nima uchun?",
       "options_ru": [
-        "Проверка типа",
+        "Tip checking",
         "Guard ichida qiymat tipini tekshirish — shartli mixin qo'llash",
-        "Проверка времени выполнения",
-        "CSS-тип"
+        "Runtime check",
+        "CSS tip"
       ],
       "options_en": [
-        "Type checking",
-        "Value type checking in Guard is a conditional mixin application",
+        "Tip checking",
+        "Guard ichida qiymat tipini tekshirish — shartli mixin qo'llash",
         "Runtime check",
-        "css type"
+        "CSS tip"
       ]
     },
     {
@@ -793,17 +793,17 @@
         "Single use"
       ],
       "answer": 1,
-      "question_ru": "Что делает @import(once) в Less?",
+      "question_ru": "Less da @import (once) nima qiladi?",
       "question_en": "Less da @import (once) nima qiladi?",
       "options_ru": [
-        "Один импорт",
-        "Гарантирует, что файл импортируется только один раз — позволяет избежать повторного импорта",
-        "Импорт по умолчанию",
-        "Одноразовое использование"
+        "Bitta import",
+        "Fayl faqat bir marta import qilinishini kafolatlaydi — takroriy importdan saqlaydi",
+        "Default import",
+        "Single use"
       ],
       "options_en": [
-        "One import",
-        "Ensures that a file is imported only once — avoids repeated imports",
+        "Bitta import",
+        "Fayl faqat bir marta import qilinishini kafolatlaydi — takroriy importdan saqlaydi",
         "Default import",
         "Single use"
       ]
@@ -819,19 +819,19 @@
         "HSL funksiya"
       ],
       "answer": 1,
-      "question_ru": "Каковы функции цветового канала в Less?",
-      "question_en": "What are the Color channel functions in Less?",
+      "question_ru": "Less da Color channel funksiyalari nima?",
+      "question_en": "Less da Color channel funksiyalari nima?",
       "options_ru": [
-        "Цветовой канал",
-        "hue(), saturation(), Lightness(), red(), green(), blue() — получение компонентов цвета отдельно",
-        "Тип цвета",
-        "функция HSL"
+        "Rang kanali",
+        "hue(), saturation(), lightness(), red(), green(), blue() — rang komponentlarini alohida olish",
+        "Rang turi",
+        "HSL funksiya"
       ],
       "options_en": [
         "Rang kanali",
-        "hue(), saturation(), lightness(), red(), green(), blue() — getting color components separately",
-        "Color type",
-        "HSL function"
+        "hue(), saturation(), lightness(), red(), green(), blue() — rang komponentlarini alohida olish",
+        "Rang turi",
+        "HSL funksiya"
       ]
     },
     {
@@ -845,17 +845,17 @@
         "Raw import"
       ],
       "answer": 1,
-      "question_ru": "Что делает @import(css) в Less?",
-      "question_en": "What does @import(css) do in Less?",
+      "question_ru": "Less da @import (css) nima qiladi?",
+      "question_en": "Less da @import (css) nima qiladi?",
       "options_ru": [
-        "Меньше импорта",
-        "Импортируется как файл CSS — не требуется Меньше компиляции, чистый импорт CSS.",
-        "Тип импорта",
-        "Импорт сырья"
+        "Less import",
+        "CSS fayl kabi import qiladi — Less kompilyatsiyasi olmaydi, sof CSS import",
+        "Type import",
+        "Raw import"
       ],
       "options_en": [
-        "Less imports",
-        "Imports as a CSS file — does not take Less compilation, pure CSS import",
+        "Less import",
+        "CSS fayl kabi import qiladi — Less kompilyatsiyasi olmaydi, sof CSS import",
         "Type import",
         "Raw import"
       ]
@@ -871,17 +871,17 @@
         "Function scope"
       ],
       "answer": 1,
-      "question_ru": "Как область @variables работает в Less?",
-      "question_en": "How does @variables scope work in Less?",
+      "question_ru": "Less da @variables scope qanday ishlaydi?",
+      "question_en": "Less da @variables scope qanday ishlaydi?",
       "options_ru": [
-        "Глобальная область действия",
-        "Ленивая оценка влияет на всю область видимости, даже если она объявлена внутри блока.",
-        "Область действия блока",
-        "Область действия функции"
+        "Global scope",
+        "Lazy evaluation — blok ichida e'lon qilinsa ham butun scope ga ta'sir qiladi",
+        "Block scope",
+        "Function scope"
       ],
       "options_en": [
         "Global scope",
-        "Lazy evaluation affects the entire scope even if it is declared inside a block",
+        "Lazy evaluation — blok ichida e'lon qilinsa ham butun scope ga ta'sir qiladi",
         "Block scope",
         "Function scope"
       ]
@@ -897,18 +897,18 @@
         "Gradient"
       ],
       "answer": 1,
-      "question_ru": "Что делают функции Tint() и Shade() в Less?",
-      "question_en": "What do the tint() and shade() functions do in Less?",
+      "question_ru": "Less da tint() va shade() funksiyalari nima qiladi?",
+      "question_en": "Less da tint() va shade() funksiyalari nima qiladi?",
       "options_ru": [
-        "Смешение цветов",
-        "Tint() — смешиваем с белым (осветляем); Shade() — смешать с черным (затемнить)",
-        "Цветовая фильтрация",
-        "Градиент"
+        "Rang aralashtirish",
+        "tint() — oq bilan aralashtirish (yoritish); shade() — qora bilan aralashtirish (qoraytirish)",
+        "Rang filterlash",
+        "Gradient"
       ],
       "options_en": [
-        "Color mixing",
-        "tint() — mix with white (brightening); shade() — mix with black (darken)",
-        "Color filtering",
+        "Rang aralashtirish",
+        "tint() — oq bilan aralashtirish (yoritish); shade() — qora bilan aralashtirish (qoraytirish)",
+        "Rang filterlash",
         "Gradient"
       ]
     },
@@ -923,18 +923,18 @@
         "Direct return"
       ],
       "answer": 1,
-      "question_ru": "Каково возвращаемое значение миксина в Less?",
-      "question_en": "What is the mixin return value in Less?",
+      "question_ru": "Less da mixin return value qanday?",
+      "question_en": "Less da mixin return value qanday?",
       "options_ru": [
-        "Оператор возврата",
-        "Доступ к переменной миксина можно получить через @{varname}, введя блок, вызываемый извне.",
-        "Тип функции",
-        "Прямой возврат"
+        "Return statement",
+        "Mixin o'zgaruvchisi tashqarida chaqiriladigan blokga kirib, @{varname} orqali olish mumkin",
+        "Funksiya turi",
+        "Direct return"
       ],
       "options_en": [
         "Return statement",
-        "A mixin variable can be accessed via @{varname} by entering the block called from outside",
-        "Function type",
+        "Mixin o'zgaruvchisi tashqarida chaqiriladigan blokga kirib, @{varname} orqali olish mumkin",
+        "Funksiya turi",
         "Direct return"
       ]
     },
@@ -949,17 +949,17 @@
         "Recursive call"
       ],
       "answer": 1,
-      "question_ru": "Как рекурсивный миксин работает в Less?",
-      "question_en": "How does recursive mixin work in Less?",
+      "question_ru": "Less da recursive mixin qanday ishlaydi?",
+      "question_en": "Less da recursive mixin qanday ishlaydi?",
       "options_ru": [
-        "Напомним",
-        "Guard — это рекурсивная симуляция цикла миксина, которая завершается условием",
-        "Бесконечный цикл",
-        "Рекурсивный вызов"
+        "Qayta chaqirish",
+        "Guard shart bilan to'xtatiluvchi rekursiv mixin — loop simulatsiyasi",
+        "Infinite loop",
+        "Recursive call"
       ],
       "options_en": [
-        "Recall",
-        "Guard is a recursive mixin-loop simulation that terminates with a condition",
+        "Qayta chaqirish",
+        "Guard shart bilan to'xtatiluvchi rekursiv mixin — loop simulatsiyasi",
         "Infinite loop",
         "Recursive call"
       ]
@@ -975,17 +975,17 @@
         "Contrast ratio"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция контраста() в Less?",
+      "question_ru": "Less da contrast() funksiyasi nima qiladi?",
       "question_en": "Less da contrast() funksiyasi nima qiladi?",
       "options_ru": [
-        "Проверка контраста",
-        "Выбирает черный или белый цвет текста в зависимости от цвета фона — для доступности.",
-        "Цветовой контраст",
-        "Коэффициент контрастности"
+        "Kontrast tekshirish",
+        "Fon rangga qarab qora yoki oq matn rangini tanlaydi — accessibility uchun",
+        "Color contrast",
+        "Contrast ratio"
       ],
       "options_en": [
-        "Contrast check",
-        "Selects black or white text color depending on the background color — for accessibility",
+        "Kontrast tekshirish",
+        "Fon rangga qarab qora yoki oq matn rangini tanlaydi — accessibility uchun",
         "Color contrast",
         "Contrast ratio"
       ]
@@ -1001,13 +1001,13 @@
         "all, none, some, one"
       ],
       "answer": 0,
-      "question_ru": "Каковы параметры ключевого слова @import в Less?",
-      "question_en": "What are the @import keyword options in Less?",
+      "question_ru": "Less da @import keyword options qaysilar?",
+      "question_en": "Less da @import keyword options qaysilar?",
       "options_ru": [
         "reference, less, css, once, multiple, inline",
-        "импорт, экспорт, модуль, глобальный",
-        "статичный, динамичный, ленивый, нетерпеливый",
-        "все, ни один, некоторые, один"
+        "import, export, module, global",
+        "static, dynamic, lazy, eager",
+        "all, none, some, one"
       ],
       "options_en": [
         "reference, less, css, once, multiple, inline",
@@ -1027,19 +1027,19 @@
         "Birlik o'chirish"
       ],
       "answer": 1,
-      "question_ru": "Что делает функция unit() в Less?",
-      "question_en": "What does the unit() function do in Less?",
+      "question_ru": "Less da unit() funksiyasi nima qiladi?",
+      "question_en": "Less da unit() funksiyasi nima qiladi?",
       "options_ru": [
-        "Добавить объект",
-        "Изменяет или добавляет единицу измерения числа — unit(10, px)",
-        "CSS-единица",
-        "Удалить объект"
+        "Birlik qo'shish",
+        "Raqamning o'lchov birligini o'zgartiradi yoki qo'shadi — unit(10, px)",
+        "CSS birlik",
+        "Birlik o'chirish"
       ],
       "options_en": [
-        "Add unit",
-        "Changes or adds the unit of measurement of a number — unit(10, px)",
+        "Birlik qo'shish",
+        "Raqamning o'lchov birligini o'zgartiradi yoki qo'shadi — unit(10, px)",
         "CSS birlik",
-        "Delete the unit"
+        "Birlik o'chirish"
       ]
     },
     {
@@ -1053,18 +1053,18 @@
         "Math convert"
       ],
       "answer": 1,
-      "question_ru": "Что такое функция Convert() в Less?",
-      "question_en": "What is the convert() function in Less?",
+      "question_ru": "Less da convert() funksiyasi nima?",
+      "question_en": "Less da convert() funksiyasi nima?",
       "options_ru": [
-        "Преобразование типов",
-        "Преобразует единицы измерения друг в друга — Convert(9s, ms) = 9000ms",
-        "Преобразование единиц измерения",
-        "Математическое преобразование"
+        "Tip aylantirish",
+        "O'lchov birliklarini bir-biriga aylantiradi — convert(9s, ms) = 9000ms",
+        "Unit convert",
+        "Math convert"
       ],
       "options_en": [
-        "Type conversion",
-        "Converts measurement units to each other — convert(9s, ms) = 9000ms",
-        "Unit conversion",
+        "Tip aylantirish",
+        "O'lchov birliklarini bir-biriga aylantiradi — convert(9s, ms) = 9000ms",
+        "Unit convert",
         "Math convert"
       ]
     },
@@ -1079,17 +1079,17 @@
         "Image blend"
       ],
       "answer": 1,
-      "question_ru": "Каковы функции смешивания цветов (умножение, экранирование, наложение) в Less?",
-      "question_en": "What are the color blending functions (multiply, screen, overlay) in Less?",
+      "question_ru": "Less da color blending funksiyalari (multiply, screen, overlay) nima?",
+      "question_en": "Less da color blending funksiyalari (multiply, screen, overlay) nima?",
       "options_ru": [
-        "смесь фотошопа",
-        "Функции для объединения цветов с режимами наложения, подобными Photoshop.",
-        "Смесь CSS",
-        "Смешение изображений"
+        "Photoshop blend",
+        "Ranglarni Photoshop kabi blend modlar bilan birlashtirish funksiyalari",
+        "CSS blend",
+        "Image blend"
       ],
       "options_en": [
         "Photoshop blend",
-        "Functions to combine colors with Photoshop-like blend modes",
+        "Ranglarni Photoshop kabi blend modlar bilan birlashtirish funksiyalari",
         "CSS blend",
         "Image blend"
       ]
@@ -1105,17 +1105,17 @@
         "Parameters"
       ],
       "answer": 1,
-      "question_ru": "Что такое переменная @arguments в Less?",
-      "question_en": "What is the @arguments variable in Less?",
+      "question_ru": "Less da @arguments o'zgaruvchisi nima?",
+      "question_en": "Less da @arguments o'zgaruvchisi nima?",
       "options_ru": [
-        "Список аргументов",
-        "Список всех аргументов, переданных в миксин — для сокращения CSS",
-        "Количество аргументов",
-        "Параметры"
+        "Argument ro'yxati",
+        "Mixin ga uzatilgan barcha argumentlar ro'yxati — CSS shorthand uchun",
+        "Argument count",
+        "Parameters"
       ],
       "options_en": [
-        "Argument list",
-        "List of all arguments passed to mixin — for CSS shorthand",
+        "Argument ro'yxati",
+        "Mixin ga uzatilgan barcha argumentlar ro'yxati — CSS shorthand uchun",
         "Argument count",
         "Parameters"
       ]
@@ -1131,18 +1131,18 @@
         "Comparison"
       ],
       "answer": 1,
-      "question_ru": "Что такое функции min() и max() в Less?",
-      "question_en": "What are the min() and max() functions in Less?",
+      "question_ru": "Less da min() va max() funksiyalari nima?",
+      "question_en": "Less da min() va max() funksiyalari nima?",
       "options_ru": [
-        "CSS-функция",
-        "Выбирает наименьшее/наибольшее число из нескольких значений — Меньше математических функций",
-        "Математическая функция",
-        "Сравнение"
+        "CSS funksiya",
+        "Bir nechta qiymat ichidan eng kichik/katta raqamni tanlaydi — Less matematik funksiyalari",
+        "Math funksiya",
+        "Comparison"
       ],
       "options_en": [
-        "CSS function",
-        "Selects the smallest/largest number from multiple values ​​— Less math functions",
-        "Math function",
+        "CSS funksiya",
+        "Bir nechta qiymat ichidan eng kichik/katta raqamni tanlaydi — Less matematik funksiyalari",
+        "Math funksiya",
         "Comparison"
       ]
     },
@@ -1157,17 +1157,17 @@
         "Calculator plugin"
       ],
       "answer": 1,
-      "question_ru": "Откуда в Less берутся pow(), sqrt() и другие математические функции?",
-      "question_en": "Where do pow(), sqrt() and other math functions come from in Less?",
+      "question_ru": "Less da pow(), sqrt() va boshqa matematik funksiyalar qayerdan?",
+      "question_en": "Less da pow(), sqrt() va boshqa matematik funksiyalar qayerdan?",
       "options_ru": [
-        "CSS-математика",
-        "Меньше встроенных математических функций — pow(2, 3), sqrt(16), pi().",
+        "CSS Math",
+        "Less built-in matematik funksiyalar — pow(2, 3), sqrt(16), pi()",
         "Math.js",
-        "Плагин калькулятора"
+        "Calculator plugin"
       ],
       "options_en": [
         "CSS Math",
-        "Less built-in math functions — pow(2, 3), sqrt(16), pi()",
+        "Less built-in matematik funksiyalar — pow(2, 3), sqrt(16), pi()",
         "Math.js",
         "Calculator plugin"
       ]
@@ -1183,19 +1183,19 @@
         "Birlik nomi"
       ],
       "answer": 1,
-      "question_ru": "Что возвращает функция get-unit() в Less?",
+      "question_ru": "Less da get-unit() funksiyasi nima qaytaradi?",
       "question_en": "Less da get-unit() funksiyasi nima qaytaradi?",
       "options_ru": [
-        "Единица измерения",
-        "Возвращает единицу измерения числа в виде строки — get-unit(10px) = 'px'",
-        "Строка единицы измерения",
-        "Название подразделения"
+        "O'lchov birligi",
+        "Raqamning o'lchov birligini string sifatida qaytaradi — get-unit(10px) = 'px'",
+        "Unit string",
+        "Birlik nomi"
       ],
       "options_en": [
-        "Unit of measure",
-        "Returns the unit of a number as a string — get-unit(10px) = 'px'",
+        "O'lchov birligi",
+        "Raqamning o'lchov birligini string sifatida qaytaradi — get-unit(10px) = 'px'",
         "Unit string",
-        "Unit name"
+        "Birlik nomi"
       ]
     },
     {
@@ -1209,17 +1209,17 @@
         "Number format"
       ],
       "answer": 1,
-      "question_ru": "Почему функции Floor(), ceil(), round() есть в Less?",
-      "question_en": "Why are floor(), ceil(), round() functions in Less?",
+      "question_ru": "Less da floor(), ceil(), round() funksiyalari nima uchun?",
+      "question_en": "Less da floor(), ceil(), round() funksiyalari nima uchun?",
       "options_ru": [
         "CSS rounding",
-        "Округление чисел — для меньшего количества математических операций",
-        "Математическое округление",
-        "Числовой формат"
+        "Raqamlarni yaxlitlash — Less matematik operatsiyalar uchun",
+        "Math rounding",
+        "Number format"
       ],
       "options_en": [
         "CSS rounding",
-        "Rounding numbers — for Less math operations",
+        "Raqamlarni yaxlitlash — Less matematik operatsiyalar uchun",
         "Math rounding",
         "Number format"
       ]
@@ -1235,16 +1235,16 @@
         "Nested &"
       ],
       "answer": 1,
-      "question_ru": "Что такое множественный & (родительский селектор) в Less?",
-      "question_en": "What is multiple & (parent selector) in Less?",
+      "question_ru": "Less da multiple & (parent selector) nima?",
+      "question_en": "Less da multiple & (parent selector) nima?",
       "options_ru": [
-        "Мультиселектор",
-        "Использование & несколько раз в селекторе создает комбинации",
-        "Двойной селектор",
-        "Вложенные &"
+        "Ko'p selector",
+        "Bir selektor ichida & ni bir necha marta ishlatish — kombinatsiyalar yaratish",
+        "Double selector",
+        "Nested &"
       ],
       "options_en": [
-        "Multi selector",
+        "Ko'p selector",
         "Bir selektor ichida & ni bir necha marta ishlatish — kombinatsiyalar yaratish",
         "Double selector",
         "Nested &"
@@ -1261,17 +1261,17 @@
         "Number abs"
       ],
       "answer": 1,
-      "question_ru": "Что такое функция abs() в Less?",
-      "question_en": "What is the abs() function in Less?",
+      "question_ru": "Less da abs() funksiyasi nima?",
+      "question_en": "Less da abs() funksiyasi nima?",
       "options_ru": [
-        "HTML абс",
-        "Абсолютное значение — преобразует отрицательное число в положительное число.",
-        "Математический пресс",
-        "Номер абс"
+        "HTML abs",
+        "Mutlaq qiymat — manfiy raqamni musbatga aylantiradi",
+        "Math abs",
+        "Number abs"
       ],
       "options_en": [
         "HTML abs",
-        "Absolute Value — Converts a negative number to a positive number",
+        "Mutlaq qiymat — manfiy raqamni musbatga aylantiradi",
         "Math abs",
         "Number abs"
       ]
@@ -1287,17 +1287,17 @@
         "Package pattern"
       ],
       "answer": 1,
-      "question_ru": "Что такое расширенный шаблон примеси пространства имен в Less?",
-      "question_en": "What is the advanced namespace mixin pattern in Less?",
+      "question_ru": "Less da advanced namespace mixin pattern nima?",
+      "question_en": "Less da advanced namespace mixin pattern nima?",
       "options_ru": [
-        "Шаблон пространства имен",
-        "сохранение #namespace в переменной в качестве библиотеки и вызов @{namespace} > .mixin()",
-        "Шаблон модуля",
-        "Шаблон упаковки"
+        "Namespace pattern",
+        "#namespace kutubxona sifatida o'zgaruvchida saqlash va @{namespace} > .mixin() chaqirish",
+        "Module pattern",
+        "Package pattern"
       ],
       "options_en": [
         "Namespace pattern",
-        "storing #namespace in a variable as a library and calling @{namespace} > .mixin()",
+        "#namespace kutubxona sifatida o'zgaruvchida saqlash va @{namespace} > .mixin() chaqirish",
         "Module pattern",
         "Package pattern"
       ]

@@ -13,13 +13,13 @@
         "dim, set, put"
       ],
       "answer": 1,
-      "question_ru": "Какие ключевые слова используются для объявления переменной в JavaScript?",
-      "question_en": "What keywords are used to declare a variable in JavaScript?",
+      "question_ru": "JavaScript da o'zgaruvchi e'lon qilish uchun qaysi kalit so'zlar ishlatiladi?",
+      "question_en": "JavaScript da o'zgaruvchi e'lon qilish uchun qaysi kalit so'zlar ishlatiladi?",
       "options_ru": [
-        "интервал, ул, логическое значение",
-        "вар, пусть, константа",
-        "переменная, определить, назначить",
-        "затемнить, установить, поставить"
+        "int, str, bool",
+        "var, let, const",
+        "variable, define, assign",
+        "dim, set, put"
       ],
       "options_en": [
         "int, str, bool",
@@ -39,19 +39,19 @@
         "Funksiya chaqiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает console.log() в JavaScript?",
-      "question_en": "What does console.log() do in JavaScript?",
+      "question_ru": "JavaScript da console.log() nima qiladi?",
+      "question_en": "JavaScript da console.log() nima qiladi?",
       "options_ru": [
-        "Открывает окно браузера",
-        "Выводит информацию на консоль",
-        "Создает переменную",
-        "Функция вызывает"
+        "Brauzer oynasini ochadi",
+        "Konsolga ma'lumot chiqaradi",
+        "O'zgaruvchi yaratadi",
+        "Funksiya chaqiradi"
       ],
       "options_en": [
-        "Opens a browser window",
-        "Outputs information to the console",
-        "Creates a variable",
-        "The function calls"
+        "Brauzer oynasini ochadi",
+        "Konsolga ma'lumot chiqaradi",
+        "O'zgaruvchi yaratadi",
+        "Funksiya chaqiradi"
       ]
     },
     {
@@ -65,13 +65,13 @@
         "string"
       ],
       "answer": 2,
-      "question_ru": "Каков результат typeof null в javascript?",
-      "question_en": "What is the result of typeof null in javascript?",
+      "question_ru": "JavaScript da typeof null natijasi nima?",
+      "question_en": "JavaScript da typeof null natijasi nima?",
       "options_ru": [
-        "ноль",
-        "неопределенный",
-        "объект",
-        "нить"
+        "null",
+        "undefined",
+        "object",
+        "string"
       ],
       "options_en": [
         "null",
@@ -91,19 +91,19 @@
         "=== faqat stringlar uchun ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между === и == в JavaScript?",
-      "question_en": "What is the difference between === and == in JavaScript?",
+      "question_ru": "JavaScript da === va == farqi nima?",
+      "question_en": "JavaScript da === va == farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
         "=== qiymat va tip ni tekshiradi, == faqat qiymatni tekshiradi",
-        "== проверяет значение и тип",
-        "=== работает только для строк"
+        "== qiymat va tipni tekshiradi",
+        "=== faqat stringlar uchun ishlaydi"
       ],
       "options_en": [
         "There is no difference",
-        "=== checks both value and type, == only checks value",
+        "=== qiymat va tip ni tekshiradi, == faqat qiymatni tekshiradi",
         "== qiymat va tipni tekshiradi",
-        "=== only works for strings"
+        "=== faqat stringlar uchun ishlaydi"
       ]
     },
     {
@@ -117,8 +117,8 @@
         "<>"
       ],
       "answer": 2,
-      "question_ru": "Какой синтаксис используется для создания массива в JavaScript?",
-      "question_en": "What syntax is used to create an array in JavaScript?",
+      "question_ru": "JavaScript da massiv yaratish uchun qaysi sintaksis ishlatiladi?",
+      "question_en": "JavaScript da massiv yaratish uchun qaysi sintaksis ishlatiladi?",
       "options_ru": [
         "{}",
         "()",
@@ -143,13 +143,13 @@
         "method myFunc() {}"
       ],
       "answer": 2,
-      "question_ru": "Как объявить функцию в JavaScript?",
-      "question_en": "How to declare a function in JavaScript?",
+      "question_ru": "JavaScript da funksiya qanday e'lon qilinadi?",
+      "question_en": "JavaScript da funksiya qanday e'lon qilinadi?",
       "options_ru": [
-        "защита myFunc() {}",
+        "def myFunc() {}",
         "func myFunc() {}",
-        "функция myFunc() {}",
-        "метод myFunc() {}"
+        "function myFunc() {}",
+        "method myFunc() {}"
       ],
       "options_en": [
         "def myFunc() {}",
@@ -169,13 +169,13 @@
         "insert()"
       ],
       "answer": 2,
-      "question_ru": "Какой метод используется для добавления элемента в массив в JavaScript?",
-      "question_en": "Which method is used to add an element to an array in JavaScript?",
+      "question_ru": "JavaScript da massivga element qo'shish uchun qaysi metod ishlatiladi?",
+      "question_en": "JavaScript da massivga element qo'shish uchun qaysi metod ishlatiladi?",
       "options_ru": [
-        "добавить()",
-        "добавить()",
-        "толчок()",
-        "вставить()"
+        "add()",
+        "append()",
+        "push()",
+        "insert()"
       ],
       "options_en": [
         "add()",
@@ -195,19 +195,19 @@
         "str.len"
       ],
       "answer": 2,
-      "question_ru": "Как получить длину строки в JavaScript?",
-      "question_en": "How to get string length in javascript?",
+      "question_ru": "JavaScript da string uzunligini qanday olish mumkin?",
+      "question_en": "JavaScript da string uzunligini qanday olish mumkin?",
       "options_ru": [
-        "размер ул.",
-        "ул. считать",
-        "длина ул.",
-        "ул. Лен"
+        "str.size",
+        "str.count",
+        "str.length",
+        "str.len"
       ],
       "options_en": [
         "str.size",
-        "str. count",
+        "str.count",
         "str.length",
-        "str. len"
+        "str.len"
       ]
     },
     {
@@ -221,13 +221,13 @@
         "condition :: true :: false"
       ],
       "answer": 0,
-      "question_ru": "Как написать тернарный оператор в JavaScript?",
-      "question_en": "How to write ternary operator in JavaScript?",
+      "question_ru": "JavaScript da ternary operator qanday yoziladi?",
+      "question_en": "JavaScript da ternary operator qanday yoziladi?",
       "options_ru": [
-        "состояние? правда: ложь",
-        "условие, тогда верно, иначе ложно",
-        "если (условие) истинно, иначе ложно",
-        "условие::истина::ложь"
+        "condition ? true : false",
+        "condition then true else false",
+        "if(condition) true else false",
+        "condition :: true :: false"
       ],
       "options_en": [
         "condition ? true : false",
@@ -247,13 +247,13 @@
         "splice()"
       ],
       "answer": 1,
-      "question_ru": "Какой метод в JavaScript удаляет последний элемент массива?",
-      "question_en": "Which method in JavaScript removes the last element of an array?",
+      "question_ru": "JavaScript da qaysi metod massivning oxirgi elementini olib tashlaydi?",
+      "question_en": "JavaScript da qaysi metod massivning oxirgi elementini olib tashlaydi?",
       "options_ru": [
-        "удалить Ласт()",
-        "поп()",
-        "удалить()",
-        "сращивание()"
+        "removeLast()",
+        "pop()",
+        "delete()",
+        "splice()"
       ],
       "options_en": [
         "removeLast()",
@@ -273,13 +273,13 @@
         "Negative And Null"
       ],
       "answer": 1,
-      "question_ru": "Что такое NaN в JavaScript?",
+      "question_ru": "JavaScript da NaN nima?",
       "question_en": "JavaScript da NaN nima?",
       "options_ru": [
-        "Ноль и ничего",
-        "Не число",
-        "Новый узел массива",
-        "Отрицательный и нулевой"
+        "Null And Nothing",
+        "Not a Number",
+        "New Array Node",
+        "Negative And Null"
       ],
       "options_en": [
         "Null And Nothing",
@@ -299,13 +299,13 @@
         "NaN"
       ],
       "answer": 1,
-      "question_ru": "Каков результат parseInt('10.5') в JavaScript?",
-      "question_en": "What is the result of parseInt('10.5') in JavaScript?",
+      "question_ru": "JavaScript da parseInt('10.5') natijasi nima?",
+      "question_en": "JavaScript da parseInt('10.5') natijasi nima?",
       "options_ru": [
-        "10,5",
+        "10.5",
         "10",
         "11",
-        "НЭН"
+        "NaN"
       ],
       "options_en": [
         "10.5",
@@ -325,18 +325,18 @@
         "on/off"
       ],
       "answer": 1,
-      "question_ru": "Что такое логические значения в JavaScript?",
-      "question_en": "What are boolean values ​​in JavaScript?",
+      "question_ru": "JavaScript da boolean qiymatlar qaysilar?",
+      "question_en": "JavaScript da boolean qiymatlar qaysilar?",
       "options_ru": [
-        "да/нет",
-        "правда/ложь",
-        "только 1/0",
-        "вкл/выкл"
+        "yes/no",
+        "true/false",
+        "1/0 faqat",
+        "on/off"
       ],
       "options_en": [
         "yes/no",
         "true/false",
-        "1/0 only",
+        "1/0 faqat",
         "on/off"
       ]
     },
@@ -351,19 +351,19 @@
         "Faqat to'g'ridan-to'g'ri massiv uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему в JavaScript используется цикл for...of?",
-      "question_en": "Why is the for...of loop used in JavaScript?",
+      "question_ru": "JavaScript da for...of tsikli nima uchun ishlatiladi?",
+      "question_en": "JavaScript da for...of tsikli nima uchun ishlatiladi?",
       "options_ru": [
-        "Для свойств объекта",
-        "Для циклического перебора элементов Iterable (массива, строки и т. д.).",
-        "Цикл только по цифрам",
-        "Только для прямого массива"
+        "Ob'ekt xususiyatlari uchun",
+        "Iterable (massiv, string va h.k.) elementlari bo'yicha aylanish uchun",
+        "Faqat raqamlar bo'yicha aylanish",
+        "Faqat to'g'ridan-to'g'ri massiv uchun"
       ],
       "options_en": [
-        "For object properties",
-        "For looping over the elements of an Iterable (array, string, etc.).",
-        "Cycle by numbers only",
-        "Only for direct array"
+        "Ob'ekt xususiyatlari uchun",
+        "Iterable (massiv, string va h.k.) elementlari bo'yicha aylanish uchun",
+        "Faqat raqamlar bo'yicha aylanish",
+        "Faqat to'g'ridan-to'g'ri massiv uchun"
       ]
     },
     {
@@ -377,19 +377,19 @@
         "Elementni o'chiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает document.getElementById() в JavaScript?",
-      "question_en": "What does document.getElementById() do in JavaScript?",
+      "question_ru": "JavaScript da document.getElementById() nima qiladi?",
+      "question_en": "JavaScript da document.getElementById() nima qiladi?",
       "options_ru": [
-        "Создает новый элемент",
-        "Находит элемент DOM с заданным идентификатором.",
-        "Возвращает все элементы",
-        "Удаляет элемент"
+        "Yangi element yaratadi",
+        "Berilgan ID ga ega DOM elementni topadi",
+        "Barcha elementlarni qaytaradi",
+        "Elementni o'chiradi"
       ],
       "options_en": [
-        "Creates a new element",
-        "Finds the DOM element with the given ID",
-        "Returns all elements",
-        "Deletes an element"
+        "Yangi element yaratadi",
+        "Berilgan ID ga ega DOM elementni topadi",
+        "Barcha elementlarni qaytaradi",
+        "Elementni o'chiradi"
       ]
     },
     {
@@ -403,19 +403,19 @@
         "Massivni bloklash"
       ],
       "answer": 1,
-      "question_ru": "Что такое замыкание в JavaScript?",
-      "question_en": "What is a closure in JavaScript?",
+      "question_ru": "JavaScript da closure nima?",
+      "question_en": "JavaScript da closure nima?",
       "options_ru": [
-        "Функция закрытия",
-        "Доступ внутренней функции к переменным внешней функции",
-        "Закрыть объект",
-        "Блочный массив"
+        "Funksiyani yopish",
+        "Ichki funksiyaning tashqi funksiya o'zgaruvchilariga kirish imkoniyati",
+        "Ob'ektni yopish",
+        "Massivni bloklash"
       ],
       "options_en": [
-        "Close function",
-        "An inner function's access to outer function variables",
-        "Close the object",
-        "Block array"
+        "Funksiyani yopish",
+        "Ichki funksiyaning tashqi funksiya o'zgaruvchilariga kirish imkoniyati",
+        "Ob'ektni yopish",
+        "Massivni bloklash"
       ]
     },
     {
@@ -429,19 +429,19 @@
         "Ob'ektlar massivi"
       ],
       "answer": 0,
-      "question_ru": "Что такое обещание в JavaScript?",
+      "question_ru": "JavaScript da Promise nima?",
       "question_en": "JavaScript da Promise nima?",
       "options_ru": [
-        "Объект, представляющий асинхронную операцию, которая была выполнена или отклонена в будущем.",
-        "Синхронная работа",
-        "Набор функций",
-        "Массив объектов"
+        "Kelajakda bajarilgan yoki rad etilgan asinxron operatsiyani ifodalovchi ob'ekt",
+        "Sinxron operatsiya",
+        "Funksiyalar to'plami",
+        "Ob'ektlar massivi"
       ],
       "options_en": [
-        "An object that represents an asynchronous operation that has been executed or rejected in the future",
-        "Synchronous operation",
-        "A set of functions",
-        "An array of objects"
+        "Kelajakda bajarilgan yoki rad etilgan asinxron operatsiyani ifodalovchi ob'ekt",
+        "Sinxron operatsiya",
+        "Funksiyalar to'plami",
+        "Ob'ektlar massivi"
       ]
     },
     {
@@ -455,19 +455,19 @@
         "Event listener qo'shish"
       ],
       "answer": 1,
-      "question_ru": "Почему в JavaScript используется async/await?",
-      "question_en": "Why is async/await used in JavaScript?",
+      "question_ru": "JavaScript da async/await nima uchun ishlatiladi?",
+      "question_en": "JavaScript da async/await nima uchun ishlatiladi?",
       "options_ru": [
-        "Ускорение циклов",
-        "Написание асинхронного кода синхронным способом",
-        "Манипулирование DOM",
-        "Добавить прослушиватель событий"
+        "Tsikllarni tezlashtirish",
+        "Asinxron kodni sinxron ko'rinishda yozish",
+        "DOM manipulyatsiyasi",
+        "Event listener qo'shish"
       ],
       "options_en": [
-        "Acceleration of cycles",
-        "Writing asynchronous code in a synchronous way",
-        "DOM manipulation",
-        "Add an event listener"
+        "Tsikllarni tezlashtirish",
+        "Asinxron kodni sinxron ko'rinishda yozish",
+        "DOM manipulyatsiyasi",
+        "Event listener qo'shish"
       ]
     },
     {
@@ -481,19 +481,19 @@
         "Massiv elementlarini qidiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Array.map() в JavaScript?",
-      "question_en": "What does Array.map() do in JavaScript?",
+      "question_ru": "JavaScript da Array.map() nima qiladi?",
+      "question_en": "JavaScript da Array.map() nima qiladi?",
       "options_ru": [
-        "Фильтрует массив",
-        "Изменяет элементы массива и возвращает новый массив.",
-        "Сортирует массив",
-        "Поиск элементов массива"
+        "Massivni filterlaydi",
+        "Massiv elementlarini o'zgartiradi va yangi massiv qaytaradi",
+        "Massivni saralaydi",
+        "Massiv elementlarini qidiradi"
       ],
       "options_en": [
-        "Filters an array",
-        "Changes the elements of an array and returns a new array",
-        "Sorts an array",
-        "Searches for array elements"
+        "Massivni filterlaydi",
+        "Massiv elementlarini o'zgartiradi va yangi massiv qaytaradi",
+        "Massivni saralaydi",
+        "Massiv elementlarini qidiradi"
       ]
     },
     {
@@ -507,19 +507,19 @@
         "Massivga element qo'shadi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Array.filter() в JavaScript?",
-      "question_en": "What does Array.filter() do in JavaScript?",
+      "question_ru": "JavaScript da Array.filter() nima qiladi?",
+      "question_en": "JavaScript da Array.filter() nima qiladi?",
       "options_ru": [
-        "Заменяет все элементы",
-        "Возвращает новый массив элементов, соответствующих условию",
-        "Сортирует массив",
-        "Добавляет элемент в массив"
+        "Barcha elementlarni o'zgartiradi",
+        "Shartga mos elementlardan yangi massiv qaytaradi",
+        "Massivni saralaydi",
+        "Massivga element qo'shadi"
       ],
       "options_en": [
-        "Replaces all elements",
-        "Returns a new array of elements matching the condition",
-        "Sorts an array",
-        "Adds an element to an array"
+        "Barcha elementlarni o'zgartiradi",
+        "Shartga mos elementlardan yangi massiv qaytaradi",
+        "Massivni saralaydi",
+        "Massivga element qo'shadi"
       ]
     },
     {
@@ -533,18 +533,18 @@
         "String bo'lish uchun"
       ],
       "answer": 1,
-      "question_ru": "Что делает оператор распространения (...) в JavaScript?",
-      "question_en": "What does the spread operator (...) do in JavaScript?",
+      "question_ru": "JavaScript da spread operator (...) nima qiladi?",
+      "question_en": "JavaScript da spread operator (...) nima qiladi?",
       "options_ru": [
-        "По многим аргументам",
-        "Освобождает элементы массива или объекта",
-        "Только для цифр",
-        "Быть строкой"
+        "Ko'p argumentlar uchun",
+        "Massiv yoki ob'ekt elementlarini yoyib chiqaradi",
+        "Faqat raqamlar uchun",
+        "String bo'lish uchun"
       ],
       "options_en": [
-        "For many arguments",
-        "Releases the elements of an array or object",
-        "For numbers only",
+        "Ko'p argumentlar uchun",
+        "Massiv yoki ob'ekt elementlarini yoyib chiqaradi",
+        "Faqat raqamlar uchun",
         "String bo'lish uchun"
       ]
     },
@@ -559,16 +559,16 @@
         "Garbage collection"
       ],
       "answer": 1,
-      "question_ru": "Что такое подъем в JavaScript?",
-      "question_en": "What is hoisting in JavaScript?",
+      "question_ru": "JavaScript da hoisting nima?",
+      "question_en": "JavaScript da hoisting nima?",
       "options_ru": [
-        "Переместить код вниз",
-        "Переместите объявления переменных и функций в верхнюю часть области видимости.",
-        "Переполнение стека",
-        "Сбор мусора"
+        "Kodni pastga ko'chirish",
+        "O'zgaruvchi va funksiya deklaratsiyalarini scope ning tepasiga ko'tarish",
+        "Stack overflow",
+        "Garbage collection"
       ],
       "options_en": [
-        "Move the code down",
+        "Kodni pastga ko'chirish",
         "O'zgaruvchi va funksiya deklaratsiyalarini scope ning tepasiga ko'tarish",
         "Stack overflow",
         "Garbage collection"
@@ -585,19 +585,19 @@
         "localStorage faqat string saqlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между localStorage и sessionStorage в JavaScript?",
-      "question_en": "What is the difference between localStorage and sessionStorage in JavaScript?",
+      "question_ru": "JavaScript da localStorage va sessionStorage farqi nima?",
+      "question_en": "JavaScript da localStorage va sessionStorage farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "localStorage сохраняет постоянно, sessionStorage удаляется при закрытии вкладки",
-        "sessionStorage сохраняет постоянно",
-        "localStorage хранит только строки"
+        "localStorage doimiy saqlaydi, sessionStorage tab yopilganda o'chadi",
+        "sessionStorage doimiy saqlaydi",
+        "localStorage faqat string saqlaydi"
       ],
       "options_en": [
         "There is no difference",
-        "localStorage stores persistently, sessionStorage is deleted when the tab is closed",
-        "sessionStorage stores persistently",
-        "localStorage only stores strings"
+        "localStorage doimiy saqlaydi, sessionStorage tab yopilganda o'chadi",
+        "sessionStorage doimiy saqlaydi",
+        "localStorage faqat string saqlaydi"
       ]
     },
     {
@@ -611,19 +611,19 @@
         "Massivni yo'q qilish"
       ],
       "answer": 0,
-      "question_ru": "Что такое деструктуризация в JavaScript?",
-      "question_en": "What is destructuring in JavaScript?",
+      "question_ru": "JavaScript da destructuring nima?",
+      "question_en": "JavaScript da destructuring nima?",
       "options_ru": [
-        "Присвоение значений объекта или массива переменной",
-        "Удалить объект",
-        "Разделение функции",
-        "Уничтожить массив"
+        "Ob'ekt yoki massivdan qiymatlarni chiqarib o'zgaruvchiga o'zlashtirish",
+        "Ob'ektni o'chirish",
+        "Funksiyani bo'lish",
+        "Massivni yo'q qilish"
       ],
       "options_en": [
-        "Assigning values ​​from an object or array to a variable",
-        "Delete an object",
-        "Dividing the function",
-        "Destroy an array"
+        "Ob'ekt yoki massivdan qiymatlarni chiqarib o'zgaruvchiga o'zlashtirish",
+        "Ob'ektni o'chirish",
+        "Funksiyani bo'lish",
+        "Massivni yo'q qilish"
       ]
     },
     {
@@ -637,19 +637,19 @@
         "Hodisa bekor qilinadi"
       ],
       "answer": 1,
-      "question_ru": "Что такое всплывание событий в JavaScript?",
-      "question_en": "What is Event Bubbling in JavaScript?",
+      "question_ru": "JavaScript da Event Bubbling nima?",
+      "question_en": "JavaScript da Event Bubbling nima?",
       "options_ru": [
-        "Событие запускается только для одного элемента",
-        "Событие возникает из дочернего элемента в родительский элемент.",
-        "Событие спускается от родительского элемента к дочернему.",
-        "Мероприятие будет отменено"
+        "Hodisa faqat bitta elementda ishga tushadi",
+        "Hodisa child elementdan parent elementga ko'tariladi",
+        "Hodisa parent elementdan child ga tushadi",
+        "Hodisa bekor qilinadi"
       ],
       "options_en": [
-        "An event is fired on only one element",
-        "The event is raised from the child element to the parent element",
-        "The event descends from the parent element to the child",
-        "The event will be cancelled"
+        "Hodisa faqat bitta elementda ishga tushadi",
+        "Hodisa child elementdan parent elementga ko'tariladi",
+        "Hodisa parent elementdan child ga tushadi",
+        "Hodisa bekor qilinadi"
       ]
     },
     {
@@ -663,19 +663,19 @@
         "Har doim oxirida"
       ],
       "answer": 1,
-      "question_ru": "Когда setTimeout(() => {}, 0) работает в JavaScript?",
-      "question_en": "When does setTimeout(() => {}, 0) work in JavaScript?",
+      "question_ru": "JavaScript da setTimeout(() => {}, 0) qachon ishlaydi?",
+      "question_en": "JavaScript da setTimeout(() => {}, 0) qachon ishlaydi?",
       "options_ru": [
-        "Немедленно",
-        "После того, как стек вызовов пуст (через цикл событий)",
-        "Никогда после 0 миллисекунд",
-        "Всегда в конце"
+        "Darhol",
+        "Call stack bo'sh bo'lgandan keyin (event loop orqali)",
+        "0 millisekunddan keyin hech qachon",
+        "Har doim oxirida"
       ],
       "options_en": [
-        "Immediately",
-        "After the call stack is empty (via the event loop)",
-        "Never after 0 milliseconds",
-        "Always at the end"
+        "Darhol",
+        "Call stack bo'sh bo'lgandan keyin (event loop orqali)",
+        "0 millisekunddan keyin hech qachon",
+        "Har doim oxirida"
       ]
     },
     {
@@ -689,19 +689,19 @@
         "Ob'ekt nomi"
       ],
       "answer": 1,
-      "question_ru": "Что возвращает Object.keys() в JavaScript?",
-      "question_en": "What does Object.keys() return in JavaScript?",
+      "question_ru": "JavaScript da Object.keys() nima qaytaradi?",
+      "question_en": "JavaScript da Object.keys() nima qaytaradi?",
       "options_ru": [
-        "Объект представляет собой массив значений",
-        "Объект представляет собой массив ключей",
-        "Массив записей объектов",
-        "Название объекта"
+        "Ob'ekt qiymatlar massivi",
+        "Ob'ekt kalitlar massivi",
+        "Ob'ekt entries massivi",
+        "Ob'ekt nomi"
       ],
       "options_en": [
-        "An object is an array of values",
-        "An object is an array of keys",
-        "An array of object entries",
-        "Name of the object"
+        "Ob'ekt qiymatlar massivi",
+        "Ob'ekt kalitlar massivi",
+        "Ob'ekt entries massivi",
+        "Ob'ekt nomi"
       ]
     },
     {
@@ -715,19 +715,19 @@
         "Massivni saralaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Array.reduce() в JavaScript?",
-      "question_en": "What does Array.reduce() do in JavaScript?",
+      "question_ru": "JavaScript da Array.reduce() nima qiladi?",
+      "question_en": "JavaScript da Array.reduce() nima qiladi?",
       "options_ru": [
-        "Фильтрует массив",
-        "Преобразует массив в одно значение (аккумулятор).",
-        "Уменьшает размер массива",
-        "Сортирует массив"
+        "Massivni filterlaydi",
+        "Massivni bitta qiymatga (akkumulyator) aylantiradi",
+        "Massiv o'lchamini kamaytiradi",
+        "Massivni saralaydi"
       ],
       "options_en": [
-        "Filters an array",
-        "Converts an array to a single value (accumulator).",
-        "Reduces the size of an array",
-        "Sorts an array"
+        "Massivni filterlaydi",
+        "Massivni bitta qiymatga (akkumulyator) aylantiradi",
+        "Massiv o'lchamini kamaytiradi",
+        "Massivni saralaydi"
       ]
     },
     {
@@ -741,19 +741,19 @@
         "Ob'ekt turi"
       ],
       "answer": 1,
-      "question_ru": "Что такое символ в JavaScript?",
-      "question_en": "What is a Symbol in JavaScript?",
+      "question_ru": "JavaScript da Symbol nima?",
+      "question_en": "JavaScript da Symbol nima?",
       "options_ru": [
-        "Тип строки",
-        "В качестве ключа свойства используется примитивный тип, который всегда уникален — объект.",
-        "Тип номера",
-        "Тип объекта"
+        "String turi",
+        "Har doim noyob bo'lgan primitiv tur — ob'ekt xususiyat kaliti sifatida ishlatiladi",
+        "Raqam turi",
+        "Ob'ekt turi"
       ],
       "options_en": [
-        "String type",
-        "A primitive type that is always unique—an object—is used as a property key",
-        "Number type",
-        "Object type"
+        "String turi",
+        "Har doim noyob bo'lgan primitiv tur — ob'ekt xususiyat kaliti sifatida ishlatiladi",
+        "Raqam turi",
+        "Ob'ekt turi"
       ]
     },
     {
@@ -767,19 +767,19 @@
         "Asinxron kod uchun"
       ],
       "answer": 1,
-      "question_ru": "Почему блок try...catch...finally используется в JavaScript?",
-      "question_en": "Why is the try...catch...finally block used in JavaScript?",
+      "question_ru": "JavaScript da try...catch...finally bloki nima uchun ishlatiladi?",
+      "question_en": "JavaScript da try...catch...finally bloki nima uchun ishlatiladi?",
       "options_ru": [
-        "Создать блок кода",
-        "Обнаружение и обработка ошибок",
-        "Создать цикл",
-        "Для асинхронного кода"
+        "Kod bloki yaratish",
+        "Xatolarni tutib olish va boshqarish",
+        "Tsikl yaratish",
+        "Asinxron kod uchun"
       ],
       "options_en": [
-        "Create a block of code",
+        "Kod bloki yaratish",
         "Xatolarni tutib olish va boshqarish",
-        "Create a cycle",
-        "For asynchronous code"
+        "Tsikl yaratish",
+        "Asinxron kod uchun"
       ]
     },
     {
@@ -793,13 +793,13 @@
         "WeakMap iterable"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между WeakMap и Map в JavaScript?",
-      "question_en": "What is the difference between WeakMap and Map in JavaScript?",
+      "question_ru": "JavaScript da WeakMap va Map farqi nima?",
+      "question_en": "JavaScript da WeakMap va Map farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "WeakMap принимает объекты только в качестве ключей и создает слабое звено для сборки мусора.",
-        "Карта создает слабые звенья",
-        "WeakMap итерируемый"
+        "WeakMap faqat ob'ektlarni kalit sifatida qabul qiladi va garbage collection uchun zaif havola yaratadi",
+        "Map zaif havolalar yaratadi",
+        "WeakMap iterable"
       ],
       "options_en": [
         "There is no difference",
@@ -819,19 +819,19 @@
         "gen function() {}"
       ],
       "answer": 2,
-      "question_ru": "Как объявить функцию-генератор в JavaScript?",
-      "question_en": "How to declare a generator function in JavaScript?",
+      "question_ru": "JavaScript da generator funksiyasi qanday e'lon qilinadi?",
+      "question_en": "JavaScript da generator funksiyasi qanday e'lon qilinadi?",
       "options_ru": [
-        "функция ген() {}",
-        "асинхронная функция gen() {}",
-        "функция* генер() {}",
-        "функция гена() {}"
+        "function gen() {}",
+        "async function gen() {}",
+        "function* gen() {}",
+        "gen function() {}"
       ],
       "options_en": [
         "function gen() {}",
         "async function gen() {}",
         "function* gen() {}",
-        "gene function() {}"
+        "gen function() {}"
       ]
     },
     {
@@ -845,19 +845,19 @@
         "String ni massivga aylantiradi"
       ],
       "answer": 1,
-      "question_ru": "Что делает JSON.stringify() в JavaScript?",
-      "question_en": "What does JSON.stringify() do in JavaScript?",
+      "question_ru": "JavaScript da JSON.stringify() nima qiladi?",
+      "question_en": "JavaScript da JSON.stringify() nima qiladi?",
       "options_ru": [
-        "Удаляет JSON",
-        "Преобразует объект JavaScript в строку JSON.",
-        "Читает файл JSON",
-        "Преобразует строку в массив"
+        "JSON ni o'chiradi",
+        "JavaScript ob'ektini JSON string ga aylantiradi",
+        "JSON faylini o'qiydi",
+        "String ni massivga aylantiradi"
       ],
       "options_en": [
-        "Deletes the JSON",
-        "Converts a JavaScript object to a JSON string",
-        "Reads a JSON file",
-        "Converts a String to an array"
+        "JSON ni o'chiradi",
+        "JavaScript ob'ektini JSON string ga aylantiradi",
+        "JSON faylini o'qiydi",
+        "String ni massivga aylantiradi"
       ]
     },
     {
@@ -871,19 +871,19 @@
         "Ikkalasi ham bir xil qaytaradi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между Array.find() и Array.findIndex() в JavaScript?",
-      "question_en": "What is the difference between Array.find() and Array.findIndex() in JavaScript?",
+      "question_ru": "JavaScript da Array.find() va Array.findIndex() farqi nima?",
+      "question_en": "JavaScript da Array.find() va Array.findIndex() farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "find() возвращает сам элемент, а findIndex() возвращает его индекс.",
-        "findIndex() возвращает элемент, find() возвращает индекс",
-        "Оба возвращают одно и то же"
+        "find() elementning o'zini, findIndex() esa indeksini qaytaradi",
+        "findIndex() elementni, find() indeksini qaytaradi",
+        "Ikkalasi ham bir xil qaytaradi"
       ],
       "options_en": [
         "There is no difference",
         "find() elementning o'zini, findIndex() esa indeksini qaytaradi",
-        "findIndex() returns the element, find() returns the index",
-        "Both return the same"
+        "findIndex() elementni, find() indeksini qaytaradi",
+        "Ikkalasi ham bir xil qaytaradi"
       ]
     },
     {
@@ -897,19 +897,19 @@
         "Boolean tekshiruvi qiladi"
       ],
       "answer": 1,
-      "question_ru": "Что делает нулевой оператор объединения (??) в JavaScript?",
-      "question_en": "What does the nullish coalescing operator (??) do in JavaScript?",
+      "question_ru": "JavaScript da nullish coalescing operator (??) nima qiladi?",
+      "question_en": "JavaScript da nullish coalescing operator (??) nima qiladi?",
       "options_ru": [
-        "Сдвиг вправо при любом ложном значении",
-        "Смещается вправо, только если значение равно нулю или не определено",
-        "Работает только если ноль",
-        "Выполняет логическую проверку"
-      ],
-      "options_en": [
-        "Shifts to the right on any falsy value",
+        "Har qanday falsy qiymatda o'ng tomonga o'tadi",
         "Faqat null yoki undefined bo'lsa o'ng tomonga o'tadi",
         "Faqat null bo'lsa ishlaydi",
-        "Does a Boolean check"
+        "Boolean tekshiruvi qiladi"
+      ],
+      "options_en": [
+        "Har qanday falsy qiymatda o'ng tomonga o'tadi",
+        "Faqat null yoki undefined bo'lsa o'ng tomonga o'tadi",
+        "Faqat null bo'lsa ishlaydi",
+        "Boolean tekshiruvi qiladi"
       ]
     },
     {
@@ -923,18 +923,18 @@
         "Ko'p thread li ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "Как работает цикл событий в JavaScript?",
-      "question_en": "How does an Event Loop work in JavaScript?",
+      "question_ru": "JavaScript da Event Loop qanday ishlaydi?",
+      "question_en": "JavaScript da Event Loop qanday ishlaydi?",
       "options_ru": [
-        "Код работает в порядке сверху вниз.",
-        "Управляет стеками вызовов, веб-API, очередями обратных вызовов и очередями микрозадач, а также упорядоченно использует асинхронный код.",
-        "Только для асинхронного кода",
-        "Он работает с несколькими потоками"
+        "Kod yuqoridan pastga tartibda ishlaydi",
+        "Call stack, Web APIs, Callback Queue va Microtask Queue larni boshqarib, asinxron kodlarni tartib bilan ishlatadi",
+        "Faqat asinxron kodlar uchun",
+        "Ko'p thread li ishlaydi"
       ],
       "options_en": [
-        "The code works in top-down order",
-        "Manages call stacks, Web APIs, Callback Queues, and Microtask Queues and uses asynchronous code in an orderly manner",
-        "Only for asynchronous code",
+        "Kod yuqoridan pastga tartibda ishlaydi",
+        "Call stack, Web APIs, Callback Queue va Microtask Queue larni boshqarib, asinxron kodlarni tartib bilan ishlatadi",
+        "Faqat asinxron kodlar uchun",
         "Ko'p thread li ishlaydi"
       ]
     },
@@ -949,19 +949,19 @@
         "Ob'ektlarni birlashtirish"
       ],
       "answer": 1,
-      "question_ru": "Что такое цепочка прототипов в JavaScript?",
-      "question_en": "What is Prototype Chain in JavaScript?",
+      "question_ru": "JavaScript da Prototype Chain nima?",
+      "question_en": "JavaScript da Prototype Chain nima?",
       "options_ru": [
-        "Цепочка массивов",
-        "Объекты ищут цепочку прототипов при поиске свойств.",
-        "Цепочка функций",
-        "Объединить объекты"
+        "Massivlar zanjiri",
+        "Ob'ektlar xususiyat qidirishda prototype zanjiri bo'yicha tepaga qarab qidiradi",
+        "Funksiyalar zanjirlash",
+        "Ob'ektlarni birlashtirish"
       ],
       "options_en": [
-        "A chain of arrays",
-        "Objects search up the prototype chain when searching for properties",
-        "Function chaining",
-        "Combine objects"
+        "Massivlar zanjiri",
+        "Ob'ektlar xususiyat qidirishda prototype zanjiri bo'yicha tepaga qarab qidiradi",
+        "Funksiyalar zanjirlash",
+        "Ob'ektlarni birlashtirish"
       ]
     },
     {
@@ -975,18 +975,18 @@
         "Faqat ob'ekt metodlarida ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "Что означает это ключевое слово и в каком контексте в JavaScript?",
-      "question_en": "What does the this keyword indicate in which context in JavaScript?",
+      "question_ru": "JavaScript da this kalit so'zi qaysi kontekstda nima ko'rsatadi?",
+      "question_en": "JavaScript da this kalit so'zi qaysi kontekstda nima ko'rsatadi?",
       "options_ru": [
-        "Всегда указывает на глобальный объект",
+        "Har doim global ob'ektni ko'rsatadi",
         "arrow funksiyada leksik this, oddiy funksiyada chaqiruvchi kontekst, class da instance",
-        "Всегда отображает окно",
-        "Работает только с методами объекта."
+        "Har doim window ni ko'rsatadi",
+        "Faqat ob'ekt metodlarida ishlaydi"
       ],
       "options_en": [
         "Har doim global ob'ektni ko'rsatadi",
-        "lexical this in arrow function, calling context in normal function, instance in class",
-        "Always displays window",
+        "arrow funksiyada leksik this, oddiy funksiyada chaqiruvchi kontekst, class da instance",
+        "Har doim window ni ko'rsatadi",
         "Faqat ob'ekt metodlarida ishlaydi"
       ]
     },
@@ -1001,19 +1001,19 @@
         "Ob'ektlarni o'chirish"
       ],
       "answer": 1,
-      "question_ru": "Для чего используется объект Proxy в JavaScript?",
-      "question_en": "What is the Proxy object used for in JavaScript?",
+      "question_ru": "JavaScript da Proxy ob'ekti nima uchun ishlatiladi?",
+      "question_en": "JavaScript da Proxy ob'ekti nima uchun ishlatiladi?",
       "options_ru": [
-        "Копировать объекты",
-        "Указание специального поведения для основных операций с объектами (получение, установка, удаление).",
-        "Хранение объектов",
-        "Удалить объекты"
+        "Ob'ektlarni nusxalash",
+        "Ob'ektning asosiy operatsiyalari (get, set, delete) uchun maxsus xatti-harakat belgilash",
+        "Ob'ektlarni saqlash",
+        "Ob'ektlarni o'chirish"
       ],
       "options_en": [
-        "Copy objects",
-        "Specifying special behavior for basic object operations (get, set, delete).",
+        "Ob'ektlarni nusxalash",
+        "Ob'ektning asosiy operatsiyalari (get, set, delete) uchun maxsus xatti-harakat belgilash",
         "Ob'ektlarni saqlash",
-        "Delete objects"
+        "Ob'ektlarni o'chirish"
       ]
     },
     {
@@ -1027,19 +1027,19 @@
         "Asinxron optimizatsiya"
       ],
       "answer": 1,
-      "question_ru": "Что такое оптимизация хвостовых вызовов в JavaScript?",
-      "question_en": "What is tail call optimization in JavaScript?",
+      "question_ru": "JavaScript da tail call optimization nima?",
+      "question_en": "JavaScript da tail call optimization nima?",
       "options_ru": [
-        "Оптимизация в конце кода",
-        "Оптимизация, которая не переполняет стек вызовов, когда рекурсивный вызов находится в конце функции.",
-        "Оптимизация цикла",
-        "Асинхронная оптимизация"
+        "Kod oxiridagi optimizatsiya",
+        "Rekursiv chaqiruv funksiya oxirida bo'lsa, call stack ni ortiqcha to'ldirmaydigan optimizatsiya",
+        "Tsikl optimizatsiyasi",
+        "Asinxron optimizatsiya"
       ],
       "options_en": [
-        "Optimization at the end of the code",
-        "An optimization that does not overfill the call stack when the recursive call is at the end of a function",
-        "Cycle optimization",
-        "Asynchronous optimization"
+        "Kod oxiridagi optimizatsiya",
+        "Rekursiv chaqiruv funksiya oxirida bo'lsa, call stack ni ortiqcha to'ldirmaydigan optimizatsiya",
+        "Tsikl optimizatsiyasi",
+        "Asinxron optimizatsiya"
       ]
     },
     {
@@ -1053,19 +1053,19 @@
         "Massivni kengaytirish"
       ],
       "answer": 1,
-      "question_ru": "Для чего используется SharedArrayBuffer в JavaScript?",
-      "question_en": "What is SharedArrayBuffer used for in JavaScript?",
+      "question_ru": "JavaScript da SharedArrayBuffer nima uchun ishlatiladi?",
+      "question_en": "JavaScript da SharedArrayBuffer nima uchun ishlatiladi?",
       "options_ru": [
-        "Копирование массива",
+        "Array nusxalash",
         "Web Workers o'rtasida umumiy xotira bo'limidan foydalanish",
-        "Хранение данных",
-        "Расширить массив"
+        "Ma'lumotlarni saqlash",
+        "Massivni kengaytirish"
       ],
       "options_en": [
-        "Array copy",
-        "Using a shared memory partition between Web Workers",
-        "Data storage",
-        "Expand the array"
+        "Array nusxalash",
+        "Web Workers o'rtasida umumiy xotira bo'limidan foydalanish",
+        "Ma'lumotlarni saqlash",
+        "Massivni kengaytirish"
       ]
     },
     {
@@ -1079,19 +1079,19 @@
         "Metaprogramming uchun mirror ob'ekt"
       ],
       "answer": 3,
-      "question_ru": "Что такое Reflect API в JavaScript?",
-      "question_en": "What is the Reflect API in JavaScript?",
+      "question_ru": "JavaScript da Reflect API nima?",
+      "question_en": "JavaScript da Reflect API nima?",
       "options_ru": [
-        "Зеркальное отображение кода",
-        "Коллекция статических методов для основных операций JavaScript над объектами.",
-        "Пример дизайна отражения",
-        "Зеркальный объект для метапрограммирования"
+        "Kodni aks ettirish",
+        "Ob'ektlarning asosiy JavaScript operatsiyalari uchun statik metodlar to'plami",
+        "Reflection dizayn namunasi",
+        "Metaprogramming uchun mirror ob'ekt"
       ],
       "options_en": [
-        "Code mirroring",
-        "A collection of static methods for basic JavaScript operations on objects",
-        "Reflection design example",
-        "Mirror object for metaprogramming"
+        "Kodni aks ettirish",
+        "Ob'ektlarning asosiy JavaScript operatsiyalari uchun statik metodlar to'plami",
+        "Reflection dizayn namunasi",
+        "Metaprogramming uchun mirror ob'ekt"
       ]
     },
     {
@@ -1105,19 +1105,19 @@
         "Ikkalasi bir xil navbatda ishlaydi"
       ],
       "answer": 1,
-      "question_ru": "В чем разница между микрозадачой и макрозадачой в JavaScript?",
-      "question_en": "What is the difference between microtask and macrotask in JavaScript?",
+      "question_ru": "JavaScript da microtask va macrotask farqi nima?",
+      "question_en": "JavaScript da microtask va macrotask farqi nima?",
       "options_ru": [
         "Нет никакой разницы",
-        "Микрозадачи (Promise,queueMicrotask) выполняются перед каждой макрозадачой.",
-        "Макрозадачи выполняются первыми",
-        "Оба работают в одной очереди"
+        "Microtasklar (Promise, queueMicrotask) har bir macrotaskdan oldin bajariladi",
+        "Macrotasklar birinchi bajariladi",
+        "Ikkalasi bir xil navbatda ishlaydi"
       ],
       "options_en": [
         "There is no difference",
-        "Microtasks (Promise, queueMicrotask) are executed before each macrotask",
+        "Microtasklar (Promise, queueMicrotask) har bir macrotaskdan oldin bajariladi",
         "Macrotasklar birinchi bajariladi",
-        "Both work in the same queue"
+        "Ikkalasi bir xil navbatda ishlaydi"
       ]
     },
     {
@@ -1131,19 +1131,19 @@
         "Tsikl ishlatganda"
       ],
       "answer": 1,
-      "question_ru": "Как происходит утечка памяти в JavaScript?",
-      "question_en": "How does a Memory Leak occur in JavaScript?",
+      "question_ru": "JavaScript da Memory Leak qanday paydo bo'ladi?",
+      "question_en": "JavaScript da Memory Leak qanday paydo bo'ladi?",
       "options_ru": [
-        "При создании больших массивов",
-        "Когда глобальные переменные, неочищенные прослушиватели событий, замыкания занимают слишком много памяти",
-        "Всякий раз, когда используется замыкание",
-        "При использовании цикла"
+        "Katta massivlar yaratilanda",
+        "Global o'zgaruvchilar, tozalanmagan event listener lar, closure lar ortiqcha xotira egallaganda",
+        "Har doim closure ishlatganda",
+        "Tsikl ishlatganda"
       ],
       "options_en": [
-        "When creating large arrays",
-        "When global variables, uncleaned event listeners, closures take up too much memory",
-        "Whenever using a closure",
-        "When using a loop"
+        "Katta massivlar yaratilanda",
+        "Global o'zgaruvchilar, tozalanmagan event listener lar, closure lar ortiqcha xotira egallaganda",
+        "Har doim closure ishlatganda",
+        "Tsikl ishlatganda"
       ]
     },
     {
@@ -1157,18 +1157,18 @@
         "Event handling"
       ],
       "answer": 1,
-      "question_ru": "Почему веб-воркеры используются в JavaScript?",
-      "question_en": "Why are Web Workers used in JavaScript?",
+      "question_ru": "JavaScript da Web Workers nima uchun ishlatiladi?",
+      "question_en": "JavaScript da Web Workers nima uchun ishlatiladi?",
       "options_ru": [
-        "Манипулирование DOM",
-        "Запуск кода в фоновом потоке независимо от основного потока пользовательского интерфейса.",
-        "Асинхронные запросы",
-        "Обработка событий"
+        "DOM manipulyatsiyasi",
+        "Asosiy UI thread dan mustaqil background thread da kod ishlatish",
+        "Asinxron so'rovlar",
+        "Event handling"
       ],
       "options_en": [
-        "DOM manipulation",
-        "Running code in a background thread independent of the main UI thread",
-        "Asynchronous requests",
+        "DOM manipulyatsiyasi",
+        "Asosiy UI thread dan mustaqil background thread da kod ishlatish",
+        "Asinxron so'rovlar",
         "Event handling"
       ]
     },
@@ -1183,19 +1183,19 @@
         "Iterator to'xtatish"
       ],
       "answer": 1,
-      "question_ru": "Почему символ.iterator используется в JavaScript?",
-      "question_en": "Why is Symbol.iterator used in JavaScript?",
+      "question_ru": "JavaScript da Symbol.iterator nima uchun ishlatiladi?",
+      "question_en": "JavaScript da Symbol.iterator nima uchun ishlatiladi?",
       "options_ru": [
-        "Создать символ",
-        "Определите протокол итератора, который позволяет объекту работать с операторами for...of и спреда.",
-        "Преобразовать символ в число",
-        "Остановить итератор"
+        "Symbol yaratish",
+        "Ob'ektga for...of va spread operator bilan ishlash imkonini beradigan iterator protokolini belgilash",
+        "Symbol ni raqamga aylantirish",
+        "Iterator to'xtatish"
       ],
       "options_en": [
-        "Create a symbol",
-        "Define an iterator protocol that allows an object to work with the for...of and spread operators",
-        "Convert symbol to number",
-        "Stop iterator"
+        "Symbol yaratish",
+        "Ob'ektga for...of va spread operator bilan ishlash imkonini beradigan iterator protokolini belgilash",
+        "Symbol ni raqamga aylantirish",
+        "Iterator to'xtatish"
       ]
     },
     {
@@ -1209,19 +1209,19 @@
         "Xotirani tozalash"
       ],
       "answer": 1,
-      "question_ru": "Что такое мемоизация в JavaScript?",
-      "question_en": "What is Memoization in JavaScript?",
+      "question_ru": "JavaScript da Memoization nima?",
+      "question_en": "JavaScript da Memoization nima?",
       "options_ru": [
-        "Запомните информацию",
-        "Оптимизация, позволяющая избежать перерасчета для одних и тех же аргументов за счет кэширования результатов функции.",
-        "Запоминание объектов",
-        "Очистить память"
+        "Ma'lumotlarni eslab qolish",
+        "Funksiya natijalarini kesh qilib, bir xil argumentlar uchun qayta hisoblashni oldini olish optimizatsiyasi",
+        "Ob'ektlarni yodlash",
+        "Xotirani tozalash"
       ],
       "options_en": [
-        "Memorize information",
-        "Optimization to avoid recalculation for the same arguments by caching function results",
-        "Memorizing objects",
-        "Clear memory"
+        "Ma'lumotlarni eslab qolish",
+        "Funksiya natijalarini kesh qilib, bir xil argumentlar uchun qayta hisoblashni oldini olish optimizatsiyasi",
+        "Ob'ektlarni yodlash",
+        "Xotirani tozalash"
       ]
     },
     {
@@ -1235,19 +1235,19 @@
         "Funksiya argumentlarini belgilaydi"
       ],
       "answer": 1,
-      "question_ru": "Что делает Function.prototype.bind() в JavaScript?",
+      "question_ru": "JavaScript da Function.prototype.bind() nima qiladi?",
       "question_en": "JavaScript da Function.prototype.bind() nima qiladi?",
       "options_ru": [
-        "Вызывает функцию",
-        "Создает новую функцию, в которой this привязана к указанному объекту.",
-        "Копирует функцию",
-        "Определяет аргументы функции"
+        "Funksiyani chaqiradi",
+        "Yangi funksiya yaratadi, unda this belgilangan ob'ektga bog'langan bo'ladi",
+        "Funksiyani nusxalaydi",
+        "Funksiya argumentlarini belgilaydi"
       ],
       "options_en": [
-        "Calls the function",
+        "Funksiyani chaqiradi",
         "Yangi funksiya yaratadi, unda this belgilangan ob'ektga bog'langan bo'ladi",
-        "Copies a function",
-        "Defines function arguments"
+        "Funksiyani nusxalaydi",
+        "Funksiya argumentlarini belgilaydi"
       ]
     },
     {
@@ -1261,19 +1261,19 @@
         "Asinxron funksiyalar zanjiri"
       ],
       "answer": 0,
-      "question_ru": "Что такое каррирование в JavaScript?",
-      "question_en": "What is Currying in JavaScript?",
+      "question_ru": "JavaScript da Currying nima?",
+      "question_en": "JavaScript da Currying nima?",
       "options_ru": [
-        "Преобразование функции с несколькими аргументами в цепочку функций с одним аргументом",
-        "Комбинируйте функции",
-        "Создание объектов",
-        "Цепочка асинхронных функций"
+        "Ko'p argumentli funksiyani bir argumentli funksiyalar zanjiriga aylantirish",
+        "Funksiyalarni birlashtirish",
+        "Ob'ektlarni yaratish",
+        "Asinxron funksiyalar zanjiri"
       ],
       "options_en": [
-        "Convert a multi-argument function to a chain of one-argument functions",
-        "Combine functions",
+        "Ko'p argumentli funksiyani bir argumentli funksiyalar zanjiriga aylantirish",
+        "Funksiyalarni birlashtirish",
         "Ob'ektlarni yaratish",
-        "Chain of asynchronous functions"
+        "Asinxron funksiyalar zanjiri"
       ]
     },
     {
@@ -1287,19 +1287,19 @@
         "Ma'lumotlar tuzilmasi"
       ],
       "answer": 1,
-      "question_ru": "Что такое абстрактное синтаксическое дерево (AST) в JavaScript?",
-      "question_en": "What is Abstract Syntax Tree (AST) in JavaScript?",
+      "question_ru": "JavaScript da Abstract Syntax Tree (AST) nima?",
+      "question_en": "JavaScript da Abstract Syntax Tree (AST) nima?",
       "options_ru": [
-        "Графическое представление кода",
-        "В коде используется древовидная структура, созданная парсером — транспиляторы, линтеры.",
-        "Структура алгоритма",
-        "Структура данных"
+        "Kodni grafik ko'rinishi",
+        "Kodni parser tomonidan yaratilgan daraxt tuzilmasi — transpilerlar, linterlar ishlatadi",
+        "Algoritm tuzilmasi",
+        "Ma'lumotlar tuzilmasi"
       ],
       "options_en": [
-        "A graphical representation of the code",
+        "Kodni grafik ko'rinishi",
         "Kodni parser tomonidan yaratilgan daraxt tuzilmasi — transpilerlar, linterlar ishlatadi",
-        "Algorithm structure",
-        "Data structure"
+        "Algoritm tuzilmasi",
+        "Ma'lumotlar tuzilmasi"
       ]
     }
   ]

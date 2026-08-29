@@ -24,8 +24,8 @@
       "options_en": [
         "CSS framework",
         "A dynamic, object-oriented programming language",
-        "JavaScript turi",
-        "Database tili"
+        "JavaScript type",
+        "Database language"
       ]
     },
     {
@@ -118,7 +118,7 @@
       ],
       "answer": 2,
       "question_ru": "Как создать массив в Ruby?",
-      "question_en": "Ruby da massiv qanday yaratiladi?",
+      "question_en": "How to create an array in Ruby?",
       "options_ru": [
         "Массив.новый()",
         "{}",
@@ -169,7 +169,7 @@
         "func greet()"
       ],
       "answer": 1,
-      "question_ru": "Ruby da metod qanday e'lon qilinadi?",
+      "question_ru": "Как объявить метод в Ruby?",
       "question_en": "How to declare a method in Ruby?",
       "options_ru": [
         "функция приветствия()",
@@ -200,7 +200,7 @@
       "options_ru": [
         "Значение 0",
         "Отсутствие ценности",
-        "Ложь",
+        "ЛОЖЬ",
         "Пустая строка"
       ],
       "options_en": [
@@ -227,7 +227,7 @@
         "Математический символ",
         "Неизменяемый идентификатор — :name",
         "Тип строки",
-        "Константа"
+        "Постоянный"
       ],
       "options_en": [
         "Mathematical symbol",
@@ -279,7 +279,7 @@
         "Противоположность if — работает, когда условие ложно.",
         "Петля",
         "Исключение",
-        "Класс"
+        "Сорт"
       ],
       "options_en": [
         "The opposite of if — works when the condition is false",
@@ -352,7 +352,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает .map в Ruby?",
-      "question_en": "Ruby da .map nima qiladi?",
+      "question_en": "What does .map do in Ruby?",
       "options_ru": [
         "Фильтрует массив",
         "Возвращает новый массив, изменяя каждый элемент в блоке.",
@@ -388,7 +388,7 @@
       "options_en": [
         "DOM select",
         "Filters items that match the condition",
-        "Birinchi elementni oladi",
+        "Gets the first element",
         "Sorts an array"
       ]
     },
@@ -430,7 +430,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое MVC в Ruby on Rails?",
-      "question_en": "Ruby on Rails da MVC nima?",
+      "question_en": "What is MVC in Ruby on Rails?",
       "options_ru": [
         "Модель-Видео-Контроллер",
         "Модель-Представление-Контроллер — это архитектура, в которой данные, представление и контроллер разделены.",
@@ -461,7 +461,7 @@
         "модуль НПМ",
         "Для пространства имен и миксина — не создавать экземпляры, использовать через include/extend",
         "Тип класса",
-        "Пакет"
+        "Упаковка"
       ],
       "options_en": [
         "NPM module",
@@ -518,7 +518,7 @@
       "options_en": [
         "Enum",
         "provides map, select, reduce, sort, min, max and other collection methods",
-        "Iterator",
+        "An iterator",
         "Loop"
       ]
     },
@@ -560,7 +560,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое начало/спасение/обеспечение в Ruby?",
-      "question_en": "Ruby da begin/rescue/ensure nima?",
+      "question_en": "What is begin/rescue/ensure in Ruby?",
       "options_ru": [
         "Если-иначе",
         "Блок обработки исключений — перехватите аварийное исключение и убедитесь, что оно всегда работает.",
@@ -589,13 +589,13 @@
       "question_en": "Frozen at Ruby? and what is freeze?",
       "options_ru": [
         "Замораживание",
-        "Ob'ektni o'zgarmas qilish — freeze orqali, frozen? tekshirish",
-        "Immutable check",
+        "Сделать объект неизменяемым — посредством заморозки, заморозки? проверять",
+        "Неизменяемая проверка",
         "Замок для струн"
       ],
       "options_en": [
         "Freezing",
-        "Make the object immutable — through freeze, frozen? check",
+        "Making the object immutable — through freeze, frozen? check",
         "Immutable check",
         "String lock"
       ]
@@ -612,7 +612,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему метод_missing в Ruby?",
-      "question_en": "Ruby da method_missing nima uchun?",
+      "question_en": "Why method_missing in Ruby?",
       "options_ru": [
         "Ошибка метода не найдена",
         "Перехватчик при вызове несуществующего метода — для динамических методов.",
@@ -620,7 +620,7 @@
         "Резервный метод"
       ],
       "options_en": [
-        "Metod topilmadi xatosi",
+        "Method not found error",
         "Catcher when a nonexistent method is called — for dynamic methods",
         "Error handler",
         "Fallback method"
@@ -669,11 +669,11 @@
         "Структура данных",
         "Удобный класс для создания простого объекта данных с атрибутами — Struct.new(:name, :age)",
         "Тип класса",
-        "Запись"
+        "Записывать"
       ],
       "options_en": [
         "Data structure",
-        "Atributlarga ega oddiy ma'lumot ob'ekti yaratish uchun qulay sinf — Struct.new(:name, :age)",
+        "A convenient class for creating a simple data object with attributes — Struct.new(:name, :age)",
         "Class type",
         "Record"
       ]
@@ -770,7 +770,7 @@
       "question_ru": "Зачем использовать Tap в Ruby?",
       "question_en": "Why Tap in Ruby?",
       "options_ru": [
-        "Пресса",
+        "Нажимать",
         "Используйте блок перед возвратом объекта — для отладки цепочки",
         "Найти событие",
         "Цепочка методов"
@@ -793,10 +793,10 @@
         "Chain method"
       ],
       "answer": 1,
-      "question_ru": "Ruby da then/yield_self nima qiladi?",
+      "question_ru": "Что делает then/yield_self в Ruby?",
       "question_en": "What does then/yield_self do in Ruby?",
       "options_ru": [
-        "Тогда заявление",
+        "Тогда утверждение",
         "Передаёт объект в блок и возвращает результат блока — точно так же, как оператор канала.",
         "Обещай тогда",
         "Цепной метод"
@@ -846,7 +846,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое Enumerable#lazy в Ruby?",
-      "question_en": "Ruby da Enumerable#lazy nima?",
+      "question_en": "What is Enumerable#lazy in Ruby?",
       "options_ru": [
         "Медленное перечисление",
         "Ленивая оценка — оценивает только необходимые элементы для бесконечных последовательностей.",
@@ -933,7 +933,7 @@
       ],
       "options_en": [
         "The only class",
-        "Har bir ob'ektning o'ziga xos yashirin sinf — ob'ektga xos metodlar shu yerda saqlanadi",
+        "Each object has its own hidden class — object-specific methods are stored here",
         "Class method",
         "Static class"
       ]
@@ -1038,7 +1038,7 @@
       "options_en": [
         "Actor pattern",
         "For thread-safe parallel execution — there is no shared state between reactors",
-        "Process turi",
+        "Process type",
         "Thread pool"
       ]
     },
@@ -1083,13 +1083,13 @@
       "question_en": "What is GIL (Global VM Lock) in Ruby?",
       "options_ru": [
         "Глобальная блокировка",
-        "В Ruby MRI код Ruby одновременно выполняется одним потоком — настоящего параллелизма нет.",
+        "В Ruby MRI один поток может одновременно выполнять код Ruby — настоящего параллелизма нет.",
         "Блокировка виртуальной машины",
         "Замок резьбы"
       ],
       "options_en": [
         "Global lock",
-        "In Ruby MRI, one thread runs Ruby code at a time — no true parallelism",
+        "In Ruby MRI, one thread can run Ruby code at a time — no true parallelism",
         "VM lock",
         "Thread lock"
       ]
@@ -1158,7 +1158,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое Proc#curry в Ruby?",
-      "question_en": "Ruby da Proc#curry nima?",
+      "question_en": "What is Proc#curry in Ruby?",
       "options_ru": [
         "Еда карри",
         "Преобразование proc в каррированную функцию — вызов с частичными аргументами",
@@ -1219,7 +1219,7 @@
       ],
       "options_en": [
         "Frozen string",
-        "# frozen_string_literal: true — barcha string literallarni immutable qilish, performance uchun",
+        "# frozen_string_literal: true — make all string literals immutable, for performance",
         "Frozen constant",
         "Immutable mode"
       ]
@@ -1238,7 +1238,7 @@
       "question_ru": "Почему YARD в Ruby?",
       "question_en": "Why YARD in Ruby?",
       "options_ru": [
-        "Двор",
+        "Площадка",
         "Генератор документации для кода Ruby — с тегами @param, @return",
         "Генератор документов",
         "Парсер комментариев"
@@ -1271,7 +1271,7 @@
       ],
       "options_en": [
         "It starts from zero",
-        "Cheksiz diapazon — (1..) dan boshlab oxirisiz, select bilan cheklash mumkin",
+        "Infinite range — starting from (1..) without end, can be limited by select",
         "Range type",
         "Infinite loop"
       ]

@@ -66,7 +66,7 @@
       ],
       "answer": 1,
       "question_ru": "Как объявить переменную в SCSS?",
-      "question_en": "SCSS da o'zgaruvchi qanday e'lon qilinadi?",
+      "question_en": "How to declare a variable in SCSS?",
       "options_ru": [
         "var(--color): красный",
         "$первичный цвет: #333;",
@@ -91,7 +91,7 @@
         "Nested .child { }"
       ],
       "answer": 1,
-      "question_ru": "SCSS da nesting qanday ishlaydi?",
+      "question_ru": "Как работает вложение в SCSS?",
       "question_en": "How does nesting work in SCSS?",
       "options_ru": [
         ".parent > .child { }",
@@ -180,7 +180,7 @@
       "options_en": [
         "Universal selector",
         "Parent selector — &:hover, &__element, &--modifier",
-        "Va operatori",
+        "And the operator",
         "Wildcard"
       ]
     },
@@ -196,7 +196,7 @@
       ],
       "answer": 1,
       "question_ru": "Возможны ли математические операции в SCSS?",
-      "question_en": "SCSS da matematik operatsiyalar mumkinmi?",
+      "question_en": "Are math operations possible in SCSS?",
       "options_ru": [
         "Нет, только функции CSS",
         "Да, с операторами +, -, *, /, %",
@@ -227,12 +227,12 @@
         "Да, всегда",
         "Нет, в компиляцию включено только /* */",
         "Всегда включено",
-        "Ixtiyoriy"
+        "Необязательный"
       ],
       "options_en": [
         "Yes, always",
         "No, only /* */ is included in the compilation",
-        "Har doim kiradi",
+        "Always included",
         "Optional"
       ]
     },
@@ -250,10 +250,10 @@
       "question_ru": "Работают ли в SCSS функции цвета (осветление, затемнение)?",
       "question_en": "Do color functions (lighten, darken) work in SCSS?",
       "options_ru": [
-        "Yo'q",
+        "Нет",
         "Да, функции цвета Sass также работают в SCSS.",
         "Только в СССС",
-        "Faqat Sass da"
+        "Только в Сассе"
       ],
       "options_en": [
         "No",
@@ -300,7 +300,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему @import в SCSS (старый способ)?",
-      "question_en": "SCSS da @import nima uchun (eski usul)?",
+      "question_en": "Why @import in SCSS (the old way)?",
       "options_ru": [
         "Импорт CSS",
         "Чтобы добавить другие файлы SCSS, теперь предпочтительнее использовать (@use)",
@@ -377,7 +377,7 @@
         "Map birlashtiradi"
       ],
       "answer": 1,
-      "question_ru": "SCSS da map-get($map, key) nima qiladi?",
+      "question_ru": "Что делает map-get($map, key) в SCSS?",
       "question_en": "What does map-get($map, key) do in SCSS?",
       "options_ru": [
         "Создает карту",
@@ -432,16 +432,16 @@
       "question_ru": "Что такое список в SCSS?",
       "question_en": "What is a list in SCSS?",
       "options_ru": [
-        "HTML ro'yxat",
-        "Пустой набор значений или значений, разделенных запятыми — (1, 2, 3) или (1 2 3).",
+        "HTML-список",
+        "Пустой или разделенный запятыми набор значений — (1, 2, 3) или (1 2 3)",
         "Тип массива",
         "Тип карты"
       ],
       "options_en": [
-        "HTML ro'yxat",
-        "Bo'sh yoki vergul bilan ajratilgan qiymatlar to'plami — (1, 2, 3) yoki (1 2 3)",
+        "HTML list",
+        "A blank or comma-separated set of values — (1, 2, 3) or (1 2 3)",
         "Array type",
-        "Map turi"
+        "Map type"
       ]
     },
     {
@@ -465,7 +465,7 @@
       ],
       "options_en": [
         "Event handler",
-        "Ro'yxat yoki map bo'yicha iteratsiya qilib CSS yaratish",
+        "Create CSS by iterating over a list or map",
         "Foreach loop",
         "Each selector"
       ]
@@ -560,7 +560,7 @@
       ],
       "answer": 1,
       "question_ru": "Как реализовать соглашение об именах BEM в SCSS?",
-      "question_en": "SCSS da BEM naming convention qanday amalga oshiriladi?",
+      "question_en": "How to implement BEM naming convention in SCSS?",
       "options_ru": [
         "Отдельный селектор",
         "с &: &__element, &--modifier — внутри вложенности",
@@ -570,7 +570,7 @@
       "options_en": [
         "A separate selector",
         "with &: &__element, &--modifier — inside nesting",
-        "Maxsus BEM plugin",
+        "Custom BEM plugin",
         "Separate files"
       ]
     },
@@ -586,7 +586,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает @forward в SCSS?",
-      "question_en": "SCSS da @forward nima qiladi?",
+      "question_en": "What does @forward do in SCSS?",
       "options_ru": [
         "Пересылка файлов",
         "Реэкспортировать содержимое модуля через другой модуль.",
@@ -594,7 +594,7 @@
         "Импорт маршрутизации"
       ],
       "options_en": [
-        "Fayl yo'naltirish",
+        "File forwarding",
         "Re-export the contents of a module through another module",
         "CSS forward",
         "Import routing"
@@ -621,8 +621,8 @@
       ],
       "options_en": [
         "Add content",
-        "Mixin chaqirilganda blok kontent qo'yish imkonini beradi — responsive mixin uchun",
-        "Placeholder kontent",
+        "A block allows you to insert content when the mixin is called — for a responsive mixin",
+        "Placeholder content",
         "CSS content"
       ]
     },
@@ -673,7 +673,7 @@
       ],
       "options_en": [
         "Math.js",
-        "Matematik funksiyalar: floor, ceil, round, abs, max, min, div va boshqalar",
+        "Math functions: floor, ceil, round, abs, max, min, div, etc",
         "CSS math",
         "Calculator"
       ]
@@ -726,7 +726,7 @@
       "options_en": [
         "Only in values",
         "Input of variable value in selector name, property name, URLs",
-        "Comment ichida",
+        "In the comment",
         "Inside the function"
       ]
     },
@@ -776,7 +776,7 @@
         "Цветовая смесь"
       ],
       "options_en": [
-        "Faqat CSS rgba",
+        "Just css rgba",
         "Same as CSS rgba(); Also with $color and $alpha: rgba($color, 0.5)",
         "Sass custom function",
         "Color blend"
@@ -823,7 +823,7 @@
       "question_en": "What does @use 'sass:list' give in SCSS?",
       "options_ru": [
         "HTML-список",
-        "List funksiyalari: list.nth, list.length, list.append, list.join, list.zip",
+        "Функции списка: list.nth, list.length, list.append, list.join, list.zip",
         "Список CSS",
         "Функции массива"
       ],
@@ -854,7 +854,7 @@
         "Селектор комбайна"
       ],
       "options_en": [
-        "Selector yaratish",
+        "Create a selector",
         "Programmatic concatenation and nesting of selectors",
         "Selector merge",
         "Selector combine"
@@ -881,7 +881,7 @@
       ],
       "options_en": [
         "Responsive CSS",
-        "Breakpoint asosida media querylarni mixin orqali qo'llash — DRY kod",
+        "Applying breakpoint-based media queries through mixin — DRY code",
         "Mix pattern",
         "Media mixin"
       ]
@@ -903,7 +903,7 @@
         "Файл токена",
         "Централизованные настройки с такими переменными, как $primary, $spacing-cm и карты.",
         "Фирменный файл",
-        "Config file"
+        "Конфигурационный файл"
       ],
       "options_en": [
         "Token file",
@@ -959,7 +959,7 @@
       ],
       "options_en": [
         "Loading CSS",
-        "Mixin ichidan CSS faylni dinamik yuklash — runtime theming",
+        "Dynamic loading of a CSS file from Mixin — runtime theming",
         "Dynamic import",
         "Lazy CSS"
       ]
@@ -978,7 +978,7 @@
       "question_ru": "Как предотвратить столкновение пространства имен с @use в SCSS?",
       "question_en": "How to prevent namespace collision with @use in SCSS?",
       "options_ru": [
-        "Iloji yo'q",
+        "Нет никакого способа",
         "@use 'file' как псевдоним — Доступ с уникальным псевдонимом: alias.$variable",
         "Глобальное пространство имен",
         "Импортировать псевдоним"
@@ -1010,7 +1010,7 @@
         "Инструмент разработки"
       ],
       "options_en": [
-        "Xarita",
+        "Map",
         "Map the compiled CSS to the original SCSS file — for debugging",
         "CSS map",
         "Development tool"
@@ -1037,7 +1037,7 @@
       ],
       "options_en": [
         "Mixin wrapping",
-        "@content bilan media query, theme, state wrappers — kod strukturasi uchun",
+        "Media query, theme, state wrappers with @content — for code structure",
         "HOC mixin",
         "Layout wrapper"
       ]
@@ -1238,7 +1238,7 @@
       "question_ru": "Как создать собственную сетку в SCSS?",
       "question_en": "How to build custom grid system in SCSS?",
       "options_ru": [
-        "Bootstrap grid",
+        "Загрузочная сетка",
         "Цикл @for + с миксином: столбцы, поля, точки останова — настраиваемая структура сетки",
         "CSS-сетка",
         "Сетка флексбокса"
@@ -1264,7 +1264,7 @@
       "question_ru": "Как провести модульное тестирование в SCSS?",
       "question_en": "How to do unit testing in SCSS?",
       "options_ru": [
-        "Iloji yo'q",
+        "Нет никакого способа",
         "С библиотекой sass-true: @include утверждения, @include ожидаем, @include содержит",
         "С жестом",
         "Ручной тест"

@@ -75,7 +75,7 @@
       ],
       "options_en": [
         "There is no difference",
-        "let — immutable (o'zgarmas), var — mutable (o'zgaruvchan)",
+        "let — immutable, var — mutable",
         "var is immutable",
         "let mutable"
       ]
@@ -101,7 +101,7 @@
       ],
       "options_en": [
         "Optional parameter",
-        "Qiymat bo'lishi (?T) yoki yo'q bo'lishi (nil) mumkin — null safety",
+        "The value can be (?T) or not (nil) — null safety",
         "Nullable type",
         "Maybe type"
       ]
@@ -122,7 +122,7 @@
       "options_ru": [
         "! только с",
         "если пусть, охрана пусть, ??, ! принудительное развертывание — несколько методов",
-        "Только?? с",
+        "Только ?? с",
         "необязательный.get()"
       ],
       "options_en": [
@@ -222,7 +222,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем охранник впустил Свифта?",
-      "question_en": "Swift da guard let nima uchun?",
+      "question_en": "Why guard let in Swift?",
       "options_ru": [
         "Защита",
         "Ранний выход — выход из области действия, если условие не выполнено, избегая множественной вложенности",
@@ -331,7 +331,7 @@
         "Удаляет элемент массива",
         "Добавляет элемент в конец массива",
         "Добавляет в начало массива",
-        "Massiv saralaydi"
+        "Сортирует массив"
       ],
       "options_en": [
         "Removes an array element",
@@ -378,7 +378,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое интерполяция строк в Swift?",
-      "question_en": "Swift da string interpolation qanday?",
+      "question_en": "What is string interpolation in Swift?",
       "options_ru": [
         "«Привет» + имя",
         "«Здравствуйте \\(имя)!»",
@@ -487,11 +487,11 @@
         "Архитектура",
         "Управление памятью — объект удаляется, когда счетчик ссылок падает до 0.",
         "Сбор мусора",
-        "Manual memory"
+        "Ручная память"
       ],
       "options_en": [
         "Architecture",
-        "Xotira boshqarish — reference soni 0 ga tushganda ob'ekt o'chiriladi",
+        "Memory management — the object is deleted when the reference count drops to 0",
         "Garbage collection",
         "Manual memory"
       ]
@@ -507,8 +507,8 @@
         "unowned optional"
       ],
       "answer": 1,
-      "question_ru": "Разница между слабой и бесхозной ссылкой в Swift?",
-      "question_en": "Swift da weak va unowned reference farqi?",
+      "question_ru": "Разница между слабой и бесхозной ссылкой в ​​Swift?",
+      "question_en": "Difference between weak and unowned reference in Swift?",
       "options_ru": [
         "Нет никакой разницы",
         "слабый — необязательно, может быть нулевым; unowned — необязательный, предполагает, что объект существует",
@@ -518,7 +518,7 @@
       "options_en": [
         "There is no difference",
         "weak — optional, can be nil; unowned — non-optional, assumes the object exists",
-        "weak unowned emas",
+        "not weak unowned",
         "unowned optional"
       ]
     },
@@ -569,7 +569,7 @@
       ],
       "options_en": [
         "Make a set",
-        "Property o'zgarishidan oldin/keyin chaqiriladigan observer — side effect uchun",
+        "Observer to be called before/after property change — for side effect",
         "Setter method",
         "Property watch"
       ]
@@ -586,7 +586,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое связанные типы в Swift?",
-      "question_en": "Swift da associated types nima?",
+      "question_en": "What are associated types in Swift?",
       "options_ru": [
         "Зависимые типы",
         "Тип заполнителя в протоколе определяет конкретный тип.",
@@ -594,7 +594,7 @@
         "Введите псевдоним"
       ],
       "options_en": [
-        "Bog'liq tiplar",
+        "Dependent types",
         "A placeholder type in a protocol defines a concrete type",
         "Generic protocol",
         "Type alias"
@@ -745,7 +745,7 @@
       "question_en": "Difference between any and some in Swift (Swift 5.7)?",
       "options_ru": [
         "Нет никакой разницы",
-        "any — existential (runtime dispatch); some — opaque type (compile-time konkret tip)",
+        "любой — экзистенциальный (отправка во время выполнения); some — непрозрачный тип (конкретный тип во время компиляции)",
         "некоторое время выполнения",
         "любое время компиляции"
       ],
@@ -777,7 +777,7 @@
       ],
       "options_en": [
         "Slow variable",
-        "Birinchi kirishda initsializatsiya — dastlabki yuklanishni kamaytiradi",
+        "Initialization on first access — reduces the initial load",
         "Deferred init",
         "Optional init"
       ]
@@ -952,7 +952,7 @@
       "question_ru": "Что такое @MainActor в Swift?",
       "question_en": "What is @MainActor in Swift?",
       "options_ru": [
-        "Asosiy aktyor",
+        "Главный актер",
         "Гарантирование выполнения в основном потоке — для кода пользовательского интерфейса.",
         "Основная тема",
         "актер пользовательского интерфейса"
@@ -1002,12 +1002,12 @@
       ],
       "answer": 1,
       "question_ru": "Что такое экзистенциальный контейнер в Swift?",
-      "question_en": "Swift da existential container nima?",
+      "question_en": "What is an existential container in Swift?",
       "options_ru": [
         "Наличие контейнера",
         "При использовании любого типа тип и значение сохраняются с метаданными во время выполнения.",
         "Протокольный свидетель",
-        "Type erasure"
+        "Тип стирания"
       ],
       "options_en": [
         "Container availability",
@@ -1218,7 +1218,7 @@
         "Работа"
       ],
       "options_en": [
-        "Vazifa",
+        "Task",
         "Structured concurrency unit — parallel work execution in async context",
         "Async unit",
         "Job"
@@ -1238,7 +1238,7 @@
       "question_ru": "Что такое продолжения в Swift?",
       "question_en": "What are continuations in Swift?",
       "options_ru": [
-        "Продолжить",
+        "Продолжать",
         "Адаптируйте код обратного вызова к async/await — withCheckedContinuation",
         "Асинхронный мост",
         "Обертка обратного вызова"
@@ -1262,7 +1262,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое расположение памяти в Swift?",
-      "question_en": "Swift da memory layout nima?",
+      "question_en": "What is memory layout in Swift?",
       "options_ru": [
         "Местоположение памяти",
         "Введите размер в байтах, выравнивание, шаг — MemoryLayout<T>.size/alignment/stride",
@@ -1270,7 +1270,7 @@
         "Тип размера"
       ],
       "options_en": [
-        "Xotira joylashuvi",
+        "Memory location",
         "Type byte size, alignment, stride — MemoryLayout<T>.size/alignment/stride",
         "Structure layout",
         "Type size"
@@ -1290,7 +1290,7 @@
       "question_ru": "Что такое платформа наблюдения в Swift (Swift 5.9)?",
       "question_en": "What is Observation framework in Swift (Swift 5.9)?",
       "options_ru": [
-        "Последующие действия",
+        "Следовать за",
         "Макрос @Observable — альтернатива KVO, минимальная, собственная реактивность Swift",
         "Наблюдение за недвижимостью",
         "Государственное наблюдение"
@@ -1298,7 +1298,7 @@
       "options_en": [
         "Follow up",
         "@Observable macro — KVO alternative, minimal, Swift native reactivity",
-        "Property observe",
+        "Property observation",
         "State observation"
       ]
     }

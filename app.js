@@ -864,22 +864,39 @@ function confirmFinish() {
 }
 
 function openModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) {
-    modal.classList.add('active');
-    modal.querySelector('button')?.focus();
+  const overlay = document.getElementById(id);
+  if (overlay) {
+    overlay.classList.add('active');
+    // Prevent background page scroll when modal is open
+    document.body.style.overflow = 'hidden';
+    // Scroll the inner .modal element to top (it has overflow-y: auto)
+    const innerModal = overlay.querySelector('.modal');
+    if (innerModal) innerModal.scrollTop = 0;
+    // Focus first interactive element for accessibility
+    requestAnimationFrame(() => {
+      const focusTarget = overlay.querySelector('button, [tabindex="0"]');
+      if (focusTarget) focusTarget.focus();
+    });
   }
 }
 
 function closeModal(id) {
   const modal = document.getElementById(id);
   if (modal) modal.classList.remove('active');
+  // Re-enable body scroll only when NO other modal is open
+  const anyOpen = document.querySelector('.modal-overlay.active');
+  if (!anyOpen) {
+    document.body.style.overflow = '';
+  }
 }
 
 // Close modal on overlay click
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('modal-overlay')) {
     e.target.classList.remove('active');
+    // Restore body scroll if no other modal is open
+    const anyOpen = document.querySelector('.modal-overlay.active');
+    if (!anyOpen) document.body.style.overflow = '';
   }
 });
 
@@ -887,6 +904,8 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     document.querySelectorAll('.modal-overlay.active').forEach(m => m.classList.remove('active'));
+    // Restore body scroll
+    document.body.style.overflow = '';
     const mobileNav = document.getElementById('mobileNav');
     if (mobileNav && mobileNav.classList.contains('open')) toggleMenu();
   }

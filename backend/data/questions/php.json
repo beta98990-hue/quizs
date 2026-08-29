@@ -22,7 +22,7 @@
         "Создание базы данных"
       ],
       "options_en": [
-        "Mobile ilovalar",
+        "Mobile applications",
         "Server-side web programming",
         "Frontend styling",
         "Database creation"
@@ -39,11 +39,11 @@
         "<%"
       ],
       "answer": 2,
-      "question_ru": "PHP kodi qanday teglar bilan boshlanadi?",
+      "question_ru": "С каких тегов начинается код PHP?",
       "question_en": "What tags does PHP code start with?",
       "options_ru": [
         "<php>",
-        "<script>",
+        "<скрипт>",
         "<?php",
         "<%"
       ],
@@ -100,7 +100,7 @@
         "Записывает файл"
       ],
       "options_en": [
-        "Ma'lumot o'qiydi",
+        "Reads information",
         "Displays the text",
         "Creates a variable",
         "Writes a file"
@@ -117,11 +117,11 @@
         "list = []"
       ],
       "answer": 1,
-      "question_ru": "PHP da massiv qanday yaratiladi?",
-      "question_en": "PHP da massiv qanday yaratiladi?",
+      "question_ru": "Как создать массив в PHP?",
+      "question_en": "How to create an array in PHP?",
       "options_ru": [
         "массив = []",
-        "$arr = array() yoki $arr = []",
+        "$arr = массив() или $arr = []",
         "арр = []",
         "список = []"
       ],
@@ -148,7 +148,7 @@
       "options_ru": [
         "защита myFunc() {}",
         "функция myFunc() {}",
-        "func myFunc() {}",
+        "функция myFunc() {}",
         "метод myFunc() {}"
       ],
       "options_en": [
@@ -232,7 +232,7 @@
       "options_en": [
         "There is no difference",
         "$_GET — information from URL; $_POST is secure data from the form body",
-        "$_POST URL dan",
+        "$_POST from URL",
         "$_GET is safer"
       ]
     },
@@ -250,7 +250,7 @@
       "question_ru": "Что возвращает функция strlen() в PHP?",
       "question_en": "What does the strlen() function return in PHP?",
       "options_ru": [
-        "Строка",
+        "Нить",
         "Длина строки",
         "Тип строки",
         "Начало строки"
@@ -258,7 +258,7 @@
       "options_en": [
         "String",
         "The length of the string",
-        "String tipini",
+        "String type",
         "The beginning of the string"
       ]
     },
@@ -276,7 +276,7 @@
       "question_ru": "Как написать foreach в PHP?",
       "question_en": "How to write foreach in PHP?",
       "options_ru": [
-        "foreach $arr as $item",
+        "foreach $arr как $item",
         "foreach ($arr как $item)",
         "за каждый ($arr) как $item",
         "цикл ($arr как $item)"
@@ -413,7 +413,7 @@
       ],
       "options_en": [
         "PHP DOM Object",
-        "PHP Data Objects — ma'lumotlar bazasi bilan abstraktsiya qatlamli ishlash",
+        "PHP Data Objects is an abstraction layer for dealing with databases",
         "Python Data Operations",
         "PHP Debug Output"
       ]
@@ -430,7 +430,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем готовить операторы в PHP?",
-      "question_en": "PHP da prepared statements nima uchun?",
+      "question_en": "Why prepared statements in PHP?",
       "options_ru": [
         "Более быстрые запросы",
         "Параметризованные SQL-запросы, защищающие от SQL-инъекций.",
@@ -439,7 +439,7 @@
       ],
       "options_en": [
         "Faster requests",
-        "SQL injection dan himoya qiluvchi parametrlangan SQL so'rovlar",
+        "Parameterized SQL queries that protect against SQL injection",
         "Cached queries",
         "Stored procedures"
       ]
@@ -458,13 +458,13 @@
       "question_ru": "Почему пространство имен в PHP?",
       "question_en": "Why namespace in PHP?",
       "options_ru": [
-        "Имя файла",
+        "имя файла",
         "Избегайте конфликтов имен классов, функций и констант.",
         "пространство имен URL",
         "Пространство имен модуля"
       ],
       "options_en": [
-        "Fayl nomi",
+        "The file name",
         "Avoid name conflicts of classes, functions and constants",
         "URL namespace",
         "Module namespace"
@@ -542,7 +542,7 @@
         "Тип черты"
       ],
       "options_en": [
-        "Klass turi",
+        "Class type",
         "A class that can have non-implementing methods that cannot create an object",
         "Interface type",
         "Trait type"
@@ -595,7 +595,7 @@
       ],
       "options_en": [
         "PHP compiler",
-        "PHP kutubxonalari va dependency boshqarish vositasi",
+        "PHP libraries and dependency management tool",
         "Build tool",
         "Code generator"
       ]
@@ -647,7 +647,7 @@
       ],
       "options_en": [
         "Array filter",
-        "Callback funksiyani massiv elementlariga qo'llab yangi massiv yaratadi",
+        "The callback creates a new array by applying the function to the array elements",
         "Array sort",
         "Array search"
       ]
@@ -746,7 +746,7 @@
       "options_ru": [
         "Функция завершается",
         "финальный класс — без наследования; последний метод — не переопределяется",
-        "Statik qiladi",
+        "Делает это статичным",
         "Делает это постоянным"
       ],
       "options_en": [
@@ -776,7 +776,7 @@
         "Обработка событий"
       ],
       "options_en": [
-        "Magic funksiyalar",
+        "Magic functions",
         "Special behavior when calling a non-existent property/method",
         "Override",
         "Event handling"
@@ -898,7 +898,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое нулевой оператор (?->) в PHP?",
-      "question_en": "PHP da nullsafe operator (?->) nima?",
+      "question_en": "What is the nullsafe operator (?->) in PHP?",
       "options_ru": [
         "Нулевая проверка",
         "Если оно равно нулю, цепочка останавливается и возвращается значение null — $user?->getAddress()?->getCity().",
@@ -1002,7 +1002,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое JIT-компиляция в PHP (PHP 8)?",
-      "question_en": "PHP da JIT compilation nima (PHP 8)?",
+      "question_en": "What is JIT compilation in PHP (PHP 8)?",
       "options_ru": [
         "Java JIT-компиляция",
         "Преобразование байт-кода в собственный машинный код во время выполнения — для приложений с интенсивным использованием ЦП.",
@@ -1036,7 +1036,7 @@
         "Выходной кэш"
       ],
       "options_en": [
-        "Op keshi",
+        "Op cache",
         "PHP scripts cache bytecode to avoid re-parsing on every request",
         "Cache module",
         "Output cache"
@@ -1195,7 +1195,7 @@
         "Type crossing",
         "A type that implements several interfaces simultaneously: TypeA&TypeB",
         "Union type",
-        "Multiple interface"
+        "Multiple interfaces"
       ]
     },
     {

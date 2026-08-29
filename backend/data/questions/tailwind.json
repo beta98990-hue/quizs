@@ -71,7 +71,7 @@
         "bg-синий-500",
         "фон-синий-500",
         "спина-синий-500",
-        "fon-blue-500"
+        "фон-синий-500"
       ],
       "options_en": [
         "bg-blue-500",
@@ -172,10 +172,10 @@
       "question_ru": "Какой класс скрыть элемент в Tailwind?",
       "question_en": "Which class to hide an element in Tailwind?",
       "options_ru": [
-        "hide",
-        "invisible",
+        "скрывать",
+        "невидимый",
         "дисплей-нет",
-        "hidden"
+        "скрытый"
       ],
       "options_en": [
         "hide",
@@ -222,7 +222,7 @@
       ],
       "answer": 2,
       "question_ru": "Как установить размер текста в Tailwind?",
-      "question_en": "Tailwind da text o'lchamini qanday belgilaysiz?",
+      "question_en": "How do you set text size in Tailwind?",
       "options_ru": [
         "размер текста-LG",
         "большой шрифт",
@@ -274,7 +274,7 @@
       ],
       "answer": 1,
       "question_ru": "Как добавить тень в Tailwind?",
-      "question_en": "Tailwind da shadow qanday qo'shiladi?",
+      "question_en": "How to add shadow in Tailwind?",
       "options_ru": [
         "коробка-тень-MD",
         "тень-MD",
@@ -354,14 +354,14 @@
       "question_ru": "Как использовать темный режим в Tailwind?",
       "question_en": "How to use dark mode in Tailwind?",
       "options_ru": [
-        "темно::",
+        "темный::",
         "темный режим:",
-        "темно:",
+        "темный:",
         "@темный:"
       ],
       "options_en": [
         "dark::",
-        "dark-mode:",
+        "dark mode:",
         "dark:",
         "@dark:"
       ]
@@ -430,12 +430,12 @@
       ],
       "answer": 1,
       "question_ru": "Что делает директива @apply в Tailwind?",
-      "question_en": "Tailwind da @apply direktivi nima qiladi?",
+      "question_en": "What does the @apply directive do in Tailwind?",
       "options_ru": [
         "Применить CSS",
         "Применение служебных классов Tailwind к правилу CSS — создание класса компонента",
         "Приложение для смешивания",
-        "Продлить"
+        "Продлевать"
       ],
       "options_en": [
         "Apply CSS",
@@ -456,9 +456,9 @@
       ],
       "answer": 0,
       "question_ru": "Как использовать произвольные значения в Tailwind?",
-      "question_en": "How to use arbitrary values ​​in Tailwind?",
+      "question_en": "How to use arbitrary values in Tailwind?",
       "options_ru": [
-        "[значение]",
+        "[ценить]",
         "произвольное (значение)",
         "Не используется",
         "*[ценить]"
@@ -508,7 +508,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему в Tailwind используется конфигурация PurgeCSS/content?",
-      "question_en": "Tailwind da PurgeCSS / content konfiguratsiyasi nima uchun?",
+      "question_en": "Why the PurgeCSS / content configuration in Tailwind?",
       "options_ru": [
         "Очистка CSS",
         "Удалить неиспользуемые классы CSS из производственного пакета — небольшой файл",
@@ -534,7 +534,7 @@
       ],
       "answer": 1,
       "question_ru": "Как использовать функцию theme() в Tailwind в CSS?",
-      "question_en": "Tailwind da theme() funksiyasi CSS da qanday ishlatiladi?",
+      "question_en": "How to use the theme() function in Tailwind in CSS?",
       "options_ru": [
         "CSS-функция",
         "Использование значений темы Tailwind в CSS: theme('colors.blue.500')",
@@ -543,7 +543,7 @@
       ],
       "options_en": [
         "CSS function",
-        "Using Tailwind theme values ​​in CSS: theme('colors.blue.500')",
+        "Using Tailwind theme values in CSS: theme('colors.blue.500')",
         "JavaScript function",
         "Config function"
       ]
@@ -586,7 +586,7 @@
       ],
       "answer": 1,
       "question_ru": "Разница между расширением и переопределением в Tailwind в Tailwind.config.js?",
-      "question_en": "Tailwind da extend va override farqi tailwind.config.js da?",
+      "question_en": "Difference between extend and override in Tailwind in tailwind.config.js?",
       "options_ru": [
         "Нет никакой разницы",
         "расширить — добавляет значения по умолчанию; Пишу прямо в теме, не получается по умолчанию",
@@ -597,7 +597,7 @@
         "There is no difference",
         "extend — adds to default values; Writing directly in the theme does not get the default",
         "override extends",
-        "extend o'chiradi"
+        "extend deletes"
       ]
     },
     {
@@ -694,7 +694,7 @@
       "options_ru": [
         "Отступы по оси X",
         "Flex/grid добавляет горизонтальное пространство (слева) между дочерними элементами.",
-        "Grid gap",
+        "Разговор о сетке",
         "Расстояние"
       ],
       "options_en": [
@@ -716,7 +716,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает div-x в Tailwind?",
-      "question_en": "Tailwind da divide-x nima qiladi?",
+      "question_en": "What does divide-x do in Tailwind?",
       "options_ru": [
         "Разделить элемент",
         "Добавляет вертикальную линию между дочерними элементами (справа от границы)",
@@ -742,7 +742,7 @@
       ],
       "answer": 1,
       "question_ru": "Зачем звонить в Tailwind?",
-      "question_en": "Tailwind da ring nima uchun?",
+      "question_en": "Why ring in Tailwind?",
       "options_ru": [
         "Пограничное кольцо",
         "Кольцо, созданное тенью коробки — для состояния фокуса — кольцо-2 кольцо-синее-500",
@@ -751,7 +751,7 @@
       ],
       "options_en": [
         "Border ring",
-        "Box shadow orqali yasalgan ring — focus state uchun — ring-2 ring-blue-500",
+        "Ring made by box shadow — for focus state — ring-2 ring-blue-500",
         "Focus ring",
         "CSS ring"
       ]
@@ -771,9 +771,9 @@
       "question_en": "What is aspect-ratio in Tailwind?",
       "options_ru": [
         "Соотношение изображений",
-        "Elementning kenglik/balandlik nisbati — aspect-video, aspect-square, aspect-[16/9]",
+        "Соотношение сторон элемента — аспект-видео, аспект-квадрат, аспект-[16/9]",
         "Соотношение видео",
-        "Container ratio"
+        "Соотношение контейнеров"
       ],
       "options_en": [
         "Image ratio",
@@ -820,7 +820,7 @@
       ],
       "answer": 1,
       "question_ru": "Что такое размытие фона в Tailwind?",
-      "question_en": "Tailwind da backdrop-blur nima?",
+      "question_en": "What is backdrop-blur in Tailwind?",
       "options_ru": [
         "Размытие изображения",
         "Размывает фон позади элемента — для гласморфизма.",
@@ -872,7 +872,7 @@
       ],
       "answer": 1,
       "question_ru": "Как создать градиент в Tailwind?",
-      "question_en": "Tailwind da gradient qanday yaratiladi?",
+      "question_en": "How to create a gradient in Tailwind?",
       "options_ru": [
         "градиент к r",
         "bg-gradient-to-r от синего-500 до фиолетового-500",
@@ -898,7 +898,7 @@
       ],
       "answer": 1,
       "question_ru": "Что делает текст-многоточие в Tailwind?",
-      "question_en": "Tailwind da text-ellipsis nima qiladi?",
+      "question_en": "What does text-ellipsis do in Tailwind?",
       "options_ru": [
         "Текстовая анимация",
         "Усекает текст переполнения с помощью '...'",
@@ -933,7 +933,7 @@
       ],
       "options_en": [
         "CSS variable",
-        "hex/hsl values ​​into theme.extend.colors in tailwind.config.js",
+        "hex/hsl values into theme.extend.colors in tailwind.config.js",
         "Color plugin",
         "Palette file"
       ]
@@ -950,7 +950,7 @@
       ],
       "answer": 1,
       "question_ru": "Интеграция с переменными CSS в Tailwind?",
-      "question_en": "Tailwind da CSS Variables bilan integratsiya?",
+      "question_en": "Integration with CSS Variables in Tailwind?",
       "options_ru": [
         "Обмен",
         "Использование пользовательских свойств CSS в теме Tailwind — для динамического оформления тем.",
@@ -976,7 +976,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему директива @layer в Tailwind?",
-      "question_en": "Tailwind da @layer directive nima uchun?",
+      "question_en": "Why @layer directive in Tailwind?",
       "options_ru": [
         "CSS-слой",
         "Управление каскадными слоями CSS — база, компоненты, утилиты — контроль специфики",
@@ -1033,7 +1033,7 @@
         "CSS-утилита",
         "addUtilities({'.my-util': { }}) — в плагинах Tailwind.config.js",
         "Утилита плагина",
-        "Custom class"
+        "Пользовательский класс"
       ],
       "options_en": [
         "CSS utility",
@@ -1062,8 +1062,8 @@
         "Новые цвета"
       ],
       "options_en": [
-        "Hech qanday o'zgarish",
-        "CSS-first konfiguratsiyasi — tailwind.config.js o'rniga @import 'tailwindcss' va @theme directive",
+        "No change",
+        "CSS-first configuration — @import 'tailwindcss' and @theme directive instead of tailwind.config.js",
         "Performance only",
         "New colors"
       ]
@@ -1088,8 +1088,8 @@
         "Соответствие значений"
       ],
       "options_en": [
-        "Match qilish",
-        "Dinamik qiymatlar bilan custom utility klasslari yaratish — arbitrary value qo'llab-quvvatlash",
+        "Make a match",
+        "Creating custom utility classes with dynamic values — arbitrary value support",
         "Utility match",
         "Value match"
       ]
@@ -1167,7 +1167,7 @@
       ],
       "options_en": [
         "Post CSS",
-        "Tailwind va Autoprefixer ni PostCSS pipeline ga qo'shish — build jarayoni",
+        "Add Tailwind and Autoprefixer to the PostCSS pipeline — build process",
         "CSS processor",
         "Build config"
       ]
@@ -1210,7 +1210,7 @@
       ],
       "answer": 1,
       "question_ru": "Почему опция has() в Tailwind?",
-      "question_en": "Tailwind da has() variant nima uchun?",
+      "question_en": "Why the has() option in Tailwind?",
       "options_ru": [
         "CSS имеет",
         "Примените стиль к родительскому элементу в зависимости от положения элемента внутри него — has-[:checked]:",
@@ -1264,7 +1264,7 @@
       "question_ru": "Зачем плагин форм в Tailwind?",
       "question_en": "Why forms plugin in Tailwind?",
       "options_ru": [
-        "Form layout",
+        "Макет формы",
         "@tailwindcss/forms — применить стиль с помощью Tailwind, сбросив стили элементов формы по умолчанию в браузере.",
         "Сброс формы",
         "Стиль ввода"
@@ -1297,7 +1297,7 @@
       ],
       "options_en": [
         "CSS container",
-        "@tailwindcss/container-queries — viewport emas, ota element o'lchamiga asosida responsive stil",
+        "@tailwindcss/container-queries — Responsive styling based on parent element size, not viewport",
         "Container CSS",
         "Viewport query"
       ]
