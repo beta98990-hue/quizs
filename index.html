@@ -405,6 +405,29 @@
         </div>
       </div>
 
+      <!-- Result Progression & Next Target Widget -->
+      <div class="result-progression-box" id="result-progression-box" onclick="openProfileModal()" role="button" tabindex="0" aria-label="Daraja progressi va keyingi maqsad">
+        <div class="res-prog-top">
+          <div class="res-prog-rank">
+            <span class="res-prog-icon" id="res-prog-icon">🌱</span>
+            <div class="res-prog-titles">
+              <span class="res-prog-label" data-i18n="currentRankLabel">Hozirgi daraja</span>
+              <h4 class="res-prog-title" id="res-prog-title">Beginner Developer</h4>
+            </div>
+          </div>
+          <div class="res-prog-target-badge" id="res-prog-target-badge">
+            <span class="res-prog-target-text" id="res-prog-target-text">Keyingi darajaga: <strong>10 ta qoldi</strong></span>
+          </div>
+        </div>
+        <div class="res-prog-bar-wrap">
+          <div class="res-prog-bar" id="res-prog-bar" style="width: 0%;"></div>
+        </div>
+        <div class="res-prog-footer">
+          <span class="res-prog-summary" id="res-prog-summary">0 / 31 ta til tugatildi</span>
+          <span class="res-prog-view-more" data-i18n="viewDetails">Batafsil tahlil & progress →</span>
+        </div>
+      </div>
+
       <!-- Action Buttons -->
       <div class="result-actions">
         <button class="action-btn review-btn" onclick="openReviewModal('all')">
@@ -497,6 +520,40 @@
     <div class="modal-actions" style="width: 100%;">
       <button class="action-btn primary-btn" style="width:100%; justify-content:center;" onclick="closeModal('rankup-modal')">
         <span data-i18n="rankUpContinueBtn">Ajoyib! Davom etish 🚀</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 2-Tech Milestone Celebration Modal -->
+<div class="modal-overlay" id="milestone-modal" role="dialog" aria-modal="true" aria-labelledby="milestone-title">
+  <div class="modal milestone-modal-card">
+    <div class="milestone-badge-anim" id="milestone-icon">🎯</div>
+    <span class="milestone-tag" id="milestone-tag" data-i18n="milestoneTag">PROGRESS MARRASI!</span>
+    <h2 class="milestone-title" id="milestone-title">2 ta til muvaffaqiyatli egallandi! 🎉</h2>
+    <p class="milestone-desc" id="milestone-desc" data-i18n="milestoneDesc">
+      Ajoyib natija! Har bir yangi texnologiya sizni yangi dasturchilik darajasiga yaqinlashtirmoqda.
+    </p>
+    <div class="milestone-target-card">
+      <div class="milestone-target-header">
+        <span class="milestone-target-label" data-i18n="nextRankGoal">Keyingi daraja maqsadi:</span>
+        <span class="milestone-target-rank" id="milestone-next-rank-name">🥉 Junior Developer</span>
+      </div>
+      <div class="milestone-remaining-box">
+        <span class="milestone-remaining-icon">⏳</span>
+        <span class="milestone-remaining-text" id="milestone-remaining-text">Keyingi darajagacha (Junior) yana <strong>8 ta</strong> til qoldi! 🎯</span>
+      </div>
+      <div class="milestone-progress-bar-wrap">
+        <div class="milestone-progress-bar" id="milestone-progress-bar" style="width: 20%;"></div>
+      </div>
+      <div class="milestone-progress-sub">
+        <span id="milestone-completed-txt">2 / 10 ta</span>
+        <span id="milestone-percent-txt">20%</span>
+      </div>
+    </div>
+    <div class="modal-actions" style="width: 100%;">
+      <button class="action-btn primary-btn" style="width:100%; justify-content:center;" onclick="closeModal('milestone-modal')">
+        <span data-i18n="continueGoalBtn">Maqsad sari olg'a! 🚀</span>
       </button>
     </div>
   </div>

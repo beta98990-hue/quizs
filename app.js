@@ -996,7 +996,12 @@ function calculateResults() {
 
   updateGlobalProgressUI();
   updateResultPageUI();
-  checkAndTriggerRankUp(prevCount, newCount);
+
+  // Check Rank Up (10, 20, 31) or 2-Tech Milestone (2, 4, 6, 8, 12, 14, 16, 18, 22, 24, 26, 28, 30)
+  if (!checkAndTriggerRankUp(prevCount, newCount)) {
+    checkAndTriggerMilestone(prevCount, newCount);
+  }
+
   submitToBackend(tech.id, answers, correct, wrong, skipped, pct, grade);
 }
 
@@ -1039,6 +1044,28 @@ function updateResultPageUI() {
   const msgEl = document.getElementById('grade-message');
   if (msgEl) msgEl.textContent = result.gradeMsg;
 
+  // Update Result Progression Box & Next Target
+  const stats = getStats();
+  const resProgIcon = document.getElementById('res-prog-icon');
+  const resProgTitle = document.getElementById('res-prog-title');
+  const resProgTargetText = document.getElementById('res-prog-target-text');
+  const resProgBar = document.getElementById('res-prog-bar');
+  const resProgSummary = document.getElementById('res-prog-summary');
+
+  if (resProgIcon) resProgIcon.textContent = stats.rank.icon;
+  if (resProgTitle) resProgTitle.textContent = stats.rank.title;
+  if (resProgTargetText) {
+    if (stats.completedCount >= 31) {
+      resProgTargetText.innerHTML = t('targetCompletedAll');
+    } else {
+      resProgTargetText.innerHTML = t('resultProgTargetRemaining', { count: stats.remainingForNext });
+    }
+  }
+  if (resProgBar) resProgBar.style.width = `${stats.progressPercentage}%`;
+  if (resProgSummary) {
+    resProgSummary.textContent = `${stats.completedCount} / ${stats.totalTechs} ${t('statTechs').toLowerCase()} (${stats.progressPercentage}%)`;
+  }
+
   setTimeout(() => {
     const circumference = 2 * Math.PI * 85;
     const offset = circumference - (result.percentage / 100) * circumference;
@@ -1073,7 +1100,7 @@ function updateResultPageLanguage() {
 }
 
 // ============================================================
-// RANK UP CELEBRATION
+// RANK UP & 2-TECH MILESTONE CELEBRATIONS
 // ============================================================
 function checkAndTriggerRankUp(prevCount, newCount) {
   if (prevCount < 10 && newCount >= 10) {
@@ -1085,6 +1112,7 @@ function checkAndTriggerRankUp(prevCount, newCount) {
       t('rankUpJuniorPerk1'),
       t('rankUpJuniorPerk2')
     );
+    return true;
   } else if (prevCount < 20 && newCount >= 20) {
     triggerRankUpModal(
       'middle',
@@ -1094,6 +1122,7 @@ function checkAndTriggerRankUp(prevCount, newCount) {
       t('rankUpMiddlePerk1'),
       t('rankUpMiddlePerk2')
     );
+    return true;
   } else if (prevCount < 31 && newCount >= 31) {
     triggerRankUpModal(
       'senior',
@@ -1103,7 +1132,62 @@ function checkAndTriggerRankUp(prevCount, newCount) {
       t('rankUpSeniorPerk1'),
       t('rankUpSeniorPerk2')
     );
+    return true;
   }
+  return false;
+}
+
+function checkAndTriggerMilestone(prevCount, newCount) {
+  // Trigger on every 2 completed technologies (2, 4, 6, 8, 12, 14, 16, 18, 22, 24, 26, 28, 30)
+  if (newCount > prevCount && newCount % 2 === 0 && newCount < 31) {
+    triggerMilestoneModal(newCount);
+  }
+}
+
+function triggerMilestoneModal(count) {
+  setTimeout(() => {
+    const stats = getStats();
+    const rank = stats.rank;
+    const remaining = stats.remainingForNext;
+
+    const titleEl = document.getElementById('milestone-title');
+    const descEl = document.getElementById('milestone-desc');
+    const nextRankNameEl = document.getElementById('milestone-next-rank-name');
+    const remainingTextEl = document.getElementById('milestone-remaining-text');
+    const barEl = document.getElementById('milestone-progress-bar');
+    const completedTxtEl = document.getElementById('milestone-completed-txt');
+    const percentTxtEl = document.getElementById('milestone-percent-txt');
+
+    // Get next rank display name and target count
+    let nextRankTitle = t('rankJunior');
+    let targetMin = 10;
+    if (count >= 20) {
+      nextRankTitle = t('rankSenior');
+      targetMin = 31;
+    } else if (count >= 10) {
+      nextRankTitle = t('rankMiddle');
+      targetMin = 20;
+    }
+
+    if (titleEl) titleEl.textContent = t('milestoneTitle', { count });
+    if (descEl) descEl.textContent = t('milestoneDesc');
+    if (nextRankNameEl) nextRankNameEl.textContent = `${nextRankTitle} (${targetMin} ta)`;
+    if (remainingTextEl) {
+      remainingTextEl.innerHTML = t('milestoneRemaining', { nextRank: nextRankTitle, remaining });
+    }
+
+    // Progress percentage towards the overall/tier goal
+    const tierProgressPct = Math.round((count / targetMin) * 100);
+    if (barEl) barEl.style.width = `${tierProgressPct}%`;
+    if (completedTxtEl) completedTxtEl.textContent = `${count} / ${targetMin} ${t('statTechs').toLowerCase()}`;
+    if (percentTxtEl) percentTxtEl.textContent = `${tierProgressPct}%`;
+
+    spawnConfetti();
+    openModal('milestone-modal');
+
+    // Also show motivating toast
+    showToast(t('toastMilestone', { count, remaining }), 4500);
+  }, 750);
 }
 
 function triggerRankUpModal(rankId, title, desc, icon, perk1, perk2) {

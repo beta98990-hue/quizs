@@ -139,6 +139,17 @@ window.DEVQUIZ_TRANSLATIONS = {
     rankUpSeniorPerk2: "Mukammal! Barcha 31 texnologiya zabt etildi! 🏆",
     rankUpContinueBtn: "Ajoyib! Davom etish 🚀",
 
+    // 2-Tech Milestone Modal & Progress Alert
+    currentRankLabel: "Hozirgi daraja",
+    nextRankGoal: "Keyingi daraja maqsadi:",
+    milestoneTag: "PROGRESS MARRASI!",
+    milestoneTitle: "{count} ta til muvaffaqiyatli egallandi! 🎉",
+    milestoneDesc: "Ajoyib natija! Har bir yangi texnologiya sizni yangi dasturchilik darajasiga yaqinlashtirmoqda.",
+    milestoneRemaining: "Keyingi darajagacha ({nextRank}) yana <strong>{remaining} ta</strong> til qoldi! 🎯",
+    continueGoalBtn: "Maqsad sari olg'a! 🚀",
+    resultProgTargetRemaining: "Keyingi darajagacha: <strong>{count} ta qoldi</strong>",
+    toastMilestone: "🎯 {count} ta til egallandi! Keyingi darajagacha yana {remaining} ta qoldi.",
+
     // Profile & Progression Dashboard Modal
     profileModalTitle: "Dasturchi Profili & Progress",
     profCompletedTechs: "Tugatilgan Texnologiyalar",
@@ -374,8 +385,19 @@ window.DEVQUIZ_TRANSLATIONS = {
     rankUpSeniorTitle: "Невероятно! Вы Senior Developer! 🥇",
     rankUpSeniorDesc: "Поздравляем! Вы полностью освоили все 31 технологию на платформе и стали Senior!",
     rankUpSeniorPerk1: "Все 31 технология полностью освоены!",
-    rankUpSeniorPerk2: "Великолепно! Все 31 технология покорены! 🏆",
+    rankUpSeniorPerk2: "Гранд-Мастер: 100% каталога покорено! 🏆",
     rankUpContinueBtn: "Отлично! Продолжить 🚀",
+
+    // 2-Tech Milestone Modal & Progress Alert
+    currentRankLabel: "Текущий ранг",
+    nextRankGoal: "Цель следующего ранга:",
+    milestoneTag: "ЭТАП ПРОГРЕССА!",
+    milestoneTitle: "{count} технологий успешно освоено! 🎉",
+    milestoneDesc: "Отличный результат! Каждая новая технология приближает вас к новому уровню разработчика.",
+    milestoneRemaining: "До следующего ранга ({nextRank}) осталось ещё <strong>{remaining}</strong> техн.! 🎯",
+    continueGoalBtn: "Вперед к цели! 🚀",
+    resultProgTargetRemaining: "До след. ранга: <strong>осталось {count}</strong>",
+    toastMilestone: "🎯 Освоено {count} технологий! До следующего ранга осталось {remaining}.",
 
     // Profile & Progression Dashboard Modal
     profileModalTitle: "Профиль Разработчика & Прогресс",
@@ -614,6 +636,17 @@ window.DEVQUIZ_TRANSLATIONS = {
     rankUpSeniorPerk1: "All 31 technologies fully mastered!",
     rankUpSeniorPerk2: "Grand Master Achievement: 100% Catalog Conquered! 🏆",
     rankUpContinueBtn: "Awesome! Continue 🚀",
+
+    // 2-Tech Milestone Modal & Progress Alert
+    currentRankLabel: "Current Rank",
+    nextRankGoal: "Next rank goal:",
+    milestoneTag: "MILESTONE ACHIEVED!",
+    milestoneTitle: "{count} technologies successfully mastered! 🎉",
+    milestoneDesc: "Great progress! Every mastered technology brings you closer to your next developer milestone.",
+    milestoneRemaining: "Only <strong>{remaining}</strong> technologies left until <strong>{nextRank}</strong>! 🎯",
+    continueGoalBtn: "Keep Going! 🚀",
+    resultProgTargetRemaining: "To next rank: <strong>{count} left</strong>",
+    toastMilestone: "🎯 {count} technologies completed! {remaining} left until next rank.",
 
     // Profile & Progression Dashboard Modal
     profileModalTitle: "Developer Profile & Progression",
