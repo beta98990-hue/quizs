@@ -123,6 +123,7 @@ body {
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
   transition: background var(--transition-slow), border-color var(--transition-slow);
+  padding: 0 24px;
 }
 
 [data-theme="light"] .navbar {
@@ -131,11 +132,14 @@ body {
 
 .nav-container {
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
 }
 
 .nav-logo {
@@ -148,6 +152,10 @@ body {
   font-size: 1.25rem;
   transition: opacity var(--transition-fast);
   cursor: pointer;
+  /* Allow logo to shrink so nav-actions buttons always stay visible */
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .nav-logo:hover {
@@ -169,18 +177,23 @@ body {
 
 .logo-text {
   letter-spacing: -0.3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 /* ---------- LANGUAGE SWITCHER ---------- */
 .lang-switcher {
   position: relative;
   display: inline-flex;
+  flex-shrink: 0;
 }
 
 .lang-btn {
@@ -390,6 +403,7 @@ body {
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .theme-toggle:hover {
@@ -428,6 +442,7 @@ body {
   justify-content: center;
   padding: 8px;
   transition: all var(--transition-base);
+  flex-shrink: 0;
 }
 
 .hamburger span {
@@ -2059,8 +2074,59 @@ body {
     --nav-height: 60px;
   }
 
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .nav-container {
+    gap: 8px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-logo {
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+  }
+
+  .logo-text {
+    font-size: 1.15rem;
+  }
+
+  .nav-rank-btn {
+    padding: 5px 10px;
+    gap: 6px;
+    font-size: 0.8rem;
+  }
+
+  .nav-rank-btn .rank-title {
+    display: none;
+  }
+
+  .lang-btn {
+    height: 38px;
+    padding: 0 10px;
+    font-size: 0.82rem;
+    gap: 5px;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+  }
+
   .hamburger {
     display: flex;
+    width: 38px;
+    height: 38px;
+    padding: 7px;
   }
 
   .category-cards {
@@ -2139,6 +2205,65 @@ body {
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .nav-container {
+    gap: 6px;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .nav-logo {
+    gap: 6px;
+  }
+
+  .logo-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .logo-text {
+    font-size: 1.05rem;
+  }
+
+  .nav-rank-btn {
+    padding: 4px 8px;
+    gap: 4px;
+    font-size: 0.78rem;
+  }
+
+  .nav-rank-btn .rank-count {
+    padding: 2px 5px;
+    font-size: 0.7rem;
+  }
+
+  .lang-btn {
+    height: 36px;
+    padding: 0 8px;
+    font-size: 0.78rem;
+    gap: 4px;
+  }
+
+  .lang-chevron {
+    display: none;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hamburger {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+
   .hero-title {
     letter-spacing: -0.8px;
   }
@@ -2175,6 +2300,85 @@ body {
   }
 }
 
+@media (max-width: 360px) {
+  .navbar {
+    padding: 0 6px;
+  }
+
+  .nav-container {
+    gap: 4px;
+  }
+
+  .nav-actions {
+    gap: 4px;
+  }
+
+  .nav-logo {
+    gap: 4px;
+  }
+
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+  }
+
+  .logo-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .nav-rank-btn {
+    padding: 3px 6px;
+    gap: 3px;
+    font-size: 0.72rem;
+  }
+
+  .nav-rank-btn .rank-icon {
+    font-size: 0.95rem;
+  }
+
+  .nav-rank-btn .rank-count {
+    padding: 1px 4px;
+    font-size: 0.65rem;
+  }
+
+  .lang-btn {
+    height: 34px;
+    padding: 0 5px;
+    font-size: 0.72rem;
+    gap: 3px;
+  }
+
+  .lang-flag {
+    font-size: 1rem;
+  }
+
+  .theme-toggle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .theme-toggle svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hamburger {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+  }
+
+  .hamburger span {
+    width: 16px;
+  }
+}
+
 /* ---------- UTILITY ---------- */
 .sr-only {
   position: absolute;
@@ -2208,6 +2412,7 @@ body {
   cursor: pointer;
   transition: all var(--transition-fast);
   backdrop-filter: blur(8px);
+  flex-shrink: 0;
 }
 
 .nav-rank-btn:hover {
@@ -3301,13 +3506,6 @@ body {
   .p-tech-item {
     padding: 10px;
   }
-}
-
-/* Butun sahifa */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px;
-    }
 }
 
 /* Component ichidagi responsive */
